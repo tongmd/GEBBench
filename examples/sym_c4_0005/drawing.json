@@ -1,0 +1,58 @@
+{
+  "base_primitive": {
+    "type": "polygon",
+    "points": [
+      [
+        0,
+        0
+      ],
+      [
+        2,
+        0
+      ],
+      [
+        2,
+        -1
+      ],
+      [
+        4,
+        1
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        2,
+        2
+      ],
+      [
+        0,
+        2
+      ]
+    ]
+  },
+  "transform_set": [
+    {
+      "type": "rotate",
+      "angle": 0
+    },
+    {
+      "type": "rotate",
+      "angle": 90
+    },
+    {
+      "type": "rotate",
+      "angle": 180
+    },
+    {
+      "type": "rotate",
+      "angle": 270
+    }
+  ],
+  "composition": "union",
+  "canvas_center": [
+    384,
+    384
+  ]
+}

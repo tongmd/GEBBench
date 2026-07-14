@@ -1,0 +1,60 @@
+{
+  "node_count": 6,
+  "edge_count": 8,
+  "directed_edges": [
+    [
+      "A",
+      "B"
+    ],
+    [
+      "C",
+      "E"
+    ],
+    [
+      "D",
+      "A"
+    ],
+    [
+      "D",
+      "B"
+    ],
+    [
+      "E",
+      "A"
+    ],
+    [
+      "E",
+      "C"
+    ],
+    [
+      "E",
+      "D"
+    ],
+    [
+      "F",
+      "C"
+    ]
+  ],
+  "degree_sequence": {
+    "in": [
+      2,
+      2,
+      2,
+      1,
+      1,
+      0
+    ],
+    "out": [
+      1,
+      0,
+      1,
+      2,
+      3,
+      1
+    ]
+  },
+  "has_cycle": true,
+  "shortest_path": {
+    "A_to_F": null
+  }
+}

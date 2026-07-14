@@ -1,0 +1,58 @@
+{
+  "sample_id": "sym_c4_0005",
+  "family": "symmetry_lab",
+  "task_type": "rotation_order",
+  "base_shape": {
+    "type": "asymmetric_arrow",
+    "points": [
+      [
+        0,
+        0
+      ],
+      [
+        2,
+        0
+      ],
+      [
+        2,
+        -1
+      ],
+      [
+        4,
+        1
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        2,
+        2
+      ],
+      [
+        0,
+        2
+      ]
+    ]
+  },
+  "group_action": {
+    "type": "rotation",
+    "angle_degrees": 90,
+    "center": [
+      0,
+      0
+    ]
+  },
+  "repetitions": 4,
+  "query": {
+    "property": "rotation_order"
+  },
+  "answer": {
+    "rotation_order": 4
+  },
+  "structural_properties": {
+    "rotation_order": 4,
+    "reflection_symmetric": false,
+    "chirality_preserved": true
+  }
+}

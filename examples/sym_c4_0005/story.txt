@@ -1,0 +1,9 @@
+[domain: mechanism]
+A mechanical pointer is mounted on a central pivot. Each activation of the mechanism turns the pointer by exactly 90 degrees about the pivot, and the pointer itself is a rigid asymmetric piece.
+
+Question: what is the smallest number of activations after which the pointer returns exactly to its original position and orientation?
+
+[domain: dance]
+Four dancers stand around the center of a stage. Every beat, the whole formation rotates by one step of 90 degrees about the stage center, keeping each dancer's pose fixed relative to the formation.
+
+Question: what is the smallest number of beats after which the formation is exactly back to its starting configuration?

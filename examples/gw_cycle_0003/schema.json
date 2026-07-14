@@ -1,0 +1,85 @@
+{
+  "sample_id": "gw_cycle_0003",
+  "family": "graph_world",
+  "task_type": "cycle",
+  "directed": true,
+  "nodes": [
+    {
+      "id": "A",
+      "role": "ordinary"
+    },
+    {
+      "id": "B",
+      "role": "ordinary"
+    },
+    {
+      "id": "C",
+      "role": "ordinary"
+    },
+    {
+      "id": "D",
+      "role": "ordinary"
+    },
+    {
+      "id": "E",
+      "role": "ordinary"
+    },
+    {
+      "id": "F",
+      "role": "ordinary"
+    }
+  ],
+  "edges": [
+    [
+      "B",
+      "F"
+    ],
+    [
+      "C",
+      "B"
+    ],
+    [
+      "C",
+      "E"
+    ],
+    [
+      "D",
+      "E"
+    ],
+    [
+      "E",
+      "A"
+    ],
+    [
+      "E",
+      "C"
+    ],
+    [
+      "E",
+      "F"
+    ],
+    [
+      "F",
+      "D"
+    ]
+  ],
+  "query": {
+    "property": "has_cycle"
+  },
+  "answer": {
+    "has_cycle": true,
+    "witness_cycle": [
+      "B",
+      "F",
+      "D",
+      "E",
+      "C",
+      "B"
+    ]
+  },
+  "structural_properties": {
+    "num_nodes": 6,
+    "num_edges": 8,
+    "has_cycle": true
+  }
+}

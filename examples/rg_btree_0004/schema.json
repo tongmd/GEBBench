@@ -1,0 +1,26 @@
+{
+  "sample_id": "rg_btree_0004",
+  "family": "recursive_garden",
+  "task_type": "binary_tree",
+  "depth": 4,
+  "branching_factor": 2,
+  "parameters": {
+    "angle": 34,
+    "scale_ratio": 0.62,
+    "initial_length": 175
+  },
+  "query": {
+    "property": "leaf_count"
+  },
+  "answer": {
+    "leaf_count": 16
+  },
+  "structural_properties": {
+    "recursion_depth": 4,
+    "branching_factor": 2,
+    "leaf_count": 16,
+    "node_count": 31,
+    "self_similar": true,
+    "bilateral_symmetry": true
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "primitive": "branch",
+  "root": {
+    "x": 384.0,
+    "y": 482,
+    "angle": -90,
+    "length": 175
+  },
+  "recursion": {
+    "depth": 4,
+    "children": [
+      {
+        "angle_delta": -34,
+        "scale": 0.62
+      },
+      {
+        "angle_delta": 34,
+        "scale": 0.62
+      }
+    ]
+  }
+}

@@ -1,0 +1,9 @@
+[domain: city-roads]
+There is a one-way road from city D to city B. There is a one-way road from city E to city A. There is a one-way road from city D to city A. There is a one-way road from city F to city C. There is a one-way road from city C to city E. There is a one-way road from city A to city B. There is a one-way road from city E to city D. There is a one-way road from city E to city C.
+
+Question: A traveler starts in city A. Can they reach city F by following the roads?
+
+[domain: messaging]
+User A can forward messages to user B. User E can forward messages to user C. User D can forward messages to user B. User E can forward messages to user D. User F can forward messages to user C. User C can forward messages to user E. User E can forward messages to user A. User D can forward messages to user A.
+
+Question: A message originates with user A. Can it eventually reach user F?

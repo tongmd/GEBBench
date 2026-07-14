@@ -1,0 +1,9 @@
+[domain: plant-growth]
+A plant begins as a single stem. Each season, every growing tip sprouts exactly two new shoots — one angled to the left and one to the right — each shorter than the branch it grew from. This repeats for 4 seasons.
+
+Question: after 4 seasons, how many growing tips does the plant have?
+
+[domain: task-decomposition]
+A project starts as one task. Every task that is still too large is split into exactly two smaller subtasks, and the splitting is applied again to each new subtask, 4 times in total.
+
+Question: after 4 rounds of splitting, how many smallest-level subtasks exist?

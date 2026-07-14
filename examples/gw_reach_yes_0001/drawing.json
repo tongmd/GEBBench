@@ -1,0 +1,92 @@
+{
+  "canvas": {
+    "width": 768,
+    "height": 512
+  },
+  "nodes": [
+    {
+      "id": "F",
+      "x": 384.0,
+      "y": 66.0,
+      "shape": "circle",
+      "role": "goal"
+    },
+    {
+      "id": "B",
+      "x": 548.5,
+      "y": 161.0,
+      "shape": "circle",
+      "role": "ordinary"
+    },
+    {
+      "id": "C",
+      "x": 548.5,
+      "y": 351.0,
+      "shape": "circle",
+      "role": "ordinary"
+    },
+    {
+      "id": "A",
+      "x": 384.0,
+      "y": 446.0,
+      "shape": "circle",
+      "role": "start"
+    },
+    {
+      "id": "E",
+      "x": 219.5,
+      "y": 351.0,
+      "shape": "circle",
+      "role": "ordinary"
+    },
+    {
+      "id": "D",
+      "x": 219.5,
+      "y": 161.0,
+      "shape": "circle",
+      "role": "ordinary"
+    }
+  ],
+  "edges": [
+    {
+      "source": "A",
+      "target": "B",
+      "directed": true
+    },
+    {
+      "source": "B",
+      "target": "C",
+      "directed": true
+    },
+    {
+      "source": "B",
+      "target": "D",
+      "directed": true
+    },
+    {
+      "source": "C",
+      "target": "A",
+      "directed": true
+    },
+    {
+      "source": "C",
+      "target": "F",
+      "directed": true
+    },
+    {
+      "source": "D",
+      "target": "F",
+      "directed": true
+    },
+    {
+      "source": "E",
+      "target": "F",
+      "directed": true
+    },
+    {
+      "source": "F",
+      "target": "D",
+      "directed": true
+    }
+  ]
+}

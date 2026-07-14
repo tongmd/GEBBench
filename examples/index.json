@@ -1,0 +1,57 @@
+[
+  {
+    "sample_id": "gw_reach_yes_0001",
+    "family": "graph_world",
+    "task_type": "reachability",
+    "answer": {
+      "reachable": true,
+      "witness_path": [
+        "A",
+        "B",
+        "C",
+        "F"
+      ]
+    }
+  },
+  {
+    "sample_id": "gw_reach_no_0002",
+    "family": "graph_world",
+    "task_type": "reachability",
+    "answer": {
+      "reachable": false,
+      "witness_path": null
+    }
+  },
+  {
+    "sample_id": "gw_cycle_0003",
+    "family": "graph_world",
+    "task_type": "cycle",
+    "answer": {
+      "has_cycle": true,
+      "witness_cycle": [
+        "B",
+        "F",
+        "D",
+        "E",
+        "C",
+        "B"
+      ]
+    }
+  },
+  {
+    "sample_id": "rg_btree_0004",
+    "family": "recursive_garden",
+    "task_type": "binary_tree",
+    "answer": {
+      "leaf_count": 16
+    }
+  },
+  {
+    "sample_id": "sym_c4_0005",
+    "family": "symmetry_lab",
+    "task_type": "rotation_order",
+    "answer": {
+      "rotation_order": 4
+    }
+  }
+]
