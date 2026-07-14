@@ -87,9 +87,18 @@ def stylize(sample_dir: Path) -> list[str]:
                "-F", f"prompt={prompt}",
                "-F", f"size={canvas_size(schema)}",
                "-F", "quality=medium"]
-        resp = json.loads(subprocess.run(cmd, capture_output=True, text=True).stdout)
-        if "data" not in resp:
-            print(f"  FAIL {sample_dir.name}/{slug}: {json.dumps(resp)[:200]}")
+        resp = None
+        for attempt in range(3):
+            raw = subprocess.run(cmd, capture_output=True, text=True).stdout
+            try:
+                resp = json.loads(raw)
+                break
+            except json.JSONDecodeError:
+                print(f"  retry {sample_dir.name}/{slug} (attempt {attempt + 1}, "
+                      f"empty/bad response)")
+        if resp is None or "data" not in resp:
+            print(f"  FAIL {sample_dir.name}/{slug}: "
+                  f"{json.dumps(resp)[:200] if resp else 'no response'}")
             continue
         out.write_bytes(base64.b64decode(resp["data"][0]["b64_json"]))
         made.append(out.name)

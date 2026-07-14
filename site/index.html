@@ -1,0 +1,1069 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GEB Benchmark — One Structure, Six Voices</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
+  onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'$',right:'$',display:false}]});"></script>
+<style>
+  :root {
+    --ink: #1c1c1c; --paper: #faf8f4; --line: #e3ded4;
+    --accent: #b3402a; --dim: #7a756b; --code-bg: #f1ede4;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--paper); color: var(--ink);
+         font: 16px/1.65 Georgia, "Times New Roman", serif; }
+  .wrap { max-width: 1060px; margin: 0 auto; padding: 0 24px 96px; }
+  header { padding: 72px 0 24px; border-bottom: 1px solid var(--line); }
+  h1 { font-size: 44px; margin: 0 0 8px; letter-spacing: -0.5px; }
+  h1 .geb { color: var(--accent); }
+  .tagline { font-size: 20px; font-style: italic; color: var(--dim); margin: 0 0 18px; }
+  .chain { font-family: "SF Mono", Menlo, monospace; font-size: 14px;
+           background: var(--code-bg); border: 1px solid var(--line);
+           border-radius: 8px; padding: 14px 18px; overflow-x: auto; white-space: nowrap; }
+  .chain b { color: var(--accent); }
+  .intro { max-width: 760px; }
+  .fam-badge { display: inline-block; font: 12px/1 Menlo, monospace; color: #fff;
+               background: var(--accent); border-radius: 4px; padding: 4px 8px;
+               margin-right: 8px; vertical-align: middle; }
+  section.sample { margin-top: 64px; }
+  h2 { font-size: 26px; margin: 0 0 4px; }
+  .qa { color: var(--dim); font-size: 15px; margin: 2px 0 16px; }
+  .qa b { color: var(--ink); }
+  .strip { display: flex; gap: 12px; overflow-x: auto; padding-bottom: 6px; }
+  figure { margin: 0; flex: 0 0 auto; }
+  figure img { height: 210px; width: auto; display: block; border: 1px solid var(--line);
+               border-radius: 6px; background: #fff; }
+  figcaption { font: 12px/1.5 Menlo, monospace; color: var(--dim); padding-top: 5px;
+               text-align: center; }
+  details { border: 1px solid var(--line); border-radius: 6px; margin-top: 10px;
+            background: #fffdf9; }
+  summary { cursor: pointer; padding: 10px 16px; font-family: Menlo, monospace;
+            font-size: 13px; color: var(--ink); user-select: none; }
+  summary:hover { color: var(--accent); }
+  .voice { padding: 4px 20px 18px; }
+  pre { background: var(--code-bg); border: 1px solid var(--line); border-radius: 6px;
+        padding: 14px 16px; overflow-x: auto; font: 13px/1.55 "SF Mono", Menlo, monospace; }
+  .story p { margin: 8px 0; }
+  .story .dom { font-family: Menlo, monospace; font-size: 12px; color: var(--accent); }
+  .mathv { font-size: 15px; }
+  .mathv h1 { display: none; }
+  footer { margin-top: 88px; padding-top: 20px; border-top: 1px solid var(--line);
+           color: var(--dim); font-size: 14px; }
+  a { color: var(--accent); }
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <h1><span class="geb">GEB</span> Benchmark</h1>
+  <p class="tagline">One structure, six voices.</p>
+  <div class="chain">z&nbsp;(latent schema) &nbsp;&rarr;&nbsp; { <b>S</b>tory, <b>M</b>athematics,
+    <b>P</b>rogram, <b>D</b>rawing&nbsp;Program, canonical&nbsp;<b>I</b>mage,
+    stylized&nbsp;<b>I</b><sub>style</sub> }</div>
+  <p class="intro">Every sample below is generated <em>in parallel</em> from a single
+  latent schema — never by chained translation. The schema is the only ground truth:
+  each program voice is executed and asserted against the schema answer, each image is
+  rendered deterministically from the drawing voice, and stylized images must preserve
+  the structure exactly. Three V1 families: <b>Graph Worlds</b> (topology),
+  <b>Recursive Gardens</b> (hierarchy), <b>Symmetry Labs</b> (geometry).</p>
+</header>
+<section class="sample" id="gw_cycle_0003">
+  <h2><span class="fam-badge">Graph Worlds</span>gw_cycle_0003</h2>
+  <p class="qa">cycle detection: does the graph contain a directed cycle? &nbsp;·&nbsp; answer: <b>yes — B → F → D → E → C → B</b></p>
+  <div class="strip"><figure><a href="assets/gw_cycle_0003/canonical.png"><img loading="lazy" src="assets/gw_cycle_0003/canonical.png" alt="gw_cycle_0003 canonical"></a><figcaption>canonical</figcaption></figure>
+<figure><a href="assets/gw_cycle_0003/style_gpt_chalkboard.png"><img loading="lazy" src="assets/gw_cycle_0003/style_gpt_chalkboard.png" alt="gw_cycle_0003 style_gpt_chalkboard"></a><figcaption>chalkboard · gpt-image</figcaption></figure>
+<figure><a href="assets/gw_cycle_0003/style_gpt_papercut.png"><img loading="lazy" src="assets/gw_cycle_0003/style_gpt_papercut.png" alt="gw_cycle_0003 style_gpt_papercut"></a><figcaption>paper cut-out · gpt-image</figcaption></figure>
+<figure><a href="assets/gw_cycle_0003/style_blueprint.png"><img loading="lazy" src="assets/gw_cycle_0003/style_blueprint.png" alt="gw_cycle_0003 style_blueprint"></a><figcaption>blueprint · renderer</figcaption></figure>
+<figure><a href="assets/gw_cycle_0003/style_pencil.png"><img loading="lazy" src="assets/gw_cycle_0003/style_pencil.png" alt="gw_cycle_0003 style_pencil"></a><figcaption>pencil · renderer</figcaption></figure></div>
+  <details><summary>story voice</summary><div class="voice story"><p><span class="dom">[domain: software]</span></p>
+<p>Module F imports module D. Module D imports module E. Module C imports module E. Module C imports module B. Module E imports module C. Module E imports module A. Module E imports module F. Module B imports module F.</p>
+<p>Question: Is there a circular import among these modules?</p>
+<p><span class="dom">[domain: messaging]</span></p>
+<p>User F can forward messages to user D. User D can forward messages to user E. User E can forward messages to user C. User C can forward messages to user E. User E can forward messages to user A. User E can forward messages to user F. User B can forward messages to user F. User C can forward messages to user B.</p>
+<p>Question: Can a message ever return to a user who already forwarded it?</p></div></details>
+  <details><summary>mathematics voice</summary><div class="voice mathv"><p>Node set $V = \{A, B, C, D, E, F\}$, edge set
+$$E = \{(B,F), (C,B), (C,E), (D,E), (E,A), (E,C), (E,F), (F,D)\}.$$
+Adjacency matrix (rows/columns ordered $A, B, C, D, E, F$):
+$$M = \begin{bmatrix}
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 1 \\
+0 &amp; 1 &amp; 0 &amp; 0 &amp; 1 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 1 &amp; 0 \\
+1 &amp; 0 &amp; 1 &amp; 0 &amp; 0 &amp; 1 \\
+0 &amp; 0 &amp; 0 &amp; 1 &amp; 0 &amp; 0
+\end{bmatrix}.$$</p>
+<p><b>Question.</b> Does there exist $k \ge 1$ with $\operatorname{tr}(M^k) &gt; 0$?</p>
+<p><b>Solution.</b> Yes; a witness cycle is $$B \to F \to D \to E \to C \to B.$$</p></div></details>
+  <details><summary>program voice (self-checking)</summary><div class="voice"><pre>"""GEB benchmark — program voice. sample: gw_cycle_0003 (graph_world / cycle detection)"""
+
+GRAPH = {
+    "A": [],
+    "B": ['F'],
+    "C": ['B', 'E'],
+    "D": ['E'],
+    "E": ['A', 'C', 'F'],
+    "F": ['D'],
+}
+
+EXPECTED = True
+
+
+def has_cycle(graph):
+    WHITE, GRAY, BLACK = 0, 1, 2
+    color = {v: WHITE for v in graph}
+
+    def dfs(u):
+        color[u] = GRAY
+        for v in graph.get(u, ()):
+            if color[v] == GRAY or (color[v] == WHITE and dfs(v)):
+                return True
+        color[u] = BLACK
+        return False
+
+    return any(color[v] == WHITE and dfs(v) for v in list(graph))
+
+
+if __name__ == "__main__":
+    result = has_cycle(GRAPH)
+    assert result == EXPECTED, (result, EXPECTED)
+    print(f"has_cycle = {result}  [matches schema]")
+</pre></div></details>
+  <details><summary>drawing-program voice</summary><div class="voice"><pre>{
+  "canvas": {
+    "width": 768,
+    "height": 512
+  },
+  "nodes": [
+    {
+      "id": "B",
+      "x": 384.0,
+      "y": 66.0,
+      "shape": "circle",
+      "role": "ordinary"
+    },
+    {
+      "id": "F",
+      "x": 548.5,
+      "y": 161.0,
+      "shape": "circle",
+      "role": "ordinary"
+    },
+    {
+      "id": "D",
+      "x": 548.5,
+      "y": 351.0,
+      "shape": "circle",
+      "role": "ordinary"
+    },
+    {
+      "id": "E",
+      "x": 384.0,
+      "y": 446.0,
+      "shape": "circle",
+      "role": "ordinary"
+    },
+    {
+      "id": "C",
+      "x": 219.5,
+      "y": 351.0,
+      "shape": "circle",
+      "role": "ordinary"
+    },
+    {
+      "id": "A",
+      "x": 219.5,
+      "y": 161.0,
+      "shape": "circle",
+      "role": "ordinary"
+    }
+  ],
+  "edges": [
+    {
+      "source": "B",
+      "target": "F",
+      "directed": true
+    },
+    {
+      "source": "C",
+      "target": "B",
+      "directed": true
+    },
+    {
+      "source": "C",
+      "target": "E",
+      "directed": true
+    },
+    {
+      "source": "D",
+      "target": "E",
+      "directed": true
+    },
+    {
+      "source": "E",
+      "target": "A",
+      "directed": true
+    },
+    {
+      "source": "E",
+      "target": "C",
+      "directed": true
+    },
+    {
+      "source": "E",
+      "target": "F",
+      "directed": true
+    },
+    {
+      "source": "F",
+      "target": "D",
+      "directed": true
+    }
+  ]
+}</pre></div></details>
+  <details><summary>latent schema (ground truth)</summary><div class="voice"><pre>{
+  "sample_id": "gw_cycle_0003",
+  "family": "graph_world",
+  "task_type": "cycle",
+  "directed": true,
+  "nodes": [
+    {
+      "id": "A",
+      "role": "ordinary"
+    },
+    {
+      "id": "B",
+      "role": "ordinary"
+    },
+    {
+      "id": "C",
+      "role": "ordinary"
+    },
+    {
+      "id": "D",
+      "role": "ordinary"
+    },
+    {
+      "id": "E",
+      "role": "ordinary"
+    },
+    {
+      "id": "F",
+      "role": "ordinary"
+    }
+  ],
+  "edges": [
+    [
+      "B",
+      "F"
+    ],
+    [
+      "C",
+      "B"
+    ],
+    [
+      "C",
+      "E"
+    ],
+    [
+      "D",
+      "E"
+    ],
+    [
+      "E",
+      "A"
+    ],
+    [
+      "E",
+      "C"
+    ],
+    [
+      "E",
+      "F"
+    ],
+    [
+      "F",
+      "D"
+    ]
+  ],
+  "query": {
+    "property": "has_cycle"
+  },
+  "answer": {
+    "has_cycle": true,
+    "witness_cycle": [
+      "B",
+      "F",
+      "D",
+      "E",
+      "C",
+      "B"
+    ]
+  },
+  "structural_properties": {
+    "num_nodes": 6,
+    "num_edges": 8,
+    "has_cycle": true
+  }
+}</pre></div></details>
+</section>
+
+<section class="sample" id="gw_reach_no_0002">
+  <h2><span class="fam-badge">Graph Worlds</span>gw_reach_no_0002</h2>
+  <p class="qa">reachability: A &rarr; F ? &nbsp;·&nbsp; answer: <b>no</b></p>
+  <div class="strip"><figure><a href="assets/gw_reach_no_0002/canonical.png"><img loading="lazy" src="assets/gw_reach_no_0002/canonical.png" alt="gw_reach_no_0002 canonical"></a><figcaption>canonical</figcaption></figure>
+<figure><a href="assets/gw_reach_no_0002/style_gpt_chalkboard.png"><img loading="lazy" src="assets/gw_reach_no_0002/style_gpt_chalkboard.png" alt="gw_reach_no_0002 style_gpt_chalkboard"></a><figcaption>chalkboard · gpt-image</figcaption></figure>
+<figure><a href="assets/gw_reach_no_0002/style_gpt_papercut.png"><img loading="lazy" src="assets/gw_reach_no_0002/style_gpt_papercut.png" alt="gw_reach_no_0002 style_gpt_papercut"></a><figcaption>paper cut-out · gpt-image</figcaption></figure>
+<figure><a href="assets/gw_reach_no_0002/style_blueprint.png"><img loading="lazy" src="assets/gw_reach_no_0002/style_blueprint.png" alt="gw_reach_no_0002 style_blueprint"></a><figcaption>blueprint · renderer</figcaption></figure>
+<figure><a href="assets/gw_reach_no_0002/style_pencil.png"><img loading="lazy" src="assets/gw_reach_no_0002/style_pencil.png" alt="gw_reach_no_0002 style_pencil"></a><figcaption>pencil · renderer</figcaption></figure></div>
+  <details><summary>story voice</summary><div class="voice story"><p><span class="dom">[domain: city-roads]</span></p>
+<p>There is a one-way road from city D to city B. There is a one-way road from city E to city A. There is a one-way road from city D to city A. There is a one-way road from city F to city C. There is a one-way road from city C to city E. There is a one-way road from city A to city B. There is a one-way road from city E to city D. There is a one-way road from city E to city C.</p>
+<p>Question: A traveler starts in city A. Can they reach city F by following the roads?</p>
+<p><span class="dom">[domain: messaging]</span></p>
+<p>User A can forward messages to user B. User E can forward messages to user C. User D can forward messages to user B. User E can forward messages to user D. User F can forward messages to user C. User C can forward messages to user E. User E can forward messages to user A. User D can forward messages to user A.</p>
+<p>Question: A message originates with user A. Can it eventually reach user F?</p></div></details>
+  <details><summary>mathematics voice</summary><div class="voice mathv"><p>Node set $V = \{A, B, C, D, E, F\}$, edge set
+$$E = \{(A,B), (C,E), (D,A), (D,B), (E,A), (E,C), (E,D), (F,C)\}.$$
+Adjacency matrix (rows/columns ordered $A, B, C, D, E, F$):
+$$M = \begin{bmatrix}
+0 &amp; 1 &amp; 0 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 1 &amp; 0 \\
+1 &amp; 1 &amp; 0 &amp; 0 &amp; 0 &amp; 0 \\
+1 &amp; 0 &amp; 1 &amp; 1 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 1 &amp; 0 &amp; 0 &amp; 0
+\end{bmatrix}.$$</p>
+<p><b>Question.</b> Does there exist $k \ge 1$ with $(M^k)_{A,F} &gt; 0$?</p>
+<p><b>Solution.</b> No; $(M^k)_{A,F} = 0$ for all $k \ge 1$ (no directed path from $A$ to $F$).</p></div></details>
+  <details><summary>program voice (self-checking)</summary><div class="voice"><pre>"""GEB benchmark — program voice. sample: gw_reach_no_0002 (graph_world / reachability)"""
+
+from collections import deque
+
+GRAPH = {
+    "A": ['B'],
+    "B": [],
+    "C": ['E'],
+    "D": ['A', 'B'],
+    "E": ['A', 'C', 'D'],
+    "F": ['C'],
+}
+
+SOURCE, TARGET = 'A', 'F'
+EXPECTED = False
+
+
+def reachable(graph, start, target):
+    queue = deque([start])
+    seen = {start}
+    while queue:
+        node = queue.popleft()
+        if node == target:
+            return True
+        for nxt in graph.get(node, ()):
+            if nxt not in seen:
+                seen.add(nxt)
+                queue.append(nxt)
+    return False
+
+
+if __name__ == "__main__":
+    result = reachable(GRAPH, SOURCE, TARGET)
+    assert result == EXPECTED, (result, EXPECTED)
+    print(f"reachable({SOURCE} -&gt; {TARGET}) = {result}  [matches schema]")
+</pre></div></details>
+  <details><summary>drawing-program voice</summary><div class="voice"><pre>{
+  "canvas": {
+    "width": 768,
+    "height": 512
+  },
+  "nodes": [
+    {
+      "id": "E",
+      "x": 384.0,
+      "y": 66.0,
+      "shape": "circle",
+      "role": "ordinary"
+    },
+    {
+      "id": "D",
+      "x": 548.5,
+      "y": 161.0,
+      "shape": "circle",
+      "role": "ordinary"
+    },
+    {
+      "id": "B",
+      "x": 548.5,
+      "y": 351.0,
+      "shape": "circle",
+      "role": "ordinary"
+    },
+    {
+      "id": "A",
+      "x": 384.0,
+      "y": 446.0,
+      "shape": "circle",
+      "role": "start"
+    },
+    {
+      "id": "C",
+      "x": 219.5,
+      "y": 351.0,
+      "shape": "circle",
+      "role": "ordinary"
+    },
+    {
+      "id": "F",
+      "x": 219.5,
+      "y": 161.0,
+      "shape": "circle",
+      "role": "goal"
+    }
+  ],
+  "edges": [
+    {
+      "source": "A",
+      "target": "B",
+      "directed": true
+    },
+    {
+      "source": "C",
+      "target": "E",
+      "directed": true
+    },
+    {
+      "source": "D",
+      "target": "A",
+      "directed": true
+    },
+    {
+      "source": "D",
+      "target": "B",
+      "directed": true
+    },
+    {
+      "source": "E",
+      "target": "A",
+      "directed": true
+    },
+    {
+      "source": "E",
+      "target": "C",
+      "directed": true
+    },
+    {
+      "source": "E",
+      "target": "D",
+      "directed": true
+    },
+    {
+      "source": "F",
+      "target": "C",
+      "directed": true
+    }
+  ]
+}</pre></div></details>
+  <details><summary>latent schema (ground truth)</summary><div class="voice"><pre>{
+  "sample_id": "gw_reach_no_0002",
+  "family": "graph_world",
+  "task_type": "reachability",
+  "directed": true,
+  "nodes": [
+    {
+      "id": "A",
+      "role": "start"
+    },
+    {
+      "id": "B",
+      "role": "ordinary"
+    },
+    {
+      "id": "C",
+      "role": "ordinary"
+    },
+    {
+      "id": "D",
+      "role": "ordinary"
+    },
+    {
+      "id": "E",
+      "role": "ordinary"
+    },
+    {
+      "id": "F",
+      "role": "goal"
+    }
+  ],
+  "edges": [
+    [
+      "A",
+      "B"
+    ],
+    [
+      "C",
+      "E"
+    ],
+    [
+      "D",
+      "A"
+    ],
+    [
+      "D",
+      "B"
+    ],
+    [
+      "E",
+      "A"
+    ],
+    [
+      "E",
+      "C"
+    ],
+    [
+      "E",
+      "D"
+    ],
+    [
+      "F",
+      "C"
+    ]
+  ],
+  "query": {
+    "source": "A",
+    "target": "F"
+  },
+  "answer": {
+    "reachable": false,
+    "witness_path": null
+  },
+  "structural_properties": {
+    "num_nodes": 6,
+    "num_edges": 8,
+    "has_cycle": true
+  }
+}</pre></div></details>
+</section>
+
+<section class="sample" id="gw_reach_yes_0001">
+  <h2><span class="fam-badge">Graph Worlds</span>gw_reach_yes_0001</h2>
+  <p class="qa">reachability: A &rarr; F ? &nbsp;·&nbsp; answer: <b>yes — A → B → C → F</b></p>
+  <div class="strip"><figure><a href="assets/gw_reach_yes_0001/canonical.png"><img loading="lazy" src="assets/gw_reach_yes_0001/canonical.png" alt="gw_reach_yes_0001 canonical"></a><figcaption>canonical</figcaption></figure>
+<figure><a href="assets/gw_reach_yes_0001/style_gpt_chalkboard.png"><img loading="lazy" src="assets/gw_reach_yes_0001/style_gpt_chalkboard.png" alt="gw_reach_yes_0001 style_gpt_chalkboard"></a><figcaption>chalkboard · gpt-image</figcaption></figure>
+<figure><a href="assets/gw_reach_yes_0001/style_gpt_papercut.png"><img loading="lazy" src="assets/gw_reach_yes_0001/style_gpt_papercut.png" alt="gw_reach_yes_0001 style_gpt_papercut"></a><figcaption>paper cut-out · gpt-image</figcaption></figure>
+<figure><a href="assets/gw_reach_yes_0001/style_blueprint.png"><img loading="lazy" src="assets/gw_reach_yes_0001/style_blueprint.png" alt="gw_reach_yes_0001 style_blueprint"></a><figcaption>blueprint · renderer</figcaption></figure>
+<figure><a href="assets/gw_reach_yes_0001/style_pencil.png"><img loading="lazy" src="assets/gw_reach_yes_0001/style_pencil.png" alt="gw_reach_yes_0001 style_pencil"></a><figcaption>pencil · renderer</figcaption></figure></div>
+  <details><summary>story voice</summary><div class="voice story"><p><span class="dom">[domain: city-roads]</span></p>
+<p>There is a one-way road from city A to city B. There is a one-way road from city C to city A. There is a one-way road from city B to city D. There is a one-way road from city D to city F. There is a one-way road from city E to city F. There is a one-way road from city B to city C. There is a one-way road from city C to city F. There is a one-way road from city F to city D.</p>
+<p>Question: A traveler starts in city A. Can they reach city F by following the roads?</p>
+<p><span class="dom">[domain: messaging]</span></p>
+<p>User C can forward messages to user F. User B can forward messages to user C. User B can forward messages to user D. User C can forward messages to user A. User E can forward messages to user F. User D can forward messages to user F. User A can forward messages to user B. User F can forward messages to user D.</p>
+<p>Question: A message originates with user A. Can it eventually reach user F?</p></div></details>
+  <details><summary>mathematics voice</summary><div class="voice mathv"><p>Node set $V = \{A, B, C, D, E, F\}$, edge set
+$$E = \{(A,B), (B,C), (B,D), (C,A), (C,F), (D,F), (E,F), (F,D)\}.$$
+Adjacency matrix (rows/columns ordered $A, B, C, D, E, F$):
+$$M = \begin{bmatrix}
+0 &amp; 1 &amp; 0 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 1 &amp; 1 &amp; 0 &amp; 0 \\
+1 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 1 \\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 1 \\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 1 \\
+0 &amp; 0 &amp; 0 &amp; 1 &amp; 0 &amp; 0
+\end{bmatrix}.$$</p>
+<p><b>Question.</b> Does there exist $k \ge 1$ with $(M^k)_{A,F} &gt; 0$?</p>
+<p><b>Solution.</b> Yes; the minimal such $k$ is $3$, witnessed by
+$$A \to B \to C \to F.$$</p></div></details>
+  <details><summary>program voice (self-checking)</summary><div class="voice"><pre>"""GEB benchmark — program voice. sample: gw_reach_yes_0001 (graph_world / reachability)"""
+
+from collections import deque
+
+GRAPH = {
+    "A": ['B'],
+    "B": ['C', 'D'],
+    "C": ['A', 'F'],
+    "D": ['F'],
+    "E": ['F'],
+    "F": ['D'],
+}
+
+SOURCE, TARGET = 'A', 'F'
+EXPECTED = True
+
+
+def reachable(graph, start, target):
+    queue = deque([start])
+    seen = {start}
+    while queue:
+        node = queue.popleft()
+        if node == target:
+            return True
+        for nxt in graph.get(node, ()):
+            if nxt not in seen:
+                seen.add(nxt)
+                queue.append(nxt)
+    return False
+
+
+if __name__ == "__main__":
+    result = reachable(GRAPH, SOURCE, TARGET)
+    assert result == EXPECTED, (result, EXPECTED)
+    print(f"reachable({SOURCE} -&gt; {TARGET}) = {result}  [matches schema]")
+</pre></div></details>
+  <details><summary>drawing-program voice</summary><div class="voice"><pre>{
+  "canvas": {
+    "width": 768,
+    "height": 512
+  },
+  "nodes": [
+    {
+      "id": "F",
+      "x": 384.0,
+      "y": 66.0,
+      "shape": "circle",
+      "role": "goal"
+    },
+    {
+      "id": "B",
+      "x": 548.5,
+      "y": 161.0,
+      "shape": "circle",
+      "role": "ordinary"
+    },
+    {
+      "id": "C",
+      "x": 548.5,
+      "y": 351.0,
+      "shape": "circle",
+      "role": "ordinary"
+    },
+    {
+      "id": "A",
+      "x": 384.0,
+      "y": 446.0,
+      "shape": "circle",
+      "role": "start"
+    },
+    {
+      "id": "E",
+      "x": 219.5,
+      "y": 351.0,
+      "shape": "circle",
+      "role": "ordinary"
+    },
+    {
+      "id": "D",
+      "x": 219.5,
+      "y": 161.0,
+      "shape": "circle",
+      "role": "ordinary"
+    }
+  ],
+  "edges": [
+    {
+      "source": "A",
+      "target": "B",
+      "directed": true
+    },
+    {
+      "source": "B",
+      "target": "C",
+      "directed": true
+    },
+    {
+      "source": "B",
+      "target": "D",
+      "directed": true
+    },
+    {
+      "source": "C",
+      "target": "A",
+      "directed": true
+    },
+    {
+      "source": "C",
+      "target": "F",
+      "directed": true
+    },
+    {
+      "source": "D",
+      "target": "F",
+      "directed": true
+    },
+    {
+      "source": "E",
+      "target": "F",
+      "directed": true
+    },
+    {
+      "source": "F",
+      "target": "D",
+      "directed": true
+    }
+  ]
+}</pre></div></details>
+  <details><summary>latent schema (ground truth)</summary><div class="voice"><pre>{
+  "sample_id": "gw_reach_yes_0001",
+  "family": "graph_world",
+  "task_type": "reachability",
+  "directed": true,
+  "nodes": [
+    {
+      "id": "A",
+      "role": "start"
+    },
+    {
+      "id": "B",
+      "role": "ordinary"
+    },
+    {
+      "id": "C",
+      "role": "ordinary"
+    },
+    {
+      "id": "D",
+      "role": "ordinary"
+    },
+    {
+      "id": "E",
+      "role": "ordinary"
+    },
+    {
+      "id": "F",
+      "role": "goal"
+    }
+  ],
+  "edges": [
+    [
+      "A",
+      "B"
+    ],
+    [
+      "B",
+      "C"
+    ],
+    [
+      "B",
+      "D"
+    ],
+    [
+      "C",
+      "A"
+    ],
+    [
+      "C",
+      "F"
+    ],
+    [
+      "D",
+      "F"
+    ],
+    [
+      "E",
+      "F"
+    ],
+    [
+      "F",
+      "D"
+    ]
+  ],
+  "query": {
+    "source": "A",
+    "target": "F"
+  },
+  "answer": {
+    "reachable": true,
+    "witness_path": [
+      "A",
+      "B",
+      "C",
+      "F"
+    ]
+  },
+  "structural_properties": {
+    "num_nodes": 6,
+    "num_edges": 8,
+    "has_cycle": true
+  }
+}</pre></div></details>
+</section>
+
+<section class="sample" id="rg_btree_0004">
+  <h2><span class="fam-badge">Recursive Gardens</span>rg_btree_0004</h2>
+  <p class="qa">leaf count after depth-4 binary recursion? &nbsp;·&nbsp; answer: <b>16</b></p>
+  <div class="strip"><figure><a href="assets/rg_btree_0004/canonical.png"><img loading="lazy" src="assets/rg_btree_0004/canonical.png" alt="rg_btree_0004 canonical"></a><figcaption>canonical</figcaption></figure>
+<figure><a href="assets/rg_btree_0004/style_gpt_botanical_ink.png"><img loading="lazy" src="assets/rg_btree_0004/style_gpt_botanical_ink.png" alt="rg_btree_0004 style_gpt_botanical_ink"></a><figcaption>botanical ink · gpt-image</figcaption></figure>
+<figure><a href="assets/rg_btree_0004/style_gpt_woodcut.png"><img loading="lazy" src="assets/rg_btree_0004/style_gpt_woodcut.png" alt="rg_btree_0004 style_gpt_woodcut"></a><figcaption>woodcut · gpt-image</figcaption></figure>
+<figure><a href="assets/rg_btree_0004/style_blueprint.png"><img loading="lazy" src="assets/rg_btree_0004/style_blueprint.png" alt="rg_btree_0004 style_blueprint"></a><figcaption>blueprint · renderer</figcaption></figure>
+<figure><a href="assets/rg_btree_0004/style_pencil.png"><img loading="lazy" src="assets/rg_btree_0004/style_pencil.png" alt="rg_btree_0004 style_pencil"></a><figcaption>pencil · renderer</figcaption></figure></div>
+  <details><summary>story voice</summary><div class="voice story"><p><span class="dom">[domain: plant-growth]</span></p>
+<p>A plant begins as a single stem. Each season, every growing tip sprouts exactly two new shoots — one angled to the left and one to the right — each shorter than the branch it grew from. This repeats for 4 seasons.</p>
+<p>Question: after 4 seasons, how many growing tips does the plant have?</p>
+<p><span class="dom">[domain: task-decomposition]</span></p>
+<p>A project starts as one task. Every task that is still too large is split into exactly two smaller subtasks, and the splitting is applied again to each new subtask, 4 times in total.</p>
+<p>Question: after 4 rounds of splitting, how many smallest-level subtasks exist?</p></div></details>
+  <details><summary>mathematics voice</summary><div class="voice mathv"><p>Recursive definition:
+$$T_0 = \operatorname{Leaf}, \qquad T_d = \operatorname{Node}(T_{d-1}, T_{d-1}).$$
+Leaf count: $L_d = 2^d$. Total node count: $N_d = 2^{d+1} - 1$.
+Branch length recurrence with ratio $r = 0.62$: $\ell_{d+1} = r\,\ell_d$.</p>
+<p><b>Question.</b> $L_{4} = ?$</p>
+<p><b>Solution.</b> $L_{4} = 2^{4} = 16$ (and $N_{4} = 31$).</p></div></details>
+  <details><summary>program voice (self-checking)</summary><div class="voice"><pre>"""GEB benchmark — program voice. sample: rg_btree_0004 (recursive_garden / binary_tree)"""
+
+from dataclasses import dataclass
+
+DEPTH = 4
+EXPECTED_LEAVES = 16
+
+
+@dataclass
+class Node:
+    left: "Node | None" = None
+    right: "Node | None" = None
+
+
+def build_tree(depth: int) -&gt; Node:
+    if depth == 0:
+        return Node()
+    return Node(left=build_tree(depth - 1), right=build_tree(depth - 1))
+
+
+def count_leaves(node: Node) -&gt; int:
+    if node.left is None and node.right is None:
+        return 1
+    return count_leaves(node.left) + count_leaves(node.right)
+
+
+if __name__ == "__main__":
+    result = count_leaves(build_tree(DEPTH))
+    assert result == EXPECTED_LEAVES, (result, EXPECTED_LEAVES)
+    print(f"leaf_count(depth={DEPTH}) = {result}  [matches schema]")
+</pre></div></details>
+  <details><summary>drawing-program voice</summary><div class="voice"><pre>{
+  "primitive": "branch",
+  "root": {
+    "x": 384.0,
+    "y": 482,
+    "angle": -90,
+    "length": 175
+  },
+  "recursion": {
+    "depth": 4,
+    "children": [
+      {
+        "angle_delta": -34,
+        "scale": 0.62
+      },
+      {
+        "angle_delta": 34,
+        "scale": 0.62
+      }
+    ]
+  }
+}</pre></div></details>
+  <details><summary>latent schema (ground truth)</summary><div class="voice"><pre>{
+  "sample_id": "rg_btree_0004",
+  "family": "recursive_garden",
+  "task_type": "binary_tree",
+  "depth": 4,
+  "branching_factor": 2,
+  "parameters": {
+    "angle": 34,
+    "scale_ratio": 0.62,
+    "initial_length": 175
+  },
+  "query": {
+    "property": "leaf_count"
+  },
+  "answer": {
+    "leaf_count": 16
+  },
+  "structural_properties": {
+    "recursion_depth": 4,
+    "branching_factor": 2,
+    "leaf_count": 16,
+    "node_count": 31,
+    "self_similar": true,
+    "bilateral_symmetry": true
+  }
+}</pre></div></details>
+</section>
+
+<section class="sample" id="sym_c4_0005">
+  <h2><span class="fam-badge">Symmetry Labs</span>sym_c4_0005</h2>
+  <p class="qa">order of the rotation acting on the asymmetric shape? &nbsp;·&nbsp; answer: <b>C4 (order 4)</b></p>
+  <div class="strip"><figure><a href="assets/sym_c4_0005/canonical.png"><img loading="lazy" src="assets/sym_c4_0005/canonical.png" alt="sym_c4_0005 canonical"></a><figcaption>canonical</figcaption></figure>
+<figure><a href="assets/sym_c4_0005/style_gpt_ceramic_tile.png"><img loading="lazy" src="assets/sym_c4_0005/style_gpt_ceramic_tile.png" alt="sym_c4_0005 style_gpt_ceramic_tile"></a><figcaption>ceramic tile · gpt-image</figcaption></figure>
+<figure><a href="assets/sym_c4_0005/style_gpt_neon_sign.png"><img loading="lazy" src="assets/sym_c4_0005/style_gpt_neon_sign.png" alt="sym_c4_0005 style_gpt_neon_sign"></a><figcaption>neon sign · gpt-image</figcaption></figure>
+<figure><a href="assets/sym_c4_0005/style_blueprint.png"><img loading="lazy" src="assets/sym_c4_0005/style_blueprint.png" alt="sym_c4_0005 style_blueprint"></a><figcaption>blueprint · renderer</figcaption></figure>
+<figure><a href="assets/sym_c4_0005/style_pencil.png"><img loading="lazy" src="assets/sym_c4_0005/style_pencil.png" alt="sym_c4_0005 style_pencil"></a><figcaption>pencil · renderer</figcaption></figure></div>
+  <details><summary>story voice</summary><div class="voice story"><p><span class="dom">[domain: mechanism]</span></p>
+<p>A mechanical pointer is mounted on a central pivot. Each activation of the mechanism turns the pointer by exactly 90 degrees about the pivot, and the pointer itself is a rigid asymmetric piece.</p>
+<p>Question: what is the smallest number of activations after which the pointer returns exactly to its original position and orientation?</p>
+<p><span class="dom">[domain: dance]</span></p>
+<p>Four dancers stand around the center of a stage. Every beat, the whole formation rotates by one step of 90 degrees about the stage center, keeping each dancer's pose fixed relative to the formation.</p>
+<p>Question: what is the smallest number of beats after which the formation is exactly back to its starting configuration?</p></div></details>
+  <details><summary>mathematics voice</summary><div class="voice mathv"><p>Rotation matrix:
+$$R_\theta = \begin{bmatrix}\cos\theta &amp; -\sin\theta\\ \sin\theta &amp; \cos\theta\end{bmatrix}, \qquad \theta = \frac{2\pi}{4}.$$
+<b>Question.</b> What is the order of $R_\theta$ in $SO(2)$, i.e. the smallest $k \ge 1$ with $R_\theta^k = I$?</p>
+<p><b>Solution.</b> $R_\theta^{4} = I$ and $R_\theta^k \ne I$ for $1 \le k &lt; 4$, so the order is $4$; the orbit of the (asymmetric) base shape has exactly $4$ elements and generates the cyclic group $C_{4}$.</p></div></details>
+  <details><summary>program voice (self-checking)</summary><div class="voice"><pre>"""GEB benchmark — program voice. sample: sym_c4_0005 (symmetry_lab / rotation_order)"""
+
+import math
+
+POINTS = [(0, 0), (2, 0), (2, -1), (4, 1), (2, 3), (2, 2), (0, 2)]
+ANGLE_DEG = 90.0
+EXPECTED_ORDER = 4
+
+
+def rotate(points, angle_deg, center=(0.0, 0.0)):
+    a = math.radians(angle_deg)
+    ca, sa = math.cos(a), math.sin(a)
+    cx, cy = center
+    return [(cx + ca * (x - cx) - sa * (y - cy),
+             cy + sa * (x - cx) + ca * (y - cy)) for x, y in points]
+
+
+def close(ps, qs, tol=1e-9):
+    return all(abs(px - qx) &lt; tol and abs(py - qy) &lt; tol
+               for (px, py), (qx, qy) in zip(ps, qs))
+
+
+def rotation_order(points, angle_deg, max_k=360):
+    pts = points
+    for k in range(1, max_k + 1):
+        pts = rotate(pts, angle_deg)
+        if close(pts, points):
+            return k
+    raise ValueError("no finite order found")
+
+
+if __name__ == "__main__":
+    result = rotation_order(POINTS, ANGLE_DEG)
+    assert result == EXPECTED_ORDER, (result, EXPECTED_ORDER)
+    print(f"rotation_order(angle={ANGLE_DEG}) = {result}  [matches schema]")
+</pre></div></details>
+  <details><summary>drawing-program voice</summary><div class="voice"><pre>{
+  "base_primitive": {
+    "type": "polygon",
+    "points": [
+      [
+        0,
+        0
+      ],
+      [
+        2,
+        0
+      ],
+      [
+        2,
+        -1
+      ],
+      [
+        4,
+        1
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        2,
+        2
+      ],
+      [
+        0,
+        2
+      ]
+    ]
+  },
+  "transform_set": [
+    {
+      "type": "rotate",
+      "angle": 0
+    },
+    {
+      "type": "rotate",
+      "angle": 90
+    },
+    {
+      "type": "rotate",
+      "angle": 180
+    },
+    {
+      "type": "rotate",
+      "angle": 270
+    }
+  ],
+  "composition": "union",
+  "canvas_center": [
+    384,
+    384
+  ]
+}</pre></div></details>
+  <details><summary>latent schema (ground truth)</summary><div class="voice"><pre>{
+  "sample_id": "sym_c4_0005",
+  "family": "symmetry_lab",
+  "task_type": "rotation_order",
+  "base_shape": {
+    "type": "asymmetric_arrow",
+    "points": [
+      [
+        0,
+        0
+      ],
+      [
+        2,
+        0
+      ],
+      [
+        2,
+        -1
+      ],
+      [
+        4,
+        1
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        2,
+        2
+      ],
+      [
+        0,
+        2
+      ]
+    ]
+  },
+  "group_action": {
+    "type": "rotation",
+    "angle_degrees": 90,
+    "center": [
+      0,
+      0
+    ]
+  },
+  "repetitions": 4,
+  "query": {
+    "property": "rotation_order"
+  },
+  "answer": {
+    "rotation_order": 4
+  },
+  "structural_properties": {
+    "rotation_order": 4,
+    "reflection_symmetric": false,
+    "chirality_preserved": true
+  }
+}</pre></div></details>
+</section>
+
+<footer>GEB Benchmark · One Structure, Six Voices · examples v0 ·
+  images: deterministic SVG renderer + gpt-image stylization</footer>
+</div>
+</body>
+</html>
