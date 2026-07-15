@@ -1,102 +1,162 @@
 [
   {
-    "title": "汤雾油纸",
-    "domain": "馄饨摊",
-    "story_zh": "从前槐桥边有个馄饨摊，阿桂掀开热锅，汤雾里浮着一张油纸，纸上慢慢现出这些话：从前槐桥边有个馄饨摊，阿桂掀开热锅，汤雾里浮着一张油纸，纸上慢慢现出这些话……",
-    "story_en": "Long ago by Willow Bridge stood Gui’s wonton stall. When she lifted the steaming lid, a slip of oiled paper rose in the broth. On it, soft as mist, were these words: Long ago by Willow Bridge stood Gui’s wonton stall. When she lifted the steaming lid...",
-    "why_shape": "故事在情节中让自身开头原样出现在自身内部，并以省略保持无底层的不动点形态。",
+    "title": "蓝布纸灯",
+    "domain": "染坊",
+    "story_zh": "水桥镇有个蓝布染坊，阿柳夜里守缸。风吹来一盏纸灯，灯面湿亮，写着水桥镇有个蓝布染坊，阿柳夜里守缸。风吹来一盏纸灯，灯面湿亮，写着这篇小故事。阿柳不敢吹灭，只把灯挂在梁上，天亮还微微发蓝。",
+    "story_en": "In Waterbridge town stood a blue-dye house. A-Liu watched the vats at night. The wind brought a paper lantern, damp and shining. On its side was written this very tale. A-Liu did not dare snuff it out. He hung it from the beam, and by dawn it was still glowing blue.",
+    "why_shape": "故事中的纸灯内容被设定为故事本身，形成 s = T(s) 的不动点形态。",
     "motif_id": "self_reference",
-    "equation": "s = T(s)（f(x)=x，不动点）",
-    "model": "gpt-5.5"
+    "equation": "s = T(s)（不动点）",
+    "model": "gpt-5.5",
+    "judge": {
+      "motif_id": "self_reference",
+      "loops_back": true,
+      "model": "gpt-5.2",
+      "passed": true
+    }
   },
   {
-    "title": "槐花蓝被",
-    "domain": "绣被",
-    "story_zh": "槐花镇的阿婆有床蓝布被，白线绣着小镇。镇口也有个阿婆，晒着蓝布被，白线也绣着小镇。再看那被上的镇口，阿婆又在晒被。风吹槐花落，孩子越听越近，近到被角里，仍见槐花镇，仍见阿婆晒被。",
-    "story_en": "In Locust-Bloom Town, Granny Luo kept a blue quilt. In white thread it held the town. At its gate, another granny shook out a blue quilt, and that quilt held the town as well. Look closer at its little gate: there she is again, shaking the quilt. Blossoms drift. The child leans in, and in the corner finds the town, the granny, the quilt.",
-    "why_shape": "整体是一床绣着小镇的被，任取被上小镇的一处又含有同样的被与小镇，呈自相似递归结构。",
+    "title": "糖树春灯",
+    "domain": "糖画",
+    "story_zh": "腊月里，阿槐在灶前熬糖。铜勺一抖，糖线落在石板上，成了一棵亮晶晶的糖树。每根枝上又托着小糖树，小糖树的枝头还生着更小的糖树。孩子们围着看，灯火一照，满板都是甜香的春天。",
+    "story_en": "In the last cold days of the year, Old Huai boiled sugar by the stove. He tipped his brass spoon, and a shining tree ran out across the stone. On each bough stood a smaller sugar tree, and on those boughs grew smaller ones still. The children bent close. In the lamplight, the whole board smelled of spring.",
+    "why_shape": "整体糖树由若干同形的小糖树组成，每个小糖树又由更小的同形部分构成，体现 T = Node(T, …, T)。",
     "motif_id": "recursion",
     "equation": "T = Node(T, …, T)",
-    "model": "gpt-5.5"
+    "model": "gpt-5.5",
+    "judge": {
+      "motif_id": "recursion",
+      "loops_back": false,
+      "model": "gpt-5.2",
+      "passed": true
+    }
   },
   {
-    "title": "青布笸箩",
-    "domain": "针线活",
-    "story_zh": "清河岸边，阿桃有只旧针线笸箩。掀开青布，里头卧着个小笸箩，也盖青布。再掀开，仍有针香、碎线、杏核扣，和个更小的笸箩。阿桃笑着把手伸去，青布轻轻一翻，清河岸边，阿桃有只旧针线笸箩。",
-    "story_en": "By the clear river, A-Tao kept an old sewing basket. Under the blue cloth slept a little basket, blue-clothed too. She lifted that cloth and found the smell of thread, loose ends, an apricot-stone button, and a smaller basket. When her fingers turned its cloth, by the clear river, A-Tao kept an old sewing basket.",
-    "why_shape": "故事通过每次掀开笸箩都出现同一情景的缩小版，并在结尾回到开头，体现缩放不变的自指结构。",
+    "title": "酱缸灯",
+    "domain": "酱缸",
+    "story_zh": "青瓦镇的阿满替娘看酱缸。夜里缸盖轻响，他揭开一看，酱香里立着一只小酱缸，黑亮亮，连缺口也像家里那只。他弯腰钻进缸口，又见更小的缸，温温地冒着豆香。阿满不怕，只把袖里的盐撒下去，最深处便亮起一盏芝麻油灯，照见一碗热饭。",
+    "story_en": "In Qingwa, young Aman watched his mother's bean crock. That night the lid gave a soft knock. He lifted it, and in the warm smell stood a little crock, dark and glossy, with the same chipped lip. Aman bent and slipped inside. There waited a smaller crock, breathing bean-sweet steam. He scattered the salt from his sleeve, and far within, a sesame-oil lamp woke beside a bowl of hot rice.",
+    "why_shape": "通过打开并进入酱缸，内部出现缩小的同类酱缸，体现缩放不变的嵌套容器形。",
     "motif_id": "nesting",
     "equation": "S_λ(X) = X（缩放不变）",
-    "model": "gpt-5.5"
+    "model": "gpt-5.5",
+    "judge": {
+      "motif_id": "nesting",
+      "loops_back": false,
+      "model": "gpt-5.2",
+      "passed": true
+    }
   },
   {
-    "title": "老面馒头",
-    "domain": "面食",
-    "story_zh": "槐树院里，姜婆婆蒸馒头。小满问：香味从哪来？婆婆说，从面里来。面从哪来？从碗底那团老面来。老面从哪来？从上回馒头上掐下的面来。馒头一出锅，小满又闻着问：香味从哪来？",
-    "story_en": "In the yard by the locust tree, Granny Jiang steamed buns. Little Man asked, “Where does that sweet smell come from?” “From the dough,” said Granny. “And the dough?” “From the bit of old dough in the bowl.” “And that?” “From a pinch saved from the last bun.” When the buns came out warm, Little Man sniffed and asked again, “Where does that sweet smell come from?”",
-    "why_shape": "故事沿因果追问从馒头到老面再回到馒头，首尾同问，体现自指回到起点且没有第一个。",
+    "title": "青缸蓝布",
+    "domain": "染布",
+    "story_zh": "青石镇有个染匠阿柳，缸里的蓝水总不败。要养蓝水，得添灶灰水；灶灰水要烧干草才香；干草又爱裹着旧蓝布引火，布上落的蓝，正是那缸里染出的。阿柳不问头，只在晨雾里翻布，满院像落了晴天。",
+    "story_en": "In Greenstone town, Willow the dyer kept a vat that never lost its blue. To feed it, she poured in ash water. For good ash, she burned sweet dry grass. The grass caught best when wrapped in scraps of old blue cloth, and those scraps had taken their color from the very vat. Willow never asked what came first. At dawn she lifted the cloth, and the yard looked full of sky.",
+    "why_shape": "靛缸的蓝来自灰水，灰水来自烧草，烧草靠旧蓝布引火，旧蓝布又来自靛缸染成，形成因果闭环。",
     "motif_id": "cycle",
     "equation": "v ⇝ v（回到起点）",
-    "model": "gpt-5.5"
+    "model": "gpt-5.5",
+    "judge": {
+      "motif_id": "cycle",
+      "loops_back": false,
+      "model": "gpt-5.2",
+      "passed": true
+    }
   },
   {
-    "title": "柳湾织声",
-    "domain": "织布",
-    "story_zh": "柳湾有张老织床，阿槐在这头推梭，阿柳在那头迎梭。阿槐把红线送进晨光，阿柳把红线送回暮色。床儿咿呀，姑娘们都笑：布上讲的，正是这头送去、那头送回的老织床。",
-    "story_en": "In Willow Bend stood an old loom. Ahuai pushed the shuttle from this end, Aliu caught it from that end. Ahuai sent the red thread into morning; Aliu sent it back into dusk. The loom creaked, and the girls laughed, for the cloth was telling of that same old loom: sent from here, returned from there.",
-    "why_shape": "故事用成对反向动作构成镜像不变，并让布中所讲回到正在发生的织布场景。",
+    "title": "盐田月亮",
+    "domain": "晒盐",
+    "story_zh": "白沙滩的盐田醒得早。阿水站在岸边，阿青站在潮边。日头一升，阿水把盐花往海那头推，阿青把盐花往岸这头推；阿水收起弯耙，阿青也收起弯耙。中间的白埂慢慢鼓起，像月亮落在田里。晚风来时，满村的汤都有了味。",
+    "story_en": "The salt pans of White Sand woke before the gulls. Ashui stood by the bank, Aqing by the tide. When the sun lifted, Ashui pushed the young salt seaward, and Aqing drew the young salt shoreward. Their bent rakes rose together. Along the middle ridge the whiteness swelled, round and quiet as a fallen moon. By dusk, every pot in the village had its savor.",
+    "why_shape": "两侧人物同时做相同劳动但方向相反，合在中央生成完整盐埂，体现镜像不变。",
     "motif_id": "symmetry",
     "equation": "σ(x) = x（镜像不变）",
-    "model": "gpt-5.5"
+    "model": "gpt-5.5",
+    "judge": {
+      "motif_id": "symmetry",
+      "loops_back": false,
+      "model": "gpt-5.2",
+      "passed": true
+    }
   },
   {
-    "title": "柳湾木牌",
-    "domain": "染坊",
-    "story_zh": "柳湾有间染坊，门前木牌青面朝外。阿绣见了，就把白布浸进蓝缸；到晚，小徒弟翻牌，白面朝外，她便把青布铺在露水里。露水慢慢洗成白布。鸡叫时，小徒弟又翻牌，门前木牌青面朝外。阿绣见了，就把白布浸进蓝缸。",
-    "story_en": "In Willow Bend there was a dye shed, and its wooden sign showed the blue side. When A-Xiu saw it, she dipped white cloth in the vat. At dusk her young helper turned the sign to the white side, and she laid the blue cloth in the dew. By cockcrow the dew had washed it pale. The helper turned the sign again, and the wooden sign showed the blue side. When A-Xiu saw it, she dipped white cloth in the vat.",
-    "why_shape": "翻牌使青/白状态互换，两次回到原状，叙述首尾相接体现 f∘f=id 的交替不变式。",
+    "title": "篱上葫芦",
+    "domain": "取水",
+    "story_zh": "栗木沟的春婆有只老葫芦瓢。太阳把它晒得轻响，她便拿去泉边舀水；泉水浸透了瓢，她又搁到篱上晒。干了能舀，湿了要晒。孩子们跑来跑去，喝完一瓢，还等篱上那只慢慢变轻。",
+    "story_en": "In Chestnut Hollow, Granny Chun kept an old gourd dipper. When the sun made it light and clacky, she carried it to the spring. After the spring soaked it heavy, she set it on the fence rail. Dry, it served water; wet, it took the sun. Dusty children came to drink, then watched the gourd grow light again.",
+    "why_shape": "干瓢经舀水变湿，湿瓢经日晒变干，两种状态互相引出，体现 f∘f = id 的交替。",
     "motif_id": "alternation",
-    "equation": "f∘f = id（交替/周期）",
-    "model": "gpt-5.5"
+    "equation": "f∘f = id（交替）",
+    "model": "gpt-5.5",
+    "judge": {
+      "motif_id": "alternation",
+      "loops_back": false,
+      "model": "gpt-5.2",
+      "passed": true
+    }
   },
   {
-    "title": "窑火绕碗",
-    "domain": "陶窑",
-    "story_zh": "清水镇有口老窑，窑心睡着红碗。窑匠阿槐每添把柴，火光就绕碗走远些，照到门、井、柳树和坡上的小屋。小屋里，阿槐的娃正捧着红碗，听爹说清水镇有口老窑。",
-    "story_en": "In Clearwater stood an old kiln, and in its warm heart slept a red bowl. Whenever Huai fed the fire, the glow went round the bowl and reached farther: the door, the well, the willow, the hut on the slope. In that hut, Huai's child held the red bowl and listened to his father begin, In Clearwater stood an old kiln.",
-    "why_shape": "叙事围着老窑与红碗回返，同时每次火光外扩到更远处，形成旋转×生长的自指形。",
+    "title": "槐边纸鸢",
+    "domain": "风筝",
+    "story_zh": "阿满给纸鸢放线，娘说，莫丢了老槐。他牵着麻线绕树走，风把他往外送。槐影每回拂到脸，脚下的草就深些，村声就轻些。纸鸢越升越稳，线像细路。黄昏，他还望得见老槐，却站在河湾边，看灯火顺水漂来。",
+    "story_en": "Aman set his paper kite into the wind. His mother said, Keep the old locust in sight. Holding the hemp string, he walked round the tree, and the wind eased him farther out. Each time the locust shadow brushed his cheek, the grass was deeper underfoot and the village sounded softer. By dusk the kite flew steady, the string like a thin path. Aman could still see the tree, but he stood by the river bend, watching lampglow drift on the water.",
+    "why_shape": "阿满围绕老槐旋转同时被风带向外，每次朝向相近时半径增大，呈旋转×生长的螺旋推进。",
     "motif_id": "spiral",
     "equation": "r = a·e^{bθ}（旋转×生长）",
-    "model": "gpt-5.5"
+    "model": "gpt-5.5",
+    "judge": {
+      "motif_id": "spiral",
+      "loops_back": false,
+      "model": "gpt-5.2",
+      "passed": true
+    }
   },
   {
-    "title": "百家甜粥",
-    "domain": "粥棚",
-    "story_zh": "腊月风硬，柳湾村口支起黑锅。杏花婶倒来黄米，铁匠李添上红豆，船娘阿蓼送来枣，放羊娃捧来山栗。锅里咕嘟咕嘟，香气把冷街捂热。后来，来的人不再报姓名，只把手里的小包倒进去。天黑时，热甜粥盛出，先给最晚归家的老更夫。",
-    "story_en": "In the hard winter wind, a black kettle steamed by the Liuwan gate. Aunt Xinghua poured in yellow millet, Blacksmith Li shook in red beans, Reed the boatwoman brought dates, and the shepherd boy emptied his cap of chestnuts. The pot murmured, and its smell warmed the cold street. After that, no one gave a name. Each opened a little bundle and tipped it in. At dusk, the sweet porridge was ladled first for Old Watchman Gu, last to come home.",
-    "why_shape": "叙述由多个独立来处逐句汇聚到同一口锅和同一碗粥，呈现 many→one 的汇聚结构。",
+    "title": "春鸢上天",
+    "domain": "纸鸢",
+    "story_zh": "溪边的青竹被老孟削成细篾，染坊的红绢晒足了日头，米铺的糯浆冒着甜气。它们本不相识，到了柳娘小院，都听她手指安排。篾弯成骨，绢贴上身，浆糊收住边，阿槐的线轻轻一牵，春风里升起一只红纸鸢。",
+    "story_en": "By the creek, green bamboo was shaved thin by old Meng. At the dye house, red silk warmed in the sun. In the rice shop, sweet paste steamed in a bowl. They had never known one another, yet all came to Madam Liu’s yard. Bamboo made the ribs, silk made the body, paste held the edges fast. Little Huai tugged the string, and a red kite climbed into the spring wind.",
+    "why_shape": "许多互不相识的材料从各处来，在小院汇聚并合成为一只纸鸢，体现 many → one。",
     "motif_id": "convergence",
     "equation": "many → one（汇聚）",
-    "model": "gpt-5.5"
+    "model": "gpt-5.5",
+    "judge": {
+      "motif_id": "convergence",
+      "loops_back": false,
+      "model": "gpt-5.2",
+      "passed": true
+    }
   },
   {
-    "title": "甜井酱香",
-    "domain": "酱园路",
-    "story_zh": "柳湾的路怪，卖鱼的从河埠来，挑布的往山集去，脚总会踩到桂嫂的酱园门前。门前有口甜井。桂嫂舀一瓢水，笑着讲旧话：柳湾的路怪，卖鱼的从河埠来……",
-    "story_en": "In Willow Bend, the lanes had a mind of their own. A fish seller came up from the pier, and a cloth peddler headed for the hill fair, yet both found their feet at Aunt Gui’s sauce yard. By the sweet well she handed them a dipper and began the old tale: In Willow Bend, the lanes had a mind of their own...",
-    "why_shape": "叙事中每个来去的行动和故事的再讲都汇到桂嫂酱园门前，体现所有路径必经一点的不变式。",
+    "title": "山口茶棚",
+    "domain": "山口茶棚",
+    "story_zh": "青岭有个窄山口，口边搭着阿桃的茶棚。赶盐的、送亲的、逃雨的，都在棚下歇脚，碗沿碰出轻响。阿桃不多问，只添热水。春去秋来，她认得各样鞋上的泥，也认得人脸上明暗。后来她老了，山风还替她把路人的话吹进屋里。",
+    "story_en": "At the narrow notch of Green Ridge, A-Tao kept a tea shed. Salt carriers, wedding guests, and travelers chased by rain all stopped beneath her reed roof, their bowls clicking softly. She asked little and filled them again. Season after season she learned the mud on every shoe and the weather on every face. When she grew old, the mountain wind still brought travelers' words to her door.",
+    "why_shape": "山路被窄山口收束，所有来去的人都经过阿桃的茶棚，使同一地点看尽众人。",
     "motif_id": "bottleneck",
     "equation": "所有路径必经一点",
-    "model": "gpt-5.5"
+    "model": "gpt-5.5",
+    "judge": {
+      "motif_id": "bottleneck",
+      "loops_back": false,
+      "model": "gpt-5.2",
+      "passed": true
+    }
   },
   {
-    "title": "白角青布",
-    "domain": "染坊",
-    "story_zh": "榕溪染坊晾布。青布挨青布，风来便点头；青布挨青布，月来便发亮。到阿蔓那匹，角上留着豆大的白。白角朝东，布竿也朝东；人沿布影走，走到河口，听见后头的青布在风里点头。",
-    "story_en": "At the dye yard by Willow Creek, blue cloth leaned against blue cloth. When wind came, they nodded; when moon came, they shone. Then came Ama’s length, with a bean-sized pale mark on its corner. That pale corner faced east, and so the poles faced east. Folks followed the cloth shadows to the river mouth, while the blue cloth behind them nodded in the wind.",
-    "why_shape": "故事用相同句式铺开规则场，再以白角这一异常打破不变式并给整体行动方向。",
+    "title": "歪石甜井",
+    "domain": "腌菜",
+    "story_zh": "柳湾家家腌菜，缸口都压青石，清早只闻酸香。阿满家的小缸偏不安分，夜里咕嘟冒泡，把石头顶歪。娘要换缸，阿满跟着泡声挖墙根，挖出一汪甜水。后来全村的菜更脆，孩子们都爱往那口井边跑。",
+    "story_en": "In Willow Bend, every pickle jar wore a flat green stone, and each morning the lanes smelled sharp and good. Only Aman’s little jar would not keep still. At night it bubbled and nudged its stone aside. His mother wanted a new jar, but Aman followed the sound to the wall and dug. Sweet water seeped up from the earth. After that, the village pickles snapped like fresh twigs, and the children played by the well.",
+    "why_shape": "在处处如常的腌菜规则场中，小缸的异常成为发现甜水的方向，推动故事发生。",
     "motif_id": "symmetry_breaking",
     "equation": "规则场中的一个异常",
-    "model": "gpt-5.5"
+    "model": "gpt-5.5",
+    "judge": {
+      "motif_id": "symmetry_breaking",
+      "loops_back": false,
+      "model": "gpt-5.2",
+      "passed": true
+    }
   }
 ]

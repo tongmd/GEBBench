@@ -15,9 +15,22 @@ from pathlib import Path
 
 ROOT = Path(__file__).parent
 MOTIFS_DIR = ROOT / "motifs"
+STORIES_FILE = ROOT / "data" / "stories_pilot.json"
 SITE = ROOT / "site"
 
 MOTIF_ORDER = ["self_reference", "recursion", "nesting", "cycle"]
+
+# story-first motifs: stories exist, skeletons/scenes not yet generated
+NEW_MOTIF_ORDER = ["symmetry", "alternation", "spiral",
+                   "convergence", "bottleneck", "symmetry_breaking"]
+NEW_MOTIF_NAMES = {
+    "symmetry": "Symmetry — two halves mirror each other",
+    "alternation": "Alternation — two states take turns",
+    "spiral": "Spiral — turning while growing",
+    "convergence": "Convergence — many become one",
+    "bottleneck": "Bottleneck — every path passes one point",
+    "symmetry_breaking": "Symmetry breaking — one exception gives direction",
+}
 
 SCENE_LABEL = {
     "mountain_temple": "山中庙 · ink wash",
@@ -85,6 +98,18 @@ PAGE = """<!DOCTYPE html>
   .motif-eq { font-size: 18px; margin: 4px 0 2px; }
   .invariant { color: var(--dim); font-style: italic; margin: 2px 0 16px; }
   .nuisance { font: 12px/1.6 Menlo, monospace; color: var(--dim); margin-top: 8px; }
+  .tale { border-left: 3px solid var(--accent); background: #fffdf9;
+          padding: 14px 20px; margin: 16px 0 6px; border-radius: 0 6px 6px 0; }
+  .tale .t-title { font-weight: bold; margin: 0 0 6px; }
+  .tale .t-domain { color: var(--dim); font: 12px/1 Menlo, monospace; font-weight: normal; }
+  .tale p.zh { margin: 6px 0; }
+  .tale p.en { margin: 6px 0; color: var(--dim); font-style: italic; font-size: 14.5px; }
+  .tale .t-why { font: 12px/1.6 Menlo, monospace; color: var(--dim); margin: 8px 0 0; }
+  .fam-badge.pending { background: var(--dim); }
+  .motif-eq.mono { font-family: "SF Mono", Menlo, monospace; font-size: 15px; }
+  h2.part { margin: 72px 0 -28px; font-size: 21px; color: var(--dim);
+            font-weight: normal; font-style: italic; border-bottom: 1px solid var(--line);
+            padding-bottom: 10px; }
   footer { margin-top: 88px; padding-top: 20px; border-top: 1px solid var(--line);
            color: var(--dim); font-size: 14px; }
   a { color: var(--accent); }
@@ -119,10 +144,27 @@ MOTIF_TPL = """<section class="sample" id="motif-@MID@">
   <p class="motif-eq">$$@EQ@$$</p>
   <p class="invariant">invariant: @INVARIANT@</p>
   <div class="strip">@FIGURES@</div>
+  @TALE@
   <details><summary>story voice — a tale with this shape</summary><div class="voice story">@STORY@</div></details>
   <details><summary>mathematics voice</summary><div class="voice mathv">@MATH@</div></details>
   <details><summary>motif schema</summary><div class="voice"><pre>@SCHEMA@</pre></div></details>
   <p class="nuisance">nuisance (deliberately varied, never scored): @NUISANCE@</p>
+</section>
+"""
+
+TALE_TPL = """<div class="tale">
+  <p class="t-title">《@TITLE@》 <span class="t-domain">@DOMAIN@ · @MODEL@@SCREEN@</span></p>
+  <p class="zh">@ZH@</p>
+  <p class="en">@EN@</p>
+  <p class="t-why">why this shape — @WHY@</p>
+</div>
+"""
+
+NEW_MOTIF_TPL = """<section class="sample" id="motif-@MID@">
+  <h2><span class="fam-badge pending">motif</span>@NAME@</h2>
+  <p class="motif-eq mono">@EQ@</p>
+  @TALE@
+  <p class="nuisance">scenes: pending — skeleton renderer + gpt-image next</p>
 </section>
 """
 
@@ -158,7 +200,44 @@ def math_html(md: str) -> str:
     return "\n".join(out)
 
 
-def build_motif(d: Path) -> str:
+def load_stories() -> dict:
+    if not STORIES_FILE.exists():
+        return {}
+    by_motif = {}
+    for s in json.loads(STORIES_FILE.read_text()):
+        by_motif.setdefault(s["motif_id"], []).append(s)
+    return by_motif
+
+
+def tale_html(story: dict) -> str:
+    j = story.get("judge")
+    screen = " · screened ✓" if j and j.get("passed") else ""
+    out = TALE_TPL
+    for k, v in {
+        "@TITLE@": esc(story.get("title", "")),
+        "@DOMAIN@": esc(story.get("domain", "")),
+        "@MODEL@": esc(story.get("model", "")),
+        "@SCREEN@": screen,
+        "@ZH@": esc(story.get("story_zh", "")),
+        "@EN@": esc(story.get("story_en", "")),
+        "@WHY@": esc(story.get("why_shape", "")),
+    }.items():
+        out = out.replace(k, v)
+    return out
+
+
+def build_new_motif(mid: str, stories: dict) -> str:
+    ss = stories.get(mid, [])
+    eq = ss[0].get("equation", "") if ss else ""
+    tale = "\n".join(tale_html(s) for s in ss)
+    out = NEW_MOTIF_TPL
+    for k, v in {"@MID@": mid, "@NAME@": esc(NEW_MOTIF_NAMES[mid]),
+                 "@EQ@": esc(eq), "@TALE@": tale}.items():
+        out = out.replace(k, v)
+    return out
+
+
+def build_motif(d: Path, stories: dict) -> str:
     schema = json.loads((d / "schema.json").read_text())
     mid = schema["motif_id"]
     assets = SITE / "assets" / f"motif_{mid}"
@@ -186,6 +265,7 @@ def build_motif(d: Path) -> str:
         "@EQ@": schema["equation"],
         "@INVARIANT@": esc(schema["invariant"]),
         "@FIGURES@": "\n".join(figures),
+        "@TALE@": "\n".join(tale_html(s) for s in stories.get(mid, [])),
         "@STORY@": story_html((d / "story.txt").read_text()),
         "@MATH@": math_html((d / "math.md").read_text()),
         "@SCHEMA@": esc(json.dumps(schema, indent=2, ensure_ascii=False)),
@@ -199,10 +279,19 @@ def main():
     if (SITE / "assets").exists():
         shutil.rmtree(SITE / "assets")
     SITE.mkdir(exist_ok=True)
-    motifs = [build_motif(MOTIFS_DIR / mid) for mid in MOTIF_ORDER
+    stories = load_stories()
+    motifs = [build_motif(MOTIFS_DIR / mid, stories) for mid in MOTIF_ORDER
               if (MOTIFS_DIR / mid / "schema.json").exists()]
+    new = [build_new_motif(mid, stories) for mid in NEW_MOTIF_ORDER
+           if stories.get(mid)]
+    if new:
+        motifs.append('<h2 class="part">New motifs — story voice first, '
+                      'scenes coming</h2>')
+        motifs.extend(new)
     (SITE / "index.html").write_text(PAGE.replace("@MOTIFS@", "\n".join(motifs)))
-    print(f"site/index.html built with {len(motifs)} motifs")
+    n_stories = sum(len(v) for v in stories.values())
+    print(f"site/index.html built with {len(motifs) - (1 if new else 0)} motif "
+          f"sections, {n_stories} stories")
 
 
 if __name__ == "__main__":
