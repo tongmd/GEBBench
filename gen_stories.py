@@ -1,21 +1,24 @@
 #!/usr/bin/env python3
-"""GEB benchmark — story-voice generation via yunwu API (gpt-5.5).
+"""GEB benchmark — story voice v2: GEB-style FORM DEVICES.
 
-One story per motif, 自然和谐: the story's shape IS the motif, told in a plain
-folk-tale voice, no structural vocabulary, no exact counting.
+v1 asked for stories vaguely "shaped like" a motif.  v2 is rigorous in the
+manner of GEB's dialogues (Crab Canon = palindrome, Little Harmonic
+Labyrinth = pushes never popped, Sloth Canon = one voice transformed):
+each motif has a verified 形式装置 (story_form_device) in
+data/motif_library.json — a formal constraint on the TELLING that a blind
+reader can verify mechanically.  The story must satisfy its device.
 
-Guardrails learned from the first pilot:
-- the writing prompt contains NO example story (an example's narrative devices
-  leak into every motif — the first pilot ended 5/10 stories with a verbatim
-  reprise of their own opening, contaminating labels with self-reference)
-- unless the motif IS self_reference, the story must not contain / reprise
-  itself in any form
-- recursion vs nesting are given sharply distinct shape instructions
-- back-translation screening: an uninformed judge model reads only the story
-  and picks the motif; mismatch or illegal self-loop -> rewrite with feedback
+Screening, two independent judges per story:
+  1. device judge — given the device spec, mechanically checks every clause
+  2. blind judge  — reads ONLY the story, picks the motif from the 18-item
+     menu (no device spec, no hints)
+Accept iff device passes AND the blind judge names the right motif.
+Fail -> rewrite with the judges' reasons as feedback (up to 4 attempts).
 
-Usage:  python3 gen_stories.py
-Output: data/stories_pilot.json
+Guardrail kept from v1: the writing prompt contains NO example story.
+
+Usage:  python3 gen_stories.py [motif_id ...]
+Output: data/stories_v2.json
 """
 
 from __future__ import annotations
@@ -24,95 +27,107 @@ import json
 import os
 import re
 import subprocess
+import sys
 from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
 
 WRITER_MODEL = "gpt-5.5"
 JUDGE_MODEL = "gpt-5.2"
-OUT = Path(__file__).parent / "data" / "stories_pilot.json"
+ROOT = Path(__file__).parent
+LIBRARY = {m["id"]: m for m in
+           json.loads((ROOT / "data" / "motif_library.json").read_text())}
+OUT = ROOT / "data" / "stories_v2.json"
 
-# (motif_id, equation, shape instruction for the writer, avoid-domains)
-MOTIF_SPECS = [
-    ("self_reference", "s = T(s)（不动点）",
-     "故事必须原样包含它自己：故事里出现的某样东西（一幅画、一段话、一出戏……）"
-     "的内容，正是这个故事本身，于是没有底。只有这个母题允许、并且必须这样写。",
-     "山/庙/和尚、馄饨摊（已用）"),
-    ("recursion", "T = Node(T, …, T)",
-     "整体由几个与它自己形状相同的部分组成：凑近看任何一个部分，它自己又是同样"
-     "几个更小部分组成的。重点是「部分构成整体、部分与整体同形」，像分岔、组成、"
-     "拼合——不要写成一层套一层的容器，也不要让故事回到开头。",
-     "河流与支流、绣被（已用）"),
-    ("nesting", "S_λ(X) = X（缩放不变）",
-     "一层套一层的容器：打开（或走进）一层，里面是缩小的同一层。重点是「包含与"
-     "进入」——不要写成分岔组成，也不要让故事回到开头。",
-     "环形城墙、针线笸箩（已用）"),
-    ("cycle", "v ⇝ v（回到起点）",
-     "环要长在因果里：甲来自乙，乙来自丙，丙又来自甲，追问下去没有第一个。"
-     "禁止用「故事复读自己的开头」来表现环——环是事物之间的因果闭合，"
-     "不是叙述文字的回环。",
-     "鸡和蛋、老面馒头（已用）"),
-    ("symmetry", "σ(x) = x（镜像不变）",
-     "两半互为镜像：一边发生什么，另一边同时以相反的方向发生同样的事；"
-     "两边合起来恰好完整。故事本身不要回到开头。",
-     "织布（已用）"),
-    ("alternation", "f∘f = id（交替）",
-     "两种状态你来我往：甲引出乙，乙又引出甲，交替本身就是生活，谁也不是终点。"
-     "用具体事物的交替表现，结尾不要复读开头的句子。",
-     "染坊翻牌（已用）"),
-    ("spiral", "r = a·e^{bθ}（旋转×生长）",
-     "一边绕着同一个中心转，一边一圈比一圈更远（或更近）：既在重复又在前进，"
-     "转回原方向时已不在原处。故事不要回到开头。",
-     "陶窑（已用）"),
-    ("convergence", "many → one（汇聚）",
-     "许多各自出发、互不相识的东西，一路合并，最后归于同一处、成为一件事。",
-     "百家粥（已用）"),
-    ("bottleneck", "所有路径必经一点",
-     "无论从哪里来、要到哪里去，都必须经过同一个地方；那个地方因此看尽了所有人。"
-     "不要让故事复读自己的开头。",
-     "酱园门前（已用）"),
-    ("symmetry_breaking", "规则场中的一个异常",
-     "处处相同、事事如常之中，恰恰有一处不同；正是这一处让整体有了方向或有了故事。",
-     "染坊晾布（已用）"),
-]
-
-JUDGE_MENU = [
-    ("self_reference", "整体原样出现在自身内部（故事包含这个故事本身）"),
-    ("recursion", "整体由与自己同形的部分组成，部分再由更小的同形部分组成"),
-    ("nesting", "一层套一层，每层里面是缩小的同一层"),
-    ("cycle", "沿因果追问会回到起点，没有第一个"),
-    ("symmetry", "两半互为镜像，反向对应"),
-    ("alternation", "两种状态交替往复"),
-    ("spiral", "绕着中心转，同时一圈比一圈远或近"),
-    ("convergence", "许多来处汇入同一处"),
-    ("bottleneck", "所有路径必经同一点"),
-    ("symmetry_breaking", "处处相同之中恰有一处不同"),
-]
+# extra writer hints for devices that proved hard in the first pass
+HINTS = {
+    "self_reference": (
+        "\n提示：先定标题——标题必须逐字是「本篇每句首字连读恰为此标题」这样一句"
+        "关于本篇形式的完整真断言（可自拟等价说法，但必须是断言本篇藏头事实的话）；"
+        "然后写正文，正文第 1 句的首字 = 标题第 1 字，第 2 句首字 = 标题第 2 字……"
+        "句数恰等于标题字数。写完自查一遍首字连读。"),
+    "alternation": (
+        "\n提示：「恰为 2k 句」意思是对白总句数为偶数（如 8、10、12 句），"
+        "不是两千句。"),
+    "hub": (
+        "\n提示：为免被误读成瓶颈或环——五名村民必须两两之间零往来（连见面都不写），"
+        "凡事只与磨坊主一对一说；磨坊主与每人都有来回，消息经他双向中转、"
+        "转完各自继续过日子，不是大家路过同一地点，也不是众人汇到一处为止。"),
+    "interference": (
+        "\n提示：为免被误读成汇聚——两条规则（每逢 3 的倍数句、每逢 4 的倍数句）"
+        "各自贯穿全文、各自守拍，双命中出现在第 12 句与第 24 句两处；"
+        "故事在第 12 句处绝不能收束，两种周期在情节里应是两件各自反复的事"
+        "（如打更与涨潮），叠在一起才偶尔同时发生。"),
+}
+AVOID = {
+    "self_reference": "染坊、纸灯、山/庙/和尚",
+    "recursion": "糖画、河流支流",
+    "nesting": "酱缸、城墙",
+    "cycle": "染布、鸡和蛋",
+    "symmetry": "晒盐",
+    "alternation": "葫芦瓢取水",
+    "spiral": "风筝",
+    "convergence": "纸鸢",
+    "bottleneck": "山口茶棚",
+    "symmetry_breaking": "腌菜",
+}
 
 SYSTEM = (
-    "你是一位民间故事作者。你写的故事像口耳相传了几百年：句子短，词朴素，"
-    "有呼吸感，读起来自然和谐，可以讲给孩子听。"
+    "你是一位民间故事作者，也是《哥德尔、埃舍尔、巴赫》对话录的研究者。"
+    "GEB 的对话录之所以不朽，在于形式即内容：螃蟹卡农的台词沿中心逐句倒放，"
+    "树懒卡农的一个声部是另一个的变换。你写的故事同样：口吻质朴自然、"
+    "像口耳相传的民间故事，但讲法本身严格实现一个形式装置——"
+    "读者顺着读是个好故事，回头看会突然发现故事的形状就是那个结构。"
 )
 
-PROMPT = """请为下面这个抽象结构写一个中文小故事（80~160 字）。
+PROMPT = """请为下面这个抽象结构写一个中文小故事。
 
-结构（只给你看，绝不能出现在故事里）：
+结构：
+- 名称：{name_zh}
 - 方程：{equation}
-- 这个结构在故事里应有的形：{shape}
+- 不变量：{invariant}
+
+★ 形式装置（这是硬性规格，故事的讲法必须逐条实现它，审稿人会逐条机械核查）：
+{device}
 
 要求：
-1. 结构要长在情节和讲法里，不是被人物说出来、也不是被叙述者点破。
-2. 口吻自然和谐，民间故事的质朴韵律，可朗读。
-3. 严禁出现任何数学、结构类词语（结构、循环、递归、对称、无限、规律、重复……）。
-4. 不要精确计数（不要「恰好四层」「三条支流」这类数字）。
-5. 选一个新鲜的生活域{avoid}。人、物、地方要有名字或质感，不要抽象代号。
-6. 除非上面的「形」明确要求，故事不得以任何方式回到或复读自己的开头，
-   结尾不得与第一句相同，故事里不得出现「有人讲起这个故事」。
-7. 再写一个英文版，同样自然，不是直译腔。
+1. 装置的每一条可核查条款都必须严格满足——句数、逐字重合、标签、字数，一条不差。
+2. 在满足装置的前提下，故事要自然和谐、有人有物有地方（有名字或质感），
+   可以朗读给孩子听；结构长在讲法里，不许被人物或叙述者点破。
+3. 严禁出现数学、结构类词语（结构、循环、递归、对称、镜像、层级、无限……）。
+4. 生活域要新鲜{avoid}。
+5. 除装置明确要求外，故事不得回到或复读自己的开头。
 {feedback}
 只输出 JSON（不要代码块标记）：
-{{"title": "四五个字的标题", "domain": "一两个词的域", "story_zh": "...", "story_en": "...", "why_shape": "一句话：故事的形怎么体现这个结构（审核用，可用术语）"}}"""
+{{"title": "标题（若装置对标题有规定，以装置为准）",
+  "domain": "一两个词的生活域",
+  "story_zh": "正文（若装置要求分句/分段/标签，用换行呈现）",
+  "story_en": "英文重述（自然英语，传达故事与形状即可，不必复刻装置）",
+  "why_shape": "一句话说明装置如何实现（审核用，可用术语）"}}"""
 
-JUDGE_PROMPT = """读下面这个小故事，判断它的「形」——故事的讲法和情节骨架——最像哪一个结构。
+DEVICE_JUDGE_PROMPT = """你是苛刻的形式审稿人。下面是一个「形式装置」规格和一篇故事。
+逐条机械核查故事是否满足装置的每一个可核查条款（数句数、比对逐字重合、查标签、
+数字数……照规格执行）。
+
+装置规格：
+{device}
+
+故事：
+{story}
+
+只输出 JSON（不要代码块标记）：
+{{"passed": true或false, "checks": "逐条核查结果的简短清单", "problems": "不满足之处（若全满足则空字符串）"}}"""
+
+BLIND_JUDGE_PROMPT = """读下面这个小故事，判断它的「形」——讲法与情节骨架——最像哪一个结构。
+注意区分易混项：环是同层因果闭合一圈即复原；怪圈是层级上行却回到起点；
+嵌套只进不出；递归有进有出、部分与整体同形；回文是下半逆序重演上半；
+图底互换是同序重讲、主宾对调；同构是两套词汇经字典逐句互译；
+汇聚是多线一次性汇入终点即止；瓶颈是必经点在中途、过点后各线仍分头续行、
+两岸各自成块；星型枢纽是诸端点彼此从不直接往来、事事经同一中心双向中转，
+端点间无边；干涉是两种不同周期的规则各自守拍、叠加在公倍位置同相浮现更大
+周期——不是线索汇聚。
+若正文分句编号或句式整齐，先把各句首字连读一遍——若首字连读恰拼出标题、
+且标题是关于本篇形式的断言，那是自指（文本内含一句对自身为真的描述），
+不是图底互换也不是汇聚。
 
 故事：
 {story}
@@ -120,17 +135,15 @@ JUDGE_PROMPT = """读下面这个小故事，判断它的「形」——故事�
 选项：
 {menu}
 
-另外判断：故事是否在结尾回到／复读了自己的开头，或让「这个故事本身」出现在故事内部？
-
 只输出 JSON（不要代码块标记）：
-{{"motif_id": "选项里的一个id", "loops_back": true或false}}"""
+{{"motif_id": "选项里的一个id"}}"""
 
 
 def chat(model: str, system: str, user: str) -> str | None:
     body = json.dumps({"model": model, "messages": (
         [{"role": "system", "content": system}] if system else []) +
         [{"role": "user", "content": user}]})
-    cmd = ["curl", "-s", "--max-time", "240", "-X", "POST",
+    cmd = ["curl", "-s", "--max-time", "300", "-X", "POST",
            f"{os.environ['OPENAI_BASE_URL']}/chat/completions",
            "-H", f"Authorization: Bearer {os.environ['OPENAI_API_KEY']}",
            "-H", "Content-Type: application/json", "-d", body]
@@ -148,53 +161,81 @@ def parse_json(text: str) -> dict | None:
         return None
 
 
-def judge(story_zh: str) -> dict | None:
-    menu = "\n".join(f"- {mid}: {desc}" for mid, desc in JUDGE_MENU)
-    reply = chat(JUDGE_MODEL, "", JUDGE_PROMPT.format(story=story_zh, menu=menu))
+MENU = "\n".join(f"- {m['id']}: {m['invariant_zh']}" for m in LIBRARY.values())
+
+
+def judge_device(mid: str, story: str) -> dict | None:
+    reply = chat(JUDGE_MODEL, "", DEVICE_JUDGE_PROMPT.format(
+        device=LIBRARY[mid]["story_form_device"], story=story))
     return parse_json(reply) if reply else None
 
 
-def gen_one(spec) -> dict | None:
-    mid, eq, shape, avoid = spec
-    avoid_txt = f"（避免：{avoid}）" if avoid else ""
+def judge_blind(story: str) -> dict | None:
+    reply = chat(JUDGE_MODEL, "", BLIND_JUDGE_PROMPT.format(story=story, menu=MENU))
+    return parse_json(reply) if reply else None
+
+
+def gen_one(mid: str) -> dict | None:
+    lib = LIBRARY[mid]
+    avoid = f"（避免：{AVOID[mid]}，已用过）" if mid in AVOID else ""
     feedback = ""
     item = None
-    for attempt in range(3):
+    for attempt in range(4):
         reply = chat(WRITER_MODEL, SYSTEM, PROMPT.format(
-            equation=eq, shape=shape, avoid=avoid_txt, feedback=feedback))
+            name_zh=lib["name_zh"], equation=lib["equation_katex"],
+            invariant=lib["invariant_zh"],
+            device=lib["story_form_device"] + HINTS.get(mid, ""),
+            avoid=avoid, feedback=feedback))
         item = parse_json(reply) if reply else None
         if not item or "story_zh" not in item:
             print(f"  retry {mid} (attempt {attempt + 1}: bad output)")
             continue
-        item.update(motif_id=mid, equation=eq, model=WRITER_MODEL)
-        v = judge(item["story_zh"])
-        if v is None:
+        item.update(motif_id=mid, equation=lib["equation_katex"],
+                    model=WRITER_MODEL)
+        dev = judge_device(mid, item["story_zh"])
+        blind = judge_blind(item["story_zh"])
+        if dev is None or blind is None:
             print(f"  {mid}: judge unavailable, accepting unscreened")
             item["judge"] = None
             return item
-        ok_motif = v.get("motif_id") == mid
-        ok_loop = (not v.get("loops_back")) or mid == "self_reference"
-        item["judge"] = {**v, "model": JUDGE_MODEL, "passed": ok_motif and ok_loop}
-        if ok_motif and ok_loop:
+        ok_dev = bool(dev.get("passed"))
+        ok_blind = blind.get("motif_id") == mid
+        item["judge"] = {"device_passed": ok_dev,
+                         "device_checks": dev.get("checks", ""),
+                         "blind_motif": blind.get("motif_id"),
+                         "model": JUDGE_MODEL,
+                         "passed": ok_dev and ok_blind}
+        if ok_dev and ok_blind:
             print(f"  ok {mid}: {item.get('title', '?')} [{item.get('domain', '?')}]"
                   + (f" (attempt {attempt + 1})" if attempt else ""))
             return item
         reasons = []
-        if not ok_motif:
-            reasons.append(f"盲测读者把故事的形认成了「{v.get('motif_id')}」")
-        if not ok_loop:
-            reasons.append("故事回到/复读了自己的开头（这属于另一个母题，禁止）")
-        print(f"  rewrite {mid} (attempt {attempt + 1}): {'; '.join(reasons)}")
+        if not ok_dev:
+            reasons.append(f"装置核查未过：{dev.get('problems', '')}")
+        if not ok_blind:
+            reasons.append(f"盲评者把形认成了「{blind.get('motif_id')}」")
+        print(f"  rewrite {mid} (attempt {attempt + 1}): "
+              f"{'; '.join(reasons)[:150]}")
         feedback = ("\n上一版的问题：" + "；".join(reasons) +
-                    "。请换写法修正，让形只属于目标结构。\n")
+                    "\n请修正后重写，装置条款逐条对照执行。\n")
     print(f"  WARN {mid}: kept last version despite failed screening")
     return item
 
 
 def main():
+    ids = sys.argv[1:] or list(LIBRARY)
     OUT.parent.mkdir(exist_ok=True)
-    with ThreadPoolExecutor(max_workers=5) as ex:
-        items = [i for i in ex.map(gen_one, MOTIF_SPECS) if i]
+    existing = {}
+    if OUT.exists():
+        existing = {s["motif_id"]: s for s in json.loads(OUT.read_text())}
+    todo = [mid for mid in ids
+            if not (existing.get(mid, {}).get("judge") or {}).get("passed")]
+    print(f"{len(todo)} motifs to write: {', '.join(todo)}")
+    with ThreadPoolExecutor(max_workers=6) as ex:
+        for item in ex.map(gen_one, todo):
+            if item:
+                existing[item["motif_id"]] = item
+    items = [existing[mid] for mid in LIBRARY if mid in existing]
     OUT.write_text(json.dumps(items, indent=2, ensure_ascii=False))
     passed = sum(1 for i in items if i.get("judge") and i["judge"].get("passed"))
     print(f"\n{len(items)} stories ({passed} passed screening) -> {OUT}")

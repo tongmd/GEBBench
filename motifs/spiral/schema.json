@@ -1,0 +1,19 @@
+{
+  "motif_id": "spiral",
+  "name": "Spiral — the refrain returns each lap enlarged by a fixed ratio, never at the same scale (growth per lap, unlike cycle's exact return)",
+  "name_zh": "螺旋副歌",
+  "equation": "r=a\\,e^{b\\theta}",
+  "invariant": "每转回同一方位就按同一比例长大一号，绝不回到原尺度",
+  "math_home": "微分几何/经典曲线论·对数（等角）螺线；离散动力系统·几何增长（等比数列）",
+  "story_form_device": "螺旋副歌：一个恰 4 字、逐字固定的核心短语作副歌，在故事中恰出现 4 次，每次以该短语开头并独占一段；四个副歌段的字数（按汉字计，不计标点）依次恰为 6/12/24/48（严格公比 2），且第 k 段内含范围词序列「一人/一家/一村/一国」的第 k 项。盲评者机械核查：①检索核心短语，确认恰 4 处且逐字相同、各居段首；②数四段字数，验证 6/12/24/48 的公比 2；③确认无任何两段等长（重现从不回到同一尺度，故非 cycle 的原样回归），且四段平级顺次出现于叙事同一层级、并不层层内嵌（故非 nesting）。",
+  "geb_echo": "Escher《Path of Life I/II》《Whirlpools》：图形沿对数螺线逐级等比缩放；Bach《音乐的奉献》canon per tonos 仅取其「每循环一周升高一全音、绝不等高重现」的侧面——其「不知不觉回到原调」的错觉归 strange_loop，此处不取。",
+  "nuisance_variables": [
+    "node count",
+    "depth",
+    "angles",
+    "layout",
+    "scale",
+    "domain",
+    "medium"
+  ]
+}

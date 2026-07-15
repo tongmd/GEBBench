@@ -1,0 +1,19 @@
+{
+  "motif_id": "strange_loop",
+  "name": "Strange Loop — every step climbs one level of narration, yet the final step lands back on the ground floor: a tangled hierarchy (not cycle's flat causality)",
+  "name_zh": "怪圈",
+  "equation": "\\ell(v)=\\ell(u)+1\\quad\\forall\\,(u,v)\\in E\\setminus\\{e^{*}\\},\\qquad e^{*}=(v_{k},v_{0}),\\;\\ell(v_{k})=k,\\;\\ell(v_{0})=0",
+  "invariant": "沿「谁在叙述谁」的层级逐步上行，最后一步却回到起点，层级无法赋值",
+  "math_home": "图论·拓扑排序与最小反馈弧集（DAG 判定定理；哥德尔对角线构造的图式骨架）",
+  "story_form_device": "三层叙述回边（叙述层数恰为 3）：第 1 层叙述者 A 的开场句逐字为「A 正在讲 B 的故事」；A 讲 B 的故事，B 在故事中讲 C 的故事，而 C 在最内层所讲的主角以姓名与身份明确等同于 A，且最内层末句逐字复述该开场句。机械核查三判据，全真即成立：(i) 依嵌套引号或「讲道：」标记数出恰 3 层叙述、逐层上行；(ii) 最内层主角名 = 第 1 层叙述者名 A；(iii) 全文首句与最内层末句逐字相同。区分条款：与 cycle——环边是跨层的「谁在叙述谁」关系而非同层故事内因果；与 nesting——最内层回指最外层而非只下行不返回；与 self_reference——回指必经 B、C 两层中介方能成环，并非对象一步逐字自述；与 recursion——无基例亦不逐层返回，环由一条违层回边闭合。",
+  "geb_echo": "埃舍尔《画手》《瀑布》《上升与下降》《版画画廊》；哥德尔句（经对角线引理的间接自指）；巴赫《音乐的奉献》无限升高卡农 Canon per Tonos；GEB 全书主旨 Strange Loop / 缠结层级",
+  "nuisance_variables": [
+    "node count",
+    "depth",
+    "angles",
+    "layout",
+    "scale",
+    "domain",
+    "medium"
+  ]
+}

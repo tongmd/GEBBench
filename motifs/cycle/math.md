@@ -1,5 +1,9 @@
-Follow the arrows and you return to your starting point:
+# 因果闭环 — mathematics voice
 
-$$v_0 \to v_1 \to \dots \to v_n \to v_0, \qquad v \leadsto v.$$
+$$v_{1}\to v_{2}\to\cdots\to v_{n}\to v_{1},\qquad \langle r\mid r^{n}=e\rangle\cong\mathbb{Z}/n\mathbb{Z}$$
 
-How many steps the loop has, what the elements are — irrelevant: the structure is **closure: the end feeds the beginning**.
+**定义** 设 n≥3。简单有向环 C⃗_n：顶点 v₁,…,v_n 两两不同，边恰为 v_i→v_{i+1}（下标模 n），每点入度=出度=1，首尾闭合。其代数形象是 n 阶循环群的群展示 ⟨r | rⁿ=e⟩ ≅ Z/nZ，生成元 r 即「沿环走一步」，走 n 步恰好复原。
+
+**归属** 图论·有向环 C⃗_n；群论·循环群 Z/nZ；离散动力系统·函数图的周期轨道
+
+**定理** 轨道引理（鸽笼原理推论）：设 |X|=n，f:X→X，任取初值 x，则序列 x,f(x),f²(x),… 的前 n+1 项必有重复，故轨道最终落入长度 p≤n 的纯循环；特别地，当 f 为双射时，其函数图恰分解为若干不相交的有向环（置换的轮换分解定理）。

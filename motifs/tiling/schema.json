@@ -1,0 +1,19 @@
+{
+  "motif_id": "tiling",
+  "name": "Tiling — shift the whole pattern by one cell and it lands exactly on itself, gapless and overlap-free",
+  "name_zh": "平移密铺",
+  "equation": "T+\\lambda=T\\quad\\forall\\,\\lambda\\in\\Lambda=\\mathbb{Z}v_1\\oplus\\mathbb{Z}v_2",
+  "invariant": "把整幅图案挪动一格与原图完全重合，无缝亦无叠、无一例外",
+  "math_home": "离散几何·壁纸群（平面晶体群）",
+  "story_form_device": "模板密铺：全文恰为同一句法模板首尾相接的 8 个实例，每个实例只在固定的三个槽位（人名/地名/物名）换词，槽位之外与模板逐字相同；实例之间零过渡字（无缝），任一字只属于一个实例（无叠）。盲评核查法：把 8 句上下对齐，逐字验证槽外全同、句间无插入、全文零违例。区分：单一模板周期 1、非二态轮替（异于 alternation）；零异常（异于 symmetry_breaking 的恰一异常）；是同一文本内的逐字平移拷贝，而非两套系统之间的翻译字典（异于 isomorphism）。",
+  "geb_echo": "埃舍尔《平面的规则分割》（Regular Division of the Plane）系列——GEB 屡引的互锁镶嵌，其源头即阿尔罕布拉宫的摩尔镶嵌",
+  "nuisance_variables": [
+    "node count",
+    "depth",
+    "angles",
+    "layout",
+    "scale",
+    "domain",
+    "medium"
+  ]
+}

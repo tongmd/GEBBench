@@ -1,0 +1,19 @@
+{
+  "motif_id": "alternation",
+  "name": "Alternation — two voices in strict turn, never twice in a row: period exactly two, no growth, no anomaly",
+  "name_zh": "严格交替",
+  "equation": "c(i)=i\\bmod 2;\\qquad \\chi(G)\\le 2\\iff G\\ \\text{不含奇环}",
+  "invariant": "仅两种状态严格轮流出现：相邻必异、隔一必同，周期恒为二，无一例外",
+  "math_home": "图论·二部图与 2-染色（König 刻画）；群论·Z/2Z",
+  "story_form_device": "双声轮替（剧本体）：全文恰为 2k 句对白，每句独立成行且行首显式标注说话人「甲：」或「乙：」，无任何旁白句、无第三说话人；按 1 起编号，第 i 句的说话人为甲当且仅当 i 为奇数、为乙当且仅当 i 为偶数，故无人连续发言。盲评者只需逐句核对行首标签与 i mod 2 的一一对应即可判定。",
+  "geb_echo": "GEB 对话录中阿基里斯与乌龟严格轮流的问答体；巴赫赋格呈示部中主题与答题在声部间的轮流进入",
+  "nuisance_variables": [
+    "node count",
+    "depth",
+    "angles",
+    "layout",
+    "scale",
+    "domain",
+    "medium"
+  ]
+}

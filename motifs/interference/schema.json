@@ -1,0 +1,19 @@
+{
+  "motif_id": "interference",
+  "name": "Interference — two humble periods overlap and a longer pattern neither wrote emerges: the overlay repeats only at the lcm (unlike alternation's fixed period two)",
+  "name_zh": "干涉",
+  "equation": "\\sin\\alpha + \\sin\\beta = 2\\sin\\tfrac{\\alpha+\\beta}{2}\\,\\cos\\tfrac{\\alpha-\\beta}{2}",
+  "invariant": "两个周期不同、各自单调重复的模式，叠加后浮现出比任一原周期都大的新周期",
+  "math_home": "傅里叶分析·拍频（和差化积）；数论·最小公倍数与中国剩余定理",
+  "story_form_device": "3 对 4 拍频、跑满两个大周期：全文恰 24 句；凡句序号为 3 的倍数（3,6,…,24）该句必以同一固定开头词起句、其余句一律不得以该词起句；凡句序号为 4 的倍数（4,8,…,24）该句必以七字句收尾、其余句一律不得以七字句收尾；于是双命中恰出现在第 12 与第 24 句，间隔 12=lcm(3,4)。盲评者列 1–24 命中表，核对 A 列周期 3、B 列周期 4、双命中周期 12 且故事在第 12 句处不收束（区别于汇聚），即可机械判定。",
+  "geb_echo": "巴赫的复节奏（三对二 hemiola）：两种拍子各自守拍，叠出谁也没有单独写下的更长大周期",
+  "nuisance_variables": [
+    "node count",
+    "depth",
+    "angles",
+    "layout",
+    "scale",
+    "domain",
+    "medium"
+  ]
+}

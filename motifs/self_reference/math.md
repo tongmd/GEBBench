@@ -1,5 +1,9 @@
-The story is a fixed point of its own telling:
+# 自指 — mathematics voice
 
-$$s = T(s), \qquad f(x) = x.$$
+$$\vdash\ \psi \leftrightarrow \varphi(\ulcorner \psi \urcorner)$$
 
-There is no base case and no bottom level. The structure is **the whole appearing, unchanged, inside itself**.
+**定义** 对角线引理：设一阶理论 T 能表示一切原始递归函数（如包含 Robinson 算术 Q），则对任意恰含一个自由变元的公式 φ(x)，可显式构造句子 ψ 使 T ⊢ ψ↔φ(⌜ψ⌝)，即 ψ 可证地等价于「编码为 ⌜ψ⌝ 的那个句子（它自己）具有性质 φ」。自指因此是描述算子的可构造不动点，而非悖论。
+
+**归属** 数理逻辑·对角线引理；可计算性理论·Kleene 第二递归定理
+
+**定理** Kleene 第二递归定理（1938）：对任意全可计算函数 f，存在指标 e 使 φ_e = φ_{f(e)}；推论：任何图灵完备且带可接受编号的编程语言中，都存在输出自身源代码的程序（quine）。

@@ -1,11 +1,19 @@
 {
   "motif_id": "self_reference",
-  "name": "Self-reference — the thing contains itself",
-  "equation": "s = T(s)",
-  "invariant": "the whole appears, unchanged, inside itself",
+  "name": "Self-Reference — the object carries a description of itself that checks out verbatim: a constructible fixed point, not a climb through levels",
+  "name_zh": "自指",
+  "equation": "\\vdash\\ \\psi \\leftrightarrow \\varphi(\\ulcorner \\psi \\urcorner)",
+  "invariant": "对象内含一句对自身的描述且逐字核对为真——一步指回自己，不经层级攀升，也不指涉第二套系统",
+  "math_home": "数理逻辑·对角线引理；可计算性理论·Kleene 第二递归定理",
+  "story_form_device": "藏头不动点装置：标题本身是一句完整断言——「本篇每句首字连读恰为此标题」；正文是一则匠人把一句话逐字藏进作品各处开头的民间小故事，且全文每句首字依次连读逐字拼出该标题。盲评者两步机械核查：(1) 摘取各句首字连成字串，与标题逐字比对须完全吻合；(2) 判定标题这句断言所述的，恰是第 (1) 步刚验证的事实。于是文本内含一条关于自身形式且为真的断言，构成单层不动点：全程无「谁在叙述谁」的层级上行（故非 strange_loop），断言指涉的就是本篇自身而非另一套独立系统（故非 isomorphism）。",
+  "geb_echo": "GEB 对话 Contracrostipunctus（藏头拼出的正是关于该藏头装置的句子）；哥德尔句 G↔¬Prov(⌜G⌝)；quine；巴赫《赋格的艺术》未完成末曲嵌入 B-A-C-H 音名签名",
   "nuisance_variables": [
-    "visible nesting levels",
-    "medium",
-    "domain"
+    "node count",
+    "depth",
+    "angles",
+    "layout",
+    "scale",
+    "domain",
+    "medium"
   ]
 }

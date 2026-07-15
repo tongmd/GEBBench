@@ -1,0 +1,19 @@
+{
+  "motif_id": "figure_ground",
+  "name": "Figure and Ground — the negative space is itself a figure: figure and ground swap roles while events keep the SAME order (unlike the palindrome's reversal)",
+  "name_zh": "图底互换",
+  "equation": "\\exists A\\;\\bigl(A\\in\\Sigma_1^0\\ \\wedge\\ \\overline{A}\\notin\\Sigma_1^0\\bigr)",
+  "invariant": "图与底互补拼满全域且底自成一形：下半以上半之底为图、以上半之图为底，所述事件及其顺序保持不变（非逆序，亦非两套词汇之间的互译）",
+  "math_home": "递归论·递归可枚举集与其补（Post 1944 互补定理）",
+  "story_form_device": "图底重述：全篇仅甲、乙两名角色，同一事件序列按同一顺序讲两遍。上半每句主语皆为甲，乙只出现在宾语/状语槽、零次作主语；下半与上半逐句一一对应：第 i 句谓词与上半第 i 句相同、事件顺序不变，但主语槽一律换成乙，甲退入宾语/状语槽、零次作主语。盲评者机械核查三条：(1) 两半句数相等且逐句谓词一致；(2) 上半主语全为甲且乙从不作主语，下半恰好互补；(3) 事件顺序未逆转。区分界线：非回文（下半保持原顺序而非逆序）；非同构（两半同一词汇、同一事件，只对调图底角色，不是两套领域间的字典互译）；非交替（图底对调只在半篇分界处发生一次，而非逐句轮流）。",
+  "geb_echo": "GEB 第三章 Figure and Ground 及其前置对话《无伴奏阿基里斯奏鸣曲》（只闻对话一方，缺席的一方自成一形）；埃舍尔《天空与水 I》《昼与夜》；巴赫无伴奏小提琴奏鸣曲（隐含的伴奏声部由听者补出）",
+  "nuisance_variables": [
+    "node count",
+    "depth",
+    "angles",
+    "layout",
+    "scale",
+    "domain",
+    "medium"
+  ]
+}

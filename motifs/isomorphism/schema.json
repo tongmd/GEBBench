@@ -1,0 +1,19 @@
+{
+  "motif_id": "isomorphism",
+  "name": "Isomorphism — two different worlds, one identical structure: a complete dictionary carries every element and relation across",
+  "name_zh": "同构",
+  "equation": "\\varphi(a\\cdot b)=\\varphi(a)\\circ\\varphi(b),\\qquad \\varphi\\colon G\\to H\\ \\text{双射}",
+  "invariant": "两套素材完全不同的事物之间存在一部保持全部运算与关系的一一对应字典，同序逐项可译、无一例外",
+  "math_home": "群论/泛代数·同构；模型论·同构与初等等价",
+  "story_form_device": "双世界平行卷：上下两半各 6 句，篇首附一张一一对应替换表（樵夫↔老狼、白日↔黑夜、上山↔入林、斧↔爪……；表须为双射，表外功能词原样保留），且下半第 k 句恰由上半第 k 句逐词经表替换而得（k=1…6，同序对应、不倒转）。盲评者持表逐词比对十二句即可判定：任一词违表、同一词两译、或两词同译，装置即告失败。（护栏：异于 symmetry 的倒序中点翻转——此处第 k 句对第 k 句；异于 figure_ground 的同一故事内两角色主宾互换——此处两半词汇互不相交，是两个世界经完整字典互译。）",
+  "geb_echo": "GEB 第二章 pq-系统与「意义寓于同构」（--p--q--- ↔ 2+3=5）；蚂蚁赋格中 Aunt Hillary（蚁群↔心智同构）；树懒卡农——一声部经固定变换为另一声部的映像（巴赫《音乐的奉献》反向增值卡农）",
+  "nuisance_variables": [
+    "node count",
+    "depth",
+    "angles",
+    "layout",
+    "scale",
+    "domain",
+    "medium"
+  ]
+}

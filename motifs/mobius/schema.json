@@ -1,0 +1,19 @@
+{
+  "motif_id": "mobius",
+  "name": "Möbius — one lap brings you back with orientation flipped; only two laps truly close the loop",
+  "name_zh": "莫比乌斯带",
+  "equation": "M=\\bigl([0,1]\\times[0,1]\\bigr)\\big/\\bigl((0,t)\\sim(1,\\,1-t)\\bigr)",
+  "invariant": "沿带绕行一圈回到原地却定向翻转（左右互换），绕两圈才逐点复原",
+  "math_home": "拓扑学·不可定向曲面",
+  "story_form_device": "双圈对合闭合：全文由句数相等的两圈加一句尾声构成。第二圈第 i 句与第一圈第 i 句逐字相同，唯一例外是每个方位词按固定对合替换（左↔右、内↔外、上↔下），每圈至少出现 3 个方位词；尾声句与全文首句逐字相同。盲评者机械核查四条：(a) 两圈句子一一对齐、顺序不倒转，除方位词外逐字相同（顺序若倒转则为 symmetry）；(b) 方位替换是对合，施行两次即恒等——它作用于同一故事的再度绕行，而非两套事物间的翻译字典（区别于 isomorphism）；(c) 第二圈首句 ≠ 全文首句：一圈不闭合（区别于 cycle 的一圈即闭合且无翻转）；(d) 尾声句 = 全文首句：两圈恰好闭合（翻转按圈发生而非逐事件轮换，区别于 alternation）。",
+  "geb_echo": "埃舍尔《莫比乌斯带 I》与《莫比乌斯带 II》（红蚁沿唯一的面绕行）；巴赫螃蟹卡农的经典莫比乌斯带记谱——正逆两声部写在带的『两面』，实为同一面",
+  "nuisance_variables": [
+    "node count",
+    "depth",
+    "angles",
+    "layout",
+    "scale",
+    "domain",
+    "medium"
+  ]
+}

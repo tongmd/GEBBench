@@ -1,0 +1,19 @@
+{
+  "motif_id": "symmetry",
+  "name": "Mirror Palindrome — the second half is the first half read backwards, sentence by sentence in exact REVERSE order (not figure–ground's same-order retelling)",
+  "name_zh": "回文对称",
+  "equation": "w=w^{R},\\qquad (w^{R})_{i}=w_{n+1-i},\\qquad R\\circ R=\\mathrm{id}",
+  "invariant": "事件序列倒读与正读逐项相同，沿时间中点翻转逐点重合",
+  "math_home": "组合词论·回文因子与 rich 词；群论·二面体群 D_n 与对合",
+  "story_form_device": "螃蟹卡农：故事为单一叙事层（无故事中故事、无层级进出），恰由 2k+1 个编号句构成；对每个 j=1..k，第 k+1+j 句与第 k+1−j 句逐字相同，唯一允许的差异是两个角色名互换；第 k+1 句为唯一不成对的中心句。盲评核查：将句子按序列出、沿中心句折半，先做角色名互换归一化，再逐对做字符串比对——所有镜像句对逐字吻合且下半恰为上半的逆序重现则装置成立；与 recursion 的区别在于此处没有任何「进入/退出更深层」的包含关系，只有同一层句子的逆序逐字回放。",
+  "geb_echo": "GEB《螃蟹卡农》（Crab Canon）对话——台词沿中心逐句逆序重现、阿基里斯与乌龟互换角色；巴赫《音乐的奉献》中的螃蟹卡农（canon cancrizans）",
+  "nuisance_variables": [
+    "node count",
+    "depth",
+    "angles",
+    "layout",
+    "scale",
+    "domain",
+    "medium"
+  ]
+}

@@ -1,11 +1,19 @@
 {
   "motif_id": "cycle",
-  "name": "Cycle — following the arrows leads back to the start",
-  "equation": "v \\leadsto v",
-  "invariant": "there is no first element: the end feeds the beginning",
+  "name": "Cycle — same-level causal arrows close into a ring; one full lap returns you exactly to the start (no hierarchy, no growth, no flip — unlike strange loop, spiral, mobius)",
+  "name_zh": "因果闭环",
+  "equation": "v_{1}\\to v_{2}\\to\\cdots\\to v_{n}\\to v_{1},\\qquad \\langle r\\mid r^{n}=e\\rangle\\cong\\mathbb{Z}/n\\mathbb{Z}",
+  "invariant": "沿同一层级的因果箭头依次经过 n≥3 个互不相同的事件后回到出发事件，一圈即逐字复原（不升级、不放大、不翻面），各点地位平等、无层级",
+  "math_home": "图论·有向环 C⃗_n；群论·循环群 Z/nZ；离散动力系统·函数图的周期轨道",
+  "story_form_device": "因果闭环装置：故事恰分为 n≥3 段；每段末句以显式连接词「于是……」引出下一段首句事件；第 n 段的结果句与第 1 段首句逐字相同，实现 e₁→e₂→…→eₙ→e₁；各段事件两两不同，且第 2…n−1 段不构成前后镜像（排除 symmetry 回文）；全文处于单一叙述层级，无「讲述者被讲述」（排除 strange_loop）；一圈后一切逐字复原，无放大、无翻面（排除 spiral/mobius，且 n≥3 排除 alternation）。盲评者机械核查四项：数段数 n≥3；逐段「于是」齐全且指向下一段；首末句逐字重合；各段两两不同、无跨层叙述。",
+  "geb_echo": "巴赫循环卡农 canon perpetuus（原调反复回到开头、不升调——区别于 GEB 里不断升高的无终卡农之奇异环）；埃舍尔《循环》(Cycle, 1938)、《爬行动物》",
   "nuisance_variables": [
-    "length of the loop",
-    "what the elements are",
-    "domain"
+    "node count",
+    "depth",
+    "angles",
+    "layout",
+    "scale",
+    "domain",
+    "medium"
   ]
 }

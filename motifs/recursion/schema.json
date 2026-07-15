@@ -1,13 +1,19 @@
 {
   "motif_id": "recursion",
-  "name": "Recursive branching — the part repeats the whole",
-  "equation": "T = \\operatorname{Node}(T,\\dots,T)",
-  "invariant": "every branch, looked at alone, has the same shape as the whole",
+  "name": "Recursion — the whole is built from smaller copies of itself, down to a base case and back: every push is popped",
+  "name_zh": "递归",
+  "equation": "T ::= \\bullet \\mid \\mathrm{Node}(T,T),\\qquad C_n=\\tfrac{1}{n+1}\\binom{2n}{n}",
+  "invariant": "整体由更小的自身按同一规则生成，入几层必出几层，终止于基例后逐层原路返回",
+  "math_home": "组合数学·Catalan 数与 Dyck 词；计算理论·结构归纳与调用栈",
+  "story_form_device": "自相似配对栈：全文由同一句式模板的子故事组成，每则以「话说」开启、以「且说回来」收束；其内部要么不含任何子故事（基例，须逐字含固定句「这便是最小的一桩事」），要么恰好并列包含两则更小的子故事（对应 Node(T,T)）。盲评者机械核查三条：(1) 全文「话说/且说回来」按序做括号匹配合法且末尾栈空——区别于只开不合的 nesting；(2) 每个匹配对直接包含的子匹配对数恒为 0 或 2，且每深一层子故事字数严格变短、基例句只出现在 0 子对处——「更小的自身、同一模板、终于基例」可逐条数出；(3) 最大深度≥3。由 (2) 必存在同层并列的两个匹配对，事件序列因而不是回文，机械排除与 symmetry 的混淆。",
+  "geb_echo": "《小和声迷宫》对话的压栈—弹栈与巴赫式「调性栈」（转调后逐层回归主调）；GEB 第五章「递归结构与递归过程」的递归转移网络（RTN）",
   "nuisance_variables": [
+    "node count",
     "depth",
-    "branching factor",
     "angles",
-    "scale ratio",
-    "domain"
+    "layout",
+    "scale",
+    "domain",
+    "medium"
   ]
 }

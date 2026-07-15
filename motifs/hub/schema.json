@@ -1,0 +1,19 @@
+{
+  "motif_id": "hub",
+  "name": "Hub — one center touches everyone; the spokes never touch each other, every pair is mediated by the middle",
+  "name_zh": "星型枢纽",
+  "equation": "G\\cong K_{1,n}",
+  "invariant": "任意两端点之间只隔中心一点；去掉中心，全图碎成孤点",
+  "math_home": "图论·星图 K_{1,n}（完全二部图）与度中心性",
+  "story_form_device": "磨坊主转达：五名村民（甲乙丙丁戊）彼此从不直接说话，凡有话必托磨坊主转达（如甲对磨坊主说「请转告乙……」，磨坊主再对乙复述）。盲评者摘出全文所有引语的（说者,听者）对并机械核查三条：(i) 每一对必含磨坊主；(ii) 五名村民每人至少出现在一对之中；(iii) 不存在（村民,村民）对——三条同时成立则引语图恰为 K_{1,5}。区别于 bottleneck：无「两岸」，中心是每对交流的中介端点，而非两簇之间通道上被穿越的中途之点；区别于 convergence：消息经中心双向往返、持续中转，而非诸线一次性汇入终点即止。",
+  "geb_echo": "",
+  "nuisance_variables": [
+    "node count",
+    "depth",
+    "angles",
+    "layout",
+    "scale",
+    "domain",
+    "medium"
+  ]
+}

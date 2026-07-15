@@ -1,0 +1,19 @@
+{
+  "motif_id": "bottleneck",
+  "name": "Bottleneck — every path between the two shores passes through one midway gate, then fans out and continues on the far side",
+  "name_zh": "咽喉之点",
+  "equation": "uv\\notin E:\\;\\; \\min_{\\substack{S\\subseteq V\\setminus\\{u,v\\}\\\\ S\\ \\text{separates}\\ u,v}}\\lvert S\\rvert \\;=\\; \\max\\#\\{\\text{internally disjoint } u\\text{–}v \\text{ paths}\\}",
+  "invariant": "两岸各自内部多路互通，而两岸之间的一切通路必经同一中途之点、过点后各自继续；删去该点，全图恰裂为仍各自连通的两大块，而非碎成孤点",
+  "math_home": "图论·割点与 Menger 定理",
+  "story_form_device": "关隘句装置：三条互不相识的线索（商队、信使、逃犯）各自分段讲述，每段段首标注所在地点名。可查条件：(1) 每线的地点序列中「独木桥」恰出现一次，且其前、其后各至少还有两个地点——必经点在中途，过点后各线继续各自行程（区别于 convergence 的汇入终点即止）；(2) 除「独木桥」外三线的地点集合两两不交，且每线在桥前、桥后各有多个彼此相连的地点——两岸各自成块（区别于 hub 的诸端点只隔中心一步、删中心即碎成孤点）；(3) 在含「独木桥」的那一段中，三线逐字出现同一句关隘句「要过河，只有走那座独木桥」，且该句全文仅出现这三次；(4) 尾注一句「次年桥毁，两岸从此不通」。盲评者由 (1)(2) 即可机械推出：把三线地点并成路网图后删去「独木桥」节点，任一线的首地点与末地点均不再连通，而桥前、桥后两块内部各自仍连通。",
+  "geb_echo": "",
+  "nuisance_variables": [
+    "node count",
+    "depth",
+    "angles",
+    "layout",
+    "scale",
+    "domain",
+    "medium"
+  ]
+}

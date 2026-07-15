@@ -1,12 +1,19 @@
 {
   "motif_id": "nesting",
-  "name": "Nesting — the same form inside itself, at every scale",
-  "equation": "S_\\lambda(X) = X",
-  "invariant": "inside each layer sits a smaller copy of the same layer",
+  "name": "Nesting — boxes open inside boxes, ever deeper, and none is ever closed",
+  "name_zh": "嵌套（只进不出）",
+  "equation": "[a_1,b_1]\\supsetneq[a_2,b_2]\\supsetneq\\cdots\\;\\Longrightarrow\\;\\bigcap_{n=1}^{\\infty}[a_n,b_n]\\neq\\varnothing",
+  "invariant": "每进入新一层便不再返回上一层，深度只增不减",
+  "math_home": "实分析·Cantor 闭区间套定理（紧致性）；形式语言·Dyck 语言的真前缀（纯压栈词）",
+  "story_form_device": "只进不出装置：全文由 N≥3 个固定开启句「X 说：『从前……』」构成层级，第 k+1 个开启句必须出现在第 k 个开启句所开故事的内部；一旦进入某层，此前所有外层的人物与地点专名不得在其后再出现（零返回）；全文末句仍属最深一层。盲评者机械核查三条：(a) 固定开启句计数 ≥3 且逐层嵌入；(b) 任一开启句之后外层专名再现次数 =0，再现即判「返回」、装置失败；(c) 末句位于最内层故事。与 recursion 的判别：recursion 要求每层有配对收束句并逐层弹回，此处收束句计数恒为 0。",
+  "geb_echo": "《小和声迷宫》：故事层与转调层层层压栈却未全部弹回，全篇止于未解决的调上；灯壶精灵层层上召更高的精灵（GOD = GOD Over Djinn 的无穷上升）",
   "nuisance_variables": [
-    "number of layers",
-    "spacing",
-    "exact shape",
-    "domain"
+    "node count",
+    "depth",
+    "angles",
+    "layout",
+    "scale",
+    "domain",
+    "medium"
   ]
 }

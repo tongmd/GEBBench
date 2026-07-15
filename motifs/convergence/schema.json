@@ -1,0 +1,19 @@
+{
+  "motif_id": "convergence",
+  "name": "Convergence — separate threads, blind to one another, all END at the same point: the meeting is the terminus (unlike bottleneck's mid-way gate)",
+  "name_zh": "万流归一",
+  "equation": "\\forall v\\in V\\quad \\exists!\\; P:\\; v \\rightsquigarrow r",
+  "invariant": "多条互不知晓的线索各自推进，最终全部汇入同一终点且到此为止",
+  "math_home": "图论·内向树（in-tree/anti-arborescence）；重写系统·合流性（Church–Rosser）；分析·Banach 不动点定理",
+  "story_form_device": "三线合流：全文恰 7 段。前 6 段按「甲——乙——丙——甲——乙——丙——」固定标签轮转，每段只出现本线专属的人名与地名，三线专名集合两两不交、互不引用；第 7 段无标签，三个人名在同一句内首次共现，并系于同一个此前从未出现过的地名，该汇合句即全文最后一句。盲评机械核查：(a) 前 6 段三线专名两两不交、无交叉引用；(b) 第 7 段三名俱全且共处同一新地名；(c) 汇合句之后再无任何文字（区别 bottleneck：其必经点居于中途，过点后各线仍分头续行）。",
+  "geb_echo": "《前奏曲与蚂蚁赋格》：赋格各声部各自独立展开，终段密接和应（stretto）中相继涌入，共同汇于最后的终止式",
+  "nuisance_variables": [
+    "node count",
+    "depth",
+    "angles",
+    "layout",
+    "scale",
+    "domain",
+    "medium"
+  ]
+}

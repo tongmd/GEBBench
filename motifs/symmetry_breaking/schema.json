@@ -1,0 +1,19 @@
+{
+  "motif_id": "symmetry_breaking",
+  "name": "Symmetry Breaking — the perfectly regular field must fail, at exactly one locatable point",
+  "name_zh": "对称破缺",
+  "equation": "\\sum_{p\\,:\\,X(p)=0} \\operatorname{ind}_p(X)=\\chi(M)",
+  "invariant": "同一规则覆盖全场，唯有一处可精确定位的违例，该违例唯一、其余处处无例外",
+  "math_home": "微分拓扑·Poincaré–Hopf 定理与毛球定理；等变分岔理论·叉式分岔（自发对称破缺）",
+  "story_form_device": "万律一破：全文恰 12 句；除第 7 句外，每句恰 7 个汉字（标点不计）且句句含「风」字；唯第 7 句恰 8 个汉字且不含「风」。盲评者逐句数字数、查「风」字即可精确定位唯一违例，再扫描其余 11 句确认再无第二处违例——与 tiling／alternation 的机械判据：彼为全场零违例，此恰为一违例。（情节转折宜落于第 7 句，为增色项、非核查项。）",
+  "geb_echo": "巴赫的皮卡第三度终止：通篇小调，唯末和弦升为大三和弦——全曲唯一可精确定位的破例；GEB 的 MU 谜题：I 的个数 mod 3 是不变量，使「MU」不可达，正对应 χ(M)≠0 禁止无瑕之场的拓扑障碍；埃舍尔《解放》：规整三角格的规则性被打破（取其破缺之意，惟彼为渐变而非点缺陷）。",
+  "nuisance_variables": [
+    "node count",
+    "depth",
+    "angles",
+    "layout",
+    "scale",
+    "domain",
+    "medium"
+  ]
+}

@@ -23,7 +23,6 @@ import base64
 import json
 import math
 import os
-import shutil
 import subprocess
 import sys
 from pathlib import Path
@@ -98,186 +97,678 @@ def skel_frames(levels: int = 4, scale: float = 0.62, w: int = 1536, h: int = 10
     return svg_doc(w, h, "".join(parts))
 
 
+def skel_mirror(w: int = 1536, h: int = 1024) -> str:
+    """symmetry: an irregular half, exactly mirrored across a vertical axis."""
+    parts = [f'<line x1="{w / 2}" y1="60" x2="{w / 2}" y2="{h - 60}" '
+             'stroke="#1a1a1a" stroke-width="2" stroke-dasharray="10 12"/>']
+    # one irregular polyline half + mirrored twin, plus matched node dots
+    pts = [(0, 220), (-160, 320), (-110, 470), (-300, 560),
+           (-210, 700), (-380, 790), (-260, 880)]
+    for sgn in (-1, 1):
+        path = " ".join(f"{'M' if i == 0 else 'L'} {w / 2 + sgn * abs(x):.0f} {y}"
+                        for i, (x, y) in enumerate(pts))
+        parts.append(f'<path d="{path}" fill="none" stroke="#1a1a1a" '
+                     'stroke-width="6" stroke-linejoin="round"/>')
+        for x, y in pts:
+            parts.append(f'<circle cx="{w / 2 + sgn * abs(x):.0f}" cy="{y}" r="11" '
+                         'fill="#1a1a1a"/>')
+    return svg_doc(w, h, "".join(parts))
+
+
+def skel_alternation(n: int = 10, w: int = 1536, h: int = 1024) -> str:
+    """alternation: a chain whose nodes strictly alternate two states (A B A B ...)."""
+    parts, margin = [], 130
+    step = (w - 2 * margin) / (n - 1)
+    for k in range(n - 1):
+        x1, x2 = margin + k * step, margin + (k + 1) * step
+        y1 = h / 2 + (-70 if k % 2 == 0 else 70)
+        y2 = h / 2 + (-70 if (k + 1) % 2 == 0 else 70)
+        parts.append(f'<line x1="{x1:.0f}" y1="{y1:.0f}" x2="{x2:.0f}" y2="{y2:.0f}" '
+                     'stroke="#1a1a1a" stroke-width="5"/>')
+    for k in range(n):
+        x = margin + k * step
+        y = h / 2 + (-70 if k % 2 == 0 else 70)
+        if k % 2 == 0:
+            parts.append(f'<circle cx="{x:.0f}" cy="{y:.0f}" r="26" fill="#1a1a1a"/>')
+        else:
+            parts.append(f'<circle cx="{x:.0f}" cy="{y:.0f}" r="26" fill="#ffffff" '
+                         'stroke="#1a1a1a" stroke-width="6"/>')
+    return svg_doc(w, h, "".join(parts))
+
+
+def skel_spiral(turns: float = 3.4, b: float = 0.16, w: int = 1024, h: int = 1024) -> str:
+    """spiral: logarithmic spiral r = a e^{b theta} polyline with dots on it."""
+    cx, cy = w / 2, h / 2
+    theta_max = turns * 2 * math.pi
+    a = (min(w, h) / 2 - 60) / math.exp(b * theta_max)
+    pts = []
+    steps = 400
+    for i in range(steps + 1):
+        t = theta_max * i / steps
+        r = a * math.exp(b * t)
+        pts.append((cx + r * math.cos(t), cy + r * math.sin(t)))
+    path = " ".join(f"{'M' if i == 0 else 'L'} {x:.1f} {y:.1f}"
+                    for i, (x, y) in enumerate(pts))
+    parts = [f'<path d="{path}" fill="none" stroke="#1a1a1a" stroke-width="6"/>',
+             f'<circle cx="{cx}" cy="{cy}" r="7" fill="#1a1a1a"/>']
+    # dots each time the spiral returns to the same heading: radius grows by e^{2 pi b}
+    for k in range(int(turns) + 1):
+        t = 2 * math.pi * k
+        r = a * math.exp(b * t)
+        parts.append(f'<circle cx="{cx + r:.1f}" cy="{cy:.1f}" r="13" fill="#1a1a1a"/>')
+    return svg_doc(w, h, "".join(parts))
+
+
+def skel_converge(w: int = 1536, h: int = 1024) -> str:
+    """convergence: many sources, paths merging pairwise until a single sink."""
+    marker = ('<defs><marker id="c" viewBox="0 0 10 10" refX="8" refY="5" '
+              'markerWidth="7" markerHeight="7" orient="auto">'
+              '<path d="M 0 0 L 10 5 L 0 10 z" fill="#1a1a1a"/></marker></defs>')
+    parts = [marker]
+    # binary merge tree, left -> right: 8 sources -> 4 -> 2 -> 1 sink
+    levels = 3
+    xs = [140 + k * (w - 300) / levels for k in range(levels + 1)]
+    ys = {3: [h * (i + 1) / 9 for i in range(8)]}
+    for lv in (2, 1, 0):
+        prev = ys[lv + 1]
+        ys[lv] = [(prev[2 * i] + prev[2 * i + 1]) / 2 for i in range(len(prev) // 2)]
+    for lv in (3, 2, 1):
+        x1, x2 = xs[3 - lv], xs[3 - lv + 1]
+        for i, y in enumerate(ys[lv]):
+            y2 = ys[lv - 1][i // 2]
+            parts.append(f'<path d="M {x1:.0f} {y:.0f} C {x1 + 90:.0f} {y:.0f} '
+                         f'{x2 - 90:.0f} {y2:.0f} {x2:.0f} {y2:.0f}" fill="none" '
+                         f'stroke="#1a1a1a" stroke-width="{3 + (3 - lv) * 2}" '
+                         'marker-end="url(#c)"/>')
+    for i, y in enumerate(ys[3]):
+        parts.append(f'<circle cx="{xs[0]:.0f}" cy="{y:.0f}" r="12" fill="#1a1a1a"/>')
+    parts.append(f'<circle cx="{xs[3]:.0f}" cy="{ys[0][0]:.0f}" r="22" fill="#1a1a1a"/>')
+    return svg_doc(w, h, "".join(parts))
+
+
+def skel_bottleneck(w: int = 1536, h: int = 1024) -> str:
+    """bottleneck: two clusters connected ONLY through one middle cut vertex."""
+    cxl, cxr, cy = 300, w - 300, h / 2
+    mid = (w / 2, cy)
+    left = [(cxl + 150 * math.cos(a), cy + 260 * math.sin(a))
+            for a in [k * 2 * math.pi / 7 + 0.4 for k in range(7)]]
+    right = [(cxr + 150 * math.cos(a), cy + 260 * math.sin(a))
+             for a in [k * 2 * math.pi / 7 + 1.1 for k in range(7)]]
+    parts = []
+    for cluster in (left, right):
+        for i, (x1, y1) in enumerate(cluster):        # sparse intra-cluster edges
+            x2, y2 = cluster[(i + 2) % len(cluster)]
+            parts.append(f'<line x1="{x1:.0f}" y1="{y1:.0f}" x2="{x2:.0f}" y2="{y2:.0f}" '
+                         'stroke="#1a1a1a" stroke-width="3"/>')
+    # every cross connection passes through the single middle node
+    for x, y in left[:4] + right[:4]:
+        parts.append(f'<line x1="{x:.0f}" y1="{y:.0f}" x2="{mid[0]:.0f}" y2="{mid[1]:.0f}" '
+                     'stroke="#1a1a1a" stroke-width="4"/>')
+    for x, y in left + right:
+        parts.append(f'<circle cx="{x:.0f}" cy="{y:.0f}" r="13" fill="#1a1a1a"/>')
+    parts.append(f'<circle cx="{mid[0]:.0f}" cy="{mid[1]:.0f}" r="24" fill="#ffffff" '
+                 'stroke="#1a1a1a" stroke-width="7"/>')
+    return svg_doc(w, h, "".join(parts))
+
+
+def skel_broken(rows: int = 6, cols: int = 9, w: int = 1536, h: int = 1024) -> str:
+    """symmetry_breaking: a perfectly regular field with exactly one deviant cell."""
+    parts = []
+    mx, my = 120, 110
+    dx, dy = (w - 2 * mx) / (cols - 1), (h - 2 * my) / (rows - 1)
+    odd = (2, 5)  # the one exception (row, col)
+    for r in range(rows):
+        for c in range(cols):
+            x, y = mx + c * dx, my + r * dy
+            if (r, c) == odd:
+                parts.append(f'<circle cx="{x:.0f}" cy="{y:.0f}" r="30" '
+                             'fill="#1a1a1a" transform="rotate(0)"/>')
+            else:
+                parts.append(f'<rect x="{x - 24:.0f}" y="{y - 24:.0f}" width="48" '
+                             'height="48" fill="none" stroke="#1a1a1a" '
+                             'stroke-width="5"/>')
+    return svg_doc(w, h, "".join(parts))
+
+
+def skel_strange_loop(levels: int = 4, w: int = 1024, h: int = 1024) -> str:
+    """strange loop: a ladder of levels climbing upward — and one edge from the
+    top leading back to the bottom (a back edge across the hierarchy)."""
+    marker = ('<defs><marker id="s" viewBox="0 0 10 10" refX="8" refY="5" '
+              'markerWidth="7" markerHeight="7" orient="auto">'
+              '<path d="M 0 0 L 10 5 L 0 10 z" fill="#1a1a1a"/></marker></defs>')
+    parts = [marker]
+    xs, ys = [], []
+    for k in range(levels):
+        x = 300 + (k % 2) * (w - 640)
+        y = h - 160 - k * (h - 320) / (levels - 1)
+        xs.append(x)
+        ys.append(y)
+    for k in range(levels):  # level platforms
+        parts.append(f'<line x1="{xs[k] - 110:.0f}" y1="{ys[k]:.0f}" '
+                     f'x2="{xs[k] + 110:.0f}" y2="{ys[k]:.0f}" '
+                     'stroke="#1a1a1a" stroke-width="8"/>')
+        parts.append(f'<circle cx="{xs[k]:.0f}" cy="{ys[k]:.0f}" r="14" fill="#1a1a1a"/>')
+    for k in range(levels - 1):  # upward steps
+        parts.append(f'<line x1="{xs[k]:.0f}" y1="{ys[k] - 10:.0f}" '
+                     f'x2="{xs[k + 1]:.0f}" y2="{ys[k + 1] + 12:.0f}" '
+                     'stroke="#1a1a1a" stroke-width="5" marker-end="url(#s)"/>')
+    # the impossible return: top feeds straight back into bottom
+    parts.append(f'<path d="M {xs[-1] + 60:.0f} {ys[-1]:.0f} '
+                 f'C {w - 60:.0f} {ys[-1]:.0f} {w - 60:.0f} {ys[0]:.0f} '
+                 f'{xs[0] + 120:.0f} {ys[0]:.0f}" fill="none" stroke="#1a1a1a" '
+                 'stroke-width="6" stroke-dasharray="16 10" marker-end="url(#s)"/>')
+    return svg_doc(w, h, "".join(parts))
+
+
+def skel_figure_ground(rows: int = 4, cols: int = 7, w: int = 1536, h: int = 1024) -> str:
+    """figure/ground: interlocking triangles — the white gaps between the black
+    figures are exactly the same shape, pointing the other way."""
+    parts = []
+    tw, th = w / cols, h / rows
+    for r in range(rows):
+        for c in range(cols + 1):
+            x0 = (c - 0.5) * tw if r % 2 else c * tw
+            y0 = r * th
+            up = f"M {x0:.0f} {y0 + th:.0f} L {x0 + tw / 2:.0f} {y0:.0f} " \
+                 f"L {x0 + tw:.0f} {y0 + th:.0f} Z"
+            parts.append(f'<path d="{up}" fill="#1a1a1a"/>')
+    return svg_doc(w, h, "".join(parts))
+
+
+def skel_hub(n: int = 9, w: int = 1024, h: int = 1024) -> str:
+    """hub: star K_{1,n} — one center touching all, no rim edges."""
+    cx, cy, r = w / 2, h / 2, min(w, h) / 2 - 110
+    parts = []
+    for k in range(n):
+        a = 2 * math.pi * k / n - math.pi / 2
+        x, y = cx + r * math.cos(a), cy + r * math.sin(a)
+        parts.append(f'<line x1="{cx}" y1="{cy}" x2="{x:.0f}" y2="{y:.0f}" '
+                     'stroke="#1a1a1a" stroke-width="5"/>')
+        parts.append(f'<circle cx="{x:.0f}" cy="{y:.0f}" r="16" fill="#1a1a1a"/>')
+    parts.append(f'<circle cx="{cx}" cy="{cy}" r="34" fill="#1a1a1a"/>')
+    return svg_doc(w, h, "".join(parts))
+
+
+def skel_tiling(w: int = 1536, h: int = 1024, r: float = 110) -> str:
+    """tiling: hexagonal lattice, translation-invariant honeycomb."""
+    parts = []
+    dx, dy = r * 3, r * math.sqrt(3) / 2
+    for row in range(-1, int(h / dy) + 2):
+        off = 0 if row % 2 == 0 else r * 1.5
+        for col in range(-1, int(w / dx) + 2):
+            cx, cy = col * dx + off, row * dy
+            pts = " ".join(f"{cx + r * math.cos(math.pi / 3 * k):.0f},"
+                           f"{cy + r * math.sin(math.pi / 3 * k):.0f}" for k in range(6))
+            parts.append(f'<polygon points="{pts}" fill="none" stroke="#1a1a1a" '
+                         'stroke-width="5"/>')
+    return svg_doc(w, h, "".join(parts))
+
+
+def skel_braid(strands: int = 3, cycles: float = 2.0, w: int = 1536, h: int = 1024) -> str:
+    """braiding: three sinusoidal strands weaving over/under — at each crossing
+    the under strand is nicked white."""
+    margin, cy, amp, n = 120, h / 2, 190, 600
+    xs = [margin + (w - 2 * margin) * i / n for i in range(n + 1)]
+
+    def y(s, i):
+        u = i / n
+        return cy + amp * math.sin(2 * math.pi * cycles * u + 2 * math.pi * s / strands)
+
+    parts = []
+    for s in range(strands):
+        d = " ".join(f"{'M' if i == 0 else 'L'} {xs[i]:.0f} {y(s, i):.0f}"
+                     for i in range(n + 1))
+        parts.append(f'<path d="{d}" fill="none" stroke="#1a1a1a" stroke-width="10" '
+                     'stroke-linecap="round"/>')
+    # find crossings per pair, alternate over/under, nick the under strand
+    for a in range(strands):
+        for b in range(a + 1, strands):
+            k = 0
+            for i in range(n):
+                d1, d2 = y(a, i) - y(b, i), y(a, i + 1) - y(b, i + 1)
+                if d1 == 0 or d1 * d2 > 0:
+                    continue
+                over = a if k % 2 == 0 else b   # alternate: a genuine weave
+                k += 1
+                i0, i1 = max(0, i - 14), min(n, i + 15)
+                seg = " ".join(f"{'M' if j == i0 else 'L'} {xs[j]:.0f} "
+                               f"{y(over, j):.0f}" for j in range(i0, i1 + 1))
+                parts.append(f'<path d="{seg}" fill="none" stroke="#ffffff" '
+                             'stroke-width="30" stroke-linecap="round"/>')
+                parts.append(f'<path d="{seg}" fill="none" stroke="#1a1a1a" '
+                             'stroke-width="10" stroke-linecap="round"/>')
+    return svg_doc(w, h, "".join(parts))
+
+
+def skel_mobius(w: int = 1536, h: int = 1024) -> str:
+    """mobius: 3D parametrization of the band projected to 2D — boundary edge
+    (one continuous curve, twice around) + depth-sorted rungs with occlusion."""
+    cx, cy, R, half = w / 2, h / 2 + 30, 360, 95
+    tilt_y, tilt_z = 0.42, 0.9
+
+    def pt(u, v):
+        x = (R + v * math.cos(u / 2)) * math.cos(u)
+        yy = (R + v * math.cos(u / 2)) * math.sin(u)
+        z = v * math.sin(u / 2)
+        return (cx + x, cy + yy * tilt_y - z * tilt_z, yy)   # yy = depth
+
+    # rungs, painter-sorted back to front, each with a white casing
+    rungs = []
+    n_r = 36
+    for k in range(n_r):
+        u = 2 * math.pi * k / n_r
+        p1, p2 = pt(u, -half), pt(u, half)
+        rungs.append(((p1[2] + p2[2]) / 2, p1, p2))
+    parts = []
+    for _, p1, p2 in sorted(rungs, key=lambda t: -t[0]):     # far first
+        parts.append(f'<line x1="{p1[0]:.0f}" y1="{p1[1]:.0f}" x2="{p2[0]:.0f}" '
+                     f'y2="{p2[1]:.0f}" stroke="#ffffff" stroke-width="18"/>')
+        parts.append(f'<line x1="{p1[0]:.0f}" y1="{p1[1]:.0f}" x2="{p2[0]:.0f}" '
+                     f'y2="{p2[1]:.0f}" stroke="#1a1a1a" stroke-width="6"/>')
+    # boundary edge: v = +half, u through 4*pi closes the single edge
+    n_b = 400
+    d = " ".join(f"{'M' if i == 0 else 'L'} {pt(4 * math.pi * i / n_b, half)[0]:.0f} "
+                 f"{pt(4 * math.pi * i / n_b, half)[1]:.0f}" for i in range(n_b + 1))
+    parts.append(f'<path d="{d}" fill="none" stroke="#1a1a1a" stroke-width="5"/>')
+    return svg_doc(w, h, "".join(parts))
+
+
+def skel_isomorphism(w: int = 1536, h: int = 1024) -> str:
+    """isomorphism: the same 5-vertex graph drawn twice (pentagon vs star layout),
+    dashed lines pairing corresponding vertices."""
+    edges = [(0, 1), (1, 2), (2, 3), (3, 4), (4, 0)]   # C5: same edges both sides
+    cy, r = h / 2, 260
+    left = [(390 + r * math.cos(2 * math.pi * k / 5 - math.pi / 2),
+             cy + r * math.sin(2 * math.pi * k / 5 - math.pi / 2)) for k in range(5)]
+    # right: same C5 but drawn as a pentagram (vertices reordered 0,2,4,1,3)
+    order = [0, 2, 4, 1, 3]
+    right = [None] * 5
+    for slot, k in enumerate(order):
+        right[k] = (w - 390 + r * math.cos(2 * math.pi * slot / 5 - math.pi / 2),
+                    cy + r * math.sin(2 * math.pi * slot / 5 - math.pi / 2))
+    parts = []
+    for pts in (left, right):
+        for a, b in edges:
+            parts.append(f'<line x1="{pts[a][0]:.0f}" y1="{pts[a][1]:.0f}" '
+                         f'x2="{pts[b][0]:.0f}" y2="{pts[b][1]:.0f}" '
+                         'stroke="#1a1a1a" stroke-width="6"/>')
+        for x, y in pts:
+            parts.append(f'<circle cx="{x:.0f}" cy="{y:.0f}" r="15" fill="#1a1a1a"/>')
+    for k in range(5):  # the correspondence phi
+        parts.append(f'<line x1="{left[k][0]:.0f}" y1="{left[k][1]:.0f}" '
+                     f'x2="{right[k][0]:.0f}" y2="{right[k][1]:.0f}" '
+                     'stroke="#8a8a8a" stroke-width="2.5" stroke-dasharray="8 10"/>')
+    return svg_doc(w, h, "".join(parts))
+
+
+def skel_interference(w: int = 1536, h: int = 1024) -> str:
+    """interference: two overlapping sets of concentric circles — bright and dark
+    bands (hyperbolas) appear where the wavefronts agree / disagree."""
+    parts = []
+    for cx in (w / 2 - 230, w / 2 + 230):
+        for k in range(1, 14):
+            parts.append(f'<circle cx="{cx:.0f}" cy="{h / 2:.0f}" r="{k * 72}" '
+                         'fill="none" stroke="#1a1a1a" stroke-width="5"/>')
+    return svg_doc(w, h, "".join(parts))
+
+
 # ---------------------------------------------------------------------------
-# motifs
+# motif registry
+#
+# All motif metadata (names, equations, formal math, theorems, invariants,
+# story form devices) lives in data/motif_library.json — the verified library.
+# This file only maps each motif to its skeleton renderers and scene prompts.
 # ---------------------------------------------------------------------------
 
-MOTIFS = {
-    "recursion": {
-        "name": "Recursive branching — the part repeats the whole",
-        "equation": "T = \\operatorname{Node}(T,\\dots,T)",
-        "invariant": "every branch, looked at alone, has the same shape as the whole",
-        "nuisance": ["depth", "branching factor", "angles", "scale ratio", "domain"],
-        "story": (
-            "[domain: 河与支流]\n\n"
-            "问大河：你从哪里来？大河说：我由几条小河汇成。问其中一条小河，"
-            "它说：我也是一条河，也由更小的河汇成。再问下去，答案永远一样——"
-            "每一条河，都是由和它一样的东西组成的。\n\n"
-            "[domain: same structure · English]\n\n"
-            "Ask the great river where it comes from, and it answers: from smaller "
-            "rivers. Ask any of those, and it gives the same answer. However far you "
-            "go, the answer never changes — each river is made of things shaped "
-            "exactly like itself."
-        ),
-        "math": (
-            "A recursively defined object — the type on the left appears, unchanged, "
-            "on the right:\n\n"
-            "$$T = \\operatorname{Node}(T,\\dots,T).$$\n\n"
-            "Unrolling the equation gives the same branching shape at every scale. "
-            "How many children, how deep, at what angle — all irrelevant: the "
-            "structure is that **the part repeats the whole**."
-        ),
-        "skeletons": {"tree": lambda: skel_tree()},
-        "scenes": [
-            ("river_delta", "tree", "1536x1024",
-             "Use this branching diagram ONLY as a compositional skeleton. Paint a "
-             "photorealistic AERIAL photograph of a river delta in golden wetlands: "
-             "one main river enters where the trunk is, and every fork of the diagram "
-             "becomes a fork of the river channels, splitting into narrower and "
-             "narrower waterways along the drawn branches. Water glinting in low sun, "
-             "marsh grass, mudflats. " + NO_DIAGRAM),
-            ("lightning", "tree", "1536x1024",
-             "Use this branching diagram ONLY as a compositional skeleton. A dramatic "
-             "long-exposure photograph of a single lightning bolt at night: the main "
-             "discharge channel where the trunk is, every fork of the diagram becomes "
-             "a fork of the lightning, branching into thinner glowing filaments along "
-             "the drawn branches. Dark storm sky, city horizon barely visible. "
-             + NO_DIAGRAM),
-        ],
-        "extra_scenes": [],
-        "t2i_scenes": [
-            ("winter_tree", "1024x1024",
-             "A striking photograph of a single leafless tree against a pale sky in "
-             "winter, seen so its branching is fully visible. The trunk splits into a "
-             "few boughs; each bough splits the same way into smaller boughs; each of "
-             "those into finer twigs — the identical branching pattern repeating at "
-             "every scale, clearly self-similar and fractal. Elegant, high-contrast. "
-             "No text, no words, no letters."),
-        ],
-    },
-    "nesting": {
-        "name": "Nesting — the same form inside itself, at every scale",
-        "equation": "S_\\lambda(X) = X",
-        "invariant": "inside each layer sits a smaller copy of the same layer",
-        "nuisance": ["number of layers", "spacing", "exact shape", "domain"],
-        "story": (
-            "[domain: 环城]\n\n"
-            "这座古城有一圈城墙。走进城门，里面还是一座城，有自己的一圈城墙；"
-            "再走进去，还是一座城。城里有城，墙里有墙，一直到最中心的一座小小的宫殿。\n\n"
-            "[domain: same structure · English]\n\n"
-            "The ancient city has a wall. Pass through the gate, and inside is another "
-            "city with its own wall; pass through again, another still. City within "
-            "city, wall within wall, down to one small palace at the very center."
-        ),
-        "math": (
-            "One scaling map carries every layer onto the next, and the whole pattern "
-            "onto itself:\n\n"
-            "$$S_\\lambda(X) = X, \\qquad 0 < \\lambda < 1.$$\n\n"
-            "How many rings there are, how far apart — irrelevant: the structure is "
-            "**the same form, containing itself**."
-        ),
-        "skeletons": {"concentric": lambda: skel_concentric()},
-        "scenes": [
-            ("walled_city", "concentric", "1024x1024",
-             "Use these concentric circles ONLY as a compositional skeleton. A "
-             "photorealistic aerial photograph at dawn of an ancient walled city: "
-             "each circle of the diagram is a ring of city wall, one inside another, "
-             "with rooftops, trees and lanes filling the space between the walls, and "
-             "a small palace at the exact center. Warm morning light, long shadows. "
-             + NO_DIAGRAM),
-        ],
-        "extra_scenes": [],
-        "t2i_scenes": [
-            ("pond_ripples", "1024x1024",
-             "A photograph-like, tranquil overhead view of a still dark pond at dawn "
-             "where a single raindrop has just struck the center. Perfectly concentric "
-             "circular ripples spread outward — many evenly spaced rings, each one a "
-             "larger copy of the ring inside it, nested from a tiny bright point at "
-             "the center out to the edges. Soft morning light, calm and meditative, "
-             "photorealistic water surface. No text, no words, no letters."),
-        ],
-    },
-    "cycle": {
-        "name": "Cycle — following the arrows leads back to the start",
-        "equation": "v \\leadsto v",
-        "invariant": "there is no first element: the end feeds the beginning",
-        "nuisance": ["length of the loop", "what the elements are", "domain"],
-        "story": (
-            "[domain: 鸡与蛋]\n\n"
-            "鸡从蛋里孵出来。蛋是鸡下的。那第一只鸡呢？——从蛋里孵出来。"
-            "那第一个蛋呢？——是鸡下的。这个问题绕了一圈，回到了它自己开始的地方。\n\n"
-            "[domain: same structure · English]\n\n"
-            "The hen hatches from the egg; the egg is laid by the hen. Then where did "
-            "the first hen come from? From an egg. And the first egg? From a hen. The "
-            "question walks in a circle and arrives back exactly where it began."
-        ),
-        "math": (
-            "Follow the arrows and you return to your starting point:\n\n"
-            "$$v_0 \\to v_1 \\to \\dots \\to v_n \\to v_0, \\qquad v \\leadsto v.$$\n\n"
-            "How many steps the loop has, what the elements are — irrelevant: the "
-            "structure is **closure: the end feeds the beginning**."
-        ),
-        "skeletons": {"ring": lambda: skel_ring()},
-        "scenes": [
-            ("ouroboros", "ring", "1024x1024",
-             "Use this circular diagram of arrows ONLY as a compositional skeleton. "
-             "A classical ink-and-gold painting of an ouroboros: a serpent whose body "
-             "follows exactly the circle of the diagram, its mouth closing on its own "
-             "tail where the arrows meet, scales rendered in fine ink lines with "
-             "muted gold accents on aged paper. " + NO_DIAGRAM),
-            ("canal_town", "ring", "1024x1024",
-             "Use this circular diagram of arrows ONLY as a compositional skeleton. "
-             "A photorealistic aerial photograph of a small old town built around a "
-             "perfectly circular canal that follows exactly the circle of the "
-             "diagram; boats moving one way around it, little bridges, tiled roofs, "
-             "morning mist. " + NO_DIAGRAM),
-        ],
-    },
-    "self_reference": {
-        "name": "Self-reference — the thing contains itself",
-        "equation": "s = T(s)",
-        "invariant": "the whole appears, unchanged, inside itself",
-        "nuisance": ["visible nesting levels", "medium", "domain"],
-        "story": (
-            "[domain: 民间口传]\n\n"
-            "从前有座山，山里有座庙，庙里有个老和尚，正在给小和尚讲故事。"
-            "他讲的是：从前有座山，山里有座庙，庙里有个老和尚，正在给小和尚讲故事……\n\n"
-            "[domain: same structure · English]\n\n"
-            "Once upon a time there was a mountain; on the mountain, a temple; in the "
-            "temple, an old monk telling a young monk a story. The story was: once "
-            "upon a time there was a mountain…"
-        ),
-        "math": (
-            "The story is a fixed point of its own telling:\n\n"
-            "$$s = T(s), \\qquad f(x) = x.$$\n\n"
-            "There is no base case and no bottom level. The structure is "
-            "**the whole appearing, unchanged, inside itself**."
-        ),
-        "skeletons": {"frames": lambda: skel_frames()},
-        "scenes": [
-            ("droste_study", "frames", "1536x1024",
-             "Use these nested rectangles ONLY as a compositional skeleton. A warm "
-             "photograph of a quiet wood-panelled study: the outermost rectangle is "
-             "the room's back wall, and on that wall hangs a framed painting — the "
-             "next rectangle — showing the SAME study with the same desk and lamp; "
-             "inside it, the next frame shows the study again, smaller, and again, "
-             "receding with each drawn rectangle (Droste effect). Soft lamplight. "
-             + NO_DIAGRAM),
-        ],
-        "extra_scenes": [],
-        "t2i_scenes": [
-            ("mountain_temple", "1024x1024",
-             "A serene traditional Chinese ink-wash and light-color landscape painting. "
-             "A misty mountain; on it a small temple; inside, through the open door, an "
-             "old monk sits telling a story to a young monk. On the wall behind them "
-             "hangs a painting — and that painting shows the SAME mountain, the SAME "
-             "temple, the SAME two monks, smaller; and inside THAT scene, another "
-             "painting of the same scene, smaller again — a picture within a picture, "
-             "receding infinitely toward the center (mise en abyme, Droste effect). "
-             "Exactly three clearly visible nested levels before it fades into mist. "
-             "Muted ink tones with soft gold light. No text, no words, no letters."),
-        ],
-    },
+LIBRARY = {m["id"]: m for m in
+           json.loads((ROOT / "data" / "motif_library.json").read_text())}
+
+SKELETONS = {
+    "recursion": {"tree": lambda: skel_tree()},
+    "nesting": {"concentric": lambda: skel_concentric()},
+    "cycle": {"ring": lambda: skel_ring()},
+    "self_reference": {"frames": lambda: skel_frames()},
+    "symmetry": {"mirror": lambda: skel_mirror()},
+    "alternation": {"chain": lambda: skel_alternation()},
+    "spiral": {"logspiral": lambda: skel_spiral()},
+    "convergence": {"funnel": lambda: skel_converge()},
+    "bottleneck": {"dumbbell": lambda: skel_bottleneck()},
+    "symmetry_breaking": {"field": lambda: skel_broken()},
+    "strange_loop": {"ladder": lambda: skel_strange_loop()},
+    "figure_ground": {"tessellation": lambda: skel_figure_ground()},
+    "isomorphism": {"twographs": lambda: skel_isomorphism()},
+    "mobius": {"band": lambda: skel_mobius()},
+    "braiding": {"weave": lambda: skel_braid()},
+    "interference": {"ripples": lambda: skel_interference()},
+    "tiling": {"honeycomb": lambda: skel_tiling()},
+    "hub": {"star": lambda: skel_hub()},
+}
+
+REF = "Use this diagram ONLY as a compositional skeleton. "
+
+# scenes generated with the skeleton as reference image
+SCENES = {
+    "recursion": [
+        ("river_delta", "tree", "1536x1024",
+         REF + "Paint a photorealistic AERIAL photograph of a river delta in "
+         "golden wetlands: one main river enters where the trunk is, and every "
+         "fork of the diagram becomes a fork of the river channels, splitting "
+         "into narrower and narrower waterways along the drawn branches. Water "
+         "glinting in low sun, marsh grass, mudflats. " + NO_DIAGRAM),
+        ("lightning", "tree", "1536x1024",
+         REF + "A dramatic long-exposure photograph of a single lightning bolt "
+         "at night: the main discharge channel where the trunk is, every fork "
+         "of the diagram becomes a fork of the lightning, branching into "
+         "thinner glowing filaments along the drawn branches. Dark storm sky, "
+         "city horizon barely visible. " + NO_DIAGRAM),
+    ],
+    "nesting": [
+        ("walled_city", "concentric", "1024x1024",
+         REF + "A photorealistic aerial photograph at dawn of an ancient "
+         "walled city: each circle of the diagram is a ring of city wall, one "
+         "inside another, with rooftops, trees and lanes filling the space "
+         "between the walls, and a small palace at the exact center. Warm "
+         "morning light, long shadows. " + NO_DIAGRAM),
+    ],
+    "cycle": [
+        ("ouroboros", "ring", "1024x1024",
+         REF + "A classical ink-and-gold painting of an ouroboros: a serpent "
+         "whose body follows exactly the circle of the diagram, its mouth "
+         "closing on its own tail where the arrows meet, scales rendered in "
+         "fine ink lines with muted gold accents on aged paper. " + NO_DIAGRAM),
+        ("canal_town", "ring", "1024x1024",
+         REF + "A photorealistic aerial photograph of a small old town built "
+         "around a perfectly circular canal that follows exactly the circle "
+         "of the diagram; boats moving one way around it, little bridges, "
+         "tiled roofs, morning mist. " + NO_DIAGRAM),
+    ],
+    "self_reference": [
+        ("droste_study", "frames", "1536x1024",
+         REF + "A warm photograph of a quiet wood-panelled study: the "
+         "outermost rectangle is the room's back wall, and on that wall hangs "
+         "a framed painting — the next rectangle — showing the SAME study "
+         "with the same desk and lamp; inside it, the next frame shows the "
+         "study again, smaller, and again, receding with each drawn rectangle "
+         "(Droste effect). Soft lamplight. " + NO_DIAGRAM),
+    ],
+    "symmetry": [
+        ("butterfly", "mirror", "1536x1024",
+         REF + "An exquisite macro photograph of a butterfly with wings fully "
+         "spread, photographed exactly head-on: the two drawn polyline halves "
+         "become the wing edges and vein patterns, every spot and streak on "
+         "the left wing mirrored exactly on the right, the dashed axis is the "
+         "slim body — the only unpaired part. Dark velvet background. "
+         + NO_DIAGRAM),
+        ("temple_facade", "mirror", "1536x1024",
+         REF + "A fine woodblock print of a grand temple gate seen exactly "
+         "front-on: the two drawn polyline halves become the left and right "
+         "rooflines, brackets, pillars and stone lions, perfectly mirrored "
+         "about the central doorway on the dashed axis. Warm paper tone, "
+         "crisp carved lines. " + NO_DIAGRAM),
+    ],
+    "alternation": [
+        ("lantern_row", "chain", "1536x1024",
+         REF + "A photograph at dusk of a long row of paper lanterns strung "
+         "between poles along a village street: lanterns hang at the drawn "
+         "node positions, strictly alternating — one glowing warm red, the "
+         "next plain white paper, red, white — never two alike in a row, the "
+         "string dipping and rising along the drawn zigzag. " + NO_DIAGRAM),
+    ],
+    "spiral": [
+        ("nautilus", "logspiral", "1024x1024",
+         REF + "A luxurious macro photograph of a nautilus shell cut in "
+         "cross-section: the mother-of-pearl septa chambers follow exactly "
+         "the drawn spiral, each chamber a fixed ratio larger than the last "
+         "as the curve winds outward from the center. Soft studio light on "
+         "iridescent nacre, dark background. " + NO_DIAGRAM),
+        ("typhoon", "logspiral", "1024x1024",
+         REF + "A satellite photograph of a great typhoon over the ocean seen "
+         "straight from above: the rain bands coil along exactly the drawn "
+         "spiral, each band farther from the calm round eye than the last, "
+         "white cloud arms against deep blue sea. " + NO_DIAGRAM),
+    ],
+    "convergence": [
+        ("watershed", "funnel", "1536x1024",
+         REF + "A photorealistic aerial photograph of a mountain watershed: "
+         "small streams rise separately at the drawn source dots, join in "
+         "pairs exactly where the drawn paths merge, growing wider at each "
+         "confluence, until one great river pours into a single lake at the "
+         "drawn sink. Forested valleys, late afternoon light. " + NO_DIAGRAM),
+        ("homing_birds", "funnel", "1536x1024",
+         REF + "A long-exposure photograph at dusk: streaks of birds flying "
+         "home from many distant points, their light trails following the "
+         "drawn merging paths, flocks joining flocks, all converging onto one "
+         "single great tree silhouetted at the drawn endpoint. Deep orange "
+         "sky. " + NO_DIAGRAM),
+    ],
+    "bottleneck": [
+        ("gorge_bridge", "dumbbell", "1536x1024",
+         REF + "A photorealistic aerial photograph of two mountain villages "
+         "separated by a deep gorge: each village has its own dense web of "
+         "footpaths matching the drawn cluster edges, and the ONLY connection "
+         "between the two sides is one narrow stone bridge at the drawn "
+         "center node — every drawn line into the center becomes a path "
+         "funnelling toward the bridge. Morning haze in the gorge. "
+         + NO_DIAGRAM),
+    ],
+    "symmetry_breaking": [
+        ("orchard_anomaly", "field", "1536x1024",
+         REF + "A photorealistic aerial photograph of a vast orchard planted "
+         "in a perfect grid: identical green trees at every drawn square — "
+         "except at the drawn black circle, where a single ancient tree "
+         "blazes autumn-red, the one exception in a perfectly regular field. "
+         "Even soft light. " + NO_DIAGRAM),
+    ],
+    "strange_loop": [
+        ("impossible_stairs", "ladder", "1024x1024",
+         REF + "A photorealistic architectural photograph of a courtyard "
+         "staircase built as an impossible figure: each drawn platform is a "
+         "landing, every flight between them climbs clearly UPWARD step by "
+         "step, yet the drawn return curve closes the last flight back onto "
+         "the first landing — an endless ascending loop (Penrose stairs). "
+         "Stone steps, dramatic shadows, small figures walking upward "
+         "forever. " + NO_DIAGRAM),
+    ],
+    "figure_ground": [
+        ("day_night_birds", "tessellation", "1536x1024",
+         REF + "A masterful woodcut print where the drawn interlocking "
+         "triangles become interlocking birds: black birds flying left and "
+         "white birds flying right, fitted together so perfectly that the "
+         "space between the black birds IS the white birds and the space "
+         "between the white birds IS the black birds — no unused background "
+         "anywhere, figure and ground swapping roles across the sheet. "
+         + NO_DIAGRAM),
+    ],
+    "isomorphism": [
+        ("constellations", "twographs", "1536x1024",
+         REF + "A deep night-sky photograph with two constellations, one on "
+         "the left and one on the right, their stars at the drawn dot "
+         "positions and their classical connecting lines following the drawn "
+         "solid edges: the two look completely different, yet star for star "
+         "they connect in exactly the same pattern, and faint pale traces "
+         "along the drawn dashed lines pair each star with its counterpart. "
+         "Milky Way behind. " + NO_DIAGRAM),
+    ],
+    "mobius": [
+        ("silk_band", "band", "1536x1024",
+         REF + "An elegant studio photograph of a wide silk ribbon given a "
+         "single half-twist and joined into a loop, following exactly the "
+         "drawn band: the rungs become the weave of the fabric, and at the "
+         "twist the shimmering outside face turns seamlessly into the matte "
+         "inside face — one continuous single-sided surface. Deep red silk "
+         "on dark background, soft light. " + NO_DIAGRAM),
+    ],
+    "braiding": [
+        ("hair_braid", "weave", "1536x1024",
+         REF + "A close-up photograph in warm side light of a long braid of "
+         "dark hair laid on rough linen: three thick strands weave exactly "
+         "along the drawn curves, each crossing OVER then UNDER in turn, and "
+         "the order of the strands at the tail end is visibly different from "
+         "the order at the root. " + NO_DIAGRAM),
+        ("interchange", "weave", "1536x1024",
+         REF + "A photorealistic aerial photograph of a great highway "
+         "interchange at dusk: three elevated roadways sweep along exactly "
+         "the drawn curves, passing over and under one another at each drawn "
+         "crossing, headlight trails tracing each road, so the left-to-right "
+         "order of the roads at the far side differs from the near side. "
+         + NO_DIAGRAM),
+    ],
+    "interference": [
+        ("two_ripples", "ripples", "1536x1024",
+         REF + "A photorealistic overhead photograph of a still dark pond a "
+         "moment after two stones struck it at the two drawn centers: two "
+         "families of concentric ripples spread and pass through each other, "
+         "and where the drawn circles intersect, a woven lattice of bright "
+         "and calm bands appears — a larger pattern neither stone made "
+         "alone. Soft dawn light. " + NO_DIAGRAM),
+    ],
+    "tiling": [
+        ("honeycomb", "honeycomb", "1536x1024",
+         REF + "A luminous macro photograph of a natural honeycomb backlit "
+         "with golden light: perfect hexagonal wax cells at exactly the drawn "
+         "lattice, identical cells repeating without gap or overlap to every "
+         "edge of the frame, a few cells capped, one bee at work. "
+         + NO_DIAGRAM),
+    ],
+    "hub": [
+        ("firework", "star", "1024x1024",
+         REF + "A long-exposure photograph of a single great firework at the "
+         "moment of its burst: glowing trails shoot from one blinding center "
+         "outward along exactly the drawn spokes, each trail ending in a "
+         "bright head at the drawn outer dots, no trail touching another. "
+         "Night sky over water with reflections. " + NO_DIAGRAM),
+    ],
+}
+
+# scenes with no skeleton (pure text-to-image)
+T2I_SCENES = {
+    "recursion": [
+        ("winter_tree", "1024x1024",
+         "A striking photograph of a single leafless tree against a pale sky "
+         "in winter, seen so its branching is fully visible. The trunk splits "
+         "into a few boughs; each bough splits the same way into smaller "
+         "boughs; each of those into finer twigs — the identical branching "
+         "pattern repeating at every scale, clearly self-similar and fractal. "
+         "Elegant, high-contrast. No text, no words, no letters."),
+    ],
+    "nesting": [
+        ("pond_ripples", "1024x1024",
+         "A photograph-like, tranquil overhead view of a still dark pond at "
+         "dawn where a single raindrop has just struck the center. Perfectly "
+         "concentric circular ripples spread outward — many evenly spaced "
+         "rings, each one a larger copy of the ring inside it, nested from a "
+         "tiny bright point at the center out to the edges. Soft morning "
+         "light, calm and meditative, photorealistic water surface. No text, "
+         "no words, no letters."),
+        ("moon_gates", "1024x1024",
+         "A photograph looking straight down the axis of a classical Chinese "
+         "garden: a sequence of round moon gates, one behind another, each "
+         "framing the next smaller gate within it, receding layer inside "
+         "layer into soft darkness — you may enter ever deeper but the "
+         "deepest court is never seen. Grey brick, moss, late light. No "
+         "text, no words, no letters."),
+    ],
+    "self_reference": [
+        ("mountain_temple", "1024x1024",
+         "A serene traditional Chinese ink-wash and light-color landscape "
+         "painting. A misty mountain; on it a small temple; inside, through "
+         "the open door, an old monk sits telling a story to a young monk. "
+         "On the wall behind them hangs a painting — and that painting shows "
+         "the SAME mountain, the SAME temple, the SAME two monks, smaller; "
+         "and inside THAT scene, another painting of the same scene, smaller "
+         "again — a picture within a picture, receding infinitely toward the "
+         "center (mise en abyme, Droste effect). Exactly three clearly "
+         "visible nested levels before it fades into mist. Muted ink tones "
+         "with soft gold light. No text, no words, no letters."),
+    ],
+    "alternation": [
+        ("zebra", "1536x1024",
+         "A high-contrast photograph filling the whole frame with the flank "
+         "of a zebra: bold black and white stripes in strict alternation, "
+         "black white black white with never two alike together, gently "
+         "curving with the body. No text, no words, no letters."),
+    ],
+    "symmetry_breaking": [
+        ("red_plum", "1024x1024",
+         "A fine photograph of a tree covered in thousands of identical "
+         "white plum blossoms — and exactly ONE blossom, near the heart of "
+         "the frame, is deep red. Everything else repeats the same rule; the "
+         "single red bloom is the only exception and the eye goes straight "
+         "to it. Soft grey sky. No text, no words, no letters."),
+    ],
+    "strange_loop": [
+        ("drawing_hands", "1536x1024",
+         "A warm photograph staged on a wooden desk: two real human hands, "
+         "each holding a pencil, each drawing the OTHER hand on the same "
+         "sheet of paper — the drawn hands merging seamlessly into the real "
+         "hands so it is impossible to say which hand is the drawer and "
+         "which is the drawing. Lamplight, graphite shading half-becoming "
+         "photograph. No text, no words, no letters."),
+    ],
+    "figure_ground": [
+        ("papercut", "1024x1024",
+         "A photograph of two sheets of paper side by side on a dark table: "
+         "on the left, an intricate red paper-cut of blossoms and birds; on "
+         "the right, the white sheet it was cut FROM — the holes in one are "
+         "exactly the figures of the other, each sheet a complete picture "
+         "made of the other's absence. Soft raking light. No text, no words, "
+         "no letters."),
+    ],
+    "isomorphism": [
+        ("tree_and_roots", "1024x1024",
+         "A traditional ink-wash painting split by the ground line: above, a "
+         "great tree's crown branching into the sky; below, its root system "
+         "branching into the earth — and the two branchings correspond limb "
+         "for limb, fork for fork, the same structure spoken twice in two "
+         "different worlds, one in air, one in soil. Muted earth tones. No "
+         "text, no words, no letters."),
+    ],
+    "mobius": [
+        ("ant_band", "1024x1024",
+         "A crisp studio photograph of a wide paper band given a half-twist "
+         "and glued into a loop, with a line of small red ants marching "
+         "single file along its surface: the column passes the twist and "
+         "continues seamlessly onto what seems the other side — because "
+         "there is only one side. Neutral grey background, sharp detail. No "
+         "text, no words, no letters."),
+    ],
+    "interference": [
+        ("moire_curtains", "1024x1024",
+         "A photograph of a bright window hung with two layers of fine mesh "
+         "curtain, slightly offset: where the two regular weaves overlap, "
+         "broad soft dark and light moiré bands ripple across the fabric — "
+         "a large slow pattern that neither curtain contains alone. Backlit, "
+         "airy. No text, no words, no letters."),
+    ],
+    "tiling": [
+        ("salt_pans", "1536x1024",
+         "A photorealistic aerial photograph of coastal salt evaporation "
+         "pans: identical rectangular pools repeating row after row in a "
+         "perfect grid to every edge of the frame, thin white ridges between "
+         "them, subtle pastel differences in the brine. Shift the whole "
+         "picture by one pool and it would land on itself. No text, no "
+         "words, no letters."),
+    ],
+    "hub": [
+        ("starfish", "1024x1024",
+         "A crisp overhead macro photograph of a single orange starfish "
+         "centered on dark wet sand at low tide: five arms radiating from "
+         "one central disc, arms never touching one another, fine ripple "
+         "texture around it. No text, no words, no letters."),
+    ],
+    "braiding": [],
+    "convergence": [],
+    "bottleneck": [
+        ("hourglass", "1024x1024",
+         "A dramatic macro photograph of an hourglass mid-flow against a "
+         "dark background: rich dunes of sand above and below, and between "
+         "them the single narrow throat through which every falling grain "
+         "must pass, one thin bright thread of sand connecting the two "
+         "worlds. No text, no words, no letters."),
+    ],
+    "cycle": [],
+    "symmetry": [],
+    "spiral": [],
 }
 
 
@@ -333,29 +824,38 @@ def gpt_t2i(prompt: str, size: str, out: Path) -> bool:
 
 
 def build_motif(mid: str) -> None:
-    spec = MOTIFS[mid]
+    lib = LIBRARY[mid]
     d = OUT / mid
     d.mkdir(parents=True, exist_ok=True)
 
     (d / "schema.json").write_text(json.dumps({
         "motif_id": mid,
-        "name": spec["name"],
-        "equation": spec["equation"],
-        "invariant": spec["invariant"],
-        "nuisance_variables": spec["nuisance"],
+        "name": lib["name_en"],
+        "name_zh": lib["name_zh"],
+        "equation": lib["equation_katex"],
+        "invariant": lib["invariant_zh"],
+        "math_home": lib["math_home"],
+        "story_form_device": lib["story_form_device"],
+        "geb_echo": lib["geb_echo"],
+        "nuisance_variables": ["node count", "depth", "angles", "layout",
+                               "scale", "domain", "medium"],
     }, indent=2, ensure_ascii=False))
-    (d / "story.txt").write_text(spec["story"])
-    (d / "math.md").write_text(spec["math"])
+    (d / "math.md").write_text(
+        f"# {lib['name_zh']} — mathematics voice\n\n"
+        f"$$" + lib["equation_katex"] + "$$\n\n"
+        f"**定义** {lib['math_formal']}\n\n"
+        f"**归属** {lib['math_home']}\n\n"
+        f"**定理** {lib['math_theorem']}\n")
 
     # skeletons
-    for name, render in spec["skeletons"].items():
+    for name, render in SKELETONS.get(mid, {}).items():
         svg = d / f"skeleton_{name}.svg"
         png = d / f"skeleton_{name}.png"
         svg.write_text(render())
         subprocess.run(["rsvg-convert", str(svg), "-o", str(png)], check=True)
 
     # scenes from skeleton refs
-    for scene, skel, size, prompt in spec["scenes"]:
+    for scene, skel, size, prompt in SCENES.get(mid, []):
         out = d / f"scene_{scene}.png"
         if out.exists():
             print(f"  skip {mid}/{out.name}")
@@ -363,15 +863,8 @@ def build_motif(mid: str) -> None:
         if gpt_edit(d / f"skeleton_{skel}.png", prompt, size, out):
             print(f"  ok {mid}/{out.name}")
 
-    # adopt existing fitting images
-    for scene, src in spec.get("extra_scenes", []):
-        out = d / f"scene_{scene}.png"
-        if not out.exists() and Path(src).exists():
-            shutil.copy2(src, out)
-            print(f"  copied {mid}/{out.name}")
-
     # scenes with no skeleton (pure text-to-image)
-    for scene, size, prompt in spec.get("t2i_scenes", []):
+    for scene, size, prompt in T2I_SCENES.get(mid, []):
         out = d / f"scene_{scene}.png"
         if out.exists():
             print(f"  skip {mid}/{out.name}")
@@ -381,7 +874,7 @@ def build_motif(mid: str) -> None:
 
 
 def main():
-    ids = sys.argv[1:] or list(MOTIFS)
+    ids = sys.argv[1:] or list(LIBRARY)
     for mid in ids:
         build_motif(mid)
 

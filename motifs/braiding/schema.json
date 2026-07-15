@@ -1,0 +1,19 @@
+{
+  "motif_id": "braiding",
+  "name": "Braiding — strands cross over and under in turn; the final order is exactly the product of the crossings",
+  "name_zh": "辫结",
+  "equation": "\\sigma_i\\sigma_{i+1}\\sigma_i = \\sigma_{i+1}\\sigma_i\\sigma_{i+1}",
+  "invariant": "三股以上的线几经相邻交叉，末端排列恰等于全部交叉依次复合之积，先后次序不可随意对调",
+  "math_home": "低维拓扑·Artin 辫群",
+  "story_form_device": "席位置换装置：三位角色占叙述席位 1/2/3；每段第一句以固定句式「此刻座次：X—Y—Z」报出当前席位，段内恰叙述一次相邻席位的交换并写明谁从谁之上越过；下一段所报座次必须等于对前一座次施加该交换的结果；全篇至少各出现一次位置 (1,2) 与位置 (2,3) 的交换，且终段座次 ≠ 首段座次。盲评核查法：自首段座次出发逐段施加所报交换，验证每段开头及终段座次均与演算一致（区别于 alternation：三席、两种不同位置的交换复合而非二态轮替；区别于 cycle/symmetry：终态非恒等，且核查的是逐步复合之积而非回到原点或回文）。",
+  "geb_echo": "Escher 版画《Knots》——辫之闭合即纽结（Alexander 定理）；巴赫三声部 Sinfonia／三重奏鸣曲中的声部交叉：声部两两上下越过，终止时的高低排列即交叉史之积",
+  "nuisance_variables": [
+    "node count",
+    "depth",
+    "angles",
+    "layout",
+    "scale",
+    "domain",
+    "medium"
+  ]
+}
