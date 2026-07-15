@@ -1,0 +1,304 @@
+{
+ "model": "qwen2.5-coder-32b",
+ "base": "http://localhost:18014/v1",
+ "summary": {
+  "story2motif": {
+   "n": 18,
+   "acc": 0.5
+  },
+  "theorem2motif": {
+   "n": 18,
+   "acc": 0.7222
+  }
+ },
+ "records": [
+  {
+   "id": "story:self_reference",
+   "task": "story2motif",
+   "answer": "self_reference",
+   "pred": "convergence",
+   "correct": false,
+   "raw": "{\"motif_id\": \"convergence\"}"
+  },
+  {
+   "id": "thm:self_reference",
+   "task": "theorem2motif",
+   "answer": "self_reference",
+   "pred": "strange_loop",
+   "correct": false,
+   "raw": "{\"motif_id\": \"strange_loop\"}"
+  },
+  {
+   "id": "story:recursion",
+   "task": "story2motif",
+   "answer": "recursion",
+   "pred": "recursion",
+   "correct": true,
+   "raw": "{\"motif_id\": \"recursion\"}"
+  },
+  {
+   "id": "thm:recursion",
+   "task": "theorem2motif",
+   "answer": "recursion",
+   "pred": "isomorphism",
+   "correct": false,
+   "raw": "{\"motif_id\": \"isomorphism\"}"
+  },
+  {
+   "id": "story:nesting",
+   "task": "story2motif",
+   "answer": "nesting",
+   "pred": "strange_loop",
+   "correct": false,
+   "raw": "{\"motif_id\": \"strange_loop\"}"
+  },
+  {
+   "id": "thm:nesting",
+   "task": "theorem2motif",
+   "answer": "nesting",
+   "pred": "convergence",
+   "correct": false,
+   "raw": "{\"motif_id\": \"convergence\"}"
+  },
+  {
+   "id": "story:cycle",
+   "task": "story2motif",
+   "answer": "cycle",
+   "pred": "cycle",
+   "correct": true,
+   "raw": "{\"motif_id\": \"cycle\"}"
+  },
+  {
+   "id": "thm:cycle",
+   "task": "theorem2motif",
+   "answer": "cycle",
+   "pred": "cycle",
+   "correct": true,
+   "raw": "{\"motif_id\": \"cycle\"}"
+  },
+  {
+   "id": "story:symmetry",
+   "task": "story2motif",
+   "answer": "symmetry",
+   "pred": "symmetry",
+   "correct": true,
+   "raw": "{\"motif_id\": \"symmetry\"}"
+  },
+  {
+   "id": "thm:symmetry",
+   "task": "theorem2motif",
+   "answer": "symmetry",
+   "pred": "isomorphism",
+   "correct": false,
+   "raw": "{\"motif_id\": \"isomorphism\"}"
+  },
+  {
+   "id": "story:alternation",
+   "task": "story2motif",
+   "answer": "alternation",
+   "pred": "symmetry",
+   "correct": false,
+   "raw": "{\"motif_id\": \"symmetry\"}"
+  },
+  {
+   "id": "thm:alternation",
+   "task": "theorem2motif",
+   "answer": "alternation",
+   "pred": "alternation",
+   "correct": true,
+   "raw": "{\"motif_id\": \"alternation\"}"
+  },
+  {
+   "id": "story:spiral",
+   "task": "story2motif",
+   "answer": "spiral",
+   "pred": "convergence",
+   "correct": false,
+   "raw": "{\"motif_id\": \"convergence\"}"
+  },
+  {
+   "id": "thm:spiral",
+   "task": "theorem2motif",
+   "answer": "spiral",
+   "pred": "spiral",
+   "correct": true,
+   "raw": "{\"motif_id\": \"spiral\"}"
+  },
+  {
+   "id": "story:convergence",
+   "task": "story2motif",
+   "answer": "convergence",
+   "pred": "convergence",
+   "correct": true,
+   "raw": "{\"motif_id\": \"convergence\"}"
+  },
+  {
+   "id": "thm:convergence",
+   "task": "theorem2motif",
+   "answer": "convergence",
+   "pred": "convergence",
+   "correct": true,
+   "raw": "{\"motif_id\": \"convergence\"}"
+  },
+  {
+   "id": "story:bottleneck",
+   "task": "story2motif",
+   "answer": "bottleneck",
+   "pred": "bottleneck",
+   "correct": true,
+   "raw": "{\"motif_id\": \"bottleneck\"}"
+  },
+  {
+   "id": "thm:bottleneck",
+   "task": "theorem2motif",
+   "answer": "bottleneck",
+   "pred": "bottleneck",
+   "correct": true,
+   "raw": "{\"motif_id\": \"bottleneck\"}"
+  },
+  {
+   "id": "story:symmetry_breaking",
+   "task": "story2motif",
+   "answer": "symmetry_breaking",
+   "pred": "symmetry_breaking",
+   "correct": true,
+   "raw": "{\"motif_id\": \"symmetry_breaking\"}"
+  },
+  {
+   "id": "thm:symmetry_breaking",
+   "task": "theorem2motif",
+   "answer": "symmetry_breaking",
+   "pred": "symmetry_breaking",
+   "correct": true,
+   "raw": "{\"motif_id\": \"symmetry_breaking\"}"
+  },
+  {
+   "id": "story:strange_loop",
+   "task": "story2motif",
+   "answer": "strange_loop",
+   "pred": "strange_loop",
+   "correct": true,
+   "raw": "{\"motif_id\": \"strange_loop\"}"
+  },
+  {
+   "id": "thm:strange_loop",
+   "task": "theorem2motif",
+   "answer": "strange_loop",
+   "pred": "cycle",
+   "correct": false,
+   "raw": "{\"motif_id\": \"cycle\"}"
+  },
+  {
+   "id": "story:figure_ground",
+   "task": "story2motif",
+   "answer": "figure_ground",
+   "pred": "symmetry",
+   "correct": false,
+   "raw": "{\"motif_id\": \"symmetry\"}"
+  },
+  {
+   "id": "thm:figure_ground",
+   "task": "theorem2motif",
+   "answer": "figure_ground",
+   "pred": "figure_ground",
+   "correct": true,
+   "raw": "{\"motif_id\": \"figure_ground\"}"
+  },
+  {
+   "id": "story:isomorphism",
+   "task": "story2motif",
+   "answer": "isomorphism",
+   "pred": "figure_ground",
+   "correct": false,
+   "raw": "{\"motif_id\": \"figure_ground\"}"
+  },
+  {
+   "id": "thm:isomorphism",
+   "task": "theorem2motif",
+   "answer": "isomorphism",
+   "pred": "isomorphism",
+   "correct": true,
+   "raw": "{\"motif_id\": \"isomorphism\"}"
+  },
+  {
+   "id": "story:mobius",
+   "task": "story2motif",
+   "answer": "mobius",
+   "pred": "mobius",
+   "correct": true,
+   "raw": "{\"motif_id\": \"mobius\"}"
+  },
+  {
+   "id": "thm:mobius",
+   "task": "theorem2motif",
+   "answer": "mobius",
+   "pred": "mobius",
+   "correct": true,
+   "raw": "{\"motif_id\": \"mobius\"}"
+  },
+  {
+   "id": "story:braiding",
+   "task": "story2motif",
+   "answer": "braiding",
+   "pred": "braiding",
+   "correct": true,
+   "raw": "{\"motif_id\": \"braiding\"}"
+  },
+  {
+   "id": "thm:braiding",
+   "task": "theorem2motif",
+   "answer": "braiding",
+   "pred": "braiding",
+   "correct": true,
+   "raw": "{\"motif_id\": \"braiding\"}"
+  },
+  {
+   "id": "story:interference",
+   "task": "story2motif",
+   "answer": "interference",
+   "pred": "cycle",
+   "correct": false,
+   "raw": "{\"motif_id\": \"cycle\"}"
+  },
+  {
+   "id": "thm:interference",
+   "task": "theorem2motif",
+   "answer": "interference",
+   "pred": "interference",
+   "correct": true,
+   "raw": "{\"motif_id\": \"interference\"}"
+  },
+  {
+   "id": "story:tiling",
+   "task": "story2motif",
+   "answer": "tiling",
+   "pred": "convergence",
+   "correct": false,
+   "raw": "{\"motif_id\": \"convergence\"}"
+  },
+  {
+   "id": "thm:tiling",
+   "task": "theorem2motif",
+   "answer": "tiling",
+   "pred": "tiling",
+   "correct": true,
+   "raw": "{\"motif_id\": \"tiling\"}"
+  },
+  {
+   "id": "story:hub",
+   "task": "story2motif",
+   "answer": "hub",
+   "pred": "bottleneck",
+   "correct": false,
+   "raw": "{\"motif_id\": \"bottleneck\"}"
+  },
+  {
+   "id": "thm:hub",
+   "task": "theorem2motif",
+   "answer": "hub",
+   "pred": "hub",
+   "correct": true,
+   "raw": "{\"motif_id\": \"hub\"}"
+  }
+ ]
+}

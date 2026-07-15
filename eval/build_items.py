@@ -37,6 +37,14 @@ FAMILIES = [
     ["symmetry", "figure_ground", "isomorphism", "mobius"],
     ["tiling", "symmetry_breaking", "interference", "alternation", "braiding"],
     ["convergence", "bottleneck", "hub"],
+    # round-2 motifs, grouped with their documented near-neighbors
+    ["diagonalization", "self_reference", "symmetry_breaking"],
+    ["infinite_descent", "recursion", "contraction_fixed_point", "convergence"],
+    ["coprime_orbit", "cycle", "interference", "pigeonhole"],
+    ["pigeonhole", "convergence", "bottleneck", "hub"],
+    ["projective_duality", "isomorphism", "figure_ground", "symmetry"],
+    ["contraction_fixed_point", "spiral", "convergence", "nesting"],
+    ["aperiodic_tiling", "tiling", "interference", "alternation"],
 ]
 
 
@@ -59,7 +67,9 @@ def negatives(mid: str, k: int, rng: random.Random) -> list[str]:
 def mask_names(text: str) -> str:
     """Mask motif-revealing proper names in theorems (crude but effective)."""
     for w in ("莫比乌斯", "回文", "对称", "螺线", "螺旋", "辫", "同构", "自指",
-              "递归", "嵌套", "密铺", "壁纸", "星图", "割点", "干涉", "拍频"):
+              "递归", "嵌套", "密铺", "壁纸", "星图", "割点", "干涉", "拍频",
+              "对角线", "递降", "鸽笼", "抽屉", "对偶", "不动点", "压缩映射",
+              "收缩", "非周期", "五度圈"):
         text = text.replace(w, "□")
     return text
 

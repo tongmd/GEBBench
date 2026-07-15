@@ -1,0 +1,19 @@
+{
+  "motif_id": "aperiodic_tiling",
+  "name": "Aperiodic Tiling — order without repetition",
+  "name_zh": "非周期密铺",
+  "equation": "\\frac{N_{\\text{fat}}(n)}{N_{\\text{thin}}(n)}\\xrightarrow[n\\to\\infty]{}\\varphi=\\frac{1+\\sqrt{5}}{2}",
+  "invariant": "处处遵守同一套局部匹配规则、无缝铺满全域,却不存在任何平移使整幅复原;同时任一局部图案在有界间隙内处处再现——'似曾相识,永不重演'。排除条款:与 tiling 不同(彼挪一格即整体重合,此处证明无任何平移周期);与 symmetry_breaking 不同(彼有周期背景且恰有一处可定位的违例,此处无一处违例、却根本无周期可言);与 spiral 不同(φ 在此是两种瓦片的频率比,不是逐层定比放大的生长,图形无自相似缩放中心);与 transformed_canon 不同(彼是同一主题经固定变换后逐字再现,此处任何块都不以固定间隔精确重现);与 interference 不同(彼两周期叠加仍得 lcm 大周期,此处极限结构频率为无理数,永无周期)。",
+  "math_home": "离散几何 / 密铺理论与准晶数学——Penrose 非周期密铺(P1: Penrose 1974;P3 菱形版: Penrose 1978, Pentaplexity);五重网格代数理论(de Bruijn 1981)。",
+  "story_form_device": "故事共 21 句,句型节拍取 Fibonacci 词第 7 次迭代:由替换规则 A→AB、B→A 从单字母 A 生成,得 ABAABABAABAABABAABABA(A=13 拍,B=8 拍)。硬判据:A 拍=不含任何引号的叙述句,≥15 个汉字;B 拍=含直接引语「」的句子,≤8 个汉字。机械核查:(i) 21 拍串与替换规则逐位吻合(7 次迭代可程序复算);(ii) A:B=13:8,相邻 Fibonacci 数,13/8=1.625→φ;(iii) 非幂周期:对 21 的每个真因子 p∈{1,3,7},串≠前 p 拍的整数次重复(逐位证伪);(iv) 平衡性(Sturmian):任取两段等长滑窗,A 拍数目至多差 1(全部窗口可程序枚举)。注意:不得声称'任意平移不自重合'——有限前缀存在弱周期(如 p=13),真正的非周期性只对无限词成立(A 频率 1/φ 为无理数),故只核查以上四条可判定性质。排除条款:与 interference 不同(彼 3 拍×4 拍叠加得 lcm=12 的总周期,此处无限延拓永无周期);与 tiling/alternation 不同(彼为周期 1/周期 2 的逐字重复);与 recursion 不同(替换生成自左向右展开,无'入层—出层—回基例'的括号结构);与 spiral 不同(句长不逐层定比放大,φ 只现身于拍频比);与 transformed_canon 不同(无任何句块经固定变换后在固定间隔处逐字再现)。",
+  "geb_echo": "Escher 毕生痴迷周期密铺——他的天使与魔鬼总在挪一格后严丝合缝地重演;而 Penrose(与 Escher 有过通信,Penrose 三角与无尽阶梯正出自这段往来)给出了它的对角:同样两块瓦、同样的局部规则,却拼出一个处处似曾相识、永不真正重演的平面——秩序与重复,在此分道扬镳。",
+  "nuisance_variables": [
+    "node count",
+    "depth",
+    "angles",
+    "layout",
+    "scale",
+    "domain",
+    "medium"
+  ]
+}

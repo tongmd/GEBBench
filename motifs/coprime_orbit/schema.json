@@ -1,0 +1,19 @@
+{
+  "motif_id": "coprime_orbit",
+  "name": "Coprime Orbit — a stride coprime to the ring visits everyone exactly once",
+  "name_zh": "互素跳环",
+  "equation": "\\langle k \\rangle = \\mathbb{Z}_n \\iff \\gcd(k,n)=1",
+  "invariant": "一圈 n 点上以固定跨步 k 跳跃连线,步幅与圈长互素则一笔遍历所有点方才闭合,不互素则圈裂成 gcd 份——与 cycle(相邻箭头首尾闭合一圈)不同在于大跨步织出星形且遍历性以互素为条件、且有不互素即分裂的失败模式;与 interference(两个独立周期叠加浮现 lcm 更大周期)不同在于只有一条轨道、一个数论条件;与 hub(经中心中转)不同在于无任何中心点,遍历纯由 gcd(k,n)=1 担保。",
+  "math_home": "初等数论 / 群论 — 循环群 Z_n 的生成元;星形多边形 {n/k}(Poinsot 1810)",
+  "story_form_device": "圆桌 n 人(明写 n,如 8)传一盏灯,规矩明写\"每次越过 k−1 人交给第 k 位\"(如 k=3,且 gcd(k,n)=1 在文中明写);叙述逐一点名传递次序(0,3,6,1,4,7,2,5),恰好人人接灯一次、第 n 次回到首位,长者点破\"三与八不通约,故灯不漏一人\";另设对照:有人提议步长 2,试传两轮即发现半数人永远接不到灯。机械核查:(i) 点名序列逐项等于 0,k,2k,… (mod n);(ii) 该序列是全体 n 人的一个排列且长度恰为 n,末次交还首位;(iii) 互素(与对照步长的不互素)均在文中明写;(iv) 对照轮中被漏的人集恰为一个非平凡陪集。排除条款:不得相邻依次传递(那是 cycle);不得出现两个各自守拍的周期叠加(那是 interference);遍历成功必须归因于互素而非中心指挥(hub);全体被访是构造性一笔遍历,不是纯计数存在性(区别 pigeonhole)。",
+  "geb_echo": "巴赫《音乐的奉献》的无限升高卡农沿五度圈转调,正因 gcd(7,12)=1 才历遍诸调重回原点——GEB 以它为怪圈开篇,而其数论内核是互素遍历。",
+  "nuisance_variables": [
+    "node count",
+    "depth",
+    "angles",
+    "layout",
+    "scale",
+    "domain",
+    "medium"
+  ]
+}

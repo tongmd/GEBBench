@@ -1,0 +1,19 @@
+{
+  "motif_id": "pigeonhole",
+  "name": "Pigeonhole — more items than boxes forces a collision, place unknown",
+  "name_zh": "鸽笼必撞",
+  "equation": "|A| > |B| \\;\\Rightarrow\\; \\forall f: A\\to B,\\ \\exists\\, x\\neq y:\\ f(x)=f(y)",
+  "invariant": "物多于笼则必有同笼:证得了“一定相撞”,却指不出“撞在何处”——与 convergence(所有线知情或不知情地终于同一「已知」点)不同:这里只由计数保证某个「未指明」之处至少二者相遇,并不构造见证者;与 bottleneck(一切通路被迫经同一中途点)不同:这里没有任何强制路径,也无中转枢纽,只有一次计数。",
+  "math_home": "组合数学 — Dirichlet 抽屉原理(Schubfachprinzip,Dirichlet 1834,用于丢番图逼近)",
+  "story_form_device": "故事明写两个计数:n 个格位与 n+1 位到来者(如 12 个月份与 13 位远客),规则是每客必归一格;长者在任何逐一核对之前,仅凭“十三多于十二”便断言“必有二客同月而生”,众人不服,直到结尾清点才揭晓是哪两位——但长者的断言先于揭晓且不依赖之。机械核查:两个计数 N>n 均在文中明写;存在性断言出现在任何逐一核对之前;结尾验证为真。排除条款:不得让所有人归入同一格(那是 convergence);重合不得由地形要冲或中介强制(bottleneck/hub);结论只是“至少一处重合”的纯计数存在性,不构造是哪两位在先。",
+  "geb_echo": "GEB 反复以遗传密码类比形式系统:64 个三联密码子映射到约 20 种氨基酸,单凭 64>21 这一计数,鸽笼便逼出密码的简并性——必有多个密码子指向同一氨基酸,却不预先点明是哪几个;这正是“数一数即知必有重合、而不指其处”的天然实例(而非诉诸自指的不完全性论证)。",
+  "nuisance_variables": [
+    "node count",
+    "depth",
+    "angles",
+    "layout",
+    "scale",
+    "domain",
+    "medium"
+  ]
+}

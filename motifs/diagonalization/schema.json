@@ -1,0 +1,19 @@
+{
+  "motif_id": "diagonalization",
+  "name": "The Diagonal Escape",
+  "name_zh": "对角线遁逸",
+  "equation": "d(n) = 1 - f(n)(n) \\;\\Rightarrow\\; \\forall n:\\ d \\neq f(n)",
+  "invariant": "一张按行枚举的表,沿对角线逐格取反造出的新行,与表中第 n 行保证性地在第 n 位不同,故与每一行都不相等——永在表外。区别于 self_reference(对象一步指回自己):对角元素并不谈论自己,矛头指向整张表的『全部枚举』而非自身。关键区别于 symmetry_breaking(整幅规整图案中恰一处孤立违例):这里不是一格孤立反常,而是沿移动对角线的 n 处系统性差异——第 n 行差在第 n 位,位置随行逐格右移、每行恰一处,由这套构造保证『不等于任何一行』;symmetry_breaking 只是单点瑕疵,既不逃逸也不否证任何枚举。",
+  "math_home": "集合论 / 可计算性理论,Cantor 对角线法 (diagonal argument)",
+  "story_form_device": "故事列出 n(≥4)位讲述者;每人的故事被概括为同序的 n 个二值特征,每个特征只有两个对立取值(如 昼/夜、生/死、水路/陆路……),故『取反』有唯一确定含义。末尾无名旅人讲第 n+1 个故事,其第 k 个特征明文规定为『第 k 位讲述者的第 k 个特征之反』(即读对角格再翻面),n 个特征由此被这 n 条对角翻转完全确定。盲评逐条核验:对每个 k=1..n,新故事特征 k 是否恰等于第 k 位讲述者特征 k 的另一极——共 n 个对勾。排除条款:(a) 新故事不得谈论或包含这句话/这个故事本身,否则落入 self_reference;(b) 不得由旧故事拼出同形缩小版,区别 recursion;(c) 表与新行仅此一层,不得层层套框,区别 nesting;(d) 关键区别 symmetry_breaking——保证性差异共 n 处、每位讲述者各一处、位置沿对角线逐位右移(第 k 位差在特征 k),是构造性地『不等于任何一行』,而非整幅规整叙事里仅一处孤立违例。",
+  "geb_echo": "GEB 中乌龟送给阿基里斯『唱机放不了的唱片』:任何唱机可放曲目的完整清单,都造得出清单之外的一张——Contracrostipunctus 与 Cantor 对角线一章的同一把刀。",
+  "nuisance_variables": [
+    "node count",
+    "depth",
+    "angles",
+    "layout",
+    "scale",
+    "domain",
+    "medium"
+  ]
+}

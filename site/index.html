@@ -85,7 +85,7 @@
     &nbsp;&rarr;&nbsp; { natural / artistic <b>scenes</b>, <b>story</b> whose telling
     enacts it, <b>math</b> with a real theorem }</div>
   <p class="intro">A benchmark of <b>abstract structures</b>, in the spirit of
-  <em>Gödel, Escher, Bach</em>. The unit is a structural <b>motif</b> — 18 of
+  <em>Gödel, Escher, Bach</em>. The unit is a structural <b>motif</b> — 25 of
   them, from self-reference and strange loops to Möbius bands and interference —
   never any particular graph: node counts, depths and angles are nuisance variables.
   Each motif speaks with several voices. Its <b>mathematics</b> is real: a signature
@@ -95,7 +95,7 @@
   implements a mechanically checkable form device. Its <b>images</b> are natural or
   artistic scenes whose composition <em>is</em> the structure: a vis-graph skeleton
   guides generation, so you look at a landscape and the structure dawns on you.</p>
-  <nav class="toc"><a href="#motif-self_reference">自指</a> <a href="#motif-strange_loop">怪圈</a> <a href="#motif-recursion">递归</a> <a href="#motif-nesting">嵌套（只进不出）</a> <a href="#motif-cycle">因果闭环</a> <a href="#motif-mobius">莫比乌斯带</a> <a href="#motif-spiral">螺旋副歌</a> <a href="#motif-symmetry">回文对称</a> <a href="#motif-figure_ground">图底互换</a> <a href="#motif-isomorphism">同构</a> <a href="#motif-alternation">严格交替</a> <a href="#motif-braiding">辫结</a> <a href="#motif-interference">干涉</a> <a href="#motif-tiling">平移密铺</a> <a href="#motif-symmetry_breaking">对称破缺</a> <a href="#motif-convergence">万流归一</a> <a href="#motif-bottleneck">咽喉之点</a> <a href="#motif-hub">星型枢纽</a></nav>
+  <nav class="toc"><a href="#motif-self_reference">自指</a> <a href="#motif-diagonalization">对角线遁逸</a> <a href="#motif-strange_loop">怪圈</a> <a href="#motif-recursion">递归</a> <a href="#motif-infinite_descent">无穷递降</a> <a href="#motif-nesting">嵌套（只进不出）</a> <a href="#motif-contraction_fixed_point">收缩不动点</a> <a href="#motif-cycle">因果闭环</a> <a href="#motif-coprime_orbit">互素跳环</a> <a href="#motif-mobius">莫比乌斯带</a> <a href="#motif-spiral">螺旋副歌</a> <a href="#motif-symmetry">回文对称</a> <a href="#motif-figure_ground">图底互换</a> <a href="#motif-projective_duality">点线对偶</a> <a href="#motif-isomorphism">同构</a> <a href="#motif-alternation">严格交替</a> <a href="#motif-braiding">辫结</a> <a href="#motif-interference">干涉</a> <a href="#motif-tiling">平移密铺</a> <a href="#motif-aperiodic_tiling">非周期密铺</a> <a href="#motif-symmetry_breaking">对称破缺</a> <a href="#motif-convergence">万流归一</a> <a href="#motif-pigeonhole">鸽笼必撞</a> <a href="#motif-bottleneck">咽喉之点</a> <a href="#motif-hub">星型枢纽</a></nav>
 </header>
 <section class="sample" id="motif-self_reference">
   <h2><span class="fam-badge">motif</span>Self-Reference <span class="zh">· 自指</span></h2>
@@ -126,6 +126,53 @@
   "equation": "\\vdash\\ \\psi \\leftrightarrow \\varphi(\\ulcorner \\psi \\urcorner)",
   "invariant": "对象内含一句对自身的描述且逐字核对为真——一步指回自己，不经层级攀升，也不指涉第二套系统",
   "math_home": "数理逻辑·对角线引理；可计算性理论·Kleene 第二递归定理",
+  "nuisance_variables": [
+    "node count",
+    "depth",
+    "angles",
+    "layout",
+    "scale",
+    "domain",
+    "medium"
+  ]
+}</pre></div></details>
+  <p class="nuisance">nuisance (deliberately varied, never scored): node count, depth, angles, layout, scale, domain, medium</p>
+</section>
+
+<section class="sample" id="motif-diagonalization">
+  <h2><span class="fam-badge">motif</span>The Diagonal Escape <span class="zh">· 对角线遁逸</span></h2>
+  <p class="motif-eq">$$d(n) = 1 - f(n)(n) \;\Rightarrow\; \forall n:\ d \neq f(n)$$</p>
+  <p class="invariant">invariant: 一张按行枚举的表,沿对角线逐格取反造出的新行,与表中第 n 行保证性地在第 n 位不同,故与每一行都不相等——永在表外。区别于 self_reference(对象一步指回自己):对角元素并不谈论自己,矛头指向整张表的『全部枚举』而非自身。关键区别于 symmetry_breaking(整幅规整图案中恰一处孤立违例):这里不是一格孤立反常,而是沿移动对角线的 n 处系统性差异——第 n 行差在第 n 位,位置随行逐格右移、每行恰一处,由这套构造保证『不等于任何一行』;symmetry_breaking 只是单点瑕疵,既不逃逸也不否证任何枚举。</p>
+  <div class="strip"><figure><a href="assets/motif_diagonalization/scene_jacquard_loom.png"><img loading="lazy" src="assets/motif_diagonalization/scene_jacquard_loom.png" alt="diagonalization scene_jacquard_loom"></a><figcaption>jacquard_loom</figcaption></figure>
+<figure class="skel"><a href="assets/motif_diagonalization/skeleton_grid.png"><img loading="lazy" src="assets/motif_diagonalization/skeleton_grid.png" alt="diagonalization skeleton_grid"></a><figcaption>skeleton (generation ref)</figcaption></figure></div>
+  <div class="tale">
+  <p class="t-title">《对角线遁逸》 <span class="t-domain">屋顶蜂园 · gpt-5.5 · device ✓ + blind ✓</span></p>
+  <p class="zh">瓦城的屋顶上养着一排排木蜂箱，春分夜，大家把蜜灯点在矮墙边，请四位会讲旧事的人开口。
+第一位讲述者阿槐说，茶山里的金蜂认得采药娃；他的四个特征依次是：昼，山，得，笑。
+第二位讲述者蓝婆说，潮湾里的银蜂跟着盐船走；她的四个特征依次是：夜，海，失，哭。
+第三位讲述者小芦说，白鹭滩的蜂落在渔网绳上；他的四个特征依次是：昼，海，得，哭。
+第四位讲述者棠匠说，石岭蜂箱曾被松鼠搬空；他的四个特征依次是：夜，山，得，笑。
+后来，一个无名旅人拍掉斗笠上的花粉，也讲了第五个故事：第一特征取第一位讲述者第一特征的反面，是夜；第二特征取第二位讲述者第二特征的反面，是山；第三特征取第三位讲述者第三特征的反面，是失；第四特征取第四位讲述者第四特征的反面，是哭。
+那故事说，夜里，山后有个守蜂的小姑娘追一只蓝尾萤火虫，追到冷杉坡上，只看见空空的蜂箱和一枚裂开的蜜蜡铃；她抱着铃坐到天明，眼泪落进野花根里，第二年满坡都开出带蜜香的小黄花。</p>
+  <p class="en">In a town of rooftop beehives, four named tellers each give a tale described by four paired qualities: day or night, mountain or sea, gain or loss, laughter or tears. A nameless traveler then tells a fifth tale whose first quality is the opposite of the first teller’s first quality, whose second is the opposite of the second teller’s second, whose third is the opposite of the third teller’s third, and whose fourth is the opposite of the fourth teller’s fourth. His tale is about a girl at night in the mountains who loses her bees and weeps, yet the next year honey-scented yellow flowers bloom there.</p>
+  <p class="t-why">why this shape — 四位讲述者形成4×4枚举，旅人新行按对角线逐项取反：夜、山、失、哭，故分别在第1、2、3、4位与第1、2、3、4行保证不同。</p>
+</div>
+
+  <details><summary>mathematics voice — definition · home · theorem</summary>
+    <div class="voice mathv">
+      <p><span class="lbl">定义</span><br>设 f:\mathbb{N}\to\{0,1\}^{\mathbb{N}} 为任一枚举表(第 n 行是序列 f(n))。定义反对角序列 d 满足 d(n)=1-f(n)(n),则 d 与表中第 n 行保证性地在第 n 位不同,故 d 与每一行都不相等——d 不在表中。任何试图把 \{0,1\}^{\mathbb{N}} 全部列出的枚举,都被其反对角元素系统性逃逸。</p>
+      <p><span class="lbl">归属</span><br>集合论 / 可计算性理论,Cantor 对角线法 (diagonal argument)</p>
+      <p><span class="lbl">定理</span><br>Cantor 定理(1891 年对角线证明,Über eine elementare Frage der Mannigfaltigkeitslehre):对任意集合 X,不存在 X 到其幂集 P(X) 的满射;特别地取 X=\mathbb{N},得 P(\mathbb{N})\cong\{0,1\}^{\mathbb{N}} 不可数(其势为连续统),这正是实数不可数的对角线证明。</p>
+    </div></details>
+  <details><summary>story form device — the telling enacts the structure</summary>
+    <div class="voice device"><p>故事列出 n(≥4)位讲述者;每人的故事被概括为同序的 n 个二值特征,每个特征只有两个对立取值(如 昼/夜、生/死、水路/陆路……),故『取反』有唯一确定含义。末尾无名旅人讲第 n+1 个故事,其第 k 个特征明文规定为『第 k 位讲述者的第 k 个特征之反』(即读对角格再翻面),n 个特征由此被这 n 条对角翻转完全确定。盲评逐条核验:对每个 k=1..n,新故事特征 k 是否恰等于第 k 位讲述者特征 k 的另一极——共 n 个对勾。排除条款:(a) 新故事不得谈论或包含这句话/这个故事本身,否则落入 self_reference;(b) 不得由旧故事拼出同形缩小版,区别 recursion;(c) 表与新行仅此一层,不得层层套框,区别 nesting;(d) 关键区别 symmetry_breaking——保证性差异共 n 处、每位讲述者各一处、位置沿对角线逐位右移(第 k 位差在特征 k),是构造性地『不等于任何一行』,而非整幅规整叙事里仅一处孤立违例。</p><p class="geb-echo">GEB echo — GEB 中乌龟送给阿基里斯『唱机放不了的唱片』:任何唱机可放曲目的完整清单,都造得出清单之外的一张——Contracrostipunctus 与 Cantor 对角线一章的同一把刀。</p></div></details>
+  <details><summary>motif schema</summary><div class="voice"><pre>{
+  "motif_id": "diagonalization",
+  "name": "The Diagonal Escape",
+  "name_zh": "对角线遁逸",
+  "equation": "d(n) = 1 - f(n)(n) \\;\\Rightarrow\\; \\forall n:\\ d \\neq f(n)",
+  "invariant": "一张按行枚举的表,沿对角线逐格取反造出的新行,与表中第 n 行保证性地在第 n 位不同,故与每一行都不相等——永在表外。区别于 self_reference(对象一步指回自己):对角元素并不谈论自己,矛头指向整张表的『全部枚举』而非自身。关键区别于 symmetry_breaking(整幅规整图案中恰一处孤立违例):这里不是一格孤立反常,而是沿移动对角线的 n 处系统性差异——第 n 行差在第 n 位,位置随行逐格右移、每行恰一处,由这套构造保证『不等于任何一行』;symmetry_breaking 只是单点瑕疵,既不逃逸也不否证任何枚举。",
+  "math_home": "集合论 / 可计算性理论,Cantor 对角线法 (diagonal argument)",
   "nuisance_variables": [
     "node count",
     "depth",
@@ -241,6 +288,57 @@ A 正在讲 B 的故事
   <p class="nuisance">nuisance (deliberately varied, never scored): node count, depth, angles, layout, scale, domain, medium</p>
 </section>
 
+<section class="sample" id="motif-infinite_descent">
+  <h2><span class="fam-badge">motif</span>Infinite Descent <span class="zh">· 无穷递降</span></h2>
+  <p class="motif-eq">$$\bigl(\forall n\in\mathbb{N}:\; P(n)\Rightarrow\exists\,m<n,\ P(m)\bigr)\;\Longrightarrow\;\forall n\,\neg P(n)$$</p>
+  <p class="invariant">invariant: 每个案例都强迫出一个严格更小的同类案例，而自然数没有无底的下降链，于是第一个案例根本不存在——证明的刀锋向回挥：不是推进到终点，而是取消开端。与 recursion 恰相反：递归入几层出几层、靠基例的存在而成立，递降靠基例的缺席而把一切见证者判为虚无；与 zeno_halving 不同：芝诺的无穷步按定比缩短、总长有限、旅程完成，递降的下降量任意但每步是整数、链条被良序原理禁止、结论是“不可能”；与 contraction_fixed_point 不同：压缩迭代无穷进行并收敛于一个真实存在的不动点，递降链不收敛于任何点、必须在有限步内撞上地板 1、于是整条链连同起点被判不存在；与 ordinal_ascent 方向相反：序数攀升向上无界而每级真实存在，递降向下有底而全链虚妄；与 invariant_barrier 不同：不诉诸任何守恒量，杀招只有一条——严格变小不能无穷。</p>
+  <div class="strip"><figure><a href="assets/motif_infinite_descent/scene_nesting_dolls.png"><img loading="lazy" src="assets/motif_infinite_descent/scene_nesting_dolls.png" alt="infinite_descent scene_nesting_dolls"></a><figcaption>nesting_dolls</figcaption></figure>
+<figure class="skel"><a href="assets/motif_infinite_descent/skeleton_staircase.png"><img loading="lazy" src="assets/motif_infinite_descent/skeleton_staircase.png" alt="infinite_descent skeleton_staircase"></a><figcaption>skeleton (generation ref)</figcaption></figure></div>
+  <div class="tale">
+  <p class="t-title">《潮玉珰的讼案》 <span class="t-domain">潮村讼堂 · gpt-5.5 · device ✓ + blind ✓</span></p>
+  <p class="zh">海湾边有个晒盐的槐湾村，祠堂门口挂满贝壳风铃，风一吹，就像小鱼在说悄悄话。村里有件旧规矩：谁说自己拿着潮玉珰，就得说出一位门牌更小、在他之前拿过的人；说不出，便算没拿过。
+这年退潮后，卖海带的阿昌抱着一个油布包进了祠堂，说里头是他家的传家宝潮玉珰，能叫雾夜里的船认得回湾路。
+族人搬来长凳，长者点了香灰，叫他把来路说清楚。
+阿昌拍着油布包，说传给他的是门牌88的晒网匠林伯。
+林伯拄着桨，说他只替门牌61的盐灶娘子保管过一夜。
+盐灶娘子抹着围裙，说物件来自门牌45的补帆人阿芦。
+阿芦捻着麻线，说他接的是门牌27的夜渡客小满。
+小满低头搓帽沿，说那包袱先在门牌9的蛤蜊婆手里。
+蛤蜊婆咳了一声，说她听命于门牌2的灯塔童子阿笙。
+堂外的潮水退得更远，露出黑亮的石滩，风铃一个个停了声。
+长者把油布包推回案边，说：阿昌所称持有的传家宝，从未存在。</p>
+  <p class="en">In a tide village called Huaiwan, anyone claiming to possess the old tide-jade heirloom had to name an earlier holder with a smaller door number. Achang came to the ancestral hall with an oilcloth bundle and claimed the treasure was his. One by one, each named person pointed to exactly one earlier person with a smaller number: 88, then 61, then 45, then 27, then 9, then 2. The hall fell quiet as the tide withdrew. The elder returned the bundle and ruled that Achang’s alleged heirloom had never existed.</p>
+  <p class="t-why">why this shape — 六次一对一引证给出严格递减的正整数编号，末句以良序性否定最初见证者，实现无穷递降。</p>
+</div>
+
+  <details><summary>mathematics voice — definition · home · theorem</summary>
+    <div class="voice mathv">
+      <p><span class="lbl">定义</span><br>若自然数上的性质 P 满足“任一见证者必产生严格更小的见证者”（即 ∀n(P(n)→∃m&lt;n, P(m))），则由良序原理（ℕ 的任何非空子集必有最小元）知 P 没有任何见证者：否则见证者集合非空、有最小元 n₀，而 n₀ 仍须产生更小的见证者，与最小性矛盾。</p>
+      <p><span class="lbl">归属</span><br>数论 — Fermat 无穷递降法（method of infinite descent）/ 自然数的良序原理</p>
+      <p><span class="lbl">定理</span><br>Fermat（方法自述见 1659 年致 Carcavi 信；完整证明存于其对 Diophantus《算术》的页边批注第 45 条，1670 年由其子 Samuel 刊出）：三边皆为整数的直角三角形，其面积不可能是完全平方数——用无穷递降法证明；由此直接推出 x⁴+y⁴=z² 无正整数解，从而 x⁴+y⁴=z⁴ 无正整数解（费马大定理 n=4 情形）。</p>
+    </div></details>
+  <details><summary>story form device — the telling enacts the structure</summary>
+    <div class="voice device"><p>讼案式故事：有人声称持有传家宝，村规是“任何持宝者必须指认一位编号严格更小的更早持宝者”（编号为正整数）。机械核查条款：①引证恰好 6 次，每次独立成句；②每句中被指认者的编号以阿拉伯数字明写，且 6 个编号构成严格递减序列；③末句为长者判词，逐字含“从未存在”或“不可能”，宣布最初的声称为虚。排除条款：④结论必须是取消开端的“不存在”，不得抵达某个基例后逐层返回原点（那是 recursion）；⑤编号逐次任意变小，不得按固定比例缩短且不得以“总量有限、旅程完成”收束（那是 zeno_halving）；⑥引证链一对一，每人只指认一人，不得一触多发（那是 cascade）；⑦链条不得收敛、逼近或停驻于任何一个真实存在的点（那是 contraction_fixed_point）；⑧不得诉诸任何守恒量或奇偶性论证（那是 invariant_barrier），杀招只在“严格变小不能无穷”。</p><p class="geb-echo">GEB echo — Escher《瀑布》靠不可能的无限下降驱动水轮——真实数学里无限下降同样不可能，Fermat 正以此为刃：他不证明宝物在哪里，而证明宝物从未存在。GEB 中 Achilles 与乌龟“更低层之下还有更低层吗”的追问，在此被良序原理一刀斩断——向下的梯子必有最后一级，否则整架梯子连同踏上它的第一只脚都是幻影。</p></div></details>
+  <details><summary>motif schema</summary><div class="voice"><pre>{
+  "motif_id": "infinite_descent",
+  "name": "Infinite Descent — every witness begets a smaller one, so none exists",
+  "name_zh": "无穷递降",
+  "equation": "\\bigl(\\forall n\\in\\mathbb{N}:\\; P(n)\\Rightarrow\\exists\\,m&lt;n,\\ P(m)\\bigr)\\;\\Longrightarrow\\;\\forall n\\,\\neg P(n)",
+  "invariant": "每个案例都强迫出一个严格更小的同类案例，而自然数没有无底的下降链，于是第一个案例根本不存在——证明的刀锋向回挥：不是推进到终点，而是取消开端。与 recursion 恰相反：递归入几层出几层、靠基例的存在而成立，递降靠基例的缺席而把一切见证者判为虚无；与 zeno_halving 不同：芝诺的无穷步按定比缩短、总长有限、旅程完成，递降的下降量任意但每步是整数、链条被良序原理禁止、结论是“不可能”；与 contraction_fixed_point 不同：压缩迭代无穷进行并收敛于一个真实存在的不动点，递降链不收敛于任何点、必须在有限步内撞上地板 1、于是整条链连同起点被判不存在；与 ordinal_ascent 方向相反：序数攀升向上无界而每级真实存在，递降向下有底而全链虚妄；与 invariant_barrier 不同：不诉诸任何守恒量，杀招只有一条——严格变小不能无穷。",
+  "math_home": "数论 — Fermat 无穷递降法（method of infinite descent）/ 自然数的良序原理",
+  "nuisance_variables": [
+    "node count",
+    "depth",
+    "angles",
+    "layout",
+    "scale",
+    "domain",
+    "medium"
+  ]
+}</pre></div></details>
+  <p class="nuisance">nuisance (deliberately varied, never scored): node count, depth, angles, layout, scale, domain, medium</p>
+</section>
+
 <section class="sample" id="motif-nesting">
   <h2><span class="fam-badge">motif</span>Nesting <span class="zh">· 嵌套（只进不出）</span></h2>
   <p class="motif-eq">$$[a_1,b_1]\supsetneq[a_2,b_2]\supsetneq\cdots\;\Longrightarrow\;\bigcap_{n=1}^{\infty}[a_n,b_n]\neq\varnothing$$</p>
@@ -278,6 +376,56 @@ A 正在讲 B 的故事
   "equation": "[a_1,b_1]\\supsetneq[a_2,b_2]\\supsetneq\\cdots\\;\\Longrightarrow\\;\\bigcap_{n=1}^{\\infty}[a_n,b_n]\\neq\\varnothing",
   "invariant": "每进入新一层便不再返回上一层，深度只增不减",
   "math_home": "实分析·Cantor 闭区间套定理（紧致性）；形式语言·Dyck 语言的真前缀（纯压栈词）",
+  "nuisance_variables": [
+    "node count",
+    "depth",
+    "angles",
+    "layout",
+    "scale",
+    "domain",
+    "medium"
+  ]
+}</pre></div></details>
+  <p class="nuisance">nuisance (deliberately varied, never scored): node count, depth, angles, layout, scale, domain, medium</p>
+</section>
+
+<section class="sample" id="motif-contraction_fixed_point">
+  <h2><span class="fam-badge">motif</span>The Shrinking Return <span class="zh">· 收缩不动点</span></h2>
+  <p class="motif-eq">$$d(f(x),f(y))\le q\,d(x,y)\ (q<1)\ \text{ on complete }(X,d)\;\Rightarrow\;\exists!\,x^{*}:\ f(x^{*})=x^{*},\quad x_{n+1}=f(x_n)\to x^{*}$$</p>
+  <p class="invariant">invariant: 同一条规则反复施于自己的输出,每步与终点的距离按定比 q&lt;1 缩小,最终停在被规则原样送回自身的那一点——终点不是预先宣布的,而是由 f(x*)=x* 的不动性从规则内部选出。区别于 spiral(定比放大、永不回原尺度):方向相反且有真实终点;区别于 convergence(多条互不知晓的线终于一处):这里自始至终只有一条自迭代链;区别于 recursion(入几层出几层、层层返回调用者):迭代只向前塌缩、绝无返回;区别于 zeno_halving(无穷缩段首尾相接,看点在『无穷之和恰为有限整体』):这里看点在终点被映射固定,核查的是 f(x*)=x* 而非路程求和;区别于 negative_feedback(围绕篇首明示的目标正负过冲交替纠偏):这里目标不得预先明示、亦不要求符号交替,单侧塌缩即可,终点由不动性自证。</p>
+  <div class="strip"><figure><a href="assets/motif_contraction_fixed_point/scene_you_are_here.png"><img loading="lazy" src="assets/motif_contraction_fixed_point/scene_you_are_here.png" alt="contraction_fixed_point scene_you_are_here"></a><figcaption>you_are_here</figcaption></figure>
+<figure class="skel"><a href="assets/motif_contraction_fixed_point/skeleton_cobweb.png"><img loading="lazy" src="assets/motif_contraction_fixed_point/skeleton_cobweb.png" alt="contraction_fixed_point skeleton_cobweb"></a><figcaption>skeleton (generation ref)</figcaption></figure></div>
+  <div class="tale">
+  <p class="t-title">《乌岬盐村的小陶罐》 <span class="t-domain">潮盐 · gpt-5.5 · device ✓ + blind ✓</span></p>
+  <p class="zh">在乌岬盐村，老灶婆教孩子们一个唱法：每唱一遍删去后一半的词；碰见前后分不齐，就让前头多留一个词。
+那年春潮大，阿柳家的蓝盐总带着苦味。老灶婆说，盐怕急火，也怕闹声，要用小陶罐收着，傍晚搁在篱门边，让风替它睡一觉。
+阿柳照做了。篱笆外，晒盐的浅池一片银亮，螺壳在泥里吐泡，远处有人收网，木桨敲着船舷。阿柳抱来小陶罐，罐肚凉凉的，像藏着一枚小月亮。她不敢大声，只照老灶婆的话，轻轻唱给罐子听：
+海风 把 蓝盐 送进 小陶罐 阿柳 关上 篱门 等 月牙 落在 渔网 旁边 睡吧 小舟 安安 静静
+海风 把 蓝盐 送进 小陶罐 阿柳 关上 篱门 等
+海风 把 蓝盐 送进 小陶罐
+海风 把 蓝盐
+海风 把
+海风
+海风</p>
+  <p class="en">In the salt village of Wu Cape, Granny Stove teaches the children a way of singing: each time the song is sung, the latter half of its words is dropped; if the words do not split evenly, the front part keeps one more. One spring, A-Liu’s blue salt tastes bitter, so Granny tells her to keep it in a small clay jar by the fence at dusk and let the wind settle it. A-Liu follows the advice beside the shining salt pans and sings the jar a little song, each singing shorter than the last, until only the sea wind remains—and when she sings once more, it remains just the same.</p>
+  <p class="t-why">why this shape — 正文中的歌谣按 17→9→5→3→2→1→1 逐轮删去后 ⌊n/2⌋ 个词，最后一词再次施行规则不变，呈现收缩不动点。</p>
+</div>
+
+  <details><summary>mathematics voice — definition · home · theorem</summary>
+    <div class="voice mathv">
+      <p><span class="lbl">定义</span><br>完备度量空间 (X,d) 上的压缩映射 f(Lipschitz 常数 q&lt;1)恰有一个不动点 x*,且从任意初值出发的皮卡迭代 x_{n+1}=f(x_n) 以几何速率 q^n 收敛于 x*;终点不是预先给定的,而是被规则原样送回自身的那一点——完备性不可省略:(0,1) 上的 x↦x/2 即无不动点。</p>
+      <p><span class="lbl">归属</span><br>分析学 / 动力系统,Banach 不动点定理与皮卡迭代法</p>
+      <p><span class="lbl">定理</span><br>Banach 不动点定理(S. Banach 1922, Fundamenta Mathematicae 3, 133–181):完备度量空间上的压缩映射存在唯一不动点,皮卡迭代自任意初值收敛于它,且先验误差满足 d(x_n,x*) ≤ q^n/(1−q)·d(x_1,x_0)。</p>
+    </div></details>
+  <details><summary>story form device — the telling enacts the structure</summary>
+    <div class="voice device"><p>一句咒语/歌谣按篇首明文规则每唱一遍机械缩短:『每遍删去后 ⌊n/2⌋ 个词』(n 为当前词数,词数序列如 17→9→5→3→2→1)。连续施行 ≥5 轮、每轮全文照录,直至得到施行规则后逐字不变的一词之句(删 ⌊1/2⌋=0 词),再照录一轮以显 f(x*)=x*,故事以该不动句的自我复述收束。盲评核查:(i) 逐轮对上一轮机械施行删词规则,文本逐字吻合;(ii) 词数序列满足 n→⌈n/2⌉;(iii) 末句施行规则后逐字不变,且随后一轮与之逐字相同。排除条款:不动句不得谈论自身——其不动来自外部规则而非语义指涉(区别 self_reference);全程仅一条链、无第二线索汇入(区别 convergence);只缩不放(区别 spiral);不回到任何先前的完整句(区别 cycle);核查对象是『施行规则后文本不动』,不是『各段篇幅折半相加恰满全程』(区别 zeno_halving);篇首不得宣布终点句,缩短单侧进行、无正负偏差交替(区别 negative_feedback);无入层出层的括号返回(区别 recursion)。</p><p class="geb-echo">GEB echo — 禅宗『一字关』:万语千言逐层参落,收缩到一个字,再参仍是这个字——GEB 禅章中语言自我消解、终于无可再削之点。</p></div></details>
+  <details><summary>motif schema</summary><div class="voice"><pre>{
+  "motif_id": "contraction_fixed_point",
+  "name": "The Shrinking Return",
+  "name_zh": "收缩不动点",
+  "equation": "d(f(x),f(y))\\le q\\,d(x,y)\\ (q&lt;1)\\ \\text{ on complete }(X,d)\\;\\Rightarrow\\;\\exists!\\,x^{*}:\\ f(x^{*})=x^{*},\\quad x_{n+1}=f(x_n)\\to x^{*}",
+  "invariant": "同一条规则反复施于自己的输出,每步与终点的距离按定比 q&lt;1 缩小,最终停在被规则原样送回自身的那一点——终点不是预先宣布的,而是由 f(x*)=x* 的不动性从规则内部选出。区别于 spiral(定比放大、永不回原尺度):方向相反且有真实终点;区别于 convergence(多条互不知晓的线终于一处):这里自始至终只有一条自迭代链;区别于 recursion(入几层出几层、层层返回调用者):迭代只向前塌缩、绝无返回;区别于 zeno_halving(无穷缩段首尾相接,看点在『无穷之和恰为有限整体』):这里看点在终点被映射固定,核查的是 f(x*)=x* 而非路程求和;区别于 negative_feedback(围绕篇首明示的目标正负过冲交替纠偏):这里目标不得预先明示、亦不要求符号交替,单侧塌缩即可,终点由不动性自证。",
+  "math_home": "分析学 / 动力系统,Banach 不动点定理与皮卡迭代法",
   "nuisance_variables": [
     "node count",
     "depth",
@@ -330,6 +478,60 @@ A 正在讲 B 的故事
   "equation": "v_{1}\\to v_{2}\\to\\cdots\\to v_{n}\\to v_{1},\\qquad \\langle r\\mid r^{n}=e\\rangle\\cong\\mathbb{Z}/n\\mathbb{Z}",
   "invariant": "沿同一层级的因果箭头依次经过 n≥3 个互不相同的事件后回到出发事件，一圈即逐字复原（不升级、不放大、不翻面），各点地位平等、无层级",
   "math_home": "图论·有向环 C⃗_n；群论·循环群 Z/nZ；离散动力系统·函数图的周期轨道",
+  "nuisance_variables": [
+    "node count",
+    "depth",
+    "angles",
+    "layout",
+    "scale",
+    "domain",
+    "medium"
+  ]
+}</pre></div></details>
+  <p class="nuisance">nuisance (deliberately varied, never scored): node count, depth, angles, layout, scale, domain, medium</p>
+</section>
+
+<section class="sample" id="motif-coprime_orbit">
+  <h2><span class="fam-badge">motif</span>Coprime Orbit <span class="zh">· 互素跳环</span></h2>
+  <p class="motif-eq">$$\langle k \rangle = \mathbb{Z}_n \iff \gcd(k,n)=1$$</p>
+  <p class="invariant">invariant: 一圈 n 点上以固定跨步 k 跳跃连线,步幅与圈长互素则一笔遍历所有点方才闭合,不互素则圈裂成 gcd 份——与 cycle(相邻箭头首尾闭合一圈)不同在于大跨步织出星形且遍历性以互素为条件、且有不互素即分裂的失败模式;与 interference(两个独立周期叠加浮现 lcm 更大周期)不同在于只有一条轨道、一个数论条件;与 hub(经中心中转)不同在于无任何中心点,遍历纯由 gcd(k,n)=1 担保。</p>
+  <div class="strip"><figure><a href="assets/motif_coprime_orbit/scene_string_art_star.png"><img loading="lazy" src="assets/motif_coprime_orbit/scene_string_art_star.png" alt="coprime_orbit scene_string_art_star"></a><figcaption>string_art_star</figcaption></figure>
+<figure class="skel"><a href="assets/motif_coprime_orbit/skeleton_star.png"><img loading="lazy" src="assets/motif_coprime_orbit/skeleton_star.png" alt="coprime_orbit skeleton_star"></a><figcaption>skeleton (generation ref)</figcaption></figure></div>
+  <div class="tale">
+  <p class="t-title">《盐灯过桌》 <span class="t-domain">盐场夜饭 · gpt-5.5 · device ✓ + blind ✓</span></p>
+  <p class="zh">海边的盐场收工后，灶棚里摆了一张圆桌。八个人围坐，按座位起了名：0号阿潮，1号小芦，2号梅嫂，3号石娃，4号青叔，5号灯妮，6号老蟹，7号阿篓。
+桌上只有一盏盐灯，照着一盆热腾腾的蛤蜊粥。老场头说，今夜传灯不许挨着递，规矩明写在灶墙上：n=8，k=3，gcd(k,n)=1；每次越过2人交给第3位。
+阿潮先捧灯，灯从0号阿潮到3号石娃。
+石娃笑着擦手，灯从3号石娃到6号老蟹。
+老蟹把灯举高，灯从6号老蟹到1号小芦。
+小芦闻见粥香，灯从1号小芦到4号青叔。
+青叔挑了挑灯芯，灯从4号青叔到7号阿篓。
+阿篓拍掉袖口盐花，灯从7号阿篓到2号梅嫂。
+梅嫂把碗摆正，灯从2号梅嫂到5号灯妮。
+灯妮看见人人脸上都有光，灯从5号灯妮交还0号阿潮。
+第8次交还首位。
+八人这才一齐动筷。老场头捻着白胡子说：“三与八不通约,故灯不漏一人。”
+偏有阿篓不服，说：“隔一人传，步长2，也省力。”灶墙旁又添一句：步长2与8不互素。于是阿潮试给梅嫂，梅嫂给青叔，青叔给老蟹，老蟹又给阿潮；再来一轮，还是阿潮、梅嫂、青叔、老蟹。两轮过后，小芦、石娃、灯妮、阿篓这单边半数人，始终没摸到灯；阿潮、梅嫂、青叔、老蟹这双边半数人，倒把灯捧热了。
+老场头不再多说，只把盐灯放回桌沿。夜风从苇席缝里进来，粥香慢慢散开，八只碗都亮了一下。</p>
+  <p class="en">After work at a seaside salt yard, eight people sit around a round table with one salt lamp. They are numbered by their seats. The rule says to pass the lamp by skipping two people and giving it to the third. Starting with A-Chao at seat 0, the lamp goes to seats 3, 6, 1, 4, 7, 2, and 5, then returns to A-Chao on the eighth pass, so every person has held it once. The elder explains that three and eight do not share a measure, so no one is missed. When someone suggests passing by twos instead, the lamp keeps visiting only seats 0, 2, 4, and 6, leaving 1, 3, 5, and 7 untouched.</p>
+  <p class="t-why">why this shape — 圆桌8人按步长3构造性一笔遍历序列0,3,6,1,4,7,2,5并在第8次回到0；对照步长2因gcd(2,8)=2只到偶数陪集而漏掉奇数陪集。</p>
+</div>
+
+  <details><summary>mathematics voice — definition · home · theorem</summary>
+    <div class="voice mathv">
+      <p><span class="lbl">定义</span><br>在 n 个等距圆点上从 0 出发、每次前跳 k 步连弦:所得路径为一条闭合折线且遍历全部 n 点,当且仅当 gcd(k,n)=1(当 2≤k≤n−2 时即星形多边形 {n/k};k=1 或 n−1 退化为正 n 边形);否则轨道分裂为 gcd(k,n) 条互不相交的短环,每环恰含 n/gcd(k,n) 点。</p>
+      <p><span class="lbl">归属</span><br>初等数论 / 群论 — 循环群 Z_n 的生成元;星形多边形 {n/k}(Poinsot 1810)</p>
+      <p><span class="lbl">定理</span><br>循环群生成元定理:k 生成 Z_n 当且仅当 gcd(k,n)=1,故 Z_n 的生成元恰有 φ(n) 个(Euler 函数,Euler 1763;定理见 Gallian《Contemporary Abstract Algebra》Thm 4.2 及其推论)。星形多边形 {n/k} 的系统研究见 Poinsot (1810)。音乐实例:12 音中步长 7(纯五度)因 gcd(7,12)=1 而走遍全部十二调后回到原点——五度圈。</p>
+    </div></details>
+  <details><summary>story form device — the telling enacts the structure</summary>
+    <div class="voice device"><p>圆桌 n 人(明写 n,如 8)传一盏灯,规矩明写"每次越过 k−1 人交给第 k 位"(如 k=3,且 gcd(k,n)=1 在文中明写);叙述逐一点名传递次序(0,3,6,1,4,7,2,5),恰好人人接灯一次、第 n 次回到首位,长者点破"三与八不通约,故灯不漏一人";另设对照:有人提议步长 2,试传两轮即发现半数人永远接不到灯。机械核查:(i) 点名序列逐项等于 0,k,2k,… (mod n);(ii) 该序列是全体 n 人的一个排列且长度恰为 n,末次交还首位;(iii) 互素(与对照步长的不互素)均在文中明写;(iv) 对照轮中被漏的人集恰为一个非平凡陪集。排除条款:不得相邻依次传递(那是 cycle);不得出现两个各自守拍的周期叠加(那是 interference);遍历成功必须归因于互素而非中心指挥(hub);全体被访是构造性一笔遍历,不是纯计数存在性(区别 pigeonhole)。</p><p class="geb-echo">GEB echo — 巴赫《音乐的奉献》的无限升高卡农沿五度圈转调,正因 gcd(7,12)=1 才历遍诸调重回原点——GEB 以它为怪圈开篇,而其数论内核是互素遍历。</p></div></details>
+  <details><summary>motif schema</summary><div class="voice"><pre>{
+  "motif_id": "coprime_orbit",
+  "name": "Coprime Orbit — a stride coprime to the ring visits everyone exactly once",
+  "name_zh": "互素跳环",
+  "equation": "\\langle k \\rangle = \\mathbb{Z}_n \\iff \\gcd(k,n)=1",
+  "invariant": "一圈 n 点上以固定跨步 k 跳跃连线,步幅与圈长互素则一笔遍历所有点方才闭合,不互素则圈裂成 gcd 份——与 cycle(相邻箭头首尾闭合一圈)不同在于大跨步织出星形且遍历性以互素为条件、且有不互素即分裂的失败模式;与 interference(两个独立周期叠加浮现 lcm 更大周期)不同在于只有一条轨道、一个数论条件;与 hub(经中心中转)不同在于无任何中心点,遍历纯由 gcd(k,n)=1 担保。",
+  "math_home": "初等数论 / 群论 — 循环群 Z_n 的生成元;星形多边形 {n/k}(Poinsot 1810)",
   "nuisance_variables": [
     "node count",
     "depth",
@@ -552,6 +754,60 @@ A 正在讲 B 的故事
   "equation": "\\exists A\\;\\bigl(A\\in\\Sigma_1^0\\ \\wedge\\ \\overline{A}\\notin\\Sigma_1^0\\bigr)",
   "invariant": "图与底互补拼满全域且底自成一形：下半以上半之底为图、以上半之图为底，所述事件及其顺序保持不变（非逆序，亦非两套词汇之间的互译）",
   "math_home": "递归论·递归可枚举集与其补（Post 1944 互补定理）",
+  "nuisance_variables": [
+    "node count",
+    "depth",
+    "angles",
+    "layout",
+    "scale",
+    "domain",
+    "medium"
+  ]
+}</pre></div></details>
+  <p class="nuisance">nuisance (deliberately varied, never scored): node count, depth, angles, layout, scale, domain, medium</p>
+</section>
+
+<section class="sample" id="motif-projective_duality">
+  <h2><span class="fam-badge">motif</span>The Involutive Role-Swap <span class="zh">· 点线对偶</span></h2>
+  <p class="motif-eq">$$\sigma:\ (a{:}b{:}c)\ \leftrightarrow\ \{ax+by+cz=0\},\qquad \sigma^{2}=\mathrm{id},\qquad \vdash P\ \Leftrightarrow\ \vdash P^{\sigma}$$</p>
+  <p class="invariant">invariant: 同一体系内两类角色整体互换后,一切关系命题依然成立,且换两次逐字复原(对合 σ²=id)。排除:区别于 isomorphism(两套异质素材间的保关系字典)——对偶是一套素材内部的角色对调且必为对合;区别于 figure_ground(一幅画面上图与底互补拼满)——对偶产出两幅各自完整的图,不靠负形;区别于 transformed_canon(同一主题经固定变换在滞后声部并行重现)——对偶是先后整体重述、交换角色词汇而命题真值不变,非声部级音高/时间变换;区别于 chirality(镜像与原物不可叠合、以『合不上』为要点)——对偶的两述在同体系内都成立且互换后严丝还原;区别于 mobius(须沿路径绕行一圈方获翻转)——对偶无路径、是整体即时的角色对调;区别于 symmetry(逐项逆序回文)——对偶不倒转顺序,只换角色。</p>
+  <div class="strip"><figure><a href="assets/motif_projective_duality/scene_spiderweb_dewfall.png"><img loading="lazy" src="assets/motif_projective_duality/scene_spiderweb_dewfall.png" alt="projective_duality scene_spiderweb_dewfall"></a><figcaption>spiderweb_dewfall</figcaption></figure>
+<figure class="skel"><a href="assets/motif_projective_duality/skeleton_quadrangle.png"><img loading="lazy" src="assets/motif_projective_duality/skeleton_quadrangle.png" alt="projective_duality skeleton_quadrangle"></a><figcaption>skeleton (generation ref)</figcaption></figure></div>
+  <div class="tale">
+  <p class="t-title">《小埂上的甜香》 <span class="t-domain">蜂场花圃 · gpt-5.5 · device ✓ + blind ✓</span></p>
+  <p class="zh">本故事的换词：赶蜂人↔护花人；蜂箱↔花棚；蜜脾↔花粉。
+第一遍：
+赶蜂人阿满住在蜂箱旁，护花人青枝住在花棚旁。
+清早，赶蜂人沿小埂来到花棚，护花人开门迎他。
+他带来一盒蜜脾，说蜂箱昨夜暖得早；她捧出一盒花粉，说花棚今晨香得迟。
+赶蜂人把蜜脾放在花棚旁的老木板上，护花人把花粉放在蜂箱旁的老木板上。
+到黄昏，蜂箱边多了花棚的香气，花棚边也多了蜂箱的甜味。
+第二遍：
+护花人阿满住在花棚旁，赶蜂人青枝住在蜂箱旁。
+清早，护花人沿小埂来到蜂箱，赶蜂人开门迎他。
+他带来一盒花粉，说花棚昨夜暖得早；她捧出一盒蜜脾，说蜂箱今晨香得迟。
+护花人把花粉放在蜂箱旁的老木板上，赶蜂人把蜜脾放在花棚旁的老木板上。
+到黄昏，花棚边多了蜂箱的香气，蜂箱边也多了花棚的甜味。
+再换一次即得原话</p>
+  <p class="en">In a little bee yard beside a flower shed, Aman and Qingzhi visit each other at dawn. One brings a box of honeycomb, the other a box of pollen, and each leaves a gift near the other’s home. By evening, the beehives smell more like flowers, and the flower shed tastes a little sweeter. The tale is then told again with the two keepers, their places, and their gifts exchanged.</p>
+  <p class="t-why">why this shape — 正文首句给出三组内部对偶词，第二遍五句与第一遍五句逐句对应；对第二遍施行同一替换会逐字还原第一遍，且σ²=id。</p>
+</div>
+
+  <details><summary>mathematics voice — definition · home · theorem</summary>
+    <div class="voice mathv">
+      <p><span class="lbl">定义</span><br>射影平面中把每条真命题里的『点』与『直线』、『在其上』与『过其点』系统互换,所得对偶命题仍真(因射影平面的关联公理组自对偶);坐标化下点 (a:b:c) 与直线 ax+by+cz=0 互换即实现之,且此变换是对合——施行两次逐字复原。</p>
+      <p><span class="lbl">归属</span><br>射影几何,对偶原理 (principle of duality, Gergonne–Poncelet)</p>
+      <p><span class="lbl">定理</span><br>对偶原理的经典实例:Pascal 定理(1639 证得、刚行于 1640;圆锥曲线内接六点,三组对边交点共线)之对偶恰为 Brianchon 定理(1806;圆锥曲线外切六线,三条主对角线共点)——相隔一百六十余年的两条定理被对偶原理一步打通。</p>
+    </div></details>
+  <details><summary>story form device — the telling enacts the structure</summary>
+    <div class="voice device"><p>同一则故事讲两遍:篇首第一句明文列出对调词典(每对成双、无剩余项,如『人名↔地名』『到访↔接待』『携带↔盛放』);第二遍与第一遍句数相等、逐句对齐,且第二遍按词典机械替换后须逐字还原第一遍;篇末声明『再换一次即得原话』。核查法(盲评逐条打勾):① 词典在篇首明文且左右列成对、无剩余项;② 两遍句数相等且逐句对齐;③ 对第二遍逐词施行词典替换,输出与第一遍逐字重合;④ 两遍各自读来命题皆通。排除条款:两遍同源素材、仅角色对调,非跨异质素材的字典(区别 isomorphism);第二遍不得是第一遍的逐项逆序(区别 symmetry);两遍是先后整篇重述、交换的是角色词汇且命题真值保持,不是同主题经固定变换在滞后声部中并行重现(区别 transformed_canon);两遍均成立且互换后逐字合缝还原,不以『镜像不可叠合』为要点(区别 chirality);不借助画面负形(区别 figure_ground)。</p><p class="geb-echo">GEB echo — GEB 图与底章追问『可否让图与底互换角色而两者皆合法』,并以可递归枚举集与其补集的不对称作反衬——射影对偶恰是那种两侧皆成定理的完美对换;巴赫可逆对位(invertible counterpoint)中主题与对题互换上下声部职能,乐曲依然成立,再换一次复原。</p></div></details>
+  <details><summary>motif schema</summary><div class="voice"><pre>{
+  "motif_id": "projective_duality",
+  "name": "The Involutive Role-Swap",
+  "name_zh": "点线对偶",
+  "equation": "\\sigma:\\ (a{:}b{:}c)\\ \\leftrightarrow\\ \\{ax+by+cz=0\\},\\qquad \\sigma^{2}=\\mathrm{id},\\qquad \\vdash P\\ \\Leftrightarrow\\ \\vdash P^{\\sigma}",
+  "invariant": "同一体系内两类角色整体互换后,一切关系命题依然成立,且换两次逐字复原(对合 σ²=id)。排除:区别于 isomorphism(两套异质素材间的保关系字典)——对偶是一套素材内部的角色对调且必为对合;区别于 figure_ground(一幅画面上图与底互补拼满)——对偶产出两幅各自完整的图,不靠负形;区别于 transformed_canon(同一主题经固定变换在滞后声部并行重现)——对偶是先后整体重述、交换角色词汇而命题真值不变,非声部级音高/时间变换;区别于 chirality(镜像与原物不可叠合、以『合不上』为要点)——对偶的两述在同体系内都成立且互换后严丝还原;区别于 mobius(须沿路径绕行一圈方获翻转)——对偶无路径、是整体即时的角色对调;区别于 symmetry(逐项逆序回文)——对偶不倒转顺序,只换角色。",
+  "math_home": "射影几何,对偶原理 (principle of duality, Gergonne–Poncelet)",
   "nuisance_variables": [
     "node count",
     "depth",
@@ -827,6 +1083,67 @@ A 正在讲 B 的故事
   <p class="nuisance">nuisance (deliberately varied, never scored): node count, depth, angles, layout, scale, domain, medium</p>
 </section>
 
+<section class="sample" id="motif-aperiodic_tiling">
+  <h2><span class="fam-badge">motif</span>Aperiodic Tiling <span class="zh">· 非周期密铺</span></h2>
+  <p class="motif-eq">$$\frac{N_{\text{fat}}(n)}{N_{\text{thin}}(n)}\xrightarrow[n\to\infty]{}\varphi=\frac{1+\sqrt{5}}{2}$$</p>
+  <p class="invariant">invariant: 处处遵守同一套局部匹配规则、无缝铺满全域,却不存在任何平移使整幅复原;同时任一局部图案在有界间隙内处处再现——'似曾相识,永不重演'。排除条款:与 tiling 不同(彼挪一格即整体重合,此处证明无任何平移周期);与 symmetry_breaking 不同(彼有周期背景且恰有一处可定位的违例,此处无一处违例、却根本无周期可言);与 spiral 不同(φ 在此是两种瓦片的频率比,不是逐层定比放大的生长,图形无自相似缩放中心);与 transformed_canon 不同(彼是同一主题经固定变换后逐字再现,此处任何块都不以固定间隔精确重现);与 interference 不同(彼两周期叠加仍得 lcm 大周期,此处极限结构频率为无理数,永无周期)。</p>
+  <div class="strip"><figure><a href="assets/motif_aperiodic_tiling/scene_penrose_floor.png"><img loading="lazy" src="assets/motif_aperiodic_tiling/scene_penrose_floor.png" alt="aperiodic_tiling scene_penrose_floor"></a><figcaption>penrose_floor</figcaption></figure>
+<figure class="skel"><a href="assets/motif_aperiodic_tiling/skeleton_penrose.png"><img loading="lazy" src="assets/motif_aperiodic_tiling/skeleton_penrose.png" alt="aperiodic_tiling skeleton_penrose"></a><figcaption>skeleton (generation ref)</figcaption></figure></div>
+  <div class="tale">
+  <p class="t-title">《贝母盐仓》 <span class="t-domain">盐仓修缮 · gpt-5.5 · device ✓ + blind ✓</span></p>
+  <p class="zh">海边盐仓换了新顶，阿篾带着两个徒弟来铺贝母片。
+小满问「哪片」。
+阿篾把宽叶形和细鱼形分开，只让牙口相亲的边挨边。
+晨潮退后，第一排从灶门旁伸出，像湿沙上的鸟脚印。
+阿篾说「看纹」。
+每片都有青线和白点，青线只迎白点，白点只靠青线。
+小满说「懂了」。
+他们铺到午后，仓里没有一道缝，风却能从梁上轻轻过。
+宽片总比窄片多些，可谁也不去数，只觉得眼前越铺越顺。
+阿篾笑「慢来」。
+晚饭前，晒盐的婆婆送来热粥，认出门边一朵像蟹钳的花。
+她绕到后墙，又看见那花的亲戚，却少了一粒白点。
+婆婆说「怪亲」。
+夜里油灯晃着，徒弟们以为前面那排会照旧回来，等了许久也没有。
+小满问「错吗」。
+阿篾沿边摸过去，所有牙口都咬得安稳，连最小的角也服帖。
+第二天孩子们来玩，在东角找到昨日的蟹钳花，又在西角找到另一朵。
+孩子喊「又有」。
+他们越找越欢，觉得仓顶像老朋友讲新话，处处熟，处处不肯照抄。
+阿篾说「收工」。
+秋雨落下时，盐粒安睡在干仓里，贝母顶泛着温温的光。</p>
+  <p class="en">By the sea, an old salt storehouse received a new roof. A-Mie and two apprentices laid shell pieces in two shapes, broad leaves and slim fish, joining only the edges whose marks belonged together. The roof closed without a gap, and the broad pieces seemed always a little more common than the narrow ones. Here and there the villagers recognized a crab-claw flower or something kin to it, yet each return was slightly changed. The children searched the roof and felt it was like an old friend telling fresh stories: familiar everywhere, never merely copied. When autumn rain came, the salt slept dry beneath the warm shine of the shell roof.</p>
+  <p class="t-why">why this shape — 正文21句的A/B句型严格为ABAABABAABAABABAABABA，其中A为无引号且≥15汉字的叙述句，B为含「」且≤8汉字的直接引语句，对应Fibonacci词第7次迭代。</p>
+</div>
+
+  <details><summary>mathematics voice — definition · home · theorem</summary>
+    <div class="voice mathv">
+      <p><span class="lbl">定义</span><br>Penrose 菱形密铺(P3):以带匹配规则(边上单/双箭头方向须吻合)的 72° 胖菱形与 36° 瘦菱形无缝铺满平面。任何合法铺法都不存在非零平移自同构(非周期);却满足重复性(repetitivity):任一直径 d 的有限图案,在整幅中每个半径 O(d) 的圆盘内都再现。记 N_fat(n)、N_thin(n) 为对任一合法图案作 n 次膨胀(deflation)细分后的两种菱形计数,其比值收敛于黄金比 φ(替换矩阵 [[2,1],[1,1]] 的 Perron 特征向量),故任何周期铺法(需有理比)不可能。</p>
+      <p><span class="lbl">归属</span><br>离散几何 / 密铺理论与准晶数学——Penrose 非周期密铺(P1: Penrose 1974;P3 菱形版: Penrose 1978, Pentaplexity);五重网格代数理论(de Bruijn 1981)。</p>
+      <p><span class="lbl">定理</span><br>Penrose (1978, "Pentaplexity", Eureka 39):带匹配规则的胖、瘦两种菱形能铺满平面,且任何合法铺法都无平移周期(1974, Bull. Inst. Math. Appl. 10 给出五边形版 P1)。de Bruijn (1981, Indagationes Mathematicae 84):每个 Penrose 菱形铺法都由五重网格(pentagrid)对偶生成,由此代数地重证非周期性,并得胖:瘦菱形频率之比恰为 φ(无理,故排除周期)。</p>
+    </div></details>
+  <details><summary>story form device — the telling enacts the structure</summary>
+    <div class="voice device"><p>故事共 21 句,句型节拍取 Fibonacci 词第 7 次迭代:由替换规则 A→AB、B→A 从单字母 A 生成,得 ABAABABAABAABABAABABA(A=13 拍,B=8 拍)。硬判据:A 拍=不含任何引号的叙述句,≥15 个汉字;B 拍=含直接引语「」的句子,≤8 个汉字。机械核查:(i) 21 拍串与替换规则逐位吻合(7 次迭代可程序复算);(ii) A:B=13:8,相邻 Fibonacci 数,13/8=1.625→φ;(iii) 非幂周期:对 21 的每个真因子 p∈{1,3,7},串≠前 p 拍的整数次重复(逐位证伪);(iv) 平衡性(Sturmian):任取两段等长滑窗,A 拍数目至多差 1(全部窗口可程序枚举)。注意:不得声称'任意平移不自重合'——有限前缀存在弱周期(如 p=13),真正的非周期性只对无限词成立(A 频率 1/φ 为无理数),故只核查以上四条可判定性质。排除条款:与 interference 不同(彼 3 拍×4 拍叠加得 lcm=12 的总周期,此处无限延拓永无周期);与 tiling/alternation 不同(彼为周期 1/周期 2 的逐字重复);与 recursion 不同(替换生成自左向右展开,无'入层—出层—回基例'的括号结构);与 spiral 不同(句长不逐层定比放大,φ 只现身于拍频比);与 transformed_canon 不同(无任何句块经固定变换后在固定间隔处逐字再现)。</p><p class="geb-echo">GEB echo — Escher 毕生痴迷周期密铺——他的天使与魔鬼总在挪一格后严丝合缝地重演;而 Penrose(与 Escher 有过通信,Penrose 三角与无尽阶梯正出自这段往来)给出了它的对角:同样两块瓦、同样的局部规则,却拼出一个处处似曾相识、永不真正重演的平面——秩序与重复,在此分道扬镳。</p></div></details>
+  <details><summary>motif schema</summary><div class="voice"><pre>{
+  "motif_id": "aperiodic_tiling",
+  "name": "Aperiodic Tiling — order without repetition",
+  "name_zh": "非周期密铺",
+  "equation": "\\frac{N_{\\text{fat}}(n)}{N_{\\text{thin}}(n)}\\xrightarrow[n\\to\\infty]{}\\varphi=\\frac{1+\\sqrt{5}}{2}",
+  "invariant": "处处遵守同一套局部匹配规则、无缝铺满全域,却不存在任何平移使整幅复原;同时任一局部图案在有界间隙内处处再现——'似曾相识,永不重演'。排除条款:与 tiling 不同(彼挪一格即整体重合,此处证明无任何平移周期);与 symmetry_breaking 不同(彼有周期背景且恰有一处可定位的违例,此处无一处违例、却根本无周期可言);与 spiral 不同(φ 在此是两种瓦片的频率比,不是逐层定比放大的生长,图形无自相似缩放中心);与 transformed_canon 不同(彼是同一主题经固定变换后逐字再现,此处任何块都不以固定间隔精确重现);与 interference 不同(彼两周期叠加仍得 lcm 大周期,此处极限结构频率为无理数,永无周期)。",
+  "math_home": "离散几何 / 密铺理论与准晶数学——Penrose 非周期密铺(P1: Penrose 1974;P3 菱形版: Penrose 1978, Pentaplexity);五重网格代数理论(de Bruijn 1981)。",
+  "nuisance_variables": [
+    "node count",
+    "depth",
+    "angles",
+    "layout",
+    "scale",
+    "domain",
+    "medium"
+  ]
+}</pre></div></details>
+  <p class="nuisance">nuisance (deliberately varied, never scored): node count, depth, angles, layout, scale, domain, medium</p>
+</section>
+
 <section class="sample" id="motif-symmetry_breaking">
   <h2><span class="fam-badge">motif</span>Symmetry Breaking <span class="zh">· 对称破缺</span></h2>
   <p class="motif-eq">$$\sum_{p\,:\,X(p)=0} \operatorname{ind}_p(X)=\chi(M)$$</p>
@@ -915,6 +1232,56 @@ A 正在讲 B 的故事
   "equation": "\\forall v\\in V\\quad \\exists!\\; P:\\; v \\rightsquigarrow r",
   "invariant": "多条互不知晓的线索各自推进，最终全部汇入同一终点且到此为止",
   "math_home": "图论·内向树（in-tree/anti-arborescence）；重写系统·合流性（Church–Rosser）；分析·Banach 不动点定理",
+  "nuisance_variables": [
+    "node count",
+    "depth",
+    "angles",
+    "layout",
+    "scale",
+    "domain",
+    "medium"
+  ]
+}</pre></div></details>
+  <p class="nuisance">nuisance (deliberately varied, never scored): node count, depth, angles, layout, scale, domain, medium</p>
+</section>
+
+<section class="sample" id="motif-pigeonhole">
+  <h2><span class="fam-badge">motif</span>Pigeonhole <span class="zh">· 鸽笼必撞</span></h2>
+  <p class="motif-eq">$$|A| > |B| \;\Rightarrow\; \forall f: A\to B,\ \exists\, x\neq y:\ f(x)=f(y)$$</p>
+  <p class="invariant">invariant: 物多于笼则必有同笼:证得了“一定相撞”,却指不出“撞在何处”——与 convergence(所有线知情或不知情地终于同一「已知」点)不同:这里只由计数保证某个「未指明」之处至少二者相遇,并不构造见证者;与 bottleneck(一切通路被迫经同一中途点)不同:这里没有任何强制路径,也无中转枢纽,只有一次计数。</p>
+  <div class="strip"><figure><a href="assets/motif_pigeonhole/scene_swallow_nests.png"><img loading="lazy" src="assets/motif_pigeonhole/scene_swallow_nests.png" alt="pigeonhole scene_swallow_nests"></a><figcaption>swallow_nests</figcaption></figure>
+<figure class="skel"><a href="assets/motif_pigeonhole/skeleton_boxes.png"><img loading="lazy" src="assets/motif_pigeonhole/skeleton_boxes.png" alt="pigeonhole skeleton_boxes"></a><figcaption>skeleton (generation ref)</figcaption></figure></div>
+  <div class="tale">
+  <p class="t-title">《鸽笼必撞》 <span class="t-domain">潮乡灯会 · gpt-5.5 · device ✓ + blind ✓</span></p>
+  <p class="zh">海边的芦花村，每年春潮大时，都要在旧盐仓里办一夜签灯会。仓墙上嵌着十二个小木格，漆成十二个月令：正月杏花，二月燕子，三月青麦，一直到腊月雪靴。
+那年风从海上吹来，带来了十三位远客：补网的阿圆、卖糖的金嫂、吹笙的罗七、赶鹅的满仓、修伞的青竹、挑贝壳的梨花、染布的乌豆、说书的黄鹂、磨刀的铁生、采药的阿芷、画船眼的白叔、捏泥人的小满，还有背着小鼓的石榴。
+村里的规矩很旧：每位远客都要把自己的名签，放进自己生月的木格里，灯会才算开得吉利。
+众人刚进盐仓，湿鞋还没脱，谁也没有报过生月，也没人去摸那些木格。守仓的长者阿潮公坐在竹椅上，看了看十二个木格，又看了看十三位远客，便说：“十三多于十二，今晚必有两位客人的名签落在同一个木格。”
+远客们笑了。罗七说：“阿公连我的生月都没问呢。”金嫂摇着糖担说：“也许人人都不同。”石榴敲了一下小鼓，咚地一声，像替大家壮胆。
+阿潮公只把茶碗推到灯下，说：“先喝姜茶，再慢慢放签。”
+于是盐仓里暖起来。阿圆说自己生在二月，把签放进燕子格；金嫂生在八月，放进桂花格；罗七生在五月，放进菖蒲格；满仓生在冬月，放进芦絮格；青竹生在三月，放进青麦格；梨花生在正月，放进杏花格；乌豆生在六月，放进荷叶格；黄鹂生在九月，放进菊盏格；铁生生在腊月，放进雪靴格；阿芷生在四月，放进桃雨格；白叔生在七月，放进萤火格；小满生在十月，放进柿灯格。
+最后轮到石榴。她摸摸小鼓，笑着说：“我也是五月生。”她把名签放进菖蒲格，正贴在罗七的名签旁边。
+灯火一晃，众人都看见了：十二个木格没有挤成一个，许多木格各有各的名签，只有五月菖蒲格里，罗七和石榴的签并排躺着。
+阿潮公没有得意，只把仓门推开，让春潮的声音进来。那一夜，罗七吹笙，石榴打鼓，两人的曲子先是各走各的，后来在灯下碰了一下，孩子们听了，都说像两只燕子误进了同一片月光。</p>
+  <p class="en">In a seaside village, the old salt storehouse had twelve little wooden compartments, one for each month. Thirteen travelers arrived for the lantern night, and the rule was that every traveler had to place a name slip into the compartment of their birth month. Before anyone had said a month or checked a compartment, old A-Chao looked at the twelve compartments and the thirteen guests and declared that two slips would surely end up together. The travelers laughed, because he did not yet know any of their birthdays. One by one they placed their slips in different months, until the last traveler, Shiliu, said she too was born in May and put her slip beside Luo Qi’s. The old man’s claim was true, though he had not known in advance which two it would be.</p>
+  <p class="t-why">why this shape — 明写12个格位与13位到来者，长者在逐一核对前仅凭13&gt;12作存在性断言，结尾才给出罗七与石榴同在五月格的见证，且非全体同格、非枢纽强制。</p>
+</div>
+
+  <details><summary>mathematics voice — definition · home · theorem</summary>
+    <div class="voice mathv">
+      <p><span class="lbl">定义</span><br>把多于 n 个物件放入 n 个抽屉,必有一屉含至少两件;一般地 N 件入 n 屉必有一屉含 ≥⌈N/n⌉ 件。重合的存在性纯由计数保证,但不指明发生在哪一屉。</p>
+      <p><span class="lbl">归属</span><br>组合数学 — Dirichlet 抽屉原理(Schubfachprinzip,Dirichlet 1834,用于丢番图逼近)</p>
+      <p><span class="lbl">定理</span><br>经典应用(Erdős 最爱的启蒙题,少年 Pósa 席间即解):从 {1,…,2n} 中任取 n+1 个整数,必有一个整除另一个。证:每个数唯一写成 2^t·m(m 为其奇部),而 {1,…,2n} 中奇数恰 n 个,即奇部只有 n 种;取 n+1 个数,鸽笼逼出两数奇部相同,其比为 2 的幂,故小者整除大者。</p>
+    </div></details>
+  <details><summary>story form device — the telling enacts the structure</summary>
+    <div class="voice device"><p>故事明写两个计数:n 个格位与 n+1 位到来者(如 12 个月份与 13 位远客),规则是每客必归一格;长者在任何逐一核对之前,仅凭“十三多于十二”便断言“必有二客同月而生”,众人不服,直到结尾清点才揭晓是哪两位——但长者的断言先于揭晓且不依赖之。机械核查:两个计数 N&gt;n 均在文中明写;存在性断言出现在任何逐一核对之前;结尾验证为真。排除条款:不得让所有人归入同一格(那是 convergence);重合不得由地形要冲或中介强制(bottleneck/hub);结论只是“至少一处重合”的纯计数存在性,不构造是哪两位在先。</p><p class="geb-echo">GEB echo — GEB 反复以遗传密码类比形式系统:64 个三联密码子映射到约 20 种氨基酸,单凭 64&gt;21 这一计数,鸽笼便逼出密码的简并性——必有多个密码子指向同一氨基酸,却不预先点明是哪几个;这正是“数一数即知必有重合、而不指其处”的天然实例(而非诉诸自指的不完全性论证)。</p></div></details>
+  <details><summary>motif schema</summary><div class="voice"><pre>{
+  "motif_id": "pigeonhole",
+  "name": "Pigeonhole — more items than boxes forces a collision, place unknown",
+  "name_zh": "鸽笼必撞",
+  "equation": "|A| &gt; |B| \\;\\Rightarrow\\; \\forall f: A\\to B,\\ \\exists\\, x\\neq y:\\ f(x)=f(y)",
+  "invariant": "物多于笼则必有同笼:证得了“一定相撞”,却指不出“撞在何处”——与 convergence(所有线知情或不知情地终于同一「已知」点)不同:这里只由计数保证某个「未指明」之处至少二者相遇,并不构造见证者;与 bottleneck(一切通路被迫经同一中途点)不同:这里没有任何强制路径,也无中转枢纽,只有一次计数。",
+  "math_home": "组合数学 — Dirichlet 抽屉原理(Schubfachprinzip,Dirichlet 1834,用于丢番图逼近)",
   "nuisance_variables": [
     "node count",
     "depth",

@@ -412,6 +412,238 @@ def skel_interference(w: int = 1536, h: int = 1024) -> str:
     return svg_doc(w, h, "".join(parts))
 
 
+def skel_diagonal(w: int = 1024, h: int = 1024) -> str:
+    """diagonalization: a 6x6 bit grid, the anti-diagonal flipped into a new
+    row that differs from every row — the escape below the table."""
+    M = [[1, 0, 1, 1, 0, 0], [0, 0, 1, 0, 1, 1], [1, 1, 1, 0, 0, 1],
+         [0, 1, 0, 0, 1, 0], [1, 0, 1, 1, 1, 0], [0, 1, 1, 0, 0, 0]]
+    g, x0, y0, r = 130, 120, 110, 24
+    parts = []
+    for i in range(6):
+        for j in range(6):
+            x, y = x0 + g * j, y0 + g * i
+            fill = "#1a1a1a" if M[i][j] else "#ffffff"
+            parts.append(f'<circle cx="{x}" cy="{y}" r="{r}" fill="{fill}" '
+                         'stroke="#1a1a1a" stroke-width="5"/>')
+    parts.append(f'<line x1="{x0 - 50}" y1="{y0 - 50}" x2="{x0 + 5 * g + 50}" '
+                 f'y2="{y0 + 5 * g + 50}" stroke="#b3402a" stroke-width="4"/>')
+    for i in range(6):  # red ring on the diagonal + arrow to escape row
+        x = x0 + g * i
+        parts.append(f'<circle cx="{x}" cy="{y0 + g * i}" r="{r + 10}" '
+                     'fill="none" stroke="#b3402a" stroke-width="5"/>')
+        parts.append(f'<line x1="{x}" y1="{y0 + g * i + r + 14}" x2="{x}" '
+                     f'y2="{y0 + 6 * g + 40 - r - 8}" stroke="#b3402a" '
+                     'stroke-width="3" stroke-dasharray="7 7"/>')
+    ye = y0 + 6 * g + 40
+    for i in range(6):  # escape row = flipped diagonal
+        x = x0 + g * i
+        fill = "#ffffff" if M[i][i] else "#1a1a1a"
+        parts.append(f'<circle cx="{x}" cy="{ye}" r="{r}" fill="{fill}" '
+                     'stroke="#b3402a" stroke-width="6"/>')
+    return svg_doc(w, h, "".join(parts))
+
+
+def skel_descent(w: int = 1024, h: int = 1024) -> str:
+    """infinite descent: strictly shrinking squares stepping down to a hard
+    floor at 1 — the next step is impossible (red cross)."""
+    sizes = [(80, 130, 190), (270, 250, 135), (410, 340, 95),
+             (530, 410, 66), (620, 460, 46), (685, 495, 32)]
+    parts = []
+    marker = ('<defs><marker id="d" viewBox="0 0 10 10" refX="8" refY="5" '
+              'markerWidth="7" markerHeight="7" orient="auto">'
+              '<path d="M 0 0 L 10 5 L 0 10 z" fill="#1a1a1a"/></marker></defs>')
+    parts.append(marker)
+    centers = []
+    for x, y, s in sizes:
+        parts.append(f'<rect x="{x}" y="{y}" width="{s}" height="{s}" '
+                     'fill="#1a1a1a"/>')
+        centers.append((x + s / 2, y + s / 2))
+    for (x1, y1), (x2, y2) in zip(centers, centers[1:]):
+        parts.append(f'<line x1="{x1:.0f}" y1="{y1:.0f}" x2="{x2:.0f}" y2="{y2:.0f}" '
+                     'stroke="#1a1a1a" stroke-width="4" marker-end="url(#d)"/>')
+    floor_y = 720
+    parts.append(f'<line x1="60" y1="{floor_y}" x2="{w - 60}" y2="{floor_y}" '
+                 'stroke="#1a1a1a" stroke-width="9"/>')
+    x1, y1 = centers[-1]
+    parts.append(f'<line x1="{x1:.0f}" y1="{y1:.0f}" x2="{x1 + 60:.0f}" '
+                 f'y2="{floor_y + 60}" stroke="#1a1a1a" stroke-width="4" '
+                 'marker-end="url(#d)"/>')
+    xc, yc = x1 + 42, floor_y
+    parts.append(f'<line x1="{xc - 26:.0f}" y1="{yc - 26}" x2="{xc + 26:.0f}" '
+                 f'y2="{yc + 26}" stroke="#b3402a" stroke-width="10"/>')
+    parts.append(f'<line x1="{xc - 26:.0f}" y1="{yc + 26}" x2="{xc + 26:.0f}" '
+                 f'y2="{yc - 26}" stroke="#b3402a" stroke-width="10"/>')
+    return svg_doc(w, h, "".join(parts))
+
+
+def skel_coprime(w: int = 1024, h: int = 1024) -> str:
+    """coprime orbit: {8/3} star polygon (one closed stroke through all 8) +
+    a small gcd=2 contrast ring that splits into two squares."""
+    cx, cy, R = 400, 420, 310
+    pts = [(cx + R * math.cos(2 * math.pi * k / 8 - math.pi / 2),
+            cy + R * math.sin(2 * math.pi * k / 8 - math.pi / 2)) for k in range(8)]
+    parts = []
+    order = [0, 3, 6, 1, 4, 7, 2, 5, 0]
+    d = " ".join(f"{'M' if i == 0 else 'L'} {pts[k][0]:.0f} {pts[k][1]:.0f}"
+                 for i, k in enumerate(order))
+    parts.append(f'<path d="{d}" fill="none" stroke="#1a1a1a" stroke-width="7"/>')
+    for x, y in pts:
+        parts.append(f'<circle cx="{x:.0f}" cy="{y:.0f}" r="14" fill="#1a1a1a"/>')
+    # contrast: step 2 splits into gcd=2 squares
+    cx2, cy2, R2 = 830, 830, 130
+    pts2 = [(cx2 + R2 * math.cos(2 * math.pi * k / 8 - math.pi / 2),
+             cy2 + R2 * math.sin(2 * math.pi * k / 8 - math.pi / 2)) for k in range(8)]
+    for start in (0, 1):
+        seq = [(start + 2 * i) % 8 for i in range(4)] + [start]
+        d2 = " ".join(f"{'M' if i == 0 else 'L'} {pts2[k][0]:.0f} {pts2[k][1]:.0f}"
+                      for i, k in enumerate(seq))
+        parts.append(f'<path d="{d2}" fill="none" stroke="#8a8a8a" '
+                     'stroke-width="3" stroke-dasharray="9 7"/>')
+    for x, y in pts2:
+        parts.append(f'<circle cx="{x:.0f}" cy="{y:.0f}" r="7" fill="#8a8a8a"/>')
+    return svg_doc(w, h, "".join(parts))
+
+
+def skel_pigeonhole(w: int = 1536, h: int = 1024) -> str:
+    """pigeonhole: 5 items, 4 boxes — one box necessarily receives two."""
+    marker = ('<defs><marker id="p" viewBox="0 0 10 10" refX="8" refY="5" '
+              'markerWidth="7" markerHeight="7" orient="auto">'
+              '<path d="M 0 0 L 10 5 L 0 10 z" fill="#1a1a1a"/></marker></defs>')
+    parts = [marker]
+    xs_top = [180 + k * 290 for k in range(5)]
+    for x in xs_top:
+        parts.append(f'<circle cx="{x}" cy="200" r="26" fill="#1a1a1a"/>')
+    boxes = [250 + k * 290 for k in range(4)]   # box centers
+    targets = [0, 1, 2, 2, 3]                    # item -> box (box 2 doubles)
+    for i, x in enumerate(xs_top):
+        bx = boxes[targets[i]]
+        off = -40 if (targets[i] == 2 and i == 2) else (40 if targets[i] == 2 else 0)
+        parts.append(f'<line x1="{x}" y1="236" x2="{bx + off}" y2="640" '
+                     'stroke="#1a1a1a" stroke-width="5" marker-end="url(#p)"/>')
+    for k, bx in enumerate(boxes):
+        hot = k == 2
+        stroke = "#b3402a" if hot else "#1a1a1a"
+        parts.append(f'<rect x="{bx - 110}" y="660" width="220" height="220" '
+                     f'fill="none" stroke="{stroke}" stroke-width="{10 if hot else 6}"/>')
+        if hot:
+            parts.append(f'<circle cx="{bx - 40}" cy="770" r="24" fill="#1a1a1a"/>')
+            parts.append(f'<circle cx="{bx + 40}" cy="770" r="24" fill="#1a1a1a"/>')
+        else:
+            parts.append(f'<circle cx="{bx}" cy="770" r="24" fill="#1a1a1a"/>')
+    return svg_doc(w, h, "".join(parts))
+
+
+def skel_duality(w: int = 1536, h: int = 1024) -> str:
+    """projective duality: complete quadrangle (4 points, 6 lines) vs complete
+    quadrilateral (4 lines, 6 points) with a swap arrow between."""
+    parts = []
+    # left: 4 fat points, 6 thin lines
+    P = [(220, 240), (560, 220), (250, 640), (590, 610)]
+    for i in range(4):
+        for j in range(i + 1, 4):
+            (x1, y1), (x2, y2) = P[i], P[j]
+            dx, dy = x2 - x1, y2 - y1
+            parts.append(f'<line x1="{x1 - 0.25 * dx:.0f}" y1="{y1 - 0.25 * dy:.0f}" '
+                         f'x2="{x2 + 0.25 * dx:.0f}" y2="{y2 + 0.25 * dy:.0f}" '
+                         'stroke="#1a1a1a" stroke-width="2.5"/>')
+    for x, y in P:
+        parts.append(f'<circle cx="{x}" cy="{y}" r="20" fill="#1a1a1a"/>')
+    # middle: sigma double arrow
+    parts.append('<path d="M 740 430 L 830 430" stroke="#b3402a" stroke-width="6"/>')
+    parts.append('<path d="M 830 430 l -22 -14 v 28 z" fill="#b3402a"/>')
+    parts.append('<path d="M 760 470 L 850 470" stroke="#b3402a" stroke-width="6"/>')
+    parts.append('<path d="M 760 470 l 22 -14 v 28 z" fill="#b3402a"/>')
+    # right: 4 fat lines, 6 small hollow intersection points
+    L = [((920, 150), (1450, 690)), ((965, 760), (1430, 200)),
+         ((920, 330), (1470, 430)), ((965, 720), (1470, 320))]
+    for (x1, y1), (x2, y2) in L:
+        parts.append(f'<line x1="{x1}" y1="{y1}" x2="{x2}" y2="{y2}" '
+                     'stroke="#1a1a1a" stroke-width="9"/>')
+
+    def inter(l1, l2):
+        (x1, y1), (x2, y2) = l1
+        (x3, y3), (x4, y4) = l2
+        d = (x1 - x2) * (y3 - y4) - (y1 - y2) * (x3 - x4)
+        if abs(d) < 1e-9:
+            return None
+        px = ((x1 * y2 - y1 * x2) * (x3 - x4) - (x1 - x2) * (x3 * y4 - y3 * x4)) / d
+        py = ((x1 * y2 - y1 * x2) * (y3 - y4) - (y1 - y2) * (x3 * y4 - y3 * x4)) / d
+        return px, py
+    for i in range(4):
+        for j in range(i + 1, 4):
+            p = inter(L[i], L[j])
+            if p and 900 < p[0] < 1500 and 100 < p[1] < 920:
+                parts.append(f'<circle cx="{p[0]:.0f}" cy="{p[1]:.0f}" r="12" '
+                             'fill="#ffffff" stroke="#1a1a1a" stroke-width="5"/>')
+    return svg_doc(w, h, "".join(parts))
+
+
+def skel_cobweb(w: int = 1024, h: int = 1024) -> str:
+    """contraction fixed point: cobweb plot of x -> x/2 + 80 spiralling into
+    the fixed point on the diagonal."""
+    s = 3.0  # scale: math coords [0,300] -> px
+
+    def X(v):
+        return 60 + v * s
+
+    def Y(v):
+        return h - 80 - v * s
+    parts = [f'<line x1="{X(0)}" y1="{Y(0)}" x2="{X(300)}" y2="{Y(300)}" '
+             'stroke="#8a8a8a" stroke-width="3"/>',
+             f'<line x1="{X(0)}" y1="{Y(80)}" x2="{X(300)}" y2="{Y(230)}" '
+             'stroke="#1a1a1a" stroke-width="6"/>']
+    pts = [(20, 20), (20, 90), (90, 90), (90, 125), (125, 125), (125, 142.5),
+           (142.5, 142.5), (142.5, 151.25), (151.25, 151.25), (151.25, 155.6),
+           (155.6, 155.6)]
+    d = " ".join(f"{'M' if i == 0 else 'L'} {X(px):.1f} {Y(py):.1f}"
+                 for i, (px, py) in enumerate(pts))
+    parts.append(f'<path d="{d}" fill="none" stroke="#b3402a" stroke-width="4"/>')
+    parts.append(f'<circle cx="{X(160):.0f}" cy="{Y(160):.0f}" r="12" fill="#b3402a"/>')
+    parts.append(f'<circle cx="{X(160):.0f}" cy="{Y(160):.0f}" r="24" fill="none" '
+                 'stroke="#b3402a" stroke-width="4"/>')
+    return svg_doc(w, h, "".join(parts))
+
+
+def skel_penrose(w: int = 1024, h: int = 1024) -> str:
+    """aperiodic tiling: Penrose P3 'sun' patch — 5 fat rhombs meeting at the
+    center, their 5 outer notches filled by thin rhombs. Geometrically exact:
+    all tiles edge-to-edge, no gap, no overlap; 5-fold symmetric."""
+    cx, cy, s = w / 2, h / 2, 210
+
+    def u(deg):
+        return (s * math.cos(math.radians(deg)), -s * math.sin(math.radians(deg)))
+
+    def vadd(*ps):
+        return (sum(p[0] for p in ps), sum(p[1] for p in ps))
+
+    def poly(points, fill):
+        d = " ".join(f"{x:.1f},{y:.1f}" for x, y in points)
+        return (f'<polygon points="{d}" fill="{fill}" stroke="#333333" '
+                'stroke-width="3"/>')
+    parts = []
+    C = (cx, cy)
+    fat, thin = "#e8c468", "#3b4a8c"
+    far = []          # outer tip of each fat rhomb
+    shared = []       # shared inner-ring vertex between rhomb k and k+1
+    for k in range(5):
+        th = 90 + 72 * k
+        e1 = u(th - 36)
+        e2 = u(th + 36)
+        p1 = vadd(C, e1)
+        pf = vadd(C, e1, e2)
+        p3 = vadd(C, e2)          # == p1 of rhomb k+1
+        far.append(pf)
+        shared.append(p3)
+        parts.append(poly([C, p1, pf, p3], fat))
+    for k in range(5):            # thin rhomb fills notch at shared[k]
+        v = shared[k]
+        a = far[k]
+        b = far[(k + 1) % 5]
+        d = vadd(a, b, (-v[0], -v[1]))   # a + b - v
+        parts.append(poly([v, a, d, b], thin))
+    return svg_doc(w, h, "".join(parts))
+
+
 # ---------------------------------------------------------------------------
 # motif registry
 #
@@ -442,6 +674,13 @@ SKELETONS = {
     "interference": {"ripples": lambda: skel_interference()},
     "tiling": {"honeycomb": lambda: skel_tiling()},
     "hub": {"star": lambda: skel_hub()},
+    "diagonalization": {"grid": lambda: skel_diagonal()},
+    "infinite_descent": {"staircase": lambda: skel_descent()},
+    "coprime_orbit": {"star": lambda: skel_coprime()},
+    "pigeonhole": {"boxes": lambda: skel_pigeonhole()},
+    "projective_duality": {"quadrangle": lambda: skel_duality()},
+    "contraction_fixed_point": {"cobweb": lambda: skel_cobweb()},
+    "aperiodic_tiling": {"penrose": lambda: skel_penrose()},
 }
 
 REF = "Use this diagram ONLY as a compositional skeleton. "
@@ -637,6 +876,78 @@ SCENES = {
          "outward along exactly the drawn spokes, each trail ending in a "
          "bright head at the drawn outer dots, no trail touching another. "
          "Night sky over water with reflections. " + NO_DIAGRAM),
+    ],
+    "diagonalization": [
+        ("jacquard_loom", "grid", "1024x1024",
+         REF + "A photorealistic straight-on photograph of a small jacquard "
+         "sampler on a loom, woven as a square grid of large plain squares, "
+         "dark or cream, one square per drawn cell, EXACTLY matching the drawn "
+         "6x6 pattern. A single RED thread is woven along the main diagonal, "
+         "boxing the six diagonal squares. BELOW the square cloth, separated "
+         "by a finger of bare warp threads, hangs ONE extra woven strip of six "
+         "squares bound in red selvedge: it is the diagonal row with every "
+         "colour flipped (cream where the diagonal square was dark, dark where "
+         "it was cream), so this strip matches no row of the cloth above. "
+         "Warm workshop light. " + NO_DIAGRAM),
+    ],
+    "infinite_descent": [
+        ("nesting_dolls", "staircase", "1536x1024",
+         REF + "A photorealistic overhead photograph of a row of Russian "
+         "nesting dolls opened and lined up largest to smallest along exactly "
+         "the drawn descending steps, each strictly smaller than the one "
+         "before. At the drawn hard floor the smallest doll is opened to reveal "
+         "it is empty — yet still demanding a smaller doll that cannot exist; a "
+         "faint red cross marks the impossible next step. Soft museum light. "
+         + NO_DIAGRAM),
+    ],
+    "coprime_orbit": [
+        ("string_art_star", "star", "1024x1024",
+         REF + "A photorealistic close-up of string art on a dark wooden board: "
+         "brass nails driven in a circle at exactly the drawn outer points, and "
+         "a single continuous bright thread that leaps over two nails to the "
+         "third each time, tracing the drawn eight-point star in one unbroken "
+         "path that visits every nail before closing. Raking light, real "
+         "thread shadows. " + NO_DIAGRAM),
+    ],
+    "pigeonhole": [
+        ("swallow_nests", "boxes", "1536x1024",
+         REF + "A photorealistic dusk photograph under a wooden eave: exactly "
+         "four swallow nests at the drawn boxes and five returning swallows at "
+         "the drawn upper points, each flying down its drawn path into a nest. "
+         "Four birds fill three nests one apiece; the highlighted nest is "
+         "forced to hold two swallows together — more birds than nests, so one "
+         "nest must double. Golden backlight, soft silhouettes. " + NO_DIAGRAM),
+    ],
+    "projective_duality": [
+        ("spiderweb_dewfall", "quadrangle", "1536x1024",
+         REF + "A photorealistic diptych of the SAME spider web. LEFT: dry, the "
+         "silk threads are thick and bright as the main subject (the drawn fat "
+         "lines) and the knots where they cross are faint (the drawn small "
+         "points). RIGHT: the same web heavy with dawn dew, now the dewdrops at "
+         "the crossings swell into a bright array of beads (points become the "
+         "subject) while the threads recede to thin guides — points and lines "
+         "have swapped roles, yet every 'which thread meets which' relation is "
+         "preserved. Cool morning light. " + NO_DIAGRAM),
+    ],
+    "contraction_fixed_point": [
+        ("you_are_here", "cobweb", "1024x1024",
+         REF + "A photorealistic close-up of a polished bronze city map inlaid "
+         "in a plaza floor, with a single brass stud reading nothing but "
+         "marking one point. The stud sits exactly where the map depicts its "
+         "own location — the shrunken city pressed onto the real city pins one "
+         "unmoving point. Let the drawn spiral of the cobweb guide the eye "
+         "inward to that fixed stud. Warm afternoon light, worn metal. "
+         + NO_DIAGRAM),
+    ],
+    "aperiodic_tiling": [
+        ("penrose_floor", "penrose", "1024x1024",
+         REF + "A photorealistic overhead photograph of a stone-tiled plaza "
+         "floor laid in a Penrose pattern of two rhombus tiles (fat and thin) "
+         "arranged exactly as the drawn 'sun' patch: five-fold symmetric about "
+         "the center, tiles meeting edge to edge with no gaps, the pattern "
+         "clearly never repeating as it radiates outward. A single person "
+         "stands at the center. Overcast even light, real stone texture. "
+         + NO_DIAGRAM),
     ],
 }
 

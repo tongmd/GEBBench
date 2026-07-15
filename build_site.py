@@ -27,11 +27,12 @@ LIBRARY = {m["id"]: m for m in
 # conceptual arc: self-reference family -> loops & twists -> mirrors &
 # correspondences -> weaves & periods -> fields -> flows
 MOTIF_ORDER = [
-    "self_reference", "strange_loop", "recursion", "nesting",
-    "cycle", "mobius", "spiral",
-    "symmetry", "figure_ground", "isomorphism",
-    "alternation", "braiding", "interference", "tiling",
-    "symmetry_breaking", "convergence", "bottleneck", "hub",
+    "self_reference", "diagonalization", "strange_loop", "recursion",
+    "infinite_descent", "nesting", "contraction_fixed_point",
+    "cycle", "coprime_orbit", "mobius", "spiral",
+    "symmetry", "figure_ground", "projective_duality", "isomorphism",
+    "alternation", "braiding", "interference", "tiling", "aperiodic_tiling",
+    "symmetry_breaking", "convergence", "pigeonhole", "bottleneck", "hub",
 ]
 
 SCENE_LABEL = {

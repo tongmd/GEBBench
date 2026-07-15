@@ -1,0 +1,19 @@
+{
+  "motif_id": "projective_duality",
+  "name": "The Involutive Role-Swap",
+  "name_zh": "点线对偶",
+  "equation": "\\sigma:\\ (a{:}b{:}c)\\ \\leftrightarrow\\ \\{ax+by+cz=0\\},\\qquad \\sigma^{2}=\\mathrm{id},\\qquad \\vdash P\\ \\Leftrightarrow\\ \\vdash P^{\\sigma}",
+  "invariant": "同一体系内两类角色整体互换后,一切关系命题依然成立,且换两次逐字复原(对合 σ²=id)。排除:区别于 isomorphism(两套异质素材间的保关系字典)——对偶是一套素材内部的角色对调且必为对合;区别于 figure_ground(一幅画面上图与底互补拼满)——对偶产出两幅各自完整的图,不靠负形;区别于 transformed_canon(同一主题经固定变换在滞后声部并行重现)——对偶是先后整体重述、交换角色词汇而命题真值不变,非声部级音高/时间变换;区别于 chirality(镜像与原物不可叠合、以『合不上』为要点)——对偶的两述在同体系内都成立且互换后严丝还原;区别于 mobius(须沿路径绕行一圈方获翻转)——对偶无路径、是整体即时的角色对调;区别于 symmetry(逐项逆序回文)——对偶不倒转顺序,只换角色。",
+  "math_home": "射影几何,对偶原理 (principle of duality, Gergonne–Poncelet)",
+  "story_form_device": "同一则故事讲两遍:篇首第一句明文列出对调词典(每对成双、无剩余项,如『人名↔地名』『到访↔接待』『携带↔盛放』);第二遍与第一遍句数相等、逐句对齐,且第二遍按词典机械替换后须逐字还原第一遍;篇末声明『再换一次即得原话』。核查法(盲评逐条打勾):① 词典在篇首明文且左右列成对、无剩余项;② 两遍句数相等且逐句对齐;③ 对第二遍逐词施行词典替换,输出与第一遍逐字重合;④ 两遍各自读来命题皆通。排除条款:两遍同源素材、仅角色对调,非跨异质素材的字典(区别 isomorphism);第二遍不得是第一遍的逐项逆序(区别 symmetry);两遍是先后整篇重述、交换的是角色词汇且命题真值保持,不是同主题经固定变换在滞后声部中并行重现(区别 transformed_canon);两遍均成立且互换后逐字合缝还原,不以『镜像不可叠合』为要点(区别 chirality);不借助画面负形(区别 figure_ground)。",
+  "geb_echo": "GEB 图与底章追问『可否让图与底互换角色而两者皆合法』,并以可递归枚举集与其补集的不对称作反衬——射影对偶恰是那种两侧皆成定理的完美对换;巴赫可逆对位(invertible counterpoint)中主题与对题互换上下声部职能,乐曲依然成立,再换一次复原。",
+  "nuisance_variables": [
+    "node count",
+    "depth",
+    "angles",
+    "layout",
+    "scale",
+    "domain",
+    "medium"
+  ]
+}

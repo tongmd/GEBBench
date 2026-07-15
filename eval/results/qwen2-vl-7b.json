@@ -3,24 +3,24 @@
  "base": "http://localhost:18011/v1",
  "summary": {
   "scene2motif": {
-   "n": 38,
-   "acc": 0.2368
+   "n": 45,
+   "acc": 0.2667
   },
   "skeleton2motif": {
-   "n": 18,
-   "acc": 0.3333
+   "n": 25,
+   "acc": 0.2
   },
   "story2motif": {
-   "n": 18,
-   "acc": 0.1667
+   "n": 25,
+   "acc": 0.16
   },
   "theorem2motif": {
-   "n": 18,
-   "acc": 0.5556
+   "n": 25,
+   "acc": 0.52
   },
   "crossvoice": {
-   "n": 38,
-   "acc": 0.1842
+   "n": 45,
+   "acc": 0.2
   }
  },
  "records": [
@@ -46,7 +46,7 @@
    "answer": "self_reference",
    "pred": "self_reference",
    "correct": true,
-   "raw": "```json\n{\n  \"motif_id\": \"self_reference\"\n}\n```"
+   "raw": "{\"motif_id\": \"self_reference\"}"
   },
   {
    "id": "story:self_reference",
@@ -54,7 +54,7 @@
    "answer": "self_reference",
    "pred": "convergence",
    "correct": false,
-   "raw": "```json\n{\"motif_id\": \"convergence\"}\n```"
+   "raw": "{\"motif_id\": \"convergence\"}"
   },
   {
    "id": "thm:self_reference",
@@ -78,7 +78,7 @@
    "answer": "recursion",
    "pred": "self_reference",
    "correct": false,
-   "raw": "```json\n{\n  \"motif_id\": \"self_reference\"\n}\n```"
+   "raw": "{\"motif_id\": \"self_reference\"}"
   },
   {
    "id": "scene:scene_winter_tree:recursion",
@@ -92,17 +92,17 @@
    "id": "skel:recursion:skeleton_tree",
    "task": "skeleton2motif",
    "answer": "recursion",
-   "pred": "recursion",
-   "correct": true,
-   "raw": "{\"motif_id\": \"recursion\"}"
+   "pred": "self_reference",
+   "correct": false,
+   "raw": "{\"motif_id\": \"self_reference\"}"
   },
   {
    "id": "story:recursion",
    "task": "story2motif",
    "answer": "recursion",
-   "pred": "convergence",
+   "pred": "cycle",
    "correct": false,
-   "raw": "```json\n{\n  \"motif_id\": \"convergence\"\n}\n```"
+   "raw": "{\"motif_id\": \"cycle\"}"
   },
   {
    "id": "thm:recursion",
@@ -140,17 +140,17 @@
    "id": "skel:nesting:skeleton_concentric",
    "task": "skeleton2motif",
    "answer": "nesting",
-   "pred": "self_reference",
+   "pred": "cycle",
    "correct": false,
-   "raw": "{\"motif_id\": \"self_reference\"}"
+   "raw": "{\"motif_id\": \"cycle\"}"
   },
   {
    "id": "story:nesting",
    "task": "story2motif",
    "answer": "nesting",
-   "pred": "strange_loop",
+   "pred": "cycle",
    "correct": false,
-   "raw": "```json\n{\n  \"motif_id\": \"strange_loop\"\n}\n```"
+   "raw": "{\"motif_id\": \"cycle\"}"
   },
   {
    "id": "thm:nesting",
@@ -158,7 +158,7 @@
    "answer": "nesting",
    "pred": "convergence",
    "correct": false,
-   "raw": "```json\n{\"motif_id\": \"convergence\"}\n```"
+   "raw": "{\"motif_id\": \"convergence\"}"
   },
   {
    "id": "scene:scene_canal_town:cycle",
@@ -190,7 +190,7 @@
    "answer": "cycle",
    "pred": "cycle",
    "correct": true,
-   "raw": "```json\n{\n  \"motif_id\": \"cycle\"\n}\n```"
+   "raw": "{\"motif_id\": \"cycle\"}"
   },
   {
    "id": "thm:cycle",
@@ -230,31 +230,31 @@
    "answer": "symmetry",
    "pred": "cycle",
    "correct": false,
-   "raw": "```json\n{\"motif_id\": \"cycle\"}\n```"
+   "raw": "{\"motif_id\": \"cycle\"}"
   },
   {
    "id": "thm:symmetry",
    "task": "theorem2motif",
    "answer": "symmetry",
-   "pred": "isomorphism",
+   "pred": "alternation",
    "correct": false,
-   "raw": "{\"motif_id\": \"isomorphism\"}"
+   "raw": "{\"motif_id\": \"alternation\"}"
   },
   {
    "id": "scene:scene_lantern_row:alternation",
    "task": "scene2motif",
    "answer": "alternation",
-   "pred": "self_reference",
+   "pred": "cycle",
    "correct": false,
-   "raw": "{\"motif_id\": \"self_reference\"}"
+   "raw": "```json\n{\n  \"motif_id\": \"cycle\"\n}\n```"
   },
   {
    "id": "scene:scene_zebra:alternation",
    "task": "scene2motif",
    "answer": "alternation",
-   "pred": "self_reference",
-   "correct": false,
-   "raw": "```json\n{\n  \"motif_id\": \"self_reference\"\n}\n```"
+   "pred": "alternation",
+   "correct": true,
+   "raw": "```json\n{\n  \"motif_id\": \"alternation\"\n}\n```"
   },
   {
    "id": "skel:alternation:skeleton_chain",
@@ -262,15 +262,15 @@
    "answer": "alternation",
    "pred": "cycle",
    "correct": false,
-   "raw": "```json\n{\n  \"motif_id\": \"cycle\"\n}\n```"
+   "raw": "{\"motif_id\": \"cycle\"}"
   },
   {
    "id": "story:alternation",
    "task": "story2motif",
    "answer": "alternation",
-   "pred": "convergence",
+   "pred": "cycle",
    "correct": false,
-   "raw": "```json\n{\"motif_id\": \"convergence\"}\n```"
+   "raw": "{\"motif_id\": \"cycle\"}"
   },
   {
    "id": "thm:alternation",
@@ -286,7 +286,7 @@
    "answer": "spiral",
    "pred": "spiral",
    "correct": true,
-   "raw": "{\"motif_id\": \"spiral\"}"
+   "raw": "```json\n{\n  \"motif_id\": \"spiral\"\n}\n```"
   },
   {
    "id": "scene:scene_typhoon:spiral",
@@ -310,7 +310,7 @@
    "answer": "spiral",
    "pred": "convergence",
    "correct": false,
-   "raw": "```json\n{\"motif_id\": \"convergence\"}\n```"
+   "raw": "{\"motif_id\": \"convergence\"}"
   },
   {
    "id": "thm:spiral",
@@ -324,9 +324,9 @@
    "id": "scene:scene_homing_birds:convergence",
    "task": "scene2motif",
    "answer": "convergence",
-   "pred": "self_reference",
-   "correct": false,
-   "raw": "```json\n{\n  \"motif_id\": \"self_reference\"\n}\n```"
+   "pred": "convergence",
+   "correct": true,
+   "raw": "```json\n{\n  \"motif_id\": \"convergence\"\n}\n```"
   },
   {
    "id": "scene:scene_watershed:convergence",
@@ -340,9 +340,9 @@
    "id": "skel:convergence:skeleton_funnel",
    "task": "skeleton2motif",
    "answer": "convergence",
-   "pred": "convergence",
-   "correct": true,
-   "raw": "{\"motif_id\": \"convergence\"}"
+   "pred": "cycle",
+   "correct": false,
+   "raw": "{\"motif_id\": \"cycle\"}"
   },
   {
    "id": "story:convergence",
@@ -350,7 +350,7 @@
    "answer": "convergence",
    "pred": "convergence",
    "correct": true,
-   "raw": "```json\n{\n  \"motif_id\": \"convergence\"\n}\n```"
+   "raw": "{\"motif_id\": \"convergence\"}"
   },
   {
    "id": "thm:convergence",
@@ -364,9 +364,9 @@
    "id": "scene:scene_gorge_bridge:bottleneck",
    "task": "scene2motif",
    "answer": "bottleneck",
-   "pred": "self_reference",
+   "pred": "hub",
    "correct": false,
-   "raw": "{\"motif_id\": \"self_reference\"}"
+   "raw": "{\"motif_id\": \"hub\"}"
   },
   {
    "id": "scene:scene_hourglass:bottleneck",
@@ -374,7 +374,7 @@
    "answer": "bottleneck",
    "pred": "self_reference",
    "correct": false,
-   "raw": "```json\n{\n  \"motif_id\": \"self_reference\"\n}\n```"
+   "raw": "{\"motif_id\": \"self_reference\"}"
   },
   {
    "id": "skel:bottleneck:skeleton_dumbbell",
@@ -382,7 +382,7 @@
    "answer": "bottleneck",
    "pred": "hub",
    "correct": false,
-   "raw": "```json\n{\n  \"motif_id\": \"hub\"\n}\n```"
+   "raw": "{\"motif_id\": \"hub\"}"
   },
   {
    "id": "story:bottleneck",
@@ -390,7 +390,7 @@
    "answer": "bottleneck",
    "pred": "cycle",
    "correct": false,
-   "raw": "```json\n{\n  \"motif_id\": \"cycle\"\n}\n```"
+   "raw": "{\"motif_id\": \"cycle\"}"
   },
   {
    "id": "thm:bottleneck",
@@ -398,7 +398,7 @@
    "answer": "bottleneck",
    "pred": "bottleneck",
    "correct": true,
-   "raw": "```json\n{\n  \"motif_id\": \"bottleneck\"\n}\n```"
+   "raw": "{\"motif_id\": \"bottleneck\"}"
   },
   {
    "id": "scene:scene_orchard_anomaly:symmetry_breaking",
@@ -430,7 +430,7 @@
    "answer": "symmetry_breaking",
    "pred": "cycle",
    "correct": false,
-   "raw": "```json\n{\"motif_id\": \"cycle\"}\n```"
+   "raw": "{\"motif_id\": \"cycle\"}"
   },
   {
    "id": "thm:symmetry_breaking",
@@ -454,7 +454,7 @@
    "answer": "strange_loop",
    "pred": "self_reference",
    "correct": false,
-   "raw": "{\"motif_id\": \"self_reference\"}"
+   "raw": "```json\n{\n  \"motif_id\": \"self_reference\"\n}\n```"
   },
   {
    "id": "skel:strange_loop:skeleton_ladder",
@@ -462,7 +462,7 @@
    "answer": "strange_loop",
    "pred": "cycle",
    "correct": false,
-   "raw": "```json\n{\n  \"motif_id\": \"cycle\"\n}\n```"
+   "raw": "{\"motif_id\": \"cycle\"}"
   },
   {
    "id": "story:strange_loop",
@@ -470,7 +470,7 @@
    "answer": "strange_loop",
    "pred": "strange_loop",
    "correct": true,
-   "raw": "```json\n{\n  \"motif_id\": \"strange_loop\"\n}\n```"
+   "raw": "{\"motif_id\": \"strange_loop\"}"
   },
   {
    "id": "thm:strange_loop",
@@ -484,17 +484,17 @@
    "id": "scene:scene_day_night_birds:figure_ground",
    "task": "scene2motif",
    "answer": "figure_ground",
-   "pred": "self_reference",
+   "pred": "tiling",
    "correct": false,
-   "raw": "```json\n{\n  \"motif_id\": \"self_reference\"\n}\n```"
+   "raw": "```json\n{\n  \"motif_id\": \"tiling\"\n}\n```"
   },
   {
    "id": "scene:scene_papercut:figure_ground",
    "task": "scene2motif",
    "answer": "figure_ground",
-   "pred": "self_reference",
-   "correct": false,
-   "raw": "{\"motif_id\": \"self_reference\"}"
+   "pred": "figure_ground",
+   "correct": true,
+   "raw": "{\"motif_id\": \"figure_ground\"}"
   },
   {
    "id": "skel:figure_ground:skeleton_tessellation",
@@ -510,15 +510,15 @@
    "answer": "figure_ground",
    "pred": "symmetry",
    "correct": false,
-   "raw": "```json\n{\"motif_id\": \"symmetry\"}\n```"
+   "raw": "{\"motif_id\": \"symmetry\"}"
   },
   {
    "id": "thm:figure_ground",
    "task": "theorem2motif",
    "answer": "figure_ground",
-   "pred": "figure_ground",
-   "correct": true,
-   "raw": "{\"motif_id\": \"figure_ground\"}"
+   "pred": "isomorphism",
+   "correct": false,
+   "raw": "{\"motif_id\": \"isomorphism\"}"
   },
   {
    "id": "scene:scene_constellations:isomorphism",
@@ -526,7 +526,7 @@
    "answer": "isomorphism",
    "pred": "self_reference",
    "correct": false,
-   "raw": "```json\n{\n  \"motif_id\": \"self_reference\"\n}\n```"
+   "raw": "{\"motif_id\": \"self_reference\"}"
   },
   {
    "id": "scene:scene_tree_and_roots:isomorphism",
@@ -542,15 +542,15 @@
    "answer": "isomorphism",
    "pred": "cycle",
    "correct": false,
-   "raw": "```json\n{\n  \"motif_id\": \"cycle\"\n}\n```"
+   "raw": "{\"motif_id\": \"cycle\"}"
   },
   {
    "id": "story:isomorphism",
    "task": "story2motif",
    "answer": "isomorphism",
-   "pred": "convergence",
+   "pred": "cycle",
    "correct": false,
-   "raw": "```json\n{\n  \"motif_id\": \"convergence\"\n}\n```"
+   "raw": "{\"motif_id\": \"cycle\"}"
   },
   {
    "id": "thm:isomorphism",
@@ -558,7 +558,7 @@
    "answer": "isomorphism",
    "pred": "isomorphism",
    "correct": true,
-   "raw": "```json\n{\n  \"motif_id\": \"isomorphism\"\n}\n```"
+   "raw": "{\"motif_id\": \"isomorphism\"}"
   },
   {
    "id": "scene:scene_ant_band:mobius",
@@ -582,7 +582,7 @@
    "answer": "mobius",
    "pred": "self_reference",
    "correct": false,
-   "raw": "```json\n{\n  \"motif_id\": \"self_reference\"\n}\n```"
+   "raw": "{\"motif_id\": \"self_reference\"}"
   },
   {
    "id": "story:mobius",
@@ -590,7 +590,7 @@
    "answer": "mobius",
    "pred": "cycle",
    "correct": false,
-   "raw": "```json\n{\"motif_id\": \"cycle\"}\n```"
+   "raw": "{\"motif_id\": \"cycle\"}"
   },
   {
    "id": "thm:mobius",
@@ -606,23 +606,23 @@
    "answer": "braiding",
    "pred": "cycle",
    "correct": false,
-   "raw": "```json\n{\n  \"motif_id\": \"cycle\"\n}\n```"
+   "raw": "{\"motif_id\": \"cycle\"}"
   },
   {
    "id": "scene:scene_interchange:braiding",
    "task": "scene2motif",
    "answer": "braiding",
-   "pred": "self_reference",
+   "pred": "symmetry",
    "correct": false,
-   "raw": "{\"motif_id\": \"self_reference\"}"
+   "raw": "{\"motif_id\": \"symmetry\"}"
   },
   {
    "id": "skel:braiding:skeleton_weave",
    "task": "skeleton2motif",
    "answer": "braiding",
-   "pred": "self_reference",
+   "pred": "cycle",
    "correct": false,
-   "raw": "```json\n{\n  \"motif_id\": \"self_reference\"\n}\n```"
+   "raw": "{\"motif_id\": \"cycle\"}"
   },
   {
    "id": "story:braiding",
@@ -630,7 +630,7 @@
    "answer": "braiding",
    "pred": "cycle",
    "correct": false,
-   "raw": "```json\n{\n  \"motif_id\": \"cycle\"\n}\n```"
+   "raw": "{\"motif_id\": \"cycle\"}"
   },
   {
    "id": "thm:braiding",
@@ -660,9 +660,9 @@
    "id": "skel:interference:skeleton_ripples",
    "task": "skeleton2motif",
    "answer": "interference",
-   "pred": "self_reference",
+   "pred": "spiral",
    "correct": false,
-   "raw": "{\"motif_id\": \"self_reference\"}"
+   "raw": "{\"motif_id\": \"spiral\"}"
   },
   {
    "id": "story:interference",
@@ -670,15 +670,15 @@
    "answer": "interference",
    "pred": "cycle",
    "correct": false,
-   "raw": "```json\n{\n  \"motif_id\": \"cycle\"\n}\n```"
+   "raw": "{\"motif_id\": \"cycle\"}"
   },
   {
    "id": "thm:interference",
    "task": "theorem2motif",
    "answer": "interference",
-   "pred": "cycle",
+   "pred": "coprime_orbit",
    "correct": false,
-   "raw": "{\"motif_id\": \"cycle\"}"
+   "raw": "{\"motif_id\": \"coprime_orbit\"}"
   },
   {
    "id": "scene:scene_honeycomb:tiling",
@@ -700,9 +700,9 @@
    "id": "skel:tiling:skeleton_honeycomb",
    "task": "skeleton2motif",
    "answer": "tiling",
-   "pred": "self_reference",
-   "correct": false,
-   "raw": "{\"motif_id\": \"self_reference\"}"
+   "pred": "tiling",
+   "correct": true,
+   "raw": "{\"motif_id\": \"tiling\"}"
   },
   {
    "id": "story:tiling",
@@ -710,23 +710,23 @@
    "answer": "tiling",
    "pred": "convergence",
    "correct": false,
-   "raw": "```json\n{\"motif_id\": \"convergence\"}\n```"
+   "raw": "{\"motif_id\": \"convergence\"}"
   },
   {
    "id": "thm:tiling",
    "task": "theorem2motif",
    "answer": "tiling",
-   "pred": "symmetry",
-   "correct": false,
-   "raw": "{\"motif_id\": \"symmetry\"}"
+   "pred": "tiling",
+   "correct": true,
+   "raw": "{\"motif_id\": \"tiling\"}"
   },
   {
    "id": "scene:scene_firework:hub",
    "task": "scene2motif",
    "answer": "hub",
-   "pred": "self_reference",
+   "pred": "symmetry",
    "correct": false,
-   "raw": "```json\n{\n  \"motif_id\": \"self_reference\"\n}\n```"
+   "raw": "```json\n{\n  \"motif_id\": \"symmetry\"\n}\n```"
   },
   {
    "id": "scene:scene_starfish:hub",
@@ -750,7 +750,7 @@
    "answer": "hub",
    "pred": "cycle",
    "correct": false,
-   "raw": "```json\n{\n  \"motif_id\": \"cycle\"\n}\n```"
+   "raw": "{\"motif_id\": \"cycle\"}"
   },
   {
    "id": "thm:hub",
@@ -758,15 +758,239 @@
    "answer": "hub",
    "pred": "hub",
    "correct": true,
-   "raw": "```json\n{\"motif_id\": \"hub\"}\n```"
+   "raw": "{\"motif_id\": \"hub\"}"
+  },
+  {
+   "id": "scene:scene_jacquard_loom:diagonalization",
+   "task": "scene2motif",
+   "answer": "diagonalization",
+   "pred": "alternation",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"alternation\"\n}\n```"
+  },
+  {
+   "id": "skel:diagonalization:skeleton_grid",
+   "task": "skeleton2motif",
+   "answer": "diagonalization",
+   "pred": "self_reference",
+   "correct": false,
+   "raw": "{\"motif_id\": \"self_reference\"}"
+  },
+  {
+   "id": "story:diagonalization",
+   "task": "story2motif",
+   "answer": "diagonalization",
+   "pred": "cycle",
+   "correct": false,
+   "raw": "{\"motif_id\": \"cycle\"}"
+  },
+  {
+   "id": "thm:diagonalization",
+   "task": "theorem2motif",
+   "answer": "diagonalization",
+   "pred": "diagonalization",
+   "correct": true,
+   "raw": "{\"motif_id\": \"diagonalization\"}"
+  },
+  {
+   "id": "scene:scene_nesting_dolls:infinite_descent",
+   "task": "scene2motif",
+   "answer": "infinite_descent",
+   "pred": "nesting",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"nesting\"\n}\n```"
+  },
+  {
+   "id": "skel:infinite_descent:skeleton_staircase",
+   "task": "skeleton2motif",
+   "answer": "infinite_descent",
+   "pred": "self_reference",
+   "correct": false,
+   "raw": "{\"motif_id\": \"self_reference\"}"
+  },
+  {
+   "id": "story:infinite_descent",
+   "task": "story2motif",
+   "answer": "infinite_descent",
+   "pred": "cycle",
+   "correct": false,
+   "raw": "{\"motif_id\": \"cycle\"}"
+  },
+  {
+   "id": "thm:infinite_descent",
+   "task": "theorem2motif",
+   "answer": "infinite_descent",
+   "pred": "infinite_descent",
+   "correct": true,
+   "raw": "{\"motif_id\": \"infinite_descent\"}"
+  },
+  {
+   "id": "scene:scene_string_art_star:coprime_orbit",
+   "task": "scene2motif",
+   "answer": "coprime_orbit",
+   "pred": "cycle",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"cycle\"\n}\n```"
+  },
+  {
+   "id": "skel:coprime_orbit:skeleton_star",
+   "task": "skeleton2motif",
+   "answer": "coprime_orbit",
+   "pred": "cycle",
+   "correct": false,
+   "raw": "{\"motif_id\": \"cycle\"}"
+  },
+  {
+   "id": "story:coprime_orbit",
+   "task": "story2motif",
+   "answer": "coprime_orbit",
+   "pred": "coprime_orbit",
+   "correct": true,
+   "raw": "{\"motif_id\": \"coprime_orbit\"}"
+  },
+  {
+   "id": "thm:coprime_orbit",
+   "task": "theorem2motif",
+   "answer": "coprime_orbit",
+   "pred": "cycle",
+   "correct": false,
+   "raw": "{\"motif_id\": \"cycle\"}"
+  },
+  {
+   "id": "scene:scene_swallow_nests:pigeonhole",
+   "task": "scene2motif",
+   "answer": "pigeonhole",
+   "pred": "nesting",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"nesting\"\n}\n```"
+  },
+  {
+   "id": "skel:pigeonhole:skeleton_boxes",
+   "task": "skeleton2motif",
+   "answer": "pigeonhole",
+   "pred": "self_reference",
+   "correct": false,
+   "raw": "{\"motif_id\": \"self_reference\"}"
+  },
+  {
+   "id": "story:pigeonhole",
+   "task": "story2motif",
+   "answer": "pigeonhole",
+   "pred": "cycle",
+   "correct": false,
+   "raw": "{\"motif_id\": \"cycle\"}"
+  },
+  {
+   "id": "thm:pigeonhole",
+   "task": "theorem2motif",
+   "answer": "pigeonhole",
+   "pred": "convergence",
+   "correct": false,
+   "raw": "{\"motif_id\": \"convergence\"}"
+  },
+  {
+   "id": "scene:scene_spiderweb_dewfall:projective_duality",
+   "task": "scene2motif",
+   "answer": "projective_duality",
+   "pred": "self_reference",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"self_reference\"\n}\n```"
+  },
+  {
+   "id": "skel:projective_duality:skeleton_quadrangle",
+   "task": "skeleton2motif",
+   "answer": "projective_duality",
+   "pred": "cycle",
+   "correct": false,
+   "raw": "{\"motif_id\": \"cycle\"}"
+  },
+  {
+   "id": "story:projective_duality",
+   "task": "story2motif",
+   "answer": "projective_duality",
+   "pred": "symmetry",
+   "correct": false,
+   "raw": "{\"motif_id\": \"symmetry\"}"
+  },
+  {
+   "id": "thm:projective_duality",
+   "task": "theorem2motif",
+   "answer": "projective_duality",
+   "pred": "isomorphism",
+   "correct": false,
+   "raw": "{\"motif_id\": \"isomorphism\"}"
+  },
+  {
+   "id": "scene:scene_you_are_here:contraction_fixed_point",
+   "task": "scene2motif",
+   "answer": "contraction_fixed_point",
+   "pred": "self_reference",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"self_reference\"\n}\n```"
+  },
+  {
+   "id": "skel:contraction_fixed_point:skeleton_cobweb",
+   "task": "skeleton2motif",
+   "answer": "contraction_fixed_point",
+   "pred": "self_reference",
+   "correct": false,
+   "raw": "{\"motif_id\": \"self_reference\"}"
+  },
+  {
+   "id": "story:contraction_fixed_point",
+   "task": "story2motif",
+   "answer": "contraction_fixed_point",
+   "pred": "recursion",
+   "correct": false,
+   "raw": "{\"motif_id\": \"recursion\"}"
+  },
+  {
+   "id": "thm:contraction_fixed_point",
+   "task": "theorem2motif",
+   "answer": "contraction_fixed_point",
+   "pred": "contraction_fixed_point",
+   "correct": true,
+   "raw": "{\"motif_id\": \"contraction_fixed_point\"}"
+  },
+  {
+   "id": "scene:scene_penrose_floor:aperiodic_tiling",
+   "task": "scene2motif",
+   "answer": "aperiodic_tiling",
+   "pred": "self_reference",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"self_reference\"\n}\n```"
+  },
+  {
+   "id": "skel:aperiodic_tiling:skeleton_penrose",
+   "task": "skeleton2motif",
+   "answer": "aperiodic_tiling",
+   "pred": "self_reference",
+   "correct": false,
+   "raw": "{\"motif_id\": \"self_reference\"}"
+  },
+  {
+   "id": "story:aperiodic_tiling",
+   "task": "story2motif",
+   "answer": "aperiodic_tiling",
+   "pred": "cycle",
+   "correct": false,
+   "raw": "{\"motif_id\": \"cycle\"}"
+  },
+  {
+   "id": "thm:aperiodic_tiling",
+   "task": "theorem2motif",
+   "answer": "aperiodic_tiling",
+   "pred": "tiling",
+   "correct": false,
+   "raw": "{\"motif_id\": \"tiling\"}"
   },
   {
    "id": "xv:scene_droste_study:self_reference",
    "task": "crossvoice",
-   "answer": "B",
-   "pred": "A",
+   "answer": "A",
+   "pred": "D",
    "correct": false,
-   "raw": "{\"choice\": \"A\"}"
+   "raw": "{\"choice\": \"D\"}"
   },
   {
    "id": "xv:scene_mountain_temple:self_reference",
@@ -779,45 +1003,21 @@
   {
    "id": "xv:scene_lightning:recursion",
    "task": "crossvoice",
-   "answer": "B",
+   "answer": "A",
    "pred": "A",
-   "correct": false,
+   "correct": true,
    "raw": "{\"choice\": \"A\"}"
   },
   {
    "id": "xv:scene_river_delta:recursion",
    "task": "crossvoice",
-   "answer": "B",
+   "answer": "D",
    "pred": "B",
-   "correct": true,
+   "correct": false,
    "raw": "{\"choice\": \"B\"}"
   },
   {
    "id": "xv:scene_winter_tree:recursion",
-   "task": "crossvoice",
-   "answer": "A",
-   "pred": "C",
-   "correct": false,
-   "raw": "{\"choice\": \"C\"}"
-  },
-  {
-   "id": "xv:scene_moon_gates:nesting",
-   "task": "crossvoice",
-   "answer": "A",
-   "pred": "A",
-   "correct": true,
-   "raw": "{\"choice\": \"A\"}"
-  },
-  {
-   "id": "xv:scene_pond_ripples:nesting",
-   "task": "crossvoice",
-   "answer": "C",
-   "pred": "A",
-   "correct": false,
-   "raw": "{\"choice\": \"A\"}"
-  },
-  {
-   "id": "xv:scene_walled_city:nesting",
    "task": "crossvoice",
    "answer": "B",
    "pred": "D",
@@ -825,23 +1025,31 @@
    "raw": "{\"choice\": \"D\"}"
   },
   {
-   "id": "xv:scene_canal_town:cycle",
+   "id": "xv:scene_moon_gates:nesting",
+   "task": "crossvoice",
+   "answer": "A",
+   "pred": "B",
+   "correct": false,
+   "raw": "{\"choice\": \"B\"}"
+  },
+  {
+   "id": "xv:scene_pond_ripples:nesting",
    "task": "crossvoice",
    "answer": "D",
-   "pred": "A",
+   "pred": "B",
    "correct": false,
-   "raw": "{\"choice\": \"A\"}"
+   "raw": "{\"choice\": \"B\"}"
   },
   {
-   "id": "xv:scene_ouroboros:cycle",
+   "id": "xv:scene_walled_city:nesting",
    "task": "crossvoice",
-   "answer": "B",
-   "pred": "A",
+   "answer": "A",
+   "pred": "B",
    "correct": false,
-   "raw": "{\"choice\": \"A\"}"
+   "raw": "{\"choice\": \"B\"}"
   },
   {
-   "id": "xv:scene_butterfly:symmetry",
+   "id": "xv:scene_canal_town:cycle",
    "task": "crossvoice",
    "answer": "C",
    "pred": "A",
@@ -849,12 +1057,28 @@
    "raw": "{\"choice\": \"A\"}"
   },
   {
+   "id": "xv:scene_ouroboros:cycle",
+   "task": "crossvoice",
+   "answer": "D",
+   "pred": "A",
+   "correct": false,
+   "raw": "{\"choice\": \"A\"}"
+  },
+  {
+   "id": "xv:scene_butterfly:symmetry",
+   "task": "crossvoice",
+   "answer": "D",
+   "pred": "A",
+   "correct": false,
+   "raw": "{\"choice\": \"A\"}"
+  },
+  {
    "id": "xv:scene_temple_facade:symmetry",
    "task": "crossvoice",
-   "answer": "A",
-   "pred": "B",
+   "answer": "C",
+   "pred": "A",
    "correct": false,
-   "raw": "{\"choice\": \"B\"}"
+   "raw": "{\"choice\": \"A\"}"
   },
   {
    "id": "xv:scene_lantern_row:alternation",
@@ -875,23 +1099,23 @@
   {
    "id": "xv:scene_nautilus:spiral",
    "task": "crossvoice",
-   "answer": "D",
-   "pred": "A",
+   "answer": "B",
+   "pred": "C",
    "correct": false,
-   "raw": "{\"choice\": \"A\"}"
+   "raw": "{\"choice\": \"C\"}"
   },
   {
    "id": "xv:scene_typhoon:spiral",
    "task": "crossvoice",
    "answer": "B",
-   "pred": "A",
+   "pred": "D",
    "correct": false,
-   "raw": "{\"choice\": \"A\"}"
+   "raw": "{\"choice\": \"D\"}"
   },
   {
    "id": "xv:scene_homing_birds:convergence",
    "task": "crossvoice",
-   "answer": "D",
+   "answer": "C",
    "pred": "A",
    "correct": false,
    "raw": "{\"choice\": \"A\"}"
@@ -899,7 +1123,7 @@
   {
    "id": "xv:scene_watershed:convergence",
    "task": "crossvoice",
-   "answer": "C",
+   "answer": "D",
    "pred": "A",
    "correct": false,
    "raw": "{\"choice\": \"A\"}"
@@ -907,7 +1131,7 @@
   {
    "id": "xv:scene_gorge_bridge:bottleneck",
    "task": "crossvoice",
-   "answer": "B",
+   "answer": "C",
    "pred": "A",
    "correct": false,
    "raw": "{\"choice\": \"A\"}"
@@ -915,7 +1139,7 @@
   {
    "id": "xv:scene_hourglass:bottleneck",
    "task": "crossvoice",
-   "answer": "D",
+   "answer": "C",
    "pred": "A",
    "correct": false,
    "raw": "{\"choice\": \"A\"}"
@@ -923,18 +1147,18 @@
   {
    "id": "xv:scene_orchard_anomaly:symmetry_breaking",
    "task": "crossvoice",
-   "answer": "C",
-   "pred": "A",
+   "answer": "D",
+   "pred": "C",
    "correct": false,
-   "raw": "{\"choice\": \"A\"}"
+   "raw": "{\"choice\": \"C\"}"
   },
   {
    "id": "xv:scene_red_plum:symmetry_breaking",
    "task": "crossvoice",
    "answer": "C",
-   "pred": "A",
+   "pred": "D",
    "correct": false,
-   "raw": "{\"choice\": \"A\"}"
+   "raw": "{\"choice\": \"D\"}"
   },
   {
    "id": "xv:scene_drawing_hands:strange_loop",
@@ -947,21 +1171,13 @@
   {
    "id": "xv:scene_impossible_stairs:strange_loop",
    "task": "crossvoice",
-   "answer": "B",
-   "pred": "A",
-   "correct": false,
-   "raw": "{\"choice\": \"A\"}"
-  },
-  {
-   "id": "xv:scene_day_night_birds:figure_ground",
-   "task": "crossvoice",
    "answer": "D",
    "pred": "D",
    "correct": true,
    "raw": "{\"choice\": \"D\"}"
   },
   {
-   "id": "xv:scene_papercut:figure_ground",
+   "id": "xv:scene_day_night_birds:figure_ground",
    "task": "crossvoice",
    "answer": "C",
    "pred": "A",
@@ -969,9 +1185,17 @@
    "raw": "{\"choice\": \"A\"}"
   },
   {
+   "id": "xv:scene_papercut:figure_ground",
+   "task": "crossvoice",
+   "answer": "B",
+   "pred": "B",
+   "correct": true,
+   "raw": "{\"choice\": \"B\"}"
+  },
+  {
    "id": "xv:scene_constellations:isomorphism",
    "task": "crossvoice",
-   "answer": "C",
+   "answer": "B",
    "pred": "A",
    "correct": false,
    "raw": "{\"choice\": \"A\"}"
@@ -979,18 +1203,18 @@
   {
    "id": "xv:scene_tree_and_roots:isomorphism",
    "task": "crossvoice",
-   "answer": "A",
+   "answer": "C",
    "pred": "A",
-   "correct": true,
+   "correct": false,
    "raw": "{\"choice\": \"A\"}"
   },
   {
    "id": "xv:scene_ant_band:mobius",
    "task": "crossvoice",
-   "answer": "D",
-   "pred": "A",
+   "answer": "C",
+   "pred": "D",
    "correct": false,
-   "raw": "{\"choice\": \"A\"}"
+   "raw": "{\"choice\": \"D\"}"
   },
   {
    "id": "xv:scene_silk_band:mobius",
@@ -1011,15 +1235,15 @@
   {
    "id": "xv:scene_interchange:braiding",
    "task": "crossvoice",
-   "answer": "A",
+   "answer": "C",
    "pred": "A",
-   "correct": true,
+   "correct": false,
    "raw": "{\"choice\": \"A\"}"
   },
   {
    "id": "xv:scene_moire_curtains:interference",
    "task": "crossvoice",
-   "answer": "D",
+   "answer": "B",
    "pred": "A",
    "correct": false,
    "raw": "{\"choice\": \"A\"}"
@@ -1027,15 +1251,15 @@
   {
    "id": "xv:scene_two_ripples:interference",
    "task": "crossvoice",
-   "answer": "D",
+   "answer": "A",
    "pred": "A",
-   "correct": false,
+   "correct": true,
    "raw": "{\"choice\": \"A\"}"
   },
   {
    "id": "xv:scene_honeycomb:tiling",
    "task": "crossvoice",
-   "answer": "D",
+   "answer": "B",
    "pred": "A",
    "correct": false,
    "raw": "{\"choice\": \"A\"}"
@@ -1051,13 +1275,69 @@
   {
    "id": "xv:scene_firework:hub",
    "task": "crossvoice",
+   "answer": "D",
+   "pred": "B",
+   "correct": false,
+   "raw": "{\"choice\": \"B\"}"
+  },
+  {
+   "id": "xv:scene_starfish:hub",
+   "task": "crossvoice",
    "answer": "C",
+   "pred": "B",
+   "correct": false,
+   "raw": "{\"choice\": \"B\"}"
+  },
+  {
+   "id": "xv:scene_jacquard_loom:diagonalization",
+   "task": "crossvoice",
+   "answer": "B",
    "pred": "A",
    "correct": false,
    "raw": "{\"choice\": \"A\"}"
   },
   {
-   "id": "xv:scene_starfish:hub",
+   "id": "xv:scene_nesting_dolls:infinite_descent",
+   "task": "crossvoice",
+   "answer": "A",
+   "pred": "A",
+   "correct": true,
+   "raw": "{\"choice\": \"A\"}"
+  },
+  {
+   "id": "xv:scene_string_art_star:coprime_orbit",
+   "task": "crossvoice",
+   "answer": "D",
+   "pred": "A",
+   "correct": false,
+   "raw": "{\"choice\": \"A\"}"
+  },
+  {
+   "id": "xv:scene_swallow_nests:pigeonhole",
+   "task": "crossvoice",
+   "answer": "D",
+   "pred": "A",
+   "correct": false,
+   "raw": "{\"choice\": \"A\"}"
+  },
+  {
+   "id": "xv:scene_spiderweb_dewfall:projective_duality",
+   "task": "crossvoice",
+   "answer": "A",
+   "pred": "A",
+   "correct": true,
+   "raw": "{\"choice\": \"A\"}"
+  },
+  {
+   "id": "xv:scene_you_are_here:contraction_fixed_point",
+   "task": "crossvoice",
+   "answer": "B",
+   "pred": "B",
+   "correct": true,
+   "raw": "{\"choice\": \"B\"}"
+  },
+  {
+   "id": "xv:scene_penrose_floor:aperiodic_tiling",
    "task": "crossvoice",
    "answer": "B",
    "pred": "A",

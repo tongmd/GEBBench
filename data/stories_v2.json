@@ -304,5 +304,124 @@
       "model": "gpt-5.2",
       "passed": true
     }
+  },
+  {
+    "title": "对角线遁逸",
+    "domain": "屋顶蜂园",
+    "story_zh": "瓦城的屋顶上养着一排排木蜂箱，春分夜，大家把蜜灯点在矮墙边，请四位会讲旧事的人开口。\n第一位讲述者阿槐说，茶山里的金蜂认得采药娃；他的四个特征依次是：昼，山，得，笑。\n第二位讲述者蓝婆说，潮湾里的银蜂跟着盐船走；她的四个特征依次是：夜，海，失，哭。\n第三位讲述者小芦说，白鹭滩的蜂落在渔网绳上；他的四个特征依次是：昼，海，得，哭。\n第四位讲述者棠匠说，石岭蜂箱曾被松鼠搬空；他的四个特征依次是：夜，山，得，笑。\n后来，一个无名旅人拍掉斗笠上的花粉，也讲了第五个故事：第一特征取第一位讲述者第一特征的反面，是夜；第二特征取第二位讲述者第二特征的反面，是山；第三特征取第三位讲述者第三特征的反面，是失；第四特征取第四位讲述者第四特征的反面，是哭。\n那故事说，夜里，山后有个守蜂的小姑娘追一只蓝尾萤火虫，追到冷杉坡上，只看见空空的蜂箱和一枚裂开的蜜蜡铃；她抱着铃坐到天明，眼泪落进野花根里，第二年满坡都开出带蜜香的小黄花。",
+    "story_en": "In a town of rooftop beehives, four named tellers each give a tale described by four paired qualities: day or night, mountain or sea, gain or loss, laughter or tears. A nameless traveler then tells a fifth tale whose first quality is the opposite of the first teller’s first quality, whose second is the opposite of the second teller’s second, whose third is the opposite of the third teller’s third, and whose fourth is the opposite of the fourth teller’s fourth. His tale is about a girl at night in the mountains who loses her bees and weeps, yet the next year honey-scented yellow flowers bloom there.",
+    "why_shape": "四位讲述者形成4×4枚举，旅人新行按对角线逐项取反：夜、山、失、哭，故分别在第1、2、3、4位与第1、2、3、4行保证不同。",
+    "motif_id": "diagonalization",
+    "equation": "d(n) = 1 - f(n)(n) \\;\\Rightarrow\\; \\forall n:\\ d \\neq f(n)",
+    "model": "gpt-5.5",
+    "judge": {
+      "device_passed": true,
+      "device_checks": "1) 讲述者数量为4，满足 n≥4；2) 四位讲述者各自给出4个二值特征，且对立对分别可辨识为 昼/夜、山/海、得/失、笑/哭；3) 旅人给出第5个故事，四个特征分别是前四位讲述者对应对角特征的反面：昼→夜、海→山、得→失、笑→哭，逐项全对；4) 新故事未提及“这句话/这个故事”本身；5) 未出现旧故事拼成缩小版、层层套框或单点违例等可核查的 recursion / nesting / symmetry_breaking 违项。",
+      "blind_motif": "diagonalization",
+      "model": "gpt-5.2",
+      "passed": true
+    }
+  },
+  {
+    "title": "潮玉珰的讼案",
+    "domain": "潮村讼堂",
+    "story_zh": "海湾边有个晒盐的槐湾村，祠堂门口挂满贝壳风铃，风一吹，就像小鱼在说悄悄话。村里有件旧规矩：谁说自己拿着潮玉珰，就得说出一位门牌更小、在他之前拿过的人；说不出，便算没拿过。\n这年退潮后，卖海带的阿昌抱着一个油布包进了祠堂，说里头是他家的传家宝潮玉珰，能叫雾夜里的船认得回湾路。\n族人搬来长凳，长者点了香灰，叫他把来路说清楚。\n阿昌拍着油布包，说传给他的是门牌88的晒网匠林伯。\n林伯拄着桨，说他只替门牌61的盐灶娘子保管过一夜。\n盐灶娘子抹着围裙，说物件来自门牌45的补帆人阿芦。\n阿芦捻着麻线，说他接的是门牌27的夜渡客小满。\n小满低头搓帽沿，说那包袱先在门牌9的蛤蜊婆手里。\n蛤蜊婆咳了一声，说她听命于门牌2的灯塔童子阿笙。\n堂外的潮水退得更远，露出黑亮的石滩，风铃一个个停了声。\n长者把油布包推回案边，说：阿昌所称持有的传家宝，从未存在。",
+    "story_en": "In a tide village called Huaiwan, anyone claiming to possess the old tide-jade heirloom had to name an earlier holder with a smaller door number. Achang came to the ancestral hall with an oilcloth bundle and claimed the treasure was his. One by one, each named person pointed to exactly one earlier person with a smaller number: 88, then 61, then 45, then 27, then 9, then 2. The hall fell quiet as the tide withdrew. The elder returned the bundle and ruled that Achang’s alleged heirloom had never existed.",
+    "why_shape": "六次一对一引证给出严格递减的正整数编号，末句以良序性否定最初见证者，实现无穷递降。",
+    "motif_id": "infinite_descent",
+    "equation": "\\bigl(\\forall n\\in\\mathbb{N}:\\; P(n)\\Rightarrow\\exists\\,m<n,\\ P(m)\\bigr)\\;\\Longrightarrow\\;\\forall n\\,\\neg P(n)",
+    "model": "gpt-5.5",
+    "judge": {
+      "device_passed": true,
+      "device_checks": "①恰好6句引证，且每句独立成句；②被指认者编号均以阿拉伯数字明写，且序列88→61→45→27→9→2严格递减；③末句为长者判词，含“从未存在”，并宣布开端声称为虚；④未见先归基例再回溯的 recursion 结构；⑤编号变化非固定比例缩短，且未以“总量有限、旅程完成”收束；⑥引证链一对一、每人只指认一人；⑦链条未收敛到任何真实存在的点；⑧未诉诸守恒量或奇偶性论证。",
+      "blind_motif": "infinite_descent",
+      "model": "gpt-5.2",
+      "passed": true
+    }
+  },
+  {
+    "title": "盐灯过桌",
+    "domain": "盐场夜饭",
+    "story_zh": "海边的盐场收工后，灶棚里摆了一张圆桌。八个人围坐，按座位起了名：0号阿潮，1号小芦，2号梅嫂，3号石娃，4号青叔，5号灯妮，6号老蟹，7号阿篓。\n桌上只有一盏盐灯，照着一盆热腾腾的蛤蜊粥。老场头说，今夜传灯不许挨着递，规矩明写在灶墙上：n=8，k=3，gcd(k,n)=1；每次越过2人交给第3位。\n阿潮先捧灯，灯从0号阿潮到3号石娃。\n石娃笑着擦手，灯从3号石娃到6号老蟹。\n老蟹把灯举高，灯从6号老蟹到1号小芦。\n小芦闻见粥香，灯从1号小芦到4号青叔。\n青叔挑了挑灯芯，灯从4号青叔到7号阿篓。\n阿篓拍掉袖口盐花，灯从7号阿篓到2号梅嫂。\n梅嫂把碗摆正，灯从2号梅嫂到5号灯妮。\n灯妮看见人人脸上都有光，灯从5号灯妮交还0号阿潮。\n第8次交还首位。\n八人这才一齐动筷。老场头捻着白胡子说：“三与八不通约,故灯不漏一人。”\n偏有阿篓不服，说：“隔一人传，步长2，也省力。”灶墙旁又添一句：步长2与8不互素。于是阿潮试给梅嫂，梅嫂给青叔，青叔给老蟹，老蟹又给阿潮；再来一轮，还是阿潮、梅嫂、青叔、老蟹。两轮过后，小芦、石娃、灯妮、阿篓这单边半数人，始终没摸到灯；阿潮、梅嫂、青叔、老蟹这双边半数人，倒把灯捧热了。\n老场头不再多说，只把盐灯放回桌沿。夜风从苇席缝里进来，粥香慢慢散开，八只碗都亮了一下。",
+    "story_en": "After work at a seaside salt yard, eight people sit around a round table with one salt lamp. They are numbered by their seats. The rule says to pass the lamp by skipping two people and giving it to the third. Starting with A-Chao at seat 0, the lamp goes to seats 3, 6, 1, 4, 7, 2, and 5, then returns to A-Chao on the eighth pass, so every person has held it once. The elder explains that three and eight do not share a measure, so no one is missed. When someone suggests passing by twos instead, the lamp keeps visiting only seats 0, 2, 4, and 6, leaving 1, 3, 5, and 7 untouched.",
+    "why_shape": "圆桌8人按步长3构造性一笔遍历序列0,3,6,1,4,7,2,5并在第8次回到0；对照步长2因gcd(2,8)=2只到偶数陪集而漏掉奇数陪集。",
+    "motif_id": "coprime_orbit",
+    "equation": "\\langle k \\rangle = \\mathbb{Z}_n \\iff \\gcd(k,n)=1",
+    "model": "gpt-5.5",
+    "judge": {
+      "device_passed": true,
+      "device_checks": "i 顺序逐项为 0,3,6,1,4,7,2,5，符合 0+3t mod 8；ii 序列长度恰为 8，且第 8 次交还 0 号，8 人各接灯一次；iii n=8、k=3、gcd(k,n)=1 以及“步长2与8不互素”均明写；iv 对照轮漏掉 {1,3,5,7}，可判为非平凡陪集；排除项中未见相邻依次传递、周期叠加、hub 归因或纯存在性叙述",
+      "blind_motif": "coprime_orbit",
+      "model": "gpt-5.2",
+      "passed": true
+    }
+  },
+  {
+    "title": "鸽笼必撞",
+    "domain": "潮乡灯会",
+    "story_zh": "海边的芦花村，每年春潮大时，都要在旧盐仓里办一夜签灯会。仓墙上嵌着十二个小木格，漆成十二个月令：正月杏花，二月燕子，三月青麦，一直到腊月雪靴。\n那年风从海上吹来，带来了十三位远客：补网的阿圆、卖糖的金嫂、吹笙的罗七、赶鹅的满仓、修伞的青竹、挑贝壳的梨花、染布的乌豆、说书的黄鹂、磨刀的铁生、采药的阿芷、画船眼的白叔、捏泥人的小满，还有背着小鼓的石榴。\n村里的规矩很旧：每位远客都要把自己的名签，放进自己生月的木格里，灯会才算开得吉利。\n众人刚进盐仓，湿鞋还没脱，谁也没有报过生月，也没人去摸那些木格。守仓的长者阿潮公坐在竹椅上，看了看十二个木格，又看了看十三位远客，便说：“十三多于十二，今晚必有两位客人的名签落在同一个木格。”\n远客们笑了。罗七说：“阿公连我的生月都没问呢。”金嫂摇着糖担说：“也许人人都不同。”石榴敲了一下小鼓，咚地一声，像替大家壮胆。\n阿潮公只把茶碗推到灯下，说：“先喝姜茶，再慢慢放签。”\n于是盐仓里暖起来。阿圆说自己生在二月，把签放进燕子格；金嫂生在八月，放进桂花格；罗七生在五月，放进菖蒲格；满仓生在冬月，放进芦絮格；青竹生在三月，放进青麦格；梨花生在正月，放进杏花格；乌豆生在六月，放进荷叶格；黄鹂生在九月，放进菊盏格；铁生生在腊月，放进雪靴格；阿芷生在四月，放进桃雨格；白叔生在七月，放进萤火格；小满生在十月，放进柿灯格。\n最后轮到石榴。她摸摸小鼓，笑着说：“我也是五月生。”她把名签放进菖蒲格，正贴在罗七的名签旁边。\n灯火一晃，众人都看见了：十二个木格没有挤成一个，许多木格各有各的名签，只有五月菖蒲格里，罗七和石榴的签并排躺着。\n阿潮公没有得意，只把仓门推开，让春潮的声音进来。那一夜，罗七吹笙，石榴打鼓，两人的曲子先是各走各的，后来在灯下碰了一下，孩子们听了，都说像两只燕子误进了同一片月光。",
+    "story_en": "In a seaside village, the old salt storehouse had twelve little wooden compartments, one for each month. Thirteen travelers arrived for the lantern night, and the rule was that every traveler had to place a name slip into the compartment of their birth month. Before anyone had said a month or checked a compartment, old A-Chao looked at the twelve compartments and the thirteen guests and declared that two slips would surely end up together. The travelers laughed, because he did not yet know any of their birthdays. One by one they placed their slips in different months, until the last traveler, Shiliu, said she too was born in May and put her slip beside Luo Qi’s. The old man’s claim was true, though he had not known in advance which two it would be.",
+    "why_shape": "明写12个格位与13位到来者，长者在逐一核对前仅凭13>12作存在性断言，结尾才给出罗七与石榴同在五月格的见证，且非全体同格、非枢纽强制。",
+    "motif_id": "pigeonhole",
+    "equation": "|A| > |B| \\;\\Rightarrow\\; \\forall f: A\\to B,\\ \\exists\\, x\\neq y:\\ f(x)=f(y)",
+    "model": "gpt-5.5",
+    "judge": {
+      "device_passed": true,
+      "device_checks": "1. 明写了两个计数：十二个木格与十三位远客，且13>12。2. 规则明写为“每位远客都要把自己的名签，放进自己生月的木格里”。3. 长者阿潮公在任何逐一报生月、放签之前，先凭“十三多于十二”断言“必有两位客人的名签落在同一个木格”。4. 之后才逐一核对并放签，属于先断言、后验证。5. 结尾明确揭晓重合者是罗七和石榴，且与前述断言一致。6. 没有把所有人归入同一格，也没有靠地形要冲或中介强制重合。",
+      "blind_motif": "pigeonhole",
+      "model": "gpt-5.2",
+      "passed": true
+    }
+  },
+  {
+    "title": "小埂上的甜香",
+    "domain": "蜂场花圃",
+    "story_zh": "本故事的换词：赶蜂人↔护花人；蜂箱↔花棚；蜜脾↔花粉。\n第一遍：\n赶蜂人阿满住在蜂箱旁，护花人青枝住在花棚旁。\n清早，赶蜂人沿小埂来到花棚，护花人开门迎他。\n他带来一盒蜜脾，说蜂箱昨夜暖得早；她捧出一盒花粉，说花棚今晨香得迟。\n赶蜂人把蜜脾放在花棚旁的老木板上，护花人把花粉放在蜂箱旁的老木板上。\n到黄昏，蜂箱边多了花棚的香气，花棚边也多了蜂箱的甜味。\n第二遍：\n护花人阿满住在花棚旁，赶蜂人青枝住在蜂箱旁。\n清早，护花人沿小埂来到蜂箱，赶蜂人开门迎他。\n他带来一盒花粉，说花棚昨夜暖得早；她捧出一盒蜜脾，说蜂箱今晨香得迟。\n护花人把花粉放在蜂箱旁的老木板上，赶蜂人把蜜脾放在花棚旁的老木板上。\n到黄昏，花棚边多了蜂箱的香气，蜂箱边也多了花棚的甜味。\n再换一次即得原话",
+    "story_en": "In a little bee yard beside a flower shed, Aman and Qingzhi visit each other at dawn. One brings a box of honeycomb, the other a box of pollen, and each leaves a gift near the other’s home. By evening, the beehives smell more like flowers, and the flower shed tastes a little sweeter. The tale is then told again with the two keepers, their places, and their gifts exchanged.",
+    "why_shape": "正文首句给出三组内部对偶词，第二遍五句与第一遍五句逐句对应；对第二遍施行同一替换会逐字还原第一遍，且σ²=id。",
+    "motif_id": "projective_duality",
+    "equation": "\\sigma:\\ (a{:}b{:}c)\\ \\leftrightarrow\\ \\{ax+by+cz=0\\},\\qquad \\sigma^{2}=\\mathrm{id},\\qquad \\vdash P\\ \\Leftrightarrow\\ \\vdash P^{\\sigma}",
+    "model": "gpt-5.5",
+    "judge": {
+      "device_passed": true,
+      "device_checks": "① 篇首已明文列出对调词典，且3对均成双、无剩余项；② 第一遍与第二遍均为5句，句数相等且逐句对齐；③ 以词典对第二遍做机械替换后，可逐字还原第一遍；④ 两遍各自语义通顺，末尾也有“再换一次即得原话”声明。",
+      "blind_motif": "projective_duality",
+      "model": "gpt-5.2",
+      "passed": true
+    }
+  },
+  {
+    "title": "乌岬盐村的小陶罐",
+    "domain": "潮盐",
+    "story_zh": "在乌岬盐村，老灶婆教孩子们一个唱法：每唱一遍删去后一半的词；碰见前后分不齐，就让前头多留一个词。\n那年春潮大，阿柳家的蓝盐总带着苦味。老灶婆说，盐怕急火，也怕闹声，要用小陶罐收着，傍晚搁在篱门边，让风替它睡一觉。\n阿柳照做了。篱笆外，晒盐的浅池一片银亮，螺壳在泥里吐泡，远处有人收网，木桨敲着船舷。阿柳抱来小陶罐，罐肚凉凉的，像藏着一枚小月亮。她不敢大声，只照老灶婆的话，轻轻唱给罐子听：\n海风 把 蓝盐 送进 小陶罐 阿柳 关上 篱门 等 月牙 落在 渔网 旁边 睡吧 小舟 安安 静静\n海风 把 蓝盐 送进 小陶罐 阿柳 关上 篱门 等\n海风 把 蓝盐 送进 小陶罐\n海风 把 蓝盐\n海风 把\n海风\n海风",
+    "story_en": "In the salt village of Wu Cape, Granny Stove teaches the children a way of singing: each time the song is sung, the latter half of its words is dropped; if the words do not split evenly, the front part keeps one more. One spring, A-Liu’s blue salt tastes bitter, so Granny tells her to keep it in a small clay jar by the fence at dusk and let the wind settle it. A-Liu follows the advice beside the shining salt pans and sings the jar a little song, each singing shorter than the last, until only the sea wind remains—and when she sings once more, it remains just the same.",
+    "why_shape": "正文中的歌谣按 17→9→5→3→2→1→1 逐轮删去后 ⌊n/2⌋ 个词，最后一词再次施行规则不变，呈现收缩不动点。",
+    "motif_id": "contraction_fixed_point",
+    "equation": "d(f(x),f(y))\\le q\\,d(x,y)\\ (q<1)\\ \\text{ on complete }(X,d)\\;\\Rightarrow\\;\\exists!\\,x^{*}:\\ f(x^{*})=x^{*},\\quad x_{n+1}=f(x_n)\\to x^{*}",
+    "model": "gpt-5.5",
+    "judge": {
+      "device_passed": true,
+      "device_checks": "1) 篇首明文给出删半词规则；2) 词数序列为17→9→5→3→2→1→1，符合n→ceil(n/2)；3) 各轮均为上一轮删去后半词后的逐字前缀，机械施行吻合；4) 末句为一词“海风”，再照录一轮后仍逐字相同；5) 未见自指、回环、第二线索汇入或括号递归。",
+      "blind_motif": "contraction_fixed_point",
+      "model": "gpt-5.2",
+      "passed": true
+    }
+  },
+  {
+    "title": "贝母盐仓",
+    "domain": "盐仓修缮",
+    "story_zh": "海边盐仓换了新顶，阿篾带着两个徒弟来铺贝母片。\n小满问「哪片」。\n阿篾把宽叶形和细鱼形分开，只让牙口相亲的边挨边。\n晨潮退后，第一排从灶门旁伸出，像湿沙上的鸟脚印。\n阿篾说「看纹」。\n每片都有青线和白点，青线只迎白点，白点只靠青线。\n小满说「懂了」。\n他们铺到午后，仓里没有一道缝，风却能从梁上轻轻过。\n宽片总比窄片多些，可谁也不去数，只觉得眼前越铺越顺。\n阿篾笑「慢来」。\n晚饭前，晒盐的婆婆送来热粥，认出门边一朵像蟹钳的花。\n她绕到后墙，又看见那花的亲戚，却少了一粒白点。\n婆婆说「怪亲」。\n夜里油灯晃着，徒弟们以为前面那排会照旧回来，等了许久也没有。\n小满问「错吗」。\n阿篾沿边摸过去，所有牙口都咬得安稳，连最小的角也服帖。\n第二天孩子们来玩，在东角找到昨日的蟹钳花，又在西角找到另一朵。\n孩子喊「又有」。\n他们越找越欢，觉得仓顶像老朋友讲新话，处处熟，处处不肯照抄。\n阿篾说「收工」。\n秋雨落下时，盐粒安睡在干仓里，贝母顶泛着温温的光。",
+    "story_en": "By the sea, an old salt storehouse received a new roof. A-Mie and two apprentices laid shell pieces in two shapes, broad leaves and slim fish, joining only the edges whose marks belonged together. The roof closed without a gap, and the broad pieces seemed always a little more common than the narrow ones. Here and there the villagers recognized a crab-claw flower or something kin to it, yet each return was slightly changed. The children searched the roof and felt it was like an old friend telling fresh stories: familiar everywhere, never merely copied. When autumn rain came, the salt slept dry beneath the warm shine of the shell roof.",
+    "why_shape": "正文21句的A/B句型严格为ABAABABAABAABABAABABA，其中A为无引号且≥15汉字的叙述句，B为含「」且≤8汉字的直接引语句，对应Fibonacci词第7次迭代。",
+    "motif_id": "aperiodic_tiling",
+    "equation": "\\frac{N_{\\text{fat}}(n)}{N_{\\text{thin}}(n)}\\xrightarrow[n\\to\\infty]{}\\varphi=\\frac{1+\\sqrt{5}}{2}",
+    "model": "gpt-5.5",
+    "judge": {
+      "device_passed": true,
+      "device_checks": "1) 共21句，按句号分句成立；2) A/B节拍序列为 ABAABABAABAABABAABABA，与第7次迭代逐位吻合，A=13、B=8；3) 7个B句均含「」且均≤8字，14个A句均无引号且均≥15字；4) 真因子1/3/7均无法整段重复；5) 作为Fibonacci/Sturmian前缀，等长窗口A数差至多1。",
+      "blind_motif": "aperiodic_tiling",
+      "model": "gpt-5.2",
+      "passed": true
+    }
   }
 ]

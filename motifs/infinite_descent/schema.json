@@ -1,0 +1,19 @@
+{
+  "motif_id": "infinite_descent",
+  "name": "Infinite Descent — every witness begets a smaller one, so none exists",
+  "name_zh": "无穷递降",
+  "equation": "\\bigl(\\forall n\\in\\mathbb{N}:\\; P(n)\\Rightarrow\\exists\\,m<n,\\ P(m)\\bigr)\\;\\Longrightarrow\\;\\forall n\\,\\neg P(n)",
+  "invariant": "每个案例都强迫出一个严格更小的同类案例，而自然数没有无底的下降链，于是第一个案例根本不存在——证明的刀锋向回挥：不是推进到终点，而是取消开端。与 recursion 恰相反：递归入几层出几层、靠基例的存在而成立，递降靠基例的缺席而把一切见证者判为虚无；与 zeno_halving 不同：芝诺的无穷步按定比缩短、总长有限、旅程完成，递降的下降量任意但每步是整数、链条被良序原理禁止、结论是“不可能”；与 contraction_fixed_point 不同：压缩迭代无穷进行并收敛于一个真实存在的不动点，递降链不收敛于任何点、必须在有限步内撞上地板 1、于是整条链连同起点被判不存在；与 ordinal_ascent 方向相反：序数攀升向上无界而每级真实存在，递降向下有底而全链虚妄；与 invariant_barrier 不同：不诉诸任何守恒量，杀招只有一条——严格变小不能无穷。",
+  "math_home": "数论 — Fermat 无穷递降法（method of infinite descent）/ 自然数的良序原理",
+  "story_form_device": "讼案式故事：有人声称持有传家宝，村规是“任何持宝者必须指认一位编号严格更小的更早持宝者”（编号为正整数）。机械核查条款：①引证恰好 6 次，每次独立成句；②每句中被指认者的编号以阿拉伯数字明写，且 6 个编号构成严格递减序列；③末句为长者判词，逐字含“从未存在”或“不可能”，宣布最初的声称为虚。排除条款：④结论必须是取消开端的“不存在”，不得抵达某个基例后逐层返回原点（那是 recursion）；⑤编号逐次任意变小，不得按固定比例缩短且不得以“总量有限、旅程完成”收束（那是 zeno_halving）；⑥引证链一对一，每人只指认一人，不得一触多发（那是 cascade）；⑦链条不得收敛、逼近或停驻于任何一个真实存在的点（那是 contraction_fixed_point）；⑧不得诉诸任何守恒量或奇偶性论证（那是 invariant_barrier），杀招只在“严格变小不能无穷”。",
+  "geb_echo": "Escher《瀑布》靠不可能的无限下降驱动水轮——真实数学里无限下降同样不可能，Fermat 正以此为刃：他不证明宝物在哪里，而证明宝物从未存在。GEB 中 Achilles 与乌龟“更低层之下还有更低层吗”的追问，在此被良序原理一刀斩断——向下的梯子必有最后一级，否则整架梯子连同踏上它的第一只脚都是幻影。",
+  "nuisance_variables": [
+    "node count",
+    "depth",
+    "angles",
+    "layout",
+    "scale",
+    "domain",
+    "medium"
+  ]
+}
