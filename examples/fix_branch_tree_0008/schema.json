@@ -1,9 +1,0 @@
-{
-  "sample_id": "fix_branch_tree_0008",
-  "family": "fixpoint",
-  "structure": "recursive_branching",
-  "concept": "A real tree as the natural image of recursion: each branch is a smaller tree — the whole equals a node joining copies of itself.",
-  "answer": {
-    "insight": "recursion / self-similarity: Tree = Node(Tree,…,Tree), a fixed point"
-  }
-}

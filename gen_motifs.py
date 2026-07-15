@@ -144,8 +144,15 @@ MOTIFS = {
              "the drawn branches. Dark storm sky, city horizon barely visible. "
              + NO_DIAGRAM),
         ],
-        "extra_scenes": [
-            ("winter_tree", ROOT / "examples/fix_branch_tree_0008/image.png"),
+        "extra_scenes": [],
+        "t2i_scenes": [
+            ("winter_tree", "1024x1024",
+             "A striking photograph of a single leafless tree against a pale sky in "
+             "winter, seen so its branching is fully visible. The trunk splits into a "
+             "few boughs; each bough splits the same way into smaller boughs; each of "
+             "those into finer twigs — the identical branching pattern repeating at "
+             "every scale, clearly self-similar and fractal. Elegant, high-contrast. "
+             "No text, no words, no letters."),
         ],
     },
     "nesting": {
@@ -179,8 +186,15 @@ MOTIFS = {
              "a small palace at the exact center. Warm morning light, long shadows. "
              + NO_DIAGRAM),
         ],
-        "extra_scenes": [  # existing text-to-image insight shots that fit this motif
-            ("pond_ripples", ROOT / "examples/fix_concentric_pond_0007/image.png"),
+        "extra_scenes": [],
+        "t2i_scenes": [
+            ("pond_ripples", "1024x1024",
+             "A photograph-like, tranquil overhead view of a still dark pond at dawn "
+             "where a single raindrop has just struck the center. Perfectly concentric "
+             "circular ripples spread outward — many evenly spaced rings, each one a "
+             "larger copy of the ring inside it, nested from a tiny bright point at "
+             "the center out to the edges. Soft morning light, calm and meditative, "
+             "photorealistic water surface. No text, no words, no letters."),
         ],
     },
     "cycle": {
@@ -250,8 +264,18 @@ MOTIFS = {
              "receding with each drawn rectangle (Droste effect). Soft lamplight. "
              + NO_DIAGRAM),
         ],
-        "extra_scenes": [
-            ("mountain_temple", ROOT / "examples/fix_mountain_temple_0006/image.png"),
+        "extra_scenes": [],
+        "t2i_scenes": [
+            ("mountain_temple", "1024x1024",
+             "A serene traditional Chinese ink-wash and light-color landscape painting. "
+             "A misty mountain; on it a small temple; inside, through the open door, an "
+             "old monk sits telling a story to a young monk. On the wall behind them "
+             "hangs a painting — and that painting shows the SAME mountain, the SAME "
+             "temple, the SAME two monks, smaller; and inside THAT scene, another "
+             "painting of the same scene, smaller again — a picture within a picture, "
+             "receding infinitely toward the center (mise en abyme, Droste effect). "
+             "Exactly three clearly visible nested levels before it fades into mist. "
+             "Muted ink tones with soft gold light. No text, no words, no letters."),
         ],
     },
 }
@@ -276,6 +300,32 @@ def gpt_edit(ref: Path, prompt: str, size: str, out: Path) -> bool:
             continue
         if "data" in resp:
             out.write_bytes(base64.b64decode(resp["data"][0]["b64_json"]))
+            return True
+        print(f"  FAIL {out.name}: {json.dumps(resp)[:200]}")
+        return False
+    return False
+
+
+def gpt_t2i(prompt: str, size: str, out: Path) -> bool:
+    cmd = ["curl", "-s", "--max-time", "300", "-X", "POST",
+           f"{os.environ['OPENAI_BASE_URL']}/images/generations",
+           "-H", f"Authorization: Bearer {os.environ['OPENAI_API_KEY']}",
+           "-H", "Content-Type: application/json",
+           "-d", json.dumps({"model": MODEL, "prompt": prompt,
+                             "size": size, "quality": "high", "n": 1})]
+    for attempt in range(3):
+        raw = subprocess.run(cmd, capture_output=True, text=True).stdout
+        try:
+            resp = json.loads(raw)
+        except json.JSONDecodeError:
+            print(f"  retry {out.name} (attempt {attempt + 1})")
+            continue
+        if "data" in resp:
+            item = resp["data"][0]
+            if item.get("b64_json"):
+                out.write_bytes(base64.b64decode(item["b64_json"]))
+            else:
+                subprocess.run(["curl", "-s", "-o", str(out), item["url"]], check=True)
             return True
         print(f"  FAIL {out.name}: {json.dumps(resp)[:200]}")
         return False
@@ -319,6 +369,15 @@ def build_motif(mid: str) -> None:
         if not out.exists() and Path(src).exists():
             shutil.copy2(src, out)
             print(f"  copied {mid}/{out.name}")
+
+    # scenes with no skeleton (pure text-to-image)
+    for scene, size, prompt in spec.get("t2i_scenes", []):
+        out = d / f"scene_{scene}.png"
+        if out.exists():
+            print(f"  skip {mid}/{out.name}")
+            continue
+        if gpt_t2i(prompt, size, out):
+            print(f"  ok {mid}/{out.name}")
 
 
 def main():

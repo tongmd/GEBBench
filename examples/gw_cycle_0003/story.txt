@@ -1,9 +1,0 @@
-[domain: software]
-Module F imports module D. Module D imports module E. Module C imports module E. Module C imports module B. Module E imports module C. Module E imports module A. Module E imports module F. Module B imports module F.
-
-Question: Is there a circular import among these modules?
-
-[domain: messaging]
-User F can forward messages to user D. User D can forward messages to user E. User E can forward messages to user C. User C can forward messages to user E. User E can forward messages to user A. User E can forward messages to user F. User B can forward messages to user F. User C can forward messages to user B.
-
-Question: Can a message ever return to a user who already forwarded it?
