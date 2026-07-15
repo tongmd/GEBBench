@@ -1,0 +1,214 @@
+{
+ "models": {
+  "api_gpt-5.5": {
+   "tasks": {
+    "scene2motif": {
+     "n": 45,
+     "acc": 0.7333
+    },
+    "skeleton2motif": {
+     "n": 25,
+     "acc": 0.88
+    },
+    "story2motif": {
+     "n": 25,
+     "acc": 0.84
+    },
+    "theorem2motif": {
+     "n": 25,
+     "acc": 0.92
+    },
+    "crossvoice": {
+     "n": 45,
+     "acc": 0.7333
+    }
+   },
+   "avg": 0.8213
+  },
+  "api_gpt-5.2": {
+   "tasks": {
+    "scene2motif": {
+     "n": 45,
+     "acc": 0.6889
+    },
+    "skeleton2motif": {
+     "n": 25,
+     "acc": 0.84
+    },
+    "story2motif": {
+     "n": 25,
+     "acc": 0.72
+    },
+    "theorem2motif": {
+     "n": 25,
+     "acc": 0.96
+    },
+    "crossvoice": {
+     "n": 45,
+     "acc": 0.5556
+    }
+   },
+   "avg": 0.7529
+  },
+  "qwen2.5-coder-32b": {
+   "tasks": {
+    "story2motif": {
+     "n": 25,
+     "acc": 0.56
+    },
+    "theorem2motif": {
+     "n": 25,
+     "acc": 0.8
+    }
+   },
+   "avg": 0.68
+  },
+  "qwen2.5-14b": {
+   "tasks": {
+    "story2motif": {
+     "n": 25,
+     "acc": 0.48
+    },
+    "theorem2motif": {
+     "n": 25,
+     "acc": 0.8
+    }
+   },
+   "avg": 0.64
+  },
+  "qwen2.5-7b": {
+   "tasks": {
+    "story2motif": {
+     "n": 25,
+     "acc": 0.32
+    },
+    "theorem2motif": {
+     "n": 25,
+     "acc": 0.56
+    }
+   },
+   "avg": 0.44
+  },
+  "qwen2-vl-7b": {
+   "tasks": {
+    "scene2motif": {
+     "n": 45,
+     "acc": 0.2667
+    },
+    "skeleton2motif": {
+     "n": 25,
+     "acc": 0.2
+    },
+    "story2motif": {
+     "n": 25,
+     "acc": 0.16
+    },
+    "theorem2motif": {
+     "n": 25,
+     "acc": 0.52
+    },
+    "crossvoice": {
+     "n": 45,
+     "acc": 0.2
+    }
+   },
+   "avg": 0.2693
+  }
+ },
+ "baseline": {
+  "scene2motif": 0.04,
+  "skeleton2motif": 0.04,
+  "story2motif": 0.04,
+  "theorem2motif": 0.04,
+  "crossvoice": 0.25
+ },
+ "top_confusions": [
+  {
+   "true": "strange_loop",
+   "pred": "cycle",
+   "n": 6
+  },
+  {
+   "true": "self_reference",
+   "pred": "convergence",
+   "n": 5
+  },
+  {
+   "true": "recursion",
+   "pred": "isomorphism",
+   "n": 5
+  },
+  {
+   "true": "figure_ground",
+   "pred": "symmetry",
+   "n": 5
+  },
+  {
+   "true": "projective_duality",
+   "pred": "isomorphism",
+   "n": 5
+  },
+  {
+   "true": "contraction_fixed_point",
+   "pred": "recursion",
+   "n": 5
+  },
+  {
+   "true": "self_reference",
+   "pred": "strange_loop",
+   "n": 4
+  },
+  {
+   "true": "nesting",
+   "pred": "convergence",
+   "n": 4
+  },
+  {
+   "true": "interference",
+   "pred": "cycle",
+   "n": 4
+  },
+  {
+   "true": "aperiodic_tiling",
+   "pred": "symmetry",
+   "n": 4
+  },
+  {
+   "true": "braiding",
+   "pred": "cycle",
+   "n": 4
+  },
+  {
+   "true": "self_reference",
+   "pred": "recursion",
+   "n": 4
+  }
+ ],
+ "hardest_motifs": [
+  {
+   "motif": "self_reference",
+   "recall": 0.286
+  },
+  {
+   "motif": "figure_ground",
+   "recall": 0.333
+  },
+  {
+   "motif": "aperiodic_tiling",
+   "recall": 0.444
+  },
+  {
+   "motif": "nesting",
+   "recall": 0.458
+  },
+  {
+   "motif": "symmetry",
+   "recall": 0.476
+  },
+  {
+   "motif": "projective_duality",
+   "recall": 0.5
+  }
+ ],
+ "n_motifs": 25
+}

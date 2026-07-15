@@ -19,7 +19,7 @@ motif z → skeleton (programmatic vis-graph rendering, several embeddings)
 Same skeleton, different worlds: one recursive-branching skeleton becomes a
 river delta and a lightning bolt — no pixel in common, one structure.
 
-## Motif library (v1 — 18 motifs)
+## Motif library (v2 — 25 motifs)
 
 `data/motif_library.json` — designed by a propose→curate→verify agent
 workflow; every entry's mathematics and pairwise distinguishability was
@@ -45,6 +45,22 @@ adversarially reviewed (`data/motif_library_review_notes.json`).
 | convergence 万流归一 | in-tree, Newman's lemma | 3 disjoint threads; final line unites all names at a new place |
 | bottleneck 咽喉之点 | Menger: min cut = max disjoint paths | 3 journeys, each passes 独木桥 exactly once mid-way |
 | hub 星型枢纽 | `G ≅ K_{1,n}` | villagers never speak directly; every quote pair contains the miller |
+| diagonalization 对角线遁逸 | Cantor: `d(n) = 1 − f(n)(n)` | n tellers × n binary traits; the traveler's trait k flips teller k's trait k |
+| infinite_descent 无穷递降 | Fermat descent | 6 citations, strictly decreasing numbers; verdict: the first claim never existed |
+| coprime_orbit 互素跳环 | `⟨k⟩ = Z_n ⇔ gcd(k,n)=1` | lamp at stride 3 around 8: roll-call 0,3,6,1,4,7,2,5; stride-2 control strands half |
+| pigeonhole 鸽笼必撞 | `\|A\| > \|B\| ⇒` collision | 13 guests, 12 slots; the elder asserts a collision before any check |
+| projective_duality 点线对偶 | `σ² = id`, `⊢P ⇔ ⊢P^σ` | told twice; the opening dictionary maps telling 2 back to telling 1 verbatim |
+| contraction_fixed_point 收缩不动点 | Banach fixed point | chant halves each round (17→9→5→3→2→1) to a word that maps to itself |
+| aperiodic_tiling 非周期密铺 | Penrose; fat/thin → φ | 21 sentences typed A/B by the Fibonacci substitution A→AB, B→A |
+
+## Evaluation
+
+```bash
+python3 eval/build_items.py   # eval/items.json: 165 judge-free MC items
+                              #   (scene/skeleton/story/theorem→motif, crossvoice)
+python3 eval/run_eval.py --base <openai-compatible> --model <id> --tag <tag> [--vision]
+python3 eval/analyze.py       # paper/tables/{main_results,confusion}.tex
+```
 
 ## Generate
 
