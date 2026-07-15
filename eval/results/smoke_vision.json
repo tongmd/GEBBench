@@ -1,0 +1,44 @@
+{
+ "model": "gpt-5.2",
+ "base": "https://yunwu.ai/v1",
+ "summary": {
+  "scene2motif": {
+   "n": 4,
+   "acc": 0.5
+  }
+ },
+ "records": [
+  {
+   "id": "scene:scene_droste_study:self_reference",
+   "task": "scene2motif",
+   "answer": "self_reference",
+   "pred": "recursion",
+   "correct": false,
+   "raw": "{\"motif_id\":\"recursion\"}"
+  },
+  {
+   "id": "scene:scene_mountain_temple:self_reference",
+   "task": "scene2motif",
+   "answer": "self_reference",
+   "pred": "recursion",
+   "correct": false,
+   "raw": "{\"motif_id\":\"recursion\"}"
+  },
+  {
+   "id": "scene:scene_lightning:recursion",
+   "task": "scene2motif",
+   "answer": "recursion",
+   "pred": "recursion",
+   "correct": true,
+   "raw": "{\"motif_id\":\"recursion\"}"
+  },
+  {
+   "id": "scene:scene_river_delta:recursion",
+   "task": "scene2motif",
+   "answer": "recursion",
+   "pred": "recursion",
+   "correct": true,
+   "raw": "{\"motif_id\":\"recursion\"}"
+  }
+ ]
+}

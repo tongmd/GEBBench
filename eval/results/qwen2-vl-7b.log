@@ -1,0 +1,23 @@
+qwen2-vl-7b @ http://localhost:18011/v1: 130 items, tasks=['crossvoice', 'scene2motif', 'skeleton2motif', 'story2motif', 'theorem2motif']
+{
+ "scene2motif": {
+  "n": 38,
+  "acc": 0.2368
+ },
+ "skeleton2motif": {
+  "n": 18,
+  "acc": 0.3333
+ },
+ "story2motif": {
+  "n": 18,
+  "acc": 0.1667
+ },
+ "theorem2motif": {
+  "n": 18,
+  "acc": 0.5556
+ },
+ "crossvoice": {
+  "n": 38,
+  "acc": 0.1842
+ }
+} -> /Users/stone/GEB-benchmark/eval/results/qwen2-vl-7b.json

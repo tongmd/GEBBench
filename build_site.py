@@ -81,6 +81,8 @@ PAGE = """<!DOCTYPE html>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>GEB Benchmark — One Structure, Many Voices</title>
+<link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+<link rel="icon" type="image/png" sizes="96x96" href="images/favicon-96x96.png">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
@@ -300,9 +302,9 @@ def main():
         shutil.rmtree(SITE / "assets")
     SITE.mkdir(exist_ok=True)
     v2 = load_stories("stories_v2.json")
-    pilot = load_stories("stories_pilot.json")
     order = [mid for mid in MOTIF_ORDER if mid in LIBRARY]
-    sections = [build_motif(mid, v2, pilot) for mid in order]
+    order += [mid for mid in LIBRARY if mid not in order]   # any new motifs
+    sections = [build_motif(mid, v2, {}) for mid in order]
     toc = " ".join(f'<a href="#motif-{mid}">{LIBRARY[mid]["name_zh"]}</a>'
                    for mid in order)
     page = (PAGE.replace("@MOTIFS@", "\n".join(sections))
@@ -310,7 +312,7 @@ def main():
                 .replace("@TOC@", toc))
     (SITE / "index.html").write_text(page)
     n_scenes = len(list(MOTIFS_DIR.glob("*/scene_*.png")))
-    n_tales = sum(len(v) for v in v2.values()) + sum(len(v) for v in pilot.values())
+    n_tales = sum(len(v) for v in v2.values())
     print(f"site/index.html built: {len(order)} motifs, {n_scenes} scenes, "
           f"{n_tales} tales")
 

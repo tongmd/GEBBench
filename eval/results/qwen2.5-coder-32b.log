@@ -1,0 +1,11 @@
+qwen2.5-coder-32b @ http://localhost:18014/v1: 36 items, tasks=['story2motif', 'theorem2motif']
+{
+ "story2motif": {
+  "n": 18,
+  "acc": 0.5
+ },
+ "theorem2motif": {
+  "n": 18,
+  "acc": 0.7222
+ }
+} -> /Users/stone/GEB-benchmark/eval/results/qwen2.5-coder-32b.json

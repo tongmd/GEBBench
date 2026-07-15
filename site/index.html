@@ -4,6 +4,8 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>GEB Benchmark — One Structure, Many Voices</title>
+<link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+<link rel="icon" type="image/png" sizes="96x96" href="images/favicon-96x96.png">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
@@ -109,13 +111,6 @@
   <p class="t-why">why this shape — 正文共十三句，每句首字依次为“本篇每句首字连读恰为此标题”，与标题逐字相同，而标题正断言这一藏头事实，形成单层自指不动点。</p>
 </div>
 
-<div class="tale">
-  <p class="t-title">《蓝布纸灯》 <span class="t-domain">染坊 · gpt-5.5 · screened ✓ (v1 pilot)</span></p>
-  <p class="zh">水桥镇有个蓝布染坊，阿柳夜里守缸。风吹来一盏纸灯，灯面湿亮，写着水桥镇有个蓝布染坊，阿柳夜里守缸。风吹来一盏纸灯，灯面湿亮，写着这篇小故事。阿柳不敢吹灭，只把灯挂在梁上，天亮还微微发蓝。</p>
-  <p class="en">In Waterbridge town stood a blue-dye house. A-Liu watched the vats at night. The wind brought a paper lantern, damp and shining. On its side was written this very tale. A-Liu did not dare snuff it out. He hung it from the beam, and by dawn it was still glowing blue.</p>
-  <p class="t-why">why this shape — 故事中的纸灯内容被设定为故事本身，形成 s = T(s) 的不动点形态。</p>
-</div>
-
   <details><summary>mathematics voice — definition · home · theorem</summary>
     <div class="voice mathv">
       <p><span class="lbl">定义</span><br>对角线引理：设一阶理论 T 能表示一切原始递归函数（如包含 Robinson 算术 Q），则对任意恰含一个自由变元的公式 φ(x)，可显式构造句子 ψ 使 T ⊢ ψ↔φ(⌜ψ⌝)，即 ψ 可证地等价于「编码为 ⌜ψ⌝ 的那个句子（它自己）具有性质 φ」。自指因此是描述算子的可构造不动点，而非悖论。</p>
@@ -218,13 +213,6 @@ A 正在讲 B 的故事
   <p class="t-why">why this shape — 全文以“话说/且说回来”作括号匹配；每个非叶子故事恰含两个子故事，叶子故事恰含固定基例句，最大深度为3，形成递归二叉树。</p>
 </div>
 
-<div class="tale">
-  <p class="t-title">《糖树春灯》 <span class="t-domain">糖画 · gpt-5.5 · screened ✓ (v1 pilot)</span></p>
-  <p class="zh">腊月里，阿槐在灶前熬糖。铜勺一抖，糖线落在石板上，成了一棵亮晶晶的糖树。每根枝上又托着小糖树，小糖树的枝头还生着更小的糖树。孩子们围着看，灯火一照，满板都是甜香的春天。</p>
-  <p class="en">In the last cold days of the year, Old Huai boiled sugar by the stove. He tipped his brass spoon, and a shining tree ran out across the stone. On each bough stood a smaller sugar tree, and on those boughs grew smaller ones still. The children bent close. In the lamplight, the whole board smelled of spring.</p>
-  <p class="t-why">why this shape — 整体糖树由若干同形的小糖树组成，每个小糖树又由更小的同形部分构成，体现 T = Node(T, …, T)。</p>
-</div>
-
   <details><summary>mathematics voice — definition · home · theorem</summary>
     <div class="voice mathv">
       <p><span class="lbl">定义</span><br>结构由基例与更小的自身实例按同一文法归纳生成：T ::= 基例 ∣ 构造子(T,T)；良基性保证任何展开在有限步内到达基例并逐层返回。对该结构做深度优先遍历，其进/出事件序列恰为合法 Dyck 括号串，且每个 Dyck 词唯一对应一棵这样的树。</p>
@@ -273,13 +261,6 @@ A 正在讲 B 的故事
 月井村有个石芽，跟着外祖母守一畦薄荷。天旱时，井水只剩碗口大，村里的鸟都不肯唱。石芽把薄荷叶一片片摘下，铺在井沿，让清香慢慢落下去。到第三夜，井底升起一条银白的小鱼，嘴里衔着雨声。石芽没有伸手去捉，只把耳朵贴在湿石上，听见远处的云正赶来，蹄子轻轻，像怕踩醒睡着的花。</p>
   <p class="en">Ali finds a blue porcelain bell on the shore and gives it to a lighthouse keeper, who begins an old tale. In that tale, an umbrella mender finds a warm bean inside a broken red umbrella; from the bean comes a child who begins another tale. In that tale, a beekeeper discovers a tiny girl carrying a seed-shell lamp; the tiny girl begins the final tale, about a village boy who coaxes rain from a drying well by laying mint leaves along its rim and listening for the clouds to come.</p>
   <p class="t-why">why this shape — 正文含4个固定开启句，逐层嵌套；进入下一层后不再出现外层人物与地点专名，且没有逐层返回的收束句。</p>
-</div>
-
-<div class="tale">
-  <p class="t-title">《酱缸灯》 <span class="t-domain">酱缸 · gpt-5.5 · screened ✓ (v1 pilot)</span></p>
-  <p class="zh">青瓦镇的阿满替娘看酱缸。夜里缸盖轻响，他揭开一看，酱香里立着一只小酱缸，黑亮亮，连缺口也像家里那只。他弯腰钻进缸口，又见更小的缸，温温地冒着豆香。阿满不怕，只把袖里的盐撒下去，最深处便亮起一盏芝麻油灯，照见一碗热饭。</p>
-  <p class="en">In Qingwa, young Aman watched his mother's bean crock. That night the lid gave a soft knock. He lifted it, and in the warm smell stood a little crock, dark and glossy, with the same chipped lip. Aman bent and slipped inside. There waited a smaller crock, breathing bean-sweet steam. He scattered the salt from his sleeve, and far within, a sesame-oil lamp woke beside a bowl of hot rice.</p>
-  <p class="t-why">why this shape — 通过打开并进入酱缸，内部出现缩小的同类酱缸，体现缩放不变的嵌套容器形。</p>
 </div>
 
   <details><summary>mathematics voice — definition · home · theorem</summary>
@@ -332,13 +313,6 @@ A 正在讲 B 的故事
 海风打了个哈欠，先吹歪了罗伯门前的草帽，又吹亮了阿葵窗下的水洼。它跑到滩上，轻轻掀开一层白沫，把藏在细沙里的小东西翻到晨光里。天一亮，阿葵提着竹篮来赶海，看见水边有一点银光在闪。于是，阿葵在海边捡到一枚会响的贝壳。</p>
   <p class="en">A girl named Akui finds a singing shell by the sea and gives it to Rober the mason, who sets it into the stones at the bridgehead. At dusk the shell makes a small ringing sound, which tells the old ferryman that someone is still stranded beyond the shallows. He rows out and rescues a lost lamb. Warm again on shore, the lamb shakes its bell and wakes the sea wind sleeping in the sand. The wind blows across the beach and uncovers the shining shell for Akui to find by the water.</p>
   <p class="t-why">why this shape — 全文四段，段尾均以“于是”引出下一段首句，最后一句与第一句逐字相同，形成四事件因果闭环。</p>
-</div>
-
-<div class="tale">
-  <p class="t-title">《青缸蓝布》 <span class="t-domain">染布 · gpt-5.5 · screened ✓ (v1 pilot)</span></p>
-  <p class="zh">青石镇有个染匠阿柳，缸里的蓝水总不败。要养蓝水，得添灶灰水；灶灰水要烧干草才香；干草又爱裹着旧蓝布引火，布上落的蓝，正是那缸里染出的。阿柳不问头，只在晨雾里翻布，满院像落了晴天。</p>
-  <p class="en">In Greenstone town, Willow the dyer kept a vat that never lost its blue. To feed it, she poured in ash water. For good ash, she burned sweet dry grass. The grass caught best when wrapped in scraps of old blue cloth, and those scraps had taken their color from the very vat. Willow never asked what came first. At dawn she lifted the cloth, and the yard looked full of sky.</p>
-  <p class="t-why">why this shape — 靛缸的蓝来自灰水，灰水来自烧草，烧草靠旧蓝布引火，旧蓝布又来自靛缸染成，形成因果闭环。</p>
 </div>
 
   <details><summary>mathematics voice — definition · home · theorem</summary>
@@ -453,13 +427,6 @@ A 正在讲 B 的故事
   <p class="t-why">why this shape — 四个同级副歌段均以同一四字短语开头，字数依次为6/12/24/48，并依次含一人、一家、一村、一国，形成螺旋副歌的指数放大。</p>
 </div>
 
-<div class="tale">
-  <p class="t-title">《槐边纸鸢》 <span class="t-domain">风筝 · gpt-5.5 · screened ✓ (v1 pilot)</span></p>
-  <p class="zh">阿满给纸鸢放线，娘说，莫丢了老槐。他牵着麻线绕树走，风把他往外送。槐影每回拂到脸，脚下的草就深些，村声就轻些。纸鸢越升越稳，线像细路。黄昏，他还望得见老槐，却站在河湾边，看灯火顺水漂来。</p>
-  <p class="en">Aman set his paper kite into the wind. His mother said, Keep the old locust in sight. Holding the hemp string, he walked round the tree, and the wind eased him farther out. Each time the locust shadow brushed his cheek, the grass was deeper underfoot and the village sounded softer. By dusk the kite flew steady, the string like a thin path. Aman could still see the tree, but he stood by the river bend, watching lampglow drift on the water.</p>
-  <p class="t-why">why this shape — 阿满围绕老槐旋转同时被风带向外，每次朝向相近时半径增大，呈旋转×生长的螺旋推进。</p>
-</div>
-
   <details><summary>mathematics voice — definition · home · theorem</summary>
     <div class="voice mathv">
       <p><span class="lbl">定义</span><br>对数螺线 r=ae^{bθ}（a&gt;0, b≠0）在相似变换 S_α=「绕极点旋转 α 并放大 e^{bα}」下整体映到自身，且 {S_α : α∈ℝ} 构成单参数群——旋转与缩放在它身上是同一个变换的两面。离散版本即几何递增的重现 x_{n+1}=λx_n（λ&gt;1）：每步回到同一方位，尺度乘同一定比。</p>
@@ -510,13 +477,6 @@ A 正在讲 B 的故事
 11. 小岚背着竹篓，走进青瓦巷尽头的糖画铺。</p>
   <p class="en">Aman carries a bamboo basket into the sugar-painting shop at the end of Blue-Tile Lane. Xiaolan places a cracked clay whistle in the basket and asks Aman to get a new cord for it at the river landing. On the way, Aman passes Old Gu’s flower-scented tea stall and receives a piece of red paper; Xiaolan waits out the rain under a mulberry tree with a warm mugwort cake tucked close. Aman patches the whistle with the red paper, and it chirps like a swallow. Under Half-Moon Bridge, a black-awning boat rocks, and a bright drop falls from the arch. Then Xiaolan patches the whistle too, Aman waits beneath the mulberry, Xiaolan receives red paper from Old Gu, Aman places the cracked whistle in the basket for Xiaolan, and Xiaolan walks into the same little shop.</p>
   <p class="t-why">why this shape — 正文共11个编号句，第6句为中心，第7—11句分别是第5—1句在阿满/小岚互换后的逆序逐字重现。</p>
-</div>
-
-<div class="tale">
-  <p class="t-title">《盐田月亮》 <span class="t-domain">晒盐 · gpt-5.5 · screened ✓ (v1 pilot)</span></p>
-  <p class="zh">白沙滩的盐田醒得早。阿水站在岸边，阿青站在潮边。日头一升，阿水把盐花往海那头推，阿青把盐花往岸这头推；阿水收起弯耙，阿青也收起弯耙。中间的白埂慢慢鼓起，像月亮落在田里。晚风来时，满村的汤都有了味。</p>
-  <p class="en">The salt pans of White Sand woke before the gulls. Ashui stood by the bank, Aqing by the tide. When the sun lifted, Ashui pushed the young salt seaward, and Aqing drew the young salt shoreward. Their bent rakes rose together. Along the middle ridge the whiteness swelled, round and quiet as a fallen moon. By dusk, every pot in the village had its savor.</p>
-  <p class="t-why">why this shape — 两侧人物同时做相同劳动但方向相反，合在中央生成完整盐埂，体现镜像不变。</p>
 </div>
 
   <details><summary>mathematics voice — definition · home · theorem</summary>
@@ -684,13 +644,6 @@ A 正在讲 B 的故事
 乙：等太阳照到渡口，我把西岸的钟擦亮。</p>
   <p class="en">At Qingstone Ferry, heavy night fog settles over the river. A Tao and A Li keep watch by ringing the little bronze bells on opposite banks. One bell guides the boatman away from the shallows; the other keeps him clear of the reeds. As they wait, they also look after lost geese and stray lambs, praise each other’s bell sounds, and think of the rice boat, the fish baskets, Granny’s ginger soup, and the morning sun.</p>
   <p class="t-why">why this shape — 正文共12句，奇数句均为甲、偶数句均为乙，严格按 i mod 2 交替，实现二着色的不变量。</p>
-</div>
-
-<div class="tale">
-  <p class="t-title">《篱上葫芦》 <span class="t-domain">取水 · gpt-5.5 · screened ✓ (v1 pilot)</span></p>
-  <p class="zh">栗木沟的春婆有只老葫芦瓢。太阳把它晒得轻响，她便拿去泉边舀水；泉水浸透了瓢，她又搁到篱上晒。干了能舀，湿了要晒。孩子们跑来跑去，喝完一瓢，还等篱上那只慢慢变轻。</p>
-  <p class="en">In Chestnut Hollow, Granny Chun kept an old gourd dipper. When the sun made it light and clacky, she carried it to the spring. After the spring soaked it heavy, she set it on the fence rail. Dry, it served water; wet, it took the sun. Dusty children came to drink, then watched the gourd grow light again.</p>
-  <p class="t-why">why this shape — 干瓢经舀水变湿，湿瓢经日晒变干，两种状态互相引出，体现 f∘f = id 的交替。</p>
 </div>
 
   <details><summary>mathematics voice — definition · home · theorem</summary>
@@ -899,13 +852,6 @@ A 正在讲 B 的故事
   <p class="t-why">why this shape — 全文恰12句；除第7句外，其余11句均为7个汉字且含“风”，第7句为8个汉字且不含“风”，形成唯一可精确定位的违例。</p>
 </div>
 
-<div class="tale">
-  <p class="t-title">《歪石甜井》 <span class="t-domain">腌菜 · gpt-5.5 · screened ✓ (v1 pilot)</span></p>
-  <p class="zh">柳湾家家腌菜，缸口都压青石，清早只闻酸香。阿满家的小缸偏不安分，夜里咕嘟冒泡，把石头顶歪。娘要换缸，阿满跟着泡声挖墙根，挖出一汪甜水。后来全村的菜更脆，孩子们都爱往那口井边跑。</p>
-  <p class="en">In Willow Bend, every pickle jar wore a flat green stone, and each morning the lanes smelled sharp and good. Only Aman’s little jar would not keep still. At night it bubbled and nudged its stone aside. His mother wanted a new jar, but Aman followed the sound to the wall and dug. Sweet water seeped up from the earth. After that, the village pickles snapped like fresh twigs, and the children played by the well.</p>
-  <p class="t-why">why this shape — 在处处如常的腌菜规则场中，小缸的异常成为发现甜水的方向，推动故事发生。</p>
-</div>
-
   <details><summary>mathematics voice — definition · home · theorem</summary>
     <div class="voice mathv">
       <p><span class="lbl">定义</span><br>Poincaré–Hopf 定理：紧无边光滑流形 M 上任一仅有孤立零点的光滑切向量场 X，其零点指数之和 ∑ ind_p(X)=χ(M)，且与 X 的选取无关，故 χ(M)≠0 时处处非零的连续切向量场不存在——「处处规则、无一瑕疵」被拓扑不变量所禁止，而缺陷可安排为唯一。等变分岔面向：叉式分岔 ẋ=μx−x³ 关于 x↦−x 等变，μ&gt;0 时对称解 x=0 失稳，系统必落入 ±√μ 之一，单个稳定解不再保有方程的整体对称（对称群只在解对上作用）。</p>
@@ -952,13 +898,6 @@ A 正在讲 B 的故事
 黄昏时，阿榕、小满、石禾都抱着各自护了一路的东西，走进雾钟渡那间亮着灶火的小屋。</p>
   <p class="en">A Rong from the Salt-Deer Flats finds a cracked clay jar holding three warm grains and carries it away from the sea wind. Xiao Man from Tile-Lamp Lane hears a bell drop a pinch of red clay and sets out with it tucked safely in a sachet. Shi He from Green-Bamboo-Shoot Slope discovers a silver fish scale by a spring and follows its glow through the mist. Each travels without knowing of the others, guarding a small strange gift, until at dusk all three arrive together at a firelit little house in Fog-Bell Ferry.</p>
   <p class="t-why">why this shape — 前六段按甲乙丙甲乙丙分属三条互不交叉的线推进，第七段首次让三名人物在同一句汇入此前未出现的同一地点，并以该句收束。</p>
-</div>
-
-<div class="tale">
-  <p class="t-title">《春鸢上天》 <span class="t-domain">纸鸢 · gpt-5.5 · screened ✓ (v1 pilot)</span></p>
-  <p class="zh">溪边的青竹被老孟削成细篾，染坊的红绢晒足了日头，米铺的糯浆冒着甜气。它们本不相识，到了柳娘小院，都听她手指安排。篾弯成骨，绢贴上身，浆糊收住边，阿槐的线轻轻一牵，春风里升起一只红纸鸢。</p>
-  <p class="en">By the creek, green bamboo was shaved thin by old Meng. At the dye house, red silk warmed in the sun. In the rice shop, sweet paste steamed in a bowl. They had never known one another, yet all came to Madam Liu’s yard. Bamboo made the ribs, silk made the body, paste held the edges fast. Little Huai tugged the string, and a red kite climbed into the spring wind.</p>
-  <p class="t-why">why this shape — 许多互不相识的材料从各处来，在小院汇聚并合成为一只纸鸢，体现 many → one。</p>
 </div>
 
   <details><summary>mathematics voice — definition · home · theorem</summary>
@@ -1022,13 +961,6 @@ A 正在讲 B 的故事
 次年桥毁，两岸从此不通</p>
   <p class="en">In the salt marsh country, three people crossed the same river on the same day without knowing one another: a salt caravan bound for the northern wharf, a boy messenger carrying an urgent medical letter, and a frightened fugitive looking for a place to begin again. Each traveled through lively lanes and workyards on the southern side, crossed the only narrow footbridge, and then continued through separate northern villages and roads. The caravan sold its salt, the messenger delivered the letter in time, and the fugitive found honest work at a roadside inn. The next year the bridge was destroyed, and the two banks no longer met.</p>
   <p class="t-why">why this shape — 三条u-v路径除“独木桥”外点集两两不交，且各自桥前桥后至少两点连通，唯一公共割点为独木桥，对应咽喉之点。</p>
-</div>
-
-<div class="tale">
-  <p class="t-title">《山口茶棚》 <span class="t-domain">山口茶棚 · gpt-5.5 · screened ✓ (v1 pilot)</span></p>
-  <p class="zh">青岭有个窄山口，口边搭着阿桃的茶棚。赶盐的、送亲的、逃雨的，都在棚下歇脚，碗沿碰出轻响。阿桃不多问，只添热水。春去秋来，她认得各样鞋上的泥，也认得人脸上明暗。后来她老了，山风还替她把路人的话吹进屋里。</p>
-  <p class="en">At the narrow notch of Green Ridge, A-Tao kept a tea shed. Salt carriers, wedding guests, and travelers chased by rain all stopped beneath her reed roof, their bowls clicking softly. She asked little and filled them again. Season after season she learned the mud on every shoe and the weather on every face. When she grew old, the mountain wind still brought travelers' words to her door.</p>
-  <p class="t-why">why this shape — 山路被窄山口收束，所有来去的人都经过阿桃的茶棚，使同一地点看尽众人。</p>
 </div>
 
   <details><summary>mathematics voice — definition · home · theorem</summary>

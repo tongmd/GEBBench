@@ -1,0 +1,11 @@
+qwen2.5-7b @ http://localhost:18012/v1: 36 items, tasks=['story2motif', 'theorem2motif']
+{
+ "story2motif": {
+  "n": 18,
+  "acc": 0.3333
+ },
+ "theorem2motif": {
+  "n": 18,
+  "acc": 0.5
+ }
+} -> /Users/stone/GEB-benchmark/eval/results/qwen2.5-7b.json

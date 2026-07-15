@@ -1,0 +1,44 @@
+{
+ "model": "gpt-5.2",
+ "base": "https://yunwu.ai/v1",
+ "summary": {
+  "theorem2motif": {
+   "n": 4,
+   "acc": 1.0
+  }
+ },
+ "records": [
+  {
+   "id": "thm:self_reference",
+   "task": "theorem2motif",
+   "answer": "self_reference",
+   "pred": "self_reference",
+   "correct": true,
+   "raw": "{\"motif_id\":\"self_reference\"}"
+  },
+  {
+   "id": "thm:recursion",
+   "task": "theorem2motif",
+   "answer": "recursion",
+   "pred": "recursion",
+   "correct": true,
+   "raw": "{\"motif_id\":\"recursion\"}"
+  },
+  {
+   "id": "thm:nesting",
+   "task": "theorem2motif",
+   "answer": "nesting",
+   "pred": "nesting",
+   "correct": true,
+   "raw": "{\"motif_id\":\"nesting\"}"
+  },
+  {
+   "id": "thm:cycle",
+   "task": "theorem2motif",
+   "answer": "cycle",
+   "pred": "cycle",
+   "correct": true,
+   "raw": "{\"motif_id\":\"cycle\"}"
+  }
+ ]
+}
