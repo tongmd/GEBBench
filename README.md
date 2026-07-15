@@ -13,7 +13,28 @@ narrative, a formal statement, executable code, graphics code, a picture, and
 a stylized picture. The schema is the only ground truth; every voice is
 generated from it and machine-checkable against it.
 
-## V1 families
+## Motifs (current direction)
+
+The unit of a sample is an **abstract structural motif** — self-reference,
+recursion, nesting, cycle — not any particular graph. Node counts, depths,
+angles are *nuisance variables*, recorded but never scored.
+
+```
+motif z → skeleton (vis-graph rendering, several embeddings)
+        → natural/artistic scene (gpt-image, skeleton as reference — the
+          composition IS the structure; not a style transfer)
+        → story voice (a tale shaped like the motif, e.g. 从前有座山…)
+        → math voice (the motif's equation, e.g. s = T(s), f(x)=x)
+```
+
+```bash
+python3 gen_motifs.py                   # motifs/: 4 motifs, skeletons + scenes
+```
+
+`motifs/<motif_id>/`: `schema.json` (motif, equation, invariant, nuisance),
+`story.txt`, `math.md`, `skeleton_*.svg/png`, `scene_*.png`.
+
+## Diagram families (v0 pilot)
 
 | Family | Structure | Example properties |
 | --- | --- | --- |

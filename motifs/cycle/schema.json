@@ -1,0 +1,11 @@
+{
+  "motif_id": "cycle",
+  "name": "Cycle — following the arrows leads back to the start",
+  "equation": "v \\leadsto v",
+  "invariant": "there is no first element: the end feeds the beginning",
+  "nuisance_variables": [
+    "length of the loop",
+    "what the elements are",
+    "domain"
+  ]
+}

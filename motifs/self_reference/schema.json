@@ -1,0 +1,11 @@
+{
+  "motif_id": "self_reference",
+  "name": "Self-reference — the thing contains itself",
+  "equation": "s = T(s)",
+  "invariant": "the whole appears, unchanged, inside itself",
+  "nuisance_variables": [
+    "visible nesting levels",
+    "medium",
+    "domain"
+  ]
+}

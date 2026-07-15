@@ -1,0 +1,9 @@
+{
+  "sample_id": "fix_mountain_temple_0006",
+  "family": "fixpoint",
+  "structure": "self_reference",
+  "concept": "A picture that contains a smaller copy of itself, forever (mise en abyme). The scene is its own subpicture: f(x) = x.",
+  "answer": {
+    "insight": "self-reference / fixed point: the scene contains itself, s = T(s), f(x)=x"
+  }
+}

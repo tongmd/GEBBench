@@ -54,6 +54,13 @@
   footer { margin-top: 88px; padding-top: 20px; border-top: 1px solid var(--line);
            color: var(--dim); font-size: 14px; }
   a { color: var(--accent); }
+  h2.part { margin: 72px 0 -28px; font-size: 21px; color: var(--dim);
+            font-weight: normal; font-style: italic; border-bottom: 1px solid var(--line);
+            padding-bottom: 10px; }
+  .motif-eq { font-size: 18px; margin: 4px 0 2px; }
+  .invariant { color: var(--dim); font-style: italic; margin: 2px 0 16px; }
+  figure.skel img { height: 120px; opacity: 0.75; }
+  .nuisance { font: 12px/1.6 Menlo, monospace; color: var(--dim); margin-top: 8px; }
 </style>
 </head>
 <body>
@@ -64,13 +71,132 @@
   <div class="chain">z&nbsp;(latent schema) &nbsp;&rarr;&nbsp; { <b>S</b>tory, <b>M</b>athematics,
     <b>P</b>rogram, <b>D</b>rawing&nbsp;Program, canonical&nbsp;<b>I</b>mage,
     stylized&nbsp;<b>I</b><sub>style</sub> }</div>
-  <p class="intro">Every sample below is generated <em>in parallel</em> from a single
-  latent schema — never by chained translation. The schema is the only ground truth:
-  each program voice is executed and asserted against the schema answer, each image is
-  rendered deterministically from the drawing voice, and stylized images must preserve
-  the structure exactly. Three V1 families: <b>Graph Worlds</b> (topology),
-  <b>Recursive Gardens</b> (hierarchy), <b>Symmetry Labs</b> (geometry).</p>
+  <p class="intro">A benchmark of <b>abstract structures</b>, in the spirit of
+  <em>Gödel, Escher, Bach</em>. The unit is a structural <b>motif</b> — self-reference,
+  recursion, nesting, cycle — not any particular graph: node counts, depths and angles
+  are nuisance variables. Each motif speaks with several voices: a folk-tale shaped like
+  it, an equation fixed by it, and <b>natural or artistic images whose composition
+  <em>is</em> the structure</b> — a vis-graph skeleton is used as the reference for scene
+  generation, so you look at a landscape and the structure dawns on you.</p>
 </header>
+<h2 class="part">Ⅰ · Motifs — see a scene, grasp a structure</h2>
+<section class="sample" id="motif-self_reference">
+  <h2><span class="fam-badge">motif</span>Self-reference — the thing contains itself</h2>
+  <p class="motif-eq">$$s = T(s)$$</p>
+  <p class="invariant">invariant: the whole appears, unchanged, inside itself</p>
+  <div class="strip"><figure><a href="assets/motif_self_reference/scene_droste_study.png"><img loading="lazy" src="assets/motif_self_reference/scene_droste_study.png" alt="self_reference scene_droste_study"></a><figcaption>study within study · photo</figcaption></figure>
+<figure><a href="assets/motif_self_reference/scene_mountain_temple.png"><img loading="lazy" src="assets/motif_self_reference/scene_mountain_temple.png" alt="self_reference scene_mountain_temple"></a><figcaption>山中庙 · ink wash</figcaption></figure>
+<figure class="skel"><a href="assets/motif_self_reference/skeleton_frames.png"><img loading="lazy" src="assets/motif_self_reference/skeleton_frames.png" alt="self_reference skeleton_frames"></a><figcaption>skeleton (generation ref)</figcaption></figure></div>
+  <details><summary>story voice — a tale with this shape</summary><div class="voice story"><p><span class="dom">[domain: 民间口传]</span></p>
+<p>从前有座山，山里有座庙，庙里有个老和尚，正在给小和尚讲故事。他讲的是：从前有座山，山里有座庙，庙里有个老和尚，正在给小和尚讲故事……</p>
+<p><span class="dom">[domain: same structure · English]</span></p>
+<p>Once upon a time there was a mountain; on the mountain, a temple; in the temple, an old monk telling a young monk a story. The story was: once upon a time there was a mountain…</p></div></details>
+  <details><summary>mathematics voice</summary><div class="voice mathv"><p>The story is a fixed point of its own telling:</p>
+<p>$$s = T(s), \qquad f(x) = x.$$</p>
+<p>There is no base case and no bottom level. The structure is <b>the whole appearing, unchanged, inside itself</b>.</p></div></details>
+  <details><summary>motif schema</summary><div class="voice"><pre>{
+  "motif_id": "self_reference",
+  "name": "Self-reference — the thing contains itself",
+  "equation": "s = T(s)",
+  "invariant": "the whole appears, unchanged, inside itself",
+  "nuisance_variables": [
+    "visible nesting levels",
+    "medium",
+    "domain"
+  ]
+}</pre></div></details>
+  <p class="nuisance">nuisance (deliberately varied, never scored): visible nesting levels, medium, domain</p>
+</section>
+
+<section class="sample" id="motif-recursion">
+  <h2><span class="fam-badge">motif</span>Recursive branching — the part repeats the whole</h2>
+  <p class="motif-eq">$$T = \operatorname{Node}(T,\dots,T)$$</p>
+  <p class="invariant">invariant: every branch, looked at alone, has the same shape as the whole</p>
+  <div class="strip"><figure><a href="assets/motif_recursion/scene_lightning.png"><img loading="lazy" src="assets/motif_recursion/scene_lightning.png" alt="recursion scene_lightning"></a><figcaption>lightning · long exposure</figcaption></figure>
+<figure><a href="assets/motif_recursion/scene_river_delta.png"><img loading="lazy" src="assets/motif_recursion/scene_river_delta.png" alt="recursion scene_river_delta"></a><figcaption>river delta · aerial</figcaption></figure>
+<figure><a href="assets/motif_recursion/scene_winter_tree.png"><img loading="lazy" src="assets/motif_recursion/scene_winter_tree.png" alt="recursion scene_winter_tree"></a><figcaption>winter tree · photo</figcaption></figure>
+<figure class="skel"><a href="assets/motif_recursion/skeleton_tree.png"><img loading="lazy" src="assets/motif_recursion/skeleton_tree.png" alt="recursion skeleton_tree"></a><figcaption>skeleton (generation ref)</figcaption></figure></div>
+  <details><summary>story voice — a tale with this shape</summary><div class="voice story"><p><span class="dom">[domain: 河与支流]</span></p>
+<p>问大河：你从哪里来？大河说：我由几条小河汇成。问其中一条小河，它说：我也是一条河，也由更小的河汇成。再问下去，答案永远一样——每一条河，都是由和它一样的东西组成的。</p>
+<p><span class="dom">[domain: same structure · English]</span></p>
+<p>Ask the great river where it comes from, and it answers: from smaller rivers. Ask any of those, and it gives the same answer. However far you go, the answer never changes — each river is made of things shaped exactly like itself.</p></div></details>
+  <details><summary>mathematics voice</summary><div class="voice mathv"><p>A recursively defined object — the type on the left appears, unchanged, on the right:</p>
+<p>$$T = \operatorname{Node}(T,\dots,T).$$</p>
+<p>Unrolling the equation gives the same branching shape at every scale. How many children, how deep, at what angle — all irrelevant: the structure is that <b>the part repeats the whole</b>.</p></div></details>
+  <details><summary>motif schema</summary><div class="voice"><pre>{
+  "motif_id": "recursion",
+  "name": "Recursive branching — the part repeats the whole",
+  "equation": "T = \\operatorname{Node}(T,\\dots,T)",
+  "invariant": "every branch, looked at alone, has the same shape as the whole",
+  "nuisance_variables": [
+    "depth",
+    "branching factor",
+    "angles",
+    "scale ratio",
+    "domain"
+  ]
+}</pre></div></details>
+  <p class="nuisance">nuisance (deliberately varied, never scored): depth, branching factor, angles, scale ratio, domain</p>
+</section>
+
+<section class="sample" id="motif-nesting">
+  <h2><span class="fam-badge">motif</span>Nesting — the same form inside itself, at every scale</h2>
+  <p class="motif-eq">$$S_\lambda(X) = X$$</p>
+  <p class="invariant">invariant: inside each layer sits a smaller copy of the same layer</p>
+  <div class="strip"><figure><a href="assets/motif_nesting/scene_pond_ripples.png"><img loading="lazy" src="assets/motif_nesting/scene_pond_ripples.png" alt="nesting scene_pond_ripples"></a><figcaption>pond ripples · photo</figcaption></figure>
+<figure><a href="assets/motif_nesting/scene_walled_city.png"><img loading="lazy" src="assets/motif_nesting/scene_walled_city.png" alt="nesting scene_walled_city"></a><figcaption>walled city · aerial</figcaption></figure>
+<figure class="skel"><a href="assets/motif_nesting/skeleton_concentric.png"><img loading="lazy" src="assets/motif_nesting/skeleton_concentric.png" alt="nesting skeleton_concentric"></a><figcaption>skeleton (generation ref)</figcaption></figure></div>
+  <details><summary>story voice — a tale with this shape</summary><div class="voice story"><p><span class="dom">[domain: 环城]</span></p>
+<p>这座古城有一圈城墙。走进城门，里面还是一座城，有自己的一圈城墙；再走进去，还是一座城。城里有城，墙里有墙，一直到最中心的一座小小的宫殿。</p>
+<p><span class="dom">[domain: same structure · English]</span></p>
+<p>The ancient city has a wall. Pass through the gate, and inside is another city with its own wall; pass through again, another still. City within city, wall within wall, down to one small palace at the very center.</p></div></details>
+  <details><summary>mathematics voice</summary><div class="voice mathv"><p>One scaling map carries every layer onto the next, and the whole pattern onto itself:</p>
+<p>$$S_\lambda(X) = X, \qquad 0 &lt; \lambda &lt; 1.$$</p>
+<p>How many rings there are, how far apart — irrelevant: the structure is <b>the same form, containing itself</b>.</p></div></details>
+  <details><summary>motif schema</summary><div class="voice"><pre>{
+  "motif_id": "nesting",
+  "name": "Nesting — the same form inside itself, at every scale",
+  "equation": "S_\\lambda(X) = X",
+  "invariant": "inside each layer sits a smaller copy of the same layer",
+  "nuisance_variables": [
+    "number of layers",
+    "spacing",
+    "exact shape",
+    "domain"
+  ]
+}</pre></div></details>
+  <p class="nuisance">nuisance (deliberately varied, never scored): number of layers, spacing, exact shape, domain</p>
+</section>
+
+<section class="sample" id="motif-cycle">
+  <h2><span class="fam-badge">motif</span>Cycle — following the arrows leads back to the start</h2>
+  <p class="motif-eq">$$v \leadsto v$$</p>
+  <p class="invariant">invariant: there is no first element: the end feeds the beginning</p>
+  <div class="strip"><figure><a href="assets/motif_cycle/scene_canal_town.png"><img loading="lazy" src="assets/motif_cycle/scene_canal_town.png" alt="cycle scene_canal_town"></a><figcaption>canal town · aerial</figcaption></figure>
+<figure><a href="assets/motif_cycle/scene_ouroboros.png"><img loading="lazy" src="assets/motif_cycle/scene_ouroboros.png" alt="cycle scene_ouroboros"></a><figcaption>ouroboros · ink &amp; gold</figcaption></figure>
+<figure class="skel"><a href="assets/motif_cycle/skeleton_ring.png"><img loading="lazy" src="assets/motif_cycle/skeleton_ring.png" alt="cycle skeleton_ring"></a><figcaption>skeleton (generation ref)</figcaption></figure></div>
+  <details><summary>story voice — a tale with this shape</summary><div class="voice story"><p><span class="dom">[domain: 鸡与蛋]</span></p>
+<p>鸡从蛋里孵出来。蛋是鸡下的。那第一只鸡呢？——从蛋里孵出来。那第一个蛋呢？——是鸡下的。这个问题绕了一圈，回到了它自己开始的地方。</p>
+<p><span class="dom">[domain: same structure · English]</span></p>
+<p>The hen hatches from the egg; the egg is laid by the hen. Then where did the first hen come from? From an egg. And the first egg? From a hen. The question walks in a circle and arrives back exactly where it began.</p></div></details>
+  <details><summary>mathematics voice</summary><div class="voice mathv"><p>Follow the arrows and you return to your starting point:</p>
+<p>$$v_0 \to v_1 \to \dots \to v_n \to v_0, \qquad v \leadsto v.$$</p>
+<p>How many steps the loop has, what the elements are — irrelevant: the structure is <b>closure: the end feeds the beginning</b>.</p></div></details>
+  <details><summary>motif schema</summary><div class="voice"><pre>{
+  "motif_id": "cycle",
+  "name": "Cycle — following the arrows leads back to the start",
+  "equation": "v \\leadsto v",
+  "invariant": "there is no first element: the end feeds the beginning",
+  "nuisance_variables": [
+    "length of the loop",
+    "what the elements are",
+    "domain"
+  ]
+}</pre></div></details>
+  <p class="nuisance">nuisance (deliberately varied, never scored): length of the loop, what the elements are, domain</p>
+</section>
+
+<h2 class="part">Ⅱ · Diagram families (v0 pilot: verifiable instances)</h2>
 <section class="sample" id="gw_cycle_0003">
   <h2><span class="fam-badge">Graph Worlds</span>gw_cycle_0003</h2>
   <p class="qa">cycle detection: does the graph contain a directed cycle? &nbsp;·&nbsp; answer: <b>yes — B → F → D → E → C → B</b></p>

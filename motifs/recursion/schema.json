@@ -1,0 +1,13 @@
+{
+  "motif_id": "recursion",
+  "name": "Recursive branching — the part repeats the whole",
+  "equation": "T = \\operatorname{Node}(T,\\dots,T)",
+  "invariant": "every branch, looked at alone, has the same shape as the whole",
+  "nuisance_variables": [
+    "depth",
+    "branching factor",
+    "angles",
+    "scale ratio",
+    "domain"
+  ]
+}

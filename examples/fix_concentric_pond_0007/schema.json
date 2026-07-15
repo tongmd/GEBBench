@@ -1,0 +1,9 @@
+{
+  "sample_id": "fix_concentric_pond_0007",
+  "family": "fixpoint",
+  "structure": "nested_selfsimilar",
+  "concept": "Concentric circles as the natural shape of 'the same thing at every scale' — a raindrop's ripples, each ring a scaled copy of the last.",
+  "answer": {
+    "insight": "self-similarity under scaling: each ring is a scaled copy, S_λ(x)=x"
+  }
+}

@@ -1,0 +1,7 @@
+[domain: 民间口传]
+
+从前有座山，山里有座庙，庙里有个老和尚，正在给小和尚讲故事。他讲的是：从前有座山，山里有座庙，庙里有个老和尚，正在给小和尚讲故事……
+
+[domain: same structure · English]
+
+Once upon a time there was a mountain; on the mountain, a temple; in the temple, an old monk telling a young monk a story. The story was: once upon a time there was a mountain…

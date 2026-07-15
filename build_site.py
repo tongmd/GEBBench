@@ -92,6 +92,13 @@ PAGE = """<!DOCTYPE html>
   footer { margin-top: 88px; padding-top: 20px; border-top: 1px solid var(--line);
            color: var(--dim); font-size: 14px; }
   a { color: var(--accent); }
+  h2.part { margin: 72px 0 -28px; font-size: 21px; color: var(--dim);
+            font-weight: normal; font-style: italic; border-bottom: 1px solid var(--line);
+            padding-bottom: 10px; }
+  .motif-eq { font-size: 18px; margin: 4px 0 2px; }
+  .invariant { color: var(--dim); font-style: italic; margin: 2px 0 16px; }
+  figure.skel img { height: 120px; opacity: 0.75; }
+  .nuisance { font: 12px/1.6 Menlo, monospace; color: var(--dim); margin-top: 8px; }
 </style>
 </head>
 <body>
@@ -102,13 +109,17 @@ PAGE = """<!DOCTYPE html>
   <div class="chain">z&nbsp;(latent schema) &nbsp;&rarr;&nbsp; { <b>S</b>tory, <b>M</b>athematics,
     <b>P</b>rogram, <b>D</b>rawing&nbsp;Program, canonical&nbsp;<b>I</b>mage,
     stylized&nbsp;<b>I</b><sub>style</sub> }</div>
-  <p class="intro">Every sample below is generated <em>in parallel</em> from a single
-  latent schema — never by chained translation. The schema is the only ground truth:
-  each program voice is executed and asserted against the schema answer, each image is
-  rendered deterministically from the drawing voice, and stylized images must preserve
-  the structure exactly. Three V1 families: <b>Graph Worlds</b> (topology),
-  <b>Recursive Gardens</b> (hierarchy), <b>Symmetry Labs</b> (geometry).</p>
+  <p class="intro">A benchmark of <b>abstract structures</b>, in the spirit of
+  <em>Gödel, Escher, Bach</em>. The unit is a structural <b>motif</b> — self-reference,
+  recursion, nesting, cycle — not any particular graph: node counts, depths and angles
+  are nuisance variables. Each motif speaks with several voices: a folk-tale shaped like
+  it, an equation fixed by it, and <b>natural or artistic images whose composition
+  <em>is</em> the structure</b> — a vis-graph skeleton is used as the reference for scene
+  generation, so you look at a landscape and the structure dawns on you.</p>
 </header>
+<h2 class="part">Ⅰ · Motifs — see a scene, grasp a structure</h2>
+@MOTIFS@
+<h2 class="part">Ⅱ · Diagram families (v0 pilot: verifiable instances)</h2>
 @SAMPLES@
 <footer>GEB Benchmark · One Structure, Six Voices · examples v0 ·
   images: deterministic SVG renderer + gpt-image stylization</footer>
@@ -128,6 +139,32 @@ SAMPLE_TPL = """<section class="sample" id="@SID@">
   <details><summary>latent schema (ground truth)</summary><div class="voice"><pre>@SCHEMA@</pre></div></details>
 </section>
 """
+
+MOTIF_TPL = """<section class="sample" id="motif-@MID@">
+  <h2><span class="fam-badge">motif</span>@NAME@</h2>
+  <p class="motif-eq">$$@EQ@$$</p>
+  <p class="invariant">invariant: @INVARIANT@</p>
+  <div class="strip">@FIGURES@</div>
+  <details><summary>story voice — a tale with this shape</summary><div class="voice story">@STORY@</div></details>
+  <details><summary>mathematics voice</summary><div class="voice mathv">@MATH@</div></details>
+  <details><summary>motif schema</summary><div class="voice"><pre>@SCHEMA@</pre></div></details>
+  <p class="nuisance">nuisance (deliberately varied, never scored): @NUISANCE@</p>
+</section>
+"""
+
+MOTIF_ORDER = ["self_reference", "recursion", "nesting", "cycle"]
+
+SCENE_LABEL = {
+    "mountain_temple": "山中庙 · ink wash",
+    "droste_study": "study within study · photo",
+    "river_delta": "river delta · aerial",
+    "lightning": "lightning · long exposure",
+    "winter_tree": "winter tree · photo",
+    "walled_city": "walled city · aerial",
+    "pond_ripples": "pond ripples · photo",
+    "ouroboros": "ouroboros · ink & gold",
+    "canal_town": "canal town · aerial",
+}
 
 
 def esc(s: str) -> str:
@@ -219,12 +256,58 @@ def build_sample(d: Path) -> str:
     return out
 
 
+def build_motif(d: Path) -> str:
+    schema = json.loads((d / "schema.json").read_text())
+    mid = schema["motif_id"]
+    assets = SITE / "assets" / f"motif_{mid}"
+    assets.mkdir(parents=True, exist_ok=True)
+
+    figures = []
+    scenes = sorted(d.glob("scene_*.png"))
+    skels = sorted(d.glob("skeleton_*.png"))
+    for png in scenes + skels:
+        shutil.copy2(png, assets / png.name)
+        rel = f"assets/motif_{mid}/{png.name}"
+        if png.stem.startswith("scene_"):
+            label = SCENE_LABEL.get(png.stem.removeprefix("scene_"),
+                                    png.stem.removeprefix("scene_"))
+            cls = ""
+        else:
+            label = "skeleton (generation ref)"
+            cls = ' class="skel"'
+        figures.append(f'<figure{cls}><a href="{rel}"><img loading="lazy" src="{rel}" '
+                       f'alt="{mid} {png.stem}"></a>'
+                       f"<figcaption>{esc(label)}</figcaption></figure>")
+
+    out = MOTIF_TPL
+    for k, v in {
+        "@MID@": mid,
+        "@NAME@": esc(schema["name"]),
+        "@EQ@": schema["equation"],
+        "@INVARIANT@": esc(schema["invariant"]),
+        "@FIGURES@": "\n".join(figures),
+        "@STORY@": story_html((d / "story.txt").read_text()),
+        "@MATH@": math_html((d / "math.md").read_text()),
+        "@SCHEMA@": esc(json.dumps(schema, indent=2, ensure_ascii=False)),
+        "@NUISANCE@": esc(", ".join(schema["nuisance_variables"])),
+    }.items():
+        out = out.replace(k, v)
+    return out
+
+
 def main():
     SITE.mkdir(exist_ok=True)
+    motif_root = ROOT / "motifs"
+    motifs = [build_motif(motif_root / mid) for mid in MOTIF_ORDER
+              if (motif_root / mid / "schema.json").exists()]
     sections = [build_sample(d) for d in sorted(EXAMPLES.iterdir())
-                if d.is_dir() and (d / "schema.json").exists()]
-    (SITE / "index.html").write_text(PAGE.replace("@SAMPLES@", "\n".join(sections)))
-    print(f"site/index.html built with {len(sections)} samples")
+                if d.is_dir() and (d / "schema.json").exists()
+                and json.loads((d / "schema.json").read_text()).get("family")
+                in FAMILY_LABEL]
+    page = PAGE.replace("@MOTIFS@", "\n".join(motifs)) \
+               .replace("@SAMPLES@", "\n".join(sections))
+    (SITE / "index.html").write_text(page)
+    print(f"site/index.html built with {len(motifs)} motifs + {len(sections)} samples")
 
 
 if __name__ == "__main__":

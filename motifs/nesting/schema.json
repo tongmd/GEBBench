@@ -1,0 +1,12 @@
+{
+  "motif_id": "nesting",
+  "name": "Nesting — the same form inside itself, at every scale",
+  "equation": "S_\\lambda(X) = X",
+  "invariant": "inside each layer sits a smaller copy of the same layer",
+  "nuisance_variables": [
+    "number of layers",
+    "spacing",
+    "exact shape",
+    "domain"
+  ]
+}
