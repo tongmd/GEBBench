@@ -1,0 +1,102 @@
+[
+  {
+    "title": "汤雾油纸",
+    "domain": "馄饨摊",
+    "story_zh": "从前槐桥边有个馄饨摊，阿桂掀开热锅，汤雾里浮着一张油纸，纸上慢慢现出这些话：从前槐桥边有个馄饨摊，阿桂掀开热锅，汤雾里浮着一张油纸，纸上慢慢现出这些话……",
+    "story_en": "Long ago by Willow Bridge stood Gui’s wonton stall. When she lifted the steaming lid, a slip of oiled paper rose in the broth. On it, soft as mist, were these words: Long ago by Willow Bridge stood Gui’s wonton stall. When she lifted the steaming lid...",
+    "why_shape": "故事在情节中让自身开头原样出现在自身内部，并以省略保持无底层的不动点形态。",
+    "motif_id": "self_reference",
+    "equation": "s = T(s)（f(x)=x，不动点）",
+    "model": "gpt-5.5"
+  },
+  {
+    "title": "槐花蓝被",
+    "domain": "绣被",
+    "story_zh": "槐花镇的阿婆有床蓝布被，白线绣着小镇。镇口也有个阿婆，晒着蓝布被，白线也绣着小镇。再看那被上的镇口，阿婆又在晒被。风吹槐花落，孩子越听越近，近到被角里，仍见槐花镇，仍见阿婆晒被。",
+    "story_en": "In Locust-Bloom Town, Granny Luo kept a blue quilt. In white thread it held the town. At its gate, another granny shook out a blue quilt, and that quilt held the town as well. Look closer at its little gate: there she is again, shaking the quilt. Blossoms drift. The child leans in, and in the corner finds the town, the granny, the quilt.",
+    "why_shape": "整体是一床绣着小镇的被，任取被上小镇的一处又含有同样的被与小镇，呈自相似递归结构。",
+    "motif_id": "recursion",
+    "equation": "T = Node(T, …, T)",
+    "model": "gpt-5.5"
+  },
+  {
+    "title": "青布笸箩",
+    "domain": "针线活",
+    "story_zh": "清河岸边，阿桃有只旧针线笸箩。掀开青布，里头卧着个小笸箩，也盖青布。再掀开，仍有针香、碎线、杏核扣，和个更小的笸箩。阿桃笑着把手伸去，青布轻轻一翻，清河岸边，阿桃有只旧针线笸箩。",
+    "story_en": "By the clear river, A-Tao kept an old sewing basket. Under the blue cloth slept a little basket, blue-clothed too. She lifted that cloth and found the smell of thread, loose ends, an apricot-stone button, and a smaller basket. When her fingers turned its cloth, by the clear river, A-Tao kept an old sewing basket.",
+    "why_shape": "故事通过每次掀开笸箩都出现同一情景的缩小版，并在结尾回到开头，体现缩放不变的自指结构。",
+    "motif_id": "nesting",
+    "equation": "S_λ(X) = X（缩放不变）",
+    "model": "gpt-5.5"
+  },
+  {
+    "title": "老面馒头",
+    "domain": "面食",
+    "story_zh": "槐树院里，姜婆婆蒸馒头。小满问：香味从哪来？婆婆说，从面里来。面从哪来？从碗底那团老面来。老面从哪来？从上回馒头上掐下的面来。馒头一出锅，小满又闻着问：香味从哪来？",
+    "story_en": "In the yard by the locust tree, Granny Jiang steamed buns. Little Man asked, “Where does that sweet smell come from?” “From the dough,” said Granny. “And the dough?” “From the bit of old dough in the bowl.” “And that?” “From a pinch saved from the last bun.” When the buns came out warm, Little Man sniffed and asked again, “Where does that sweet smell come from?”",
+    "why_shape": "故事沿因果追问从馒头到老面再回到馒头，首尾同问，体现自指回到起点且没有第一个。",
+    "motif_id": "cycle",
+    "equation": "v ⇝ v（回到起点）",
+    "model": "gpt-5.5"
+  },
+  {
+    "title": "柳湾织声",
+    "domain": "织布",
+    "story_zh": "柳湾有张老织床，阿槐在这头推梭，阿柳在那头迎梭。阿槐把红线送进晨光，阿柳把红线送回暮色。床儿咿呀，姑娘们都笑：布上讲的，正是这头送去、那头送回的老织床。",
+    "story_en": "In Willow Bend stood an old loom. Ahuai pushed the shuttle from this end, Aliu caught it from that end. Ahuai sent the red thread into morning; Aliu sent it back into dusk. The loom creaked, and the girls laughed, for the cloth was telling of that same old loom: sent from here, returned from there.",
+    "why_shape": "故事用成对反向动作构成镜像不变，并让布中所讲回到正在发生的织布场景。",
+    "motif_id": "symmetry",
+    "equation": "σ(x) = x（镜像不变）",
+    "model": "gpt-5.5"
+  },
+  {
+    "title": "柳湾木牌",
+    "domain": "染坊",
+    "story_zh": "柳湾有间染坊，门前木牌青面朝外。阿绣见了，就把白布浸进蓝缸；到晚，小徒弟翻牌，白面朝外，她便把青布铺在露水里。露水慢慢洗成白布。鸡叫时，小徒弟又翻牌，门前木牌青面朝外。阿绣见了，就把白布浸进蓝缸。",
+    "story_en": "In Willow Bend there was a dye shed, and its wooden sign showed the blue side. When A-Xiu saw it, she dipped white cloth in the vat. At dusk her young helper turned the sign to the white side, and she laid the blue cloth in the dew. By cockcrow the dew had washed it pale. The helper turned the sign again, and the wooden sign showed the blue side. When A-Xiu saw it, she dipped white cloth in the vat.",
+    "why_shape": "翻牌使青/白状态互换，两次回到原状，叙述首尾相接体现 f∘f=id 的交替不变式。",
+    "motif_id": "alternation",
+    "equation": "f∘f = id（交替/周期）",
+    "model": "gpt-5.5"
+  },
+  {
+    "title": "窑火绕碗",
+    "domain": "陶窑",
+    "story_zh": "清水镇有口老窑，窑心睡着红碗。窑匠阿槐每添把柴，火光就绕碗走远些，照到门、井、柳树和坡上的小屋。小屋里，阿槐的娃正捧着红碗，听爹说清水镇有口老窑。",
+    "story_en": "In Clearwater stood an old kiln, and in its warm heart slept a red bowl. Whenever Huai fed the fire, the glow went round the bowl and reached farther: the door, the well, the willow, the hut on the slope. In that hut, Huai's child held the red bowl and listened to his father begin, In Clearwater stood an old kiln.",
+    "why_shape": "叙事围着老窑与红碗回返，同时每次火光外扩到更远处，形成旋转×生长的自指形。",
+    "motif_id": "spiral",
+    "equation": "r = a·e^{bθ}（旋转×生长）",
+    "model": "gpt-5.5"
+  },
+  {
+    "title": "百家甜粥",
+    "domain": "粥棚",
+    "story_zh": "腊月风硬，柳湾村口支起黑锅。杏花婶倒来黄米，铁匠李添上红豆，船娘阿蓼送来枣，放羊娃捧来山栗。锅里咕嘟咕嘟，香气把冷街捂热。后来，来的人不再报姓名，只把手里的小包倒进去。天黑时，热甜粥盛出，先给最晚归家的老更夫。",
+    "story_en": "In the hard winter wind, a black kettle steamed by the Liuwan gate. Aunt Xinghua poured in yellow millet, Blacksmith Li shook in red beans, Reed the boatwoman brought dates, and the shepherd boy emptied his cap of chestnuts. The pot murmured, and its smell warmed the cold street. After that, no one gave a name. Each opened a little bundle and tipped it in. At dusk, the sweet porridge was ladled first for Old Watchman Gu, last to come home.",
+    "why_shape": "叙述由多个独立来处逐句汇聚到同一口锅和同一碗粥，呈现 many→one 的汇聚结构。",
+    "motif_id": "convergence",
+    "equation": "many → one（汇聚）",
+    "model": "gpt-5.5"
+  },
+  {
+    "title": "甜井酱香",
+    "domain": "酱园路",
+    "story_zh": "柳湾的路怪，卖鱼的从河埠来，挑布的往山集去，脚总会踩到桂嫂的酱园门前。门前有口甜井。桂嫂舀一瓢水，笑着讲旧话：柳湾的路怪，卖鱼的从河埠来……",
+    "story_en": "In Willow Bend, the lanes had a mind of their own. A fish seller came up from the pier, and a cloth peddler headed for the hill fair, yet both found their feet at Aunt Gui’s sauce yard. By the sweet well she handed them a dipper and began the old tale: In Willow Bend, the lanes had a mind of their own...",
+    "why_shape": "叙事中每个来去的行动和故事的再讲都汇到桂嫂酱园门前，体现所有路径必经一点的不变式。",
+    "motif_id": "bottleneck",
+    "equation": "所有路径必经一点",
+    "model": "gpt-5.5"
+  },
+  {
+    "title": "白角青布",
+    "domain": "染坊",
+    "story_zh": "榕溪染坊晾布。青布挨青布，风来便点头；青布挨青布，月来便发亮。到阿蔓那匹，角上留着豆大的白。白角朝东，布竿也朝东；人沿布影走，走到河口，听见后头的青布在风里点头。",
+    "story_en": "At the dye yard by Willow Creek, blue cloth leaned against blue cloth. When wind came, they nodded; when moon came, they shone. Then came Ama’s length, with a bean-sized pale mark on its corner. That pale corner faced east, and so the poles faced east. Folks followed the cloth shadows to the river mouth, while the blue cloth behind them nodded in the wind.",
+    "why_shape": "故事用相同句式铺开规则场，再以白角这一异常打破不变式并给整体行动方向。",
+    "motif_id": "symmetry_breaking",
+    "equation": "规则场中的一个异常",
+    "model": "gpt-5.5"
+  }
+]
