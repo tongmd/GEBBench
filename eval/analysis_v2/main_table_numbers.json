@@ -1,0 +1,99 @@
+{
+  "api_gpt-5.5": {
+    "accs": {
+      "scene2motif": 75.71428571428571,
+      "skeleton2motif": 83.6734693877551,
+      "story2motif": 89.25619834710744,
+      "theorem2motif": 92.0,
+      "crossvoice": 64.28571428571429,
+      "xv_scene_thm": 80.95238095238095,
+      "xv_story_thm": 80.16528925619835,
+      "scene2motif_family4": 85.71428571428571
+    },
+    "avg": 81.47020295721595,
+    "n_tasks": 8
+  },
+  "api_gpt-5.2": {
+    "accs": {
+      "scene2motif": 71.42857142857143,
+      "skeleton2motif": 79.59183673469387,
+      "story2motif": 84.29752066115702,
+      "theorem2motif": 88.0,
+      "crossvoice": 35.714285714285715,
+      "xv_scene_thm": 67.14285714285714,
+      "xv_story_thm": 61.15702479338843,
+      "scene2motif_family4": 80.0
+    },
+    "avg": 70.9165120593692,
+    "n_tasks": 8
+  },
+  "api_claude-opus-4-8": {
+    "accs": {
+      "scene2motif": 60.95238095238095,
+      "skeleton2motif": 69.38775510204081,
+      "story2motif": 71.07438016528926,
+      "theorem2motif": 76.0,
+      "crossvoice": 43.80952380952381,
+      "xv_scene_thm": 68.57142857142857,
+      "xv_story_thm": 66.94214876033058,
+      "scene2motif_family4": 78.57142857142857
+    },
+    "avg": 66.91363074155282,
+    "n_tasks": 8
+  },
+  "qwen2.5-vl-32b": {
+    "accs": {
+      "scene2motif": 47.61904761904762,
+      "skeleton2motif": 63.265306122448976,
+      "story2motif": 49.586776859504134,
+      "theorem2motif": 80.0,
+      "crossvoice": 32.38095238095238,
+      "xv_scene_thm": 50.95238095238095,
+      "xv_story_thm": 49.586776859504134,
+      "scene2motif_family4": 71.9047619047619
+    },
+    "avg": 55.66200033732501,
+    "n_tasks": 8
+  },
+  "deepseek-coder-v2-lite": {
+    "accs": {
+      "story2motif": 20.66115702479339,
+      "theorem2motif": 36.0,
+      "xv_story_thm": 32.231404958677686
+    },
+    "avg": 29.630853994490355,
+    "n_tasks": 3
+  },
+  "qwen2.5-14b": {
+    "accs": {
+      "story2motif": 43.80165289256198,
+      "theorem2motif": 76.0,
+      "xv_story_thm": 34.710743801652896
+    },
+    "avg": 51.50413223140496,
+    "n_tasks": 3
+  },
+  "qwen2.5-7b": {
+    "accs": {
+      "story2motif": 16.52892561983471,
+      "theorem2motif": 68.0,
+      "xv_story_thm": 34.710743801652896
+    },
+    "avg": 39.7465564738292,
+    "n_tasks": 3
+  },
+  "qwen2-vl-7b": {
+    "accs": {
+      "scene2motif": 28.095238095238095,
+      "skeleton2motif": 36.734693877551024,
+      "story2motif": 19.00826446280992,
+      "theorem2motif": 68.0,
+      "crossvoice": 22.857142857142858,
+      "xv_scene_thm": 33.80952380952381,
+      "xv_story_thm": 32.231404958677686,
+      "scene2motif_family4": 48.57142857142857
+    },
+    "avg": 36.1634620790465,
+    "n_tasks": 8
+  }
+}

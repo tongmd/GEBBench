@@ -1,0 +1,2235 @@
+{
+  "scene_open_crates.png": {
+    "motif": "nesting",
+    "verify": {
+      "passed": true,
+      "problems": ""
+    },
+    "family4": {
+      "motif_id": "nesting"
+    },
+    "verdict": "pass"
+  },
+  "scene_ice_fishing_holes.png": {
+    "motif": "nesting",
+    "verify": {
+      "passed": true,
+      "problems": ""
+    },
+    "family4": {
+      "motif_id": "nesting"
+    },
+    "verdict": "pass"
+  },
+  "scene_cut_cabbage.png": {
+    "motif": "nesting",
+    "verify": {
+      "passed": true,
+      "problems": "深度递进结构存在（同心环向中心收束，未见从内层回跳到外层的路径）。但层级由连续纹理形成，缺少明确的单一路径或节点来严格界定“进入新一层”的离散事件，因此不变量呈现偏弱。"
+    },
+    "family4": {
+      "motif_id": "nesting"
+    },
+    "verdict": "pass"
+  },
+  "scene_theater_arches.png": {
+    "motif": "nesting",
+    "verify": {
+      "passed": true,
+      "problems": "层级递进结构明确（同心拱门/圆环向中心收敛），未见回到外层的闭合路径或旁路；但层间过渡较平滑、可读的“跨层门槛”不算非常强，仍总体满足深度只增不减。"
+    },
+    "family4": {
+      "motif_id": "nesting"
+    },
+    "verdict": "pass"
+  },
+  "scene_cedar_bento.png": {
+    "motif": "nesting",
+    "verify": {
+      "passed": true,
+      "problems": "层级递进结构清晰，但深度层数有限，且有少量元素（如筷子、布巾）跨越多层环带，弱化了“只增不减”的严格单向进入感。"
+    },
+    "family4": {
+      "motif_id": "nesting"
+    },
+    "verdict": "pass"
+  },
+  "scene_quarry_pits.png": {
+    "motif": "nesting",
+    "verify": {
+      "passed": true,
+      "problems": ""
+    },
+    "family4": {
+      "motif_id": "nesting"
+    },
+    "verdict": "pass"
+  },
+  "scene_lantern_tunnels.png": {
+    "motif": "nesting",
+    "verify": {
+      "passed": true,
+      "problems": ""
+    },
+    "family4": {
+      "motif_id": "nesting"
+    },
+    "verdict": "pass"
+  },
+  "scene_alpine_lake.png": {
+    "motif": "symmetry",
+    "verify": {
+      "passed": true,
+      "problems": "对称结构主要由湖面倒影实现，整体近似沿水平中轴（水线）翻转重合；但左右两侧树木/小屋分布与山体细节并非严格镜像，只是强对称感而非逐点完全重合。"
+    },
+    "family4": {
+      "motif_id": "symmetry"
+    },
+    "verdict": "pass"
+  },
+  "scene_opera_stage.png": {
+    "motif": "symmetry",
+    "verify": {
+      "passed": true,
+      "problems": "对称结构明确：舞台以中央芭蕾舞者为中轴，左右两侧光束、舞者残影/位置分布与地面灯带基本镜像对应。细节上左右残影数量与姿态、光束强弱/角度存在轻微不一致，但不影响整体回文式（镜像）构图骨架。"
+    },
+    "family4": {
+      "motif_id": "symmetry"
+    },
+    "verdict": "pass"
+  },
+  "scene_market_still_life.png": {
+    "motif": "symmetry",
+    "verify": {
+      "passed": true,
+      "problems": "镜像回文结构明确：以中央烛台为中轴，左右梨/葡萄/杯/布与刀及面包碎形成对应对称。细节上仍有轻微不一致（葡萄串形状与数量、杯口高低、刀柄角度、面包碎分布与光照阴影），但不破坏整体逐点重合的构图意图。"
+    },
+    "family4": {
+      "motif_id": "symmetry"
+    },
+    "verdict": "pass"
+  },
+  "scene_desert_caravan.png": {
+    "motif": "symmetry",
+    "verify": {
+      "passed": true,
+      "problems": "对称结构存在但不够严格：左右两侧远处骆驼队列的数量/间距与个体姿态不完全镜像，地面脚印与阴影也有细微不对齐；整体仍以中心人物与双驼为中轴形成明显回文式镜像构图。"
+    },
+    "family4": {
+      "motif_id": "symmetry"
+    },
+    "verdict": "pass"
+  },
+  "scene_canal_fields.png": {
+    "motif": "symmetry",
+    "verify": {
+      "passed": true,
+      "problems": ""
+    },
+    "family4": {
+      "motif_id": "symmetry"
+    },
+    "verdict": "pass"
+  },
+  "scene_koi_pond_print.png": {
+    "motif": "symmetry",
+    "verify": {
+      "passed": true,
+      "problems": ""
+    },
+    "family4": {
+      "motif_id": "symmetry"
+    },
+    "verdict": "pass"
+  },
+  "scene_coral_tidepool.png": {
+    "motif": "symmetry",
+    "verify": {
+      "passed": true,
+      "problems": ""
+    },
+    "family4": {
+      "motif_id": "symmetry"
+    },
+    "verdict": "pass"
+  },
+  "scene_hotel_staircase.png": {
+    "motif": "symmetry",
+    "verify": {
+      "passed": true,
+      "problems": "对称结构明确：以楼梯与地毯的中轴为对称轴，左右扶手、灯柱、棕榈与侧墙基本镜像重合。仅存在轻微透视与细节差异（植物叶形/灯具位置微差），但不破坏整体回文式镜像构图骨架。"
+    },
+    "family4": {
+      "motif_id": "symmetry"
+    },
+    "verdict": "pass"
+  },
+  "scene_leaf_veins_macro.png": {
+    "motif": "recursion",
+    "verify": {
+      "passed": true,
+      "problems": "递归/自相似结构存在于叶脉分叉：主脉→侧脉→更细支脉按相似规则逐级生成；但“终止于基例后逐层原路返回/必出几层”的回返与闭合路径在静态构图中不够明确，整体更像开放的树状分形而非带明确回溯的递归过程。"
+    },
+    "family4": {
+      "motif_id": "recursion"
+    },
+    "verdict": "pass"
+  },
+  "scene_candle_wax_oil.png": {
+    "motif": "recursion",
+    "verify": {
+      "passed": true,
+      "problems": "递归/自相似分叉结构存在但层数较少，且缺少“终止于基例后逐层原路返回”的明确闭合回指路径（更像无回返的树状扩展）。"
+    },
+    "family4": {
+      "motif_id": "recursion"
+    },
+    "verdict": "pass"
+  },
+  "scene_snow_paths_woodblock.png": {
+    "motif": "recursion",
+    "verify": {
+      "passed": true,
+      "problems": "递归/自相似主要体现在单一“Y”形主干分叉及分叉端点的再次细分（足迹点列），但层级较浅（约两层），且缺少清晰的“终止于基例后逐层原路返回”的可见回返路径（更像一次分叉扩散而非往返闭合）。"
+    },
+    "family4": {
+      "motif_id": "recursion"
+    },
+    "verdict": "pass"
+  },
+  "scene_seaweed_ink.png": {
+    "motif": "recursion",
+    "verify": {
+      "passed": true,
+      "problems": "递归/自相似的分叉结构可读（主干→分叉→更小分叉/叶片），但层级较浅，缺少更明确的“终止基例后逐层原路返回”的回指/闭合路径表现，更多是树状展开而非清晰的返回链。"
+    },
+    "family4": {
+      "motif_id": "recursion"
+    },
+    "verdict": "pass"
+  },
+  "scene_fiber_optic_long_exposure.png": {
+    "motif": "recursion",
+    "verify": {
+      "passed": true,
+      "problems": "递归自相似的分叉结构清晰，但层级较少（约2-3层），且缺少“逐层原路返回/回溯”的空间对应（没有闭合或明确的回返路径），终止基例仅以末端点状节点暗示。"
+    },
+    "family4": {
+      "motif_id": "recursion"
+    },
+    "verdict": "pass"
+  },
+  "scene_gold_thread_embroidery.png": {
+    "motif": "recursion",
+    "verify": {
+      "passed": true,
+      "problems": "递归/自相似的层级存在但较弱：只有一层分叉（主干→两臂→各自小分叉），未呈现多层逐级生成与终止后逐层“原路返回”的闭合/回指结构；整体更像树状展开而非明确的生成-回溯过程。"
+    },
+    "family4": {
+      "motif_id": "nesting"
+    },
+    "verdict": "weak"
+  },
+  "scene_red_coral_macro.png": {
+    "motif": "recursion",
+    "verify": {
+      "passed": true,
+      "problems": "递归/自相似的分叉结构明确（主干→两大分支→更小分支→末端小突起），但层级较浅、缺少“终止于基例后逐层原路返回/闭合回返”的空间对应（更像树形展开而非回到起点的回溯路径）。"
+    },
+    "family4": {
+      "motif_id": "recursion"
+    },
+    "verdict": "pass"
+  },
+  "scene_atoll_lagoon.png": {
+    "motif": "cycle",
+    "verify": {
+      "passed": true,
+      "problems": ""
+    },
+    "family4": {
+      "motif_id": "cycle"
+    },
+    "verdict": "pass"
+  },
+  "scene_oak_year.png": {
+    "motif": "cycle",
+    "verify": {
+      "passed": true,
+      "problems": ""
+    },
+    "family4": {
+      "motif_id": "cycle"
+    },
+    "verdict": "pass"
+  },
+  "scene_mountain_water.png": {
+    "motif": "cycle",
+    "verify": {
+      "passed": true,
+      "problems": ""
+    },
+    "family4": {
+      "motif_id": "cycle"
+    },
+    "verdict": "pass"
+  },
+  "scene_pollen_bees.png": {
+    "motif": "cycle",
+    "verify": {
+      "passed": true,
+      "problems": "环形闭合路径明确，但“因果箭头”只以金色粒子轨迹暗示、方向性不强；事件点数量满足≥3且互异，但各点间距与视觉权重略不均（右上/右侧花更突出），平等性稍弱。"
+    },
+    "family4": {
+      "motif_id": "cycle"
+    },
+    "verdict": "pass"
+  },
+  "scene_candle_courtyard.png": {
+    "motif": "cycle",
+    "verify": {
+      "passed": true,
+      "problems": ""
+    },
+    "family4": {
+      "motif_id": "cycle"
+    },
+    "verdict": "pass"
+  },
+  "scene_tea_rain.png": {
+    "motif": "cycle",
+    "verify": {
+      "passed": true,
+      "problems": "环形闭合与同层级“事件”序列存在（采摘→摊晾/揉捻→蒸制→沏饮→回到自然循环），但环上可明确辨识的互异节点略少且边界不够硬；部分节点以烟/云装饰性连接，导致“因果箭头”更像连续流动而非离散 n≥3 个等位事件点。"
+    },
+    "family4": {
+      "motif_id": "cycle"
+    },
+    "verdict": "pass"
+  },
+  "scene_crop_fields.png": {
+    "motif": "cycle",
+    "verify": {
+      "passed": true,
+      "problems": "构图以中心为轴的环形分区形成闭合一圈的同层循环（各扇区同级、无层级/递归）。但事件点数仅以扇区数暗示，缺少明确的方向性“因果箭头”标记与离散节点界定，循环的“逐字复原”主要靠旋转对称而非可读的序列符号。"
+    },
+    "family4": {
+      "motif_id": "cycle"
+    },
+    "verdict": "pass"
+  },
+  "scene_orchard_crates.png": {
+    "motif": "alternation",
+    "verify": {
+      "passed": true,
+      "problems": ""
+    },
+    "family4": {
+      "motif_id": "alternation"
+    },
+    "verdict": "pass"
+  },
+  "scene_courtly_chess_pawns.png": {
+    "motif": "alternation",
+    "verify": {
+      "passed": true,
+      "problems": ""
+    },
+    "family4": {
+      "motif_id": "alternation"
+    },
+    "verdict": "pass"
+  },
+  "scene_tea_cups_woodblock.png": {
+    "motif": "alternation",
+    "verify": {
+      "passed": true,
+      "problems": ""
+    },
+    "family4": {
+      "motif_id": "alternation"
+    },
+    "verdict": "pass"
+  },
+  "scene_mountain_stepping_stones.png": {
+    "motif": "alternation",
+    "verify": {
+      "passed": true,
+      "problems": ""
+    },
+    "family4": {
+      "motif_id": "alternation"
+    },
+    "verdict": "pass"
+  },
+  "scene_succulent_leaf_macro.png": {
+    "motif": "spiral",
+    "verify": {
+      "passed": true,
+      "problems": "尺度层级与螺旋递增关系明确，但严格的“每转回同一方位按同一比例”难以从静态单帧精确验证；层级数量有限。"
+    },
+    "family4": {
+      "motif_id": "spiral"
+    },
+    "verdict": "pass"
+  },
+  "scene_vineyard_road.png": {
+    "motif": "spiral",
+    "verify": {
+      "passed": true,
+      "problems": "虽然画面呈螺旋式向外扩张、未回到原尺度，符合“每转回同一方位就按比例变大”的总体趋势，但比例增长并不严格恒定且缺少明确的尺度标记来验证每一圈的固定倍增关系。"
+    },
+    "family4": {
+      "motif_id": "spiral"
+    },
+    "verdict": "pass"
+  },
+  "scene_cinnamon_bun.png": {
+    "motif": "spiral",
+    "verify": {
+      "passed": true,
+      "problems": "螺旋结构清晰表达“每转回同一方位尺度增大且不回到原尺度”，但只有有限圈层，尺度层级链较短。"
+    },
+    "family4": {
+      "motif_id": "spiral"
+    },
+    "verdict": "pass"
+  },
+  "scene_violin_pegbox.png": {
+    "motif": "spiral",
+    "verify": {
+      "passed": true,
+      "problems": "构图以螺旋形态呈现逐圈外扩的尺度递增，未出现闭合回到原尺度；但层级数量有限、比例增长不够强烈，递增规律主要体现在局部螺旋细节而非更长的空间路径。"
+    },
+    "family4": {
+      "motif_id": "spiral"
+    },
+    "verdict": "pass"
+  },
+  "scene_sea_eddy.png": {
+    "motif": "spiral",
+    "verify": {
+      "passed": true,
+      "problems": "螺旋/涡旋路径体现了每次回到相近方位时半径增大的尺度递增，且不闭合回到原尺度；但层级数有限、比例并非严格恒定（增长率略有变化），尺度递增更多由视觉笔触与泡沫带宽强化而非明确的几何刻度。"
+    },
+    "family4": {
+      "motif_id": "spiral"
+    },
+    "verdict": "pass"
+  },
+  "scene_ram_horn.png": {
+    "motif": "spiral",
+    "verify": {
+      "passed": true,
+      "problems": "结构已体现为螺旋/盘绕形态，沿着回到相近方位时尺度逐步放大且不回到原尺度；但层级数量有限，主要是两级（内小螺旋+外大环/角），增长链条不够长。"
+    },
+    "family4": {
+      "motif_id": "spiral"
+    },
+    "verdict": "pass"
+  },
+  "scene_ember_dancer.png": {
+    "motif": "spiral",
+    "verify": {
+      "passed": true,
+      "problems": "结构存在但层级较少：主要表现为单一螺旋路径的尺度递增，未呈现多次“回到同一方位”的清晰离散周期与稳定比例步进；不过整体未回到原尺度，符合不变量核心要求。"
+    },
+    "family4": {
+      "motif_id": "spiral"
+    },
+    "verdict": "pass"
+  },
+  "scene_mangrove_culvert.png": {
+    "motif": "bottleneck",
+    "verify": {
+      "passed": true,
+      "problems": ""
+    },
+    "family4": {
+      "motif_id": "bottleneck"
+    },
+    "verdict": "pass"
+  },
+  "scene_courtyard_moon_gate.png": {
+    "motif": "bottleneck",
+    "verify": {
+      "passed": true,
+      "problems": ""
+    },
+    "family4": {
+      "motif_id": "bottleneck"
+    },
+    "verdict": "pass"
+  },
+  "scene_ant_farm_throat.png": {
+    "motif": "bottleneck",
+    "verify": {
+      "passed": true,
+      "problems": ""
+    },
+    "family4": {
+      "motif_id": "bottleneck"
+    },
+    "verdict": "pass"
+  },
+  "scene_snowshoe_pass.png": {
+    "motif": "bottleneck",
+    "verify": {
+      "passed": true,
+      "problems": "结构基本符合：左右两岸各自有多条小路互通/形成网状；两岸之间的连接都汇入中央唯一“节点”（圆形空地/交汇点）再分出。删除该点会将整体分成左右两块而各自仍保持连通。可能的问题是两岸内部的互通主要由同一条主干+支路构成，网状冗余不算很强。"
+    },
+    "family4": {
+      "motif_id": "bottleneck"
+    },
+    "verdict": "pass"
+  },
+  "scene_rail_terminal.png": {
+    "motif": "convergence",
+    "verify": {
+      "passed": true,
+      "problems": ""
+    },
+    "family4": {
+      "motif_id": "convergence"
+    },
+    "verdict": "pass"
+  },
+  "scene_ant_nest.png": {
+    "motif": "convergence",
+    "verify": {
+      "passed": true,
+      "problems": ""
+    },
+    "family4": {
+      "motif_id": "bottleneck"
+    },
+    "verdict": "weak"
+  },
+  "scene_lightning_rod.png": {
+    "motif": "convergence",
+    "verify": {
+      "passed": true,
+      "problems": "多条线索（闪电分叉）汇入同一终点（屋顶落点）清晰；但分叉层级与“各自推进”的空间独立性偏弱，部分分支近似并行贴合，线索区分度不高。"
+    },
+    "family4": {
+      "motif_id": "convergence"
+    },
+    "verdict": "pass"
+  },
+  "scene_paint_cup.png": {
+    "motif": "convergence",
+    "verify": {
+      "passed": true,
+      "problems": ""
+    },
+    "family4": {
+      "motif_id": "convergence"
+    },
+    "verdict": "pass"
+  },
+  "scene_mill_belts.png": {
+    "motif": "convergence",
+    "verify": {
+      "passed": true,
+      "problems": "多个并行“线索”与汇入终点的结构存在，但终点的“到此为止”不够明确：汇入处仍像可继续延伸/被收纳的生产流程节点，而非明显的最终终止点；汇入点也不够强势集中（更像同一区域而非单一明确点）。"
+    },
+    "family4": {
+      "motif_id": "convergence"
+    },
+    "verdict": "pass"
+  },
+  "scene_broken_solar_panel.png": {
+    "motif": "symmetry_breaking",
+    "verify": {
+      "passed": true,
+      "problems": ""
+    },
+    "family4": {
+      "motif_id": "symmetry_breaking"
+    },
+    "verdict": "pass"
+  },
+  "scene_red_beach_umbrella.png": {
+    "motif": "symmetry_breaking",
+    "verify": {
+      "passed": true,
+      "problems": "规则（黄色伞/物体在规则网格中重复）覆盖全场，但违例的“唯一性”和“可精确定位”较弱：红色伞虽明显异色，但位置不严格落在网格点上/近似偏移，使其作为唯一违例的定位略不精确。"
+    },
+    "family4": {
+      "motif_id": "symmetry_breaking"
+    },
+    "verdict": "pass"
+  },
+  "scene_burnt_bun.png": {
+    "motif": "symmetry_breaking",
+    "verify": {
+      "passed": true,
+      "problems": ""
+    },
+    "family4": {
+      "motif_id": "symmetry_breaking"
+    },
+    "verdict": "pass"
+  },
+  "scene_blue_roof_tile.png": {
+    "motif": "symmetry_breaking",
+    "verify": {
+      "passed": true,
+      "problems": "规则基本覆盖全场（橙色方格重复铺陈），且仅有一处可精确定位的违例（右侧偏中的单个蓝色方格）。但该违例的“唯一性”依赖于画面裁切范围；无法确认画面之外是否还有其他违例。"
+    },
+    "family4": {
+      "motif_id": "symmetry_breaking"
+    },
+    "verdict": "pass"
+  },
+  "scene_dark_lit_window.png": {
+    "motif": "symmetry_breaking",
+    "verify": {
+      "passed": true,
+      "problems": "规则（均匀网格中方形窗口发光）覆盖全场，但存在不止一处违例：除一处明显的红色窗口外，还可见至少一处不发光/偏暗的窗口，因而违例不唯一、不可精确定位为单点。"
+    },
+    "family4": {
+      "motif_id": "symmetry_breaking"
+    },
+    "verdict": "pass"
+  },
+  "scene_empty_seed_cell.png": {
+    "motif": "symmetry_breaking",
+    "verify": {
+      "passed": true,
+      "problems": "规则基本为“每格一株幼苗”，但有一处可精确定位的违例：画面中部偏右的一格为空/仅土壤。其余格子均一致；若将“规则”要求更严格到“每格幼苗形态完全一致”，则存在少量细微差异但不构成多处明确违例。"
+    },
+    "family4": {
+      "motif_id": "symmetry_breaking"
+    },
+    "verdict": "pass"
+  },
+  "scene_black_teacup.png": {
+    "motif": "symmetry_breaking",
+    "verify": {
+      "passed": true,
+      "problems": ""
+    },
+    "family4": {
+      "motif_id": "symmetry_breaking"
+    },
+    "verdict": "pass"
+  },
+  "scene_salt_pan_anomaly.png": {
+    "motif": "symmetry_breaking",
+    "verify": {
+      "passed": true,
+      "problems": "仅在右侧中部附近出现一处明显的违例（单个粉色格且带蓝色小片），其余格子均为同一规则的灰白方格网格；违例位置可精确定位且未见第二处异常。"
+    },
+    "family4": {
+      "motif_id": "symmetry_breaking"
+    },
+    "verdict": "pass"
+  },
+  "scene_camera_lcd.png": {
+    "motif": "self_reference",
+    "verify": {
+      "passed": true,
+      "problems": "内层屏幕呈现了同一构图的画中画自含结构，但内层内容较模糊、可辨识度不强（仍可看出手持相机与屏幕递归）。"
+    },
+    "family4": {
+      "motif_id": "recursion"
+    },
+    "verdict": "weak"
+  },
+  "scene_greenhouse_pane.png": {
+    "motif": "self_reference",
+    "verify": {
+      "passed": true,
+      "problems": "内层呈现外层同一温室/窗口的递归式自含构图，符合“一步指回自己”的自指结构；但内层的再内层细节逐级变小且略模糊，导致自指的可辨认性在更深层处变弱（不影响只需一层的判据）。"
+    },
+    "family4": {
+      "motif_id": "recursion"
+    },
+    "verdict": "weak"
+  },
+  "scene_market_awning.png": {
+    "motif": "self_reference",
+    "verify": {
+      "passed": true,
+      "problems": "自指通过“画中画”式视觉自含实现但较弱：画面中心存在多层嵌套的同构矩形/条纹棚顶结构，形成对整体构图的摹本；但内层细节不够清晰，难以逐项辨认为同一场景，仅能确认几何与布局的自相似。"
+    },
+    "family4": {
+      "motif_id": "recursion"
+    },
+    "verdict": "weak"
+  },
+  "scene_puppet_booth.png": {
+    "motif": "self_reference",
+    "verify": {
+      "passed": true,
+      "problems": "内层画面并非清晰可辨的“同一场景”的摹本，更像是逐层套框通向一个模糊的景象；自指结构主要由递归套框暗示而非明确的一步自含。"
+    },
+    "family4": {
+      "motif_id": "nesting"
+    },
+    "verdict": "weak"
+  },
+  "scene_salt_parking_lot.png": {
+    "motif": "isomorphism",
+    "verify": {
+      "passed": true,
+      "problems": "两侧确有“异质素材+同构骨架”的对应：左侧为多边形分区与连线/节点，右侧为停车场内星形/多边形导流岛与车道网络，整体关系可视为逐项可译。但对应并非无一例外：右侧骨架被停车位网格、车辆与路缘细节干扰，部分连线/节点数量与左侧不完全一致，导致同构性偏弱。"
+    },
+    "family4": {
+      "motif_id": "isomorphism"
+    },
+    "verdict": "pass"
+  },
+  "scene_filtration_corridor.png": {
+    "motif": "isomorphism",
+    "verify": {
+      "passed": true,
+      "problems": ""
+    },
+    "family4": {
+      "motif_id": "isomorphism"
+    },
+    "verdict": "pass"
+  },
+  "scene_promenade_assembly_aisle.png": {
+    "motif": "isomorphism",
+    "verify": {
+      "passed": true,
+      "problems": "两半画面确有“异质素材+同构骨架”的意图：左侧观景平台的分叉/围合路径与右侧车间地面黄线分区/工位岛的分叉-汇合关系在整体上可类比。但对应不是逐项无一例外：左侧为少量节点的单一Y形加一个端部平台，右侧包含多级网格与多个封闭/半封闭单元，节点数与连线拓扑更复杂，难以做到严格的一一对应字典。"
+    },
+    "family4": {
+      "motif_id": "figure_ground"
+    },
+    "verdict": "weak"
+  },
+  "scene_paper_streamer.png": {
+    "motif": "mobius",
+    "verify": {
+      "passed": true,
+      "problems": ""
+    },
+    "family4": {
+      "motif_id": "mobius"
+    },
+    "verdict": "pass"
+  },
+  "scene_packing_strap.png": {
+    "motif": "mobius",
+    "verify": {
+      "passed": true,
+      "problems": ""
+    },
+    "family4": {
+      "motif_id": "mobius"
+    },
+    "verdict": "pass"
+  },
+  "scene_wool_scarf.png": {
+    "motif": "mobius",
+    "verify": {
+      "passed": true,
+      "problems": "半扭转的证据偏弱：带面正反交换主要靠局部交叠与明暗暗示，未清晰呈现连续带面在扭转处的“翻面”过渡；整体仍可能被读成普通闭合环带而非明确的莫比乌斯带。"
+    },
+    "family4": {
+      "motif_id": "mobius"
+    },
+    "verdict": "pass"
+  },
+  "scene_silk_ribbons.png": {
+    "motif": "braiding",
+    "verify": {
+      "passed": true,
+      "problems": ""
+    },
+    "family4": {
+      "motif_id": "braiding"
+    },
+    "verdict": "pass"
+  },
+  "scene_garden_hoses.png": {
+    "motif": "braiding",
+    "verify": {
+      "passed": true,
+      "problems": ""
+    },
+    "family4": {
+      "motif_id": "braiding"
+    },
+    "verdict": "pass"
+  },
+  "scene_seaweed_fronds.png": {
+    "motif": "braiding",
+    "verify": {
+      "passed": true,
+      "problems": ""
+    },
+    "family4": {
+      "motif_id": "braiding"
+    },
+    "verdict": "pass"
+  },
+  "scene_fishing_lines.png": {
+    "motif": "braiding",
+    "verify": {
+      "passed": true,
+      "problems": "交叉序列与上下穿越关系存在但较弱：线条亮度/重叠区分有限，部分交叉点的前后层级不够清晰；总体仍呈现三股线的交替相邻交叉（辫状）结构。"
+    },
+    "family4": {
+      "motif_id": "interference"
+    },
+    "verdict": "weak"
+  },
+  "scene_prayer_banners.png": {
+    "motif": "braiding",
+    "verify": {
+      "passed": true,
+      "problems": "交织结构清晰呈现三股以上的相邻交叉与上下穿越关系；但整体更像装饰性连续纹样，端点与整体置换积的对应关系不易从构图中读出。"
+    },
+    "family4": {
+      "motif_id": "braiding"
+    },
+    "verdict": "pass"
+  },
+  "scene_workshop_cables.png": {
+    "motif": "braiding",
+    "verify": {
+      "passed": true,
+      "problems": ""
+    },
+    "family4": {
+      "motif_id": "braiding"
+    },
+    "verdict": "pass"
+  },
+  "scene_rice_paddy.png": {
+    "motif": "interference",
+    "verify": {
+      "passed": true,
+      "problems": ""
+    },
+    "family4": {
+      "motif_id": "interference"
+    },
+    "verdict": "pass"
+  },
+  "scene_soup_bowl.png": {
+    "motif": "interference",
+    "verify": {
+      "passed": true,
+      "problems": ""
+    },
+    "family4": {
+      "motif_id": "interference"
+    },
+    "verdict": "pass"
+  },
+  "scene_courtyard_cistern.png": {
+    "motif": "interference",
+    "verify": {
+      "passed": true,
+      "problems": ""
+    },
+    "family4": {
+      "motif_id": "interference"
+    },
+    "verdict": "pass"
+  },
+  "scene_fountain_basin.png": {
+    "motif": "interference",
+    "verify": {
+      "passed": true,
+      "problems": ""
+    },
+    "family4": {
+      "motif_id": "interference"
+    },
+    "verdict": "pass"
+  },
+  "scene_station_puddle.png": {
+    "motif": "interference",
+    "verify": {
+      "passed": true,
+      "problems": ""
+    },
+    "family4": {
+      "motif_id": "interference"
+    },
+    "verdict": "pass"
+  },
+  "scene_salt_pan.png": {
+    "motif": "interference",
+    "verify": {
+      "passed": true,
+      "problems": ""
+    },
+    "family4": {
+      "motif_id": "interference"
+    },
+    "verdict": "pass"
+  },
+  "scene_reservoir_inlet.png": {
+    "motif": "interference",
+    "verify": {
+      "passed": true,
+      "problems": ""
+    },
+    "family4": {
+      "motif_id": "interference"
+    },
+    "verdict": "pass"
+  },
+  "scene_bakery_glaze.png": {
+    "motif": "interference",
+    "verify": {
+      "passed": true,
+      "problems": ""
+    },
+    "family4": {
+      "motif_id": "interference"
+    },
+    "verdict": "pass"
+  },
+  "scene_greenhouse_plots.png": {
+    "motif": "tiling",
+    "verify": {
+      "passed": true,
+      "problems": "构图骨架呈六边形蜂窝状单元的规则周期重复，整体满足“平移一格可重合”的平铺不变量；但受透视边界裁切影响，画面边缘处单元不完整，且各格内植被密度不同使重复性不够纯粹。"
+    },
+    "family4": {
+      "motif_id": "tiling"
+    },
+    "verdict": "pass"
+  },
+  "scene_terracotta_roof.png": {
+    "motif": "tiling",
+    "verify": {
+      "passed": true,
+      "problems": ""
+    },
+    "family4": {
+      "motif_id": "tiling"
+    },
+    "verdict": "pass"
+  },
+  "scene_archive_boxes.png": {
+    "motif": "tiling",
+    "verify": {
+      "passed": true,
+      "problems": ""
+    },
+    "family4": {
+      "motif_id": "tiling"
+    },
+    "verdict": "pass"
+  },
+  "scene_fruit_crates.png": {
+    "motif": "tiling",
+    "verify": {
+      "passed": true,
+      "problems": ""
+    },
+    "family4": {
+      "motif_id": "tiling"
+    },
+    "verdict": "pass"
+  },
+  "scene_lantern_ceiling.png": {
+    "motif": "tiling",
+    "verify": {
+      "passed": true,
+      "problems": "周期性平铺的网格骨架基本成立（六边形灯笼单元重复排列）。但受透视与边界裁切影响，完整平移一格的全局同构性只能在画面中部局部区域清晰成立；颜色/亮度变化也使严格“无一例外”的感觉偏弱。未见恰一处显著异常单元格。"
+    },
+    "family4": {
+      "motif_id": "interference"
+    },
+    "verdict": "weak"
+  },
+  "scene_reading_cubbies.png": {
+    "motif": "tiling",
+    "verify": {
+      "passed": true,
+      "problems": "构图骨架为规则六边形蜂窝网格的周期重复，单元格形状与排列一致，满足平移一格可重合的抽象不变量；但边缘存在画幅截断且个别格内内容（书/织物）差异较大，使“重合”主要体现在网格而非填充物上。"
+    },
+    "family4": {
+      "motif_id": "tiling"
+    },
+    "verdict": "pass"
+  },
+  "scene_traffic_roundabout.png": {
+    "motif": "hub",
+    "verify": {
+      "passed": true,
+      "problems": ""
+    },
+    "family4": {
+      "motif_id": "hub"
+    },
+    "verdict": "pass"
+  },
+  "scene_desert_well.png": {
+    "motif": "hub",
+    "verify": {
+      "passed": true,
+      "problems": "层级很弱：中心节点及其辐射分支清晰，但外侧端点多为成片区域边界而非明确“孤点”，且分支内部存在纹理/道路细分，严格意义的“去掉中心后全图碎成孤点”只在骨架级别近似成立。"
+    },
+    "family4": {
+      "motif_id": "convergence"
+    },
+    "verdict": "weak"
+  },
+  "scene_brass_chandelier.png": {
+    "motif": "hub",
+    "verify": {
+      "passed": true,
+      "problems": ""
+    },
+    "family4": {
+      "motif_id": "hub"
+    },
+    "verdict": "pass"
+  },
+  "scene_garden_parasol.png": {
+    "motif": "hub",
+    "verify": {
+      "passed": true,
+      "problems": "中心辐射结构基本满足“任意两端点之间只隔中心一点”，但边缘端点并非严格孤点：伞面连续相连形成环状面，去掉中心后仍由伞面纹理/边缘连通，不会碎成完全孤点。"
+    },
+    "family4": {
+      "motif_id": "hub"
+    },
+    "verdict": "pass"
+  },
+  "scene_mooring_bollard.png": {
+    "motif": "hub",
+    "verify": {
+      "passed": true,
+      "problems": "中心辐射结构明确（中央系泊桩为唯一中心，绳索/船只为端点），但有少量背景码头与船只形成弱旁路/连续区域，使“去掉中心全图碎成孤点”的断开性不够绝对。"
+    },
+    "family4": {
+      "motif_id": "hub"
+    },
+    "verdict": "pass"
+  },
+  "scene_laundry_pole.png": {
+    "motif": "hub",
+    "verify": {
+      "passed": true,
+      "problems": "仅弱实现：中心枢纽明确且各端点通过中心相连，但外圈存在多端点间的绳索连接形成小段连续路径，去掉中心后不完全碎成孤点。"
+    },
+    "family4": {
+      "motif_id": "hub"
+    },
+    "verdict": "pass"
+  },
+  "scene_ceiling_fan.png": {
+    "motif": "hub",
+    "verify": {
+      "passed": true,
+      "problems": "中心点到各“端点”（扇叶末端）之间的路径不只隔一个中心点，而是包含扇叶这一段连续结构；去掉中心后也不会碎成孤点，而是留下多条独立线段/臂。更像星形图（中心+多条臂），而非“中心+若干孤端点”的纯K1,n结构。"
+    },
+    "family4": {
+      "motif_id": "hub"
+    },
+    "verdict": "pass"
+  },
+  "scene_coat_stand.png": {
+    "motif": "hub",
+    "verify": {
+      "passed": true,
+      "problems": "中心点明确，但“任意两端点之间只隔中心一点”实现不够严格：部分端点/挂物在视觉上通过衣物垂落与杆件附近形成局部连成一片的连续面，弱化了“仅经中心相连”的纯星形图；去掉中心时虽基本呈孤点分裂，但仍可能被这些附着/重叠读成非孤点。"
+    },
+    "family4": {
+      "motif_id": "hub"
+    },
+    "verdict": "pass"
+  },
+  "scene_desert_water_jars.png": {
+    "motif": "infinite_descent",
+    "verify": {
+      "passed": true,
+      "problems": "画面以台阶式路径承载严格递减的“更小同类案例”链（陶罐尺寸逐步变小），并在最右端落到最小罐形成“撞地板”的终止感，基本同构于良序禁止无底下降链的结构。但链条长度较短、且未通过回指/取消起点等构图手段强化“整条链连同起点被判不存在”的刀锋回挥效果，仅表现了下降序列与终止。"
+    },
+    "family4": {
+      "motif_id": "infinite_descent"
+    },
+    "verdict": "pass"
+  },
+  "scene_rice_paddy_pools.png": {
+    "motif": "infinite_descent",
+    "verify": {
+      "passed": true,
+      "problems": "构图以台阶状水池沿山体形成单向“严格变小”的尺度链，符合递降链意象；但未呈现“逼迫每一步必然推出更小同类”的因果必然性，也缺少明确的“地板/撞到1从而取消开端”的终止边界或回锋结构，下降层数较少且结论性弱。"
+    },
+    "family4": {
+      "motif_id": "recursion"
+    },
+    "verdict": "weak"
+  },
+  "scene_porcelain_teacups.png": {
+    "motif": "infinite_descent",
+    "verify": {
+      "passed": true,
+      "problems": "构图用沿对角线逐级变小的杯子/台阶表达“严格递减链”，但缺少关键的结构刀锋：没有把“因此起点不存在/回挥取消开端”这一反证式回指表现为闭合或回箭，反而用向下落的箭头给出继续推进到某个终点/地板的动势；层级链条较短，递降的良序禁止（无底下降链不可能）的‘不可能性’感主要靠隐喻而非构图拓扑承载。"
+    },
+    "family4": {
+      "motif_id": "infinite_descent"
+    },
+    "verdict": "pass"
+  },
+  "scene_woven_basket_lip.png": {
+    "motif": "coprime_orbit",
+    "verify": {
+      "passed": true,
+      "problems": "星形跨步连线的单一闭合轨道被明确表现，但无法从静态图像可靠判定 n、k 及 gcd(k,n) 条件是否满足（是否会分裂成多条互不相交回路未可见）；此外连线在中心区域有交叠，点位计数与跨步一致性较弱。"
+    },
+    "family4": {
+      "motif_id": "coprime_orbit"
+    },
+    "verdict": "pass"
+  },
+  "scene_plaza_lantern_pass.png": {
+    "motif": "coprime_orbit",
+    "verify": {
+      "passed": true,
+      "problems": ""
+    },
+    "family4": {
+      "motif_id": "coprime_orbit"
+    },
+    "verdict": "pass"
+  },
+  "scene_salt_pan_channels.png": {
+    "motif": "contraction_fixed_point",
+    "verify": {
+      "passed": true,
+      "problems": "单一路径的定比塌缩链条基本成立（沿斜向边界的台阶/折线逐级变小并指向同一端点），但终点的不动点性质在静态构图中只能被弱暗示：缺少明确的“规则把终点送回自身”的自映射标记，层级步数也较少，收敛感偏弱。"
+    },
+    "family4": {
+      "motif_id": "recursion"
+    },
+    "verdict": "weak"
+  },
+  "scene_glass_jewel_window.png": {
+    "motif": "coprime_orbit",
+    "verify": {
+      "passed": true,
+      "problems": "构图承载的是单一跨步连线的一圈 n 点星形轨道（类似 {n/k}），无中心枢纽；但未能从静态图像中明确读出“k 与 n 不互素会裂成 gcd 份”的失败模式（只呈现了互素情形/单一闭合轨道），且未标注方向与步幅使数论条件只能被推断而非被构图显式编码。"
+    },
+    "family4": {
+      "motif_id": "coprime_orbit"
+    },
+    "verdict": "pass"
+  },
+  "scene_maple_pond_cord.png": {
+    "motif": "coprime_orbit",
+    "verify": {
+      "passed": true,
+      "problems": ""
+    },
+    "family4": {
+      "motif_id": "coprime_orbit"
+    },
+    "verdict": "pass"
+  },
+  "scene_cliff_shrine_bridges.png": {
+    "motif": "coprime_orbit",
+    "verify": {
+      "passed": true,
+      "problems": ""
+    },
+    "family4": {
+      "motif_id": "coprime_orbit"
+    },
+    "verdict": "pass"
+  },
+  "scene_bath_floor_mosaic.png": {
+    "motif": "coprime_orbit",
+    "verify": {
+      "passed": true,
+      "problems": ""
+    },
+    "family4": {
+      "motif_id": "coprime_orbit"
+    },
+    "verdict": "pass"
+  },
+  "scene_mail_sort_wall.png": {
+    "motif": "pigeonhole",
+    "verify": {
+      "passed": true,
+      "problems": "结构大致体现为“物（信封）多于笼（格子）”的计数性拥挤：有格子被放入多封/有信封落在格子外，暗示必有同笼但不指明哪一处；但格子数量与占用并非强对比，部分格子空置、相撞并不强烈，计数保证的必然性表达偏弱。"
+    },
+    "family4": {
+      "motif_id": "pigeonhole"
+    },
+    "verdict": "pass"
+  },
+  "scene_orchard_crate_harvest.png": {
+    "motif": "pigeonhole",
+    "verify": {
+      "passed": true,
+      "problems": "构图表达了“物多于笼→必有同笼”的计数不变量：多个苹果与多个木箱中至少有一箱出现两枚（中下方箱内两苹果），但并未强调或指明唯一/必然的相遇位置，符合“只保证存在但不构造见证”。结构强度一般：只展示一次重复而非多处或更高阶计数。"
+    },
+    "family4": {
+      "motif_id": "pigeonhole"
+    },
+    "verdict": "pass"
+  },
+  "scene_monastery_candles.png": {
+    "motif": "diagonalization",
+    "verify": {
+      "passed": true,
+      "problems": "画面呈规则网格（表）+一条从左上到右下的“亮烛”对角线（逐行逐列移动的系统性差异），对应“第 n 行在第 n 位不同”的对角构造而非单点孤例。但图中未明确体现“对角取反生成新行”以及“新行与每一行都不相等/永在表外”的语义层（缺少被枚举的行与由取反得到的整行对照）；更多是对角线差异的骨架实现，力度偏弱。"
+    },
+    "family4": {
+      "motif_id": "diagonalization"
+    },
+    "verdict": "pass"
+  },
+  "scene_stained_glass_panes.png": {
+    "motif": "diagonalization",
+    "verify": {
+      "passed": true,
+      "problems": "构图呈现了“按行枚举的表格”与“沿对角线逐格取反”的结构：规则棋盘作为枚举表，明显的主对角斜线作为取对角元素并系统性改变的路径；且变化不是单点孤立违例，而是沿对角线贯穿多行多列的系统差异。弱点：未明确表现“每一行恰一处在第 n 位不同/逐行右移”的行内唯一差异计数约束，更多是对角线贯通的整体异质带，而非逐行构造出的新行与第 n 行在第 n 位的对应关系。"
+    },
+    "family4": {
+      "motif_id": "diagonalization"
+    },
+    "verdict": "pass"
+  },
+  "scene_reef_polyps.png": {
+    "motif": "projective_duality",
+    "verify": {
+      "passed": true,
+      "problems": "虽呈现左右两幅等价场景的互换关系（珊瑚结构↔星光结构）且可视为对合式整体替换，但两类“角色”在同一体系内的明确定义不足：画面更多是材质/风格替换而非在同一符号体系中两类元素的可检验互换；对合关系主要依赖并置对照而非单一场景内可追踪的角色互换。"
+    },
+    "family4": {
+      "motif_id": "projective_duality"
+    },
+    "verdict": "pass"
+  },
+  "scene_stained_glass_lead.png": {
+    "motif": "projective_duality",
+    "verify": {
+      "passed": true,
+      "problems": "构图通过左右并列的两幅同构图（左：粗黑杆+彩色节点；右：细线+彩色节点）呈现“整体重述”，可被理解为同一体系内两类角色（边/杆 与 点/珠，或实体/骨架 与 连接/关系）的互换且保持关系结构不变，具备对合意涵。但“换两次逐字复原”的对合性在静态图里仅被暗示，没有明确标注或可验证的两类角色全集及其一一交换规则；两幅图的材质/厚度差也使其更像两种风格化表示而非严格的角色对调。"
+    },
+    "family4": {
+      "motif_id": "isomorphism"
+    },
+    "verdict": "weak"
+  },
+  "scene_forge_rivets.png": {
+    "motif": "projective_duality",
+    "verify": {
+      "passed": true,
+      "problems": "构图以左右并置的两幅结构形成清晰的“角色整体互换”关系（粗重铆钉钢条 vs 细线金属球节点），对应关系在同一主题内可视为一次全局替换且可逆。若要求更强的不变量表达（如在单幅内呈现互换前后两套关系命题并保持一一对应），本图仍偏弱：互换主要依赖左右对照而非在同一网络中显式标注两类角色及其关系命题。"
+    },
+    "family4": {
+      "motif_id": "isomorphism"
+    },
+    "verdict": "weak"
+  },
+  "scene_candle_wax_pools.png": {
+    "motif": "projective_duality",
+    "verify": {
+      "passed": true,
+      "problems": "画面以左右并置的两幅结构呈现同一骨架的两种“角色赋值”（左侧为蜡线/节点、右侧为火柴/火焰节点），整体对应清晰，支持一次互换两类角色仍保持关系成立、再互换复原的对合性。但两侧内部并未明确展示“同一体系内”的即时角色对调（更像两套异质媒介的同构对照），对偶性主要通过并置对照而非单一系统内的可交换标记来承载，力度偏弱。"
+    },
+    "family4": {
+      "motif_id": "isomorphism"
+    },
+    "verdict": "weak"
+  },
+  "scene_salt_ponds.png": {
+    "motif": "projective_duality",
+    "verify": {
+      "passed": true,
+      "problems": "构图以左右并置的两幅同构结构承载“整体互换/对合”：同一套几何骨架（方形+对角交叉+四角节点）在两侧完整重述，差异主要体现在色调/材质等角色可交换的属性上，符合“一次互换得到另一述、再互换复原”的对合直觉。但两类“角色”未被强烈、明确地编码为仅两类且全局一致的元素集合（更像连续色阶而非二元分区），因此对偶关系的读出偏弱。"
+    },
+    "family4": {
+      "motif_id": "figure_ground"
+    },
+    "verdict": "weak"
+  },
+  "scene_joinery_bench.png": {
+    "motif": "projective_duality",
+    "verify": {
+      "passed": true,
+      "problems": "结构以左右并置的两幅“同材质同规则”的完整构型呈现：左图为四角锚点+对角交叉的封闭框架，右图为以同类杆件/节点重组的星形交叉。两状态可理解为在同一体系内对两类角色（如“外围角点/中心交汇点”、“边框/对角”）进行整体互换后的重述；两幅各自完整而非依赖负形。对合性只能弱体现（未给出明确的两次交换回到原状的第三态），因此属于程度较弱的实现。"
+    },
+    "family4": {
+      "motif_id": "projective_duality"
+    },
+    "verdict": "pass"
+  },
+  "scene_acetate_fern.png": {
+    "motif": "contraction_fixed_point",
+    "verify": {
+      "passed": true,
+      "problems": "构图呈现单一路径上的自迭代收缩链（蕨叶图案在透明板上沿斜向依次缩小，距离/尺度近似按定比递减并趋向右上端点），末端有一个明确的“停点”可对应不动点 x*。但不动点的“被规则原样送回自身”只被弱化地暗示为终止点/节点，未以明显的自映射标记；同时层级步数较少、q 的定比关系只能近似感知。"
+    },
+    "family4": {
+      "motif_id": "contraction_fixed_point"
+    },
+    "verdict": "pass"
+  },
+  "scene_chapel_carpets.png": {
+    "motif": "contraction_fixed_point",
+    "verify": {
+      "passed": true,
+      "problems": "构图呈现单一路径（斜向台阶/栏杆）把视线按尺度递减推向画面右上端的光源/十字架处，具有“单链迭代→收缩→落到一点”的同构感。但终点的“f(x*)=x* 不动点”属性只能被隐喻（光源/十字架作为稳定点），缺少更明确的自映射线索；收缩层级也较少，主要靠透视与台阶节奏，迭代步数不多。"
+    },
+    "family4": {
+      "motif_id": "contraction_fixed_point"
+    },
+    "verdict": "pass"
+  },
+  "scene_raked_sand_pebble.png": {
+    "motif": "contraction_fixed_point",
+    "verify": {
+      "passed": true,
+      "problems": "构图呈现单一路径的逐步塌缩（锯齿段长度递减）并收敛到右侧石头这一“终点/不动点”意象，符合自迭代链与定比缩小的结构。但缩小的定比q不够可验证（段长递减不够严格、尺度层级偏少），且终点作为不动点仅通过视觉停驻暗示，缺少更明确的“被规则送回自身”的结构性自指标记。"
+    },
+    "family4": {
+      "motif_id": "convergence"
+    },
+    "verdict": "weak"
+  },
+  "scene_tile_stairwell.png": {
+    "motif": "contraction_fixed_point",
+    "verify": {
+      "passed": true,
+      "problems": "画面呈现单一路径上的自迭代收缩链：同一“球体位置”沿曲线逐步逼近右侧墙角处的固定点，步长/位移尺度明显递减且不出现返回或多支汇聚，终点作为不动点被凸显。弱点：收缩比q未被严格等比表达，迭代步数较少且终点的“f(x*)=x*”仅通过停驻/贴边暗示而非更强的自映射标记。"
+    },
+    "family4": {
+      "motif_id": "contraction_fixed_point"
+    },
+    "verdict": "pass"
+  },
+  "scene_harbor_buoys.png": {
+    "motif": "alternation",
+    "verify": {
+      "passed": true,
+      "problems": ""
+    },
+    "family4": {
+      "motif_id": "alternation"
+    },
+    "verdict": "pass"
+  },
+  "scene_night_market_awning.png": {
+    "motif": "alternation",
+    "verify": {
+      "passed": true,
+      "problems": ""
+    },
+    "family4": {
+      "motif_id": "alternation"
+    },
+    "verdict": "pass"
+  },
+  "scene_macaron_counter.png": {
+    "motif": "alternation",
+    "verify": {
+      "passed": true,
+      "problems": ""
+    },
+    "family4": {
+      "motif_id": "alternation"
+    },
+    "verdict": "pass"
+  },
+  "scene_carpet_vine.png": {
+    "motif": "spiral",
+    "verify": {
+      "passed": true,
+      "problems": "结构以中心螺旋/卷曲藤蔓为骨架，沿旋转方位推进时整体半径与外扩趋势增强，未出现回到原始尺度的闭合循环；但比例增长不够严格统一（局部花叶尺寸与弧线间距有起伏），层级链偏短，增长规律更像装饰性渐扩而非精确等比标度。"
+    },
+    "family4": {
+      "motif_id": "spiral"
+    },
+    "verdict": "pass"
+  },
+  "scene_rail_yard_switch.png": {
+    "motif": "bottleneck",
+    "verify": {
+      "passed": true,
+      "problems": "两大连通块与“唯一割点”关系基本成立：画面上下两岸（铁路场站）各自内部轨道网络互通，中间横向高墙上的单一门洞充当唯一跨越点；从一侧到另一侧的可见通路都汇入该门洞，删去门洞则上下分裂为两块且各自仍连通。弱点：少数轨道在门洞附近是否存在隐含旁路不完全可证，但构图主骨架明确强调单点必经。"
+    },
+    "family4": {
+      "motif_id": "bottleneck"
+    },
+    "verdict": "pass"
+  },
+  "scene_reef_cut.png": {
+    "motif": "bottleneck",
+    "verify": {
+      "passed": true,
+      "problems": "图像以中间沙地通道的收束处形成单一“必经点/割点”式连接，两侧珊瑚群各自呈多分支互通的块状结构；但“必经点”表达偏弱（更像狭窄通道而非明确单点），且两岸内部的“多路互通”主要由纹理簇暗示，拓扑骨架不够清晰。"
+    },
+    "family4": {
+      "motif_id": "bottleneck"
+    },
+    "verdict": "pass"
+  },
+  "scene_market_arcade.png": {
+    "motif": "bottleneck",
+    "verify": {
+      "passed": true,
+      "problems": "两侧“岸”内的多路互通较弱：画面更像各自一条纵向主通道配密集摊位，横向/支路的连通性不够清晰；但两岸之间的连接显著只有中部拱门/通道这一必经点，且去掉该中点会将画面分成左右两大仍各自连续的人群/市集块。"
+    },
+    "family4": {
+      "motif_id": "bottleneck"
+    },
+    "verdict": "pass"
+  },
+  "scene_pilgrim_temple.png": {
+    "motif": "convergence",
+    "verify": {
+      "passed": true,
+      "problems": "多条路径/线索的分叉与推进存在，但可辨识的“多线索”数量有限，且部分路径在画面中似乎互有交汇并非完全互不知晓；终点汇入后“到此为止”的终止感主要依赖悬崖尽头的建筑，仍算成立但强度偏弱。"
+    },
+    "family4": {
+      "motif_id": "bottleneck"
+    },
+    "verdict": "weak"
+  },
+  "scene_ski_lodge.png": {
+    "motif": "convergence",
+    "verify": {
+      "passed": true,
+      "problems": "多条线索存在但层级较少：上方仅见数条并行滑行轨迹，且在下部汇入同一条主轨后通向画面右下的建筑/入口作为终点；终点的“到此为止”表达较弱（仍可能被解读为继续通行的道路）。"
+    },
+    "family4": {
+      "motif_id": "convergence"
+    },
+    "verdict": "pass"
+  },
+  "scene_candle_wax.png": {
+    "motif": "convergence",
+    "verify": {
+      "passed": true,
+      "problems": ""
+    },
+    "family4": {
+      "motif_id": "convergence"
+    },
+    "verdict": "pass"
+  },
+  "scene_tailor_sampler.png": {
+    "motif": "self_reference",
+    "verify": {
+      "passed": true,
+      "problems": "内层自指通过墙上圆形框/镜中再现同一桌面与画面构图实现；但递归层级仅一层，且内层细节较简化、可辨识度依赖中央桌面矩形块与剪刀线轴等关键元素。"
+    },
+    "family4": {
+      "motif_id": "recursion"
+    },
+    "verdict": "weak"
+  },
+  "scene_salt_barge.png": {
+    "motif": "self_reference",
+    "verify": {
+      "passed": true,
+      "problems": "内嵌自指通过墙上大画框中的同一客厅场景实现，但出现了不止一层（画中画里还有一层更小的重复），超出“只此一层即可”的要求。"
+    },
+    "family4": {
+      "motif_id": "recursion"
+    },
+    "verdict": "weak"
+  },
+  "scene_sushi_tray.png": {
+    "motif": "self_reference",
+    "verify": {
+      "passed": true,
+      "problems": ""
+    },
+    "family4": {
+      "motif_id": "recursion"
+    },
+    "verdict": "weak"
+  },
+  "scene_glasshouse_bench.png": {
+    "motif": "strange_loop",
+    "verify": {
+      "passed": true,
+      "problems": "层级闭环主要通过“温室空间→巨大玻璃反射/框中景→反射中再现人物与空间”实现，确有上行（现实层→镜像/框内层）并回指起点（镜像指回同一场景）的结构；但闭环偏弱，缺少更明确的“最高层再生成最低层”的强制回路（如清晰的递归嵌套/埃舍尔式不可赋值路径），更像单次镜像回指而非多级叙述链。"
+    },
+    "family4": {
+      "motif_id": "recursion"
+    },
+    "verdict": "weak"
+  },
+  "scene_harbor_tram_depot.png": {
+    "motif": "isomorphism",
+    "verify": {
+      "passed": true,
+      "problems": "两半画面分别为港池/码头与车辆段/轨道，骨架都呈放射式对称并以中心/中轴组织，整体拓扑大体可互译。但对应不够严格：左侧为单一多边形围合并在一端接入通道，右侧为多分叉轨道网且包含额外交叉与更多端点/节点，节点计数与连线关系难以做到逐项无例外的一一对应。"
+    },
+    "family4": {
+      "motif_id": "figure_ground"
+    },
+    "verdict": "weak"
+  },
+  "scene_rice_suburb.png": {
+    "motif": "isomorphism",
+    "verify": {
+      "passed": true,
+      "problems": "两半分别为农田灌溉渠与住宅道路网，骨架均呈五角星/五边形样的节点-连线结构，节点数与连接关系大体可一一对应；但右侧道路有更明显的外圈与支路、左侧渠系边界更开阔，个别端点/环的尺度与位置对应略弱（同构性偏近似而非严格逐项无一例外）。"
+    },
+    "family4": {
+      "motif_id": "isomorphism"
+    },
+    "verdict": "pass"
+  },
+  "scene_seaweed_silk_shop.png": {
+    "motif": "isomorphism",
+    "verify": {
+      "passed": true,
+      "problems": "两侧采用不同材质（左似海藻/枝叶节点-杆件，右为丝带节点-连线），各自构成同一类五节点闭合多边形并带一条对角连线的骨架，节点位置与连线关系可逐项对应；但并未给出更强的逐项配对标记，且对角线的交叠/结点表达略弱，易被读成装饰层而非明确拓扑关系。"
+    },
+    "family4": {
+      "motif_id": "isomorphism"
+    },
+    "verdict": "pass"
+  },
+  "scene_cave_rail_yard.png": {
+    "motif": "isomorphism",
+    "verify": {
+      "passed": true,
+      "problems": "两侧确有异质素材且骨架同为五角星/五节点连线结构，整体同构；但右侧轨道节点处存在若干额外平行岔线与延伸轨道（含车厢/侧轨）使“仅看骨架”时出现非一一对应的附加边/端点，对应关系不够严格，需要更干净的骨架或在左侧补出同等附加结构。"
+    },
+    "family4": {
+      "motif_id": "isomorphism"
+    },
+    "verdict": "pass"
+  },
+  "scene_vineyard_village.png": {
+    "motif": "isomorphism",
+    "verify": {
+      "passed": true,
+      "problems": "两半画面分别为葡萄园地景与村落建筑，但都以同一五角星/五边形放射骨架组织，节点与连线关系在两侧逐项对应、布局图样同构；同构性很强。"
+    },
+    "family4": {
+      "motif_id": "symmetry"
+    },
+    "verdict": "weak"
+  },
+  "scene_salt_basins.png": {
+    "motif": "figure_ground",
+    "verify": {
+      "passed": true,
+      "problems": ""
+    },
+    "family4": {
+      "motif_id": "figure_ground"
+    },
+    "verdict": "pass"
+  },
+  "scene_fish_racks.png": {
+    "motif": "figure_ground",
+    "verify": {
+      "passed": true,
+      "problems": ""
+    },
+    "family4": {
+      "motif_id": "figure_ground"
+    },
+    "verdict": "pass"
+  },
+  "scene_conveyor_belt.png": {
+    "motif": "mobius",
+    "verify": {
+      "passed": true,
+      "problems": ""
+    },
+    "family4": {
+      "motif_id": "mobius"
+    },
+    "verdict": "pass"
+  },
+  "scene_seat_belt.png": {
+    "motif": "mobius",
+    "verify": {
+      "passed": true,
+      "problems": "带状物呈现单次半扭转的外观较弱：主要是安全带自然扭转的S形皱折，未形成清晰的闭合回路或可读的“绕行一圈回到原地”结构，因此莫比乌斯的拓扑（单圈翻转、双圈复原）表达不够强。"
+    },
+    "family4": {
+      "motif_id": "mobius"
+    },
+    "verdict": "pass"
+  },
+  "scene_courtyard_pavers.png": {
+    "motif": "tiling",
+    "verify": {
+      "passed": true,
+      "problems": ""
+    },
+    "family4": {
+      "motif_id": "tiling"
+    },
+    "verdict": "pass"
+  },
+  "scene_laundry_baskets.png": {
+    "motif": "tiling",
+    "verify": {
+      "passed": true,
+      "problems": "存在轻微边界裁切与透视/间距微差，严格平移同一幅画面不会在边缘处完全重合；但构图骨架为同形单元（篮筐+白布）在规则网格上的周期重复，满足母题要求。"
+    },
+    "family4": {
+      "motif_id": "tiling"
+    },
+    "verdict": "pass"
+  },
+  "scene_harbor_boats.png": {
+    "motif": "infinite_descent",
+    "verify": {
+      "passed": true,
+      "problems": "构图呈现了一条沿斜坡排列的“同类对象严格变小”链条，表达了递降结构。但缺少关键的“无底下降链被禁止→因而起点不存在”的回击式闭合：画面仍保留一个最大的起始船作为可见起点，并且链条在底部落到水平基座上，暗示存在最小/地板而非展示‘不能开始’的取消开端。若要更贴合不变量，可用循环回指/自我否定（如最大者由更小者支撑、但支撑链无起点）来强调矛盾。"
+    },
+    "family4": {
+      "motif_id": "infinite_descent"
+    },
+    "verdict": "pass"
+  },
+  "scene_market_baskets.png": {
+    "motif": "infinite_descent",
+    "verify": {
+      "passed": true,
+      "problems": "构图用台阶上的篮筐形成严格递降的尺度链（逐步更小的同类对象），能对应“严格变小”的核心结构。但缺少将“取消开端/不存在的第一例”这一刀锋回挥的空间化表达（例如闭合回指、显式断裂或否定起点的构图机制）；当前更像单向递减序列而非以良序性反证起点。递降层数也有限，链条的“无底”不可能性只能弱表达。"
+    },
+    "family4": {
+      "motif_id": "contraction_fixed_point"
+    },
+    "verdict": "weak"
+  },
+  "scene_banquet_red_sash.png": {
+    "motif": "coprime_orbit",
+    "verify": {
+      "passed": true,
+      "problems": "构图呈现为圆周均布的多点（约12个烛台）并用单一连续带状线以固定跨步织出星形，整体是一条轨道贯穿所有点后闭合；未见中心枢纽或多条独立周期叠加。由于画面只给出一个互素情形的闭合遍历，未体现“不互素则分裂成 gcd 份”的失败分裂模式（但这不是必须展示）。"
+    },
+    "family4": {
+      "motif_id": "coprime_orbit"
+    },
+    "verdict": "pass"
+  },
+  "scene_dew_grass_filament.png": {
+    "motif": "coprime_orbit",
+    "verify": {
+      "passed": true,
+      "problems": "虽呈现了单一闭合的跨步连线/星形织构，但未明确可判定具体跨步k与互素性条件（gcd(k,n)=1）是否成立；交点为线段相交而非节点，因而“遍历所有点后才闭合”的一笔轨道语义较弱。"
+    },
+    "family4": {
+      "motif_id": "coprime_orbit"
+    },
+    "verdict": "pass"
+  },
+  "scene_pottery_kiln_cubbies.png": {
+    "motif": "pigeonhole",
+    "verify": {
+      "passed": true,
+      "problems": "结构以“多个物件落入少数容格”来承载抽屉原理：多个陶碗对应‘物’，分隔格子对应‘笼’，且存在至少一格容纳两只碗（相撞但不指明何处的计数保证）。但异常位置被明确标注在右上格，见证性过强；同时大多格为一物一笼，整体计数冲突不够强烈。"
+    },
+    "family4": {
+      "motif_id": "pigeonhole"
+    },
+    "verdict": "pass"
+  },
+  "scene_harbor_slips.png": {
+    "motif": "diagonalization",
+    "verify": {
+      "passed": true,
+      "problems": "构图中有一组“表格/枚举”的强骨架（多条平行竖向栈桥及其横向支臂）并被一条贯穿的对角线通道显著标出，能对应“沿对角线逐行移动的系统性差异”而非单点瑕疵。但每一‘行’上并没有清晰呈现‘恰一处取反/不同’的计数约束：对角线并未在每一行与唯一一个格点形成明确且可数的一对一落点关系，且缺少与各行状态对比的二元取反语义（像素/符号/颜色两态）。因此结构同构较弱：更像‘存在一条对角穿越枚举’而不是‘逐行在第n位必然不同从而永在表外’的严格构造。"
+    },
+    "family4": {
+      "motif_id": "diagonalization"
+    },
+    "verdict": "pass"
+  },
+  "scene_tea_steam_bowls.png": {
+    "motif": "projective_duality",
+    "verify": {
+      "passed": true,
+      "problems": "构图基本呈现同一体系内两类角色的整体互换：左右两幅是同一套“茶具-点心-花-桌面网络线”关系的重述，主要对象（茶壶/点心盘/杯位/花瓶）在两侧对换位置但关系拓扑（杯围绕中心点心、壶在边缘、线连成同类网络）保持成立，且再交换可回到原布局。问题是对偶性偏弱：两类“角色”边界不够清晰（更像左右场景替换而非明确A/B两类在同一图内可瞬时对调），且个别细节数量不完全对应（点心/勺/小碟在两侧不一一匹配）。"
+    },
+    "family4": {
+      "motif_id": "isomorphism"
+    },
+    "verdict": "weak"
+  },
+  "scene_bowl_marble_trace.png": {
+    "motif": "contraction_fixed_point",
+    "verify": {
+      "passed": true,
+      "problems": "存在单一路径的自迭代收敛链条：发光折线沿同一规则重复、步长/尺度逐级缩小并趋向右上端的亮点终点，终点以“固定点/停驻点”形式呈现而非预先标注目标。问题是：缩比q<1的恒定比例感不够明确（更像离散的阶梯式缩短而非严格等比），固定点处缺少更强的自映射暗示（例如回环/标记表明f(x*)=x*），因此不变量表达偏弱但仍同构。"
+    },
+    "family4": {
+      "motif_id": "contraction_fixed_point"
+    },
+    "verdict": "pass"
+  },
+  "scene_glass_leadwork.png": {
+    "motif": "contraction_fixed_point",
+    "verify": {
+      "passed": true,
+      "problems": ""
+    },
+    "family4": {
+      "motif_id": "contraction_fixed_point"
+    },
+    "verdict": "pass"
+  },
+  "scene_curtain_shadow_steps.png": {
+    "motif": "contraction_fixed_point",
+    "verify": {
+      "passed": true,
+      "problems": ""
+    },
+    "family4": {
+      "motif_id": "contraction_fixed_point"
+    },
+    "verdict": "pass"
+  },
+  "scene_clay_workshop.png": {
+    "motif": "cycle",
+    "verify": {
+      "passed": false,
+      "problems": "不变量要求同一层级上形成n≥3的等价节点闭环（无中心、无层级、路径回到起点）。画面构图为工作室场景：中心空地+右上陶轮成为显著焦点，物件围绕但未形成清晰的单层级闭合环路；各“事件点”不等权且存在中心/边缘层级，缺少明确的循环因果箭头式路径与均匀节点序列。"
+    },
+    "family4": {
+      "motif_id": "cycle"
+    },
+    "verdict": "fail"
+  },
+  "scene_reef_coral_markers.png": {
+    "motif": "alternation",
+    "verify": {
+      "passed": true,
+      "problems": ""
+    },
+    "family4": {
+      "motif_id": "alternation"
+    },
+    "verdict": "pass"
+  },
+  "scene_cave_lanterns.png": {
+    "motif": "infinite_descent",
+    "verify": {
+      "passed": false,
+      "problems": "画面确实呈现了沿台阶向内的单向序列与尺度递减（灯笼越往下越小），但不变量要求的是“每一步都强迫出一个严格更小的同类案例”并由此形成不可完成/不存在的无底下降链（或其空间同构：无尽下降、无起点被取消）。本图只有有限级台阶与有限个灯笼，明确给出了一个起点/终点式的线性下降路径，没有表现出‘无底’或‘起点被否定’的回返刀锋结构；也没有任何构图机制把每一级再强制映射到更小同类（如自相似递降嵌套到不可终止）。因此承载的是普通有限递减序列，而非严格递降导致起点不存在的结构。"
+    },
+    "family4": {
+      "motif_id": "infinite_descent"
+    },
+    "verdict": "fail"
+  },
+  "scene_chocolate_plaque.png": {
+    "motif": "self_reference",
+    "verify": {
+      "passed": true,
+      "problems": "内层自含成立（画框中呈现同一场景并继续递归），但属于多层嵌套而非“只此一层即可”的最简实现；自指结构偏强于要求。"
+    },
+    "family4": {
+      "motif_id": "recursion"
+    },
+    "verdict": "weak"
+  },
+  "scene_newsroom_desks.png": {
+    "motif": "strange_loop",
+    "verify": {
+      "passed": false,
+      "problems": "画面虽然有明确的多层级上行结构（多层办公空间、坡道/栈道贯穿），但这些层级并未在构图骨架上形成“上行后回到起点”的视觉闭环：坡道与楼层关系是可赋值的线性高度递增/递减，没有出现最高层通过某个关键元素回指到最低层、也没有埃舍尔式的不可能连接或路径闭合，因此未实现“层级链最终回到起点导致层级无法赋值”的不变量。"
+    },
+    "family4": {
+      "motif_id": "recursion"
+    },
+    "verdict": "fail"
+  },
+  "scene_court_bench.png": {
+    "motif": "strange_loop",
+    "verify": {
+      "passed": false,
+      "problems": "画面有明确的垂直层级链（螺旋楼梯连接多层人物/空间），但缺少“最高层通过同一条可追踪的构图路径回接到最低层”的视觉闭环；楼梯与视线/行动都指向上行或分层观看，没有埃舍尔式的回到起点或自指闭合结构，因此层级仍可线性赋值。"
+    },
+    "family4": {
+      "motif_id": "strange_loop"
+    },
+    "verdict": "fail"
+  },
+  "scene_radio_booth.png": {
+    "motif": "strange_loop",
+    "verify": {
+      "passed": false,
+      "problems": "画面呈现的是多层空间与楼梯的单向上行/跨层连接（从下层到上层、到屏幕/夹层），但缺少“最高层元素回指最低层并形成可追踪闭环”的构图骨架。顶部屏幕像是嵌套画面，但没有明确把视线/路径从最高层接回起点，整体是开放的层级堆叠而非埃舍尔式闭合循环。"
+    },
+    "family4": {
+      "motif_id": "recursion"
+    },
+    "verdict": "fail"
+  },
+  "scene_apartment_walkways.png": {
+    "motif": "strange_loop",
+    "verify": {
+      "passed": false,
+      "problems": "画面主骨架是单向上升的外置楼梯，能追踪到屋顶但没有任何清晰的构图元素把最高层“接回”最低层形成闭环；不存在埃舍尔式的回指/回到起点路径，因此未实现“上行后回到起点、层级无法赋值”的视觉闭环结构。"
+    },
+    "family4": {
+      "motif_id": "recursion"
+    },
+    "verdict": "fail"
+  },
+  "scene_museum_carts.png": {
+    "motif": "strange_loop",
+    "verify": {
+      "passed": false,
+      "problems": "画面虽有多层楼梯与平台形成明显的“逐步上行”的层级链，但缺少能在最高层通过同一条可追踪路径“回到起点”的视觉闭环（埃舍尔式回指）。现有楼梯/平台是常规上升与转折，未见顶层元素与底层在构图骨架上闭合连接，因此层级并未变成无法赋值的循环结构。"
+    },
+    "family4": {
+      "motif_id": "recursion"
+    },
+    "verdict": "fail"
+  },
+  "scene_hotel_doors.png": {
+    "motif": "strange_loop",
+    "verify": {
+      "passed": false,
+      "problems": "画面是普通楼梯间的多层折返与竖向贯通，虽有清晰的上行层级链，但不存在“最高层通过构图元素接回最低层”的视觉闭环（无埃舍尔式回指/闭合路径）。路径是开链：上到平台后只能继续上下或结束，未形成层级无法赋值的自指结构。"
+    },
+    "family4": {
+      "motif_id": "strange_loop"
+    },
+    "verdict": "fail"
+  },
+  "scene_theater_catwalk.png": {
+    "motif": "strange_loop",
+    "verify": {
+      "passed": false,
+      "problems": "画面确有清晰的层级上行路径（弧形楼梯/平台逐级上升），但没有出现“最高层接回最低层”的视觉闭环：楼梯走向是开放的，上层平台并未通过构图元素（回指门、回环楼梯、镜像/画中画等）把路径闭合回起点，因此无法形成‘上行后回到起点、层级无法赋值’的埃舍尔式结构。"
+    },
+    "family4": {
+      "motif_id": "strange_loop"
+    },
+    "verdict": "fail"
+  },
+  "scene_rice_paddies.png": {
+    "motif": "figure_ground",
+    "verify": {
+      "passed": false,
+      "problems": "画面主要是重复的三角形网格（梯田/水田）作为正形，负空间只是雾与间隙的背景，没有与三角形共享同一轮廓并自成可辨识的互补形；上下半部也未呈现图/底反转或互补拼满全域的埃舍尔式镶嵌关系。"
+    },
+    "family4": {
+      "motif_id": "figure_ground"
+    },
+    "verdict": "fail"
+  },
+  "scene_vineyard_hills.png": {
+    "motif": "figure_ground",
+    "verify": {
+      "passed": true,
+      "problems": ""
+    },
+    "family4": {
+      "motif_id": "figure_ground"
+    },
+    "verdict": "pass"
+  },
+  "scene_shipyard_night.png": {
+    "motif": "figure_ground",
+    "verify": {
+      "passed": false,
+      "problems": "画面主要是大量重复的黑色三角形遮罩叠加在港口夜景上，属于表面纹理/遮挡效果而非由图与底共享轮廓的互补镶嵌结构。负空间没有自成可辨识的独立形体，上下半也不存在明确的图底反转关系（下半以上半之底为图、以上半之图为底的互换未成立）。"
+    },
+    "family4": {
+      "motif_id": "figure_ground"
+    },
+    "verdict": "fail"
+  },
+  "scene_laundry_courtyard.png": {
+    "motif": "figure_ground",
+    "verify": {
+      "passed": false,
+      "problems": "画面主要是规则重复的三角形布料单元（黑/白两色）排列，缺少明确的“图底互补拼满全域且底自成一形”的负空间造型：白色单元之间的暗部/空隙不形成独立、可辨识且与正形共享轮廓的负形；同时也未呈现上下半部图底反转（下半以上半之底为图、以上半之图为底）的构图对应关系，仅是颜色分行式重复而非图底互换的镶嵌结构。"
+    },
+    "family4": {
+      "motif_id": "figure_ground"
+    },
+    "verdict": "fail"
+  },
+  "scene_mushroom_trays.png": {
+    "motif": "figure_ground",
+    "verify": {
+      "passed": true,
+      "problems": ""
+    },
+    "family4": {
+      "motif_id": "figure_ground"
+    },
+    "verdict": "pass"
+  },
+  "scene_canal_roofs.png": {
+    "motif": "figure_ground",
+    "verify": {
+      "passed": false,
+      "problems": "画面主要是重复的三角形山墙房屋图案，但“底”（负空间）没有形成独立可辨识的互补形体；也不存在明确的上下半区图底反转关系（下半以上半之底为图、以上半之图为底）。当前更像是表面纹理式的重复/对称，而非埃舍尔式图底互补镶嵌的构图骨架。"
+    },
+    "family4": {
+      "motif_id": "figure_ground"
+    },
+    "verdict": "fail"
+  },
+  "scene_film_strip.png": {
+    "motif": "mobius",
+    "verify": {
+      "passed": true,
+      "problems": ""
+    },
+    "family4": {
+      "motif_id": "mobius"
+    },
+    "verdict": "pass"
+  },
+  "scene_boardwalk.png": {
+    "motif": "mobius",
+    "verify": {
+      "passed": true,
+      "problems": ""
+    },
+    "family4": {
+      "motif_id": "mobius"
+    },
+    "verdict": "pass"
+  },
+  "scene_glass_hothouse_walkway.png": {
+    "motif": "mobius",
+    "verify": {
+      "passed": true,
+      "problems": "扭转意象可读（带面内外/明暗在闭合处发生交换），但连接处的半扭转不是非常明确：缺少清晰的交叉/接缝标记或边缘连续性线索来无歧义地证明是莫比乌斯带而非视觉错觉的普通环带。"
+    },
+    "family4": {
+      "motif_id": "mobius"
+    },
+    "verdict": "pass"
+  },
+  "scene_vine_trellis.png": {
+    "motif": "braiding",
+    "verify": {
+      "passed": false,
+      "problems": "画面中只有两股藤蔓相互缠绕并多次交叉，未达到“三股以上”形成辫状交替上/下穿越的结构；因此也无法对应多股交叉复合得到的端点排列（置换积）结构。"
+    },
+    "family4": {
+      "motif_id": "interference"
+    },
+    "verdict": "fail"
+  },
+  "scene_river_reeds.png": {
+    "motif": "braiding",
+    "verify": {
+      "passed": false,
+      "problems": "画面中只有两股线条相互交叉形成单一缠绕结构，未达到“三股以上”的辫状相邻交叉；因此无法体现多股交替上/下穿越及其对应的交叉复合次序结构。"
+    },
+    "family4": {
+      "motif_id": "braiding"
+    },
+    "verdict": "fail"
+  },
+  "scene_dew_on_leaves.png": {
+    "motif": "infinite_descent",
+    "verify": {
+      "passed": false,
+      "problems": "画面是单条叶缘上的水滴由大到小的线性尺度递减序列，但缺少“不存在起点/取消开端”的关键结构：没有形成任何回指、否定见证者或自我反证的构图机制；递减链只是自然的透视/重力渐小，并未表达“任取一例必推出严格更小同类从而导致首例不存在”的逻辑闭合。也缺少把‘起点被抹除’作为构图骨架的必经点/断裂/闭环。"
+    },
+    "family4": {
+      "motif_id": "recursion"
+    },
+    "verdict": "fail"
+  },
+  "scene_altar_candles.png": {
+    "motif": "infinite_descent",
+    "verify": {
+      "passed": false,
+      "problems": "画面呈现的是沿对角线向下的台阶序列与尺度递减的重复单元（更像递归/分形式“逐层生成”或单向渐变），但不变量要求的是“每一步严格变小并由此取消起点”的无底下降链悖论结构：需要一个被强迫继续下降却永远无法落到最小值/地板的拓扑矛盾（如闭合回指到更小版本、无最小元的循环/自指、或明确的“起点被取消”的回挥结构）。当前构图只是有限段下降且有明确终点，没有无底链、没有自指闭合、也没有将起点判为空的结构性刀锋。"
+    },
+    "family4": {
+      "motif_id": "contraction_fixed_point"
+    },
+    "verdict": "fail"
+  },
+  "scene_glacier_ice_blocks.png": {
+    "motif": "infinite_descent",
+    "verify": {
+      "passed": false,
+      "problems": "画面呈现的是沿台面从大到小的单向尺度递减序列（嵌套/排队式），缺少“不存在起点/取消开端”的结构表达：没有形成“假设一个最初案例→必然推出更小同类案例→回击到起点不存在”的回指或自我否定闭合。构图中也没有体现‘无底下降链被良序性禁止’的拓扑刀锋（如唯一必经点导致矛盾、或路径闭合把起点抹除）；仅是有限层级的缩小链，反而暗示一个可见的最大起点存在。"
+    },
+    "family4": {
+      "motif_id": "contraction_fixed_point"
+    },
+    "verdict": "fail"
+  },
+  "scene_harbor_dinghy_slips.png": {
+    "motif": "pigeonhole",
+    "verify": {
+      "passed": false,
+      "problems": "画面是“多船指向多个泊位”的一一分配/指派示意（每条箭头指向不同船位，且有明确唯一红框目标），并未表达‘多于笼则必有同笼’所要求的计数性必然冲突：需要至少两个对象落入同一容器但不指明是哪一个容器。此图既没有出现同一泊位被至少两条箭头指向的相遇，也通过突出红框给出了‘撞在何处/哪个笼’的见证，反而接近convergence或显式选择。"
+    },
+    "family4": {
+      "motif_id": "pigeonhole"
+    },
+    "verdict": "fail"
+  },
+  "scene_dumpling_sauce_bowls.png": {
+    "motif": "pigeonhole",
+    "verify": {
+      "passed": false,
+      "problems": "构图呈现为规则栅格/分组摆放的饺子与小碟，缺少“物多于笼”的明确两类对象及其一一归属关系（每个碟可视作笼，但并未建立“每个物必须进笼/归类”的结构约束），也没有通过计数迫使“某个未指明之处至少两者同笼”的必然碰撞关系作为骨架不变量；画面只是重复元素的排列，未承载鸽巢式的计数必然性。"
+    },
+    "family4": {
+      "motif_id": "pigeonhole"
+    },
+    "verdict": "fail"
+  },
+  "scene_theater_mask_pegs.png": {
+    "motif": "pigeonhole",
+    "verify": {
+      "passed": false,
+      "problems": "画面构图呈现为一组明确可数的面具挂在同一横梁/木板上，视觉上已经把“同笼”（共享容器/位置）具体化并指明了相遇发生处（同一挂点/同一排/同一框内），更接近“被装在同一处/同一中介的收纳”或简单聚类，而不是仅由计数推出“必有一处未指明的相撞、且不提供见证”的结构不变量。缺少的是：多个对象分别落入多个等价槽位、但相撞槽位不在构图中被突出或可定位的‘未指明性’；也未表现出‘有多种可能相撞处’的匿名计数结构。"
+    },
+    "family4": {
+      "motif_id": "cycle"
+    },
+    "verdict": "fail"
+  },
+  "scene_apiary_landing_slots.png": {
+    "motif": "pigeonhole",
+    "verify": {
+      "passed": false,
+      "problems": "画面呈现的是多个蜂巢入口与蜜蜂出入的并列分布，没有明确的“物>笼”计数结构来保证“至少一笼同笼”这一抽象关系；也未通过构图强调某个未指明但必然发生的重复归属（如更多个体被分配到更少容器、且容器不可区分/不可逐一追踪）。当前更像是多对多的分散出入与局部聚集，缺少以计数为核心的碰撞/同笼必然性。"
+    },
+    "family4": {
+      "motif_id": "pigeonhole"
+    },
+    "verdict": "fail"
+  },
+  "scene_tram_depot_bays.png": {
+    "motif": "pigeonhole",
+    "verify": {
+      "passed": true,
+      "problems": "计数结构（上方5个对象指向下方4个“笼”）体现了抽屉原理：必有至少一笼容纳两个对象，且未指明具体哪一笼；但画面用红框突出并明确指向了“相撞之处”，弱化了“不可构造见证者/不指出何处”的不变量意图。"
+    },
+    "family4": {
+      "motif_id": "pigeonhole"
+    },
+    "verdict": "pass"
+  },
+  "scene_tea_cup_sugar.png": {
+    "motif": "pigeonhole",
+    "verify": {
+      "passed": false,
+      "problems": "画面呈现为四个杯子各自对应一个方块与向下箭头的并列对应关系，强调的是一一映射/分配的可指认“落点”。不变量要求的是仅由计数保证“至少有一处同笼相撞”但不指明发生在何处、也不构造见证者；构图中既没有多物落入少笼的超额计数（例如5个物进4个杯/笼），也没有任何刻意的未知相撞位置（如多个物指向同一笼但不标出是哪一个）。因此未承载该‘存在但不可定位’的结构。"
+    },
+    "family4": {
+      "motif_id": "pigeonhole"
+    },
+    "verdict": "fail"
+  },
+  "scene_apartment_lights.png": {
+    "motif": "diagonalization",
+    "verify": {
+      "passed": false,
+      "problems": "画面主要是规则网格窗户的重复图案，缺少“按行枚举的表+沿移动对角线逐格取反生成新行”的构图骨架。没有清晰可追踪的对角线序列，也没有每一行在随行右移的位置出现且仅出现一处系统性差异（第 n 行差在第 n 位）的结构；整体更像均匀平铺，少量暗窗/亮窗也不构成随行移动的对角差异链，因此未呈现“永在表外”的对角化逃逸结构。"
+    },
+    "family4": {
+      "motif_id": "symmetry_breaking"
+    },
+    "verdict": "fail"
+  },
+  "scene_salt_evaporation_pans.png": {
+    "motif": "diagonalization",
+    "verify": {
+      "passed": false,
+      "problems": "画面是多行杯子在货架上规则排布，呈现的是两种颜色的局部交替/成组分布，但没有一个可读作“按行枚举的表”的二元格点结构，更没有沿对角线逐格取反生成的新行这一全局构造。也缺少‘第 n 行在第 n 位系统性不同、位置随行右移、每行恰一处差异’的移动对角线差异链条；因此未体现通过对角线反演而‘永在表外/不等于任一行’的结构不变量。"
+    },
+    "family4": {
+      "motif_id": "diagonalization"
+    },
+    "verdict": "fail"
+  },
+  "scene_greenhouse_seed_trays.png": {
+    "motif": "diagonalization",
+    "verify": {
+      "passed": false,
+      "problems": "画面是规则网格摆放的花盆/幼苗，呈整体均匀重复的表格结构，但没有清晰的“沿对角线逐格取反”所生成的系统性差异链：看不出一条贯穿多行、位置随行逐格右移、且每行恰一处的对角异常/取反标记；也未呈现“新行与第n行在第n位必不同，从而与任意一行都不相等”的构造性逃逸。即便有零星空盆或苗的差异，也不构成对角线上的n处对应差异，容易退化为局部缺失/随机瑕疵而非对‘全枚举’的否证结构。"
+    },
+    "family4": {
+      "motif_id": "symmetry_breaking"
+    },
+    "verdict": "fail"
+  },
+  "scene_parking_bays.png": {
+    "motif": "diagonalization",
+    "verify": {
+      "passed": true,
+      "problems": "构图以“表格按行枚举”为背景骨架，并用每行一个橙色块沿行间逐格右移形成对角线，符合“第n行在第n位系统性差异”的结构。对角线长度（行数）较少，‘永在表外/与每一行都不相等’的逃逸含义需要观者抽象推断，表现力度偏弱。"
+    },
+    "family4": {
+      "motif_id": "diagonalization"
+    },
+    "verdict": "pass"
+  },
+  "scene_bamboo_fish_racks.png": {
+    "motif": "diagonalization",
+    "verify": {
+      "passed": false,
+      "problems": "画面是规则网格中两种状态（竹匾空/铺满黑物）交替分布的重复图案；虽然有“表格/枚举”的感觉，但没有一条明确的“对角线逐格取反”生成的新行，也缺少“第n行在第n位系统性不同、且每行恰一处不同并随行右移”的移动差异结构。整体更像周期性棋盘式交替或对称重复，而非通过对角线构造出一行从而与所有行都不相等的逃逸结构。"
+    },
+    "family4": {
+      "motif_id": "diagonalization"
+    },
+    "verdict": "fail"
+  },
+  "scene_bakery_pastry_case.png": {
+    "motif": "diagonalization",
+    "verify": {
+      "passed": false,
+      "problems": "画面是规则网格中陈列的甜点，多数呈行列重复与局部变体；但没有一条清晰的“沿对角线逐格取反”生成路径，也没有每行都在其第 n 位出现且仅出现一次的系统性差异（差异位置随行右移）。出现的不同甜点是分散/重复的，并非构图骨架上可读的对角线构造，因此也不支持“新行与每一行都不相等、永在表外”的逃逸结构。"
+    },
+    "family4": {
+      "motif_id": "symmetry_breaking"
+    },
+    "verdict": "fail"
+  },
+  "scene_harbor_roof.png": {
+    "motif": "aperiodic_tiling",
+    "verify": {
+      "passed": false,
+      "problems": "画面呈现的是两色不规则多边形的随机/装饰性铺装纹理，缺少可辨识的准晶式非周期铺砌骨架与“同一套局部匹配规则”所导致的强约束结构；也无法从单幅中验证‘任一局部图案在有界间隙内处处再现’的重复性。整体更像局部随意切分的石材拼贴：既不显现明确的无平移周期的严格构造，也无法排除仅是有限区域截取的普通无规则铺贴。"
+    },
+    "family4": {
+      "motif_id": "tiling"
+    },
+    "verdict": "fail"
+  },
+  "scene_quilt_bed.png": {
+    "motif": "aperiodic_tiling",
+    "verify": {
+      "passed": false,
+      "problems": "画面虽为无缝铺满的局部匹配拼接，但整体呈现为小尺度的随机/准随机多边形镶嵌纹理：缺少可识别的非周期铺砌所需的全局强约束（如显式的层级替换/超瓦片结构或可验证的无理频率控制），也未表现出“任一局部图案在有界间隙内处处再现”的可判定机制。局部星形元素更像少量点缀而非在全域按同一规则反复出现的致密回现结构；因此构图更接近装饰性不规则 tiling，而非‘似曾相识、永不重演’的准晶式非周期铺砌。"
+    },
+    "family4": {
+      "motif_id": "tiling"
+    },
+    "verdict": "fail"
+  },
+  "scene_herb_terrace.png": {
+    "motif": "aperiodic_tiling",
+    "verify": {
+      "passed": false,
+      "problems": "画面呈现的是规则的两色星形/多边形拼接，局部匹配规则看起来一致且可平铺，但整体具有明显的周期性与重复：星形单元在近似等间距的网格上反复出现，沿水平/垂直方向都可找到近似的平移复现。未体现“无任何平移周期的全域铺满”这一关键不变量；同时也缺少准晶式的多尺度/多取向但非周期的长程秩序特征，整体更像周期性装饰地砖图案。"
+    },
+    "family4": {
+      "motif_id": "tiling"
+    },
+    "verdict": "fail"
+  },
+  "scene_rain_courtyard.png": {
+    "motif": "aperiodic_tiling",
+    "verify": {
+      "passed": false,
+      "problems": "画面呈现的是有限区域的多边形地砖铺装，局部匹配规则与两类瓦片（深蓝/土黄）形成的星形装饰看起来是周期性或准周期性都无法从这张单幅小视野中得到“无任何平移周期且局部在有界间隙内处处再现”的强证据；相反更像常见的可平移重复的装饰铺地（局部模块/星形母题重复且对齐趋势明显），缺少明确的非周期铺砌的全局约束（如明确的非周期原型集合与强制匹配标记、跨尺度层级导致的处处复现而不重复的结构骨架）。"
+    },
+    "family4": {
+      "motif_id": "aperiodic_tiling"
+    },
+    "verdict": "fail"
+  },
+  "scene_lantern_square.png": {
+    "motif": "aperiodic_tiling",
+    "verify": {
+      "passed": false,
+      "problems": "画面主要是两色三角/多边形地砖的常规周期性铺装，整体可由平移复原（或至少强烈呈现重复单元/平行带状重复），不符合“无任何平移周期的无缝铺满”。同时未见到准晶/彭罗斯式的层级非周期匹配导致的‘局部处处再现但永不整体重演’结构；图案更像表面纹理重复而非非周期拓扑骨架。"
+    },
+    "family4": {
+      "motif_id": "tiling"
+    },
+    "verdict": "fail"
+  },
+  "scene_station_concourse.png": {
+    "motif": "aperiodic_tiling",
+    "verify": {
+      "passed": false,
+      "problems": "画面是由两色多边形拼接形成的周期性/准周期性地砖纹理，但缺乏可辨识的非周期铺砌“强约束”骨架（如多尺度层级、长程强制匹配导致的无平移周期）。在有限视野内也看不出任何必然阻止平移复原的全局组织；小金色星点更像重复点缀而非在有界间隙内处处再现的同一局部构型。整体更符合常规装饰性平铺（可能存在平移周期或至少未能证明无周期），未体现‘似曾相识、永不重演’的非周期铺满结构。"
+    },
+    "family4": {
+      "motif_id": "aperiodic_tiling"
+    },
+    "verdict": "fail"
+  },
+  "scene_salt_flats.png": {
+    "motif": "aperiodic_tiling",
+    "verify": {
+      "passed": false,
+      "problems": "画面呈现的是随机/近随机的碎石拼贴质感：虽可视作“无缝铺满”，但缺少可验证的准晶/非周期铺砌的全局约束与多种瓦片的严格局部匹配规则；局部形状与接缝分布近似统计平稳，无法体现“任一局部图案在有界间隙内处处再现”的强复现性质，也不排除存在平移周期（至少未在构图骨架上明确破除）。因此未承载‘似曾相识,永不重演’的非周期铺砌不变量。"
+    },
+    "family4": {
+      "motif_id": "tiling"
+    },
+    "verdict": "fail"
+  },
+  "scene_sewing_table.png": {
+    "motif": "aperiodic_tiling",
+    "verify": {
+      "passed": false,
+      "problems": "画面主体是规则的六边形/菱形网格上重复的星形单元，整体呈现明显的周期性平铺（存在平移即可近似/基本复原）；局部图案也以固定间隔精确重复。未体现“无任何平移周期但局部在有界间隙内处处再现”的非周期准晶式铺砌结构。"
+    },
+    "family4": {
+      "motif_id": "tiling"
+    },
+    "verdict": "fail"
+  },
+  "scene_greenhouse_walk.png": {
+    "motif": "aperiodic_tiling",
+    "verify": {
+      "passed": false,
+      "problems": "画面呈现的是随机/非周期的三角形-多边形拼贴纹理，缺乏可验证的“同一套局部匹配规则”所强制生成的准周期骨架；也未体现“任一局部图案在有界间隙内处处再现”的重复性（更像随机变形与随机拼接，局部子图案不保证再现）。因此未能承载‘似曾相识,永不重演’的准周期铺砌不变量。"
+    },
+    "family4": {
+      "motif_id": "tiling"
+    },
+    "verdict": "fail"
+  },
+  "scene_canal_lanterns.png": {
+    "motif": "projective_duality",
+    "verify": {
+      "passed": false,
+      "problems": "画面是两幅不同网络结构的并置：左为四角节点+交叉对角线的单一体系，右为多节点放射/交汇的另一体系。两者之间没有在同一体系内可识别的“两类角色”及其整体互换（σ）机制，也不存在互换一次得到同构重述、再互换一次逐字复原的对合关系。并置更像对比两种拓扑/布局，而非同一关系命题在内部进行角色对调后仍成立的对偶结构。"
+    },
+    "family4": {
+      "motif_id": "projective_duality"
+    },
+    "verdict": "fail"
+  },
+  "scene_harbor_cranes.png": {
+    "motif": "projective_duality",
+    "verify": {
+      "passed": false,
+      "problems": "画面呈现的是两组杆件/柱体的几何排列（左侧近似方框+对角线，右侧为散布的交叉放射），并未建立“同一体系内两类角色”的清晰区分与成对互换关系。缺少可辨识的两类元素（A/B）及其关系命题在整体互换下保持不变的对应结构；两侧也不像同一结构的两次整体重述（一次原述、一次角色互换后复原），更接近不同构型的并置。"
+    },
+    "family4": {
+      "motif_id": "projective_duality"
+    },
+    "verdict": "fail"
+  },
+  "scene_quarry_haul_roads.png": {
+    "motif": "contraction_fixed_point",
+    "verify": {
+      "passed": false,
+      "problems": "画面主体是一次性的之字形道路/切坡轨迹，尺度基本恒定，没有呈现“同一规则自迭代且每步按定比q<1收缩”的层级链；也未形成收敛到由f(x*)=x*自证的不动点的明确终点（轨迹在一处停止更像场景截断/工具停靠而非不动点结构）。整体更接近单条路径/折线而非逐步缩小的迭代塌缩序列。"
+    },
+    "family4": {
+      "motif_id": "convergence"
+    },
+    "verdict": "fail"
+  }
+}

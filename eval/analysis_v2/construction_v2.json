@@ -1,0 +1,412 @@
+{
+ "date": "2026-07-21",
+ "scene_pipeline": {
+  "prompts_authored": 205,
+  "prompts_per_motif": {
+   "nesting": 7,
+   "symmetry": 8,
+   "recursion": 7,
+   "cycle": 8,
+   "alternation": 8,
+   "spiral": 8,
+   "bottleneck": 8,
+   "convergence": 8,
+   "symmetry_breaking": 8,
+   "self_reference": 8,
+   "strange_loop": 8,
+   "isomorphism": 8,
+   "figure_ground": 8,
+   "mobius": 8,
+   "braiding": 8,
+   "interference": 8,
+   "tiling": 8,
+   "hub": 8,
+   "infinite_descent": 9,
+   "coprime_orbit": 9,
+   "pigeonhole": 9,
+   "diagonalization": 9,
+   "aperiodic_tiling": 9,
+   "projective_duality": 9,
+   "contraction_fixed_point": 9
+  },
+  "screening_rule": "dual-probe: (1) invariant-verification probe (passed/problems); (2) within-family 4-way identification probe. verify fail -> fail; verify pass but family-4 probe misidentifies -> weak; both pass -> pass",
+  "round1_fails_removed": 49,
+  "round2_screen_file_entries": 203,
+  "round2_verdicts": {
+   "pass": 136,
+   "weak": 27,
+   "fail": 40
+  },
+  "round2_fails_removed": 39,
+  "round2_fail_reassigned": {
+   "scene": "scene_cave_lanterns.png",
+   "from_motif": "infinite_descent",
+   "to_motif": "bottleneck"
+  },
+  "total_renders_screened_approx": 252,
+  "total_fails_flagged": 89,
+  "new_scenes_retained": 165,
+  "pilot_scenes_retained": 45,
+  "final_scene_pool": 210,
+  "final_scenes_per_motif": {
+   "alternation": 10,
+   "aperiodic_tiling": 1,
+   "bottleneck": 10,
+   "braiding": 8,
+   "contraction_fixed_point": 9,
+   "convergence": 10,
+   "coprime_orbit": 10,
+   "cycle": 9,
+   "diagonalization": 5,
+   "figure_ground": 6,
+   "hub": 10,
+   "infinite_descent": 6,
+   "interference": 10,
+   "isomorphism": 10,
+   "mobius": 10,
+   "nesting": 10,
+   "pigeonhole": 5,
+   "projective_duality": 8,
+   "recursion": 10,
+   "self_reference": 10,
+   "spiral": 10,
+   "strange_loop": 3,
+   "symmetry": 10,
+   "symmetry_breaking": 10,
+   "tiling": 10
+  },
+  "motifs_at_10_of_10": 15,
+  "round2_fails_per_motif": {
+   "aperiodic_tiling": 9,
+   "strange_loop": 7,
+   "pigeonhole": 5,
+   "diagonalization": 5,
+   "infinite_descent": 4,
+   "figure_ground": 4,
+   "braiding": 2,
+   "projective_duality": 2,
+   "cycle": 1,
+   "contraction_fixed_point": 1
+  }
+ },
+ "story_pipeline": {
+  "attempts": 125,
+  "attempts_per_motif": 5,
+  "generator": "gpt-5.5",
+  "judge": "gpt-5.2 (dual screen: deterministic device check + blind motif identification)",
+  "passed": 121,
+  "failed": 4,
+  "failures": [
+   {
+    "motif": "figure_ground",
+    "story_id": "figure_ground_en_s0",
+    "device_passed": true,
+    "blind_motif": "projective_duality"
+   },
+   {
+    "motif": "interference",
+    "story_id": "interference_en_s0",
+    "device_passed": false,
+    "blind_motif": "interference"
+   },
+   {
+    "motif": "tiling",
+    "story_id": "tiling_en_s1",
+    "device_passed": true,
+    "blind_motif": "convergence"
+   },
+   {
+    "motif": "tiling",
+    "story_id": "tiling_en_s4",
+    "device_passed": true,
+    "blind_motif": "convergence"
+   }
+  ],
+  "passed_per_motif": {
+   "alternation": 5,
+   "aperiodic_tiling": 5,
+   "bottleneck": 5,
+   "braiding": 5,
+   "contraction_fixed_point": 5,
+   "convergence": 5,
+   "coprime_orbit": 5,
+   "cycle": 5,
+   "diagonalization": 5,
+   "figure_ground": 4,
+   "hub": 5,
+   "infinite_descent": 5,
+   "interference": 4,
+   "isomorphism": 5,
+   "mobius": 5,
+   "nesting": 5,
+   "pigeonhole": 5,
+   "projective_duality": 5,
+   "recursion": 5,
+   "self_reference": 5,
+   "spiral": 5,
+   "strange_loop": 5,
+   "symmetry": 5,
+   "symmetry_breaking": 5,
+   "tiling": 3
+  },
+  "motifs_at_5_of_5": 22
+ },
+ "item_counts": {
+  "main": 946,
+  "adversarial": 210,
+  "total": 1156,
+  "per_task": {
+   "scene2motif": 210,
+   "skeleton2motif": 49,
+   "story2motif": 121,
+   "theorem2motif": 25,
+   "crossvoice": 210,
+   "xv_scene_thm": 210,
+   "xv_story_thm": 121,
+   "scene2motif_family4": 210
+  }
+ },
+ "adversarial_split_behavior": {
+  "api_gpt-5.5": {
+   "acc": {
+    "scene2motif": 0.7571,
+    "crossvoice": 0.6429,
+    "scene2motif_family4": 0.8571
+   },
+   "family4_vs_scene25": {
+    "n_paired": 210,
+    "only_scene2motif_family4": 25,
+    "only_scene2motif": 4,
+    "p": 0.00010371580719947815
+   },
+   "family4_vs_crossvoice": {
+    "n_paired": 210,
+    "only_scene2motif_family4": 53,
+    "only_crossvoice": 8,
+    "p": 2.98644165040024e-09
+   },
+   "acc_pct": {
+    "scene2motif": 75.7,
+    "scene2motif_family4": 85.7,
+    "crossvoice": 64.3,
+    "xv_scene_thm": 81.0
+   },
+   "delta_menu_breadth_pp": 10.0,
+   "delta_transport_pp": 21.4
+  },
+  "api_gpt-5.2": {
+   "acc": {
+    "scene2motif": 0.7143,
+    "crossvoice": 0.3571,
+    "scene2motif_family4": 0.8
+   },
+   "family4_vs_scene25": {
+    "n_paired": 210,
+    "only_scene2motif_family4": 29,
+    "only_scene2motif": 11,
+    "p": 0.006426576095691416
+   },
+   "family4_vs_crossvoice": {
+    "n_paired": 210,
+    "only_scene2motif_family4": 98,
+    "only_crossvoice": 5,
+    "p": 1.8172343385355978e-23
+   },
+   "acc_pct": {
+    "scene2motif": 71.4,
+    "scene2motif_family4": 80.0,
+    "crossvoice": 35.7,
+    "xv_scene_thm": 67.1
+   },
+   "delta_menu_breadth_pp": 8.6,
+   "delta_transport_pp": 44.3
+  },
+  "api_claude-opus-4-8": {
+   "acc": {
+    "scene2motif": 0.6095,
+    "crossvoice": 0.4381,
+    "scene2motif_family4": 0.7857
+   },
+   "family4_vs_scene25": {
+    "n_paired": 210,
+    "only_scene2motif_family4": 49,
+    "only_scene2motif": 12,
+    "p": 1.969878418086636e-06
+   },
+   "family4_vs_crossvoice": {
+    "n_paired": 210,
+    "only_scene2motif_family4": 79,
+    "only_crossvoice": 6,
+    "p": 2.441642201786159e-17
+   },
+   "acc_pct": {
+    "scene2motif": 61.0,
+    "scene2motif_family4": 78.6,
+    "crossvoice": 43.8,
+    "xv_scene_thm": 68.6
+   },
+   "delta_menu_breadth_pp": 17.6,
+   "delta_transport_pp": 34.8
+  },
+  "qwen2.5-vl-32b": {
+   "acc": {
+    "scene2motif": 0.4762,
+    "crossvoice": 0.3238,
+    "scene2motif_family4": 0.719
+   },
+   "family4_vs_scene25": {
+    "n_paired": 210,
+    "only_scene2motif_family4": 65,
+    "only_scene2motif": 14,
+    "p": 5.194941262584353e-09
+   },
+   "family4_vs_crossvoice": {
+    "n_paired": 210,
+    "only_scene2motif_family4": 104,
+    "only_crossvoice": 21,
+    "p": 2.0958007589842695e-14
+   },
+   "acc_pct": {
+    "scene2motif": 47.6,
+    "scene2motif_family4": 71.9,
+    "crossvoice": 32.4,
+    "xv_scene_thm": 51.0
+   },
+   "delta_menu_breadth_pp": 24.3,
+   "delta_transport_pp": 39.5
+  },
+  "qwen2-vl-7b": {
+   "acc": {
+    "scene2motif": 0.281,
+    "crossvoice": 0.2286,
+    "scene2motif_family4": 0.4857
+   },
+   "family4_vs_scene25": {
+    "n_paired": 210,
+    "only_scene2motif_family4": 69,
+    "only_scene2motif": 26,
+    "p": 1.182808848491514e-05
+   },
+   "family4_vs_crossvoice": {
+    "n_paired": 210,
+    "only_scene2motif_family4": 80,
+    "only_crossvoice": 26,
+    "p": 1.4269643738923103e-07
+   },
+   "acc_pct": {
+    "scene2motif": 28.1,
+    "scene2motif_family4": 48.6,
+    "crossvoice": 22.9,
+    "xv_scene_thm": 33.8
+   },
+   "delta_menu_breadth_pp": 20.5,
+   "delta_transport_pp": 25.7
+  }
+ },
+ "pipeline_behavior_alignment": {
+  "behavioral_acc_scene25_pooled5vlm": {
+   "self_reference": 0.24,
+   "recursion": 0.44,
+   "nesting": 0.44,
+   "cycle": 0.7333,
+   "symmetry": 0.9,
+   "alternation": 0.9,
+   "spiral": 1.0,
+   "convergence": 0.58,
+   "bottleneck": 0.54,
+   "symmetry_breaking": 0.72,
+   "strange_loop": 0.2667,
+   "figure_ground": 0.4,
+   "isomorphism": 0.34,
+   "mobius": 0.76,
+   "braiding": 0.775,
+   "interference": 0.64,
+   "tiling": 0.86,
+   "hub": 0.7,
+   "diagonalization": 0.64,
+   "infinite_descent": 0.1667,
+   "coprime_orbit": 0.52,
+   "pigeonhole": 0.4,
+   "projective_duality": 0.075,
+   "contraction_fixed_point": 0.0667,
+   "aperiodic_tiling": 0.0
+  },
+  "generator_fail_rate_round2": {
+   "self_reference": 0.0,
+   "recursion": 0.0,
+   "nesting": 0.0,
+   "cycle": 0.125,
+   "symmetry": 0.0,
+   "alternation": 0.0,
+   "spiral": 0.0,
+   "convergence": 0.0,
+   "bottleneck": 0.0,
+   "symmetry_breaking": 0.0,
+   "strange_loop": 0.875,
+   "figure_ground": 0.5,
+   "isomorphism": 0.0,
+   "mobius": 0.0,
+   "braiding": 0.25,
+   "interference": 0.0,
+   "tiling": 0.0,
+   "hub": 0.0,
+   "diagonalization": 0.5556,
+   "infinite_descent": 0.4444,
+   "coprime_orbit": 0.0,
+   "pigeonhole": 0.5556,
+   "projective_duality": 0.2222,
+   "contraction_fixed_point": 0.1111,
+   "aperiodic_tiling": 1.0
+  },
+  "final_scene_count": {
+   "self_reference": 10,
+   "recursion": 10,
+   "nesting": 10,
+   "cycle": 9,
+   "symmetry": 10,
+   "alternation": 10,
+   "spiral": 10,
+   "convergence": 10,
+   "bottleneck": 10,
+   "symmetry_breaking": 10,
+   "strange_loop": 3,
+   "figure_ground": 6,
+   "isomorphism": 10,
+   "mobius": 10,
+   "braiding": 8,
+   "interference": 10,
+   "tiling": 10,
+   "hub": 10,
+   "diagonalization": 5,
+   "infinite_descent": 6,
+   "coprime_orbit": 10,
+   "pigeonhole": 5,
+   "projective_duality": 8,
+   "contraction_fixed_point": 9,
+   "aperiodic_tiling": 1
+  },
+  "spearman_failrate_vs_acc": {
+   "rho": -0.4846340347959407,
+   "p": 0.01408120462494355
+  },
+  "spearman_deficit_vs_acc": {
+   "rho": -0.5021722458332235,
+   "p": 0.01052755346278531
+  }
+ },
+ "adversarial_summary": {
+  "family4_easier_than_25way_all_models": true,
+  "max_mcnemar_p_family4_vs_scene25": 0.0065,
+  "crossvoice_harder_than_family4_all_models": true,
+  "max_mcnemar_p_family4_vs_crossvoice": 1.5e-07,
+  "menu_breadth_cost_range_pp": [
+   8.6,
+   24.3
+  ],
+  "transport_cost_range_pp": [
+   21.4,
+   44.3
+  ],
+  "xv_scene_thm_between_family4_and_crossvoice_all_models": true
+ }
+}

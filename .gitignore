@@ -2,3 +2,20 @@
 __pycache__/
 *.pyc
 node_modules/
+*.log
+paper/geb.pdf
+paper/slides.pdf
+paper/arxiv_submit/
+paper/arxiv_submit.tar.gz
+paper/*.aux
+paper/*.out
+paper/*.bbl
+paper/*.blg
+paper/*.synctex.gz
+paper/*.nav
+paper/*.snm
+paper/*.toc
+# regenerable experiment stimuli/renders (scripts included, images not)
+exp1_geometry/renders/
+exp2_comparison/stimuli/
+exp3_ladder/images/

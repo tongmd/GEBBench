@@ -1,0 +1,4776 @@
+{
+ "model": "qwen2-vl-7b",
+ "base": "http://localhost:8002/v1",
+ "summary": {
+  "L0": {
+   "n": 25,
+   "acc": 0.16
+  },
+  "L1": {
+   "n": 75,
+   "acc": 0.1733
+  },
+  "L2": {
+   "n": 75,
+   "acc": 0.2133
+  },
+  "L3": {
+   "n": 75,
+   "acc": 0.24
+  },
+  "L4": {
+   "n": 75,
+   "acc": 0.1867
+  },
+  "L5": {
+   "n": 74,
+   "acc": 0.2162
+  },
+  "L6": {
+   "n": 75,
+   "acc": 0.16
+  }
+ },
+ "records": [
+  {
+   "id": "ladder:recursion:L0_s0",
+   "task": "scene2motif",
+   "answer": "recursion",
+   "level": 0,
+   "seed": 0,
+   "pred": "self_reference",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"self_reference\"\n}\n```"
+  },
+  {
+   "id": "ladder:recursion:L1_s0",
+   "task": "scene2motif",
+   "answer": "recursion",
+   "level": 1,
+   "seed": 0,
+   "pred": "self_reference",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"self_reference\"\n}\n```"
+  },
+  {
+   "id": "ladder:recursion:L1_s1",
+   "task": "scene2motif",
+   "answer": "recursion",
+   "level": 1,
+   "seed": 1,
+   "pred": "self_reference",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"self_reference\"\n}\n```"
+  },
+  {
+   "id": "ladder:recursion:L1_s2",
+   "task": "scene2motif",
+   "answer": "recursion",
+   "level": 1,
+   "seed": 2,
+   "pred": "self_reference",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"self_reference\"\n}\n```"
+  },
+  {
+   "id": "ladder:recursion:L2_s0",
+   "task": "scene2motif",
+   "answer": "recursion",
+   "level": 2,
+   "seed": 0,
+   "pred": "self_reference",
+   "correct": false,
+   "raw": "{\"motif_id\": \"self_reference\"}"
+  },
+  {
+   "id": "ladder:recursion:L2_s1",
+   "task": "scene2motif",
+   "answer": "recursion",
+   "level": 2,
+   "seed": 1,
+   "pred": "self_reference",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"self_reference\"\n}\n```"
+  },
+  {
+   "id": "ladder:recursion:L2_s2",
+   "task": "scene2motif",
+   "answer": "recursion",
+   "level": 2,
+   "seed": 2,
+   "pred": "self_reference",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"self_reference\"\n}\n```"
+  },
+  {
+   "id": "ladder:recursion:L3_s0",
+   "task": "scene2motif",
+   "answer": "recursion",
+   "level": 3,
+   "seed": 0,
+   "pred": "self_reference",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"self_reference\"\n}\n```"
+  },
+  {
+   "id": "ladder:recursion:L3_s1",
+   "task": "scene2motif",
+   "answer": "recursion",
+   "level": 3,
+   "seed": 1,
+   "pred": "self_reference",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"self_reference\"\n}\n```"
+  },
+  {
+   "id": "ladder:recursion:L3_s2",
+   "task": "scene2motif",
+   "answer": "recursion",
+   "level": 3,
+   "seed": 2,
+   "pred": "self_reference",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"self_reference\"\n}\n```"
+  },
+  {
+   "id": "ladder:recursion:L4_s0",
+   "task": "scene2motif",
+   "answer": "recursion",
+   "level": 4,
+   "seed": 0,
+   "pred": "self_reference",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"self_reference\"\n}\n```"
+  },
+  {
+   "id": "ladder:recursion:L4_s1",
+   "task": "scene2motif",
+   "answer": "recursion",
+   "level": 4,
+   "seed": 1,
+   "pred": "self_reference",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"self_reference\"\n}\n```"
+  },
+  {
+   "id": "ladder:recursion:L4_s2",
+   "task": "scene2motif",
+   "answer": "recursion",
+   "level": 4,
+   "seed": 2,
+   "pred": "self_reference",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"self_reference\"\n}\n```"
+  },
+  {
+   "id": "ladder:recursion:L5_s0",
+   "task": "scene2motif",
+   "answer": "recursion",
+   "level": 5,
+   "seed": 0,
+   "pred": "self_reference",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"self_reference\"\n}\n```"
+  },
+  {
+   "id": "ladder:recursion:L5_s1",
+   "task": "scene2motif",
+   "answer": "recursion",
+   "level": 5,
+   "seed": 1,
+   "pred": "self_reference",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"self_reference\"\n}\n```"
+  },
+  {
+   "id": "ladder:recursion:L5_s2",
+   "task": "scene2motif",
+   "answer": "recursion",
+   "level": 5,
+   "seed": 2,
+   "pred": "self_reference",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"self_reference\"\n}\n```"
+  },
+  {
+   "id": "ladder:recursion:L6_s0",
+   "task": "scene2motif",
+   "answer": "recursion",
+   "level": 6,
+   "seed": 0,
+   "pred": "self_reference",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"self_reference\"\n}\n```"
+  },
+  {
+   "id": "ladder:recursion:L6_s1",
+   "task": "scene2motif",
+   "answer": "recursion",
+   "level": 6,
+   "seed": 1,
+   "pred": "self_reference",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"self_reference\"\n}\n```"
+  },
+  {
+   "id": "ladder:recursion:L6_s2",
+   "task": "scene2motif",
+   "answer": "recursion",
+   "level": 6,
+   "seed": 2,
+   "pred": "self_reference",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"self_reference\"\n}\n```"
+  },
+  {
+   "id": "ladder:nesting:L0_s0",
+   "task": "scene2motif",
+   "answer": "nesting",
+   "level": 0,
+   "seed": 0,
+   "pred": "cycle",
+   "correct": false,
+   "raw": "{\"motif_id\": \"cycle\"}"
+  },
+  {
+   "id": "ladder:nesting:L1_s0",
+   "task": "scene2motif",
+   "answer": "nesting",
+   "level": 1,
+   "seed": 0,
+   "pred": "cycle",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"cycle\"\n}\n```"
+  },
+  {
+   "id": "ladder:nesting:L1_s1",
+   "task": "scene2motif",
+   "answer": "nesting",
+   "level": 1,
+   "seed": 1,
+   "pred": "cycle",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"cycle\"\n}\n```"
+  },
+  {
+   "id": "ladder:nesting:L1_s2",
+   "task": "scene2motif",
+   "answer": "nesting",
+   "level": 1,
+   "seed": 2,
+   "pred": "cycle",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"cycle\"\n}\n```"
+  },
+  {
+   "id": "ladder:nesting:L2_s0",
+   "task": "scene2motif",
+   "answer": "nesting",
+   "level": 2,
+   "seed": 0,
+   "pred": "cycle",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"cycle\"\n}\n```"
+  },
+  {
+   "id": "ladder:nesting:L2_s1",
+   "task": "scene2motif",
+   "answer": "nesting",
+   "level": 2,
+   "seed": 1,
+   "pred": "cycle",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"cycle\"\n}\n```"
+  },
+  {
+   "id": "ladder:nesting:L2_s2",
+   "task": "scene2motif",
+   "answer": "nesting",
+   "level": 2,
+   "seed": 2,
+   "pred": "cycle",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"cycle\"\n}\n```"
+  },
+  {
+   "id": "ladder:nesting:L3_s0",
+   "task": "scene2motif",
+   "answer": "nesting",
+   "level": 3,
+   "seed": 0,
+   "pred": "cycle",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"cycle\"\n}\n```"
+  },
+  {
+   "id": "ladder:nesting:L3_s1",
+   "task": "scene2motif",
+   "answer": "nesting",
+   "level": 3,
+   "seed": 1,
+   "pred": "cycle",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"cycle\"\n}\n```"
+  },
+  {
+   "id": "ladder:nesting:L3_s2",
+   "task": "scene2motif",
+   "answer": "nesting",
+   "level": 3,
+   "seed": 2,
+   "pred": "cycle",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"cycle\"\n}\n```"
+  },
+  {
+   "id": "ladder:nesting:L4_s0",
+   "task": "scene2motif",
+   "answer": "nesting",
+   "level": 4,
+   "seed": 0,
+   "pred": "cycle",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"cycle\"\n}\n```"
+  },
+  {
+   "id": "ladder:nesting:L4_s1",
+   "task": "scene2motif",
+   "answer": "nesting",
+   "level": 4,
+   "seed": 1,
+   "pred": "spiral",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"spiral\"\n}\n```"
+  },
+  {
+   "id": "ladder:nesting:L4_s2",
+   "task": "scene2motif",
+   "answer": "nesting",
+   "level": 4,
+   "seed": 2,
+   "pred": "spiral",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"spiral\"\n}\n```"
+  },
+  {
+   "id": "ladder:nesting:L5_s0",
+   "task": "scene2motif",
+   "answer": "nesting",
+   "level": 5,
+   "seed": 0,
+   "pred": "spiral",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"spiral\"\n}\n```"
+  },
+  {
+   "id": "ladder:nesting:L5_s1",
+   "task": "scene2motif",
+   "answer": "nesting",
+   "level": 5,
+   "seed": 1,
+   "pred": "cycle",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"cycle\"\n}\n```"
+  },
+  {
+   "id": "ladder:nesting:L5_s2",
+   "task": "scene2motif",
+   "answer": "nesting",
+   "level": 5,
+   "seed": 2,
+   "pred": "self_reference",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"self_reference\"\n}\n```"
+  },
+  {
+   "id": "ladder:nesting:L6_s0",
+   "task": "scene2motif",
+   "answer": "nesting",
+   "level": 6,
+   "seed": 0,
+   "pred": "spiral",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"spiral\"\n}\n```"
+  },
+  {
+   "id": "ladder:nesting:L6_s1",
+   "task": "scene2motif",
+   "answer": "nesting",
+   "level": 6,
+   "seed": 1,
+   "pred": "spiral",
+   "correct": false,
+   "raw": "{\"motif_id\": \"spiral\"}"
+  },
+  {
+   "id": "ladder:nesting:L6_s2",
+   "task": "scene2motif",
+   "answer": "nesting",
+   "level": 6,
+   "seed": 2,
+   "pred": "spiral",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"spiral\"\n}\n```"
+  },
+  {
+   "id": "ladder:cycle:L0_s0",
+   "task": "scene2motif",
+   "answer": "cycle",
+   "level": 0,
+   "seed": 0,
+   "pred": "cycle",
+   "correct": true,
+   "raw": "{\"motif_id\": \"cycle\"}"
+  },
+  {
+   "id": "ladder:cycle:L1_s0",
+   "task": "scene2motif",
+   "answer": "cycle",
+   "level": 1,
+   "seed": 0,
+   "pred": "cycle",
+   "correct": true,
+   "raw": "{\"motif_id\": \"cycle\"}"
+  },
+  {
+   "id": "ladder:cycle:L1_s1",
+   "task": "scene2motif",
+   "answer": "cycle",
+   "level": 1,
+   "seed": 1,
+   "pred": "cycle",
+   "correct": true,
+   "raw": "{\"motif_id\": \"cycle\"}"
+  },
+  {
+   "id": "ladder:cycle:L1_s2",
+   "task": "scene2motif",
+   "answer": "cycle",
+   "level": 1,
+   "seed": 2,
+   "pred": "cycle",
+   "correct": true,
+   "raw": "```json\n{\n  \"motif_id\": \"cycle\"\n}\n```"
+  },
+  {
+   "id": "ladder:cycle:L2_s0",
+   "task": "scene2motif",
+   "answer": "cycle",
+   "level": 2,
+   "seed": 0,
+   "pred": "cycle",
+   "correct": true,
+   "raw": "{\"motif_id\": \"cycle\"}"
+  },
+  {
+   "id": "ladder:cycle:L2_s1",
+   "task": "scene2motif",
+   "answer": "cycle",
+   "level": 2,
+   "seed": 1,
+   "pred": "cycle",
+   "correct": true,
+   "raw": "{\"motif_id\": \"cycle\"}"
+  },
+  {
+   "id": "ladder:cycle:L2_s2",
+   "task": "scene2motif",
+   "answer": "cycle",
+   "level": 2,
+   "seed": 2,
+   "pred": "cycle",
+   "correct": true,
+   "raw": "{\"motif_id\": \"cycle\"}"
+  },
+  {
+   "id": "ladder:cycle:L3_s0",
+   "task": "scene2motif",
+   "answer": "cycle",
+   "level": 3,
+   "seed": 0,
+   "pred": "cycle",
+   "correct": true,
+   "raw": "{\"motif_id\": \"cycle\"}"
+  },
+  {
+   "id": "ladder:cycle:L3_s1",
+   "task": "scene2motif",
+   "answer": "cycle",
+   "level": 3,
+   "seed": 1,
+   "pred": "cycle",
+   "correct": true,
+   "raw": "{\"motif_id\": \"cycle\"}"
+  },
+  {
+   "id": "ladder:cycle:L3_s2",
+   "task": "scene2motif",
+   "answer": "cycle",
+   "level": 3,
+   "seed": 2,
+   "pred": "cycle",
+   "correct": true,
+   "raw": "{\"motif_id\": \"cycle\"}"
+  },
+  {
+   "id": "ladder:cycle:L4_s0",
+   "task": "scene2motif",
+   "answer": "cycle",
+   "level": 4,
+   "seed": 0,
+   "pred": "cycle",
+   "correct": true,
+   "raw": "```json\n{\n  \"motif_id\": \"cycle\"\n}\n```"
+  },
+  {
+   "id": "ladder:cycle:L4_s1",
+   "task": "scene2motif",
+   "answer": "cycle",
+   "level": 4,
+   "seed": 1,
+   "pred": "cycle",
+   "correct": true,
+   "raw": "```json\n{\n  \"motif_id\": \"cycle\"\n}\n```"
+  },
+  {
+   "id": "ladder:cycle:L4_s2",
+   "task": "scene2motif",
+   "answer": "cycle",
+   "level": 4,
+   "seed": 2,
+   "pred": "cycle",
+   "correct": true,
+   "raw": "{\"motif_id\": \"cycle\"}"
+  },
+  {
+   "id": "ladder:cycle:L5_s0",
+   "task": "scene2motif",
+   "answer": "cycle",
+   "level": 5,
+   "seed": 0,
+   "pred": "cycle",
+   "correct": true,
+   "raw": "```json\n{\n  \"motif_id\": \"cycle\"\n}\n```"
+  },
+  {
+   "id": "ladder:cycle:L5_s1",
+   "task": "scene2motif",
+   "answer": "cycle",
+   "level": 5,
+   "seed": 1,
+   "pred": "cycle",
+   "correct": true,
+   "raw": "{\"motif_id\": \"cycle\"}"
+  },
+  {
+   "id": "ladder:cycle:L5_s2",
+   "task": "scene2motif",
+   "answer": "cycle",
+   "level": 5,
+   "seed": 2,
+   "pred": "cycle",
+   "correct": true,
+   "raw": "{\"motif_id\": \"cycle\"}"
+  },
+  {
+   "id": "ladder:cycle:L6_s0",
+   "task": "scene2motif",
+   "answer": "cycle",
+   "level": 6,
+   "seed": 0,
+   "pred": "cycle",
+   "correct": true,
+   "raw": "{\"motif_id\": \"cycle\"}"
+  },
+  {
+   "id": "ladder:cycle:L6_s1",
+   "task": "scene2motif",
+   "answer": "cycle",
+   "level": 6,
+   "seed": 1,
+   "pred": "cycle",
+   "correct": true,
+   "raw": "```json\n{\n  \"motif_id\": \"cycle\"\n}\n```"
+  },
+  {
+   "id": "ladder:cycle:L6_s2",
+   "task": "scene2motif",
+   "answer": "cycle",
+   "level": 6,
+   "seed": 2,
+   "pred": "self_reference",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"self_reference\"\n}\n```"
+  },
+  {
+   "id": "ladder:self_reference:L0_s0",
+   "task": "scene2motif",
+   "answer": "self_reference",
+   "level": 0,
+   "seed": 0,
+   "pred": "nesting",
+   "correct": false,
+   "raw": "{\"motif_id\": \"nesting\"}"
+  },
+  {
+   "id": "ladder:self_reference:L1_s0",
+   "task": "scene2motif",
+   "answer": "self_reference",
+   "level": 1,
+   "seed": 0,
+   "pred": "nesting",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"nesting\"\n}\n```"
+  },
+  {
+   "id": "ladder:self_reference:L1_s1",
+   "task": "scene2motif",
+   "answer": "self_reference",
+   "level": 1,
+   "seed": 1,
+   "pred": "nesting",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"nesting\"\n}\n```"
+  },
+  {
+   "id": "ladder:self_reference:L1_s2",
+   "task": "scene2motif",
+   "answer": "self_reference",
+   "level": 1,
+   "seed": 2,
+   "pred": "nesting",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"nesting\"\n}\n```"
+  },
+  {
+   "id": "ladder:self_reference:L2_s0",
+   "task": "scene2motif",
+   "answer": "self_reference",
+   "level": 2,
+   "seed": 0,
+   "pred": "nesting",
+   "correct": false,
+   "raw": "{\"motif_id\": \"nesting\"}"
+  },
+  {
+   "id": "ladder:self_reference:L2_s1",
+   "task": "scene2motif",
+   "answer": "self_reference",
+   "level": 2,
+   "seed": 1,
+   "pred": "self_reference",
+   "correct": true,
+   "raw": "```json\n{\n  \"motif_id\": \"self_reference\"\n}\n```"
+  },
+  {
+   "id": "ladder:self_reference:L2_s2",
+   "task": "scene2motif",
+   "answer": "self_reference",
+   "level": 2,
+   "seed": 2,
+   "pred": "nesting",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"nesting\"\n}\n```"
+  },
+  {
+   "id": "ladder:self_reference:L3_s0",
+   "task": "scene2motif",
+   "answer": "self_reference",
+   "level": 3,
+   "seed": 0,
+   "pred": "self_reference",
+   "correct": true,
+   "raw": "{\"motif_id\": \"self_reference\"}"
+  },
+  {
+   "id": "ladder:self_reference:L3_s1",
+   "task": "scene2motif",
+   "answer": "self_reference",
+   "level": 3,
+   "seed": 1,
+   "pred": "self_reference",
+   "correct": true,
+   "raw": "```json\n{\n  \"motif_id\": \"self_reference\"\n}\n```"
+  },
+  {
+   "id": "ladder:self_reference:L3_s2",
+   "task": "scene2motif",
+   "answer": "self_reference",
+   "level": 3,
+   "seed": 2,
+   "pred": "self_reference",
+   "correct": true,
+   "raw": "```json\n{\n  \"motif_id\": \"self_reference\"\n}\n```"
+  },
+  {
+   "id": "ladder:self_reference:L4_s0",
+   "task": "scene2motif",
+   "answer": "self_reference",
+   "level": 4,
+   "seed": 0,
+   "pred": "self_reference",
+   "correct": true,
+   "raw": "```json\n{\n  \"motif_id\": \"self_reference\"\n}\n```"
+  },
+  {
+   "id": "ladder:self_reference:L4_s1",
+   "task": "scene2motif",
+   "answer": "self_reference",
+   "level": 4,
+   "seed": 1,
+   "pred": "nesting",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"nesting\"\n}\n```"
+  },
+  {
+   "id": "ladder:self_reference:L4_s2",
+   "task": "scene2motif",
+   "answer": "self_reference",
+   "level": 4,
+   "seed": 2,
+   "pred": "self_reference",
+   "correct": true,
+   "raw": "```json\n{\n  \"motif_id\": \"self_reference\"\n}\n```"
+  },
+  {
+   "id": "ladder:self_reference:L5_s0",
+   "task": "scene2motif",
+   "answer": "self_reference",
+   "level": 5,
+   "seed": 0,
+   "pred": "self_reference",
+   "correct": true,
+   "raw": "```json\n{\n  \"motif_id\": \"self_reference\"\n}\n```"
+  },
+  {
+   "id": "ladder:self_reference:L5_s2",
+   "task": "scene2motif",
+   "answer": "self_reference",
+   "level": 5,
+   "seed": 2,
+   "pred": "self_reference",
+   "correct": true,
+   "raw": "```json\n{\n  \"motif_id\": \"self_reference\"\n}\n```"
+  },
+  {
+   "id": "ladder:self_reference:L6_s0",
+   "task": "scene2motif",
+   "answer": "self_reference",
+   "level": 6,
+   "seed": 0,
+   "pred": "self_reference",
+   "correct": true,
+   "raw": "```json\n{\n  \"motif_id\": \"self_reference\"\n}\n```"
+  },
+  {
+   "id": "ladder:self_reference:L6_s1",
+   "task": "scene2motif",
+   "answer": "self_reference",
+   "level": 6,
+   "seed": 1,
+   "pred": "nesting",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"nesting\"\n}\n```"
+  },
+  {
+   "id": "ladder:self_reference:L6_s2",
+   "task": "scene2motif",
+   "answer": "self_reference",
+   "level": 6,
+   "seed": 2,
+   "pred": "self_reference",
+   "correct": true,
+   "raw": "```json\n{\n  \"motif_id\": \"self_reference\"\n}\n```"
+  },
+  {
+   "id": "ladder:symmetry:L0_s0",
+   "task": "scene2motif",
+   "answer": "symmetry",
+   "level": 0,
+   "seed": 0,
+   "pred": "recursion",
+   "correct": false,
+   "raw": "{\"motif_id\": \"recursion\"}"
+  },
+  {
+   "id": "ladder:symmetry:L1_s0",
+   "task": "scene2motif",
+   "answer": "symmetry",
+   "level": 1,
+   "seed": 0,
+   "pred": "self_reference",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"self_reference\"\n}\n```"
+  },
+  {
+   "id": "ladder:symmetry:L1_s1",
+   "task": "scene2motif",
+   "answer": "symmetry",
+   "level": 1,
+   "seed": 1,
+   "pred": "symmetry",
+   "correct": true,
+   "raw": "```json\n{\n  \"motif_id\": \"symmetry\"\n}\n```"
+  },
+  {
+   "id": "ladder:symmetry:L1_s2",
+   "task": "scene2motif",
+   "answer": "symmetry",
+   "level": 1,
+   "seed": 2,
+   "pred": "self_reference",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"self_reference\"\n}\n```"
+  },
+  {
+   "id": "ladder:symmetry:L2_s0",
+   "task": "scene2motif",
+   "answer": "symmetry",
+   "level": 2,
+   "seed": 0,
+   "pred": "recursion",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"recursion\"\n}\n```"
+  },
+  {
+   "id": "ladder:symmetry:L2_s1",
+   "task": "scene2motif",
+   "answer": "symmetry",
+   "level": 2,
+   "seed": 1,
+   "pred": "symmetry",
+   "correct": true,
+   "raw": "```json\n{\n  \"motif_id\": \"symmetry\"\n}\n```"
+  },
+  {
+   "id": "ladder:symmetry:L2_s2",
+   "task": "scene2motif",
+   "answer": "symmetry",
+   "level": 2,
+   "seed": 2,
+   "pred": "recursion",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"recursion\"\n}\n```"
+  },
+  {
+   "id": "ladder:symmetry:L3_s0",
+   "task": "scene2motif",
+   "answer": "symmetry",
+   "level": 3,
+   "seed": 0,
+   "pred": "self_reference",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"self_reference\"\n}\n```"
+  },
+  {
+   "id": "ladder:symmetry:L3_s1",
+   "task": "scene2motif",
+   "answer": "symmetry",
+   "level": 3,
+   "seed": 1,
+   "pred": "self_reference",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"self_reference\"\n}\n```"
+  },
+  {
+   "id": "ladder:symmetry:L3_s2",
+   "task": "scene2motif",
+   "answer": "symmetry",
+   "level": 3,
+   "seed": 2,
+   "pred": "self_reference",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"self_reference\"\n}\n```"
+  },
+  {
+   "id": "ladder:symmetry:L4_s0",
+   "task": "scene2motif",
+   "answer": "symmetry",
+   "level": 4,
+   "seed": 0,
+   "pred": "symmetry",
+   "correct": true,
+   "raw": "```json\n{\n  \"motif_id\": \"symmetry\"\n}\n```"
+  },
+  {
+   "id": "ladder:symmetry:L4_s1",
+   "task": "scene2motif",
+   "answer": "symmetry",
+   "level": 4,
+   "seed": 1,
+   "pred": "self_reference",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"self_reference\"\n}\n```"
+  },
+  {
+   "id": "ladder:symmetry:L4_s2",
+   "task": "scene2motif",
+   "answer": "symmetry",
+   "level": 4,
+   "seed": 2,
+   "pred": "self_reference",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"self_reference\"\n}\n```"
+  },
+  {
+   "id": "ladder:symmetry:L5_s0",
+   "task": "scene2motif",
+   "answer": "symmetry",
+   "level": 5,
+   "seed": 0,
+   "pred": "symmetry",
+   "correct": true,
+   "raw": "```json\n{\n  \"motif_id\": \"symmetry\"\n}\n```"
+  },
+  {
+   "id": "ladder:symmetry:L5_s1",
+   "task": "scene2motif",
+   "answer": "symmetry",
+   "level": 5,
+   "seed": 1,
+   "pred": "self_reference",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"self_reference\"\n}\n```"
+  },
+  {
+   "id": "ladder:symmetry:L5_s2",
+   "task": "scene2motif",
+   "answer": "symmetry",
+   "level": 5,
+   "seed": 2,
+   "pred": "self_reference",
+   "correct": false,
+   "raw": "{\"motif_id\": \"self_reference\"}"
+  },
+  {
+   "id": "ladder:symmetry:L6_s0",
+   "task": "scene2motif",
+   "answer": "symmetry",
+   "level": 6,
+   "seed": 0,
+   "pred": "symmetry",
+   "correct": true,
+   "raw": "{\"motif_id\": \"symmetry\"}"
+  },
+  {
+   "id": "ladder:symmetry:L6_s1",
+   "task": "scene2motif",
+   "answer": "symmetry",
+   "level": 6,
+   "seed": 1,
+   "pred": "self_reference",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"self_reference\"\n}\n```"
+  },
+  {
+   "id": "ladder:symmetry:L6_s2",
+   "task": "scene2motif",
+   "answer": "symmetry",
+   "level": 6,
+   "seed": 2,
+   "pred": "self_reference",
+   "correct": false,
+   "raw": "{\"motif_id\": \"self_reference\"}"
+  },
+  {
+   "id": "ladder:alternation:L0_s0",
+   "task": "scene2motif",
+   "answer": "alternation",
+   "level": 0,
+   "seed": 0,
+   "pred": "cycle",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"cycle\"\n}\n```"
+  },
+  {
+   "id": "ladder:alternation:L1_s0",
+   "task": "scene2motif",
+   "answer": "alternation",
+   "level": 1,
+   "seed": 0,
+   "pred": "cycle",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"cycle\"\n}\n```"
+  },
+  {
+   "id": "ladder:alternation:L1_s1",
+   "task": "scene2motif",
+   "answer": "alternation",
+   "level": 1,
+   "seed": 1,
+   "pred": "cycle",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"cycle\"\n}\n```"
+  },
+  {
+   "id": "ladder:alternation:L1_s2",
+   "task": "scene2motif",
+   "answer": "alternation",
+   "level": 1,
+   "seed": 2,
+   "pred": "cycle",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"cycle\"\n}\n```"
+  },
+  {
+   "id": "ladder:alternation:L2_s0",
+   "task": "scene2motif",
+   "answer": "alternation",
+   "level": 2,
+   "seed": 0,
+   "pred": "cycle",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"cycle\"\n}\n```"
+  },
+  {
+   "id": "ladder:alternation:L2_s1",
+   "task": "scene2motif",
+   "answer": "alternation",
+   "level": 2,
+   "seed": 1,
+   "pred": "cycle",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"cycle\"\n}\n```"
+  },
+  {
+   "id": "ladder:alternation:L2_s2",
+   "task": "scene2motif",
+   "answer": "alternation",
+   "level": 2,
+   "seed": 2,
+   "pred": "cycle",
+   "correct": false,
+   "raw": "{\"motif_id\": \"cycle\"}"
+  },
+  {
+   "id": "ladder:alternation:L3_s0",
+   "task": "scene2motif",
+   "answer": "alternation",
+   "level": 3,
+   "seed": 0,
+   "pred": "alternation",
+   "correct": true,
+   "raw": "```json\n{\n  \"motif_id\": \"alternation\"\n}\n```"
+  },
+  {
+   "id": "ladder:alternation:L3_s1",
+   "task": "scene2motif",
+   "answer": "alternation",
+   "level": 3,
+   "seed": 1,
+   "pred": "cycle",
+   "correct": false,
+   "raw": "{\"motif_id\": \"cycle\"}"
+  },
+  {
+   "id": "ladder:alternation:L3_s2",
+   "task": "scene2motif",
+   "answer": "alternation",
+   "level": 3,
+   "seed": 2,
+   "pred": "alternation",
+   "correct": true,
+   "raw": "```json\n{\n  \"motif_id\": \"alternation\"\n}\n```"
+  },
+  {
+   "id": "ladder:alternation:L4_s0",
+   "task": "scene2motif",
+   "answer": "alternation",
+   "level": 4,
+   "seed": 0,
+   "pred": "self_reference",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"self_reference\"\n}\n```"
+  },
+  {
+   "id": "ladder:alternation:L4_s1",
+   "task": "scene2motif",
+   "answer": "alternation",
+   "level": 4,
+   "seed": 1,
+   "pred": "cycle",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"cycle\"\n}\n```"
+  },
+  {
+   "id": "ladder:alternation:L4_s2",
+   "task": "scene2motif",
+   "answer": "alternation",
+   "level": 4,
+   "seed": 2,
+   "pred": "cycle",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"cycle\"\n}\n```"
+  },
+  {
+   "id": "ladder:alternation:L5_s0",
+   "task": "scene2motif",
+   "answer": "alternation",
+   "level": 5,
+   "seed": 0,
+   "pred": "alternation",
+   "correct": true,
+   "raw": "```json\n{\n  \"motif_id\": \"alternation\"\n}\n```"
+  },
+  {
+   "id": "ladder:alternation:L5_s1",
+   "task": "scene2motif",
+   "answer": "alternation",
+   "level": 5,
+   "seed": 1,
+   "pred": "cycle",
+   "correct": false,
+   "raw": "{\"motif_id\": \"cycle\"}"
+  },
+  {
+   "id": "ladder:alternation:L5_s2",
+   "task": "scene2motif",
+   "answer": "alternation",
+   "level": 5,
+   "seed": 2,
+   "pred": "self_reference",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"self_reference\"\n}\n```"
+  },
+  {
+   "id": "ladder:alternation:L6_s0",
+   "task": "scene2motif",
+   "answer": "alternation",
+   "level": 6,
+   "seed": 0,
+   "pred": "self_reference",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"self_reference\"\n}\n```"
+  },
+  {
+   "id": "ladder:alternation:L6_s1",
+   "task": "scene2motif",
+   "answer": "alternation",
+   "level": 6,
+   "seed": 1,
+   "pred": "self_reference",
+   "correct": false,
+   "raw": "{\"motif_id\": \"self_reference\"}"
+  },
+  {
+   "id": "ladder:alternation:L6_s2",
+   "task": "scene2motif",
+   "answer": "alternation",
+   "level": 6,
+   "seed": 2,
+   "pred": "self_reference",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"self_reference\"\n}\n```"
+  },
+  {
+   "id": "ladder:spiral:L0_s0",
+   "task": "scene2motif",
+   "answer": "spiral",
+   "level": 0,
+   "seed": 0,
+   "pred": "spiral",
+   "correct": true,
+   "raw": "{\"motif_id\": \"spiral\"}"
+  },
+  {
+   "id": "ladder:spiral:L1_s0",
+   "task": "scene2motif",
+   "answer": "spiral",
+   "level": 1,
+   "seed": 0,
+   "pred": "spiral",
+   "correct": true,
+   "raw": "```json\n{\n  \"motif_id\": \"spiral\"\n}\n```"
+  },
+  {
+   "id": "ladder:spiral:L1_s1",
+   "task": "scene2motif",
+   "answer": "spiral",
+   "level": 1,
+   "seed": 1,
+   "pred": "spiral",
+   "correct": true,
+   "raw": "```json\n{\n  \"motif_id\": \"spiral\"\n}\n```"
+  },
+  {
+   "id": "ladder:spiral:L1_s2",
+   "task": "scene2motif",
+   "answer": "spiral",
+   "level": 1,
+   "seed": 2,
+   "pred": "spiral",
+   "correct": true,
+   "raw": "```json\n{\n  \"motif_id\": \"spiral\"\n}\n```"
+  },
+  {
+   "id": "ladder:spiral:L2_s0",
+   "task": "scene2motif",
+   "answer": "spiral",
+   "level": 2,
+   "seed": 0,
+   "pred": "spiral",
+   "correct": true,
+   "raw": "{\"motif_id\": \"spiral\"}"
+  },
+  {
+   "id": "ladder:spiral:L2_s1",
+   "task": "scene2motif",
+   "answer": "spiral",
+   "level": 2,
+   "seed": 1,
+   "pred": "spiral",
+   "correct": true,
+   "raw": "{\"motif_id\": \"spiral\"}"
+  },
+  {
+   "id": "ladder:spiral:L2_s2",
+   "task": "scene2motif",
+   "answer": "spiral",
+   "level": 2,
+   "seed": 2,
+   "pred": "spiral",
+   "correct": true,
+   "raw": "{\"motif_id\": \"spiral\"}"
+  },
+  {
+   "id": "ladder:spiral:L3_s0",
+   "task": "scene2motif",
+   "answer": "spiral",
+   "level": 3,
+   "seed": 0,
+   "pred": "spiral",
+   "correct": true,
+   "raw": "```json\n{\n  \"motif_id\": \"spiral\"\n}\n```"
+  },
+  {
+   "id": "ladder:spiral:L3_s1",
+   "task": "scene2motif",
+   "answer": "spiral",
+   "level": 3,
+   "seed": 1,
+   "pred": "spiral",
+   "correct": true,
+   "raw": "{\"motif_id\": \"spiral\"}"
+  },
+  {
+   "id": "ladder:spiral:L3_s2",
+   "task": "scene2motif",
+   "answer": "spiral",
+   "level": 3,
+   "seed": 2,
+   "pred": "spiral",
+   "correct": true,
+   "raw": "```json\n{\n  \"motif_id\": \"spiral\"\n}\n```"
+  },
+  {
+   "id": "ladder:spiral:L4_s0",
+   "task": "scene2motif",
+   "answer": "spiral",
+   "level": 4,
+   "seed": 0,
+   "pred": "spiral",
+   "correct": true,
+   "raw": "```json\n{\n  \"motif_id\": \"spiral\"\n}\n```"
+  },
+  {
+   "id": "ladder:spiral:L4_s1",
+   "task": "scene2motif",
+   "answer": "spiral",
+   "level": 4,
+   "seed": 1,
+   "pred": "spiral",
+   "correct": true,
+   "raw": "```json\n{\n  \"motif_id\": \"spiral\"\n}\n```"
+  },
+  {
+   "id": "ladder:spiral:L4_s2",
+   "task": "scene2motif",
+   "answer": "spiral",
+   "level": 4,
+   "seed": 2,
+   "pred": "spiral",
+   "correct": true,
+   "raw": "```json\n{\n  \"motif_id\": \"spiral\"\n}\n```"
+  },
+  {
+   "id": "ladder:spiral:L5_s0",
+   "task": "scene2motif",
+   "answer": "spiral",
+   "level": 5,
+   "seed": 0,
+   "pred": "spiral",
+   "correct": true,
+   "raw": "```json\n{\n  \"motif_id\": \"spiral\"\n}\n```"
+  },
+  {
+   "id": "ladder:spiral:L5_s1",
+   "task": "scene2motif",
+   "answer": "spiral",
+   "level": 5,
+   "seed": 1,
+   "pred": "spiral",
+   "correct": true,
+   "raw": "```json\n{\n  \"motif_id\": \"spiral\"\n}\n```"
+  },
+  {
+   "id": "ladder:spiral:L5_s2",
+   "task": "scene2motif",
+   "answer": "spiral",
+   "level": 5,
+   "seed": 2,
+   "pred": "spiral",
+   "correct": true,
+   "raw": "```json\n{\n  \"motif_id\": \"spiral\"\n}\n```"
+  },
+  {
+   "id": "ladder:spiral:L6_s0",
+   "task": "scene2motif",
+   "answer": "spiral",
+   "level": 6,
+   "seed": 0,
+   "pred": "spiral",
+   "correct": true,
+   "raw": "```json\n{\n  \"motif_id\": \"spiral\"\n}\n```"
+  },
+  {
+   "id": "ladder:spiral:L6_s1",
+   "task": "scene2motif",
+   "answer": "spiral",
+   "level": 6,
+   "seed": 1,
+   "pred": "spiral",
+   "correct": true,
+   "raw": "```json\n{\n  \"motif_id\": \"spiral\"\n}\n```"
+  },
+  {
+   "id": "ladder:spiral:L6_s2",
+   "task": "scene2motif",
+   "answer": "spiral",
+   "level": 6,
+   "seed": 2,
+   "pred": "spiral",
+   "correct": true,
+   "raw": "```json\n{\n  \"motif_id\": \"spiral\"\n}\n```"
+  },
+  {
+   "id": "ladder:convergence:L0_s0",
+   "task": "scene2motif",
+   "answer": "convergence",
+   "level": 0,
+   "seed": 0,
+   "pred": "cycle",
+   "correct": false,
+   "raw": "{\"motif_id\": \"cycle\"}"
+  },
+  {
+   "id": "ladder:convergence:L1_s0",
+   "task": "scene2motif",
+   "answer": "convergence",
+   "level": 1,
+   "seed": 0,
+   "pred": "convergence",
+   "correct": true,
+   "raw": "{\"motif_id\": \"convergence\"}"
+  },
+  {
+   "id": "ladder:convergence:L1_s1",
+   "task": "scene2motif",
+   "answer": "convergence",
+   "level": 1,
+   "seed": 1,
+   "pred": "cycle",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"cycle\"\n}\n```"
+  },
+  {
+   "id": "ladder:convergence:L1_s2",
+   "task": "scene2motif",
+   "answer": "convergence",
+   "level": 1,
+   "seed": 2,
+   "pred": "cycle",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"cycle\"\n}\n```"
+  },
+  {
+   "id": "ladder:convergence:L2_s0",
+   "task": "scene2motif",
+   "answer": "convergence",
+   "level": 2,
+   "seed": 0,
+   "pred": "convergence",
+   "correct": true,
+   "raw": "{\"motif_id\": \"convergence\"}"
+  },
+  {
+   "id": "ladder:convergence:L2_s1",
+   "task": "scene2motif",
+   "answer": "convergence",
+   "level": 2,
+   "seed": 1,
+   "pred": "convergence",
+   "correct": true,
+   "raw": "{\"motif_id\": \"convergence\"}"
+  },
+  {
+   "id": "ladder:convergence:L2_s2",
+   "task": "scene2motif",
+   "answer": "convergence",
+   "level": 2,
+   "seed": 2,
+   "pred": "cycle",
+   "correct": false,
+   "raw": "{\"motif_id\": \"cycle\"}"
+  },
+  {
+   "id": "ladder:convergence:L3_s0",
+   "task": "scene2motif",
+   "answer": "convergence",
+   "level": 3,
+   "seed": 0,
+   "pred": "hub",
+   "correct": false,
+   "raw": "{\"motif_id\": \"hub\"}"
+  },
+  {
+   "id": "ladder:convergence:L3_s1",
+   "task": "scene2motif",
+   "answer": "convergence",
+   "level": 3,
+   "seed": 1,
+   "pred": "convergence",
+   "correct": true,
+   "raw": "```json\n{\n  \"motif_id\": \"convergence\"\n}\n```"
+  },
+  {
+   "id": "ladder:convergence:L3_s2",
+   "task": "scene2motif",
+   "answer": "convergence",
+   "level": 3,
+   "seed": 2,
+   "pred": "convergence",
+   "correct": true,
+   "raw": "{\"motif_id\": \"convergence\"}"
+  },
+  {
+   "id": "ladder:convergence:L4_s0",
+   "task": "scene2motif",
+   "answer": "convergence",
+   "level": 4,
+   "seed": 0,
+   "pred": "cycle",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"cycle\"\n}\n```"
+  },
+  {
+   "id": "ladder:convergence:L4_s1",
+   "task": "scene2motif",
+   "answer": "convergence",
+   "level": 4,
+   "seed": 1,
+   "pred": "cycle",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"cycle\"\n}\n```"
+  },
+  {
+   "id": "ladder:convergence:L4_s2",
+   "task": "scene2motif",
+   "answer": "convergence",
+   "level": 4,
+   "seed": 2,
+   "pred": "cycle",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"cycle\"\n}\n```"
+  },
+  {
+   "id": "ladder:convergence:L5_s0",
+   "task": "scene2motif",
+   "answer": "convergence",
+   "level": 5,
+   "seed": 0,
+   "pred": "cycle",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"cycle\"\n}\n```"
+  },
+  {
+   "id": "ladder:convergence:L5_s1",
+   "task": "scene2motif",
+   "answer": "convergence",
+   "level": 5,
+   "seed": 1,
+   "pred": "cycle",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"cycle\"\n}\n```"
+  },
+  {
+   "id": "ladder:convergence:L5_s2",
+   "task": "scene2motif",
+   "answer": "convergence",
+   "level": 5,
+   "seed": 2,
+   "pred": "cycle",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"cycle\"\n}\n```"
+  },
+  {
+   "id": "ladder:convergence:L6_s0",
+   "task": "scene2motif",
+   "answer": "convergence",
+   "level": 6,
+   "seed": 0,
+   "pred": "cycle",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"cycle\"\n}\n```"
+  },
+  {
+   "id": "ladder:convergence:L6_s1",
+   "task": "scene2motif",
+   "answer": "convergence",
+   "level": 6,
+   "seed": 1,
+   "pred": "convergence",
+   "correct": true,
+   "raw": "```json\n{\n  \"motif_id\": \"convergence\"\n}\n```"
+  },
+  {
+   "id": "ladder:convergence:L6_s2",
+   "task": "scene2motif",
+   "answer": "convergence",
+   "level": 6,
+   "seed": 2,
+   "pred": "cycle",
+   "correct": false,
+   "raw": "{\"motif_id\": \"cycle\"}"
+  },
+  {
+   "id": "ladder:bottleneck:L0_s0",
+   "task": "scene2motif",
+   "answer": "bottleneck",
+   "level": 0,
+   "seed": 0,
+   "pred": "hub",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"hub\"\n}\n```"
+  },
+  {
+   "id": "ladder:bottleneck:L1_s0",
+   "task": "scene2motif",
+   "answer": "bottleneck",
+   "level": 1,
+   "seed": 0,
+   "pred": "hub",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"hub\"\n}\n```"
+  },
+  {
+   "id": "ladder:bottleneck:L1_s1",
+   "task": "scene2motif",
+   "answer": "bottleneck",
+   "level": 1,
+   "seed": 1,
+   "pred": "hub",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"hub\"\n}\n```"
+  },
+  {
+   "id": "ladder:bottleneck:L1_s2",
+   "task": "scene2motif",
+   "answer": "bottleneck",
+   "level": 1,
+   "seed": 2,
+   "pred": "cycle",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"cycle\"\n}\n```"
+  },
+  {
+   "id": "ladder:bottleneck:L2_s0",
+   "task": "scene2motif",
+   "answer": "bottleneck",
+   "level": 2,
+   "seed": 0,
+   "pred": "hub",
+   "correct": false,
+   "raw": "{\"motif_id\": \"hub\"}"
+  },
+  {
+   "id": "ladder:bottleneck:L2_s1",
+   "task": "scene2motif",
+   "answer": "bottleneck",
+   "level": 2,
+   "seed": 1,
+   "pred": "hub",
+   "correct": false,
+   "raw": "{\"motif_id\": \"hub\"}"
+  },
+  {
+   "id": "ladder:bottleneck:L2_s2",
+   "task": "scene2motif",
+   "answer": "bottleneck",
+   "level": 2,
+   "seed": 2,
+   "pred": "hub",
+   "correct": false,
+   "raw": "{\"motif_id\": \"hub\"}"
+  },
+  {
+   "id": "ladder:bottleneck:L3_s0",
+   "task": "scene2motif",
+   "answer": "bottleneck",
+   "level": 3,
+   "seed": 0,
+   "pred": "bottleneck",
+   "correct": true,
+   "raw": "```json\n{\n  \"motif_id\": \"bottleneck\"\n}\n```"
+  },
+  {
+   "id": "ladder:bottleneck:L3_s1",
+   "task": "scene2motif",
+   "answer": "bottleneck",
+   "level": 3,
+   "seed": 1,
+   "pred": "cycle",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"cycle\"\n}\n```"
+  },
+  {
+   "id": "ladder:bottleneck:L3_s2",
+   "task": "scene2motif",
+   "answer": "bottleneck",
+   "level": 3,
+   "seed": 2,
+   "pred": "cycle",
+   "correct": false,
+   "raw": "{\"motif_id\": \"cycle\"}"
+  },
+  {
+   "id": "ladder:bottleneck:L4_s0",
+   "task": "scene2motif",
+   "answer": "bottleneck",
+   "level": 4,
+   "seed": 0,
+   "pred": "self_reference",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"self_reference\"\n}\n```"
+  },
+  {
+   "id": "ladder:bottleneck:L4_s1",
+   "task": "scene2motif",
+   "answer": "bottleneck",
+   "level": 4,
+   "seed": 1,
+   "pred": "self_reference",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"self_reference\"\n}\n```"
+  },
+  {
+   "id": "ladder:bottleneck:L4_s2",
+   "task": "scene2motif",
+   "answer": "bottleneck",
+   "level": 4,
+   "seed": 2,
+   "pred": "hub",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"hub\"\n}\n```"
+  },
+  {
+   "id": "ladder:bottleneck:L5_s0",
+   "task": "scene2motif",
+   "answer": "bottleneck",
+   "level": 5,
+   "seed": 0,
+   "pred": "symmetry",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"symmetry\"\n}\n```"
+  },
+  {
+   "id": "ladder:bottleneck:L5_s1",
+   "task": "scene2motif",
+   "answer": "bottleneck",
+   "level": 5,
+   "seed": 1,
+   "pred": "cycle",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"cycle\"\n}\n```"
+  },
+  {
+   "id": "ladder:bottleneck:L5_s2",
+   "task": "scene2motif",
+   "answer": "bottleneck",
+   "level": 5,
+   "seed": 2,
+   "pred": "cycle",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"cycle\"\n}\n```"
+  },
+  {
+   "id": "ladder:bottleneck:L6_s0",
+   "task": "scene2motif",
+   "answer": "bottleneck",
+   "level": 6,
+   "seed": 0,
+   "pred": "self_reference",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"self_reference\"\n}\n```"
+  },
+  {
+   "id": "ladder:bottleneck:L6_s1",
+   "task": "scene2motif",
+   "answer": "bottleneck",
+   "level": 6,
+   "seed": 1,
+   "pred": "cycle",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"cycle\"\n}\n```"
+  },
+  {
+   "id": "ladder:bottleneck:L6_s2",
+   "task": "scene2motif",
+   "answer": "bottleneck",
+   "level": 6,
+   "seed": 2,
+   "pred": "self_reference",
+   "correct": false,
+   "raw": "{\"motif_id\": \"self_reference\"}"
+  },
+  {
+   "id": "ladder:symmetry_breaking:L0_s0",
+   "task": "scene2motif",
+   "answer": "symmetry_breaking",
+   "level": 0,
+   "seed": 0,
+   "pred": "self_reference",
+   "correct": false,
+   "raw": "{\"motif_id\": \"self_reference\"}"
+  },
+  {
+   "id": "ladder:symmetry_breaking:L1_s0",
+   "task": "scene2motif",
+   "answer": "symmetry_breaking",
+   "level": 1,
+   "seed": 0,
+   "pred": "self_reference",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"self_reference\"\n}\n```"
+  },
+  {
+   "id": "ladder:symmetry_breaking:L1_s1",
+   "task": "scene2motif",
+   "answer": "symmetry_breaking",
+   "level": 1,
+   "seed": 1,
+   "pred": "self_reference",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"self_reference\"\n}\n```"
+  },
+  {
+   "id": "ladder:symmetry_breaking:L1_s2",
+   "task": "scene2motif",
+   "answer": "symmetry_breaking",
+   "level": 1,
+   "seed": 2,
+   "pred": "self_reference",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"self_reference\"\n}\n```"
+  },
+  {
+   "id": "ladder:symmetry_breaking:L2_s0",
+   "task": "scene2motif",
+   "answer": "symmetry_breaking",
+   "level": 2,
+   "seed": 0,
+   "pred": "self_reference",
+   "correct": false,
+   "raw": "{\"motif_id\": \"self_reference\"}"
+  },
+  {
+   "id": "ladder:symmetry_breaking:L2_s1",
+   "task": "scene2motif",
+   "answer": "symmetry_breaking",
+   "level": 2,
+   "seed": 1,
+   "pred": "self_reference",
+   "correct": false,
+   "raw": "{\"motif_id\": \"self_reference\"}"
+  },
+  {
+   "id": "ladder:symmetry_breaking:L2_s2",
+   "task": "scene2motif",
+   "answer": "symmetry_breaking",
+   "level": 2,
+   "seed": 2,
+   "pred": "self_reference",
+   "correct": false,
+   "raw": "{\"motif_id\": \"self_reference\"}"
+  },
+  {
+   "id": "ladder:symmetry_breaking:L3_s0",
+   "task": "scene2motif",
+   "answer": "symmetry_breaking",
+   "level": 3,
+   "seed": 0,
+   "pred": "self_reference",
+   "correct": false,
+   "raw": "{\"motif_id\": \"self_reference\"}"
+  },
+  {
+   "id": "ladder:symmetry_breaking:L3_s1",
+   "task": "scene2motif",
+   "answer": "symmetry_breaking",
+   "level": 3,
+   "seed": 1,
+   "pred": "self_reference",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"self_reference\"\n}\n```"
+  },
+  {
+   "id": "ladder:symmetry_breaking:L3_s2",
+   "task": "scene2motif",
+   "answer": "symmetry_breaking",
+   "level": 3,
+   "seed": 2,
+   "pred": "tiling",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"tiling\"\n}\n```"
+  },
+  {
+   "id": "ladder:symmetry_breaking:L4_s0",
+   "task": "scene2motif",
+   "answer": "symmetry_breaking",
+   "level": 4,
+   "seed": 0,
+   "pred": "tiling",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"tiling\"\n}\n```"
+  },
+  {
+   "id": "ladder:symmetry_breaking:L4_s1",
+   "task": "scene2motif",
+   "answer": "symmetry_breaking",
+   "level": 4,
+   "seed": 1,
+   "pred": "self_reference",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"self_reference\"\n}\n```"
+  },
+  {
+   "id": "ladder:symmetry_breaking:L4_s2",
+   "task": "scene2motif",
+   "answer": "symmetry_breaking",
+   "level": 4,
+   "seed": 2,
+   "pred": "tiling",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"tiling\"\n}\n```"
+  },
+  {
+   "id": "ladder:symmetry_breaking:L5_s0",
+   "task": "scene2motif",
+   "answer": "symmetry_breaking",
+   "level": 5,
+   "seed": 0,
+   "pred": "self_reference",
+   "correct": false,
+   "raw": "{\"motif_id\": \"self_reference\"}"
+  },
+  {
+   "id": "ladder:symmetry_breaking:L5_s1",
+   "task": "scene2motif",
+   "answer": "symmetry_breaking",
+   "level": 5,
+   "seed": 1,
+   "pred": "alternation",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"alternation\"\n}\n```"
+  },
+  {
+   "id": "ladder:symmetry_breaking:L5_s2",
+   "task": "scene2motif",
+   "answer": "symmetry_breaking",
+   "level": 5,
+   "seed": 2,
+   "pred": "tiling",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"tiling\"\n}\n```"
+  },
+  {
+   "id": "ladder:symmetry_breaking:L6_s0",
+   "task": "scene2motif",
+   "answer": "symmetry_breaking",
+   "level": 6,
+   "seed": 0,
+   "pred": "alternation",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"alternation\"\n}\n```"
+  },
+  {
+   "id": "ladder:symmetry_breaking:L6_s1",
+   "task": "scene2motif",
+   "answer": "symmetry_breaking",
+   "level": 6,
+   "seed": 1,
+   "pred": "alternation",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"alternation\"\n}\n```"
+  },
+  {
+   "id": "ladder:symmetry_breaking:L6_s2",
+   "task": "scene2motif",
+   "answer": "symmetry_breaking",
+   "level": 6,
+   "seed": 2,
+   "pred": "self_reference",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"self_reference\"\n}\n```"
+  },
+  {
+   "id": "ladder:strange_loop:L0_s0",
+   "task": "scene2motif",
+   "answer": "strange_loop",
+   "level": 0,
+   "seed": 0,
+   "pred": "cycle",
+   "correct": false,
+   "raw": "{\"motif_id\": \"cycle\"}"
+  },
+  {
+   "id": "ladder:strange_loop:L1_s0",
+   "task": "scene2motif",
+   "answer": "strange_loop",
+   "level": 1,
+   "seed": 0,
+   "pred": "cycle",
+   "correct": false,
+   "raw": "{\"motif_id\": \"cycle\"}"
+  },
+  {
+   "id": "ladder:strange_loop:L1_s1",
+   "task": "scene2motif",
+   "answer": "strange_loop",
+   "level": 1,
+   "seed": 1,
+   "pred": "cycle",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"cycle\"\n}\n```"
+  },
+  {
+   "id": "ladder:strange_loop:L1_s2",
+   "task": "scene2motif",
+   "answer": "strange_loop",
+   "level": 1,
+   "seed": 2,
+   "pred": "cycle",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"cycle\"\n}\n```"
+  },
+  {
+   "id": "ladder:strange_loop:L2_s0",
+   "task": "scene2motif",
+   "answer": "strange_loop",
+   "level": 2,
+   "seed": 0,
+   "pred": "cycle",
+   "correct": false,
+   "raw": "{\"motif_id\": \"cycle\"}"
+  },
+  {
+   "id": "ladder:strange_loop:L2_s1",
+   "task": "scene2motif",
+   "answer": "strange_loop",
+   "level": 2,
+   "seed": 1,
+   "pred": "cycle",
+   "correct": false,
+   "raw": "{\"motif_id\": \"cycle\"}"
+  },
+  {
+   "id": "ladder:strange_loop:L2_s2",
+   "task": "scene2motif",
+   "answer": "strange_loop",
+   "level": 2,
+   "seed": 2,
+   "pred": "cycle",
+   "correct": false,
+   "raw": "{\"motif_id\": \"cycle\"}"
+  },
+  {
+   "id": "ladder:strange_loop:L3_s0",
+   "task": "scene2motif",
+   "answer": "strange_loop",
+   "level": 3,
+   "seed": 0,
+   "pred": "self_reference",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"self_reference\"\n}\n```"
+  },
+  {
+   "id": "ladder:strange_loop:L3_s1",
+   "task": "scene2motif",
+   "answer": "strange_loop",
+   "level": 3,
+   "seed": 1,
+   "pred": "cycle",
+   "correct": false,
+   "raw": "{\"motif_id\": \"cycle\"}"
+  },
+  {
+   "id": "ladder:strange_loop:L3_s2",
+   "task": "scene2motif",
+   "answer": "strange_loop",
+   "level": 3,
+   "seed": 2,
+   "pred": "cycle",
+   "correct": false,
+   "raw": "{\"motif_id\": \"cycle\"}"
+  },
+  {
+   "id": "ladder:strange_loop:L4_s0",
+   "task": "scene2motif",
+   "answer": "strange_loop",
+   "level": 4,
+   "seed": 0,
+   "pred": "cycle",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"cycle\"\n}\n```"
+  },
+  {
+   "id": "ladder:strange_loop:L4_s1",
+   "task": "scene2motif",
+   "answer": "strange_loop",
+   "level": 4,
+   "seed": 1,
+   "pred": "self_reference",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"self_reference\"\n}\n```"
+  },
+  {
+   "id": "ladder:strange_loop:L4_s2",
+   "task": "scene2motif",
+   "answer": "strange_loop",
+   "level": 4,
+   "seed": 2,
+   "pred": "cycle",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"cycle\"\n}\n```"
+  },
+  {
+   "id": "ladder:strange_loop:L5_s0",
+   "task": "scene2motif",
+   "answer": "strange_loop",
+   "level": 5,
+   "seed": 0,
+   "pred": "self_reference",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"self_reference\"\n}\n```"
+  },
+  {
+   "id": "ladder:strange_loop:L5_s1",
+   "task": "scene2motif",
+   "answer": "strange_loop",
+   "level": 5,
+   "seed": 1,
+   "pred": "cycle",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"cycle\"\n}\n```"
+  },
+  {
+   "id": "ladder:strange_loop:L5_s2",
+   "task": "scene2motif",
+   "answer": "strange_loop",
+   "level": 5,
+   "seed": 2,
+   "pred": "cycle",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"cycle\"\n}\n```"
+  },
+  {
+   "id": "ladder:strange_loop:L6_s0",
+   "task": "scene2motif",
+   "answer": "strange_loop",
+   "level": 6,
+   "seed": 0,
+   "pred": "cycle",
+   "correct": false,
+   "raw": "{\"motif_id\": \"cycle\"}"
+  },
+  {
+   "id": "ladder:strange_loop:L6_s1",
+   "task": "scene2motif",
+   "answer": "strange_loop",
+   "level": 6,
+   "seed": 1,
+   "pred": "self_reference",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"self_reference\"\n}\n```"
+  },
+  {
+   "id": "ladder:strange_loop:L6_s2",
+   "task": "scene2motif",
+   "answer": "strange_loop",
+   "level": 6,
+   "seed": 2,
+   "pred": "self_reference",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"self_reference\"\n}\n```"
+  },
+  {
+   "id": "ladder:figure_ground:L0_s0",
+   "task": "scene2motif",
+   "answer": "figure_ground",
+   "level": 0,
+   "seed": 0,
+   "pred": "alternation",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"alternation\"\n}\n```"
+  },
+  {
+   "id": "ladder:figure_ground:L1_s0",
+   "task": "scene2motif",
+   "answer": "figure_ground",
+   "level": 1,
+   "seed": 0,
+   "pred": "alternation",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"alternation\"\n}\n```"
+  },
+  {
+   "id": "ladder:figure_ground:L1_s1",
+   "task": "scene2motif",
+   "answer": "figure_ground",
+   "level": 1,
+   "seed": 1,
+   "pred": "alternation",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"alternation\"\n}\n```"
+  },
+  {
+   "id": "ladder:figure_ground:L1_s2",
+   "task": "scene2motif",
+   "answer": "figure_ground",
+   "level": 1,
+   "seed": 2,
+   "pred": "tiling",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"tiling\"\n}\n```"
+  },
+  {
+   "id": "ladder:figure_ground:L2_s0",
+   "task": "scene2motif",
+   "answer": "figure_ground",
+   "level": 2,
+   "seed": 0,
+   "pred": "alternation",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"alternation\"\n}\n```"
+  },
+  {
+   "id": "ladder:figure_ground:L2_s1",
+   "task": "scene2motif",
+   "answer": "figure_ground",
+   "level": 2,
+   "seed": 1,
+   "pred": "alternation",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"alternation\"\n}\n```"
+  },
+  {
+   "id": "ladder:figure_ground:L2_s2",
+   "task": "scene2motif",
+   "answer": "figure_ground",
+   "level": 2,
+   "seed": 2,
+   "pred": "alternation",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"alternation\"\n}\n```"
+  },
+  {
+   "id": "ladder:figure_ground:L3_s0",
+   "task": "scene2motif",
+   "answer": "figure_ground",
+   "level": 3,
+   "seed": 0,
+   "pred": "alternation",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"alternation\"\n}\n```"
+  },
+  {
+   "id": "ladder:figure_ground:L3_s1",
+   "task": "scene2motif",
+   "answer": "figure_ground",
+   "level": 3,
+   "seed": 1,
+   "pred": "tiling",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"tiling\"\n}\n```"
+  },
+  {
+   "id": "ladder:figure_ground:L3_s2",
+   "task": "scene2motif",
+   "answer": "figure_ground",
+   "level": 3,
+   "seed": 2,
+   "pred": "tiling",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"tiling\"\n}\n```"
+  },
+  {
+   "id": "ladder:figure_ground:L4_s0",
+   "task": "scene2motif",
+   "answer": "figure_ground",
+   "level": 4,
+   "seed": 0,
+   "pred": "tiling",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"tiling\"\n}\n```"
+  },
+  {
+   "id": "ladder:figure_ground:L4_s1",
+   "task": "scene2motif",
+   "answer": "figure_ground",
+   "level": 4,
+   "seed": 1,
+   "pred": "tiling",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"tiling\"\n}\n```"
+  },
+  {
+   "id": "ladder:figure_ground:L4_s2",
+   "task": "scene2motif",
+   "answer": "figure_ground",
+   "level": 4,
+   "seed": 2,
+   "pred": "alternation",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"alternation\"\n}\n```"
+  },
+  {
+   "id": "ladder:figure_ground:L5_s0",
+   "task": "scene2motif",
+   "answer": "figure_ground",
+   "level": 5,
+   "seed": 0,
+   "pred": "alternation",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"alternation\"\n}\n```"
+  },
+  {
+   "id": "ladder:figure_ground:L5_s1",
+   "task": "scene2motif",
+   "answer": "figure_ground",
+   "level": 5,
+   "seed": 1,
+   "pred": "tiling",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"tiling\"\n}\n```"
+  },
+  {
+   "id": "ladder:figure_ground:L5_s2",
+   "task": "scene2motif",
+   "answer": "figure_ground",
+   "level": 5,
+   "seed": 2,
+   "pred": "tiling",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"tiling\"\n}\n```"
+  },
+  {
+   "id": "ladder:figure_ground:L6_s0",
+   "task": "scene2motif",
+   "answer": "figure_ground",
+   "level": 6,
+   "seed": 0,
+   "pred": "self_reference",
+   "correct": false,
+   "raw": "{\"motif_id\": \"self_reference\"}"
+  },
+  {
+   "id": "ladder:figure_ground:L6_s1",
+   "task": "scene2motif",
+   "answer": "figure_ground",
+   "level": 6,
+   "seed": 1,
+   "pred": "tiling",
+   "correct": false,
+   "raw": "{\"motif_id\": \"tiling\"}"
+  },
+  {
+   "id": "ladder:figure_ground:L6_s2",
+   "task": "scene2motif",
+   "answer": "figure_ground",
+   "level": 6,
+   "seed": 2,
+   "pred": "alternation",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"alternation\"\n}\n```"
+  },
+  {
+   "id": "ladder:isomorphism:L0_s0",
+   "task": "scene2motif",
+   "answer": "isomorphism",
+   "level": 0,
+   "seed": 0,
+   "pred": "cycle",
+   "correct": false,
+   "raw": "{\"motif_id\": \"cycle\"}"
+  },
+  {
+   "id": "ladder:isomorphism:L1_s0",
+   "task": "scene2motif",
+   "answer": "isomorphism",
+   "level": 1,
+   "seed": 0,
+   "pred": "cycle",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"cycle\"\n}\n```"
+  },
+  {
+   "id": "ladder:isomorphism:L1_s1",
+   "task": "scene2motif",
+   "answer": "isomorphism",
+   "level": 1,
+   "seed": 1,
+   "pred": "cycle",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"cycle\"\n}\n```"
+  },
+  {
+   "id": "ladder:isomorphism:L1_s2",
+   "task": "scene2motif",
+   "answer": "isomorphism",
+   "level": 1,
+   "seed": 2,
+   "pred": "cycle",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"cycle\"\n}\n```"
+  },
+  {
+   "id": "ladder:isomorphism:L2_s0",
+   "task": "scene2motif",
+   "answer": "isomorphism",
+   "level": 2,
+   "seed": 0,
+   "pred": "cycle",
+   "correct": false,
+   "raw": "{\"motif_id\": \"cycle\"}"
+  },
+  {
+   "id": "ladder:isomorphism:L2_s1",
+   "task": "scene2motif",
+   "answer": "isomorphism",
+   "level": 2,
+   "seed": 1,
+   "pred": "cycle",
+   "correct": false,
+   "raw": "{\"motif_id\": \"cycle\"}"
+  },
+  {
+   "id": "ladder:isomorphism:L2_s2",
+   "task": "scene2motif",
+   "answer": "isomorphism",
+   "level": 2,
+   "seed": 2,
+   "pred": "cycle",
+   "correct": false,
+   "raw": "{\"motif_id\": \"cycle\"}"
+  },
+  {
+   "id": "ladder:isomorphism:L3_s0",
+   "task": "scene2motif",
+   "answer": "isomorphism",
+   "level": 3,
+   "seed": 0,
+   "pred": "self_reference",
+   "correct": false,
+   "raw": "{\"motif_id\": \"self_reference\"}"
+  },
+  {
+   "id": "ladder:isomorphism:L3_s1",
+   "task": "scene2motif",
+   "answer": "isomorphism",
+   "level": 3,
+   "seed": 1,
+   "pred": "hub",
+   "correct": false,
+   "raw": "{\"motif_id\": \"hub\"}"
+  },
+  {
+   "id": "ladder:isomorphism:L3_s2",
+   "task": "scene2motif",
+   "answer": "isomorphism",
+   "level": 3,
+   "seed": 2,
+   "pred": "self_reference",
+   "correct": false,
+   "raw": "{\"motif_id\": \"self_reference\"}"
+  },
+  {
+   "id": "ladder:isomorphism:L4_s0",
+   "task": "scene2motif",
+   "answer": "isomorphism",
+   "level": 4,
+   "seed": 0,
+   "pred": "cycle",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"cycle\"\n}\n```"
+  },
+  {
+   "id": "ladder:isomorphism:L4_s1",
+   "task": "scene2motif",
+   "answer": "isomorphism",
+   "level": 4,
+   "seed": 1,
+   "pred": "hub",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"hub\"\n}\n```"
+  },
+  {
+   "id": "ladder:isomorphism:L4_s2",
+   "task": "scene2motif",
+   "answer": "isomorphism",
+   "level": 4,
+   "seed": 2,
+   "pred": "self_reference",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"self_reference\"\n}\n```"
+  },
+  {
+   "id": "ladder:isomorphism:L5_s0",
+   "task": "scene2motif",
+   "answer": "isomorphism",
+   "level": 5,
+   "seed": 0,
+   "pred": "figure_ground",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"figure_ground\"\n}\n```"
+  },
+  {
+   "id": "ladder:isomorphism:L5_s1",
+   "task": "scene2motif",
+   "answer": "isomorphism",
+   "level": 5,
+   "seed": 1,
+   "pred": "self_reference",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"self_reference\"\n}\n```"
+  },
+  {
+   "id": "ladder:isomorphism:L5_s2",
+   "task": "scene2motif",
+   "answer": "isomorphism",
+   "level": 5,
+   "seed": 2,
+   "pred": "self_reference",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"self_reference\"\n}\n```"
+  },
+  {
+   "id": "ladder:isomorphism:L6_s0",
+   "task": "scene2motif",
+   "answer": "isomorphism",
+   "level": 6,
+   "seed": 0,
+   "pred": "self_reference",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"self_reference\"\n}\n```"
+  },
+  {
+   "id": "ladder:isomorphism:L6_s1",
+   "task": "scene2motif",
+   "answer": "isomorphism",
+   "level": 6,
+   "seed": 1,
+   "pred": "figure_ground",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"figure_ground\"\n}\n```"
+  },
+  {
+   "id": "ladder:isomorphism:L6_s2",
+   "task": "scene2motif",
+   "answer": "isomorphism",
+   "level": 6,
+   "seed": 2,
+   "pred": "self_reference",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"self_reference\"\n}\n```"
+  },
+  {
+   "id": "ladder:mobius:L0_s0",
+   "task": "scene2motif",
+   "answer": "mobius",
+   "level": 0,
+   "seed": 0,
+   "pred": "self_reference",
+   "correct": false,
+   "raw": "{\"motif_id\": \"self_reference\"}"
+  },
+  {
+   "id": "ladder:mobius:L1_s0",
+   "task": "scene2motif",
+   "answer": "mobius",
+   "level": 1,
+   "seed": 0,
+   "pred": "cycle",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"cycle\"\n}\n```"
+  },
+  {
+   "id": "ladder:mobius:L1_s1",
+   "task": "scene2motif",
+   "answer": "mobius",
+   "level": 1,
+   "seed": 1,
+   "pred": "self_reference",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"self_reference\"\n}\n```"
+  },
+  {
+   "id": "ladder:mobius:L1_s2",
+   "task": "scene2motif",
+   "answer": "mobius",
+   "level": 1,
+   "seed": 2,
+   "pred": "cycle",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"cycle\"\n}\n```"
+  },
+  {
+   "id": "ladder:mobius:L2_s0",
+   "task": "scene2motif",
+   "answer": "mobius",
+   "level": 2,
+   "seed": 0,
+   "pred": "cycle",
+   "correct": false,
+   "raw": "{\"motif_id\": \"cycle\"}"
+  },
+  {
+   "id": "ladder:mobius:L2_s1",
+   "task": "scene2motif",
+   "answer": "mobius",
+   "level": 2,
+   "seed": 1,
+   "pred": "cycle",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"cycle\"\n}\n```"
+  },
+  {
+   "id": "ladder:mobius:L2_s2",
+   "task": "scene2motif",
+   "answer": "mobius",
+   "level": 2,
+   "seed": 2,
+   "pred": "cycle",
+   "correct": false,
+   "raw": "{\"motif_id\": \"cycle\"}"
+  },
+  {
+   "id": "ladder:mobius:L3_s0",
+   "task": "scene2motif",
+   "answer": "mobius",
+   "level": 3,
+   "seed": 0,
+   "pred": "cycle",
+   "correct": false,
+   "raw": "{\"motif_id\": \"cycle\"}"
+  },
+  {
+   "id": "ladder:mobius:L3_s1",
+   "task": "scene2motif",
+   "answer": "mobius",
+   "level": 3,
+   "seed": 1,
+   "pred": "cycle",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"cycle\"\n}\n```"
+  },
+  {
+   "id": "ladder:mobius:L3_s2",
+   "task": "scene2motif",
+   "answer": "mobius",
+   "level": 3,
+   "seed": 2,
+   "pred": "cycle",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"cycle\"\n}\n```"
+  },
+  {
+   "id": "ladder:mobius:L4_s0",
+   "task": "scene2motif",
+   "answer": "mobius",
+   "level": 4,
+   "seed": 0,
+   "pred": "mobius",
+   "correct": true,
+   "raw": "```json\n{\n  \"motif_id\": \"mobius\"\n}\n```"
+  },
+  {
+   "id": "ladder:mobius:L4_s1",
+   "task": "scene2motif",
+   "answer": "mobius",
+   "level": 4,
+   "seed": 1,
+   "pred": "self_reference",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"self_reference\"\n}\n```"
+  },
+  {
+   "id": "ladder:mobius:L4_s2",
+   "task": "scene2motif",
+   "answer": "mobius",
+   "level": 4,
+   "seed": 2,
+   "pred": "cycle",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"cycle\"\n}\n```"
+  },
+  {
+   "id": "ladder:mobius:L5_s0",
+   "task": "scene2motif",
+   "answer": "mobius",
+   "level": 5,
+   "seed": 0,
+   "pred": "mobius",
+   "correct": true,
+   "raw": "{\"motif_id\": \"mobius\"}"
+  },
+  {
+   "id": "ladder:mobius:L5_s1",
+   "task": "scene2motif",
+   "answer": "mobius",
+   "level": 5,
+   "seed": 1,
+   "pred": "cycle",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"cycle\"\n}\n```"
+  },
+  {
+   "id": "ladder:mobius:L5_s2",
+   "task": "scene2motif",
+   "answer": "mobius",
+   "level": 5,
+   "seed": 2,
+   "pred": "cycle",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"cycle\"\n}\n```"
+  },
+  {
+   "id": "ladder:mobius:L6_s0",
+   "task": "scene2motif",
+   "answer": "mobius",
+   "level": 6,
+   "seed": 0,
+   "pred": "cycle",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"cycle\"\n}\n```"
+  },
+  {
+   "id": "ladder:mobius:L6_s1",
+   "task": "scene2motif",
+   "answer": "mobius",
+   "level": 6,
+   "seed": 1,
+   "pred": "cycle",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"cycle\"\n}\n```"
+  },
+  {
+   "id": "ladder:mobius:L6_s2",
+   "task": "scene2motif",
+   "answer": "mobius",
+   "level": 6,
+   "seed": 2,
+   "pred": "cycle",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"cycle\"\n}\n```"
+  },
+  {
+   "id": "ladder:braiding:L0_s0",
+   "task": "scene2motif",
+   "answer": "braiding",
+   "level": 0,
+   "seed": 0,
+   "pred": "cycle",
+   "correct": false,
+   "raw": "{\"motif_id\": \"cycle\"}"
+  },
+  {
+   "id": "ladder:braiding:L1_s0",
+   "task": "scene2motif",
+   "answer": "braiding",
+   "level": 1,
+   "seed": 0,
+   "pred": "cycle",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"cycle\"\n}\n```"
+  },
+  {
+   "id": "ladder:braiding:L1_s1",
+   "task": "scene2motif",
+   "answer": "braiding",
+   "level": 1,
+   "seed": 1,
+   "pred": "cycle",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"cycle\"\n}\n```"
+  },
+  {
+   "id": "ladder:braiding:L1_s2",
+   "task": "scene2motif",
+   "answer": "braiding",
+   "level": 1,
+   "seed": 2,
+   "pred": "cycle",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"cycle\"\n}\n```"
+  },
+  {
+   "id": "ladder:braiding:L2_s0",
+   "task": "scene2motif",
+   "answer": "braiding",
+   "level": 2,
+   "seed": 0,
+   "pred": "cycle",
+   "correct": false,
+   "raw": "{\"motif_id\": \"cycle\"}"
+  },
+  {
+   "id": "ladder:braiding:L2_s1",
+   "task": "scene2motif",
+   "answer": "braiding",
+   "level": 2,
+   "seed": 1,
+   "pred": "cycle",
+   "correct": false,
+   "raw": "{\"motif_id\": \"cycle\"}"
+  },
+  {
+   "id": "ladder:braiding:L2_s2",
+   "task": "scene2motif",
+   "answer": "braiding",
+   "level": 2,
+   "seed": 2,
+   "pred": "cycle",
+   "correct": false,
+   "raw": "{\"motif_id\": \"cycle\"}"
+  },
+  {
+   "id": "ladder:braiding:L3_s0",
+   "task": "scene2motif",
+   "answer": "braiding",
+   "level": 3,
+   "seed": 0,
+   "pred": "cycle",
+   "correct": false,
+   "raw": "{\"motif_id\": \"cycle\"}"
+  },
+  {
+   "id": "ladder:braiding:L3_s1",
+   "task": "scene2motif",
+   "answer": "braiding",
+   "level": 3,
+   "seed": 1,
+   "pred": "cycle",
+   "correct": false,
+   "raw": "{\"motif_id\": \"cycle\"}"
+  },
+  {
+   "id": "ladder:braiding:L3_s2",
+   "task": "scene2motif",
+   "answer": "braiding",
+   "level": 3,
+   "seed": 2,
+   "pred": "cycle",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"cycle\"\n}\n```"
+  },
+  {
+   "id": "ladder:braiding:L4_s0",
+   "task": "scene2motif",
+   "answer": "braiding",
+   "level": 4,
+   "seed": 0,
+   "pred": "cycle",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"cycle\"\n}\n```"
+  },
+  {
+   "id": "ladder:braiding:L4_s1",
+   "task": "scene2motif",
+   "answer": "braiding",
+   "level": 4,
+   "seed": 1,
+   "pred": "cycle",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"cycle\"\n}\n```"
+  },
+  {
+   "id": "ladder:braiding:L4_s2",
+   "task": "scene2motif",
+   "answer": "braiding",
+   "level": 4,
+   "seed": 2,
+   "pred": "cycle",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"cycle\"\n}\n```"
+  },
+  {
+   "id": "ladder:braiding:L5_s0",
+   "task": "scene2motif",
+   "answer": "braiding",
+   "level": 5,
+   "seed": 0,
+   "pred": "braiding",
+   "correct": true,
+   "raw": "```json\n{\n  \"motif_id\": \"braiding\"\n}\n```"
+  },
+  {
+   "id": "ladder:braiding:L5_s1",
+   "task": "scene2motif",
+   "answer": "braiding",
+   "level": 5,
+   "seed": 1,
+   "pred": "spiral",
+   "correct": false,
+   "raw": "{\"motif_id\": \"spiral\"}"
+  },
+  {
+   "id": "ladder:braiding:L5_s2",
+   "task": "scene2motif",
+   "answer": "braiding",
+   "level": 5,
+   "seed": 2,
+   "pred": "cycle",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"cycle\"\n}\n```"
+  },
+  {
+   "id": "ladder:braiding:L6_s0",
+   "task": "scene2motif",
+   "answer": "braiding",
+   "level": 6,
+   "seed": 0,
+   "pred": "braiding",
+   "correct": true,
+   "raw": "```json\n{\n  \"motif_id\": \"braiding\"\n}\n```"
+  },
+  {
+   "id": "ladder:braiding:L6_s1",
+   "task": "scene2motif",
+   "answer": "braiding",
+   "level": 6,
+   "seed": 1,
+   "pred": "spiral",
+   "correct": false,
+   "raw": "{\"motif_id\": \"spiral\"}"
+  },
+  {
+   "id": "ladder:braiding:L6_s2",
+   "task": "scene2motif",
+   "answer": "braiding",
+   "level": 6,
+   "seed": 2,
+   "pred": "cycle",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"cycle\"\n}\n```"
+  },
+  {
+   "id": "ladder:interference:L0_s0",
+   "task": "scene2motif",
+   "answer": "interference",
+   "level": 0,
+   "seed": 0,
+   "pred": "spiral",
+   "correct": false,
+   "raw": "{\"motif_id\": \"spiral\"}"
+  },
+  {
+   "id": "ladder:interference:L1_s0",
+   "task": "scene2motif",
+   "answer": "interference",
+   "level": 1,
+   "seed": 0,
+   "pred": "cycle",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"cycle\"\n}\n```"
+  },
+  {
+   "id": "ladder:interference:L1_s1",
+   "task": "scene2motif",
+   "answer": "interference",
+   "level": 1,
+   "seed": 1,
+   "pred": "spiral",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"spiral\"\n}\n```"
+  },
+  {
+   "id": "ladder:interference:L1_s2",
+   "task": "scene2motif",
+   "answer": "interference",
+   "level": 1,
+   "seed": 2,
+   "pred": "cycle",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"cycle\"\n}\n```"
+  },
+  {
+   "id": "ladder:interference:L2_s0",
+   "task": "scene2motif",
+   "answer": "interference",
+   "level": 2,
+   "seed": 0,
+   "pred": "cycle",
+   "correct": false,
+   "raw": "{\"motif_id\": \"cycle\"}"
+  },
+  {
+   "id": "ladder:interference:L2_s1",
+   "task": "scene2motif",
+   "answer": "interference",
+   "level": 2,
+   "seed": 1,
+   "pred": "cycle",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"cycle\"\n}\n```"
+  },
+  {
+   "id": "ladder:interference:L2_s2",
+   "task": "scene2motif",
+   "answer": "interference",
+   "level": 2,
+   "seed": 2,
+   "pred": "spiral",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"spiral\"\n}\n```"
+  },
+  {
+   "id": "ladder:interference:L3_s0",
+   "task": "scene2motif",
+   "answer": "interference",
+   "level": 3,
+   "seed": 0,
+   "pred": "cycle",
+   "correct": false,
+   "raw": "{\"motif_id\": \"cycle\"}"
+  },
+  {
+   "id": "ladder:interference:L3_s1",
+   "task": "scene2motif",
+   "answer": "interference",
+   "level": 3,
+   "seed": 1,
+   "pred": "spiral",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"spiral\"\n}\n```"
+  },
+  {
+   "id": "ladder:interference:L3_s2",
+   "task": "scene2motif",
+   "answer": "interference",
+   "level": 3,
+   "seed": 2,
+   "pred": "spiral",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"spiral\"\n}\n```"
+  },
+  {
+   "id": "ladder:interference:L4_s0",
+   "task": "scene2motif",
+   "answer": "interference",
+   "level": 4,
+   "seed": 0,
+   "pred": "cycle",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"cycle\"\n}\n```"
+  },
+  {
+   "id": "ladder:interference:L4_s1",
+   "task": "scene2motif",
+   "answer": "interference",
+   "level": 4,
+   "seed": 1,
+   "pred": "spiral",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"spiral\"\n}\n```"
+  },
+  {
+   "id": "ladder:interference:L4_s2",
+   "task": "scene2motif",
+   "answer": "interference",
+   "level": 4,
+   "seed": 2,
+   "pred": "spiral",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"spiral\"\n}\n```"
+  },
+  {
+   "id": "ladder:interference:L5_s0",
+   "task": "scene2motif",
+   "answer": "interference",
+   "level": 5,
+   "seed": 0,
+   "pred": "cycle",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"cycle\"\n}\n```"
+  },
+  {
+   "id": "ladder:interference:L5_s1",
+   "task": "scene2motif",
+   "answer": "interference",
+   "level": 5,
+   "seed": 1,
+   "pred": "cycle",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"cycle\"\n}\n```"
+  },
+  {
+   "id": "ladder:interference:L5_s2",
+   "task": "scene2motif",
+   "answer": "interference",
+   "level": 5,
+   "seed": 2,
+   "pred": "spiral",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"spiral\"\n}\n```"
+  },
+  {
+   "id": "ladder:interference:L6_s0",
+   "task": "scene2motif",
+   "answer": "interference",
+   "level": 6,
+   "seed": 0,
+   "pred": "cycle",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"cycle\"\n}\n```"
+  },
+  {
+   "id": "ladder:interference:L6_s1",
+   "task": "scene2motif",
+   "answer": "interference",
+   "level": 6,
+   "seed": 1,
+   "pred": "spiral",
+   "correct": false,
+   "raw": "{\"motif_id\": \"spiral\"}"
+  },
+  {
+   "id": "ladder:interference:L6_s2",
+   "task": "scene2motif",
+   "answer": "interference",
+   "level": 6,
+   "seed": 2,
+   "pred": "spiral",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"spiral\"\n}\n```"
+  },
+  {
+   "id": "ladder:tiling:L0_s0",
+   "task": "scene2motif",
+   "answer": "tiling",
+   "level": 0,
+   "seed": 0,
+   "pred": "tiling",
+   "correct": true,
+   "raw": "{\"motif_id\": \"tiling\"}"
+  },
+  {
+   "id": "ladder:tiling:L1_s0",
+   "task": "scene2motif",
+   "answer": "tiling",
+   "level": 1,
+   "seed": 0,
+   "pred": "tiling",
+   "correct": true,
+   "raw": "```json\n{\n  \"motif_id\": \"tiling\"\n}\n```"
+  },
+  {
+   "id": "ladder:tiling:L1_s1",
+   "task": "scene2motif",
+   "answer": "tiling",
+   "level": 1,
+   "seed": 1,
+   "pred": "tiling",
+   "correct": true,
+   "raw": "```json\n{\n  \"motif_id\": \"tiling\"\n}\n```"
+  },
+  {
+   "id": "ladder:tiling:L1_s2",
+   "task": "scene2motif",
+   "answer": "tiling",
+   "level": 1,
+   "seed": 2,
+   "pred": "tiling",
+   "correct": true,
+   "raw": "```json\n{\n  \"motif_id\": \"tiling\"\n}\n```"
+  },
+  {
+   "id": "ladder:tiling:L2_s0",
+   "task": "scene2motif",
+   "answer": "tiling",
+   "level": 2,
+   "seed": 0,
+   "pred": "tiling",
+   "correct": true,
+   "raw": "```json\n{\n  \"motif_id\": \"tiling\"\n}\n```"
+  },
+  {
+   "id": "ladder:tiling:L2_s1",
+   "task": "scene2motif",
+   "answer": "tiling",
+   "level": 2,
+   "seed": 1,
+   "pred": "tiling",
+   "correct": true,
+   "raw": "```json\n{\n  \"motif_id\": \"tiling\"\n}\n```"
+  },
+  {
+   "id": "ladder:tiling:L2_s2",
+   "task": "scene2motif",
+   "answer": "tiling",
+   "level": 2,
+   "seed": 2,
+   "pred": "tiling",
+   "correct": true,
+   "raw": "```json\n{\n  \"motif_id\": \"tiling\"\n}\n```"
+  },
+  {
+   "id": "ladder:tiling:L3_s0",
+   "task": "scene2motif",
+   "answer": "tiling",
+   "level": 3,
+   "seed": 0,
+   "pred": "tiling",
+   "correct": true,
+   "raw": "```json\n{\n  \"motif_id\": \"tiling\"\n}\n```"
+  },
+  {
+   "id": "ladder:tiling:L3_s1",
+   "task": "scene2motif",
+   "answer": "tiling",
+   "level": 3,
+   "seed": 1,
+   "pred": "tiling",
+   "correct": true,
+   "raw": "```json\n{\n  \"motif_id\": \"tiling\"\n}\n```"
+  },
+  {
+   "id": "ladder:tiling:L3_s2",
+   "task": "scene2motif",
+   "answer": "tiling",
+   "level": 3,
+   "seed": 2,
+   "pred": "tiling",
+   "correct": true,
+   "raw": "```json\n{\n  \"motif_id\": \"tiling\"\n}\n```"
+  },
+  {
+   "id": "ladder:tiling:L4_s0",
+   "task": "scene2motif",
+   "answer": "tiling",
+   "level": 4,
+   "seed": 0,
+   "pred": "tiling",
+   "correct": true,
+   "raw": "```json\n{\n  \"motif_id\": \"tiling\"\n}\n```"
+  },
+  {
+   "id": "ladder:tiling:L4_s1",
+   "task": "scene2motif",
+   "answer": "tiling",
+   "level": 4,
+   "seed": 1,
+   "pred": "tiling",
+   "correct": true,
+   "raw": "```json\n{\n  \"motif_id\": \"tiling\"\n}\n```"
+  },
+  {
+   "id": "ladder:tiling:L4_s2",
+   "task": "scene2motif",
+   "answer": "tiling",
+   "level": 4,
+   "seed": 2,
+   "pred": "tiling",
+   "correct": true,
+   "raw": "{\"motif_id\": \"tiling\"}"
+  },
+  {
+   "id": "ladder:tiling:L5_s0",
+   "task": "scene2motif",
+   "answer": "tiling",
+   "level": 5,
+   "seed": 0,
+   "pred": "tiling",
+   "correct": true,
+   "raw": "{\"motif_id\": \"tiling\"}"
+  },
+  {
+   "id": "ladder:tiling:L5_s1",
+   "task": "scene2motif",
+   "answer": "tiling",
+   "level": 5,
+   "seed": 1,
+   "pred": "tiling",
+   "correct": true,
+   "raw": "```json\n{\n  \"motif_id\": \"tiling\"\n}\n```"
+  },
+  {
+   "id": "ladder:tiling:L5_s2",
+   "task": "scene2motif",
+   "answer": "tiling",
+   "level": 5,
+   "seed": 2,
+   "pred": "tiling",
+   "correct": true,
+   "raw": "```json\n{\n  \"motif_id\": \"tiling\"\n}\n```"
+  },
+  {
+   "id": "ladder:tiling:L6_s0",
+   "task": "scene2motif",
+   "answer": "tiling",
+   "level": 6,
+   "seed": 0,
+   "pred": "self_reference",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"self_reference\"\n}\n```"
+  },
+  {
+   "id": "ladder:tiling:L6_s1",
+   "task": "scene2motif",
+   "answer": "tiling",
+   "level": 6,
+   "seed": 1,
+   "pred": "tiling",
+   "correct": true,
+   "raw": "{\"motif_id\": \"tiling\"}"
+  },
+  {
+   "id": "ladder:tiling:L6_s2",
+   "task": "scene2motif",
+   "answer": "tiling",
+   "level": 6,
+   "seed": 2,
+   "pred": "tiling",
+   "correct": true,
+   "raw": "```json\n{\n  \"motif_id\": \"tiling\"\n}\n```"
+  },
+  {
+   "id": "ladder:hub:L0_s0",
+   "task": "scene2motif",
+   "answer": "hub",
+   "level": 0,
+   "seed": 0,
+   "pred": "hub",
+   "correct": true,
+   "raw": "{\"motif_id\": \"hub\"}"
+  },
+  {
+   "id": "ladder:hub:L1_s0",
+   "task": "scene2motif",
+   "answer": "hub",
+   "level": 1,
+   "seed": 0,
+   "pred": "hub",
+   "correct": true,
+   "raw": "```json\n{\n  \"motif_id\": \"hub\"\n}\n```"
+  },
+  {
+   "id": "ladder:hub:L1_s1",
+   "task": "scene2motif",
+   "answer": "hub",
+   "level": 1,
+   "seed": 1,
+   "pred": "hub",
+   "correct": true,
+   "raw": "```json\n{\n  \"motif_id\": \"hub\"\n}\n```"
+  },
+  {
+   "id": "ladder:hub:L1_s2",
+   "task": "scene2motif",
+   "answer": "hub",
+   "level": 1,
+   "seed": 2,
+   "pred": "cycle",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"cycle\"\n}\n```"
+  },
+  {
+   "id": "ladder:hub:L2_s0",
+   "task": "scene2motif",
+   "answer": "hub",
+   "level": 2,
+   "seed": 0,
+   "pred": "hub",
+   "correct": true,
+   "raw": "{\"motif_id\": \"hub\"}"
+  },
+  {
+   "id": "ladder:hub:L2_s1",
+   "task": "scene2motif",
+   "answer": "hub",
+   "level": 2,
+   "seed": 1,
+   "pred": "hub",
+   "correct": true,
+   "raw": "{\"motif_id\": \"hub\"}"
+  },
+  {
+   "id": "ladder:hub:L2_s2",
+   "task": "scene2motif",
+   "answer": "hub",
+   "level": 2,
+   "seed": 2,
+   "pred": "hub",
+   "correct": true,
+   "raw": "```json\n{\n  \"motif_id\": \"hub\"\n}\n```"
+  },
+  {
+   "id": "ladder:hub:L3_s0",
+   "task": "scene2motif",
+   "answer": "hub",
+   "level": 3,
+   "seed": 0,
+   "pred": "cycle",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"cycle\"\n}\n```"
+  },
+  {
+   "id": "ladder:hub:L3_s1",
+   "task": "scene2motif",
+   "answer": "hub",
+   "level": 3,
+   "seed": 1,
+   "pred": "hub",
+   "correct": true,
+   "raw": "{\"motif_id\": \"hub\"}"
+  },
+  {
+   "id": "ladder:hub:L3_s2",
+   "task": "scene2motif",
+   "answer": "hub",
+   "level": 3,
+   "seed": 2,
+   "pred": "self_reference",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"self_reference\"\n}\n```"
+  },
+  {
+   "id": "ladder:hub:L4_s0",
+   "task": "scene2motif",
+   "answer": "hub",
+   "level": 4,
+   "seed": 0,
+   "pred": "self_reference",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"self_reference\"\n}\n```"
+  },
+  {
+   "id": "ladder:hub:L4_s1",
+   "task": "scene2motif",
+   "answer": "hub",
+   "level": 4,
+   "seed": 1,
+   "pred": "hub",
+   "correct": true,
+   "raw": "```json\n{\n  \"motif_id\": \"hub\"\n}\n```"
+  },
+  {
+   "id": "ladder:hub:L4_s2",
+   "task": "scene2motif",
+   "answer": "hub",
+   "level": 4,
+   "seed": 2,
+   "pred": "self_reference",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"self_reference\"\n}\n```"
+  },
+  {
+   "id": "ladder:hub:L5_s0",
+   "task": "scene2motif",
+   "answer": "hub",
+   "level": 5,
+   "seed": 0,
+   "pred": "self_reference",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"self_reference\"\n}\n```"
+  },
+  {
+   "id": "ladder:hub:L5_s1",
+   "task": "scene2motif",
+   "answer": "hub",
+   "level": 5,
+   "seed": 1,
+   "pred": "hub",
+   "correct": true,
+   "raw": "```json\n{\n  \"motif_id\": \"hub\"\n}\n```"
+  },
+  {
+   "id": "ladder:hub:L5_s2",
+   "task": "scene2motif",
+   "answer": "hub",
+   "level": 5,
+   "seed": 2,
+   "pred": "self_reference",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"self_reference\"\n}\n```"
+  },
+  {
+   "id": "ladder:hub:L6_s0",
+   "task": "scene2motif",
+   "answer": "hub",
+   "level": 6,
+   "seed": 0,
+   "pred": "symmetry",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"symmetry\"\n}\n```"
+  },
+  {
+   "id": "ladder:hub:L6_s1",
+   "task": "scene2motif",
+   "answer": "hub",
+   "level": 6,
+   "seed": 1,
+   "pred": "cycle",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"cycle\"\n}\n```"
+  },
+  {
+   "id": "ladder:hub:L6_s2",
+   "task": "scene2motif",
+   "answer": "hub",
+   "level": 6,
+   "seed": 2,
+   "pred": "self_reference",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"self_reference\"\n}\n```"
+  },
+  {
+   "id": "ladder:diagonalization:L0_s0",
+   "task": "scene2motif",
+   "answer": "diagonalization",
+   "level": 0,
+   "seed": 0,
+   "pred": "cycle",
+   "correct": false,
+   "raw": "{\"motif_id\": \"cycle\"}"
+  },
+  {
+   "id": "ladder:diagonalization:L1_s0",
+   "task": "scene2motif",
+   "answer": "diagonalization",
+   "level": 1,
+   "seed": 0,
+   "pred": "cycle",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"cycle\"\n}\n```"
+  },
+  {
+   "id": "ladder:diagonalization:L1_s1",
+   "task": "scene2motif",
+   "answer": "diagonalization",
+   "level": 1,
+   "seed": 1,
+   "pred": "cycle",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"cycle\"\n}\n```"
+  },
+  {
+   "id": "ladder:diagonalization:L1_s2",
+   "task": "scene2motif",
+   "answer": "diagonalization",
+   "level": 1,
+   "seed": 2,
+   "pred": "cycle",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"cycle\"\n}\n```"
+  },
+  {
+   "id": "ladder:diagonalization:L2_s0",
+   "task": "scene2motif",
+   "answer": "diagonalization",
+   "level": 2,
+   "seed": 0,
+   "pred": "cycle",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"cycle\"\n}\n```"
+  },
+  {
+   "id": "ladder:diagonalization:L2_s1",
+   "task": "scene2motif",
+   "answer": "diagonalization",
+   "level": 2,
+   "seed": 1,
+   "pred": "cycle",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"cycle\"\n}\n```"
+  },
+  {
+   "id": "ladder:diagonalization:L2_s2",
+   "task": "scene2motif",
+   "answer": "diagonalization",
+   "level": 2,
+   "seed": 2,
+   "pred": "cycle",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"cycle\"\n}\n```"
+  },
+  {
+   "id": "ladder:diagonalization:L3_s0",
+   "task": "scene2motif",
+   "answer": "diagonalization",
+   "level": 3,
+   "seed": 0,
+   "pred": "cycle",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"cycle\"\n}\n```"
+  },
+  {
+   "id": "ladder:diagonalization:L3_s1",
+   "task": "scene2motif",
+   "answer": "diagonalization",
+   "level": 3,
+   "seed": 1,
+   "pred": "cycle",
+   "correct": false,
+   "raw": "{\"motif_id\": \"cycle\"}"
+  },
+  {
+   "id": "ladder:diagonalization:L3_s2",
+   "task": "scene2motif",
+   "answer": "diagonalization",
+   "level": 3,
+   "seed": 2,
+   "pred": "cycle",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"cycle\"\n}\n```"
+  },
+  {
+   "id": "ladder:diagonalization:L4_s0",
+   "task": "scene2motif",
+   "answer": "diagonalization",
+   "level": 4,
+   "seed": 0,
+   "pred": "cycle",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"cycle\"\n}\n```"
+  },
+  {
+   "id": "ladder:diagonalization:L4_s1",
+   "task": "scene2motif",
+   "answer": "diagonalization",
+   "level": 4,
+   "seed": 1,
+   "pred": "cycle",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"cycle\"\n}\n```"
+  },
+  {
+   "id": "ladder:diagonalization:L4_s2",
+   "task": "scene2motif",
+   "answer": "diagonalization",
+   "level": 4,
+   "seed": 2,
+   "pred": "cycle",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"cycle\"\n}\n```"
+  },
+  {
+   "id": "ladder:diagonalization:L5_s0",
+   "task": "scene2motif",
+   "answer": "diagonalization",
+   "level": 5,
+   "seed": 0,
+   "pred": "cycle",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"cycle\"\n}\n```"
+  },
+  {
+   "id": "ladder:diagonalization:L5_s1",
+   "task": "scene2motif",
+   "answer": "diagonalization",
+   "level": 5,
+   "seed": 1,
+   "pred": "self_reference",
+   "correct": false,
+   "raw": "{\"motif_id\": \"self_reference\"}"
+  },
+  {
+   "id": "ladder:diagonalization:L5_s2",
+   "task": "scene2motif",
+   "answer": "diagonalization",
+   "level": 5,
+   "seed": 2,
+   "pred": "cycle",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"cycle\"\n}\n```"
+  },
+  {
+   "id": "ladder:diagonalization:L6_s0",
+   "task": "scene2motif",
+   "answer": "diagonalization",
+   "level": 6,
+   "seed": 0,
+   "pred": "cycle",
+   "correct": false,
+   "raw": "{\"motif_id\": \"cycle\"}"
+  },
+  {
+   "id": "ladder:diagonalization:L6_s1",
+   "task": "scene2motif",
+   "answer": "diagonalization",
+   "level": 6,
+   "seed": 1,
+   "pred": "self_reference",
+   "correct": false,
+   "raw": "{\"motif_id\": \"self_reference\"}"
+  },
+  {
+   "id": "ladder:diagonalization:L6_s2",
+   "task": "scene2motif",
+   "answer": "diagonalization",
+   "level": 6,
+   "seed": 2,
+   "pred": "self_reference",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"self_reference\"\n}\n```"
+  },
+  {
+   "id": "ladder:infinite_descent:L0_s0",
+   "task": "scene2motif",
+   "answer": "infinite_descent",
+   "level": 0,
+   "seed": 0,
+   "pred": "self_reference",
+   "correct": false,
+   "raw": "{\"motif_id\": \"self_reference\"}"
+  },
+  {
+   "id": "ladder:infinite_descent:L1_s0",
+   "task": "scene2motif",
+   "answer": "infinite_descent",
+   "level": 1,
+   "seed": 0,
+   "pred": "cycle",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"cycle\"\n}\n```"
+  },
+  {
+   "id": "ladder:infinite_descent:L1_s1",
+   "task": "scene2motif",
+   "answer": "infinite_descent",
+   "level": 1,
+   "seed": 1,
+   "pred": "cycle",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"cycle\"\n}\n```"
+  },
+  {
+   "id": "ladder:infinite_descent:L1_s2",
+   "task": "scene2motif",
+   "answer": "infinite_descent",
+   "level": 1,
+   "seed": 2,
+   "pred": "cycle",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"cycle\"\n}\n```"
+  },
+  {
+   "id": "ladder:infinite_descent:L2_s0",
+   "task": "scene2motif",
+   "answer": "infinite_descent",
+   "level": 2,
+   "seed": 0,
+   "pred": "self_reference",
+   "correct": false,
+   "raw": "{\"motif_id\": \"self_reference\"}"
+  },
+  {
+   "id": "ladder:infinite_descent:L2_s1",
+   "task": "scene2motif",
+   "answer": "infinite_descent",
+   "level": 2,
+   "seed": 1,
+   "pred": "self_reference",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"self_reference\"\n}\n```"
+  },
+  {
+   "id": "ladder:infinite_descent:L2_s2",
+   "task": "scene2motif",
+   "answer": "infinite_descent",
+   "level": 2,
+   "seed": 2,
+   "pred": "self_reference",
+   "correct": false,
+   "raw": "{\"motif_id\": \"self_reference\"}"
+  },
+  {
+   "id": "ladder:infinite_descent:L3_s0",
+   "task": "scene2motif",
+   "answer": "infinite_descent",
+   "level": 3,
+   "seed": 0,
+   "pred": "nesting",
+   "correct": false,
+   "raw": "{\"motif_id\": \"nesting\"}"
+  },
+  {
+   "id": "ladder:infinite_descent:L3_s1",
+   "task": "scene2motif",
+   "answer": "infinite_descent",
+   "level": 3,
+   "seed": 1,
+   "pred": "cycle",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"cycle\"\n}\n```"
+  },
+  {
+   "id": "ladder:infinite_descent:L3_s2",
+   "task": "scene2motif",
+   "answer": "infinite_descent",
+   "level": 3,
+   "seed": 2,
+   "pred": "self_reference",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"self_reference\"\n}\n```"
+  },
+  {
+   "id": "ladder:infinite_descent:L4_s0",
+   "task": "scene2motif",
+   "answer": "infinite_descent",
+   "level": 4,
+   "seed": 0,
+   "pred": "nesting",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"nesting\"\n}\n```"
+  },
+  {
+   "id": "ladder:infinite_descent:L4_s1",
+   "task": "scene2motif",
+   "answer": "infinite_descent",
+   "level": 4,
+   "seed": 1,
+   "pred": "cycle",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"cycle\"\n}\n```"
+  },
+  {
+   "id": "ladder:infinite_descent:L4_s2",
+   "task": "scene2motif",
+   "answer": "infinite_descent",
+   "level": 4,
+   "seed": 2,
+   "pred": "self_reference",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"self_reference\"\n}\n```"
+  },
+  {
+   "id": "ladder:infinite_descent:L5_s0",
+   "task": "scene2motif",
+   "answer": "infinite_descent",
+   "level": 5,
+   "seed": 0,
+   "pred": "nesting",
+   "correct": false,
+   "raw": "{\"motif_id\": \"nesting\"}"
+  },
+  {
+   "id": "ladder:infinite_descent:L5_s1",
+   "task": "scene2motif",
+   "answer": "infinite_descent",
+   "level": 5,
+   "seed": 1,
+   "pred": "cycle",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"cycle\"\n}\n```"
+  },
+  {
+   "id": "ladder:infinite_descent:L5_s2",
+   "task": "scene2motif",
+   "answer": "infinite_descent",
+   "level": 5,
+   "seed": 2,
+   "pred": "self_reference",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"self_reference\"\n}\n```"
+  },
+  {
+   "id": "ladder:infinite_descent:L6_s0",
+   "task": "scene2motif",
+   "answer": "infinite_descent",
+   "level": 6,
+   "seed": 0,
+   "pred": "nesting",
+   "correct": false,
+   "raw": "{\"motif_id\": \"nesting\"}"
+  },
+  {
+   "id": "ladder:infinite_descent:L6_s1",
+   "task": "scene2motif",
+   "answer": "infinite_descent",
+   "level": 6,
+   "seed": 1,
+   "pred": "cycle",
+   "correct": false,
+   "raw": "{\"motif_id\": \"cycle\"}"
+  },
+  {
+   "id": "ladder:infinite_descent:L6_s2",
+   "task": "scene2motif",
+   "answer": "infinite_descent",
+   "level": 6,
+   "seed": 2,
+   "pred": "self_reference",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"self_reference\"\n}\n```"
+  },
+  {
+   "id": "ladder:coprime_orbit:L0_s0",
+   "task": "scene2motif",
+   "answer": "coprime_orbit",
+   "level": 0,
+   "seed": 0,
+   "pred": "cycle",
+   "correct": false,
+   "raw": "{\"motif_id\": \"cycle\"}"
+  },
+  {
+   "id": "ladder:coprime_orbit:L1_s0",
+   "task": "scene2motif",
+   "answer": "coprime_orbit",
+   "level": 1,
+   "seed": 0,
+   "pred": "cycle",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"cycle\"\n}\n```"
+  },
+  {
+   "id": "ladder:coprime_orbit:L1_s1",
+   "task": "scene2motif",
+   "answer": "coprime_orbit",
+   "level": 1,
+   "seed": 1,
+   "pred": "cycle",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"cycle\"\n}\n```"
+  },
+  {
+   "id": "ladder:coprime_orbit:L1_s2",
+   "task": "scene2motif",
+   "answer": "coprime_orbit",
+   "level": 1,
+   "seed": 2,
+   "pred": "cycle",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"cycle\"\n}\n```"
+  },
+  {
+   "id": "ladder:coprime_orbit:L2_s0",
+   "task": "scene2motif",
+   "answer": "coprime_orbit",
+   "level": 2,
+   "seed": 0,
+   "pred": "cycle",
+   "correct": false,
+   "raw": "{\"motif_id\": \"cycle\"}"
+  },
+  {
+   "id": "ladder:coprime_orbit:L2_s1",
+   "task": "scene2motif",
+   "answer": "coprime_orbit",
+   "level": 2,
+   "seed": 1,
+   "pred": "cycle",
+   "correct": false,
+   "raw": "{\"motif_id\": \"cycle\"}"
+  },
+  {
+   "id": "ladder:coprime_orbit:L2_s2",
+   "task": "scene2motif",
+   "answer": "coprime_orbit",
+   "level": 2,
+   "seed": 2,
+   "pred": "cycle",
+   "correct": false,
+   "raw": "{\"motif_id\": \"cycle\"}"
+  },
+  {
+   "id": "ladder:coprime_orbit:L3_s0",
+   "task": "scene2motif",
+   "answer": "coprime_orbit",
+   "level": 3,
+   "seed": 0,
+   "pred": "cycle",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"cycle\"\n}\n```"
+  },
+  {
+   "id": "ladder:coprime_orbit:L3_s1",
+   "task": "scene2motif",
+   "answer": "coprime_orbit",
+   "level": 3,
+   "seed": 1,
+   "pred": "cycle",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"cycle\"\n}\n```"
+  },
+  {
+   "id": "ladder:coprime_orbit:L3_s2",
+   "task": "scene2motif",
+   "answer": "coprime_orbit",
+   "level": 3,
+   "seed": 2,
+   "pred": "cycle",
+   "correct": false,
+   "raw": "{\"motif_id\": \"cycle\"}"
+  },
+  {
+   "id": "ladder:coprime_orbit:L4_s0",
+   "task": "scene2motif",
+   "answer": "coprime_orbit",
+   "level": 4,
+   "seed": 0,
+   "pred": "cycle",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"cycle\"\n}\n```"
+  },
+  {
+   "id": "ladder:coprime_orbit:L4_s1",
+   "task": "scene2motif",
+   "answer": "coprime_orbit",
+   "level": 4,
+   "seed": 1,
+   "pred": "self_reference",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"self_reference\"\n}\n```"
+  },
+  {
+   "id": "ladder:coprime_orbit:L4_s2",
+   "task": "scene2motif",
+   "answer": "coprime_orbit",
+   "level": 4,
+   "seed": 2,
+   "pred": "cycle",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"cycle\"\n}\n```"
+  },
+  {
+   "id": "ladder:coprime_orbit:L5_s0",
+   "task": "scene2motif",
+   "answer": "coprime_orbit",
+   "level": 5,
+   "seed": 0,
+   "pred": "cycle",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"cycle\"\n}\n```"
+  },
+  {
+   "id": "ladder:coprime_orbit:L5_s1",
+   "task": "scene2motif",
+   "answer": "coprime_orbit",
+   "level": 5,
+   "seed": 1,
+   "pred": "cycle",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"cycle\"\n}\n```"
+  },
+  {
+   "id": "ladder:coprime_orbit:L5_s2",
+   "task": "scene2motif",
+   "answer": "coprime_orbit",
+   "level": 5,
+   "seed": 2,
+   "pred": "cycle",
+   "correct": false,
+   "raw": "{\"motif_id\": \"cycle\"}"
+  },
+  {
+   "id": "ladder:coprime_orbit:L6_s0",
+   "task": "scene2motif",
+   "answer": "coprime_orbit",
+   "level": 6,
+   "seed": 0,
+   "pred": "cycle",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"cycle\"\n}\n```"
+  },
+  {
+   "id": "ladder:coprime_orbit:L6_s1",
+   "task": "scene2motif",
+   "answer": "coprime_orbit",
+   "level": 6,
+   "seed": 1,
+   "pred": "self_reference",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"self_reference\"\n}\n```"
+  },
+  {
+   "id": "ladder:coprime_orbit:L6_s2",
+   "task": "scene2motif",
+   "answer": "coprime_orbit",
+   "level": 6,
+   "seed": 2,
+   "pred": "cycle",
+   "correct": false,
+   "raw": "{\"motif_id\": \"cycle\"}"
+  },
+  {
+   "id": "ladder:pigeonhole:L0_s0",
+   "task": "scene2motif",
+   "answer": "pigeonhole",
+   "level": 0,
+   "seed": 0,
+   "pred": "self_reference",
+   "correct": false,
+   "raw": "{\"motif_id\": \"self_reference\"}"
+  },
+  {
+   "id": "ladder:pigeonhole:L1_s0",
+   "task": "scene2motif",
+   "answer": "pigeonhole",
+   "level": 1,
+   "seed": 0,
+   "pred": "cycle",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"cycle\"\n}\n```"
+  },
+  {
+   "id": "ladder:pigeonhole:L1_s1",
+   "task": "scene2motif",
+   "answer": "pigeonhole",
+   "level": 1,
+   "seed": 1,
+   "pred": "cycle",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"cycle\"\n}\n```"
+  },
+  {
+   "id": "ladder:pigeonhole:L1_s2",
+   "task": "scene2motif",
+   "answer": "pigeonhole",
+   "level": 1,
+   "seed": 2,
+   "pred": "cycle",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"cycle\"\n}\n```"
+  },
+  {
+   "id": "ladder:pigeonhole:L2_s0",
+   "task": "scene2motif",
+   "answer": "pigeonhole",
+   "level": 2,
+   "seed": 0,
+   "pred": "self_reference",
+   "correct": false,
+   "raw": "{\"motif_id\": \"self_reference\"}"
+  },
+  {
+   "id": "ladder:pigeonhole:L2_s1",
+   "task": "scene2motif",
+   "answer": "pigeonhole",
+   "level": 2,
+   "seed": 1,
+   "pred": "self_reference",
+   "correct": false,
+   "raw": "{\"motif_id\": \"self_reference\"}"
+  },
+  {
+   "id": "ladder:pigeonhole:L2_s2",
+   "task": "scene2motif",
+   "answer": "pigeonhole",
+   "level": 2,
+   "seed": 2,
+   "pred": "self_reference",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"self_reference\"\n}\n```"
+  },
+  {
+   "id": "ladder:pigeonhole:L3_s0",
+   "task": "scene2motif",
+   "answer": "pigeonhole",
+   "level": 3,
+   "seed": 0,
+   "pred": "cycle",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"cycle\"\n}\n```"
+  },
+  {
+   "id": "ladder:pigeonhole:L3_s1",
+   "task": "scene2motif",
+   "answer": "pigeonhole",
+   "level": 3,
+   "seed": 1,
+   "pred": "self_reference",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"self_reference\"\n}\n```"
+  },
+  {
+   "id": "ladder:pigeonhole:L3_s2",
+   "task": "scene2motif",
+   "answer": "pigeonhole",
+   "level": 3,
+   "seed": 2,
+   "pred": "self_reference",
+   "correct": false,
+   "raw": "{\"motif_id\": \"self_reference\"}"
+  },
+  {
+   "id": "ladder:pigeonhole:L4_s0",
+   "task": "scene2motif",
+   "answer": "pigeonhole",
+   "level": 4,
+   "seed": 0,
+   "pred": "self_reference",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"self_reference\"\n}\n```"
+  },
+  {
+   "id": "ladder:pigeonhole:L4_s1",
+   "task": "scene2motif",
+   "answer": "pigeonhole",
+   "level": 4,
+   "seed": 1,
+   "pred": "self_reference",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"self_reference\"\n}\n```"
+  },
+  {
+   "id": "ladder:pigeonhole:L4_s2",
+   "task": "scene2motif",
+   "answer": "pigeonhole",
+   "level": 4,
+   "seed": 2,
+   "pred": "self_reference",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"self_reference\"\n}\n```"
+  },
+  {
+   "id": "ladder:pigeonhole:L5_s0",
+   "task": "scene2motif",
+   "answer": "pigeonhole",
+   "level": 5,
+   "seed": 0,
+   "pred": "nesting",
+   "correct": false,
+   "raw": "{\"motif_id\": \"nesting\"}"
+  },
+  {
+   "id": "ladder:pigeonhole:L5_s1",
+   "task": "scene2motif",
+   "answer": "pigeonhole",
+   "level": 5,
+   "seed": 1,
+   "pred": "cycle",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"cycle\"\n}\n```"
+  },
+  {
+   "id": "ladder:pigeonhole:L5_s2",
+   "task": "scene2motif",
+   "answer": "pigeonhole",
+   "level": 5,
+   "seed": 2,
+   "pred": "self_reference",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"self_reference\"\n}\n```"
+  },
+  {
+   "id": "ladder:pigeonhole:L6_s0",
+   "task": "scene2motif",
+   "answer": "pigeonhole",
+   "level": 6,
+   "seed": 0,
+   "pred": "self_reference",
+   "correct": false,
+   "raw": "{\"motif_id\": \"self_reference\"}"
+  },
+  {
+   "id": "ladder:pigeonhole:L6_s1",
+   "task": "scene2motif",
+   "answer": "pigeonhole",
+   "level": 6,
+   "seed": 1,
+   "pred": "cycle",
+   "correct": false,
+   "raw": "{\"motif_id\": \"cycle\"}"
+  },
+  {
+   "id": "ladder:pigeonhole:L6_s2",
+   "task": "scene2motif",
+   "answer": "pigeonhole",
+   "level": 6,
+   "seed": 2,
+   "pred": "cycle",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"cycle\"\n}\n```"
+  },
+  {
+   "id": "ladder:projective_duality:L0_s0",
+   "task": "scene2motif",
+   "answer": "projective_duality",
+   "level": 0,
+   "seed": 0,
+   "pred": "cycle",
+   "correct": false,
+   "raw": "{\"motif_id\": \"cycle\"}"
+  },
+  {
+   "id": "ladder:projective_duality:L1_s0",
+   "task": "scene2motif",
+   "answer": "projective_duality",
+   "level": 1,
+   "seed": 0,
+   "pred": "cycle",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"cycle\"\n}\n```"
+  },
+  {
+   "id": "ladder:projective_duality:L1_s1",
+   "task": "scene2motif",
+   "answer": "projective_duality",
+   "level": 1,
+   "seed": 1,
+   "pred": "cycle",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"cycle\"\n}\n```"
+  },
+  {
+   "id": "ladder:projective_duality:L1_s2",
+   "task": "scene2motif",
+   "answer": "projective_duality",
+   "level": 1,
+   "seed": 2,
+   "pred": "cycle",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"cycle\"\n}\n```"
+  },
+  {
+   "id": "ladder:projective_duality:L2_s0",
+   "task": "scene2motif",
+   "answer": "projective_duality",
+   "level": 2,
+   "seed": 0,
+   "pred": "cycle",
+   "correct": false,
+   "raw": "{\"motif_id\": \"cycle\"}"
+  },
+  {
+   "id": "ladder:projective_duality:L2_s1",
+   "task": "scene2motif",
+   "answer": "projective_duality",
+   "level": 2,
+   "seed": 1,
+   "pred": "cycle",
+   "correct": false,
+   "raw": "{\"motif_id\": \"cycle\"}"
+  },
+  {
+   "id": "ladder:projective_duality:L2_s2",
+   "task": "scene2motif",
+   "answer": "projective_duality",
+   "level": 2,
+   "seed": 2,
+   "pred": "cycle",
+   "correct": false,
+   "raw": "{\"motif_id\": \"cycle\"}"
+  },
+  {
+   "id": "ladder:projective_duality:L3_s0",
+   "task": "scene2motif",
+   "answer": "projective_duality",
+   "level": 3,
+   "seed": 0,
+   "pred": "cycle",
+   "correct": false,
+   "raw": "{\"motif_id\": \"cycle\"}"
+  },
+  {
+   "id": "ladder:projective_duality:L3_s1",
+   "task": "scene2motif",
+   "answer": "projective_duality",
+   "level": 3,
+   "seed": 1,
+   "pred": "cycle",
+   "correct": false,
+   "raw": "{\"motif_id\": \"cycle\"}"
+  },
+  {
+   "id": "ladder:projective_duality:L3_s2",
+   "task": "scene2motif",
+   "answer": "projective_duality",
+   "level": 3,
+   "seed": 2,
+   "pred": "cycle",
+   "correct": false,
+   "raw": "{\"motif_id\": \"cycle\"}"
+  },
+  {
+   "id": "ladder:projective_duality:L4_s0",
+   "task": "scene2motif",
+   "answer": "projective_duality",
+   "level": 4,
+   "seed": 0,
+   "pred": "cycle",
+   "correct": false,
+   "raw": "{\"motif_id\": \"cycle\"}"
+  },
+  {
+   "id": "ladder:projective_duality:L4_s1",
+   "task": "scene2motif",
+   "answer": "projective_duality",
+   "level": 4,
+   "seed": 1,
+   "pred": "hub",
+   "correct": false,
+   "raw": "{\"motif_id\": \"hub\"}"
+  },
+  {
+   "id": "ladder:projective_duality:L4_s2",
+   "task": "scene2motif",
+   "answer": "projective_duality",
+   "level": 4,
+   "seed": 2,
+   "pred": "cycle",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"cycle\"\n}\n```"
+  },
+  {
+   "id": "ladder:projective_duality:L5_s0",
+   "task": "scene2motif",
+   "answer": "projective_duality",
+   "level": 5,
+   "seed": 0,
+   "pred": "self_reference",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"self_reference\"\n}\n```"
+  },
+  {
+   "id": "ladder:projective_duality:L5_s1",
+   "task": "scene2motif",
+   "answer": "projective_duality",
+   "level": 5,
+   "seed": 1,
+   "pred": "hub",
+   "correct": false,
+   "raw": "{\"motif_id\": \"hub\"}"
+  },
+  {
+   "id": "ladder:projective_duality:L5_s2",
+   "task": "scene2motif",
+   "answer": "projective_duality",
+   "level": 5,
+   "seed": 2,
+   "pred": "cycle",
+   "correct": false,
+   "raw": "{\"motif_id\": \"cycle\"}"
+  },
+  {
+   "id": "ladder:projective_duality:L6_s0",
+   "task": "scene2motif",
+   "answer": "projective_duality",
+   "level": 6,
+   "seed": 0,
+   "pred": "cycle",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"cycle\"\n}\n```"
+  },
+  {
+   "id": "ladder:projective_duality:L6_s1",
+   "task": "scene2motif",
+   "answer": "projective_duality",
+   "level": 6,
+   "seed": 1,
+   "pred": "hub",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"hub\"\n}\n```"
+  },
+  {
+   "id": "ladder:projective_duality:L6_s2",
+   "task": "scene2motif",
+   "answer": "projective_duality",
+   "level": 6,
+   "seed": 2,
+   "pred": "cycle",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"cycle\"\n}\n```"
+  },
+  {
+   "id": "ladder:contraction_fixed_point:L0_s0",
+   "task": "scene2motif",
+   "answer": "contraction_fixed_point",
+   "level": 0,
+   "seed": 0,
+   "pred": "cycle",
+   "correct": false,
+   "raw": "{\"motif_id\": \"cycle\"}"
+  },
+  {
+   "id": "ladder:contraction_fixed_point:L1_s0",
+   "task": "scene2motif",
+   "answer": "contraction_fixed_point",
+   "level": 1,
+   "seed": 0,
+   "pred": "self_reference",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"self_reference\"\n}\n```"
+  },
+  {
+   "id": "ladder:contraction_fixed_point:L1_s1",
+   "task": "scene2motif",
+   "answer": "contraction_fixed_point",
+   "level": 1,
+   "seed": 1,
+   "pred": "self_reference",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"self_reference\"\n}\n```"
+  },
+  {
+   "id": "ladder:contraction_fixed_point:L1_s2",
+   "task": "scene2motif",
+   "answer": "contraction_fixed_point",
+   "level": 1,
+   "seed": 2,
+   "pred": "self_reference",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"self_reference\"\n}\n```"
+  },
+  {
+   "id": "ladder:contraction_fixed_point:L2_s0",
+   "task": "scene2motif",
+   "answer": "contraction_fixed_point",
+   "level": 2,
+   "seed": 0,
+   "pred": "self_reference",
+   "correct": false,
+   "raw": "{\"motif_id\": \"self_reference\"}"
+  },
+  {
+   "id": "ladder:contraction_fixed_point:L2_s1",
+   "task": "scene2motif",
+   "answer": "contraction_fixed_point",
+   "level": 2,
+   "seed": 1,
+   "pred": "self_reference",
+   "correct": false,
+   "raw": "{\"motif_id\": \"self_reference\"}"
+  },
+  {
+   "id": "ladder:contraction_fixed_point:L2_s2",
+   "task": "scene2motif",
+   "answer": "contraction_fixed_point",
+   "level": 2,
+   "seed": 2,
+   "pred": "cycle",
+   "correct": false,
+   "raw": "{\"motif_id\": \"cycle\"}"
+  },
+  {
+   "id": "ladder:contraction_fixed_point:L3_s0",
+   "task": "scene2motif",
+   "answer": "contraction_fixed_point",
+   "level": 3,
+   "seed": 0,
+   "pred": "self_reference",
+   "correct": false,
+   "raw": "{\"motif_id\": \"self_reference\"}"
+  },
+  {
+   "id": "ladder:contraction_fixed_point:L3_s1",
+   "task": "scene2motif",
+   "answer": "contraction_fixed_point",
+   "level": 3,
+   "seed": 1,
+   "pred": "convergence",
+   "correct": false,
+   "raw": "{\"motif_id\": \"convergence\"}"
+  },
+  {
+   "id": "ladder:contraction_fixed_point:L3_s2",
+   "task": "scene2motif",
+   "answer": "contraction_fixed_point",
+   "level": 3,
+   "seed": 2,
+   "pred": "self_reference",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"self_reference\"\n}\n```"
+  },
+  {
+   "id": "ladder:contraction_fixed_point:L4_s0",
+   "task": "scene2motif",
+   "answer": "contraction_fixed_point",
+   "level": 4,
+   "seed": 0,
+   "pred": "self_reference",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"self_reference\"\n}\n```"
+  },
+  {
+   "id": "ladder:contraction_fixed_point:L4_s1",
+   "task": "scene2motif",
+   "answer": "contraction_fixed_point",
+   "level": 4,
+   "seed": 1,
+   "pred": "self_reference",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"self_reference\"\n}\n```"
+  },
+  {
+   "id": "ladder:contraction_fixed_point:L4_s2",
+   "task": "scene2motif",
+   "answer": "contraction_fixed_point",
+   "level": 4,
+   "seed": 2,
+   "pred": "self_reference",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"self_reference\"\n}\n```"
+  },
+  {
+   "id": "ladder:contraction_fixed_point:L5_s0",
+   "task": "scene2motif",
+   "answer": "contraction_fixed_point",
+   "level": 5,
+   "seed": 0,
+   "pred": "self_reference",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"self_reference\"\n}\n```"
+  },
+  {
+   "id": "ladder:contraction_fixed_point:L5_s1",
+   "task": "scene2motif",
+   "answer": "contraction_fixed_point",
+   "level": 5,
+   "seed": 1,
+   "pred": "self_reference",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"self_reference\"\n}\n```"
+  },
+  {
+   "id": "ladder:contraction_fixed_point:L5_s2",
+   "task": "scene2motif",
+   "answer": "contraction_fixed_point",
+   "level": 5,
+   "seed": 2,
+   "pred": "cycle",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"cycle\"\n}\n```"
+  },
+  {
+   "id": "ladder:contraction_fixed_point:L6_s0",
+   "task": "scene2motif",
+   "answer": "contraction_fixed_point",
+   "level": 6,
+   "seed": 0,
+   "pred": "self_reference",
+   "correct": false,
+   "raw": "{\"motif_id\": \"self_reference\"}"
+  },
+  {
+   "id": "ladder:contraction_fixed_point:L6_s1",
+   "task": "scene2motif",
+   "answer": "contraction_fixed_point",
+   "level": 6,
+   "seed": 1,
+   "pred": "self_reference",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"self_reference\"\n}\n```"
+  },
+  {
+   "id": "ladder:contraction_fixed_point:L6_s2",
+   "task": "scene2motif",
+   "answer": "contraction_fixed_point",
+   "level": 6,
+   "seed": 2,
+   "pred": "self_reference",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"self_reference\"\n}\n```"
+  },
+  {
+   "id": "ladder:aperiodic_tiling:L0_s0",
+   "task": "scene2motif",
+   "answer": "aperiodic_tiling",
+   "level": 0,
+   "seed": 0,
+   "pred": "self_reference",
+   "correct": false,
+   "raw": "{\"motif_id\": \"self_reference\"}"
+  },
+  {
+   "id": "ladder:aperiodic_tiling:L1_s0",
+   "task": "scene2motif",
+   "answer": "aperiodic_tiling",
+   "level": 1,
+   "seed": 0,
+   "pred": "self_reference",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"self_reference\"\n}\n```"
+  },
+  {
+   "id": "ladder:aperiodic_tiling:L1_s1",
+   "task": "scene2motif",
+   "answer": "aperiodic_tiling",
+   "level": 1,
+   "seed": 1,
+   "pred": "self_reference",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"self_reference\"\n}\n```"
+  },
+  {
+   "id": "ladder:aperiodic_tiling:L1_s2",
+   "task": "scene2motif",
+   "answer": "aperiodic_tiling",
+   "level": 1,
+   "seed": 2,
+   "pred": "self_reference",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"self_reference\"\n}\n```"
+  },
+  {
+   "id": "ladder:aperiodic_tiling:L2_s0",
+   "task": "scene2motif",
+   "answer": "aperiodic_tiling",
+   "level": 2,
+   "seed": 0,
+   "pred": "self_reference",
+   "correct": false,
+   "raw": "{\"motif_id\": \"self_reference\"}"
+  },
+  {
+   "id": "ladder:aperiodic_tiling:L2_s1",
+   "task": "scene2motif",
+   "answer": "aperiodic_tiling",
+   "level": 2,
+   "seed": 1,
+   "pred": "self_reference",
+   "correct": false,
+   "raw": "{\"motif_id\": \"self_reference\"}"
+  },
+  {
+   "id": "ladder:aperiodic_tiling:L2_s2",
+   "task": "scene2motif",
+   "answer": "aperiodic_tiling",
+   "level": 2,
+   "seed": 2,
+   "pred": "self_reference",
+   "correct": false,
+   "raw": "{\"motif_id\": \"self_reference\"}"
+  },
+  {
+   "id": "ladder:aperiodic_tiling:L3_s0",
+   "task": "scene2motif",
+   "answer": "aperiodic_tiling",
+   "level": 3,
+   "seed": 0,
+   "pred": "tiling",
+   "correct": false,
+   "raw": "{\"motif_id\": \"tiling\"}"
+  },
+  {
+   "id": "ladder:aperiodic_tiling:L3_s1",
+   "task": "scene2motif",
+   "answer": "aperiodic_tiling",
+   "level": 3,
+   "seed": 1,
+   "pred": "symmetry_breaking",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"symmetry_breaking\"\n}\n```"
+  },
+  {
+   "id": "ladder:aperiodic_tiling:L3_s2",
+   "task": "scene2motif",
+   "answer": "aperiodic_tiling",
+   "level": 3,
+   "seed": 2,
+   "pred": "self_reference",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"self_reference\"\n}\n```"
+  },
+  {
+   "id": "ladder:aperiodic_tiling:L4_s0",
+   "task": "scene2motif",
+   "answer": "aperiodic_tiling",
+   "level": 4,
+   "seed": 0,
+   "pred": "self_reference",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"self_reference\"\n}\n```"
+  },
+  {
+   "id": "ladder:aperiodic_tiling:L4_s1",
+   "task": "scene2motif",
+   "answer": "aperiodic_tiling",
+   "level": 4,
+   "seed": 1,
+   "pred": "self_reference",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"self_reference\"\n}\n```"
+  },
+  {
+   "id": "ladder:aperiodic_tiling:L4_s2",
+   "task": "scene2motif",
+   "answer": "aperiodic_tiling",
+   "level": 4,
+   "seed": 2,
+   "pred": "self_reference",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"self_reference\"\n}\n```"
+  },
+  {
+   "id": "ladder:aperiodic_tiling:L5_s0",
+   "task": "scene2motif",
+   "answer": "aperiodic_tiling",
+   "level": 5,
+   "seed": 0,
+   "pred": "self_reference",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"self_reference\"\n}\n```"
+  },
+  {
+   "id": "ladder:aperiodic_tiling:L5_s1",
+   "task": "scene2motif",
+   "answer": "aperiodic_tiling",
+   "level": 5,
+   "seed": 1,
+   "pred": "symmetry",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"symmetry\"\n}\n```"
+  },
+  {
+   "id": "ladder:aperiodic_tiling:L5_s2",
+   "task": "scene2motif",
+   "answer": "aperiodic_tiling",
+   "level": 5,
+   "seed": 2,
+   "pred": "self_reference",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"self_reference\"\n}\n```"
+  },
+  {
+   "id": "ladder:aperiodic_tiling:L6_s0",
+   "task": "scene2motif",
+   "answer": "aperiodic_tiling",
+   "level": 6,
+   "seed": 0,
+   "pred": "symmetry",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"symmetry\"\n}\n```"
+  },
+  {
+   "id": "ladder:aperiodic_tiling:L6_s1",
+   "task": "scene2motif",
+   "answer": "aperiodic_tiling",
+   "level": 6,
+   "seed": 1,
+   "pred": "self_reference",
+   "correct": false,
+   "raw": "```json\n{\n  \"motif_id\": \"self_reference\"\n}\n```"
+  },
+  {
+   "id": "ladder:aperiodic_tiling:L6_s2",
+   "task": "scene2motif",
+   "answer": "aperiodic_tiling",
+   "level": 6,
+   "seed": 2,
+   "pred": "self_reference",
+   "correct": false,
+   "raw": "{\"motif_id\": \"self_reference\"}"
+  }
+ ]
+}

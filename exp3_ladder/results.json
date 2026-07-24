@@ -1,0 +1,363 @@
+{
+ "n_records": 1742,
+ "models": {
+  "gpt-5.2": {
+   "n": 397,
+   "glm_level_coef": -0.1139,
+   "glm_level_se": 0.1067,
+   "glm_level_p": 0.2856180340952199,
+   "sigmoid_threshold": 15.0,
+   "sigmoid_slope": 0.0,
+   "threshold_ci95": [
+    -1.46,
+    15.0
+   ]
+  },
+  "gpt-5.5": {
+   "n": 397,
+   "glm_level_coef": 0.1289,
+   "glm_level_se": 0.1242,
+   "glm_level_p": 0.29929964721671076,
+   "sigmoid_threshold": 15.0,
+   "sigmoid_slope": 0.0,
+   "threshold_ci95": [
+    15.0,
+    15.0
+   ]
+  },
+  "qwen2-vl-7b": {
+   "n": 474,
+   "glm_level_coef": -0.0049,
+   "glm_level_se": 0.1069,
+   "glm_level_p": 0.9631096067940688,
+   "sigmoid_threshold": -5.0,
+   "sigmoid_slope": 0.005,
+   "threshold_ci95": [
+    -5.0,
+    -5.0
+   ]
+  },
+  "qwen2.5-vl-32b": {
+   "n": 474,
+   "glm_level_coef": -0.1925,
+   "glm_level_se": 0.0734,
+   "glm_level_p": 0.008741360163211795,
+   "sigmoid_threshold": -0.287,
+   "sigmoid_slope": 0.098,
+   "threshold_ci95": [
+    -5.0,
+    14.087
+   ]
+  }
+ },
+ "per_level": {
+  "gpt-5.2": {
+   "L0": {
+    "acc": 0.76,
+    "n": 25
+   },
+   "L1": {
+    "acc": 0.7333,
+    "n": 75
+   },
+   "L2": {
+    "acc": 0.8,
+    "n": 75
+   },
+   "L3": {
+    "acc": 0.72,
+    "n": 75
+   },
+   "L4": {
+    "acc": 0.6667,
+    "n": 75
+   },
+   "L5": {
+    "acc": 0.8636,
+    "n": 44
+   },
+   "L6": {
+    "acc": 0.8214,
+    "n": 28
+   }
+  },
+  "gpt-5.5": {
+   "L0": {
+    "acc": 0.72,
+    "n": 25
+   },
+   "L1": {
+    "acc": 0.7733,
+    "n": 75
+   },
+   "L2": {
+    "acc": 0.7867,
+    "n": 75
+   },
+   "L3": {
+    "acc": 0.8267,
+    "n": 75
+   },
+   "L4": {
+    "acc": 0.7733,
+    "n": 75
+   },
+   "L5": {
+    "acc": 0.9545,
+    "n": 44
+   },
+   "L6": {
+    "acc": 0.8929,
+    "n": 28
+   }
+  },
+  "qwen2-vl-7b": {
+   "L0": {
+    "acc": 0.16,
+    "n": 25
+   },
+   "L1": {
+    "acc": 0.1733,
+    "n": 75
+   },
+   "L2": {
+    "acc": 0.2133,
+    "n": 75
+   },
+   "L3": {
+    "acc": 0.24,
+    "n": 75
+   },
+   "L4": {
+    "acc": 0.1867,
+    "n": 75
+   },
+   "L5": {
+    "acc": 0.2162,
+    "n": 74
+   },
+   "L6": {
+    "acc": 0.16,
+    "n": 75
+   }
+  },
+  "qwen2.5-vl-32b": {
+   "L0": {
+    "acc": 0.52,
+    "n": 25
+   },
+   "L1": {
+    "acc": 0.4133,
+    "n": 75
+   },
+   "L2": {
+    "acc": 0.5333,
+    "n": 75
+   },
+   "L3": {
+    "acc": 0.4667,
+    "n": 75
+   },
+   "L4": {
+    "acc": 0.4,
+    "n": 75
+   },
+   "L5": {
+    "acc": 0.473,
+    "n": 74
+   },
+   "L6": {
+    "acc": 0.3067,
+    "n": 75
+   }
+  }
+ },
+ "slope_equality_LRT": {
+  "lr_chi2": 5.659,
+  "df": 3,
+  "p": 0.1294422338311095,
+  "shared_slope_supported": true
+ },
+ "per_motif": [
+  {
+   "motif": "alternation",
+   "threshold": 5.054,
+   "slope": 0.282,
+   "family_degree": 9,
+   "overall_acc": 0.6429
+  },
+  {
+   "motif": "aperiodic_tiling",
+   "threshold": -5.0,
+   "slope": 0.0,
+   "family_degree": 3,
+   "overall_acc": 0.1562
+  },
+  {
+   "motif": "bottleneck",
+   "threshold": 2.943,
+   "slope": 0.09,
+   "family_degree": 3,
+   "overall_acc": 0.5135
+  },
+  {
+   "motif": "braiding",
+   "threshold": -1.004,
+   "slope": -0.187,
+   "family_degree": 4,
+   "overall_acc": 0.6944
+  },
+  {
+   "motif": "contraction_fixed_point",
+   "threshold": 0.178,
+   "slope": 0.443,
+   "family_degree": 5,
+   "overall_acc": 0.2812
+  },
+  {
+   "motif": "convergence",
+   "threshold": 5.471,
+   "slope": 0.366,
+   "family_degree": 8,
+   "overall_acc": 0.6842
+  },
+  {
+   "motif": "coprime_orbit",
+   "threshold": 1.538,
+   "slope": 0.323,
+   "family_degree": 3,
+   "overall_acc": 0.4219
+  },
+  {
+   "motif": "cycle",
+   "threshold": 5.996,
+   "slope": 20.992,
+   "family_degree": 7,
+   "overall_acc": 0.9444
+  },
+  {
+   "motif": "diagonalization",
+   "threshold": 2.525,
+   "slope": 0.433,
+   "family_degree": 2,
+   "overall_acc": 0.4844
+  },
+  {
+   "motif": "figure_ground",
+   "threshold": -5.0,
+   "slope": 3.244,
+   "family_degree": 4,
+   "overall_acc": 0.0469
+  },
+  {
+   "motif": "hub",
+   "threshold": 5.427,
+   "slope": 0.706,
+   "family_degree": 3,
+   "overall_acc": 0.7703
+  },
+  {
+   "motif": "infinite_descent",
+   "threshold": -2.676,
+   "slope": 0.346,
+   "family_degree": 3,
+   "overall_acc": 0.1719
+  },
+  {
+   "motif": "interference",
+   "threshold": -5.0,
+   "slope": 0.0,
+   "family_degree": 8,
+   "overall_acc": 0.3889
+  },
+  {
+   "motif": "isomorphism",
+   "threshold": 7.074,
+   "slope": 0.053,
+   "family_degree": 4,
+   "overall_acc": 0.5694
+  },
+  {
+   "motif": "mobius",
+   "threshold": 8.949,
+   "slope": 0.127,
+   "family_degree": 7,
+   "overall_acc": 0.6912
+  },
+  {
+   "motif": "nesting",
+   "threshold": 4.151,
+   "slope": 0.098,
+   "family_degree": 6,
+   "overall_acc": 0.5395
+  },
+  {
+   "motif": "pigeonhole",
+   "threshold": -3.469,
+   "slope": 0.189,
+   "family_degree": 6,
+   "overall_acc": 0.2656
+  },
+  {
+   "motif": "projective_duality",
+   "threshold": 1.039,
+   "slope": 0.525,
+   "family_degree": 3,
+   "overall_acc": 0.3281
+  },
+  {
+   "motif": "recursion",
+   "threshold": 4.078,
+   "slope": 0.326,
+   "family_degree": 6,
+   "overall_acc": 0.5833
+  },
+  {
+   "motif": "self_reference",
+   "threshold": -5.0,
+   "slope": 0.0,
+   "family_degree": 5,
+   "overall_acc": 0.1875
+  },
+  {
+   "motif": "spiral",
+   "threshold": 15.0,
+   "slope": 2.765,
+   "family_degree": 7,
+   "overall_acc": 1.0
+  },
+  {
+   "motif": "strange_loop",
+   "threshold": -5.0,
+   "slope": 0.0,
+   "family_degree": 7,
+   "overall_acc": 0.2222
+  },
+  {
+   "motif": "symmetry",
+   "threshold": 14.357,
+   "slope": 0.061,
+   "family_degree": 4,
+   "overall_acc": 0.6757
+  },
+  {
+   "motif": "symmetry_breaking",
+   "threshold": 15.0,
+   "slope": 0.038,
+   "family_degree": 6,
+   "overall_acc": 0.6711
+  },
+  {
+   "motif": "tiling",
+   "threshold": 6.081,
+   "slope": 19.15,
+   "family_degree": 5,
+   "overall_acc": 0.9857
+  }
+ ],
+ "threshold_vs_family_degree": {
+  "spearman_rho": 0.355,
+  "p": 0.1478145126083109,
+  "n_motifs": 18
+ }
+}

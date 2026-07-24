@@ -1,0 +1,216 @@
+{
+  "self_reference": {
+    "invariant_en": "The object contains a sentence describing itself, and the description checks out verbatim as true — it points back to itself in one step, with no climb through levels and no reference to a second system.",
+    "theorem_en": "Kleene's Second Recursion Theorem (1938): for every total computable function f, there exists an index e such that φ_e = φ_{f(e)}; corollary: in any Turing-complete programming language with an acceptable numbering, there exists a program that outputs its own source code (a quine).",
+    "theorem_en_masked": "Kleene's Second □ Theorem (1938): for every total computable function f, there exists an index e such that φ_e = φ_{f(e)}; corollary: in any Turing-complete programming language with an acceptable numbering, there exists a program that □ (a □).",
+    "mask_words": [
+      "Recursion",
+      "outputs its own source code",
+      "quine"
+    ]
+  },
+  "recursion": {
+    "invariant_en": "The whole is generated from smaller copies of itself by the same rule; however many levels you enter, that many you exit, terminating at a base case and then returning level by level along the original path.",
+    "theorem_en": "Dyck words of length 2n, full binary trees with exactly n internal nodes, and triangulations of a convex (n+2)-gon are three families of objects all counted by the Catalan number C_n=\\binom{2n}{n}/(n+1) (Euler–Segner enumeration; see Stanley, Catalan Numbers), and there are explicit bijections between each pair.",
+    "theorem_en_masked": "Dyck words of length 2n, full binary trees with exactly n internal nodes, and triangulations of a convex (n+2)-gon are three families of objects all counted by the Catalan number C_n=\\binom{2n}{n}/(n+1) (Euler–Segner enumeration; see Stanley, Catalan Numbers), and there are explicit bijections between each pair.",
+    "mask_words": []
+  },
+  "nesting": {
+    "invariant_en": "Each time a new level is entered, the previous level is never returned to; depth only ever increases.",
+    "theorem_en": "Cantor's nested closed interval theorem: If a sequence of bounded closed intervals satisfies [a_{n+1}, b_{n+1}] ⊆ [a_n, b_n] for every n, then ⋂_{n≥1}[a_n, b_n] is nonempty; if, in addition, b_n − a_n → 0, then the intersection is exactly the singleton {ξ}, where ξ = sup_n a_n = inf_n b_n.",
+    "theorem_en_masked": "Cantor's □ closed interval theorem: If a sequence of bounded closed intervals satisfies [a_{n+1}, b_{n+1}] ⊆ [a_n, b_n] for every n, then ⋂_{n≥1}[a_n, b_n] is nonempty; if, in addition, b_n − a_n → 0, then the intersection is exactly the singleton {ξ}, where ξ = sup_n a_n = inf_n b_n.",
+    "mask_words": [
+      "nested"
+    ]
+  },
+  "cycle": {
+    "invariant_en": "Following same-level causal arrows through n>=3 mutually distinct events returns you to the starting event; one lap restores everything verbatim (no escalation, no growth, no flip), all points equal in status, no hierarchy.",
+    "theorem_en": "Orbit Lemma (a corollary of the pigeonhole principle): let |X| = n and f: X → X. For any initial value x, the first n + 1 terms of the sequence x, f(x), f²(x), … must contain a repetition, so the orbit eventually falls into a pure cycle of length p ≤ n. In particular, when f is a bijection, its functional graph decomposes exactly into disjoint directed cycles (the cycle decomposition theorem for permutations).",
+    "theorem_en_masked": "Orbit Lemma (a corollary of the □ principle): let |X| = n and f: X → X. For any initial value x, the first n + 1 terms of the sequence x, f(x), f²(x), … must contain a repetition, so the orbit eventually falls into a pure □ of length p ≤ n. In particular, when f is a bijection, its functional graph decomposes exactly into disjoint directed □ (the □ decomposition theorem for permutations).",
+    "mask_words": [
+      "pigeonhole",
+      "cycles",
+      "cycle"
+    ]
+  },
+  "symmetry": {
+    "invariant_en": "The sequence of events read backwards is item-for-item identical to reading it forwards; folded at the temporal midpoint, it coincides point by point.",
+    "theorem_en": "Droubay–Justin–Pirillo theorem (2001): Any word of length n has at most n+1 distinct palindromic factors, including the empty word; a word attaining this upper bound is called rich. For example, the palindromic factors of a^n are exactly ε, a, aa, …, a^n, for a total of n+1.",
+    "theorem_en_masked": "Droubay–Justin–Pirillo theorem (2001): Any word of length n has at most n+1 distinct □ factors, including the empty word; a word attaining this upper bound is called rich. For example, the □ factors of a^n are exactly ε, a, aa, …, a^n, for a total of n+1.",
+    "mask_words": [
+      "palindromic"
+    ]
+  },
+  "alternation": {
+    "invariant_en": "Exactly two states strictly take turns: adjacent items always differ, items one apart are always the same, the period is constantly two, without a single exception.",
+    "theorem_en": "König characterized bipartite graphs as follows: a graph is properly colorable with two colors (that is, bipartite) if and only if it contains no cycles of odd length. Consequently, cycles of even length admit a proper 2-coloring with the colors alternating around the cycle, whereas cycles of odd length do not; moreover, every connected bipartite graph (in particular, a path P_n) has a proper 2-coloring that is unique up to interchanging the two colors.",
+    "theorem_en_masked": "König characterized bipartite graphs as follows: a graph is properly colorable with two colors (that is, bipartite) if and only if it contains no □ of odd length. Consequently, □ of even length admit a proper 2-coloring with the colors □ around the □, whereas □ of odd length do not; moreover, every connected bipartite graph (in particular, a path P_n) has a proper 2-coloring that is unique up to interchanging the two colors.",
+    "mask_words": [
+      "cycles",
+      "alternating",
+      "cycle"
+    ]
+  },
+  "spiral": {
+    "invariant_en": "Each time it comes back around to the same bearing it grows one notch by the same fixed ratio, never returning to the original scale.",
+    "theorem_en": "Equiangularity theorem: the logarithmic spiral r = ae^{bθ} meets any ray through the pole at the same constant angle ψ = arccot b at every one of its infinitely many intersections with that ray; conversely, any plane curve that meets every ray through the pole at a fixed non-right angle must be a logarithmic spiral. The equiangular property was first stated by Descartes in 1638; Bernoulli further proved that its evolute and pedal curve are again congruent copies of the same logarithmic spiral, and named it spira mirabilis, with the epitaph eadem mutata resurgo ('Though changed, I rise again the same').",
+    "theorem_en_masked": "Equiangularity theorem: the □ r = ae^{bθ} meets any ray through the pole at the same constant angle ψ = arccot b at every one of its infinitely many intersections with that ray; conversely, any plane curve that meets every ray through the pole at a fixed non-right angle must be a □. The equiangular property was first stated by Descartes in 1638; Bernoulli further proved that its evolute and pedal curve are again congruent copies of the same □, and named it □, with the epitaph □ ('□').",
+    "mask_words": [
+      "logarithmic spiral",
+      "spira mirabilis",
+      "eadem mutata resurgo",
+      "Though changed, I rise again the same"
+    ]
+  },
+  "convergence": {
+    "invariant_en": "Multiple threads, mutually unaware, each advance on their own and finally all merge into the same endpoint, and there it ends.",
+    "theorem_en": "Newman’s lemma (1942): a terminating (strongly normalizing) abstract rewriting system that is locally confluent is globally confluent; hence, for every element, all of its reduction sequences end in the same unique normal form. Banach fixed point theorem (1922): every contraction self-map of a complete metric space has a unique fixed point, and the iterates from any initial value converge to that same fixed point.",
+    "theorem_en_masked": "Newman’s lemma (1942): a terminating (strongly normalizing) abstract rewriting system that is locally □ is globally □; hence, for every element, all of its reduction sequences end in the same unique normal form. Banach □ theorem (1922): every □ self-map of a complete metric space has a unique □, and the iterates from any initial value □ to that same □.",
+    "mask_words": [
+      "confluent",
+      "fixed point",
+      "contraction",
+      "converge"
+    ]
+  },
+  "bottleneck": {
+    "invariant_en": "Each of the two shores is internally multiply connected, but every path between the shores must pass through one and the same midway point, continuing separately beyond it; deleting that point splits the graph into exactly two still-connected halves, rather than shattering it into isolated pieces.",
+    "theorem_en": "Menger's theorem (1927): In an undirected graph, for two nonadjacent vertices u and v, the maximum number of internally vertex-disjoint u-v paths is equal to the minimum number of vertices that must be deleted from V∖{u,v} in order to separate u and v. Corollary: If u and v are connected and nonadjacent, then all paths between u and v pass through one and the same vertex w if and only if this maximum number is 1.",
+    "theorem_en_masked": "Menger's theorem (1927): In an undirected graph, for two nonadjacent vertices u and v, the maximum number of internally vertex-disjoint u-v paths is equal to the minimum number of vertices that must be deleted from V∖{u,v} in order to separate u and v. Corollary: If u and v are connected and nonadjacent, then all paths between u and v □ if and only if this maximum number is 1.",
+    "mask_words": [
+      "pass through one and the same vertex w"
+    ]
+  },
+  "symmetry_breaking": {
+    "invariant_en": "One rule covers the whole field, with exactly one precisely locatable violation; the violation is unique and everywhere else is without exception.",
+    "theorem_en": "Hairy Ball Theorem (a corollary of Poincaré–Hopf): On every even-dimensional sphere S^{2n} (χ = 2 ≠ 0), every continuous tangent vector field has a zero; moreover, on S² one can construct a tangent vector field with exactly one zero (pull back a constant vector field on the plane by stereographic projection; the unique zero is at the north pole and has index 2). Thus a zero is unavoidable, and it can be realized as the only zero.",
+    "theorem_en_masked": "Hairy Ball Theorem (a corollary of Poincaré–Hopf): On every even-dimensional sphere S^{2n} (χ = 2 ≠ 0), every continuous tangent vector field has a zero; moreover, on S² one can construct a tangent vector field with exactly one zero (pull back a constant vector field on the plane by stereographic projection; the unique zero is at the north pole and has index 2). Thus a zero is unavoidable, and it can be realized as the only zero.",
+    "mask_words": []
+  },
+  "strange_loop": {
+    "invariant_en": "Climbing step by step up the hierarchy of 'who narrates whom', the final step nevertheless lands back at the starting point; no consistent level can be assigned.",
+    "theorem_en": "A directed graph admits a vertex ordering in which every arc points from an earlier vertex to a later one if and only if it has no directed cycle (the basic theorem). Hence the feedback arc set of the above layered graph is nonempty; moreover, after deleting e*, the whole graph has no directed cycle, so the minimum feedback arc set of the original graph has size exactly 1, and {e*} is a minimum feedback arc set.",
+    "theorem_en_masked": "A directed graph admits a vertex ordering in which every arc points from an earlier vertex to a later one if and only if it has no directed □ (the basic theorem). Hence the feedback arc set of the above layered graph is nonempty; moreover, after deleting e*, the whole graph has no directed □, so the minimum feedback arc set of the original graph has size exactly 1, and {e*} is a minimum feedback arc set.",
+    "mask_words": [
+      "cycle"
+    ]
+  },
+  "figure_ground": {
+    "invariant_en": "Figure and ground complementarily fill the whole canvas and the ground itself forms a figure: the second half takes the first half's ground as its figure and the first half's figure as its ground, while the narrated events and their order remain unchanged (not reversed order, and not a translation between two vocabularies).",
+    "theorem_en": "Post's complement theorem (1944): A is computable ⟺ A and Ā are both computably enumerable. Accordingly, the halting set K = {e : φ_e(e)↓} is computably enumerable but not computable, so K̄ is not computably enumerable—there do indeed exist sets that are \"figure-enumerable but ground-non-enumerable\".",
+    "theorem_en_masked": "Post's □ theorem (1944): A is computable ⟺ A and Ā are both computably enumerable. Accordingly, the halting set K = {e : φ_e(e)↓} is computably enumerable but not computable, so K̄ is not computably enumerable—there do indeed exist sets that are \"□-enumerable but □-non-enumerable\".",
+    "mask_words": [
+      "complement",
+      "figure",
+      "ground"
+    ]
+  },
+  "isomorphism": {
+    "invariant_en": "Between two things made of entirely different material there exists a one-to-one dictionary preserving all operations and relations, translatable term by term in the same order, without a single exception.",
+    "theorem_en": "Cayley’s theorem: Every group G is isomorphic, via the left-translation map g ↦ λ_g (where λ_g(x)=gx), to a subgroup of the full permutation group on G, Sym(G); equivalently, every abstract group is structurally identical to some concrete permutation group.",
+    "theorem_en_masked": "Cayley’s theorem: Every group G is □, via the left-translation map g ↦ λ_g (where λ_g(x)=gx), to a subgroup of the full □ group on G, □(G); equivalently, every abstract group is □ to some concrete □ group.",
+    "mask_words": [
+      "isomorphic",
+      "Sym",
+      "permutation",
+      "structurally identical"
+    ]
+  },
+  "mobius": {
+    "invariant_en": "Traveling once around the band returns you to the starting place with orientation flipped (left and right exchanged); only after two laps is everything restored point by point.",
+    "theorem_en": "Cutting a Möbius strip along its center line yields a single connected strip: an orientable, two-sided strip twice as long, not two strips; in the standard embedding in R^3 it has four half-twists (720°). Equivalently, intrinsically, the complement of the center line in the strip is connected.",
+    "theorem_en_masked": "Cutting a □ strip along its center line yields a single connected strip: an orientable, two-sided strip twice as long, not two strips; in the standard embedding in R^3 it has four half-twists (720°). Equivalently, intrinsically, the complement of the center line in the strip is connected.",
+    "mask_words": [
+      "Möbius"
+    ]
+  },
+  "braiding": {
+    "invariant_en": "Three or more strands cross adjacently several times; the final arrangement of the ends equals exactly the composition of all the crossings in order, and the order cannot be freely exchanged.",
+    "theorem_en": "Forgetting the over/under information at each crossing defines a surjective homomorphism \\(B_n \\to S_n\\) (\\(\\sigma_i \\mapsto\\) the transposition \\((i, i+1)\\)), which sends each braid to the permutation of its endpoints; its kernel is the pure braid group \\(P_n\\) (Artin).",
+    "theorem_en_masked": "Forgetting the over/under information at each crossing defines a surjective homomorphism \\(□ \\to S_n\\) (\\(\\sigma_i \\mapsto\\) the transposition \\((i, i+1)\\)), which sends each □ to the permutation of its endpoints; its kernel is the pure □ group \\(□\\) (Artin).",
+    "mask_words": [
+      "braid",
+      "B_n",
+      "P_n"
+    ]
+  },
+  "interference": {
+    "invariant_en": "Two patterns with different periods, each monotonously repeating on its own, are superposed and a new period larger than either original emerges.",
+    "theorem_en": "If f has positive integer period p and g has positive integer period q, then lcm(p,q) is a period of f+g (not necessarily the least). When gcd(p,q) = 1, the phase pair (n mod p, n mod q) runs through all pq combinations exactly once every pq steps as n advances, returning to (0,0) (by the Chinese remainder theorem); hence the two patterns are in phase only once every pq steps.",
+    "theorem_en_masked": "If f has positive integer period p and g has positive integer period q, then lcm(p,q) is a period of f+g (not necessarily the least). When gcd(p,q) = 1, the phase pair (n mod p, n mod q) runs through all pq combinations exactly once every pq steps as n advances, returning to (0,0) (by the Chinese remainder theorem); hence the two patterns are □ only once every pq steps.",
+    "mask_words": [
+      "in phase"
+    ]
+  },
+  "tiling": {
+    "invariant_en": "Shift the entire pattern by one cell and it coincides exactly with the original, seamless and without overlap, without a single exception.",
+    "theorem_en": "Fedorov's theorem (1891): There are exactly 17 plane crystallographic groups, counted up to isomorphism. Moreover, there are exactly three edge-to-edge tilings of the plane by a single regular polygon: equilateral triangles, squares, and regular hexagons, because the interior angle at each vertex must divide 360°, and the interior angle of a regular n-gon, (n-2)·180°/n, divides 360° only when n = 3, 4, 6.",
+    "theorem_en_masked": "Fedorov's theorem (1891): There are exactly 17 plane crystallographic groups, counted up to □. Moreover, there are exactly three edge-to-edge □ of the plane by a single regular polygon: equilateral triangles, squares, and regular hexagons, because the interior angle at each vertex must divide 360°, and the interior angle of a regular n-gon, (n-2)·180°/n, divides 360° only when n = 3, 4, 6.",
+    "mask_words": [
+      "isomorphism",
+      "tilings"
+    ]
+  },
+  "hub": {
+    "invariant_en": "Between any two endpoints stands only the center point; remove the center and the whole graph shatters into isolated points.",
+    "theorem_en": "A tree of diameter 2 is necessarily \\(K_{1,n}\\) (\\(n\\ge2\\)); moreover, among all trees on \\(n+1\\) vertices, \\(K_{1,n}\\) uniquely attains the minimum Wiener index \\(W(K_{1,n})=n^2\\) (Entringer–Jackson–Snyder 1976: among trees, the Wiener index is minimized by \\(K_{1,n}\\) and maximized by the path graph).",
+    "theorem_en_masked": "A tree of diameter 2 is necessarily \\(K_{1,n}\\) (\\(n\\ge2\\)); moreover, among all trees on \\(n+1\\) vertices, \\(K_{1,n}\\) uniquely attains the minimum Wiener index \\(W(K_{1,n})=n^2\\) (Entringer–Jackson–Snyder 1976: among trees, the Wiener index is minimized by \\(K_{1,n}\\) and maximized by the path graph).",
+    "mask_words": []
+  },
+  "diagonalization": {
+    "invariant_en": "A table enumerated row by row; the new row built by flipping each entry along the diagonal is guaranteed to differ from row n at position n, hence differs from every row — forever outside the table. Unlike self_reference (an object pointing back to itself in one step): the diagonal element does not talk about itself; the attack targets the table's entire enumeration, not itself. Crucially unlike symmetry_breaking (exactly one isolated violation in an otherwise regular field): here it is not one anomalous cell but n systematic differences along a moving diagonal — row n differs at position n, the position shifting right by one each row, exactly one per row, and this construction guarantees 'not equal to any row'; symmetry_breaking is a single-point flaw that neither escapes nor refutes any enumeration.",
+    "theorem_en": "Cantor's theorem (1891 diagonal proof, Über eine elementare Frage der Mannigfaltigkeitslehre): for every set X, there is no surjection from X onto its power set P(X); in particular, taking X=\\mathbb{N}, we get that P(\\mathbb{N}) \\cong \\{0,1\\}^{\\mathbb{N}} is uncountable (of cardinality continuum), which is precisely the diagonal proof that the real numbers are uncountable.",
+    "theorem_en_masked": "Cantor's theorem (1891 □ proof, Über eine elementare Frage der Mannigfaltigkeitslehre): for every set X, there is no surjection from X onto its power set P(X); in particular, taking X=\\mathbb{N}, we get that P(\\mathbb{N}) \\cong \\{0,1\\}^{\\mathbb{N}} is uncountable (of cardinality continuum), which is precisely the □ proof that the real numbers are uncountable.",
+    "mask_words": [
+      "diagonal"
+    ]
+  },
+  "infinite_descent": {
+    "invariant_en": "Every case forces a strictly smaller case of the same kind, and the natural numbers admit no bottomless descending chain, so the first case does not exist at all — the proof's blade swings backwards: not advancing to an end, but cancelling the beginning. Exactly opposite to recursion: recursion exits as many levels as it enters and stands on the existence of a base case; descent stands on the absence of one and condemns every witness to nonexistence. Unlike zeno_halving: Zeno's steps shrink by a fixed ratio, total length finite, the journey completes; descent's decrease is arbitrary but each step is an integer, the chain is forbidden by well-ordering, the conclusion is 'impossible'. Unlike contraction_fixed_point: contraction iterates forever and converges to a genuinely existing fixed point; the descending chain converges to nothing, must hit floor 1 in finitely many steps, so the whole chain together with its starting point is judged nonexistent. Opposite in direction to ordinal_ascent: ordinal ascent is unbounded upward with every level real; descent is bounded below with the whole chain illusory. Unlike invariant_barrier: no conserved quantity is invoked; the only killing move is that strict decrease cannot go on forever.",
+    "theorem_en": "Fermat (his account of the method appears in a 1659 letter to Carcavi; the full proof survives in marginal note 45 to his copy of Diophantus's Arithmetica, published by his son Samuel in 1670): a right triangle with integer side lengths cannot have square area — proved by infinite descent; consequently, x^4+y^4=z^2 has no positive integer solutions, and therefore x^4+y^4=z^4 has no positive integer solutions (the n=4 case of Fermat's Last Theorem).",
+    "theorem_en_masked": "Fermat (his account of the method appears in a 1659 letter to Carcavi; the full proof survives in marginal note 45 to his copy of Diophantus's Arithmetica, published by his son Samuel in 1670): a right triangle with integer side lengths cannot have square area — proved by infinite □; consequently, x^4+y^4=z^2 has no positive integer solutions, and therefore x^4+y^4=z^4 has no positive integer solutions (the n=4 case of Fermat's Last Theorem).",
+    "mask_words": [
+      "descent"
+    ]
+  },
+  "coprime_orbit": {
+    "invariant_en": "On a ring of n points, jump with a fixed stride k, connecting as you go: if the stride is coprime to the ring length, a single stroke visits every point before closing; if not, the ring splits into gcd parts. Unlike cycle (adjacent arrows closing head-to-tail in one lap): the large stride weaves a star shape, traversal is conditional on coprimality, and there is a failure mode — not coprime means splitting. Unlike interference (two independent periods superposed, an lcm-sized larger period emerging): here there is only one orbit and one number-theoretic condition. Unlike hub (relaying through a center): there is no central point at all; traversal is guaranteed purely by gcd(k,n)=1.",
+    "theorem_en": "For the cyclic group \\mathbb{Z}_n, an element k generates \\mathbb{Z}_n if and only if \\gcd(k,n)=1, so \\mathbb{Z}_n has exactly \\varphi(n) generators (Euler's totient function, Euler 1763; theorem in Gallian's Contemporary Abstract Algebra, Thm. 4.2 and its corollary). Systematic study of the star polygons \\{n/k\\} appears in Poinsot (1810). Musical example: in the 12-tone system, a step of 7 (a perfect fifth) because \\gcd(7,12)=1 traverses all twelve pitch classes and returns to the starting point—the circle of fifths.",
+    "theorem_en_masked": "For the □ group \\mathbb{Z}_n, an element k generates \\mathbb{Z}_n if and only if \\gcd(k,n)=1, so \\mathbb{Z}_n has exactly \\varphi(n) generators (Euler's totient function, Euler 1763; theorem in Gallian's Contemporary Abstract Algebra, Thm. 4.2 and its corollary). Systematic study of the star polygons \\{n/k\\} appears in Poinsot (1810). Musical example: in the 12-tone system, a step of 7 (a perfect fifth) because \\gcd(7,12)=1 traverses all twelve pitch classes and returns to the starting point—the circle of fifths.",
+    "mask_words": [
+      "cyclic"
+    ]
+  },
+  "pigeonhole": {
+    "invariant_en": "More items than cages forces two into the same cage: the collision is proved certain, yet no one can point to where it happens. Unlike convergence (all threads, knowingly or not, ending at the same KNOWN point): here counting only guarantees that at some UNSPECIFIED place at least two meet; no witness is constructed. Unlike bottleneck (every path forced through the same midway point): there is no forced path and no relay hub, only a single count.",
+    "theorem_en": "Classic application (Erdős's favorite warm-up problem, instantly solved by the young Pósa over dinner): among any n+1 integers chosen from {1, ..., 2n}, one divides another. Proof: every integer can be written uniquely as 2^t m with m odd, and there are exactly n odd numbers in {1, ..., 2n}; hence there are only n possible odd parts. Choosing n+1 integers, two must have the same odd part, so their quotient is a power of 2, and therefore the smaller divides the larger.",
+    "theorem_en_masked": "Classic application (Erdős's favorite warm-up problem, instantly solved by the young Pósa over dinner): among any n+1 integers chosen from {1, ..., 2n}, one divides another. Proof: every integer can be written uniquely as 2^t m with m odd, and there are exactly n odd numbers in {1, ..., 2n}; hence there are only n possible odd parts. Choosing n+1 integers, two must have the same odd part, so their quotient is a power of 2, and therefore the smaller divides the larger.",
+    "mask_words": []
+  },
+  "projective_duality": {
+    "invariant_en": "Within a single system, two classes of roles are swapped wholesale and every relational proposition remains true; swapping twice restores the original verbatim (an involution, sigma^2=id). Exclusions: unlike isomorphism (a relation-preserving dictionary between two heterogeneous materials) — duality is a role swap inside one and the same material and is necessarily an involution; unlike figure_ground (figure and ground complementarily filling one canvas) — duality produces two pictures each complete in itself, not relying on negative space; unlike transformed_canon (the same theme reappearing in a lagged voice under a fixed transformation) — duality is a wholesale sequential restatement that swaps role vocabulary while truth values stay unchanged, not a voice-level pitch/time transformation; unlike chirality (mirror image and original cannot be superposed, the point being 'it does not fit') — the two dual statements both hold within the same system and the swap restores everything exactly; unlike mobius (the flip requires traveling one full lap along a path) — duality has no path, it is an immediate wholesale role swap; unlike symmetry (item-by-item reversed palindrome) — duality does not reverse order, it only swaps roles.",
+    "theorem_en": "The classical instance of the principle of duality is Pascal's theorem (proved in 1639 and published in 1640; for a hexagon inscribed in a conic, the three intersection points of opposite sides are collinear), whose dual counterpart is Brianchon's theorem (1806; for a hexagon circumscribed about a conic, the three lines joining opposite vertices are concurrent) — two theorems separated by more than 160 years are linked in one stroke by duality.",
+    "theorem_en_masked": "The classical instance of the principle of □ is Pascal's theorem (proved in 1639 and published in 1640; for a hexagon inscribed in a conic, the three intersection points of opposite sides are collinear), whose □ counterpart is Brianchon's theorem (1806; for a hexagon circumscribed about a conic, the three lines joining opposite vertices are concurrent) — two theorems separated by more than 160 years are linked in one stroke by □.",
+    "mask_words": [
+      "duality",
+      "dual"
+    ]
+  },
+  "contraction_fixed_point": {
+    "invariant_en": "One and the same rule is applied again and again to its own output; each step shrinks the distance to the endpoint by a fixed ratio q<1, finally resting at the one point that the rule sends back to itself unchanged — the endpoint is not announced in advance but selected from inside the rule by the fixed-point property f(x*)=x*. Unlike spiral (fixed-ratio growth, never returning to the original scale): the direction is reversed and there is a real endpoint; unlike convergence (many mutually unaware threads ending at one place): here there is from start to finish a single self-iterating chain; unlike recursion (as many exits as entries, returning level by level to the caller): the iteration only collapses forward and never returns; unlike zeno_halving (infinitely shrinking segments laid end to end, the point being that the infinite sum is exactly a finite whole): here the point is that the endpoint is fixed by the map — what is checked is f(x*)=x*, not a sum of distances; unlike negative_feedback (alternating over- and under-shoot around a target announced at the outset): the target must not be pre-announced, no sign alternation is required, one-sided collapse suffices, and the endpoint certifies itself by its own fixedness.",
+    "theorem_en": "Banach fixed point theorem (S. Banach 1922, Fundamenta Mathematicae 3, 133–181): a contraction mapping on a complete metric space has a unique fixed point, Picard iteration from any initial value converges to it, and the a priori error satisfies d(x_n,x*) ≤ q^n/(1−q)·d(x_1,x_0).",
+    "theorem_en_masked": "Banach □ theorem (S. Banach 1922, Fundamenta Mathematicae 3, 133–181): a □ mapping on a complete metric space has a unique □, Picard iteration from any initial value converges to it, and the a priori error satisfies d(x_n,x*) ≤ q^n/(1−q)·d(x_1,x_0).",
+    "mask_words": [
+      "fixed point",
+      "contraction"
+    ]
+  },
+  "aperiodic_tiling": {
+    "invariant_en": "Everywhere obeying the same local matching rules, seamlessly covering the whole plane, yet no translation whatsoever makes the whole picture coincide with itself; at the same time any local patch reappears within a bounded gap everywhere — 'seen before, never repeated'. Exclusion clauses: unlike tiling (shift one cell and the whole coincides; here it is provable that no translational period exists at all); unlike symmetry_breaking (a periodic background with exactly one locatable violation; here there is no violation anywhere, yet no period exists at all); unlike spiral (phi here is the frequency ratio of the two tile kinds, not level-by-level fixed-ratio growth; the figure has no self-similar scaling center); unlike transformed_canon (the same theme reappearing verbatim under a fixed transformation; here no block ever recurs exactly at a fixed interval); unlike interference (two periods superposed still yield an lcm period; here the limiting structure's frequency is irrational, so there is never a period).",
+    "theorem_en": "Penrose (1978, \"Pentaplexity\", Eureka 39): the two kinds of rhombi, thick and thin, with matching rules, can fill the plane, and every legal tiling has no translational period (1974, Bull. Inst. Math. Appl. 10 gives the pentagonal version P1). de Bruijn (1981, Indagationes Mathematicae 84): every Penrose rhombus tiling is generated from the pentagrid, giving an algebraic proof of the absence of translational periods and showing that the frequency ratio of thick to thin rhombi is exactly φ (irrational, hence ruling out periodicity).",
+    "theorem_en_masked": "Penrose (1978, \"Pentaplexity\", Eureka 39): the two kinds of rhombi, thick and thin, with matching rules, can fill the plane, and every legal □ has no translational period (1974, Bull. Inst. Math. Appl. 10 gives the pentagonal version P1). de Bruijn (1981, Indagationes Mathematicae 84): every Penrose rhombus □ is generated from the pentagrid, giving an algebraic proof of the absence of translational periods and showing that the frequency ratio of thick to thin rhombi is exactly φ (irrational, hence ruling out periodicity).",
+    "mask_words": [
+      "tiling"
+    ]
+  }
+}

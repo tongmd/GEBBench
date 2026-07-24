@@ -1,0 +1,1667 @@
+[
+  {
+    "title": "本篇每句首字连读恰为此标题",
+    "domain": "刻书铺",
+    "story_zh": "本镇临河，春天卖桃，秋天卖栗，还有一家小小的刻书铺。篇篇启蒙小册都出自铺里的匠人顾槐，他的刀比针还稳。每到夜深，顾槐就点一盏豆油灯，给孩子们刻明早要取的书板。句句童谣旁边，他爱添上鱼、麦穗和胖鸭子，让认字的娃娃不怕书。首页起，他把亡妻留下的一句好话拆开，悄悄安在每块书板最先落刀的地方。字很小，藏在花叶的端头、鸭嘴的尖上、麦芒的第一笔里。连他的小女儿阿穗也不知道，只觉得那些画儿特别亲。读书声满街的日子，河水涨得快，夜里冲走了几家的门牌。恰逢阿穗送书回来迷了路，抱着一包新册在雨棚下发抖。为找女儿，顾槐沿街呼唤，嗓子都哑了。此时一个卖栗的婆婆翻开新册，看见页角小画一路朝东排着，便想起阿穗最爱追这些小记号。标记把众人引到旧渡口，阿穗正蹲在船篷下，怀里还护着没湿的书。题签晒干后，孩子们照旧来取书，顾槐只把刀擦亮，仍在最先落刀处安放那句好话。",
+    "story_en": "In a riverside town stood a tiny woodblock print shop run by Gu Huai, a craftsman whose carving knife was steadier than a needle. At night he carved primers for children and decorated the rhymes with fish, wheat, and plump ducks. He had taken a kind saying left by his late wife, divided it character by character, and tucked those tiny marks into the first cuts of each block. Even his daughter A Sui did not know; she only felt the pictures were dear to her. One rainy season the river rose and A Sui lost her way while delivering books. A chestnut-selling grandmother noticed the little marks in the new primers seemed to lead east, and remembered how A Sui loved following them. The villagers followed the signs to the old ferry and found the girl safe under a boat awning, still guarding the dry books. Afterward, Gu Huai kept carving the hidden blessing into the first strokes of his blocks.",
+    "why_shape": "正文共十三句，每句首字依次为“本篇每句首字连读恰为此标题”，与标题逐字相同，而标题正断言这一藏头事实，形成单层自指不动点。",
+    "motif_id": "self_reference",
+    "equation": "\\vdash\\ \\psi \\leftrightarrow \\varphi(\\ulcorner \\psi \\urcorner)",
+    "model": "gpt-5.5",
+    "judge": {
+      "device_passed": true,
+      "device_checks": "1) 统计为13句，均以“。”分句；2) 各句首字依次为“本/篇/每/句/首/字/连/读/恰/为/此/标/题”，连读与标题“本篇每句首字连读恰为此标题”完全吻合；3) 标题断言所述事实正是第2步核验结果，满足自指不动点。",
+      "blind_motif": "self_reference",
+      "model": "gpt-5.2",
+      "passed": true
+    },
+    "story_id": "self_reference_s0"
+  },
+  {
+    "title": "本篇每句首字连读恰为此标题",
+    "domain": "渔镇",
+    "story_zh": "本村河口有个补网的阿良。\n篇头那间小院，晒着青布和贝壳串。\n每到黄昏，他都会给隔壁娃娃讲海边的事。\n句家老太太最会煮甜藕汤，见人就舀一碗。\n首回赶集时，阿良顺手买下一块蓝花布，想给女儿缝个布虎。\n字画摊的老田也在旁边看，直夸他针脚稳。\n连夜起风，屋檐下的风铃叮当作响。\n读到天明，阿良把补好的网晾在门前。\n恰逢赶海的潮水退得远，孩子们追着小蟹笑。\n为了谢他，句家婆婆送来一篮红桃。\n此后每逢节气，院里总飘着甜藕和海风味。\n标有一串海贝的木门外，邻人都爱来歇脚。\n题字那天，阿良把最后一针收进虎尾，心里踏实极了。",
+    "story_en": "In a fishing town by the water, A Liang mends nets, chats with children at dusk, and sews a blue cloth tiger for his daughter. Granny Ju brings sweet lotus-root soup, the neighbors stop by, and the little yard stays warm and lively. In Chinese, the first character of each sentence spells the title sentence.",
+    "why_shape": "正文共13句，句首依次连成“本篇每句首字连读恰为此标题”；标题本身又正是对这一事实的断言，所以构成自指且可逐字核对为真。",
+    "motif_id": "self_reference",
+    "equation": "\\vdash\\ \\psi \\leftrightarrow \\varphi(\\ulcorner \\psi \\urcorner)",
+    "model": "gpt-5.5:stable",
+    "judge": {
+      "device_passed": true,
+      "device_checks": [
+        "正文共13句，逐句首字依次为：本、篇、每、句、首、字、连、读、恰、为、此、标、题。",
+        "将上述首字连读，得到字串「本篇每句首字连读恰为此标题」，与标题逐字完全吻合。",
+        "标题断言所述事实与第1步机械核查结果一致，属于自指但单层的不动点式成立。"
+      ],
+      "blind_motif": "self_reference",
+      "model": "gpt-5.2:stable",
+      "passed": true
+    },
+    "story_id": "self_reference_s1"
+  },
+  {
+    "title": "本篇每句首字连读恰为此标题",
+    "domain": "伞铺",
+    "story_zh": "本镇南口有个伞匠阿岚，手里常握着一把竹刀。篇头的晨雾一散，他就把新削的竹骨摆在青布上。每到梅雨前，孩子们都来帮他挑布，也学着听雨点落瓦的声音。句尾的线头若打了结，他便笑着说，耐心能把脾气也缝平。首先做的是伞柄，他选一截香樟木，削得像小船的桅杆。字条挂好后，他会把客人的名字轻轻写在里侧，免得风来时认错了家。连着三天，镇上的老货郎都来取伞，说这回该有一把能陪他走远路。读书的阿秀最喜欢那把浅蓝色的，她撑开时，像把天边的一角带进了巷口。恰逢午后起风，阿岚把最后一针收紧，抬头看见檐下的麻雀也躲了进来。为了让新伞更结实，他在骨缝里抹了薄薄一层桐油，味道清亮又温和。此时雨声敲在瓦上，满院子都像有人在轻轻拍掌。标着红穗的那把最先卖出，买伞的婶子还顺手带走两包桂花糖。题上那串红绳一晃，阿岚笑着把最后一把伞递给门口的孩子，叫他路上慢些跑。",
+    "story_en": "At the south gate of the town, umbrella-maker A Lan keeps busy through the rainy season. He cuts bamboo ribs, writes each customer’s name inside the umbrella, and makes sure the handles are smooth and warm in the hand. Children come to help choose cloth, a traveling peddler takes one for the road, and a schoolgirl loves the pale-blue umbrella best. When the afternoon wind rises and the rain taps the roof, the whole courtyard feels bright and calm.",
+    "why_shape": "正文共13句，句首依次为“本、篇、每、句、首、字、连、读、恰、为、此、标、题”，连读正好等于标题；标题断言的就是这一藏头事实，因此为真。",
+    "motif_id": "self_reference",
+    "equation": "\\vdash\\ \\psi \\leftrightarrow \\varphi(\\ulcorner \\psi \\urcorner)",
+    "model": "gpt-5.5:stable",
+    "judge": {
+      "device_passed": true,
+      "device_checks": "1. 全文共13句，逐句首字依次为：本、篇、每、句、首、字、连、读、恰、为、此、标、题；2. 连读得到字串“本篇每句首字连读恰为此标题”，与标题逐字完全吻合；3. 标题断言所述内容，正是第1步刚核查到的事实，满足单层自指条件。",
+      "blind_motif": "self_reference",
+      "model": "gpt-5.2:stable",
+      "passed": true
+    },
+    "story_id": "self_reference_s2"
+  },
+  {
+    "title": "伞下叮当",
+    "domain": "修伞铺",
+    "story_zh": "话说松果巷尽头有间青布伞铺，铺主阿柳接到县学先生托付，要给雨季前的游会备一把大伞。她摸着竹骨，先把活计分作两桩。\n话说小满沿石板路去找老篾匠，老篾匠说好伞须有硬骨，也须有柔心，便让他分头取两件东西。\n话说小满在晒场拾到一根青竹，竹节带露，清香扑手。这便是最小的一桩事。且说回来\n话说小满在灶边借来一束麻线，线头暖暖，像藏着炊烟。这便是最小的一桩事。且说回来\n老篾匠削竹穿线，叫小满抱回铺里。且说回来\n话说阿柳又去请染坊的秋娘，秋娘说伞面要经得雨，也要看得见喜气，便托两个娃娃帮忙。\n话说阿桃从蓝缸里捞起一匹布，水珠滚落，颜色像夜将亮。这便是最小的一桩事。且说回来\n话说阿笙在墙根采来几朵茜草花，花汁染指，红得像小灯。这便是最小的一桩事。且说回来\n秋娘晒布点花，亲自送到青布伞铺。且说回来\n阿柳把竹骨、麻线、蓝布、红花样都安好，游会那日，大伞一撑，孩子们在伞下听雨点敲得叮当响。且说回来",
+    "story_en": "At the end of Pinecone Lane stood a little umbrella shop run by A-Liu. Before the rainy-season fair, she was asked to make a great umbrella. One part of the work led young Xiaoman to an old bamboo craftsman, who sent him for green bamboo and warm hemp thread. The other part led A-Liu to the dyer Qiuniang, who asked two children to bring blue cloth and madder flowers. With bamboo, thread, blue cloth, and red patterns all fitted together, the umbrella opened at the fair, and the children listened happily to the rain tapping above them.",
+    "why_shape": "全文以“话说/且说回来”作括号匹配；每个非叶子故事恰含两个子故事，叶子故事恰含固定基例句，最大深度为3，形成递归二叉树。",
+    "motif_id": "recursion",
+    "equation": "T ::= \\bullet \\mid \\mathrm{Node}(T,T),\\qquad C_n=\\tfrac{1}{n+1}\\binom{2n}{n}",
+    "model": "gpt-5.5",
+    "judge": {
+      "device_passed": true,
+      "device_checks": "1) 全文「话说/且说回来」共7对，按序匹配合法，末尾栈空；2) 各匹配对直接包含的子匹配对数分别为2/2/2/0/0/0/0，均符合0或2；3) 叶子节点均逐字含固定句「这便是最小的一桩事」，且只出现在0子对处；4) 最大嵌套深度为3，满足≥3。",
+      "blind_motif": "recursion",
+      "model": "gpt-5.2",
+      "passed": true
+    },
+    "story_id": "recursion_s0"
+  },
+  {
+    "title": "雨后灯笼",
+    "domain": "灯笼铺",
+    "story_zh": "话说城南灯笼铺的阿兰把一盏旧灯挂在梁下，灯影落在木桌上，像一块温热的橘皮；雨刚停，门外的青石还潮着，风一吹，纸角轻轻发响。\n  话说阿兰先拿起两根细竹条，放在掌心里慢慢拢圆，像把一只睡着的雀儿拢进手里。\n    话说她把最细的一道竹丝压进圆口，再用指甲一抹，竹丝便乖乖贴住了木桌边，这便是最小的一桩事，且说回来\n    话说她又把另一道竹丝轻轻一弯，和先前那道碰了个头，圆口便稳稳当当站住了，这便是最小的一桩事，且说回来\n  且说回来\n  话说阿兰随后端来一碗糯米浆，浆里浮着两片桂花叶，她用小刷子蘸了，刷在红纸背面，纸上立时亮起一抹温软的光。\n    话说纸角先贴上左边的竹圈，阿兰按了一下，指尖沾了点白浆，这便是最小的一桩事，且说回来\n    话说纸角再贴上右边的竹圈，纸面平了，灯骨也跟着端正起来，这便是最小的一桩事，且说回来\n  且说回来\n且说回来",
+    "story_en": "In a lantern shop on the south side of town, Aunt Lan hangs an old lantern under the beam after the rain. She bends the bamboo frame first, then brushes sweet rice paste onto red paper and smooths it over the rings. By evening, the shop glows warm again, and the little repairs have become one bright lantern.",
+    "why_shape": "全文用七个同模板片段嵌套成一棵二叉故事树：每个非叶子片段正好含两则更小故事，叶子用固定句收束，且从外到内字数逐层变短。",
+    "motif_id": "recursion",
+    "equation": "T ::= \\bullet \\mid \\mathrm{Node}(T,T),\\qquad C_n=\\tfrac{1}{n+1}\\binom{2n}{n}",
+    "model": "gpt-5.5:stable",
+    "judge": {
+      "device_passed": true,
+      "device_checks": "1) 「话说/且说回来」按序配对合法，首尾闭合完整，末尾栈空；2) 各匹配对直接子对数均为0或2：最外层2个中层子故事，中层各2个基例，基例各0个；3) 最大深度为3；4) 4个基例都逐字包含固定句「这便是最小的一桩事」。",
+      "blind_motif": "recursion",
+      "model": "gpt-5.2:stable",
+      "passed": true
+    },
+    "story_id": "recursion_s1"
+  },
+  {
+    "title": "纸鹞坊的两只鹞",
+    "domain": "纸鹞坊",
+    "story_zh": "话说槐花巷口的纸鹞坊里，阿槐把一张青纸贴在案上，阿满守着门，等早风钻进院子。\n话说阿槐先去竹篓里挑细竹片，捏在手里一看，弯得正匀，便笑了。\n话说阿槐把最直的那根放到窗边晒着，等它把湿气慢慢吐尽，这便是最小的一桩事 且说回来\n话说阿满把另一根竹片放在木尺下轻轻一压，听见清脆一声，心里也踏实了，这便是最小的一桩事 且说回来\n阿槐把两根竹片合成一个稳当的骨架，拿麻线缠了两圈，便去寻第二样红纸。且说回来\n话说院里那只青瓷盆接着日影，阿满往盆里倒了半勺浆糊，阿槐便把红纸剪成细条。\n话说阿满先将一小片糯米纸浸在盆边，等它软得像春雪，这便是最小的一桩事 且说回来\n话说阿槐把一撮红纸屑拢进手心，顺着风一吹，看它们在脚边打个旋儿，这便是最小的一桩事 且说回来\n两人把红纸尾穗系好，提着新鹞走到院中央，风一来，纸面便鼓起了圆圆的笑。且说回来 且说回来",
+    "story_en": "In the kite workshop at the mouth of Willow-Flower Lane, Huai pastes blue paper onto the table while Man waits by the door for the morning wind. Huai first makes the bamboo frame, then the red paper tail, and each small task opens into two smaller ones until the finished kite puffs up and smiles in the yard.",
+    "why_shape": "全文用“话说…且说回来”成对包裹，外层含两段中层故事，每段中层又各含两段最短故事，最短处都放入固定句，因此配对、分叉和深度都可逐条核查。",
+    "motif_id": "recursion",
+    "equation": "T ::= \\bullet \\mid \\mathrm{Node}(T,T),\\qquad C_n=\\tfrac{1}{n+1}\\binom{2n}{n}",
+    "model": "gpt-5.5:stable",
+    "judge": {
+      "device_passed": true,
+      "device_checks": "1. 「话说/且说回来」共7开7合，按序匹配合法，末尾栈空；2. 每个匹配对的直接子匹配数均为0或2，叶子节点均逐字含「这便是最小的一桩事」；3. 深度链为3层，最大深度达到3；4. 未见基例句出现在非0子对节点中。",
+      "blind_motif": "recursion",
+      "model": "gpt-5.2:stable",
+      "passed": true
+    },
+    "story_id": "recursion_s2"
+  },
+  {
+    "title": "青瓷铃里的小灯",
+    "domain": "灯塔、蜂棚",
+    "story_zh": "阿梨说：『从前……』\n银桦湾的潮水退得早，沙上露出一只青瓷铃。阿梨把铃递给守灯人，守灯人吹去盐花，说铃肚里藏着给夜船听的旧话。夜风一来，他挨着灯芯坐下。\n弯叔说：『从前……』\n青苔渡有个补伞人，名叫陶婆。雨季里，她用竹针缝一把破红伞，伞骨里掉出一粒会发暖的豆。她没舍得煮，放在窗台上。半夜，豆壳轻轻裂开，里头坐着一个戴草帽的小孩。\n小孩说：『从前……』\n山后的蜜灯棚里，养蜂的巧巧收了一罐浅金色的蜜。蜜罐底下有一点亮，像夏夜迷路的萤火。她把罐口盖上荷叶，听见叶下有人咳嗽，细得像露珠碰草尖。她俯身一看，是一个拇指大的女娃，抱着一盏葵花籽壳做的小灯。\n女娃说：『从前……』\n月井村有个石芽，跟着外祖母守一畦薄荷。天旱时，井水只剩碗口大，村里的鸟都不肯唱。石芽把薄荷叶一片片摘下，铺在井沿，让清香慢慢落下去。到第三夜，井底升起一条银白的小鱼，嘴里衔着雨声。石芽没有伸手去捉，只把耳朵贴在湿石上，听见远处的云正赶来，蹄子轻轻，像怕踩醒睡着的花。",
+    "story_en": "Ali finds a blue porcelain bell on the shore and gives it to a lighthouse keeper, who begins an old tale. In that tale, an umbrella mender finds a warm bean inside a broken red umbrella; from the bean comes a child who begins another tale. In that tale, a beekeeper discovers a tiny girl carrying a seed-shell lamp; the tiny girl begins the final tale, about a village boy who coaxes rain from a drying well by laying mint leaves along its rim and listening for the clouds to come.",
+    "why_shape": "正文含4个固定开启句，逐层嵌套；进入下一层后不再出现外层人物与地点专名，且没有逐层返回的收束句。",
+    "motif_id": "nesting",
+    "equation": "[a_1,b_1]\\supsetneq[a_2,b_2]\\supsetneq\\cdots\\;\\Longrightarrow\\;\\bigcap_{n=1}^{\\infty}[a_n,b_n]\\neq\\varnothing",
+    "model": "gpt-5.5",
+    "judge": {
+      "device_passed": true,
+      "device_checks": "1) 固定开启句共4处，均为“X说：『从前……』”格式；2) 第2/3/4个开启句分别出现在前一层故事内部，层级嵌入成立；3) 进入更深层后，前序外层的人物与地点专名未再出现，未发生“返回”；4) 末句“云正赶来……”仍处于最深一层故事内。",
+      "blind_motif": "nesting",
+      "model": "gpt-5.2",
+      "passed": true
+    },
+    "story_id": "nesting_s0"
+  },
+  {
+    "title": "一粒暖扣",
+    "domain": "旧衣修补",
+    "story_zh": "阿绣说：『从前……』\n溪柳埠有个赶春集的小孩，怀里揣着一件旧棉袄，袄襟少了一粒扣子，风一吹就鼓起来，像藏着一只淘气的小鹅。他顺着摊棚找针线，闻见姜糖香，也听见雨点打在油布上。角落里坐着会补网兜的蓝嫂，她把碎布铺得平平整整，摸出一只小小的木匣。\n蓝嫂说：『从前……』\n砂锅街后头有口石月井，井边住着一个卖热豆花的姑娘。她每天清早把碗排成一圈，等雾气散开，就给过路人舀上一勺甜浆。有一回，寒风把她袖口上的线吹散了，她便去找会做云肩的小满。小满正在窗下挑银线，针尖亮得像新落的星。\n小满说：『从前……』\n山坳里有间暖屋，屋檐下挂着晒干的橘皮，门边卧着一只黄狗。屋里住着一个老裁缝，他不爱多说话，只爱把孩子们磨破的袖口补得又软又结实。一天傍晚，雪落得轻，门外来了个小女孩，抱着一件灰兔毛斗篷，斗篷的领子裂开了，冷气总往脖子里钻。老裁缝把炉火拨旺，取出一块像晚霞一样的绒布，细细缝在裂口里，又从抽屉深处挑出一粒暖扣。那扣子不大，摸上去却像捧着一口刚出锅的汤。小女孩系好斗篷，黄狗摇了摇尾巴，雪声也变小了。她推门往白白的山路上走，怀里暖着，脚印一枚接一枚，朝更深的松林里去了。",
+    "story_en": "A child at a spring market needs a missing button for an old padded coat. A mender begins a tale about a tofu seller by a well, who seeks out a seamstress. The seamstress begins another tale about an old tailor in a warm mountain hut. He repairs a little girl's torn cloak with a sunset-colored patch and a warm button. She leaves into the snowy pine woods, still moving inward, and the story ends there.",
+    "why_shape": "正文含 3 个固定开启句，后一开启句嵌入前一故事；进入内层后不再出现外层专名，且无配对收束句，末句停在最深层。",
+    "motif_id": "nesting",
+    "equation": "[a_1,b_1]\\supsetneq[a_2,b_2]\\supsetneq\\cdots\\;\\Longrightarrow\\;\\bigcap_{n=1}^{\\infty}[a_n,b_n]\\neq\\varnothing",
+    "model": "gpt-5.5:stable",
+    "judge": {
+      "device_passed": true,
+      "device_checks": "1) 固定开启句共3处：阿绣说、蓝嫂说、小满说；且第2句嵌于第1层故事内，第3句嵌于第2层故事内。2) 零返回成立：进入蓝嫂层后，阿绣/溪柳埠未再出现；进入小满层后，阿绣/溪柳埠/蓝嫂/砂锅街/石月井未再出现。3) 末句“她推门往白白的山路上走……”位于最深层故事内。",
+      "blind_motif": "nesting",
+      "model": "gpt-5.2:stable",
+      "passed": true
+    },
+    "story_id": "nesting_s1"
+  },
+  {
+    "title": "只进不出",
+    "domain": "河湾",
+    "story_zh": "阿岚说：『从前，青篙镇东头有间豆坊，门边挂着一只铜铃。每到黄昏，风一过，铃声就落到青石台上，像有人在悄悄招手。阿岚顺着铃声掀开后门，见木柜里藏着一张小纸条，上头写着：\n阿苇说：『从前，白沙河弯处有个船棚，棚顶晒着新割的芦叶。我把芦叶一卷，卷出一只细口篮，篮底却滚出一粒蓝石。蓝石一碰掌心就发热，我把它放到窗台上，窗台后头便传来一阵细细的响，像纸片互相碰着。阿兰说：『从前，半坡上有座纸屋，檐下挂着三只风车。那天夜里，夜鹭落在门前的泥地上，伸嘴叼走一根红线，红线另一头正系在我掌心的蓝石上，蓝石一亮，满屋都像刚醒来。』』』",
+    "story_en": "A bell at a bean shop by the river bend leads one listener to a scrap of paper, the scrap opens into a tale from a boathouse, and that tale opens into a third tale from a paper house on the slope. In the last room, a blue stone glows, and everything feels awake.",
+    "why_shape": "三个“阿X说：『从前……』”依次嵌进前一段，后文不再提前面的专名，末句停在最里一段。",
+    "motif_id": "nesting",
+    "equation": "[a_1,b_1]\\supsetneq[a_2,b_2]\\supsetneq\\cdots\\;\\Longrightarrow\\;\\bigcap_{n=1}^{\\infty}[a_n,b_n]\\neq\\varnothing",
+    "model": "gpt-5.5:stable",
+    "judge": {
+      "device_passed": true,
+      "device_checks": "1) 开启句计数为3，且阿岚层内嵌阿苇层、阿苇层内再嵌阿兰层，满足逐层嵌入；2) 各层开启后，前序外层的人物与地点专名未在后文再现，未触发“返回”；3) 末句“满屋都像刚醒来。”位于最内层阿兰故事内，外层仅以闭合引号结束。",
+      "blind_motif": "nesting",
+      "model": "gpt-5.2:stable",
+      "passed": true
+    },
+    "story_id": "nesting_s2"
+  },
+  {
+    "title": "罐中小院",
+    "domain": "陶窑糖坊",
+    "story_zh": "阿蒲说：『从前……』\n海盐集上，有一只青瓷罐，罐口蒙着红布。卖盐的孩子听见罐里响，像细雨敲瓦。旁边走来一个挑炭的妇人，放下扁担，摸了摸罐沿。\n陶娘说：『从前……』\n山坳里有座黑窑，夜里烧火，火星像橘子皮。窑边住着一个看火的老汉，他养了一只白耳狸。一天，狸子钻进没烧过的土壶，只露尾巴摇呀摇。老汉把耳朵贴上去，听见壶肚里有人轻轻唱歌。\n槐生说：『从前……』\n雪地尽头有间糖坊，窗纸甜得招蚂蚁。小炉上熬着麦芽，咕嘟咕嘟冒金泡。一个穿蓝围裙的小姑娘把木勺伸进锅里，勺底忽然落下一粒亮糖，圆得像小月亮。她捧着糖，听见里面有人拍手。\n荞妹说：『从前……』\n竹篮底下藏着一座暖烘烘的小院，院里晒着桂花、豆皮和三枚红枣。最小的枣自己滚到石臼旁，碰了碰臼沿，便裂开一道缝。缝里坐着个戴草帽的娃娃，正给一只蚕宝宝讲午睡前的故事，声音轻得像絮。蚕宝宝闭上眼，梦见桑叶上落了一滴露，露里有一尾银鱼，银鱼摆摆尾巴，游向更亮的水草。",
+    "story_en": "Apu begins a tale at a salt market, where a blue porcelain jar murmurs like rain on tiles. A charcoal-carrying woman touches the rim and begins another tale: in a dark kiln, an old firekeeper hears singing from inside an unfired clay pot. Then Huaisheng begins a tale of a snowy sugar house, where a bright round sweet holds the sound of clapping. Finally Qiaomei tells of a warm little courtyard hidden under a bamboo basket, where a red date splits open to reveal a straw-hatted child telling a silkworm a bedtime tale. The silkworm dreams of dew, a silver fish, and brighter water grass.",
+    "why_shape": "正文含4个固定开启句，后一个均出现在前一个故事内部；进入下一层后不再出现外层专名，且无配对收束句，末句停在最内层。",
+    "motif_id": "nesting",
+    "equation": "[a_1,b_1]\\supsetneq[a_2,b_2]\\supsetneq\\cdots\\;\\Longrightarrow\\;\\bigcap_{n=1}^{\\infty}[a_n,b_n]\\neq\\varnothing",
+    "model": "gpt-5.5:stable",
+    "judge": {
+      "device_passed": true,
+      "device_checks": [
+        "(a) 固定开启句计数=4（阿蒲/陶娘/槐生/荞妹），均为“X 说：『从前……』”且逐字匹配；嵌入关系：陶娘开启句出现在阿蒲层内部；槐生开启句出现在陶娘层内部；荞妹开启句出现在槐生层内部（逐层嵌入成立）。",
+        "(b) 零返回核查：阿蒲层外层专名={阿蒲,海盐集,青瓷罐,红布,卖盐的孩子,挑炭的妇人}，在陶娘开启句之后未再出现；陶娘层外层专名={陶娘,山坳,黑窑,看火的老汉,白耳狸,狸子,土壶,土壶/壶肚}，在槐生开启句之后未再出现；槐生层外层专名={槐生,雪地尽头,糖坊,窗纸,蚂蚁,小炉,麦芽,穿蓝围裙的小姑娘,木勺,亮糖}，在荞妹开启句之后未再出现；未检测到任何外层人物/地点专名在更内层再现（再现次数均=0）。",
+        "(c) 末句“……游向更亮的水草。”位于荞妹开启的最深一层故事内部，且全文无任何收束句/弹回语句（收束句计数=0）。"
+      ],
+      "blind_motif": "nesting",
+      "model": "gpt-5.2:stable",
+      "passed": true
+    },
+    "story_id": "nesting_s3"
+  },
+  {
+    "title": "会响的贝壳",
+    "domain": "海边修桥",
+    "story_zh": "于是，阿葵在海边捡到一枚会响的贝壳。\n清早的沙滩湿亮亮，贝壳躺在一小汪水里，像含着一口月光。阿葵把它贴到耳边，听见叮咚叮咚，像小泉眼在石头下说话。她想起村口新修的桥总少一点声音，走夜路的人常常摸不准桥头，就把贝壳捧给了罗伯。于是，石匠罗伯把贝壳嵌进桥头的石缝。\n\n于是，石匠罗伯把贝壳嵌进桥头的石缝。\n罗伯的手又宽又暖，抹灰时很轻，怕压坏那点细响。傍晚潮气上来，桥头便叮咚一声，叮咚又一声，像有人在雾里敲小碗。老渡夫刚收了桨，听见这声音，知道浅滩那边还有活物没回家。于是，老渡夫听见桥头细响，撑船去接迷路的小羊。\n\n于是，老渡夫听见桥头细响，撑船去接迷路的小羊。\n小羊站在芦苇丛旁，四只蹄子全是泥，嗓子叫哑了，只剩鼻尖一抖一抖。老渡夫把它抱上船，用旧蓝袄裹住，慢慢划回有灯的岸。到了沙坡，小羊身上暖过来，忽地一跳，脖子上的铜铃丁零零响。于是，小羊抖落脖子上的铜铃，吵醒了睡在沙窝里的海风。\n\n于是，小羊抖落脖子上的铜铃，吵醒了睡在沙窝里的海风。\n海风打了个哈欠，先吹歪了罗伯门前的草帽，又吹亮了阿葵窗下的水洼。它跑到滩上，轻轻掀开一层白沫，把藏在细沙里的小东西翻到晨光里。天一亮，阿葵提着竹篮来赶海，看见水边有一点银光在闪。于是，阿葵在海边捡到一枚会响的贝壳。",
+    "story_en": "A girl named Akui finds a singing shell by the sea and gives it to Rober the mason, who sets it into the stones at the bridgehead. At dusk the shell makes a small ringing sound, which tells the old ferryman that someone is still stranded beyond the shallows. He rows out and rescues a lost lamb. Warm again on shore, the lamb shakes its bell and wakes the sea wind sleeping in the sand. The wind blows across the beach and uncovers the shining shell for Akui to find by the water.",
+    "why_shape": "全文四段，段尾均以“于是”引出下一段首句，最后一句与第一句逐字相同，形成四事件因果闭环。",
+    "motif_id": "cycle",
+    "equation": "v_{1}\\to v_{2}\\to\\cdots\\to v_{n}\\to v_{1},\\qquad \\langle r\\mid r^{n}=e\\rangle\\cong\\mathbb{Z}/n\\mathbb{Z}",
+    "model": "gpt-5.5",
+    "judge": {
+      "device_passed": true,
+      "device_checks": "1) 共4段，满足n≥3；2) 每段末句均以“于是”引出下一段首句，且四段首尾衔接闭环完整；3) 第1段首句与第4段末句逐字相同，满足首末句复原；4) 四段事件彼此不同，第2/3段不构成前后镜像；5) 全文无跨层叙述或“讲述者被讲述”，叙述层级单一。",
+      "blind_motif": "cycle",
+      "model": "gpt-5.2",
+      "passed": true
+    },
+    "story_id": "cycle_s0"
+  },
+  {
+    "title": "亮铜钥匙",
+    "domain": "河街",
+    "story_zh": "于是……清晨，阿木在槐河镇旧货铺门口捡到一把亮铜钥匙。钥匙躺在青石板缝里，沾着一点新落的槐花香，像是谁匆忙掉下的念想。于是……他拿着钥匙去找卖糖画的金婶，想问问它开哪一把锁。\n\n于是……他拿着钥匙去找卖糖画的金婶，想问问它开哪一把锁。金婶把铜勺放在炉边，眯着眼瞧了瞧，说别急，先去河边看看。于是……金婶笑着领他去河边的水榭，那里有一只生锈的小木箱。\n\n于是……金婶笑着领他去河边的水榭，那里有一只生锈的小木箱。阿木蹲下身，把钥匙轻轻插进锁眼，咔嗒一声，箱盖慢慢抬起，里面躺着一支红漆小哨子和一张折得方方正正的纸条。于是……清晨，阿木在槐河镇旧货铺门口捡到一把亮铜钥匙。",
+    "story_en": "At dawn, A-Mu found a bright brass key by the old shop door in Huaihe Town. He took it to Jin, the candy-sugar artist, who sent him to the waterside pavilion where a small rusted box was waiting. Inside were a red whistle and a neatly folded note, and the path led back to the same key again.",
+    "why_shape": "全篇三段，段末分别以“于是……”接到下一段首句，首句A、B、C首尾相扣并在末段回到A，形成 e1→e2→e3→e1，且始终是同一叙述层级。",
+    "motif_id": "cycle",
+    "equation": "v_{1}\\to v_{2}\\to\\cdots\\to v_{n}\\to v_{1},\\qquad \\langle r\\mid r^{n}=e\\rangle\\cong\\mathbb{Z}/n\\mathbb{Z}",
+    "model": "gpt-5.5:stable",
+    "judge": {
+      "device_passed": true,
+      "device_checks": "共3段，满足n≥3；各段末句均以“于是……”开头并与下一段首句逐字衔接；首句与末句逐字重合；三段事件依次为捡钥匙、问金婶、开箱，互不相同；全文无跨层叙述。",
+      "blind_motif": "cycle",
+      "model": "gpt-5.2:stable",
+      "passed": true
+    },
+    "story_id": "cycle_s1"
+  },
+  {
+    "title": "石榴巷的桃木梳",
+    "domain": "木梳铺",
+    "story_zh": "于是……阿莲背着竹篮走进石榴巷，去给祖母挑一把新木梳。木梳铺开在青砖门洞里，门梁上挂着晒干的皂角，胡三一边擦手一边笑，说今早的桃木纹最清。阿莲拿起那把梳子，忽然想起祖母总爱把发髻梳得服服帖帖，于是……小满蹲在井台边，等着看那梳齿怎么把乱发理顺。\n\n小满蹲在井台边，等着看那梳齿怎么把乱发理顺。井台旁的石榴树正落花，阿莲把梳子递给他，他却先去追一只衔着线头的灰雀。灰雀落到磨盘上，线头正好缠住了小满的衣角，他笑着解开，说这条线要送去街口扎风筝，于是……街口的老裁缝方婶正把五彩纸压在竹桌上。\n\n街口的老裁缝方婶正把五彩纸压在竹桌上。她见阿莲和小满来了，就把一小截红绳塞给他们，叫他们把风筝骨架扎牢。风筝刚一立起来，巷口那阵风就把桃木梳的香味也卷了过去，祖母站在门前一闻，笑着把阿莲叫回家喝甜汤，于是……阿莲背着竹篮走进石榴巷，去给祖母挑一把新木梳。",
+    "story_en": "Aliang went down Persimmon Lane with a bamboo basket to buy a new wooden comb for her grandmother. In the comb shop, Old Hu admired the pale grain of the peach wood and said the morning’s best pieces had just been planed smooth. When Aliang lifted the comb and thought of her grandmother’s tidy bun, she brought little Xiaoman to the well platform to see how the teeth could smooth a tangled head of hair. Xiaoman chased a gray sparrow across the millstone, and the thread it carried led them to Aunt Fang, the tailor, who was pressing bright paper for a kite. Aunt Fang gave them a strip of red cord to tie the frame, and when the kite rose, the scent of the peach-wood comb drifted home so that Grandmother called Aliang back for sweet soup, and the lane began once more with a basket and a comb.",
+    "why_shape": "全篇分三段首尾相接：每段末句都用“于是……”把下一段首句接出来，第三段末句又逐字回到第一段首句，形成可机械核查的闭合链。",
+    "motif_id": "cycle",
+    "equation": "v_{1}\\to v_{2}\\to\\cdots\\to v_{n}\\to v_{1},\\qquad \\langle r\\mid r^{n}=e\\rangle\\cong\\mathbb{Z}/n\\mathbb{Z}",
+    "model": "gpt-5.5:stable",
+    "judge": {
+      "device_passed": true,
+      "device_checks": "3段；每段末句均含“于是……”并引出下一段首句；首句与末句逐字重合；各段事件不同；无跨层叙述；n=3，中段无镜像问题",
+      "blind_motif": "cycle",
+      "model": "gpt-5.2:stable",
+      "passed": true
+    },
+    "story_id": "cycle_s2"
+  },
+  {
+    "title": "青槐巷的米糕摊",
+    "domain": "早点摊",
+    "story_zh": "青槐巷口的阿槐婆在晨雾里支起了米糕摊。\n她一掀竹盖，发现蒸笼边少了那把刻着梅花的小木勺，便请来买热豆浆的小满去桂花井边问问，于是……\n\n小满在桂花井边找到捞铜钱的阿福。\n阿福说，小木勺早被卖花的蓝袖娘借去量桂花蜜，她正往南门的花棚去，于是……\n\n蓝袖娘把小木勺从蜜罐边拿出来，先舀了一勺给口渴的孩子。\n孩子喝完甜水，指着巷尾说那把勺子昨夜还在磨刀匠老韩的炉边，老韩也许知道去处，于是……\n\n老韩把勺子夹在布里送回青槐巷口，正碰上阿槐婆添柴，于是……\n青槐巷口的阿槐婆在晨雾里支起了米糕摊。",
+    "story_en": "At the mouth of Qinghuai Lane, Granny Ahui sets out her rice-cake stall in the morning mist. A small wooden spoon travels through a few errands among the neighbors, and after it comes home, the story ends where it began.",
+    "why_shape": "四段依次接力，前三段末句都以“于是……”把线索推到下一段，末段再把首句原样送回开头，完成首尾相接的闭合。",
+    "motif_id": "cycle",
+    "equation": "v_{1}\\to v_{2}\\to\\cdots\\to v_{n}\\to v_{1},\\qquad \\langle r\\mid r^{n}=e\\rangle\\cong\\mathbb{Z}/n\\mathbb{Z}",
+    "model": "gpt-5.5:stable",
+    "judge": {
+      "device_passed": true,
+      "device_checks": "共5段，满足 n≥3；第1至第4段末句都以显式连接词「于是……」结尾并引出下一段首句；第5段首句与第1段首句逐字相同；各段事件不同，未见前后镜像结构；全文为单一叙述层级，未出现“讲述者被讲述”。",
+      "blind_motif": "cycle",
+      "model": "gpt-5.2:stable",
+      "passed": true
+    },
+    "story_id": "cycle_s3"
+  },
+  {
+    "title": "半月桥的泥哨",
+    "domain": "泥哨修补",
+    "story_zh": "1. 阿满背着竹篓，走进青瓦巷尽头的糖画铺。\n2. 小岚把一只裂了嘴的泥哨放进篓里，托阿满去河埠头配新绳。\n3. 阿满路过槐花茶棚，卖风车的老顾递来一片红纸。\n4. 小岚站在桑树下避雨，怀里揣着热乎乎的艾草团。\n5. 阿满把红纸贴在泥哨上，泥哨吹出像燕子一样的短声。\n6. 半月桥下的乌篷船轻轻一晃，桥洞里落下一滴亮水。\n7. 小岚把红纸贴在泥哨上，泥哨吹出像燕子一样的短声。\n8. 阿满站在桑树下避雨，怀里揣着热乎乎的艾草团。\n9. 小岚路过槐花茶棚，卖风车的老顾递来一片红纸。\n10. 阿满把一只裂了嘴的泥哨放进篓里，托小岚去河埠头配新绳。\n11. 小岚背着竹篓，走进青瓦巷尽头的糖画铺。",
+    "story_en": "Aman carries a bamboo basket into the sugar-painting shop at the end of Blue-Tile Lane. Xiaolan places a cracked clay whistle in the basket and asks Aman to get a new cord for it at the river landing. On the way, Aman passes Old Gu’s flower-scented tea stall and receives a piece of red paper; Xiaolan waits out the rain under a mulberry tree with a warm mugwort cake tucked close. Aman patches the whistle with the red paper, and it chirps like a swallow. Under Half-Moon Bridge, a black-awning boat rocks, and a bright drop falls from the arch. Then Xiaolan patches the whistle too, Aman waits beneath the mulberry, Xiaolan receives red paper from Old Gu, Aman places the cracked whistle in the basket for Xiaolan, and Xiaolan walks into the same little shop.",
+    "why_shape": "正文共11个编号句，第6句为中心，第7—11句分别是第5—1句在阿满/小岚互换后的逆序逐字重现。",
+    "motif_id": "symmetry",
+    "equation": "w=w^{R},\\qquad (w^{R})_{i}=w_{n+1-i},\\qquad R\\circ R=\\mathrm{id}",
+    "model": "gpt-5.5",
+    "judge": {
+      "device_passed": true,
+      "device_checks": "1. 共 11 个编号句，满足 2k+1 形式；k=5。2. 第 6 句为唯一中心句，左右两侧各 5 句。3. 第 1/11 句仅“阿满/小岚”互换，其余逐字相同。4. 第 2/10 句仅“阿满/小岚”互换，其余逐字相同。5. 第 3/9 句仅“阿满/小岚”互换，其余逐字相同。6. 第 4/8 句仅“阿满/小岚”互换，其余逐字相同。7. 第 5/7 句仅“阿满/小岚”互换，其余逐字相同。8. 全文为单一叙事层，未出现故事中故事或层级进出。",
+      "blind_motif": "symmetry",
+      "model": "gpt-5.2",
+      "passed": true
+    },
+    "story_id": "symmetry_s0"
+  },
+  {
+    "title": "桥头糖糕",
+    "domain": "集市",
+    "story_zh": "1. 阿禾在青石桥头卖糖糕时，阿满提着竹篮来买了两块，还顺手把掉在地上的桂花拾进篮里。\n2. 阿满说院里的月季该浇水了，阿禾便把木桶提到井边，接了半桶清水。\n3. 傍晚的风从河面吹来，乌桕树下的长凳上还留着糖糕的甜香。\n4. 阿禾说院里的月季该浇水了，阿满便把木桶提到井边，接了半桶清水。\n5. 阿满在青石桥头卖糖糕时，阿禾提着竹篮来买了两块，还顺手把掉在地上的桂花拾进篮里。",
+    "story_en": "At the stone bridge by the river, Ah-He sells sweet cakes while Ah-Man comes with a bamboo basket, buys two, and picks up the fallen osmanthus blossoms. They later fetch water for the moonflowers from the well, and by evening the bench under the wutong tree still holds the scent of the cakes.",
+    "why_shape": "正文共五句，前后两组句子分别只交换人名，第三句单独成句，按序读与倒序读可一一对应。",
+    "motif_id": "symmetry",
+    "equation": "w=w^{R},\\qquad (w^{R})_{i}=w_{n+1-i},\\qquad R\\circ R=\\mathrm{id}",
+    "model": "gpt-5.5:stable",
+    "judge": {
+      "device_passed": true,
+      "device_checks": [
+        "共 5 句，满足 2k+1 形式（k=2）。",
+        "第 3 句为唯一中心句。",
+        "第 1 句与第 5 句逐字比对时，仅角色名阿禾/阿满互换；其余文字一致。",
+        "第 2 句与第 4 句逐字比对时，仅角色名阿满/阿禾互换；其余文字一致。",
+        "无故事中故事、无层级进出结构，属单一叙事层。"
+      ],
+      "blind_motif": "symmetry",
+      "model": "gpt-5.2:stable",
+      "passed": true
+    },
+    "story_id": "symmetry_s2"
+  },
+  {
+    "title": "雾渡双钟",
+    "domain": "渡口更钟",
+    "story_zh": "甲：青石渡的夜雾厚了，阿栗，我去敲东岸的小铜钟。\n乙：你去吧，阿桃，我来敲西岸的小铜钟。\n甲：东钟一响，船伯就知道浅滩靠左边。\n乙：西钟一响，船伯就知道芦苇靠右边。\n甲：若有迷路的白鹅，我把它往菜园门前赶。\n乙：若有掉队的小羊，我把它往柳树桥下牵。\n甲：你的钟声细，像银针，能穿过雾。\n乙：你的钟声圆，像烤栗子，能暖到船舱。\n甲：鸡叫以前，载米的船就该靠岸了。\n乙：天亮以前，装鱼的篮就该上街了。\n甲：等阿婆来送姜汤，我把东岸的钟擦亮。\n乙：等太阳照到渡口，我把西岸的钟擦亮。",
+    "story_en": "At Qingstone Ferry, heavy night fog settles over the river. A Tao and A Li keep watch by ringing the little bronze bells on opposite banks. One bell guides the boatman away from the shallows; the other keeps him clear of the reeds. As they wait, they also look after lost geese and stray lambs, praise each other’s bell sounds, and think of the rice boat, the fish baskets, Granny’s ginger soup, and the morning sun.",
+    "why_shape": "正文共12句，奇数句均为甲、偶数句均为乙，严格按 i mod 2 交替，实现二着色的不变量。",
+    "motif_id": "alternation",
+    "equation": "c(i)=i\\bmod 2;\\qquad \\chi(G)\\le 2\\iff G\\ \\text{不含奇环}",
+    "model": "gpt-5.5",
+    "judge": {
+      "device_passed": true,
+      "device_checks": "对白共12句，满足偶数且在8到20之间；每句独立成行；行首标签依次为甲、乙、甲、乙……，与句序1起按奇偶对应；未出现第三说话人；未见旁白句。",
+      "blind_motif": "alternation",
+      "model": "gpt-5.2",
+      "passed": true
+    },
+    "story_id": "alternation_s0"
+  },
+  {
+    "title": "严格交替",
+    "domain": "纸灯",
+    "story_zh": "甲：阿泥把青布帘子掀开时，纸灯铺里还是凉的。\n乙：我把蒸好的桂花糕放在窗边，免得孩子们跑来跑去时烫着手。\n甲：那只兔子灯的耳朵歪了，你来帮我扶一扶。\n乙：先别动，团团刚从桌下钻出来，嘴边还沾着红纸屑。\n甲：它要是喜欢，就给它留一小片，今晚也算添个热闹。\n乙：我把门口那串铜铃擦亮了，风一来，声音像小雨点。\n甲：等巷子里的人散过来，我们就把鲤鱼灯挂到最前头。\n乙：再把那盏蓝底的放在旁边，叫它照着地上的脚印。\n甲：若有孩子问起是谁扎的，我就说，是你和我一夜一夜编出来的。\n乙：那就好，第一位客人进门时，正好看见它们都醒着。",
+    "story_en": "At a paper-lantern shop in the alley, A-ni opens the blue cloth curtain and the morning feels cool. He and his helper set out sweet cakes, mend a rabbit lantern, notice a kitten hiding under the table, polish the brass bell, and hang the fish lantern and the blue one at the front. When the first children arrive, the lanterns are already bright and waiting.",
+    "why_shape": "正文共十句，甲乙两人按句次轮番开口，彼此不连说两句，整篇只靠这种固定轮换推进。",
+    "motif_id": "alternation",
+    "equation": "c(i)=i\\bmod 2;\\qquad \\chi(G)\\le 2\\iff G\\ \\text{不含奇环}",
+    "model": "gpt-5.5:stable",
+    "judge": {
+      "device_passed": true,
+      "device_checks": "1. 全文对白共10句，为偶数，且满足8≤句数≤20。\n2. 每句独立成行，且行首均为显式说话人标签“甲：”或“乙：”。\n3. 说话人按句序严格交替：第1句甲、第2句乙……第10句乙，无连续同一说话人发言。\n4. 未出现第三说话人，也未见旁白句。",
+      "blind_motif": "alternation",
+      "model": "gpt-5.2:stable",
+      "passed": true
+    },
+    "story_id": "alternation_s1"
+  },
+  {
+    "title": "青布伞",
+    "domain": "伞铺",
+    "story_zh": "甲：雨一落，槐树街的阿福伞铺就亮起了灯。\n乙：阿福说，今晚要给镇口的孩子补好那把青布伞。\n甲：小满抱来伞架，伞骨断了一根，手里还攥着一颗桂花糖。\n乙：阿福把新竹篾一根根插进去，又把旧布洗得发亮。\n甲：他一边缝，一边让红线和蓝线挨着走，针脚像小鱼摆尾。\n乙：小满学着帮忙，左手递线，右手递布，忙得额头冒汗。\n甲：缝到最后，那把伞一开一合，里面像盛着一片安稳的天。\n乙：第二天，孩子们举着新伞去学堂，伞面在街上排成好看的花。\n甲：阿福笑着说，谁家的伞破了，只管来，我夜里等你们。\n乙：小满把桂花糖放在柜台上，说等雨再来，他还要学着补下一把。",
+    "story_en": "On Willow Street, Old Fu's umbrella shop lit up when the rain fell. Fu promised to mend the blue cloth umbrella for the children at the end of town that night. Little Man brought the frame, and by morning the repaired umbrella looked like a small patch of calm sky. The next day, the children carried it to school, and the whole street seemed to smile in the rain.",
+    "why_shape": "全文共十句，对白按甲乙严格交替，且总句数为偶数，所以逐句核对时说话人标签与行号可一一对应。",
+    "motif_id": "alternation",
+    "equation": "c(i)=i\\bmod 2;\\qquad \\chi(G)\\le 2\\iff G\\ \\text{不含奇环}",
+    "model": "gpt-5.5:stable",
+    "judge": {
+      "device_passed": true,
+      "device_checks": "共10句，满足偶数且在8到20之间；每句独立成行；行首均为显式说话人标签，且仅有「甲：」「乙：」两种；句序为甲乙交替，逐句与奇偶序号一一对应；无旁白句、无第三说话人。",
+      "blind_motif": "alternation",
+      "model": "gpt-5.2:stable",
+      "passed": true
+    },
+    "story_id": "alternation_s2"
+  },
+  {
+    "title": "蓝白腰带",
+    "domain": "织坊",
+    "story_zh": "甲：阿婆，小满把蓝线和白线都送来了，就放在槐树下。\n乙：好，今夜咱们给他织一条去庙会的腰带。\n甲：我怕手一抖，蓝线挤到蓝线旁边。\n乙：别怕，梭子一过去，紧挨着的总得换个颜色。\n甲：那我就让蓝白挨着走，像溪里的鹅卵石，一块冷，一块暖。\n乙：对，碰见同色的地方，轻轻把它拨开，花样才精神。\n甲：等腰带晒干，小满系上它，一定跑得比风还快。\n乙：到那时，槐树叶沙沙响，像在替他拍手。",
+    "story_en": "Grandma and Xiaoman bring blue thread and white thread to the old pagoda tree, and that night they weave him a belt for the temple fair. The work goes on one color after another, neat and lively, until the belt is done. When Xiaoman ties it on, he runs off happily, and the leaves overhead seem to clap for him.",
+    "why_shape": "全篇8句对白严格甲乙相间；故事里蓝线和白线也始终一上一下地推进，没有第三个说话人。",
+    "motif_id": "alternation",
+    "equation": "c(i)=i\\bmod 2;\\qquad \\chi(G)\\le 2\\iff G\\ \\text{不含奇环}",
+    "model": "gpt-5.5:stable",
+    "judge": {
+      "device_passed": true,
+      "device_checks": "共8句，对应2k且满足8≤2k≤20；每句均独立成行；行首均显式标注为“甲：”或“乙：”；未见第三说话人或旁白句；第1/3/5/7句为甲，第2/4/6/8句为乙，满足奇偶句说话人一一对应；无连续同一说话人发言。",
+      "blind_motif": "alternation",
+      "model": "gpt-5.2:stable",
+      "passed": true
+    },
+    "story_id": "alternation_s3"
+  },
+  {
+    "title": "青石渡热汤",
+    "domain": "渡口汤铺",
+    "story_zh": "青石渡边有间矮小汤铺，屋檐低得像老牛的背。掌勺的姑娘叫阿荞，围蓝布裙，用铁锅煮芜菁、河虾和山菌。深秋那日，北风把河面吹皱，一个瘦船夫扶着桨进门，手心冻得发青。\n\n锅香又起，一人。\n\n阿荞没有问钱，只把木勺在锅底轻轻一兜，盛出半碗热汤。船夫喝完，眼里有了光，说河上雾重，有孩子的哭声。他撑船去寻，果然在芦苇滩抱出一个迷路的娃娃。\n\n锅香又起，一家围灶添柴同笑。\n\n娃娃的娘赶来谢恩，送了一篮红薯。阿荞的娘把红薯埋进灰里，弟弟剥蒜，爹爹劈柴，小铺头一遭亮到半夜。赶路的人闻见香气，脚步都慢了。\n\n锅香又起，一村沿河捧碗来听阿荞说雪夜救鹿的旧故事啦。\n\n第二年雪大，山鹿踏破冰壳，跌在渡口旁。阿荞用旧被裹住它，又把汤吹凉了喂。春来鹿群衔来野葱，坡上长出一片青。村里人学着她的法子，遇见寒客，先递热碗，再问来处。\n\n锅香又起，一国行客都记得青石渡小铺的热汤也记得阿荞把最后一勺留给迷路孩子的笑脸后来春船秋马皆带这香。\n\n许多年后，青石渡换了新桥，汤铺仍在河边。炉火不高不低，铁锅不急不慢。若有小孩问这汤为什么这样鲜，老人便指指河风、山菌、灶灰里的红薯，还有门口那只常来蹭暖的鹿，说：好味道呀，都是从一碗热心里长出来的。",
+    "story_en": "Beside the Bluestone Ferry stood a low little soup shop run by a girl named A-Qiao. One cold autumn day she gave hot soup to a shivering boatman, who then found a lost child in the reeds. The rescued child’s family came to thank her, and soon the whole household gathered around the stove. Later the village came for soup and for tales of how A-Qiao had once saved a deer in the snow. In time, travelers from far away remembered the ferry shop, the warm broth, and the girl who always saved the last ladleful for someone in need. Long afterward, even when a new bridge crossed the river, the old soup pot still simmered, and people said its flavor had grown from one warm-hearted bowl.",
+    "why_shape": "四个同级副歌段均以同一四字短语开头，字数依次为6/12/24/48，并依次含一人、一家、一村、一国，形成螺旋副歌的指数放大。",
+    "motif_id": "spiral",
+    "equation": "r=a\\,e^{b\\theta}",
+    "model": "gpt-5.5",
+    "judge": {
+      "device_passed": true,
+      "device_checks": "1) 核心短语`锅香又起`恰4次，均在段首且各自独占一段；2) 四段字数分别为6/12/24/48（不计标点），公比为2；3) 四段分别含`一人/一家/一村/一国`对应项；4) 四段平级顺次出现，未见内嵌。",
+      "blind_motif": "spiral",
+      "model": "gpt-5.2",
+      "passed": true
+    },
+    "story_id": "spiral_s0"
+  },
+  {
+    "title": "红柳炉边的沙枣糕",
+    "domain": "戈壁糕坊",
+    "story_zh": "红柳镇贴着盐碱滩，风一吹，墙根就堆起白花花的盐霜。镇西有间小糕坊，主人叫阿杏，爱穿蓝布围裙，手上总沾着沙枣香。\n\n那年秋早，井水少，赶集的人少，阿杏的泥炉也常常冷着。一天傍晚，牧羊娃达吾提牵着瘦羊来，说奶奶病了，只想吃一口热糕。阿杏没收钱，舀出最后一瓢面，拌上蜜，贴在炉壁上。\n\n灶火又旺一人\n\n达吾提把糕捧回去，奶奶吃了半块，夜里便能坐起身，给羊羔缝铃带。第二日，达吾提的爹娘挑来半袋麦子，又帮阿杏修了漏风的炉门。阿杏把新烤的糕分给他们，甜气从院墙爬到巷口。\n\n灶火又旺一家添碗添灯添笑\n\n过了几天，红柳镇来了沙尘。屋顶像蒙了黄毡，鸡也不肯出窝。阿杏怕老人孩子饿着，把糕坊门板卸下来当长案，谁家有面就送面，谁家有枣就送枣，谁有空手就来扇火。尘天散时，巷子里排着热糕，像一排小太阳。\n\n灶火又旺一村闻香来帮揉面捶米晒枣缝新袄挂红辣椒串\n\n冬口将到，北边驼队迷了路，三十多匹骆驼卧在红柳沟，铃声闷得像梦话。阿杏带着镇上的孩子们，把沙枣糕包进羊皮袋，又把热石头塞进布兜，一路送到沟里。领队的胡伯尝了一口，眼泪落在胡子上，说这味道能把人从冷风里叫回来。\n\n灶火又旺一国客商沿驿路传开，说沙枣糕甜如秋月热如新被，连远岭牧童也学着哼唱，给羊铃系小红绳回家报喜讯啦\n\n后来，红柳镇的年集越办越热闹。阿杏仍住在镇西那间小糕坊里，蓝围裙洗得发白，泥炉口却亮堂堂的。有人带来珍珠，有人带来细茶，她都先问一句：路上冷不冷？若冷，就先吃块刚出炉的。",
+    "story_en": "At the edge of a salt flat stood Red Willow Town, where Axing kept a little cake oven scented with jujubes and honey. One dry autumn evening, a shepherd boy came asking for a warm cake for his sick grandmother. Axing baked one with the last of her flour, and the warmth of that kindness spread first to the boy, then to his family, then through the whole town during a dust storm. When a caravan later lost its way in the freezing north wind, Axing and the children carried hot jujube cakes out to the red willow ditch. The caravan master said the taste could call a person back from the cold. In time, travelers from far places carried word of the cakes along the roads, while Axing kept her humble oven bright and always asked the same thing first: whether the road had been cold.",
+    "why_shape": "以固定四字副歌开头的四个平级段落分别为6、12、24、48字，并依次含一人、一家、一村、一国，呈螺旋副歌的等比放大。",
+    "motif_id": "spiral",
+    "equation": "r=a\\,e^{b\\theta}",
+    "model": "gpt-5.5:stable",
+    "judge": {
+      "device_passed": true,
+      "device_checks": "核心短语“灶火又旺”恰4字，全文恰出现4次，且4次均以该短语开头并各自独占一段；四段汉字数（不计标点）分别为6、12、24、48，公比为2；四段长度互不相同；四段均为同一叙事层级的平级独立段落，不存在层层内嵌；范围词序列依次命中“一人 / 一家 / 一村 / 一国”。",
+      "blind_motif": "spiral",
+      "model": "gpt-5.2:stable",
+      "passed": true
+    },
+    "story_id": "spiral_s1"
+  },
+  {
+    "title": "河湾夜歌",
+    "domain": "河湾",
+    "story_zh": "青灯照路，一人。\n青灯照路，一家住在河湾边上。\n青灯照路，一村都爱听她夜里唱给孩子们催眠曲哄睡娃娃。\n青灯照路，一国都知道她的歌能把远路的脚步哄得轻又稳，连宫门前的鼓声也收了，连夜来的人也放下刀和灯笼就走。",
+    "story_en": "A lone traveler comes along the lamp-lit road. A family lives by the river bend and takes her in. In the village, everyone loves to hear her sing lullabies to the children at night. By the time her song reaches the whole land, even the palace drums go quiet, and late travelers set down their knives and lanterns and move on.",
+    "why_shape": "四段都以同一四字短语起笔，字数依次为6、12、24、48，并分别含一人、一家、一村、一国。",
+    "motif_id": "spiral",
+    "equation": "r=a\\,e^{b\\theta}",
+    "model": "gpt-5.5:stable",
+    "judge": {
+      "device_passed": true,
+      "device_checks": "核心短语“青灯照路”恰出现4次，且每次都位于段首并逐字相同；4个副歌段汉字数（不计标点）依次为6、12、24、48，公比为2；四段分别含“一人/一家/一村/一国”；四段长度两两不同，且均为平级独立段落，不存在层层内嵌。",
+      "blind_motif": "spiral",
+      "model": "gpt-5.2:stable",
+      "passed": true
+    },
+    "story_id": "spiral_s2"
+  },
+  {
+    "title": "万流归一",
+    "domain": "赶路送物",
+    "story_zh": "甲——阿榕住在鹿盐滩，清早捡到一只裂口的陶罐，罐里躺着三粒会发暖的谷子；他怕海风吹坏，就用旧棉袄裹好，沿着芦苇边往外走。\n乙——小满住在瓦灯巷，夜里听见屋檐下的铜铃自己轻响，铃肚里滚出一小撮红泥；她把红泥装进香囊，天一亮便背着竹篮出门。\n丙——石禾住在青笋坡，午后给羊割草时，看见泉眼旁浮着一片银白的鱼鳞，摸上去像月光；他把鱼鳞夹进草帽里，顺着石阶慢慢下坡。\n甲——鹿盐滩那天潮水怪急，阿榕的鞋被浪卷走一只，他光着一只脚也没停；到傍晚，陶罐不再发烫，只在怀里轻轻跳，像有小鸡啄壳。\n乙——瓦灯巷的雨落得细，小满怕香囊受潮，就把它藏在衣襟里；走到巷尾时，红泥忽然散出甜香，引来一群不咬人的蜜蜂替她照路。\n丙——青笋坡起了雾，石禾看不清脚下，便把草帽举高；那片鱼鳞亮了一亮，雾里现出一条窄窄的白路，他牵着羊影似的自己往前走。\n黄昏时，阿榕、小满、石禾都抱着各自护了一路的东西，走进雾钟渡那间亮着灶火的小屋。",
+    "story_en": "A Rong from the Salt-Deer Flats finds a cracked clay jar holding three warm grains and carries it away from the sea wind. Xiao Man from Tile-Lamp Lane hears a bell drop a pinch of red clay and sets out with it tucked safely in a sachet. Shi He from Green-Bamboo-Shoot Slope discovers a silver fish scale by a spring and follows its glow through the mist. Each travels without knowing of the others, guarding a small strange gift, until at dusk all three arrive together at a firelit little house in Fog-Bell Ferry.",
+    "why_shape": "前六段按甲乙丙甲乙丙分属三条互不交叉的线推进，第七段首次让三名人物在同一句汇入此前未出现的同一地点，并以该句收束。",
+    "motif_id": "convergence",
+    "equation": "\\forall v\\in V\\quad \\exists!\\; P:\\; v \\rightsquigarrow r",
+    "model": "gpt-5.5",
+    "judge": {
+      "device_passed": true,
+      "device_checks": "1) 全文恰7段，前6段均为带标签段，末段无标签；2) 前6段标签顺序为甲、乙、丙、甲、乙、丙，轮转正确；3) 甲线专名仅见“阿榕”“鹿盐滩”，乙线仅见“小满”“瓦灯巷”，丙线仅见“石禾”“青笋坡”，三线专名集合两两不交；4) 前6段内未见跨线人名/地名引用；5) 第7段同一句内首次共现阿榕、小满、石禾三人，且共处新地名“雾钟渡”；6) 第7段后无任何文字，汇合句即全文最后一句",
+      "blind_motif": "convergence",
+      "model": "gpt-5.2",
+      "passed": true
+    },
+    "story_id": "convergence_s0"
+  },
+  {
+    "title": "万流归一",
+    "domain": "海埠",
+    "story_zh": "甲——小满住在青盐湾，天刚亮就把木桶洗净，等潮水退下。\n乙——阿砚住在桂花巷，常把旧陶碗摆到门前，让晨风慢慢吹干。\n丙——梨儿住在苇灯坡，日日守着白鹅，在池边撒一把碎麦。\n甲——小满在青盐湾发现木桶老是漏水，便蹲在石阶上细细补着缝。\n乙——阿砚在桂花巷把陶碗敲了敲，听见里面还留着一点清亮的回声。\n丙——梨儿在苇灯坡给白鹅扎了新棚，夜里也能安稳睡到天明。\n在落灯埠的旧戏台前，小满、阿砚和梨儿把木桶、陶碗和鹅棚木料一齐摆开，风从江面吹来，三样家当轻轻碰在一起，像是被同一只看不见的手领着，安安稳稳停了下来。",
+    "story_en": "Xiaoman in Qingyan Bay kept mending a leaky bucket; Ayan in Osmanthus Alley polished old bowls by the door; Lier on Reed-Lantern Slope cared for a flock of white geese. Each followed a separate little path through ordinary days, and in the end they all came to Falling-Lantern Wharf, where the bucket, the bowls, and the goose-pen wood were set down together and everything became quiet.",
+    "why_shape": "前六段按甲乙丙轮转，且各段只使用本线的人名与地名；第七段让小满、阿砚、梨儿首次同句共现于新地名“落灯埠”，并以此句收束全文。",
+    "motif_id": "convergence",
+    "equation": "\\forall v\\in V\\quad \\exists!\\; P:\\; v \\rightsquigarrow r",
+    "model": "gpt-5.5:stable",
+    "judge": {
+      "device_passed": true,
+      "device_checks": "1. 全文共7段，段数符合；2. 前6段标签轮转为甲、乙、丙、甲、乙、丙，顺序正确；3. 前6段各自只出现本线人名与地名，三线专名集合两两不交，无交叉引用；4. 第7段无标签，小满、阿砚、梨儿在同一句中首次共现，并同处新地名“落灯埠”；5. 汇合句后无任何文字，且该句为全文最后一句。",
+      "blind_motif": "convergence",
+      "model": "gpt-5.2:stable",
+      "passed": true
+    },
+    "story_id": "convergence_s1"
+  },
+  {
+    "title": "万流归一",
+    "domain": "乡间手艺",
+    "story_zh": "甲——青槐坞的阿棠会染蓝布。那天雨歇，她把布从缸里提起，布面却浮出一粒金点，像萤火钻进了水色里；阿棠用指尖一碰，屋后的石阶便轻轻响了一声。\n乙——白瓷巷的柳婶会补破碗。午后她合上一只缺口小盏，盏底忽然暖起来，照出一条细细的灰印；柳婶拿灯一照，灰印就往门槛外挪了一寸。\n丙——石蜜坡的小满养了三箱蜂。清早蜂群不采花，只在空桶边嗡嗡绕圈，桶里慢慢滚出一滴琥珀色的蜜；小满尝了尝，甜里有一股没听过的笛声。\n甲——阿棠把蓝布搭在肩上，顺着石阶一阶一阶听过去。石阶尽头没有水，也没有井，只有一扇旧木门，门缝里透着暖光，蓝布上的金点便安安静静落在门前。\n乙——柳婶没有叫人，只把小盏揣在怀里，跟着灰印往前走。灰印绕过白瓷巷的墙根，到一处亮着灯的门口停住，小盏的裂纹全合拢了，还轻轻叮了一声。\n丙——小满端起空桶，蜂群便排成一根细线，在石蜜坡的草尖上低低飞。飞到一扇有甜香的门前，蜂群忽然落进桶里，那滴蜜把桶底照得像小太阳。\n阿棠、柳婶和小满在灯草厅同时推开门，看见蓝布、瓷盏和蜜桶围着一炉小火发亮。",
+    "story_en": "In three separate places, a dyer, a porcelain mender, and a beekeeper each notices a small wonder: a golden speck in blue cloth, a warm repaired cup with a moving ash-mark, and honey that carries a strange tune. Each follows the sign without knowing of the others. At the end, they all open the same door in a place none of them has named before, where their cloth, cup, and honey shine together around a little fire.",
+    "why_shape": "全文七段，前六段按甲乙丙甲乙丙轮转且三线专名互不交叉，第七段无标签并让三名人物首次同句共现于新地名“灯草厅”，且该句为全文终句。",
+    "motif_id": "convergence",
+    "equation": "\\forall v\\in V\\quad \\exists!\\; P:\\; v \\rightsquigarrow r",
+    "model": "gpt-5.5:stable",
+    "judge": {
+      "device_passed": true,
+      "device_checks": "1) 全文共7段，段数符合；2) 前6段标签顺序为甲、乙、丙、甲、乙、丙，轮转正确；3) 三线专名互不交叉：甲线仅见阿棠/青槐坞，乙线仅见柳婶/白瓷巷，丙线仅见小满/石蜜坡；4) 前6段未见跨线人名或地名引用；5) 第7段无标签，阿棠、柳婶、小满在同一句内首次共现，且共处新地名灯草厅；6) 第7段后无任何文字，汇合句即全文最后一句。",
+      "blind_motif": "convergence",
+      "model": "gpt-5.2:stable",
+      "passed": true
+    },
+    "story_id": "convergence_s2"
+  },
+  {
+    "title": "万流归一",
+    "domain": "小镇日常",
+    "story_zh": "甲——阿澈住在苔桥圩，天一亮就把风箱擦得发亮，等铁匠铺开门。\n乙——许梨住在麦香坡，晌午把热粥盛进白瓷碗，送到晒场边的长桌上。\n丙——唐舟住在雾井台，傍晚提着竹篮去看鹅群，顺手拾起一枚圆石。\n甲——阿澈在苔桥圩修好旧钟后，又把松动的木楔轻轻敲紧，直到屋里只剩呼吸声。\n乙——许梨在麦香坡把风干的豆荚一串串挂上梁，炉火一红，满屋都是甜气。\n丙——唐舟在雾井台把竹篮铺上干草，等鹅群安静下来，才把圆石放进窗台的小陶盏。\n天黑时，在青木埕的老井边，阿澈、许梨、唐舟都到了：阿澈提来修好的灯，许梨端来热粥，唐舟捧来一篮干草，三人围着井沿坐下，便再也没有别的去处了。",
+    "story_en": "A Che, Xu Li, and Tang Zhou each live their own quiet days in different corners of the town. In the end, they all arrive at an old well in Qingmu Place, bring what they have made, and sit together there for the last time.",
+    "why_shape": "前六段按甲乙丙轮转且三组专名彼此不交，第七段在新地点让阿澈、许梨、唐舟同句首次共现，且之后不再有文字。",
+    "motif_id": "convergence",
+    "equation": "\\forall v\\in V\\quad \\exists!\\; P:\\; v \\rightsquigarrow r",
+    "model": "gpt-5.5:stable",
+    "judge": {
+      "device_passed": true,
+      "device_checks": "1) 全文共7段，前6段标签顺序为甲/乙/丙/甲/乙/丙。2) 前6段仅使用各自线的人名与地名，三线专名集合两两不交，未见交叉引用。3) 第7段无标签，阿澈、许梨、唐舟在同一句中首次共现，并同处未在前文出现的青木埕/老井边。4) 汇合句后无任何后续文字。",
+      "blind_motif": "convergence",
+      "model": "gpt-5.2:stable",
+      "passed": true
+    },
+    "story_id": "convergence_s3"
+  },
+  {
+    "title": "咽喉之点",
+    "domain": "盐场河渡",
+    "story_zh": "【晒盐埕】秋末的盐像碎霜，铺满南岸。老陶赶着十二头骡子，驮袋上盖着蓝布，铃声一响，白鹭都抬了头。\n【卤井棚】井边的妇人给他盛了一瓢热卤水，说南岸小路多，沟边、埕边、棚边都能绕着走，只要不怕鞋底咸。\n【红虾市】商队在市口换了草绳，买了三篓红虾干。老陶听见河那头有买主等盐，便叫伙计把骡尾巴扎高些。\n【独木桥】守桥的哑叔指指河雾，又指脚下窄木，对老陶写在灰板上：要过河，只有走那座独木桥。骡子收了铃，一个跟一个过去，木板吱呀，水在脚下发黑。\n【棉籽仓】北岸的风带着棉壳味。仓里人借给老陶一盏小灯，说前面田埂连田埂，仓道接村道，夜里也不怕迷。\n【灯笼巷】巷里挂满红纸灯，孩子们追着骡队跑。老陶分了几粒盐花给他们，他们说像冬天落在舌尖上。\n【北码头】买主果然等着，船篷上结着露。老陶卸完盐，把红虾干煮进粥里，骡子低头吃草，铃声终于安静了。\n【海神庙】同一日清晨，小信使阿满从庙檐下取了油纸信，信上压着一枚鱼骨印。他把信塞进竹筒，贴胸藏好。\n【网绳坊】坊里的老人替他紧了草鞋，说南岸坊巷多，织网人家的后门通晒场，晒场旁的小埂又通河堤。\n【蚝壳街】阿满穿过白亮亮的蚝壳墙，买了两个糯米团。卖团的婶娘叮嘱他，信若湿了，县里的药船就要迟到。\n【独木桥】撑篙的老艄公把空船拴在芦苇边，摇头说水急船小，又朝桥上一努嘴：要过河，只有走那座独木桥。阿满抱紧竹筒，低着头跑过，连糯米香都忘了。\n【桑园埂】北岸桑叶已经发黄，埂上有脚印、有车辙，还有放鸭人的竹竿痕。阿满沿着亮泥路跑，听见远处有人喊收帆。\n【白鹭坞】坞里白鹭成群，像谁撒了一把软纸。阿满不敢停，只在井边舀水润喉，竹筒仍贴着胸口。\n【药香村】村口的药锅正冒气，郎中接过油纸信，脸色一松。傍晚，药船点灯下水，阿满得了一碗甜姜汤。\n【破船坞】那天夜里，逃犯小陆从废船肚里爬出来，衣袖被钉子划破。他不是恶人，只是替娘偷过一袋官米，怕被押去远海。\n【苇席场】苇席一卷卷靠墙晒着，风过时沙沙响。小陆贴着阴影走，南岸草路密，席棚后有沟，沟边有窄埂，能躲狗，也能躲灯。\n【铁匠湾】铁匠湾火星乱飞，打铁声盖住了他的脚步。老铁匠看见他胳膊流血，没问来处，只丢给他一块旧布。\n【独木桥】更夫的梆子刚过二声，河雾低得像白布。河边洗网的婆婆压低嗓子，对小陆说：要过河，只有走那座独木桥。他咬住旧布，轻轻踏上桥，没让木板叫得太响。\n【瓦盆坡】北岸坡上堆着新烧的瓦盆，暖气还没散。小陆躲在盆影里等天亮，听见远处鸡叫一声接一声。\n【杏花堰】堰边虽不是花时，杏树枝却伸得温和。一个放牛娃给他半张烙饼，指了指通往集镇的土路。\n【羊角店】店主人姓鲁，眉毛弯得像羊角。他收留小陆刷锅劈柴，后来人们只知道店里多了个手脚勤快的伙计。\n次年桥毁，两岸从此不通",
+    "story_en": "In the salt marsh country, three people crossed the same river on the same day without knowing one another: a salt caravan bound for the northern wharf, a boy messenger carrying an urgent medical letter, and a frightened fugitive looking for a place to begin again. Each traveled through lively lanes and workyards on the southern side, crossed the only narrow footbridge, and then continued through separate northern villages and roads. The caravan sold its salt, the messenger delivered the letter in time, and the fugitive found honest work at a roadside inn. The next year the bridge was destroyed, and the two banks no longer met.",
+    "why_shape": "三条u-v路径除“独木桥”外点集两两不交，且各自桥前桥后至少两点连通，唯一公共割点为独木桥，对应咽喉之点。",
+    "motif_id": "bottleneck",
+    "equation": "uv\\notin E:\\;\\; \\min_{\\substack{S\\subseteq V\\setminus\\{u,v\\}\\\\ S\\ \\text{separates}\\ u,v}}\\lvert S\\rvert \\;=\\; \\max\\#\\{\\text{internally disjoint } u\\text{–}v \\text{ paths}\\}",
+    "model": "gpt-5.5",
+    "judge": {
+      "device_passed": true,
+      "device_checks": "1) 三条线索分段明确，且每段段首都有地点标签；2) 除「独木桥」外，商队、信使、逃犯三线的地点集合两两不交；3) 每条线中「独木桥」各出现一次，且桥前、桥后都至少各有三个地点；4) 三个桥段都逐字出现同一句「要过河，只有走那座独木桥」，该句全文共三次；5) 结尾包含尾注「次年桥毁，两岸从此不通」并与规格一致。",
+      "blind_motif": "bottleneck",
+      "model": "gpt-5.2",
+      "passed": true
+    },
+    "story_id": "bottleneck_s0"
+  },
+  {
+    "title": "咽喉之点",
+    "domain": "河埠人家",
+    "story_zh": "青瓷埠：商队从青瓷埠起身，骡铃一路响过苇蓬湾，船老大回头看见河面发白，便说：要过河，只有走那座独木桥。过了河，纸鸢坡上有人放鹞子，灯芯巷里飘着新出锅的麻团香。\n竹篾镇：信使从竹篾镇出门，先走到露珠井边打湿鞋面，又把油纸信筒抱紧在怀里。要过河，只有走那座独木桥。过了河，月牙场上晒着青布，青瓦院里有人等着回信。\n荷叶滩：逃犯起先藏在荷叶滩的破篷下，乌桕林里有野鸡扑棱一声飞起，他便顺着林边的小道往前摸。要过河，只有走那座独木桥。过了河，砧石坡的磨刀声一下一下传来，麻绳井旁的老妇人却只当没看见。\n次年桥毁，两岸从此不通",
+    "story_en": "A caravan from one bank, a messenger from another, and a fugitive on the run all make their way toward the same bridge over the river. Each comes by a different path, crosses at the same crossing, and then continues on into a separate country of fields and lanes. In the following year the bridge is lost, and the two banks can no longer speak to each other.",
+    "why_shape": "三条线各自经过不同的前岸与后岸，却都必须经过同一个中途点；去掉这个点后，前岸仍自成一片、后岸也仍自成一片，但两岸彼此断开。",
+    "motif_id": "bottleneck",
+    "equation": "uv\\notin E:\\;\\; \\min_{\\substack{S\\subseteq V\\setminus\\{u,v\\}\\\\ S\\ \\text{separates}\\ u,v}}\\lvert S\\rvert \\;=\\; \\max\\#\\{\\text{internally disjoint } u\\text{–}v \\text{ paths}\\}",
+    "model": "gpt-5.5:stable",
+    "judge": {
+      "device_passed": true,
+      "device_checks": "1) 三段分别以“青瓷埠：”“竹篾镇：”“荷叶滩：”开头，对应商队/信使/逃犯三条互不相识线索；2) 每条线的地点序列中“独木桥”均恰好出现1次，且其前后各有2个地点；3) 三段中的关隘句均逐字为“要过河，只有走那座独木桥”，全文共出现3次；4) 除“独木桥”外，三线地点集合两两不交，桥前桥后也都形成连续的地点段；5) 末句为“次年桥毁，两岸从此不通”。",
+      "blind_motif": "bottleneck",
+      "model": "gpt-5.2:stable",
+      "passed": true
+    },
+    "story_id": "bottleneck_s1"
+  },
+  {
+    "title": "驿镇的独木桥",
+    "domain": "驿镇",
+    "story_zh": "商队\n绫布坊：天刚亮，阿满把两匹骡子的铃铛擦亮，车上压着新染的蓝布。\n豆饼巷：路旁的蒸汽还热，妇人们递来热豆饼，孩子们跟着车轮跑了一段。\n铜算盘场：老账房在门口替他们点过货，顺手把一串铜钱塞进车夫袖口。\n独木桥：要过河，只有走那座独木桥\n芦灰坡：过了桥，风里带着芦灰味，商队又把绳结勒紧，沿坡往前走。\n竹筛街：街边晾着筛子和竹箩，驼铃一响，铺子里的人都抬头看了一眼。\n青陶院：傍晚时分，他们把最后一车布料送进院里，院中的青釉缸闪着水光。\n\n信使\n纸鸢阁：阿杏从阁前的台阶下坡，怀里抱着盖红蜡的信匣。\n墨井巷：巷口墨香很重，写字先生替她认了门牌，又指她去找下一家。\n朱漆门：门房接过信时没多问，只抬手给她指了河边。\n独木桥：要过河，只有走那座独木桥\n药柜街：过桥后，她沿着一排药柜走，听见铜勺在药碾里轻轻作响。\n风灯棚：棚下挂着一盏盏风灯，她借着光认清脚边的石子路。\n白鹭台：等她把回信送到白鹭台，暮色正落在台边的白羽旗上。\n\n逃犯\n黑瓦栈：夜里，阿九缩在栈后，不敢碰门板上那只铜环。\n苔井边：他绕到井边洗了把脸，苔痕滑得像蛇背。\n旧绳坊：绳坊里只剩一盏油灯，老匠人认得他脚上的泥，却只当没看见。\n独木桥：要过河，只有走那座独木桥\n石臼坡：过了桥，他踩着石臼坡往上爬，石缝里长着细草。\n晒盐场：晒盐场的白地亮得刺眼，他把帽檐压低，混进来往的人影里。\n野菱院：最后他躲进野菱院，借着棚架下的阴影，安安稳稳睡了一觉。\n\n次年桥毁，两岸从此不通",
+    "story_en": "A caravan, a messenger, and a fugitive each follows a different run of places in the same riverside town. Each of them must cross the old wooden bridge before going on, and on the far side their own errands continue. In the end, when the bridge falls, the two banks can no longer reach each other.",
+    "why_shape": "三条线索都各自经过同一处“独木桥”，且桥前桥后各有独立地点相连；去掉这一个点后，两岸仍各自成片，但彼此断开。",
+    "motif_id": "bottleneck",
+    "equation": "uv\\notin E:\\;\\; \\min_{\\substack{S\\subseteq V\\setminus\\{u,v\\}\\\\ S\\ \\text{separates}\\ u,v}}\\lvert S\\rvert \\;=\\; \\max\\#\\{\\text{internally disjoint } u\\text{–}v \\text{ paths}\\}",
+    "model": "gpt-5.5:stable",
+    "judge": {
+      "device_passed": true,
+      "device_checks": "段首均为地点名；三条线索各7个地点，独木桥均恰出现1次且位于中段，前后各3个地点；除独木桥外三线地点两两不交；桥段关隘句“要过河，只有走那座独木桥”逐字一致且全文仅出现3次；尾注“次年桥毁，两岸从此不通”完全一致",
+      "blind_motif": "bottleneck",
+      "model": "gpt-5.2:stable",
+      "passed": true
+    },
+    "story_id": "bottleneck_s2"
+  },
+  {
+    "title": "咽喉之点",
+    "domain": "竹器市集",
+    "story_zh": "竹篓场：商队从竹篓场起身，先过桂香坡，又到青瓷铺歇脚。老把式望着河心说：要过河，只有走那座独木桥。过了桥，骡铃又响去松果坞和灯草湾，最后停在一间有麦香的小屋里。\n\n墨砚坊：信使把信封贴在怀里，先穿过鱼灯街，又绕到芦叶阁。走到那里，他只轻轻一句：要过河，只有走那座独木桥。过桥后，他去了枣花台，又赶到白鹭埠，把信交给守夜的阿婆。\n\n旧井口：逃犯不敢点灯，贴着旧井口的墙，悄悄摸过药香院，又钻进乌桐棚。走到那里，他也只能低声重复：要过河，只有走那座独木桥。过了桥，他躲到冷茶园，又藏进苇尾村，直到狗吠声渐远，才敢坐下喘气。\n\n次年桥毁，两岸从此不通",
+    "story_en": "A caravan started from Bamboo-Basket Yard, passed Cinnamon Slope and the Porcelain Shop, crossed the same single-plank bridge, and then went on to Pine-Nut Hollow and Lantern-Grass Bay. A messenger carried a letter from Ink-Mortar Workshop through Fish-Lantern Street and Reed Pavilion, crossed the same bridge, and delivered it at Date-Blossom Terrace and White-Egret Wharf. A fugitive slipped away from the Old Well Corner past Herb-Fragrance Courtyard and Black-Paulownia Shed, crossed the same bridge, and hid on to Cold-Tea Garden and Reed-Tail Village. The next year the bridge collapsed, and the two banks could no longer reach each other.",
+    "why_shape": "三条线索各自从不同地点出发，都会在中途说出同一句过桥的话，过了桥以后还各走两站，末尾再补上桥毁断路的一句。",
+    "motif_id": "bottleneck",
+    "equation": "uv\\notin E:\\;\\; \\min_{\\substack{S\\subseteq V\\setminus\\{u,v\\}\\\\ S\\ \\text{separates}\\ u,v}}\\lvert S\\rvert \\;=\\; \\max\\#\\{\\text{internally disjoint } u\\text{–}v \\text{ paths}\\}",
+    "model": "gpt-5.5:stable",
+    "judge": {
+      "device_passed": true,
+      "device_checks": "1) 三条线索已按商队/信使/逃犯分段书写，且每段首均以地点名开头；2) 每线地点序列中“独木桥”均只出现1次，且桥前、桥后都至少有2个地点；3) 三段中关隘句均逐字出现“要过河，只有走那座独木桥”，且全文共出现3次；4) 结尾尾注与规格一致：“次年桥毁，两岸从此不通”；5) 除“独木桥”外，三线地点集合两两不交，且桥前、桥后均呈连续成块。",
+      "blind_motif": "bottleneck",
+      "model": "gpt-5.2:stable",
+      "passed": true
+    },
+    "story_id": "bottleneck_s3"
+  },
+  {
+    "title": "朝西的灯",
+    "domain": "纸灯",
+    "story_zh": "青瓦村风来得早。\n阿梨风里守纸灯。\n风吹灯上小鱼游。\n夜夜风过深街巷。\n纸鱼风中都朝东。\n老猫风下不出声。\n独有一盏灯忽朝西。\n阿梨风里追过去。\n井边风摇白槐花。\n灯下风藏小白狐。\n狐把风铃还给她。\n村里风声从此柔。",
+    "story_en": "In Blue-Tile Village, the wind always came early. A girl named Ali kept watch over the paper lanterns, whose painted fish all faced east whenever the wind passed through the lanes. One night, a single lantern suddenly turned west. Ali followed it to the well beneath the white locust blossoms and found a little white fox hiding under its light. The fox returned her wind bell, and from then on the village wind sounded gentle.",
+    "why_shape": "全文恰12句；除第7句外，其余11句均为7个汉字且含“风”，第7句为8个汉字且不含“风”，形成唯一可精确定位的违例。",
+    "motif_id": "symmetry_breaking",
+    "equation": "\\sum_{p\\,:\\,X(p)=0} \\operatorname{ind}_p(X)=\\chi(M)",
+    "model": "gpt-5.5",
+    "judge": {
+      "device_passed": true,
+      "device_checks": "共12句；第1-6、8-12句均为7个汉字且都含“风”；第7句为8个汉字且不含“风”；未发现第二处违例。",
+      "blind_motif": "symmetry_breaking",
+      "model": "gpt-5.2",
+      "passed": true
+    },
+    "story_id": "symmetry_breaking_s0"
+  },
+  {
+    "title": "芦港铃声",
+    "domain": "港口",
+    "story_zh": "清晨风吹过芦港。\n阿梨随风去赶集。\n她给风铃擦去灰。\n老周在风里修船。\n巷口风中飘米香。\n孩子们追风笑闹。\n阿梨把铜铃塞进井。\n井口忽然有风了。\n铜铃在风里轻响。\n老周笑说风又来。\n阿梨捡回风铃绳。\n芦港又被风照亮。",
+    "story_en": "At Reed Harbor, A Li goes to market with the morning breeze, wipes dust from a little bell, and watches Old Zhou mend his boat. She drops the copper bell into the well, the air stirs again, and the bell rings softly while the harbor brightens.",
+    "why_shape": "全篇十二句，第七句恰八字且唯一不含“风”，其余十一句都七字并各带一个“风”，转折落在井边。",
+    "motif_id": "symmetry_breaking",
+    "equation": "\\sum_{p\\,:\\,X(p)=0} \\operatorname{ind}_p(X)=\\chi(M)",
+    "model": "gpt-5.5:stable",
+    "judge": {
+      "device_passed": true,
+      "device_checks": "共12句；第1-6句、第8-12句均为7个汉字且都含“风”；第7句为8个汉字且不含“风”；未发现第二处违例。",
+      "blind_motif": "cycle",
+      "model": "gpt-5.2:stable",
+      "passed": false
+    },
+    "story_id": "symmetry_breaking_s1"
+  },
+  {
+    "title": "村里一阵风",
+    "domain": "乡村",
+    "story_zh": "清晨风催小禾走。\n院里风摇铃响了。\n阿禾抱风筝追云。\n老槐风下有鸟窝。\n阿婆迎风递糯饼。\n河湾风吹歪草帽。\n黑鹅忽然落到泉边。\n泉边风送鹅回窝。\n孩子风里跟着笑。\n阿禾迎风吹哨声。\n满村风来麦香浓。\n夜里风送歌声远。",
+    "story_en": "At dawn, the wind sends Xiaohe out, and a little breeze rings the yard bell. Xiaohe chases a kite through the fields, old locust branches shelter a bird's nest, and Grandma offers sesame cakes in the wind. By the bend in the river, a black goose lands by the spring, the children help guide it home, and the village ends the day with smiles, a whistle, and the scent of ripe grain in the air.",
+    "why_shape": "前十一句各七字且都含“风”，唯第七句八字且不含“风”，因此读者逐句一数就能定位唯一违例。",
+    "motif_id": "symmetry_breaking",
+    "equation": "\\sum_{p\\,:\\,X(p)=0} \\operatorname{ind}_p(X)=\\chi(M)",
+    "model": "gpt-5.5:stable",
+    "judge": {
+      "device_passed": true,
+      "device_checks": "共12句；第1至6、8至12句均为7个汉字且都含“风”；第7句为8个汉字且不含“风”；未发现其他违例。",
+      "blind_motif": "symmetry_breaking",
+      "model": "gpt-5.2:stable",
+      "passed": true
+    },
+    "story_id": "symmetry_breaking_s2"
+  },
+  {
+    "title": "怪圈",
+    "domain": "潮汐灯塔",
+    "story_zh": "A 正在讲 B 的故事\nA是海角雾钟房的看守，兼给赶潮人点灯的人。入秋后，海雾来得早，他把铜钟擦亮，又在窗台摆一碟晒干的海菜。孩子们围着炉灰坐好，A便讲道：\n「B住在青鳞湾的船坞边，手巧得很，会用旧帆布缝雨帽，也会给受伤的海鸥裹翅膀。那年小潮最瘦，渔船搁在泥上，B背着针线篮去修一只会漏星光的纸灯。灯里蹲着一只白蟹，白蟹用钳子敲了三下，B听懂了，便在船底阴凉处给学徒们讲道：\n『C是盐花棚里的女匠，天没亮就踩着木屐去收霜一样的盐。她有一只蓝陶罐，罐里养着不怕咸水的小萤火。冬至前夜，海风把棚门吹开，萤火飞进她的袖口，照见一枚黑珍珠。C把珍珠放在掌心，对守夜的小孩们讲道：\n“有个主角姓名叫 A，身份是海角雾钟房的看守，兼给赶潮人点灯的人。入秋后，他常把铜钟擦亮，在窗台摆一碟晒干的海菜；海雾厚时，他点起黄灯，让迷路的木船看见岸，也让怕黑的孩子安心。那天夜里，远处有人提起B，炉灰轻轻一红，潮声也低下来。\nA 正在讲 B 的故事\n”\n』\n」",
+    "story_en": "A, the keeper of the fog-bell house by the cape, tells the children about B, a clever mender by the boatyard. In B’s tale, B tells apprentices about C, a salt-shed craftswoman with a jar of tiny lights. In C’s tale, she speaks of a protagonist named A, with the same work and place as the first storyteller, and her final line says that A is telling B’s story.",
+    "why_shape": "正文用三个“讲道：”形成 A→B→C 三层叙述，C 的故事主角明示为与外层叙述者同名同身份的 A，且最内层末句与首句逐字相同，构成叙述回边。",
+    "motif_id": "strange_loop",
+    "equation": "\\ell(v)=\\ell(u)+1\\quad\\forall\\,(u,v)\\in E\\setminus\\{e^{*}\\},\\qquad e^{*}=(v_{k},v_{0}),\\;\\ell(v_{k})=k,\\;\\ell(v_{0})=0",
+    "model": "gpt-5.5",
+    "judge": {
+      "device_passed": true,
+      "device_checks": "1. 叙述层数=3：外层A“讲道：”→中层B“讲道：”→内层C“讲道：”，层级清楚且恰为3层；2. 最内层主角姓名与身份都明确等同于A：\"有个主角姓名叫 A，身份是海角雾钟房的看守，兼给赶潮人点灯的人\"；3. 全文首句与最内层末句逐字相同：均为\"A 正在讲 B 的故事\"；4. 叙述回边闭合：A讲B，B讲C，C再指回A，符合三层回边要求。",
+      "blind_motif": "strange_loop",
+      "model": "gpt-5.2",
+      "passed": true
+    },
+    "story_id": "strange_loop_s0"
+  },
+  {
+    "title": "怪圈",
+    "domain": "纸鸢铺",
+    "story_zh": "A 正在讲 B 的故事\nA 讲道：镇上青槐集有个 B，住在纸鸢铺后院，手指头总沾着浆糊。那天傍晚，风把屋檐下的铃铛吹得叮当响，B 便提着一盏小油灯去找 C。\nB 讲道：C 是河湾边卖麦芽糖的老头，笑起来像春天开花。他听见我问起纸鸢铺，就问我：你认得那个叫 A 的孩子吗？他说那孩子常来铺里，抱着旧竹篾，眼睛亮得像要把月光装进去。\nC 讲道：那孩子名叫 A，是纸鸢铺老板娘的亲外甥，个子不高，却最会听风。夜里他替人收线、递糨糊，还会把落在墙角的小麻雀轻轻赶出去。那晚我把一卷新线交给 A，A 接过去，转身又递给了 B，像是把一阵暖风也一并递了过去。A 正在讲 B 的故事",
+    "story_en": "A begins by telling B's tale. In the paper-kite shop by Qinghuai Market, B is the careful one who keeps glue on his fingers and lantern light at his side. B then speaks of C, an old candy seller by the river bend, who asks about a child named A. C finally brings the tale back to A: a small nephew of the shopkeeper who knows how to listen to the wind, mend the string, and send a new spool back into B's hands before night falls.",
+    "why_shape": "首句点明 A 讲 B，正文再由 B 讲 C、C 讲到名叫 A 的孩子，末句又逐字回到首句，完成三层回扣。",
+    "motif_id": "strange_loop",
+    "equation": "\\ell(v)=\\ell(u)+1\\quad\\forall\\,(u,v)\\in E\\setminus\\{e^{*}\\},\\qquad e^{*}=(v_{k},v_{0}),\\;\\ell(v_{k})=k,\\;\\ell(v_{0})=0",
+    "model": "gpt-5.5:stable",
+    "judge": {
+      "device_passed": true,
+      "device_checks": "1) 首句逐字为“A 正在讲 B 的故事”；2) 叙述标记为 A 讲道 / B 讲道 / C 讲道，恰 3 层；3) 最内层主角名“A”与第 1 层叙述者 A 一致，且身份为“纸鸢铺老板娘的亲外甥”；4) 末句逐字复述首句。",
+      "blind_motif": "strange_loop",
+      "model": "gpt-5.2:stable",
+      "passed": true
+    },
+    "story_id": "strange_loop_s1"
+  },
+  {
+    "title": "怪圈",
+    "domain": "茶棚",
+    "story_zh": "A 正在讲 B 的故事\nA 讲道：在青石桥后的茶棚里，B 讲道：那年他追着一只白耳兔跑到柳树下，C 讲道：阿青就是A，她把刚蒸好的米糕分给了桥边的孩子们。A 正在讲 B 的故事",
+    "story_en": "By the teahouse behind the stone bridge, A tells of B; B tells of C; and C says A is the girl with the steamed rice cakes, ending by speaking the opening line again.",
+    "why_shape": "三次「讲道：」把 A、B、C 依次抬高，最里头又原样说回开场句，于是回到起点的那一跳把整个讲述闭合。",
+    "motif_id": "strange_loop",
+    "equation": "\\ell(v)=\\ell(u)+1\\quad\\forall\\,(u,v)\\in E\\setminus\\{e^{*}\\},\\qquad e^{*}=(v_{k},v_{0}),\\;\\ell(v_{k})=k,\\;\\ell(v_{0})=0",
+    "model": "gpt-5.5:stable",
+    "judge": {
+      "device_passed": true,
+      "device_checks": "1) 首句逐字为「A 正在讲 B 的故事」：通过；2) 叙述层标记数为 3 个（A 讲道 / B 讲道 / C 讲道），层级可上行闭合：通过；3) 最内层主角明示为「阿青就是A」，与第 1 层叙述者 A 等同：通过；4) 全文首句与最内层末句逐字相同：通过。",
+      "blind_motif": "strange_loop",
+      "model": "gpt-5.2:stable",
+      "passed": true
+    },
+    "story_id": "strange_loop_s2"
+  },
+  {
+    "title": "青壳海螺",
+    "domain": "潮间石槽",
+    "story_zh": "甲在海风吹白的晒网场等乙。\n甲向乙举起一只青壳海螺。\n甲替乙抖落螺口里的细沙。\n甲领着乙走到潮水刚退的石槽边。\n甲给乙看见槽底一枚发亮的银鳞。\n甲为乙把银鳞夹进芦叶小包。\n甲在乙身旁听见远处灯塔响了三声。\n甲把芦叶小包递给乙，笑着回了海草屋。\n\n乙在海风吹白的晒网场等甲。\n乙向甲举起一只青壳海螺。\n乙替甲抖落螺口里的细沙。\n乙领着甲走到潮水刚退的石槽边。\n乙给甲看见槽底一枚发亮的银鳞。\n乙为甲把银鳞夹进芦叶小包。\n乙在甲身旁听见远处灯塔响了三声。\n乙把芦叶小包递给甲，笑着回了海草屋。",
+    "story_en": "On a wind-whitened net-drying ground by the sea, Jia waits for Yi, raises a blue-shelled conch, shakes sand from its mouth, leads Yi to a tide-drained stone pool, shows a shining silver scale, tucks it into a reed-leaf packet, hears the lighthouse ring three times, and hands the packet over before returning to the seaweed hut. Then the same events are told again with Yi in the foreground and Jia in the background.",
+    "why_shape": "上下两半句数相等、事件顺序不变、谓词逐句一致，仅将主语槽中的甲/乙与宾语或状语槽中的乙/甲互换，实现图底互换。",
+    "motif_id": "figure_ground",
+    "equation": "\\exists A\\;\\bigl(A\\in\\Sigma_1^0\\ \\wedge\\ \\overline{A}\\notin\\Sigma_1^0\\bigr)",
+    "model": "gpt-5.5",
+    "judge": {
+      "device_passed": true,
+      "device_checks": "1. 两半各8句，句数相等；逐句谓词一致，事件序列未逆转。2. 上半8句主语均为“甲”，且“乙”仅出现在宾语/状语位置；下半恰好互补，主语均为“乙”，且“甲”仅在宾语/状语位置。3. 全文只出现甲、乙两名角色；两半使用同一组词汇与同一事件，只做图底角色对调，且对调只发生在半篇分界处一次。",
+      "blind_motif": "figure_ground",
+      "model": "gpt-5.2",
+      "passed": true
+    },
+    "story_id": "figure_ground_s0"
+  },
+  {
+    "title": "廊下灯火",
+    "domain": "灯下",
+    "story_zh": "甲把新扎的纸灯挂到廊下，给乙留一盏。\n甲在门槛边剥青豆，替乙装满小碗。\n甲背起小竹箱，陪乙去河埠头换一截船绳。\n甲把热水倒进粗碗，和乙分着喝。\n\n乙把新扎的纸灯挂到廊下，给甲留一盏。\n乙在门槛边剥青豆，替甲装满小碗。\n乙背起小竹箱，陪甲去河埠头换一截船绳。\n乙把热水倒进粗碗，和甲分着喝。",
+    "story_en": "By the riverside arcade, Jia hangs a fresh paper lantern for Yi, shells peas into a small bowl, carries a little bamboo box to the dock to trade for a length of rope, and shares a bowl of hot water. Then Yi tells the same evening in the same order, with Jia taking the place Yi once had.",
+    "why_shape": "上半四句均以甲为主语、乙只作宾语/状语；下半四句按同一事件顺序复现相同谓词，只把主语位换成乙并让甲退入宾语/状语位，因此两半互补、顺序不逆转，也不是逐句轮流对调。",
+    "motif_id": "figure_ground",
+    "equation": "\\exists A\\;\\bigl(A\\in\\Sigma_1^0\\ \\wedge\\ \\overline{A}\\notin\\Sigma_1^0\\bigr)",
+    "model": "gpt-5.5:stable",
+    "judge": {
+      "device_passed": true,
+      "device_checks": "1. 句数相等：上半4句、下半4句；逐句对应关系成立。2. 逐句谓词一致：两半每句的谓词/事件表达完全对应，仅主语槽与宾语/状语槽对调。3. 主语限制成立：上半4句主语均为甲，乙未作主语；下半4句主语均为乙，甲未作主语。4. 事件顺序未逆转：下半保持与上半相同的顺序，非回文、非交替。5. 角色与词汇限制成立：全篇仅出现甲、乙两名角色，未引入第三角色。",
+      "blind_motif": "figure_ground",
+      "model": "gpt-5.2:stable",
+      "passed": true
+    },
+    "story_id": "figure_ground_s1"
+  },
+  {
+    "title": "青布棚下",
+    "domain": "早市",
+    "story_zh": "甲在青布棚下捡起一只红纸蝴蝶，递给乙。\n甲把刚烤热的糯米团放进乙的蓝布袋。\n甲领着乙沿着石桥边的小路，走到糖梨摊前。\n甲把两张画着小鱼的纸票塞进乙的衣袋里。\n乙在青布棚下捡起一只红纸蝴蝶，递给甲。\n乙把刚烤热的糯米团放进甲的蓝布袋。\n乙领着甲沿着石桥边的小路，走到糖梨摊前。\n乙把两张画着小鱼的纸票塞进甲的衣袋里。",
+    "story_en": "At the morning market under a blue awning, Jia finds a red paper butterfly and passes it to Yi. Jia puts a hot rice cake into Yi's blue cloth bag, leads Yi along the path by the stone bridge to the pear-sweet stall, and slips two fish-marked tickets into Yi's pocket. Then Yi does the very same things for Jia, in the same order, with the roles turned around.",
+    "why_shape": "前四句以甲为主语按同一事件链推进，后四句逐句沿用相同谓词与相同顺序，只把主语换成乙并让甲退到宾语或状语位置。",
+    "motif_id": "figure_ground",
+    "equation": "\\exists A\\;\\bigl(A\\in\\Sigma_1^0\\ \\wedge\\ \\overline{A}\\notin\\Sigma_1^0\\bigr)",
+    "model": "gpt-5.5:stable",
+    "judge": {
+      "device_passed": true,
+      "device_checks": [
+        "全篇仅有甲、乙两名角色，未引入第三角色。",
+        "上半4句主语均为甲，乙仅出现在宾语/状语位置，未作主语。",
+        "下半4句与上半逐句对应，谓词与事件顺序完全一致；主语槽统一换成乙，甲退入宾语/状语位置。",
+        "事件顺序未逆转，也不是逐句交替对调。"
+      ],
+      "blind_motif": "figure_ground",
+      "model": "gpt-5.2:stable",
+      "passed": true
+    },
+    "story_id": "figure_ground_s2"
+  },
+  {
+    "title": "河埠银铃",
+    "domain": "河埠",
+    "story_zh": "甲在青石桥头把一串银铃交给乙。\n甲在河埂边把银铃挂上白杨枝。\n甲在船棚前替乙拍去雨点。\n甲在芦苇湾把热米糕分给乙。\n甲在渡船边把纸灯送给乙。\n\n乙在青石桥头把一串银铃交给甲。\n乙在河埂边把银铃挂上白杨枝。\n乙在船棚前替甲拍去雨点。\n乙在芦苇湾把热米糕分给甲。\n乙在渡船边把纸灯送给甲。",
+    "story_en": "By the blue-stone bridge, Jia handed a string of silver bells to Yi. Along the riverbank, Jia hung the bells on a white poplar branch. Under the boat shed, Jia brushed rain from Yi's shoulders. In the reed bend, Jia shared hot rice cakes with Yi. By the ferry landing, Jia brought a paper lantern to Yi. Then the same five moments returned with Yi at the center: Yi gave the bells to Jia, hung them on the branch, brushed off the rain, shared the rice cakes, and carried the lantern to Jia at the ferry.",
+    "why_shape": "上半五句都以甲作主语、乙只落在宾语或状语位；下半逐句保留同一事件顺序与同一谓词，只把主语换成乙、把甲退到非主语位，从而实现图底互换。",
+    "motif_id": "figure_ground",
+    "equation": "\\exists A\\;\\bigl(A\\in\\Sigma_1^0\\ \\wedge\\ \\overline{A}\\notin\\Sigma_1^0\\bigr)",
+    "model": "gpt-5.5:stable",
+    "judge": {
+      "device_passed": true,
+      "device_checks": "1) 全篇共10句，分上下两半各5句，句数相等；2) 下半5句与上半对应句谓词一致，事件顺序未逆转；3) 上半5句主语均为“甲”，无“乙”作主语；下半5句主语均为“乙”，无“甲”作主语；4) 全文仅出现“甲”“乙”两名角色，未见第三角色；5) 不是回文、不是逐句交替，且上下半使用同一词汇与同一事件，仅做图底对调。",
+      "blind_motif": "figure_ground",
+      "model": "gpt-5.2:stable",
+      "passed": true
+    },
+    "story_id": "figure_ground_s3"
+  },
+  {
+    "title": "同构",
+    "domain": "盐埕与山林",
+    "story_zh": "替换表：阿柳↔灰耳；盐埕↔松窝；青瓦↔乌羽；醒来↔睁眼；白日↔黑夜；潮声↔松涛；推↔催；小车↔影群；他↔它；上堤↔入林；铜铃↔骨哨；车把↔肩骨；响↔鸣；三声↔三下；老船娘↔独眼鸮；递给↔衔给；一碗↔一捧；热粥↔冷泉；说↔叫；暖手↔润喉；做活↔赶路；斧↔爪；敲开↔刨开；盐砖↔朽木；贝壳↔松果；排成↔铺成；小路↔窄径；黄狗↔夜狐；跟来↔随行；咬住↔叼住；破绳↔枯藤；帮↔替；拉过↔越过；湿桥↔暗沟；傍晚↔黎明；带着↔领着；满车↔整群；盐花↔萤点；回家↔归洞；风里↔雾里\n上卷\n1 阿柳 在 盐埕 的 青瓦 下 醒来 ， 白日 把 潮声 推 进 小车 。\n2 他 推 着 小车 上堤 ， 铜铃 在 车把 上 响 了 三声 。\n3 老船娘 递给 他 一碗 热粥 ， 说 先 暖手 再 做活 。\n4 阿柳 用 斧 敲开 盐砖 ， 又 把 贝壳 排成 小路 。\n5 黄狗 跟来 ， 咬住 破绳 ， 帮 他 拉过 湿桥 。\n6 傍晚 ， 阿柳 带着 满车 盐花 回家 ， 铜铃 还 在 风里 响 。\n下卷\n1 灰耳 在 松窝 的 乌羽 下 睁眼 ， 黑夜 把 松涛 催 进 影群 。\n2 它 催 着 影群 入林 ， 骨哨 在 肩骨 上 鸣 了 三下 。\n3 独眼鸮 衔给 它 一捧 冷泉 ， 叫 先 润喉 再 赶路 。\n4 灰耳 用 爪 刨开 朽木 ， 又 把 松果 铺成 窄径 。\n5 夜狐 随行 ， 叼住 枯藤 ， 替 它 越过 暗沟 。\n6 黎明 ， 灰耳 领着 整群 萤点 归洞 ， 骨哨 还 在 雾里 鸣 。",
+    "story_en": "A boy named Aliu wakes beneath the blue tiles of the salt flats. By day he pushes his cart up the bank, receives warm porridge from an old boatwoman, breaks salt bricks with his axe, lays shells into a path, and with a yellow dog's help crosses a wet bridge before returning home at dusk with a cart full of salt blossoms. In the paired night tale, Gray-Ear wakes beneath dark feathers in a pine den, follows the forest call, receives cold spring water from a one-eyed owl, opens rotten wood with its claws, lays pinecones into a narrow trail, and with a night fox crosses a dark ditch before returning at dawn with a host of firefly sparks.",
+    "why_shape": "上、下两卷各六句，下卷第 k 句由上卷第 k 句按篇首双射词表逐词替换而成，词序和未列功能词保持不变。",
+    "motif_id": "isomorphism",
+    "equation": "\\varphi(a\\cdot b)=\\varphi(a)\\circ\\varphi(b),\\qquad \\varphi\\colon G\\to H\\ \\text{双射}",
+    "model": "gpt-5.5",
+    "judge": {
+      "device_passed": true,
+      "device_checks": "篇首含替换表；替换表左右项未见重复，满足双射要求；上卷 6 句、下卷 6 句；逐句核对 k=1..6，所有内容词均按表替换，功能词与标点原样保留；上下两半句序对应、未倒序。",
+      "blind_motif": "isomorphism",
+      "model": "gpt-5.2",
+      "passed": true
+    },
+    "story_id": "isomorphism_s0"
+  },
+  {
+    "title": "同构",
+    "domain": "豆腐坊与染布坊",
+    "story_zh": "替换表：阿豆↔阿青、清晨↔黄昏、走进↔转入、豆腐坊↔染布坊、摸了↔敲了、摸↔敲、石磨↔蓝缸、白布↔青布、铺↔搭、木架↔竹竿、黄豆↔靛叶、倒进↔放入、桂婶↔罗伯、提来↔端来、木桶↔瓦盆、井水↔溪水、慢慢↔缓缓、加↔添、心急↔手重、苦↔淡、小猫↔小狗、蹲↔卧、门槛↔窗帘、看↔望、豆浆↔染水、淌↔滴、下来↔落下、舀起↔捧起、送给↔递给、过路↔赶集、木匠↔裁缝、留下↔搁下、铜钉↔银针、傍晚↔深夜、钉↔别、盖↔罩、豆腐↔彩衣、听见↔听着、打呼↔打鼾\n上半：\n阿豆 在 清晨 走进 豆腐坊 ， 先 摸了 摸 石磨 。\n她 把 白布 铺 在 木架 上 ， 又 把 黄豆 倒进 石磨 。\n桂婶 提来 木桶 ， 说 井水 要 慢慢 加 ， 心急 就 会 苦 。\n小猫 蹲 在 门槛 边 ， 看 豆浆 从 白布 里 淌 下来 。\n阿豆 舀起 一碗 豆浆 ， 送给 过路 的 木匠 ， 木匠 留下 一枚 铜钉 。\n到 傍晚 ， 铜钉 钉 在 门槛 上 ， 白布 盖 着 豆腐 ， 阿豆 听见 小猫 打呼 。\n下半：\n阿青 在 黄昏 转入 染布坊 ， 先 敲了 敲 蓝缸 。\n她 把 青布 搭 在 竹竿 上 ， 又 把 靛叶 放入 蓝缸 。\n罗伯 端来 瓦盆 ， 说 溪水 要 缓缓 添 ， 手重 就 会 淡 。\n小狗 卧 在 窗帘 边 ， 望 染水 从 青布 里 滴 落下 。\n阿青 捧起 一碗 染水 ， 递给 赶集 的 裁缝 ， 裁缝 搁下 一枚 银针 。\n到 深夜 ， 银针 别 在 窗帘 上 ， 青布 罩 着 彩衣 ， 阿青 听着 小狗 打鼾 。",
+    "story_en": "At dawn, A-Dou enters a tofu shop, tends the mill, spreads white cloth, and learns from Aunt Gui that well water must be added slowly. A cat watches soy milk drip down, a passing carpenter receives a bowl of it and leaves a copper nail, and by evening the nail is fixed to the threshold while the tofu rests under cloth and the cat snores. In the paired tale, at dusk, A-Qing enters a dye shop, tends the blue vat, spreads blue cloth, and learns from Uncle Luo that stream water must be added gently. A dog watches dye water drip down, a passing tailor receives a bowl of it and leaves a silver needle, and by night the needle is pinned to the curtain while bright clothes rest under cloth and the dog snores.",
+    "why_shape": "正文上、下两半各六句；下半第 k 句由上半第 k 句按篇首双射词表同序逐词替换而成，表外功能词保持不变。",
+    "motif_id": "isomorphism",
+    "equation": "\\varphi(a\\cdot b)=\\varphi(a)\\circ\\varphi(b),\\qquad \\varphi\\colon G\\to H\\ \\text{双射}",
+    "model": "gpt-5.5:stable",
+    "judge": {
+      "device_passed": true,
+      "device_checks": "篇首有替换表且为双射；上半6句、下半6句；逐句核对1-6句，低半均由高半按表逐词替换得到；功能词与标点均保持原样；未发现一词多译或两词同译。",
+      "blind_motif": "isomorphism",
+      "model": "gpt-5.2:stable",
+      "passed": true
+    },
+    "story_id": "isomorphism_s1"
+  },
+  {
+    "title": "桥头铃",
+    "domain": "桥边",
+    "story_zh": "替换表：清早↔黄昏，阿岚↔阿雾，背着↔提着，竹篓↔灯篮，去↔往，青桥边↔黑桥边，拾↔捡，荷叶↔灯花，路上↔河边，遇见↔碰见，住在↔藏在，纸巷口↔布巷口，瓷匠↔木匠，老陶↔老柳，圆钮↔铜铃，交给↔递给，叫↔请，送到↔送往，望塔↔雾台，门前↔扉前，赶到↔赶至，看见↔望见，画着↔刻着，绿鹭↔白鹿，挂在↔系在，门环↔扉环，门↔木扉，轻轻↔缓缓，开了↔敞了，里面↔楼里，传来↔飘来，笑声↔歌声，原来↔才知，走丢↔迷路，小猫↔小鹿，等着↔盼着，回家↔回巢\n\n清早 ， 阿岚 背着 竹篓 ， 去 青桥边 拾 荷叶 。\n路上 ， 他 遇见 了 住在 纸巷口 的 瓷匠 老陶 。\n老陶 把 圆钮 交给 他 ， 叫 他 送到 望塔 门前 。\n阿岚 赶到 门前 ， 看见 圆钮 上 画着 一只 绿鹭 。\n他 把 圆钮 挂在 门环 上 ， 门 轻轻 开了 。\n里面 传来 笑声 ， 原来 是 走丢 的 小猫 正 等着 回家 。\n黄昏 ， 阿雾 提着 灯篮 ， 往 黑桥边 捡 灯花 。\n河边 ， 他 碰见 了 藏在 布巷口 的 木匠 老柳 。\n老柳 把 铜铃 递给 他 ， 请 他 送往 雾台 扉前 。\n阿雾 赶至 扉前 ， 望见 铜铃 上 刻着 一只 白鹿 。\n他 把 铜铃 系在 扉环 上 ， 木扉 缓缓 敞了 。\n楼里 飘来 歌声 ， 才知 是 迷路 的 小鹿 正 盼着 回巢 。",
+    "story_en": "A small bridge-town tale is told in two neighboring worlds: at dawn and at dusk, a child, an old craftsman, and a lost animal move through matching scenes until a gate opens and the lost one goes home.",
+    "why_shape": "前六句和后六句按表逐词互换，句序不变，人物、器物、地点都一一对应。",
+    "motif_id": "isomorphism",
+    "equation": "\\varphi(a\\cdot b)=\\varphi(a)\\circ\\varphi(b),\\qquad \\varphi\\colon G\\to H\\ \\text{双射}",
+    "model": "gpt-5.5:stable",
+    "judge": {
+      "device_passed": true,
+      "device_checks": "表头存在且为一一对应替换表；正文共12句，按上6句、下6句排列；逐句核对1-6句后，下半各句均能由上半对应句按表逐词替换得到；功能词/助词均原样保留；未发现一词多译或两词同译",
+      "blind_motif": "isomorphism",
+      "model": "gpt-5.2:stable",
+      "passed": true
+    },
+    "story_id": "isomorphism_s2"
+  },
+  {
+    "title": "茶棚与戏台",
+    "domain": "茶棚与戏台",
+    "story_zh": "一一对应表：茶婆↔灯匠、清晨↔黄昏、支起↔搭好、茶棚↔戏台、铜壶↔纸灯、放↔挂、青砖↔梁木、阿柳↔小满、河街↔柳巷、挑来↔添来、井水↔桐油、客人↔看客、洗↔描、碗↔影、响了↔亮了、唱起↔敲起、小曲↔花鼓、飘着↔绕着、茶香↔松烟、听见↔看见、留下↔递上、铜钱↔红票、买↔抓、一包↔一把、姜糖↔瓜子、空碗↔旧幕、叠好↔卷好、摸摸↔拍拍、头↔肩、好孩子↔好徒弟、夜雨↔更鼓、来时↔到时、关门↔落幕、提着↔攥着、归家↔散场\n上半：\n茶婆 在 清晨 支起 茶棚 ， 把 铜壶 放 在 青砖 上 。\n阿柳 从 河街 挑来 井水 ， 给 客人 洗 碗 。\n铜壶 响了 ， 茶婆 唱起 小曲 ， 茶棚 里 飘着 茶香 。\n客人 听见 小曲 ， 留下 铜钱 ， 又 买 一包 姜糖 。\n阿柳 把 空碗 叠好 ， 茶婆 摸摸 他的 头 ， 说 好孩子 。\n夜雨 来时 ， 茶棚 关门 ， 阿柳 提着 姜糖 跟 茶婆 归家 。\n下半：\n灯匠 在 黄昏 搭好 戏台 ， 把 纸灯 挂 在 梁木 上 。\n小满 从 柳巷 添来 桐油 ， 给 看客 描 影 。\n纸灯 亮了 ， 灯匠 敲起 花鼓 ， 戏台 里 绕着 松烟 。\n看客 看见 花鼓 ， 递上 红票 ， 又 抓 一把 瓜子 。\n小满 把 旧幕 卷好 ， 灯匠 拍拍 他的 肩 ， 说 好徒弟 。\n更鼓 到时 ， 戏台 落幕 ， 小满 攥着 瓜子 跟 灯匠 散场 。",
+    "story_en": "At daybreak, an old tea woman sets up her stall. Her helper Aliu brings water, washes bowls, and listens as the kettle sings and the tea fragrance rises. A customer pays, buys ginger candy, and the tea woman praises the boy before they close in the rain and go home. In the evening, a lantern maker prepares a stage. His helper Xiaoman brings oil, paints shadows, and listens as lanterns glow and drums sound. A spectator pays, takes melon seeds, and the lantern maker praises his apprentice before the performance ends at the watchman’s drum.",
+    "why_shape": "正文下半第 k 句由上半第 k 句按篇首双射词表同序逐词替换得到，未列功能词保持不变。",
+    "motif_id": "isomorphism",
+    "equation": "\\varphi(a\\cdot b)=\\varphi(a)\\circ\\varphi(b),\\qquad \\varphi\\colon G\\to H\\ \\text{双射}",
+    "model": "gpt-5.5:stable",
+    "judge": {
+      "device_passed": true,
+      "device_checks": "1) 结构核查：篇首含“一一对应表”；上半6句、下半6句，句序对应(k=1…6)。2) 表结构核查：成对给出“X↔Y”，用于逐词替换；故事中未出现需要替换但未入表的实词；表外功能词/标点(在、把、给、从、里、又、他的、说、跟、。、、等)两半保持原样。3) 逐句逐词替换核查：\n- k1：茶婆/清晨/支起/茶棚/铜壶/放/青砖 ↔ 灯匠/黄昏/搭好/戏台/纸灯/挂/梁木；其余词位一致。\n- k2：阿柳/河街/挑来/井水/客人/洗/碗 ↔ 小满/柳巷/添来/桐油/看客/描/影；其余词位一致。\n- k3：铜壶/响了/茶婆/唱起/小曲/茶棚/飘着/茶香 ↔ 纸灯/亮了/灯匠/敲起/花鼓/戏台/绕着/松烟；其余词位一致。\n- k4：客人/听见/小曲/留下/铜钱/买/一包/姜糖 ↔ 看客/看见/花鼓/递上/红票/抓/一把/瓜子；其余词位一致。\n- k5：阿柳/空碗/叠好/茶婆/摸摸/头/好孩子 ↔ 小满/旧幕/卷好/灯匠/拍拍/肩/好徒弟；其余词位一致。\n- k6：夜雨/来时/茶棚/关门/阿柳/提着/姜糖/茶婆/归家 ↔ 更鼓/到时/戏台/落幕/小满/攥着/瓜子/灯匠/散场；其余词位一致。4) 一致性核查：同一上半词在下半全篇译法一致(如阿柳→小满、茶婆→灯匠、茶棚→戏台等)；同一下半词来源唯一。5) 双射风险点抽查：表内未出现两词同译或一词两译的实际触发情形；十二句逐词比对无违表。",
+      "blind_motif": "isomorphism",
+      "model": "gpt-5.2:stable",
+      "passed": true
+    },
+    "story_id": "isomorphism_s3"
+  },
+  {
+    "title": "青布燕",
+    "domain": "风筝修补",
+    "story_zh": "阿柚住在海边的风筝修补铺，清晨把左手洗净，才敢摸架上那只青布燕。\n燕子的右翅破了，口袋内藏着一粒会发暖的贝扣，像小猫在睡。\n阿柚沿着堤上小路走，给盐田外的老婆婆送热粥，青布燕在左肩轻轻拍。\n老婆婆说，若听见下潮的铃声，就把贝扣缝到燕子的内角，别让它落进右边的草。\n午后，云从山上滚来，阿柚坐在棚外，把针从左往右穿，线头在指下发亮。\n风筝飞起时，孩子们仰头笑，阿柚觉得自己的右耳听见海，左耳听见蜂房内的嗡嗡。\n阿柚住在海边的风筝修补铺，清晨把右手洗净，才敢摸架下那只青布燕。\n燕子的左翅破了，口袋外藏着一粒会发暖的贝扣，像小猫在睡。\n阿柚沿着堤下小路走，给盐田内的老婆婆送热粥，青布燕在右肩轻轻拍。\n老婆婆说，若听见上潮的铃声，就把贝扣缝到燕子的外角，别让它落进左边的草。\n午后，云从山下滚来，阿柚坐在棚内，把针从右往左穿，线头在指上发亮。\n风筝飞起时，孩子们仰头笑，阿柚觉得自己的左耳听见海，右耳听见蜂房外的嗡嗡。\n阿柚住在海边的风筝修补铺，清晨把左手洗净，才敢摸架上那只青布燕。",
+    "story_en": "Ayou lives in a seaside kite-mending shop and carefully repairs a blue-cloth swallow kite with a warm shell button hidden in it. She carries porridge to an old woman by the salt fields, listens to the tide bells, and stitches the kite as clouds roll in. When the kite rises, the children laugh, and Ayou hears the sea and the bees as though each ear has changed sides; after another turn, the tale rests exactly where it began.",
+    "why_shape": "正文前六句与后六句逐句同序对应，后六句仅按左↔右、内↔外、上↔下替换，尾句复现首句，形成莫比乌斯带式两圈闭合。",
+    "motif_id": "mobius",
+    "equation": "M=\\bigl([0,1]\\times[0,1]\\bigr)\\big/\\bigl((0,t)\\sim(1,\\,1-t)\\bigr)",
+    "model": "gpt-5.5",
+    "judge": {
+      "device_passed": true,
+      "device_checks": "句数核对：全文13句 = 第一圈6句 + 第二圈6句 + 尾声1句；对齐核对：第2圈第1-6句分别与第1圈第1-6句逐字对应，仅方位词按左↔右、内↔外、上↔下替换；闭合核对：第7句不等于全文首句，符合‘一圈不闭合’；尾声核对：第13句与全文首句逐字相同；方位词核对：两圈内均出现不少于3个方位词",
+      "blind_motif": "mobius",
+      "model": "gpt-5.2",
+      "passed": true
+    },
+    "story_id": "mobius_s0"
+  },
+  {
+    "title": "甜姜镇的铜钱",
+    "domain": "腌菜铺",
+    "story_zh": "阿禾把左手伸进内袋，摸到一枚上面印着梅花的小铜钱。\n清早的白露镇还没醒，右街的腌菜铺却亮着下窗。\n铺主罗婶说，想换一坛甜姜，就把铜钱放在左秤盘上，再从内缸舀三勺盐水。\n阿禾照做时，一只花猫从外槛跳下，尾巴扫翻了右架上的青碗。\n青碗没碎，只滚到左墙根，扣住一只上翅湿透的萤火虫。\n阿禾把它放回内院的石榴叶上，罗婶便笑着送他一坛甜姜，说好心人走哪条右街都不怕夜路。\n\n阿禾把右手伸进外袋，摸到一枚下面印着梅花的小铜钱。\n清早的白露镇还没醒，左街的腌菜铺却亮着上窗。\n铺主罗婶说，想换一坛甜姜，就把铜钱放在右秤盘下，再从外缸舀三勺盐水。\n阿禾照做时，一只花猫从内槛跳上，尾巴扫翻了左架下的青碗。\n青碗没碎，只滚到右墙根，扣住一只下翅湿透的萤火虫。\n阿禾把它放回外院的石榴叶下，罗婶便笑着送他一坛甜姜，说好心人走哪条左街都不怕夜路。\n\n阿禾把左手伸进内袋，摸到一枚上面印着梅花的小铜钱。",
+    "story_en": "A boy named Ahe finds a plum-marked coin and visits Aunt Luo’s pickle shop in Bailu Town, where a small kindness to a wet-winged firefly earns him a jar of sweet ginger. On the next pass, the same events return with every direction turned over, and only after that does the tale land exactly where it began.",
+    "why_shape": "正文为两组各六句加尾声；第二组逐句对应第一组，仅按左↔右、内↔外、上↔下替换，首句不闭合，尾声复原首句，呈现莫比乌斯带的一圈翻转、两圈复原。",
+    "motif_id": "mobius",
+    "equation": "M=\\bigl([0,1]\\times[0,1]\\bigr)\\big/\\bigl((0,t)\\sim(1,\\,1-t)\\bigr)",
+    "model": "gpt-5.5:stable",
+    "judge": {
+      "device_passed": true,
+      "device_checks": "1) 总句数13，结构为6句+6句+1句尾声；2) 第2圈第1-6句与第1圈第1-6句逐句对齐，除方位词外其余字词一致；3) 方位词替换满足左↔右、内↔外、上↔下的对合关系，且两圈内方位词出现数都不少于3；4) 第2圈首句与全文首句不同；5) 第13句与全文首句逐字相同。",
+      "blind_motif": "mobius",
+      "model": "gpt-5.2:stable",
+      "passed": true
+    },
+    "story_id": "mobius_s1"
+  },
+  {
+    "title": "桂花树下",
+    "domain": "院子",
+    "story_zh": "清晨，阿禾抱着竹篮，站在院子左边的石凳旁，看见小黑猫从右边的桂花树下钻出来。\n她把半块米糕放进篮子里面，又把空碗挪到篮子外面，免得油渍沾到新蓝布。\n风把晾绳往上顶了顶，晾着的红袜子往下垂，像两条安静的小鱼。\n阿禾笑着把竹篮朝左边推了推，又朝右边让了让，等着黑猫把爪子搭在门槛上。\n清晨，阿禾抱着竹篮，站在院子右边的石凳旁，看见小黑猫从左边的桂花树下钻出来。\n她把半块米糕放进篮子外面，又把空碗挪到篮子里面，免得油渍沾到新蓝布。\n风把晾绳往下顶了顶，晾着的红袜子往上垂，像两条安静的小鱼。\n阿禾笑着把竹篮朝右边推了推，又朝左边让了让，等着黑猫把爪子搭在门槛上。\n清晨，阿禾抱着竹篮，站在院子左边的石凳旁，看见小黑猫从右边的桂花树下钻出来。",
+    "story_en": "At dawn, A-Hee stands in the yard with a bamboo basket and sees a little black cat slip out from under the osmanthus tree. She tidies away a piece of rice cake, shifts a bowl, and watches the laundry sway in the breeze while the cat waits by the threshold. By the end, the same quiet yard feels strangely familiar, as if she has walked it twice with the cat.",
+    "why_shape": "正文分成两段各四句，第二段逐句只把左/右、里面/外面、上/下对换，最后一句再回到首句。",
+    "motif_id": "mobius",
+    "equation": "M=\\bigl([0,1]\\times[0,1]\\bigr)\\big/\\bigl((0,t)\\sim(1,\\,1-t)\\bigr)",
+    "model": "gpt-5.5:stable",
+    "judge": {
+      "device_passed": true,
+      "device_checks": "1) 句数：共9句，符合“两圈4句+1句尾声”。2) 对齐：第2圈第1-4句分别对应第1圈第1-4句，顺序未倒转。3) 逐字比对：第2圈各句与对应第1圈各句除方位词外一致；左/右、内/外、上/下均按对合替换。4) 闭合：第2圈首句与全文首句不同，满足“一圈不闭合”；尾声句与全文首句逐字相同，满足两圈闭合。5) 方位词数量：第1圈与第2圈各出现方位词不少于3个。",
+      "blind_motif": "mobius",
+      "model": "gpt-5.2:stable",
+      "passed": true
+    },
+    "story_id": "mobius_s2"
+  },
+  {
+    "title": "莫比乌斯带",
+    "domain": "渡口",
+    "story_zh": "清早，阿梨把一篮热馒头放在门左边的木凳上，轻轻叩了叩刘老汉的窗。\n刘老汉开了门，笑着把船桨往右一摆，说要带她去芦苇荡。\n船到了对岸，阿梨沿着上坡的小路走，摘了几朵野菊，又在下风口躲开了一阵细雨。\n天黑时，她把油灯挂回柜内，听刘老汉在门外讲起年轻时捕鱼的旧事。\n清早，阿梨把一篮热馒头放在门右边的木凳上，轻轻叩了叩刘老汉的窗。\n刘老汉开了门，笑着把船桨往左一摆，说要带她去芦苇荡。\n船到了对岸，阿梨沿着下坡的小路走，摘了几朵野菊，又在上风口躲开了一阵细雨。\n天黑时，她把油灯挂回柜外，听刘老汉在门内讲起年轻时捕鱼的旧事。\n清早，阿梨把一篮热馒头放在门左边的木凳上，轻轻叩了叩刘老汉的窗。",
+    "story_en": "At the ferry landing, A Li brings a basket of hot buns to Old Liu, and the day moves with boats, paths, flowers, and a few old tales. On the second pass, the same small events come back with the directions turned around, and only after that final return does everything feel settled.",
+    "why_shape": "全文分为两圈各四句，第二圈逐句只把左/右、上/下、内/外互换，最后再用首句作尾声，因此读完一遍像转过一面，走完整个故事才完全回到起点。",
+    "motif_id": "mobius",
+    "equation": "M=\\bigl([0,1]\\times[0,1]\\bigr)\\big/\\bigl((0,t)\\sim(1,\\,1-t)\\bigr)",
+    "model": "gpt-5.5:stable",
+    "judge": {
+      "device_passed": true,
+      "device_checks": "(0) 句数结构：共9句=第一圈4句+第二圈4句+尾声1句；两圈句数相等(4=4)，满足。 (1) (a) 一一对齐逐字核查（除方位词替换外）：第5句=第1句仅“左边→右边”；第6句=第2句仅“右→左”；第7句=第3句仅“上坡→下坡”“下风口→上风口”；第8句=第4句仅“柜内→柜外”“门外→门内”。顺序未倒转，满足。 (2) 每圈方位词计数：第一圈含左、右、上、下、内、外(至少3)；第二圈含右、左、下、上、外、内(至少3)，满足。 (3) (b) 方位替换为固定对合且施行两次恒等：左↔右、上↔下、内↔外在文中均按对合替换；将第二圈再替换一次可回到第一圈对应词，满足。 (4) (c) 第二圈首句(第5句)≠全文首句(第1句)：左边/右边不同，满足。 (5) (d) 尾声句(第9句)=全文首句(第1句)：逐字相同，满足。",
+      "blind_motif": "mobius",
+      "model": "gpt-5.2:stable",
+      "passed": true
+    },
+    "story_id": "mobius_s3"
+  },
+  {
+    "title": "辫结",
+    "domain": "水灯修补",
+    "story_zh": "此刻座次：阿芽—豆叔—晴婆。洄水镇临河有间小棚，棚里专补水灯，夜里要放给赶潮的人看路；阿芽捧着薄竹篾，豆叔守着桐油碗，晴婆把红纸按在膝头。忽然一尾鲤鱼灯被风吹到梁边，豆叔同阿芽换了相邻的位子，豆叔从阿芽之上越过，稳稳摘下灯尾，还笑说这鱼今晚不许先游走。\n\n此刻座次：豆叔—阿芽—晴婆。灯尾破了个小口，像被河虾啄过，阿芽急得耳朵发红；晴婆从针包里拈出一根细银针，说小口子也要慢慢哄。晴婆同阿芽换了相邻的位子，晴婆从阿芽之上越过，坐近灯尾，一针一针把红纸缝得服帖，连风也找不到缝儿钻。\n\n此刻座次：豆叔—晴婆—阿芽。河面起了蓝雾，棚外的橹声轻得像梦话，三人把补好的鲤鱼灯点亮，肚里一粒火苗柔柔地醒来。晴婆同豆叔换了相邻的位子，晴婆从豆叔之上越过，把灯交到最靠门的地方；阿芽捧着灯柄跑出小棚，鲤鱼灯便在水边亮成了一朵暖红花。收灯时，棚里的座次成了晴婆—豆叔—阿芽。",
+    "story_en": "In a small riverside shed in Huishui Town, Aya, Uncle Dou, and Granny Qing repair water lanterns for people traveling with the tide. A carp-shaped lantern is blown up toward a beam, so Uncle Dou crosses over Aya to take her place and rescue it. When they find a tear in the lantern’s tail, Granny Qing crosses over Aya to sit close enough to mend it with her silver needle. At dusk, with blue mist rising from the river, Granny Qing crosses over Uncle Dou to hand the glowing carp lantern toward the door. Aya carries it out, and it shines beside the water like a warm red flower.",
+    "why_shape": "三段开头座次依次由相邻换位 (1,2)、(2,3)、(1,2) 复合得到，终态为晴婆—豆叔—阿芽，体现辫结中交叉次序决定末端排列的不变量。",
+    "motif_id": "braiding",
+    "equation": "\\sigma_i\\sigma_{i+1}\\sigma_i = \\sigma_{i+1}\\sigma_i\\sigma_{i+1}",
+    "model": "gpt-5.5",
+    "judge": {
+      "device_passed": true,
+      "device_checks": "1. 共3段，且每段首句均为固定句式“此刻座次：X—Y—Z”。2. 第1段仅发生1次相邻交换：豆叔与阿芽交换，且写明“豆叔从阿芽之上越过”，对应位置(1,2)。3. 第2段仅发生1次相邻交换：晴婆与阿芽交换，且写明“晴婆从阿芽之上越过”，对应位置(2,3)。4. 第3段仅发生1次相邻交换：晴婆与豆叔交换，且写明“晴婆从豆叔之上越过”，对应位置(1,2)。5. 各段开头座次与上一段交换结果逐段一致；终段座次“晴婆—豆叔—阿芽”与首段座次“阿芽—豆叔—晴婆”不同。6. 全篇至少各出现一次位置(1,2)与(2,3)的交换，满足覆盖要求。",
+      "blind_motif": "braiding",
+      "model": "gpt-5.2",
+      "passed": true
+    },
+    "story_id": "braiding_s0"
+  },
+  {
+    "title": "辫结",
+    "domain": "扎彩",
+    "story_zh": "此刻座次：阿梨—阿满—阿豆。\n清晨，桥头的扎彩棚里，他们正给木龙扎一条长长的彩辫；阿梨从阿满之上越过去，阿满坐到左边，阿梨落到中间，阿豆仍守着右边，继续把蓝绳抻得笔直。\n\n此刻座次：阿满—阿梨—阿豆。\n午后，风把竹帘吹得轻轻响；阿豆从阿梨之上越过去，阿梨坐到右边，阿豆挤进中间，阿满抱着线轴不动，笑着把散开的彩线拢好。\n\n此刻座次：阿满—阿豆—阿梨。\n日头偏西，棚里飘着草木香；阿豆从阿满之上越过去，阿豆挪到左边，阿满坐到中间，阿梨把最后一截丝带压在掌心，给木龙系上最后一个小结。",
+    "story_en": "At the bridgehead ribbon tent, three helpers braid a long colored tail for a wooden dragon, and as they work, each one in turn steps over a neighbor and takes a new place.",
+    "why_shape": "三段分别写出位置(1,2)、(2,3)、(1,2)的相邻越位，且每段开头座次都等于上一段交换后的结果，末段座次与首段不同。",
+    "motif_id": "braiding",
+    "equation": "\\sigma_i\\sigma_{i+1}\\sigma_i = \\sigma_{i+1}\\sigma_i\\sigma_{i+1}",
+    "model": "gpt-5.5:stable",
+    "judge": {
+      "device_passed": true,
+      "device_checks": "1) 三段均以固定句式“此刻座次：X—Y—Z”开头；2) 每段只叙述一次相邻席位交换，且都写明了“谁从谁之上越过”；3) 第1段为(1,2)交换，第2段为(2,3)交换，第3段再次为(1,2)交换；4) 逐段演算：阿梨—阿满—阿豆 -> 阿满—阿梨—阿豆 -> 阿满—阿豆—阿梨 -> 阿豆—阿满—阿梨，与各段开头及终段一致；5) 终段座次与首段座次不同。",
+      "blind_motif": "braiding",
+      "model": "gpt-5.2:stable",
+      "passed": true
+    },
+    "story_id": "braiding_s1"
+  },
+  {
+    "title": "栗棚里的三次让座",
+    "domain": "山棚烤栗",
+    "story_zh": "此刻座次：小满—阿栗—白鹭\n山坳里有一座烤栗子的旧棚，秋雾贴着瓦檐，小满看着炉口，阿栗抱着竹筛，白鹭守着糖罐。火星忽地钻进竹筛边，小满从阿栗之上越过，与阿栗换了座儿，伸手把那粒红星拍灭；阿栗笑他袖口沾了甜灰，白鹭便把一颗热栗子吹凉，塞进他掌心。\n\n此刻座次：阿栗—小满—白鹭\n山路上传来卖姜人的铃声，棚里的栗子也噼啪答话，像一群小雀在壳里啄门。糖罐盖子被风掀起，小满从白鹭之上越过，与白鹭换了座儿，拿小石子压住盖沿；白鹭挨到炉边，替阿栗翻筛，裂开的壳像小嘴一样吐香。\n\n此刻座次：阿栗—白鹭—小满\n暮色把棚外的柿树染得暖红，赶集归来的老奶奶停在门口，说想买一包给病中的孙儿。阿栗从白鹭之上越过，与白鹭换了座儿，取来最软糯的一捧，用油纸细细包好；小满添了一勺桂花糖，白鹭把纸角扎紧，老奶奶捧着热气走进晚风里。",
+    "story_en": "In a little chestnut-roasting shed in the hills, three children—Xiaoman, Ali, and Bailu—kept watch over the fire, the sieve, and the sugar jar. When a spark jumped toward the sieve, Xiaoman climbed over Ali to put it out, and the children laughed over the sweet ash on his sleeve.\n\nLater, as a ginger seller’s bell rang on the mountain road, the wind lifted the lid of the sugar jar. Xiaoman climbed over Bailu to hold the lid down with a pebble, while Bailu moved nearer the stove and helped Ali turn the chestnuts until their shells opened and the warm smell filled the shed.\n\nAt dusk, an old grandmother stopped by to buy chestnuts for her sick grandson. Ali climbed over Bailu to pick out the softest handful, wrapped them carefully in oiled paper, while Xiaoman added osmanthus sugar and Bailu tied the parcel tight. The grandmother carried the warmth away into the evening wind.",
+    "why_shape": "三段开头座次依次为ABC、BAC、BCA，段内交换依次为(1,2)、(2,3)、(1,2)，并明示上越者，终态为CBA且非首态。",
+    "motif_id": "braiding",
+    "equation": "\\sigma_i\\sigma_{i+1}\\sigma_i = \\sigma_{i+1}\\sigma_i\\sigma_{i+1}",
+    "model": "gpt-5.5:stable",
+    "judge": {
+      "device_passed": true,
+      "device_checks": "1. 三位角色齐全：小满、阿栗、白鹭。\n2. 三段均以固定句式“此刻座次：X—Y—Z”开头，且座次写法一致。\n3. 第1段含一次相邻交换：位置(1,2)，小满从阿栗之上越过；演算后得到“阿栗—小满—白鹭”，与第2段开头一致。\n4. 第2段含一次相邻交换：位置(2,3)，小满从白鹭之上越过；演算后得到“阿栗—白鹭—小满”，与第3段开头一致。\n5. 第3段含一次相邻交换：位置(1,2)，阿栗从白鹭之上越过。\n6. 全篇至少各出现一次位置(1,2)与位置(2,3)的交换，且终段座次“阿栗—白鹭—小满”不等于首段座次“小满—阿栗—白鹭”。",
+      "blind_motif": "braiding",
+      "model": "gpt-5.2:stable",
+      "passed": true
+    },
+    "story_id": "braiding_s2"
+  },
+  {
+    "title": "辫结",
+    "domain": "风筝铺",
+    "story_zh": "此刻座次：阿荷—阿笛—阿岑。\n阿笛从阿荷之上越过去，换到左席，帮林婆婆把第一股麻线理得顺顺当当。\n此刻座次：阿笛—阿荷—阿岑。\n阿岑从阿荷之上越过去，换到中席，把新来的细线接进那团软软的线里，窗边的竹架也跟着亮了。\n此刻座次：阿笛—阿岑—阿荷。\n阿岑从阿笛之上越过去，换到左席，三人合力把长线辫收紧，明日那只青纸鸢就能顺风抬头。",
+    "story_en": "In a kite shop on a bluestone lane, three helpers sit by Aunt Lin and twist a long flying cord. One moves over the next, then another over the next, until the cord is tight and ready for tomorrow's kite.",
+    "why_shape": "三段分别记录一次相邻交换，座次依次按阿荷—阿笛—阿岑，经(1,2)、(2,3)、(1,2)复合后变为阿岑—阿笛—阿荷，满足辫结关系与逐步核查。",
+    "motif_id": "braiding",
+    "equation": "\\sigma_i\\sigma_{i+1}\\sigma_i = \\sigma_{i+1}\\sigma_i\\sigma_{i+1}",
+    "model": "gpt-5.5:stable",
+    "judge": {
+      "device_passed": true,
+      "device_checks": "1) 三段均以固定句式“此刻座次：X—Y—Z”开头，且三位角色均在席。2) 第1段只发生一次相邻交换：阿笛从阿荷之上越过，对应(1,2)，结果为阿笛—阿荷—阿岑；第2段开头与之完全一致。3) 第2段只发生一次相邻交换：阿岑从阿荷之上越过，对应(2,3)，结果为阿笛—阿岑—阿荷；第3段开头与之完全一致。4) 第3段只发生一次相邻交换：阿岑从阿笛之上越过，对应(1,2)。5) 全篇至少各出现一次(1,2)与(2,3)交换，且终段座次与首段座次不同。",
+      "blind_motif": "braiding",
+      "model": "gpt-5.2:stable",
+      "passed": true
+    },
+    "story_id": "braiding_s3"
+  },
+  {
+    "title": "干涉",
+    "domain": "渔灯染坊",
+    "story_zh": "晚霞湾有个小姑娘阿荔，专给渔灯换蓝布罩。\n她住在染坊后头，门前晒着一排排海艾草。\n偏偏铺后的瓦猫打了个喷嚏，把茶碗震得叮当响。\n她总蹲在水门边等，潮把银铃送上岸。\n阿荔把铃洗净，再丢进竹篓里。\n偏偏瓦猫又打哈欠，不管人家正忙着剖蚌。\n镇上的蚌匠说它有福气，阿荔也学会不恼它。\n傍晚有人放断了纸鸢，潮把纸鸢送上岸。\n偏偏瓦猫跳上案头，它又踩翻半盏灯油。\n阿荔提着小篓去赔礼，总要带一点小物件。\n染坊娘子不要银钱，只换来一把晒软的姜糖。\n偏偏瓦猫在药铺门前打滚，雨才歇下，潮把药香送上岸。\n药婆婆摸摸猫额头，说要替染坊娘子讨个吉口彩。\n阿荔记在心里，便把蓝布罩缝成小鱼尾。\n偏偏瓦猫追着尾巴转，害得裁针滚进豆筐。\n雾里看不见对面灯，潮把渡船送上岸。\n阿荔只好摸黑去寻针。\n偏偏瓦猫不再胡闹，猫却叼来一枚白纽扣。\n阿荔谢过它，便缝在小鱼尾的眼上。\n夜深井沿结了细白霜，潮把星光送上岸。\n偏偏瓦猫望着井里发呆，那只猫望着井里发呆。\n阿荔也低头去看，像看见一条会游的天河。\n第二天渔夫们点起新灯，拍着篓沿笑出了声。\n偏偏阿荔举起新罩，猫也抬爪，潮把双影送上岸。",
+    "story_en": "In Evening-Glow Bay, a girl named Ali repairs blue cloth shades for fishing lamps. Behind the dye shop lives a troublesome roof-cat that keeps interrupting her work, while the tide keeps bringing odd little gifts to the water gate: a silver bell, a torn kite, the scent of herbs, a ferry, starlight, and at last two shadows. Ali turns the found things and the cat’s mischief into a fish-tailed lamp shade with a white button eye. When the fishermen light it, the whole shore laughs with delight, and the cat seems to bless the work too.",
+    "why_shape": "全文24句；第3、6、9、12、15、18、21、24句均以“偏偏”起句，其余句不以此词起句；第4、8、12、16、20、24句均以七字句收尾，双命中在12与24，呈现3对4拍频并跑满两个大周期。",
+    "motif_id": "interference",
+    "equation": "\\sin\\alpha + \\sin\\beta = 2\\sin\\tfrac{\\alpha+\\beta}{2}\\,\\cos\\tfrac{\\alpha-\\beta}{2}",
+    "model": "gpt-5.5",
+    "judge": {
+      "device_passed": true,
+      "device_checks": "1. 全文共24句，句数符合要求；2. 第3/6/9/12/15/18/21/24句均以同一固定词“偏偏”起句，且其余句均不以“偏偏”起句；3. 第4/8/12/16/20/24句均以七字句收尾，且其余句均不以七字句收尾；4. 双命中仅出现在第12句与第24句，间隔12，符合lcm(3,4)；5. 第12句后故事继续展开，不在第12句处收束。",
+      "blind_motif": "interference",
+      "model": "gpt-5.2",
+      "passed": true
+    },
+    "story_id": "interference_s0"
+  },
+  {
+    "title": "干涉",
+    "domain": "蒸糕铺",
+    "story_zh": "青石镇靠着一片桑坡，坡下有家小小的蒸糕铺子。\n铺主阿檀天亮就磨米，木勺在石盆里转得很稳。\n恰好，小沙弥下山买糖，在铺门前敲了三下竹筒。\n灶上的白汽慢慢抬头，井边铜铃响三声。\n镇里的孩子闻着甜味来，先把鼻尖贴到热窗纸上。\n恰好，小沙弥敲过竹筒，阿檀把第一笼桂花糕端出。\n老骡子驮着空筐经过巷口，蹄铁磕得青石发亮。\n阿檀往筐里放两块边角料，井边铜铃响三声。\n恰好，小沙弥又敲竹筒，说寺里师父想添一包红枣。\n午后的桑叶垂下来，影子盖住半条窄街。\n芽儿捧着糕渣追蝴蝶，追到药铺门槛才停住脚。\n恰好，小沙弥敲着竹筒从山坳跑来，井边铜铃响三声。\n阿檀多添了一瓢水，怕晚来的人只买到干硬的角。\n灶口有火星飞起又落下，像一群困倦的萤虫。\n恰好，小沙弥敲过竹筒，老骡子把桑叶拍进空筐里。\n阿檀笑着捡出桑叶，井边铜铃响三声。\n傍晚来了挑柴的罗伯，他说山路被新雨洗得发亮。\n恰好，小沙弥敲了竹筒，怀里还夹着半只纸鸢。\n纸鸢尾巴扫过蒸笼盖，带起一阵米香。\n街口的黄狗打了个喷嚏，井边铜铃响三声。\n恰好，小沙弥敲响竹筒，芽儿也把自己的小哨吹响。\n夜色从桑坡上滑下来，铺里的灯照着白瓷盘。\n阿檀把最后一笼糕包好，留给明早赶路的人。\n恰好，小沙弥敲着竹筒来取热糕，井边铜铃响三声。",
+    "story_en": "In Qingshi Town, beside a mulberry slope, A Tan runs a little steamed rice-cake shop. Through the day, a young monk keeps coming down the hill and tapping his bamboo tube at the shop door, while a bell by the well rings at its own moments. Children, an old mule, a girl named Ya'er, a woodcutter, a yellow dog, and the smell of warm rice cakes all pass through the shop. Sometimes the monk's tapping and the well bell meet, but the day does not end at the first meeting; life keeps moving until night, when the monk comes for hot cakes just as the well bell rings again.",
+    "why_shape": "全文24句；第3、6、9、12、15、18、21、24句均以“恰好，”起句，第4、8、12、16、20、24句均以七字句“井边铜铃响三声”收尾，双命中在12与24句，且第12句不收束。",
+    "motif_id": "interference",
+    "equation": "\\sin\\alpha + \\sin\\beta = 2\\sin\\tfrac{\\alpha+\\beta}{2}\\,\\cos\\tfrac{\\alpha-\\beta}{2}",
+    "model": "gpt-5.5:stable",
+    "judge": {
+      "device_passed": true,
+      "device_checks": "共24句；3的倍数句均以“恰好”起句，其他句不以此词起句；4的倍数句均以“井边铜铃响三声”收尾（7字），其他句不以七字句收尾；第12句与第24句双命中，且第12句后仍有后续，不在此处收束。",
+      "blind_motif": "interference",
+      "model": "gpt-5.2:stable",
+      "passed": true
+    },
+    "story_id": "interference_s1"
+  },
+  {
+    "title": "青泥镇的夜声",
+    "domain": "河湾茶摊",
+    "story_zh": "青泥镇靠着一条弯河，河边有家小茶摊，叫竹叶角。\n茶摊后头住着阿圆，白天帮外婆择豆，夜里爱听街上的声音。\n偏在入夜时，巷口的更夫敲一下梆子，阿圆就把耳朵竖起来。\n河湾的水也不肯闲着，一会儿低，一会儿高，灯影落在青石上。\n外婆说，住在这地方的人，得学会听两样脾气不同的响动。\n偏在阿圆刚把竹筛收好，远处又传来第二回梆子声。\n这回的声音轻些，像有人在黑布里抖了抖袖口。\n窗下的水缸跟着轻轻一颤，雨脚轻轻点瓦面。\n偏在梆子声还没散尽，河那头的潮水又推上来，把岸边的芦根洗白。\n阿圆抱着膝盖坐在门槛上，心里觉得今夜比平常长。\n外婆端来一碗热粥，说慢点吃，风会替你记路。\n偏在第三回梆子落下时，水面也正好拍到桥墩边，月色停在槐树上。\n阿圆听得发怔，连粥里的葱花都忘了吹凉。\n她抬头看见茶摊的招牌在风里轻轻晃，像有人拿扇子逗它。\n偏在更夫走过石桥时，河水又退了半尺，露出一排圆圆的小螺壳。\n外婆笑着把碗收走，说这晚上的耳朵真会捡热闹，像糖霜落在碗里。\n阿圆于是跑去巷口，把一串刚晒干的红椒挂到门钩上。\n偏在红椒刚挂稳，梆子声和拍岸声忽地挤到一块，屋檐下的猫一下竖起胡子。\n阿圆愣了愣，听见那两种声音搭在一处，像两条鱼在窄桶里打了个照面。\n她笑着追出去，风把她的衣角吹得贴在腿上，把门前照得清亮。\n偏在她追到桥头时，前面的更夫已经转弯，后面的潮水才慢慢赶来。\n河面上飘着一只旧木盆，盆里睡着一片桂叶。\n外婆在家门口喊她回去，说明早还要给客人泡新茶。\n偏在阿圆回身的那一刻，梆子、潮声和鸡鸣又碰在一起，天边慢慢亮起来。",
+    "story_en": "By the curved river in Qingni Town stood a little tea stall called Bamboo Leaf Corner, and behind it lived a girl named A-Yuan. At night she loved listening to the watchman’s clapper and the river water that rose and fell on its own pace; sometimes the two sounds met for a moment, and by dawn the town felt as if it had quietly grown older and kinder.",
+    "why_shape": "第3、6、9…句统一以“偏在”起句；第4、8、12、16、20、24句统一以七字收尾；两条拍点各自贯穿全文，并在第12句与第24句重合，但第12句后故事继续推进。",
+    "motif_id": "interference",
+    "equation": "\\sin\\alpha + \\sin\\beta = 2\\sin\\tfrac{\\alpha+\\beta}{2}\\,\\cos\\tfrac{\\alpha-\\beta}{2}",
+    "model": "gpt-5.5:stable",
+    "judge": {
+      "device_passed": true,
+      "device_checks": [
+        "共24句，句数满足要求。",
+        "第3、6、9、12、15、18、21、24句均以“偏在”起句，其余句未以该词起句。",
+        "第4、8、12、16、20、24句均以七字句收尾，其余句未见七字句收尾。",
+        "第12句与第24句同时命中两条周期约束，双命中位置正确。"
+      ],
+      "blind_motif": "interference",
+      "model": "gpt-5.2:stable",
+      "passed": true
+    },
+    "story_id": "interference_s2"
+  },
+  {
+    "title": "八处晚风",
+    "domain": "海村夜灯",
+    "story_zh": "阿桃在雾港湾捡到海铃，洗净后挂在门前，傍晚风一吹，全村的灯就亮了。小满在苔桥镇捡到铜鱼，洗净后挂在门前，傍晚风一吹，全村的灯就亮了。木生在沙枣坡捡到瓷月，洗净后挂在门前，傍晚风一吹，全村的灯就亮了。兰姑在晒网滩捡到银纽，洗净后挂在门前，傍晚风一吹，全村的灯就亮了。石娃在芦花渡捡到竹星，洗净后挂在门前，傍晚风一吹，全村的灯就亮了。青禾在蜜柚岭捡到红螺，洗净后挂在门前，傍晚风一吹，全村的灯就亮了。春宝在白盐坝捡到云扣，洗净后挂在门前，傍晚风一吹，全村的灯就亮了。月娘在蒲草湾捡到蓝灯，洗净后挂在门前，傍晚风一吹，全村的灯就亮了。",
+    "story_en": "At dusk in eight coastal villages, eight children and villagers each found a small wondrous thing, washed it clean, and hung it by the door; when the evening wind blew, every lamp in that village came alight.",
+    "why_shape": "正文为同一句法模板首尾相接的8个逐字平移拷贝，仅人名、地名、物名三个等字数槽位替换，句间无换行无插字，周期为1且零异常。",
+    "motif_id": "tiling",
+    "equation": "T+\\lambda=T\\quad\\forall\\,\\lambda\\in\\Lambda=\\mathbb{Z}v_1\\oplus\\mathbb{Z}v_2",
+    "model": "gpt-5.5",
+    "judge": {
+      "device_passed": true,
+      "device_checks": "- 共8句，且每句均以“。”收束；\n- 8句均严格符合同一模板：`[人名]在[地名]捡到[物名]，洗净后挂在门前，傍晚风一吹，全村的灯就亮了。`；\n- 句间无过渡字、无插入、无叠字节，全文为8个模板实例首尾相接；\n- 每句仅在3个槽位（人名/地名/物名）换词，槽外字面完全相同；\n- 未见额外标记、标签或偏离模板的字符。",
+      "blind_motif": "tiling",
+      "model": "gpt-5.2",
+      "passed": true
+    },
+    "story_id": "tiling_s0"
+  },
+  {
+    "title": "青石台上的失物",
+    "domain": "集镇拾物",
+    "story_zh": "这天清早，阿柳在茶棚口拾到银扣，就把银扣擦得亮亮的，放回茶棚口的青石台上，等失主来取。这天清早，小满在瓦窑边拾到木梳，就把木梳擦得亮亮的，放回瓦窑边的青石台上，等失主来取。这天清早，春生在枣树林拾到铜铃，就把铜铃擦得亮亮的，放回枣树林的青石台上，等失主来取。这天清早，兰姑在药铺前拾到竹笛，就把竹笛擦得亮亮的，放回药铺前的青石台上，等失主来取。这天清早，石娃在染坊后拾到绒帽，就把绒帽擦得亮亮的，放回染坊后的青石台上，等失主来取。这天清早，荷香在豆腐巷拾到花伞，就把花伞擦得亮亮的，放回豆腐巷的青石台上，等失主来取。这天清早，栓子在铁匠院拾到布包，就把布包擦得亮亮的，放回铁匠院的青石台上，等失主来取。这天清早，月娥在糖坊门拾到玉坠，就把玉坠擦得亮亮的，放回糖坊门的青石台上，等失主来取。",
+    "story_en": "One morning in a little market town, eight different people each found something that did not belong to them: a silver button, a wooden comb, a bronze bell, a bamboo flute, a wool cap, a flowered umbrella, a cloth bundle, and a jade pendant. Each finder cleaned the lost thing, set it back on the stone platform where it could be seen, and waited for its owner to come and claim it.",
+    "why_shape": "正文由同一句法模板的8个实例首尾相接组成，仅人名、地名、物名三个槽位替换，槽外逐字相同且句间无换行或插入，形成平移密铺。",
+    "motif_id": "tiling",
+    "equation": "T+\\lambda=T\\quad\\forall\\,\\lambda\\in\\Lambda=\\mathbb{Z}v_1\\oplus\\mathbb{Z}v_2",
+    "model": "gpt-5.5:stable",
+    "judge": {
+      "device_passed": true,
+      "device_checks": "1. 共8句，均以同一模板连续排列；2. 每句仅在“人名/地名/物名”三处换词，其余字面完全一致；3. 句间无插入、无过渡语，全文首尾无缝；4. 未发现多余字、缺字或异常改写。",
+      "blind_motif": "isomorphism",
+      "model": "gpt-5.2:stable",
+      "passed": false
+    },
+    "story_id": "tiling_s1"
+  },
+  {
+    "title": "门前铃",
+    "domain": "巷口",
+    "story_zh": "阿禾在青石巷把竹铃挂在门边，等风来时给路人听。小满在柳叶街把铜铃挂在门边，等风来时给路人听。花生在瓦盆巷把木铃挂在门边，等风来时给路人听。阿岚在豆花桥把纸铃挂在门边，等风来时给路人听。二顺在青篱巷把银铃挂在门边，等风来时给路人听。阿桃在枣树街把贝铃挂在门边，等风来时给路人听。老沈在草帽桥把玉铃挂在门边，等风来时给路人听。冬生在石榴巷把瓷铃挂在门边，等风来时给路人听。",
+    "story_en": "In a narrow lane, eight people each hung a little bell by their door so that when the wind came, passersby would hear it and smile. The bells were made of bamboo, copper, wood, paper, silver, shell, jade, and porcelain, and each one belonged to a different house.",
+    "why_shape": "正文恰为8个同一句法模板的实例，且每个实例只替换人名、地名、物名三个槽位；实例之间直接相连，没有换行或插入字符，槽外字句逐字相同。",
+    "motif_id": "tiling",
+    "equation": "T+\\lambda=T\\quad\\forall\\,\\lambda\\in\\Lambda=\\mathbb{Z}v_1\\oplus\\mathbb{Z}v_2",
+    "model": "gpt-5.5:stable",
+    "judge": {
+      "device_passed": true,
+      "device_checks": "1) 实例数：按句号分割共8句/8个实例（通过）。2) 无缝拼接/零过渡字：各实例仅以句号结束后直接进入下一实例，无额外插入词；任一字符不跨句共享（通过）。3) 单一模板验证：8句均可对齐为同一句法模板「{人名}在{地名}把{物名}挂在门边，等风来时给路人听。」；除3槽位外其余字词与标点逐字一致（通过）。4) 槽位检查：每句仅在人名/地名/物名三处发生替换；其余部分（“在”“把”“挂在门边，等风来时给路人听。”及逗号句号）完全相同（通过）。5) 非二态轮替：槽位取值无AB交替模式要求且未形成固定轮替（通过）。6) 零异常：未发现任一句在槽外出现多/少字、改字、缺标点、额外空格等异常（通过）。7) 逐字平移拷贝性质：各句是同一中文模板的复制替换，并非两套系统映射/翻译（通过）。",
+      "blind_motif": "tiling",
+      "model": "gpt-5.2:stable",
+      "passed": true
+    },
+    "story_id": "tiling_s2"
+  },
+  {
+    "title": "葭湾潮磨坊",
+    "domain": "潮磨坊",
+    "story_zh": "葭湾靠海，潮水一涨，老磨坊的木轮就慢慢转，磨出的米粉带一点咸香。磨坊主姓梁，胡子白，围裙上总沾着细粉。村里有五名村民，甲编芦管，乙磨贝粉，丙烧小陶鱼，丁晒盐花，戊养会发亮的小虾。他们各有各的院门，各走各的窄路，有事只到老梁的磨坊里托一句话。\n甲对磨坊主说：「请转告乙，若她还有靛蓝贝粉，给我一撮，我给她留三根最直的芦管。」\n磨坊主对乙说：「甲托我说，若你还有靛蓝贝粉，给他一撮，他给你留三根最直的芦管。」\n乙对磨坊主说：「请转告甲，贝粉在白螺罐里，我明早放在磨坊窗下，芦管不急。」\n磨坊主对甲说：「乙托我说，贝粉在白螺罐里，明早放在磨坊窗下，芦管不急。」\n那几日，海雾厚得像蒸糕，孩子们的纸灯一出门就湿。老梁把窗台擦干，谁放来的小包都用油纸盖好，谁要带走的物件都系上草绳。\n丙对磨坊主说：「请转告丁，我的陶鱼要进窑，缺一把细盐花，换他两枚红鳞坠。」\n磨坊主对丁说：「丙托我说，他的陶鱼要进窑，缺一把细盐花，换你两枚红鳞坠。」\n丁对磨坊主说：「请转告丙，盐花今晚收，天亮前挂在磨坊梁上，红鳞坠等窑火凉了再取。」\n磨坊主对丙说：「丁托我说，盐花今晚收，天亮前挂在磨坊梁上，红鳞坠等窑火凉了再取。」\n夜里，潮声拍着磨坊底下的石洞。老梁添了灯油，听见虾篓轻轻响，便知道戊来了。\n戊对磨坊主说：「请转告甲，芦灯若要在雾里亮久些，灯肚里可放三只银须虾，我愿借一小篓。」\n磨坊主对甲说：「戊托我说，芦灯若要在雾里亮久些，灯肚里可放三只银须虾，他愿借一小篓。」\n甲对磨坊主说：「请转告戊，芦灯编好了就放在磨坊后门，虾住进去，天亮前我来取空篓。」\n磨坊主对戊说：「甲托我说，芦灯编好了就放在磨坊后门，虾住进去，天亮前他来取空篓。」\n第二天傍晚，雾还没散，葭湾一盏盏芦灯却亮了起来：有的挂在盐棚檐下，有的搁在陶窑门边，有的浮在浅水沟里。灯肚中的银须虾一闪一闪，贝粉映出蓝光，陶鱼坠在灯尾轻轻摇。孩子们站在自家门前看，觉得海雾里游来了一群温和的小星鱼。\n老梁关上磨坊门，把最后一袋米粉扛进屋。木轮在潮水里慢慢停住，窗下只剩一撮贝粉、一根芦管、一粒盐花和一只空虾篓，各自安安静静地等着主人来拿。",
+    "story_en": "In the seaside village of Jiawan, an old tide mill ground rice with a faint salty fragrance. Five villagers lived by different crafts: Jia wove reeds, Yi made shell pigment, Bing fired little clay fish, Ding dried salt blossoms, and Wu kept tiny glowing shrimp. They did not deal with one another face to face; whenever they needed something, they came singly to Old Liang the miller. Through him, reed, pigment, salt, clay charms, and glowing shrimp found their way into mist lanterns. By evening, each household had its own lamp shining through the sea fog, and the village children watched gentle little star-fish lights glimmer from their doorways.",
+    "why_shape": "所有中文引语的说者-听者对都包含“磨坊主”，且甲乙丙丁戊各与磨坊主相连、彼此无引语边，因此引语图为 K_{1,5}。",
+    "motif_id": "hub",
+    "equation": "G\\cong K_{1,n}",
+    "model": "gpt-5.5",
+    "judge": {
+      "device_passed": true,
+      "device_checks": "1) 全文共10处引语，对应10组说者/听者对；逐一核查均为“村民/磨坊主”或“磨坊主/村民”，没有脱离磨坊主的对。2) 五名村民甲、乙、丙、丁、戊都至少出现在一组对中。3) 未发现任何（村民,村民）对。4) 因而引语图满足 K_{1,5}。",
+      "blind_motif": "hub",
+      "model": "gpt-5.2",
+      "passed": true
+    },
+    "story_id": "hub_s0"
+  },
+  {
+    "title": "星型枢纽",
+    "domain": "竹桥集",
+    "story_zh": "竹桥集的河风一到傍晚就软下来，老磨房外的苇叶轻轻拍着墙。磨坊主老岑坐在门口削木片，替来来往往的人传话。\n甲对磨坊主老岑说：「请转告乙，我家的紫陶碗已经洗净，若他傍晚路过，就顺手带走。」\n磨坊主老岑对乙说：「甲请你傍晚路过时，把那只洗净的紫陶碗顺手带走。」\n乙对磨坊主老岑说：「请转告丙，明早来河边拿我编好的鱼篓，别叫露水打湿。」\n磨坊主老岑对丙说：「乙请你明早来河边拿鱼篓，记得别叫露水打湿。」\n丙对磨坊主老岑说：「请转告丁，屋后的石榴快熟了，让他带着孩子来尝。」\n磨坊主老岑对丁说：「丙说屋后的石榴快熟了，请你带着孩子来尝。」\n丁对磨坊主老岑说：「请转告戊，我把竹哨修好了，午后放在你家门槛上。」\n磨坊主老岑对戊说：「丁把竹哨修好了，午后放在门槛上。」\n戊对磨坊主老岑说：「请转告甲，河滩上的白鹅今夜会停在芦苇边，叫他别再寻。」\n磨坊主老岑对甲说：「戊说河滩上的白鹅今夜会停在芦苇边，请你别再寻。」\n天黑时，老岑把最后一句话送到，五家人各自收拾灶火、缝补衣角、喂好鸡鸭，竹桥集静静亮起一盏盏灯。",
+    "story_en": "In Bamboo Bridge Market, the evening river wind always softened the reed leaves against the mill wall. The miller, Lao Cen, sat at the door and carried messages back and forth for five villagers. One asked him to tell another about a washed clay bowl, one sent word about a fish basket, one invited a child to taste ripe pomegranates, one reported a repaired bamboo whistle, and one warned that the white geese by the riverbank would stay in the reeds. By the time the last message was delivered, each household had gone back to its own cooking fire, sewing basket, and chickens, and the market glowed quietly under the lamps.",
+    "why_shape": "全文所有引语都只出现在“村民对磨坊主说”或“磨坊主对村民说”的一对一转述里，五名村民各自至少出现一次，且没有任何“村民,村民”的引语对，所以引语关系正好是以磨坊主为中介的 K_{1,5}.",
+    "motif_id": "hub",
+    "equation": "G\\cong K_{1,n}",
+    "model": "gpt-5.5:stable",
+    "judge": {
+      "device_passed": true,
+      "device_checks": "共摘出10条引语；逐条（说者,听者）分别为：甲→磨坊主、磨坊主→乙、乙→磨坊主、磨坊主→丙、丙→磨坊主、磨坊主→丁、丁→磨坊主、磨坊主→戊、戊→磨坊主、磨坊主→甲。三项均成立：每一对都含磨坊主；甲乙丙丁戊均至少出现一次；不存在（村民,村民）对。",
+      "blind_motif": "hub",
+      "model": "gpt-5.2:stable",
+      "passed": true
+    },
+    "story_id": "hub_s1"
+  },
+  {
+    "title": "柿灯湾的磨坊",
+    "domain": "柿灯湾",
+    "story_zh": "柿灯湾的磨坊临着芦苇河，磨坊主每天守着石磨和一扇小木门。\n清早，甲抱着一布袋新谷来，说：“请转告乙，南坡的鸭蛋我先替他留着。”\n磨坊主点点头，走到河埂边对乙说：“甲说，南坡的鸭蛋他先替你留着。”\n乙把洗好的木盆递来，说：“请转告丙，我借你的红线已经晾干了。”\n磨坊主擦了擦手，去井边对丙说：“乙说，我借你的红线已经晾干了。”\n丙把竹篮往怀里一抱，说：“请转告丁，晚些我把桂花糕送到你家门槛。”\n磨坊主提着麻袋，去树下对丁说：“丙说，晚些他把桂花糕送到你家门槛。”\n丁正给驴喂草，说：“请转告戊，今晚别急着收网，我会帮你看星。”\n磨坊主笑着去堤上对戊说：“丁说，今晚别急着收网，他会帮你看星。”\n戊把斗笠压低，说：“请转告甲，灶里那锅豆子，我已经给你添了水。”\n磨坊主回到门前对甲说：“戊说，灶里那锅豆子，他已经给你添了水。”\n天黑时，石磨轻轻呼噜，五家各自忙各自的事，谁也没越过门槛去找谁。",
+    "story_en": "In Persimmon Lantern Bay, a miller by the river keeps a little millhouse, and the five villagers pass every message through him. One after another, they ask him to carry news, and he carries it back in plain words before everyone returns to their own work.",
+    "why_shape": "All quoted speech is only villager-to-miller or miller-to-villager, so every extracted speaker-listener pair contains the miller, all five villagers appear, and no villager-villager pair exists, which is exactly a star.",
+    "motif_id": "hub",
+    "equation": "G\\cong K_{1,n}",
+    "model": "gpt-5.5:stable",
+    "judge": {
+      "device_passed": true,
+      "device_checks": "1) 逐条摘出全文引语的(说者,听者)对，均为“村民→磨坊主”或“磨坊主→村民”，每一对都含磨坊主；2) 甲、乙、丙、丁、戊五名村民都至少在一对中出现；3) 不存在任何(村民,村民)对。",
+      "blind_motif": "hub",
+      "model": "gpt-5.2:stable",
+      "passed": true
+    },
+    "story_id": "hub_s2"
+  },
+  {
+    "title": "磨坊前的五盏灯",
+    "domain": "盐坡村",
+    "story_zh": "盐坡村靠着一条细河，河边的磨坊一到傍晚就吱呀作响，麦香顺着风，慢慢飘到各家院里。\n那天起了风，甲、乙、丙、丁、戊各有各的小事，却都不爱在村里东跑西问，只肯去找磨坊主。\n甲对磨坊主说：“请转告乙，晚饭后把借去的蓝篓子放回我门前。”\n磨坊主对乙说：“甲让我转告你，晚饭后把借去的蓝篓子放回他门前。”\n乙对磨坊主说：“请转告丙，明早来磨坊北头取一包新麦。”\n磨坊主对丙说：“乙让我转告你，明早来磨坊北头取一包新麦。”\n丙对磨坊主说：“请转告丁，雨停后把院里的红凳送到河边。”\n磨坊主对丁说：“丙让我转告你，雨停后把院里的红凳送到河边。”\n丁对磨坊主说：“请转告戊，今夜把那盏铜灯挂到门檐下。”\n磨坊主对戊说：“丁让我转告你，今夜把那盏铜灯挂到门檐下。”\n戊对磨坊主说：“请转告甲，天亮前把晒在石头上的豆子收进袋里。”\n磨坊主对甲说：“戊让我转告你，天亮前把晒在石头上的豆子收进袋里。”\n等磨盘又转过几圈，话都送到了，五家屋里也各自忙开了：有人收篓子，有人取新麦，有人搬红凳，有人挂铜灯，有人收豆子。\n夜色落下来时，溪水还在轻轻拍着岸，磨坊主擦了擦手，关上门，村里便只剩下灯火和安静的脚步声。",
+    "story_en": "Salt Slope Village sat beside a narrow stream, and the mill by the water creaked every evening while the smell of fresh grain drifted through the yards.\nOne windy day, Jia, Yi, Bing, Ding, and Wu all had small errands, but none of them liked to go asking around the village; they only came to the miller.\nJia asked the miller to tell Yi to return a borrowed blue basket after supper. The miller carried the message to Yi.\nYi asked the miller to tell Bing to come to the north side of the mill and collect a sack of fresh grain in the morning. The miller carried the message to Bing.\nBing asked the miller to tell Ding to take a red stool from the courtyard down to the river after the rain. The miller carried the message to Ding.\nDing asked the miller to tell Wu to hang a copper lamp under the eaves that night. The miller carried the message to Wu.\nWu asked the miller to tell Jia to gather the beans drying on the stones before dawn. The miller carried the message to Jia.\nBy the time the millstone had turned a few more rounds, every message had reached its place, and each household went on with its own work: baskets were returned, grain was collected, stools were moved, lamps were hung, and beans were gathered.\nWhen night settled in, the stream still tapped softly at the bank, and the miller shut the door. The village was left with its lights and its quiet footsteps.",
+    "why_shape": "全文所有引语都只发生在“村民—磨坊主”或“磨坊主—村民”之间，五名村民各至少出现一次，且没有任何“村民—村民”对，因此引语图正好是以磨坊主为中心的星型 K_{1,5}。",
+    "motif_id": "hub",
+    "equation": "G\\cong K_{1,n}",
+    "model": "gpt-5.5:stable",
+    "judge": {
+      "device_passed": true,
+      "device_checks": "1. 全文可核查引语共10处，且每处说者/听者都可配对；2. 所有配对都包含“磨坊主”，未见任何（村民,村民）直接对话；3. 五名村民甲、乙、丙、丁、戊均至少出现在一对之中；4. 因而引语图满足 K_{1,5} 的机械条件。",
+      "blind_motif": "hub",
+      "model": "gpt-5.2:stable",
+      "passed": true
+    },
+    "story_id": "hub_s3"
+  },
+  {
+    "title": "对角线遁逸",
+    "domain": "屋顶蜂园",
+    "story_zh": "瓦城的屋顶上养着一排排木蜂箱，春分夜，大家把蜜灯点在矮墙边，请四位会讲旧事的人开口。\n第一位讲述者阿槐说，茶山里的金蜂认得采药娃；他的四个特征依次是：昼，山，得，笑。\n第二位讲述者蓝婆说，潮湾里的银蜂跟着盐船走；她的四个特征依次是：夜，海，失，哭。\n第三位讲述者小芦说，白鹭滩的蜂落在渔网绳上；他的四个特征依次是：昼，海，得，哭。\n第四位讲述者棠匠说，石岭蜂箱曾被松鼠搬空；他的四个特征依次是：夜，山，得，笑。\n后来，一个无名旅人拍掉斗笠上的花粉，也讲了第五个故事：第一特征取第一位讲述者第一特征的反面，是夜；第二特征取第二位讲述者第二特征的反面，是山；第三特征取第三位讲述者第三特征的反面，是失；第四特征取第四位讲述者第四特征的反面，是哭。\n那故事说，夜里，山后有个守蜂的小姑娘追一只蓝尾萤火虫，追到冷杉坡上，只看见空空的蜂箱和一枚裂开的蜜蜡铃；她抱着铃坐到天明，眼泪落进野花根里，第二年满坡都开出带蜜香的小黄花。",
+    "story_en": "In a town of rooftop beehives, four named tellers each give a tale described by four paired qualities: day or night, mountain or sea, gain or loss, laughter or tears. A nameless traveler then tells a fifth tale whose first quality is the opposite of the first teller’s first quality, whose second is the opposite of the second teller’s second, whose third is the opposite of the third teller’s third, and whose fourth is the opposite of the fourth teller’s fourth. His tale is about a girl at night in the mountains who loses her bees and weeps, yet the next year honey-scented yellow flowers bloom there.",
+    "why_shape": "四位讲述者形成4×4枚举，旅人新行按对角线逐项取反：夜、山、失、哭，故分别在第1、2、3、4位与第1、2、3、4行保证不同。",
+    "motif_id": "diagonalization",
+    "equation": "d(n) = 1 - f(n)(n) \\;\\Rightarrow\\; \\forall n:\\ d \\neq f(n)",
+    "model": "gpt-5.5",
+    "judge": {
+      "device_passed": true,
+      "device_checks": "1) 讲述者数量为4，满足 n≥4；2) 四位讲述者各自给出4个二值特征，且对立对分别可辨识为 昼/夜、山/海、得/失、笑/哭；3) 旅人给出第5个故事，四个特征分别是前四位讲述者对应对角特征的反面：昼→夜、海→山、得→失、笑→哭，逐项全对；4) 新故事未提及“这句话/这个故事”本身；5) 未出现旧故事拼成缩小版、层层套框或单点违例等可核查的 recursion / nesting / symmetry_breaking 违项。",
+      "blind_motif": "diagonalization",
+      "model": "gpt-5.2",
+      "passed": true
+    },
+    "story_id": "diagonalization_s0"
+  },
+  {
+    "title": "芦盐埠的无名旅人",
+    "domain": "盐滩夜渡",
+    "story_zh": "芦盐埠靠着一片白亮盐滩，晚风一来，盐花像碎米，在草棚边轻轻响。赶潮的人收了篓子，围着灶火听故事。老辈说，今夜每个故事都按四个记号来说，每个记号只有两面：昼/夜、山/海、得/失、笑/哭。\n第一位，晒盐的阿蕉：昼，山，得，笑。她说白日挑水上青螺山，草里露出一只铜铃，铃舌还会响，她把铃系在驴脖子上，驴一摇头，满坡孩子都笑了。\n第二位，撑船的蒲叔：夜，海，得，笑。他说黑夜里海雾盖住桅杆，一尾银鱼跳进船舱，他用芦叶包了带回家，病了三天的小猫闻见鱼腥，爬起来舔胡子，蒲叔笑得船篷都抖。\n第三位，卖姜糖的莲嫂：夜，山，失，笑。她说夜里翻过青螺山，钱袋从腰间滑走，她空着手到村口，却见迷路的小娃抱着她的糖担不放；莲嫂没了钱，分了糖，自己也笑。\n第四位，补网的蛮公：夜，山，得，哭。他说夜里上青螺山找药草，果真得了一把苦根，能退孙儿的热；他想起早年教他认草的阿娘，坐在石阶上哭到露水湿鞋。\n后来，灶火快低时，来了个无名旅人，衣角沾着盐霜，手里提一盏破灯。他说：头一记，照第一位头一记「昼」的另一面，定为夜；第二记，照第二位第二记「海」的另一面，定为山；第三记，照第三位第三记「失」的另一面，定为得；第四记，照第四位第四记「哭」的另一面，定为笑。\n于是无名旅人的故事是：夜，山，得，笑。那夜他背着空盐袋上青螺山，风把破灯吹灭了，他摸到石缝里一粒会发暖的灯籽，揣在怀中下坡；到了芦盐埠，灯籽自己亮起，把灶灰照成金粉，他看见孩子们伸手捧光，便笑了。",
+    "story_en": "By the salt marsh of Luyan Port, four villagers tell fireside tales, each described by four paired signs: day or night, mountain or sea, gain or loss, laughter or tears. Ajiao’s tale is day, mountain, gain, laughter; Uncle Pu’s is night, sea, gain, laughter; Sister Lian’s is night, mountain, loss, laughter; Old Mang’s is night, mountain, gain, tears. At the end, an unnamed traveler arrives and chooses each sign by taking the opposite of the matching sign from each teller in turn: opposite of Ajiao’s first sign, opposite of Uncle Pu’s second, opposite of Sister Lian’s third, opposite of Old Mang’s fourth. His tale is therefore night, mountain, gain, laughter: he climbs the mountain after dark, finds a warm seed of light, brings it back to the salt port, and laughs when the children cup its glow in their hands.",
+    "why_shape": "4位讲述者形成4×4二值表；旅人新行按d(k)=1-f(k)(k)逐格取反，故与第k行在第k位保证不同，共4处沿对角线移动的系统性差异，不涉及self_reference、recursion、nesting或单点symmetry_breaking。",
+    "motif_id": "diagonalization",
+    "equation": "d(n) = 1 - f(n)(n) \\;\\Rightarrow\\; \\forall n:\\ d \\neq f(n)",
+    "model": "gpt-5.5:stable",
+    "judge": {
+      "device_passed": true,
+      "device_checks": "n=4，满足n≥4；列出4位讲述者，且每位都被概括为同序的4个二值特征；第1位昼→夜、第2位海→山、第3位失→得、第4位哭→笑，4个对角翻转全部成立；无名旅人给出的第5个故事未提及“这句话/这个故事本身”，未见递归或套框；整体满足“对角线逐位翻面、共4处差异”的构造要求。",
+      "blind_motif": "diagonalization",
+      "model": "gpt-5.2:stable",
+      "passed": true
+    },
+    "story_id": "diagonalization_s1"
+  },
+  {
+    "title": "对角线遁逸",
+    "domain": "青蒲渡口",
+    "story_zh": "青蒲渡口的阿兰：白天，山边，得，笑。\n枣花桥边的阿石：夜里，海边，失，笑。\n芦塘外的阿芦：夜里，山边，失，哭。\n木船上的阿井：白天，海边，得，哭。\n后来茶棚里来了个无名旅人：夜里，山边，得，笑。",
+    "story_en": "At Qingpu Ferry, four storytellers each gave a four-part tale. A nameless traveler arrived afterward and spoke with the opposite choice at the matched point of each teller, so his own tale stood apart from all four.",
+    "why_shape": "四位讲述者各有四个二值特征；旅人的第k项分别取第k位讲述者第k项之反，沿对角线逐格翻面，因而与每一行都不同，也不指向自身。",
+    "motif_id": "diagonalization",
+    "equation": "d(n) = 1 - f(n)(n) \\;\\Rightarrow\\; \\forall n:\\ d \\neq f(n)",
+    "model": "gpt-5.5:stable",
+    "judge": {
+      "device_passed": true,
+      "device_checks": "1) 讲述者人数为4，满足 n≥4。2) 四位讲述者的特征序列长度均为4，且每个位置都在二值对立集合内。3) 末尾无名旅人的第1个特征=第1位讲述者第1个特征“白天”之反“夜里”。4) 第2个特征=第2位讲述者第2个特征“海边”之反“山边”。5) 第3个特征=第3位讲述者第3个特征“失”之反“得”。6) 第4个特征=第4位讲述者第4个特征“哭”之反“笑”。7) 未出现对“这句话/这个故事”本身的指涉，未见可核查的 self_reference、recursion 或 nesting 违例。",
+      "blind_motif": "diagonalization",
+      "model": "gpt-5.2:stable",
+      "passed": true
+    },
+    "story_id": "diagonalization_s2"
+  },
+  {
+    "title": "对角线遁逸",
+    "domain": "雾桥圩",
+    "story_zh": "雾桥圩靠着河湾，桥头有一盏旧灯。赶集那晚，四个说书人围着灯坐下，先把各自的日子说给孩子们听。\n阿杏说：早起，走山路，肯借火，爱笑。\n石砚说：晚起，走水路，不肯借火，爱笑。\n罗婆说：早起，走山路，不肯借火，不爱笑。\n阿篙说：早起，走水路，肯借火，不爱笑。\n更深些，无名旅人也来坐下，只轻声说：晚起，走山路，肯借火，爱笑。",
+    "story_en": "At the river-bend market of Mist Bridge, an old lamp hung by the bridge while four storytellers sat together and spoke of their days. Ah-Xing rose early, took the mountain path, shared fire, and smiled. Shi-Yan rose late, took the water path, would not share fire, and smiled. Luo-Po rose early, took the mountain path, would not share fire, and did not smile. A-Gao rose early, took the water path, shared fire, and did not smile. Later, a nameless traveler came to the lamp and quietly said he rose late, took the mountain path, shared fire, and smiled.",
+    "why_shape": "四位讲述者按同序四项二值属性排成一张表，旅人的第1至第4项分别取对应位置的反值，所以他在每一位讲述者的那个位置都不同，也就不等于任何一位。",
+    "motif_id": "diagonalization",
+    "equation": "d(n) = 1 - f(n)(n) \\;\\Rightarrow\\; \\forall n:\\ d \\neq f(n)",
+    "model": "gpt-5.5:stable",
+    "judge": {
+      "device_passed": true,
+      "device_checks": "n=4，满足 n>=4；共有四位讲述者加一位无名旅人，共5个故事；每个故事都用同一顺序的4个二值特征概括，且对立项明确（早起/晚起、山路/水路、肯借火/不肯借火、爱笑/不爱笑）；逐条核对对角反转全部成立：第1位讲述者第1特征=早起，新故事第1特征=晚起；第2位讲述者第2特征=走水路，新故事第2特征=走山路；第3位讲述者第3特征=不肯借火，新故事第3特征=肯借火；第4位讲述者第4特征=不爱笑，新故事第4特征=爱笑；新故事未谈论或包含自身，也未出现递归或嵌套；新故事不与任何旧故事完全同形。",
+      "blind_motif": "diagonalization",
+      "model": "gpt-5.2:stable",
+      "passed": true
+    },
+    "story_id": "diagonalization_s3"
+  },
+  {
+    "title": "潮玉珰的讼案",
+    "domain": "潮村讼堂",
+    "story_zh": "海湾边有个晒盐的槐湾村，祠堂门口挂满贝壳风铃，风一吹，就像小鱼在说悄悄话。村里有件旧规矩：谁说自己拿着潮玉珰，就得说出一位门牌更小、在他之前拿过的人；说不出，便算没拿过。\n这年退潮后，卖海带的阿昌抱着一个油布包进了祠堂，说里头是他家的传家宝潮玉珰，能叫雾夜里的船认得回湾路。\n族人搬来长凳，长者点了香灰，叫他把来路说清楚。\n阿昌拍着油布包，说传给他的是门牌88的晒网匠林伯。\n林伯拄着桨，说他只替门牌61的盐灶娘子保管过一夜。\n盐灶娘子抹着围裙，说物件来自门牌45的补帆人阿芦。\n阿芦捻着麻线，说他接的是门牌27的夜渡客小满。\n小满低头搓帽沿，说那包袱先在门牌9的蛤蜊婆手里。\n蛤蜊婆咳了一声，说她听命于门牌2的灯塔童子阿笙。\n堂外的潮水退得更远，露出黑亮的石滩，风铃一个个停了声。\n长者把油布包推回案边，说：阿昌所称持有的传家宝，从未存在。",
+    "story_en": "In a tide village called Huaiwan, anyone claiming to possess the old tide-jade heirloom had to name an earlier holder with a smaller door number. Achang came to the ancestral hall with an oilcloth bundle and claimed the treasure was his. One by one, each named person pointed to exactly one earlier person with a smaller number: 88, then 61, then 45, then 27, then 9, then 2. The hall fell quiet as the tide withdrew. The elder returned the bundle and ruled that Achang’s alleged heirloom had never existed.",
+    "why_shape": "六次一对一引证给出严格递减的正整数编号，末句以良序性否定最初见证者，实现无穷递降。",
+    "motif_id": "infinite_descent",
+    "equation": "\\bigl(\\forall n\\in\\mathbb{N}:\\; P(n)\\Rightarrow\\exists\\,m<n,\\ P(m)\\bigr)\\;\\Longrightarrow\\;\\forall n\\,\\neg P(n)",
+    "model": "gpt-5.5",
+    "judge": {
+      "device_passed": true,
+      "device_checks": "①恰好6句引证，且每句独立成句；②被指认者编号均以阿拉伯数字明写，且序列88→61→45→27→9→2严格递减；③末句为长者判词，含“从未存在”，并宣布开端声称为虚；④未见先归基例再回溯的 recursion 结构；⑤编号变化非固定比例缩短，且未以“总量有限、旅程完成”收束；⑥引证链一对一、每人只指认一人；⑦链条未收敛到任何真实存在的点；⑧未诉诸守恒量或奇偶性论证。",
+      "blind_motif": "infinite_descent",
+      "model": "gpt-5.2",
+      "passed": true
+    },
+    "story_id": "infinite_descent_s0"
+  },
+  {
+    "title": "无穷递降",
+    "domain": "山场药市",
+    "story_zh": "梧桐岭有座晒药场，秋天一到，篾席上铺满黄芪、紫苏和晒得卷边的橘皮，风里都是苦香。\n跑山人鹿生揣来一只云纹铜铃，说是祖上传下的宝，挂在腰间能避蛇，山场长者槐公便让众人坐到槐树荫下听案。\n鹿生当众指认88号药师白芷婆，说铜铃先在她袖里。\n白芷婆指认61号挑水匠甘斗，说铜铃先在他扁担头。\n甘斗指认45号蜂客阿栾，说铜铃先在他蜜篓底。\n阿栾指认27号灶娘桂婶，说铜铃先在她灶梁上。\n桂婶指认9号牧童小满，说铜铃先在他羊铃旁。\n小满指认2号更夫老韩，说铜铃先在他梆子袋。\n槐公把铜铃放回桌心，说：照山场旧规，真持宝的人还得说出更小更早的一位，可号牌有头，不能一回比一回小地说下去，所以鹿生这件传家宝从未存在。",
+    "story_en": "On Wutong Ridge, a traveling herb gatherer named Lusheng brings a cloud-patterned bronze bell to the autumn herb yard and claims it is his family treasure. The village rule says that anyone who truly held such a treasure must name an earlier holder with a smaller number. Lusheng names No. 88; No. 88 names No. 61; No. 61 names No. 45; No. 45 names No. 27; No. 27 names No. 9; No. 9 names No. 2. The elder then rules that since the rule would still demand an even smaller earlier holder, and numbered people cannot keep getting smaller forever, Lusheng’s supposed heirloom never existed at all.",
+    "why_shape": "六次独立引证给出88>61>45>27>9>2的严格递降链，末句以良序性否定最初见证者，实现无穷递降。",
+    "motif_id": "infinite_descent",
+    "equation": "\\bigl(\\forall n\\in\\mathbb{N}:\\; P(n)\\Rightarrow\\exists\\,m<n,\\ P(m)\\bigr)\\;\\Longrightarrow\\;\\forall n\\,\\neg P(n)",
+    "model": "gpt-5.5:stable",
+    "judge": {
+      "device_passed": true,
+      "device_checks": "① 恰好 6 次引证，且每次都是独立成句；② 6 个被指认者编号分别为 88、61、45、27、9、2，均以阿拉伯数字明写并构成严格递减序列；③ 末句为长者判词，含“从未存在”，并宣布开端声称为虚；④ 未见回到基例再层层返回的递归结构；⑤ 编号缩减不呈固定比例，也未以“总量有限、旅程完成”收束；⑥ 每人只指认一人，无一触多发的级联；⑦ 链条不收敛、不逼近、也未停驻于真实存在点；⑧ 未诉诸守恒量或奇偶性，结论仅依“严格变小不能无穷”。",
+      "blind_motif": "infinite_descent",
+      "model": "gpt-5.2:stable",
+      "passed": true
+    },
+    "story_id": "infinite_descent_s1"
+  },
+  {
+    "title": "云记绸铺旧案",
+    "domain": "绸铺",
+    "story_zh": "青瓦巷里有家云记绸铺，临河的窗子常半开着，风一吹，柜台上就响起竹尺轻轻的碰声。\n那天，阿荣抱着红布包进门，说这只乌木匣子原先在88号的蔡婆手里。\n蔡婆坐在门槛上，笑了笑，说她只认61号的陆裁缝，匣子是他先带来的。\n陆裁缝摸着线头，低声说，45号的苏篾匠才是更早摸过匣子的人。\n苏篾匠把烟杆往鞋边一磕，说27号的邱灯匠在雨夜里替匣子裹过油纸。\n邱灯匠抬眼看了看檐水，说9号的沈小船曾把匣子抱上渡船。\n沈小船靠着船桨，指向2号的桂老爹，说是桂老爹把匣子交到他怀里的。\n长者把惊堂木一拍，说阿荣这桩说法从未存在，乌木匣子的来历不成话。",
+    "story_en": "On a river-side silk shop street, a man brings in a family box, and one witness after another names only a later holder with a smaller number, until the elder declares that the original claim had never existed.",
+    "why_shape": "每句引证都只指向一个更小的阿拉伯数字，六步连成一条不能再往下的证词链，末句把起始主张直接取消。",
+    "motif_id": "infinite_descent",
+    "equation": "\\bigl(\\forall n\\in\\mathbb{N}:\\; P(n)\\Rightarrow\\exists\\,m<n,\\ P(m)\\bigr)\\;\\Longrightarrow\\;\\forall n\\,\\neg P(n)",
+    "model": "gpt-5.5:stable",
+    "judge": {
+      "device_passed": true,
+      "device_checks": "① 通过：共有 6 次引证，且分别落在 6 个独立句子中；② 通过：被指认者编号依次为 88、61、45、27、9、2，均为阿拉伯数字且严格递减；③ 通过：末句为长者判词，逐字含“从未存在”，并宣布最初声称为虚；④ 通过：结论是直接取消开端声称，不是基例回溯式 recursion；⑤ 通过：编号只是逐次变小，不是固定比例缩短，也未以“总量有限、旅程完成”收束；⑥ 通过：链条一对一，每人只指认一人，无 cascade；⑦ 通过：链条未收敛到某个固定点，只是有限次下探后结束；⑧ 通过：未诉诸守恒量或奇偶性论证。",
+      "blind_motif": "infinite_descent",
+      "model": "gpt-5.2:stable",
+      "passed": true
+    },
+    "story_id": "infinite_descent_s2"
+  },
+  {
+    "title": "乌木筹",
+    "domain": "盐埠",
+    "story_zh": "海风镇的盐埠上，阿槐拿着一枚乌木筹，说它是祖上传下的宝贝，便请众人来听断。\n小乙说：“我见过持筹的老韩，他手里那枚，是 88 号。”\n老韩却说：“那日夜里，我把它交给了 61 号的阿绫。”\n阿绫低头说：“再往前，是 45 号的贺木，曾把它捂在袖里。”\n贺木叹道：“我只在 27 号的米娘处接过一眼。”\n米娘指着河岸说：“真正拿过它的人，是 9 号的石叔。”\n石叔把草帽一摘，说：“我曾把它递给 2 号的阿枝。”\n长者拍了拍案，慢慢说：阿槐所认的那件宝贝从未存在，诸人的口供都只是听岔了风声。",
+    "story_en": "At the salt wharf in the town of Sea Wind, Ah Huai held up a dark wooden tally and claimed it was an old family treasure, so the villagers came to hear the case.\nOne witness said he had seen Lao Han holding it, and the mark on it was 88.\nLao Han said that on a night long ago he had passed it to A Ling, whose mark was 61.\nA Ling said it had once been in the sleeve of He Mu, whose mark was 45.\nHe Mu said he had only taken it from Mi Niang, whose mark was 27.\nMi Niang pointed toward the riverbank and said the one who truly held it was Shi Shu, marked 9.\nShi Shu lifted his straw hat and said he had handed it to A Zhi, marked 2.\nAt last the elder struck the table and said the claimed treasure had never existed at all, and the whole tale was only a mistake blown in on the wind.",
+    "why_shape": "六句引证严格按 88→61→45→27→9→2 递减，每句只指认一人，末句用“从未存在”把最初声称整体取消，正体现“每个案例都逼出更小案例，因此首个案例不存在”的无穷递降。",
+    "motif_id": "infinite_descent",
+    "equation": "\\bigl(\\forall n\\in\\mathbb{N}:\\; P(n)\\Rightarrow\\exists\\,m<n,\\ P(m)\\bigr)\\;\\Longrightarrow\\;\\forall n\\,\\neg P(n)",
+    "model": "gpt-5.5:stable",
+    "judge": {
+      "device_passed": true,
+      "device_checks": "①满足：共 6 次引证，且各自独立成句；②满足：被指认者编号分别为 88、61、45、27、9、2，均为阿拉伯数字且严格递减；③满足：末句逐字含“从未存在”，并宣告阿槐所认宝贝为虚；④满足：未出现从基例逐层返回原点的递归式结论；⑤满足：编号只是逐次变小，未按固定比例缩短，也未以“总量有限、旅程完成”收束；⑥满足：引证链一对一，每人只指认一人；⑦满足：链条未收敛、逼近或停驻于任何真实存在的点；⑧满足：未诉诸守恒量或奇偶性论证。",
+      "blind_motif": "infinite_descent",
+      "model": "gpt-5.2:stable",
+      "passed": true
+    },
+    "story_id": "infinite_descent_s3"
+  },
+  {
+    "title": "盐灯过桌",
+    "domain": "盐场夜饭",
+    "story_zh": "海边的盐场收工后，灶棚里摆了一张圆桌。八个人围坐，按座位起了名：0号阿潮，1号小芦，2号梅嫂，3号石娃，4号青叔，5号灯妮，6号老蟹，7号阿篓。\n桌上只有一盏盐灯，照着一盆热腾腾的蛤蜊粥。老场头说，今夜传灯不许挨着递，规矩明写在灶墙上：n=8，k=3，gcd(k,n)=1；每次越过2人交给第3位。\n阿潮先捧灯，灯从0号阿潮到3号石娃。\n石娃笑着擦手，灯从3号石娃到6号老蟹。\n老蟹把灯举高，灯从6号老蟹到1号小芦。\n小芦闻见粥香，灯从1号小芦到4号青叔。\n青叔挑了挑灯芯，灯从4号青叔到7号阿篓。\n阿篓拍掉袖口盐花，灯从7号阿篓到2号梅嫂。\n梅嫂把碗摆正，灯从2号梅嫂到5号灯妮。\n灯妮看见人人脸上都有光，灯从5号灯妮交还0号阿潮。\n第8次交还首位。\n八人这才一齐动筷。老场头捻着白胡子说：“三与八不通约,故灯不漏一人。”\n偏有阿篓不服，说：“隔一人传，步长2，也省力。”灶墙旁又添一句：步长2与8不互素。于是阿潮试给梅嫂，梅嫂给青叔，青叔给老蟹，老蟹又给阿潮；再来一轮，还是阿潮、梅嫂、青叔、老蟹。两轮过后，小芦、石娃、灯妮、阿篓这单边半数人，始终没摸到灯；阿潮、梅嫂、青叔、老蟹这双边半数人，倒把灯捧热了。\n老场头不再多说，只把盐灯放回桌沿。夜风从苇席缝里进来，粥香慢慢散开，八只碗都亮了一下。",
+    "story_en": "After work at a seaside salt yard, eight people sit around a round table with one salt lamp. They are numbered by their seats. The rule says to pass the lamp by skipping two people and giving it to the third. Starting with A-Chao at seat 0, the lamp goes to seats 3, 6, 1, 4, 7, 2, and 5, then returns to A-Chao on the eighth pass, so every person has held it once. The elder explains that three and eight do not share a measure, so no one is missed. When someone suggests passing by twos instead, the lamp keeps visiting only seats 0, 2, 4, and 6, leaving 1, 3, 5, and 7 untouched.",
+    "why_shape": "圆桌8人按步长3构造性一笔遍历序列0,3,6,1,4,7,2,5并在第8次回到0；对照步长2因gcd(2,8)=2只到偶数陪集而漏掉奇数陪集。",
+    "motif_id": "coprime_orbit",
+    "equation": "\\langle k \\rangle = \\mathbb{Z}_n \\iff \\gcd(k,n)=1",
+    "model": "gpt-5.5",
+    "judge": {
+      "device_passed": true,
+      "device_checks": "i 顺序逐项为 0,3,6,1,4,7,2,5，符合 0+3t mod 8；ii 序列长度恰为 8，且第 8 次交还 0 号，8 人各接灯一次；iii n=8、k=3、gcd(k,n)=1 以及“步长2与8不互素”均明写；iv 对照轮漏掉 {1,3,5,7}，可判为非平凡陪集；排除项中未见相邻依次传递、周期叠加、hub 归因或纯存在性叙述",
+      "blind_motif": "coprime_orbit",
+      "model": "gpt-5.2",
+      "passed": true
+    },
+    "story_id": "coprime_orbit_s0"
+  },
+  {
+    "title": "互素跳环",
+    "domain": "茶棚",
+    "story_zh": "中秋前的柳港茶棚里，圆桌边坐着八个人：0号阿岚、1号阿栀、2号阿禾、3号阿桥、4号阿竹、5号阿荷、6号阿麦、7号阿泉。老阿公把一盏小铜灯放在桌心，先把规矩说清：“每次越过 k−1 人交给第 k 位。”今夜 n=8，k=3，gcd(3,8)=1。于是传递次序是 0,3,6,1,4,7,2,5，对应 0号阿岚、3号阿桥、6号阿麦、1号阿栀、4号阿竹、7号阿泉、2号阿禾、5号阿荷；灯一手接一手，恰好人人接灯一次，第8次回到首位。\n\n灯转到阿荷手里时，满桌的茶香都跟着亮了一下。长者点着灯芯，慢慢说：三与八不通约,故灯不漏一人。后来有人提议隔一人传，试两轮后，1号、3号、5号、7号那一边的人始终接不到灯，只有0号、2号、4号、6号来回见光；长者便说，那被漏的人集恰为一个非平凡陪集。",
+    "story_en": "At the tea stall by Liu Port, eight villagers sat around a round table and passed a small brass lamp. The old man set one rule: each time, skip two people and hand it to the third. With eight people and a step of three, the lamp went from seat 0 to 3 to 6 to 1 to 4 to 7 to 2 to 5, visiting everyone once before returning to the first hand on the eighth pass. When someone later tried a step of two, only half the table ever saw the light, and the old man explained that the reason the three-step game worked was that 3 and 8 had no common factor.",
+    "why_shape": "用 n=8、k=3 的传灯次序 0,3,6,1,4,7,2,5 构成一笔遍历，并用步长 2 的失败对照凸显 gcd(3,8)=1 才能遍历全体。",
+    "motif_id": "coprime_orbit",
+    "equation": "\\langle k \\rangle = \\mathbb{Z}_n \\iff \\gcd(k,n)=1",
+    "model": "gpt-5.5:stable",
+    "judge": {
+      "device_passed": true,
+      "device_checks": "1) 规格中的 n=8、k=3、gcd(3,8)=1 均在文中明写；2) 点名序列 0,3,6,1,4,7,2,5 与 0,k,2k,…(mod n) 逐项一致；3) 序列长度恰为 8，且八人各接灯一次，第 8 次回到首位；4) 明写“三与八不通约,故灯不漏一人”，归因于互素而非中心指挥；5) 对照步长 2 传两轮后，漏接者为 1,3,5,7，构成非平凡陪集；6) 未出现相邻依次传递、双周期叠加或纯计数式存在性表述。",
+      "blind_motif": "coprime_orbit",
+      "model": "gpt-5.2:stable",
+      "passed": true
+    },
+    "story_id": "coprime_orbit_s1"
+  },
+  {
+    "title": "互素跳环",
+    "domain": "修灯铺",
+    "story_zh": "芦港边的修灯铺里，摆着一张圆桌，桌边坐着八个人，正好是 n=8：阿顺（0）、阿莲（1）、阿桥（2）、阿岚（3）、阿谷（4）、阿柚（5）、阿石（6）、阿棠（7）。夜里起风，灯芯一点，连每个人的袖口都照得发暖。\n规矩说得明白：每次越过 k−1 人交给第 k 位，k=3。于是灯从阿顺（0）到阿岚（3），再到阿石（6），再到阿莲（1），再到阿谷（4），再到阿棠（7），再到阿桥（2），再到阿柚（5），第八次又回到阿顺手里；正是 0,3,6,1,4,7,2,5。八个人都各接了一回，没有人被漏下。\n最年长的阿桂说：'八与三不通约，gcd(3,8)=1，所以灯不漏一人。' 旁边有人又提议隔一人传，步长改成 2。才试了两轮，奇数座位上的阿莲、阿岚、阿柚、阿棠这半数人就一直接不到灯；这四个座位，正好是一个非平凡陪集。阿桂摆摆手，让大家别再试那法子了。",
+    "story_en": "At a little lamp shop by Lu Harbor, eight people sat around a round table: A Shun, A Lian, A Qiao, A Lan, A Gu, A You, A Shi, and A Tang. One lamp was lit, and the room warmed as it moved from hand to hand.\nThe rule was simple: skip k-1 people and pass it to the k-th person, with k=3. So the lamp went from A Shun to A Lan, then A Shi, then A Lian, then A Gu, then A Tang, then A Qiao, then A You, and on the eighth pass it came back to A Shun. In seat order that was 0,3,6,1,4,7,2,5, and everyone got the lamp exactly once.\nThe oldest man smiled and said that three and eight shared no common factor, so no one would be missed. Then someone tried step 2 instead. After two rounds, the four odd seats never received the lamp at all; they formed one nontrivial coset, and the idea was put aside.",
+    "why_shape": "The passing order is the orbit 0,3,6,1,4,7,2,5 modulo 8 because gcd(3,8)=1, while step 2 traps the missed seats in the nontrivial coset {1,3,5,7}.",
+    "motif_id": "coprime_orbit",
+    "equation": "\\langle k \\rangle = \\mathbb{Z}_n \\iff \\gcd(k,n)=1",
+    "model": "gpt-5.5:stable",
+    "judge": {
+      "device_passed": true,
+      "device_checks": [
+        "n=8、k=3、规则“每次越过 k−1 人交给第 k 位”均在文中明写。",
+        "点名传递序列逐项为 0,3,6,1,4,7,2,5，且对应 0+3t mod 8 的构造性遍历。",
+        "序列长度为 8，八人各接灯一次，末尾回到阿顺，满足第 n 次回到首位。",
+        "文中明写 gcd(3,8)=1，并以“八与三不通约，灯不漏一人”归因于互素。",
+        "对照步长 2 也有明写；试传后漏接者为阿莲、阿岚、阿柚、阿棠，对应奇数座位，恰是一个非平凡陪集。",
+        "未出现相邻步长 1 的轮转，也未用双周期叠加或纯 pigeonhole 作为成功原因。"
+      ],
+      "blind_motif": "coprime_orbit",
+      "model": "gpt-5.2:stable",
+      "passed": true
+    },
+    "story_id": "coprime_orbit_s2"
+  },
+  {
+    "title": "互素跳环",
+    "domain": "埠头",
+    "story_zh": "灯节那晚，芦港埠头的圆桌边坐着8个人，座位从0到7依次是阿禾、阿杏、阿枣、阿桥、阿豆、阿鱼、阿柳、阿笛；桌边挂着木牌，写着“每次越过k−1人交给第k位”，又写明n=8、k=3，gcd(k,n)=1。\n\n阿禾先接过灯，照着规矩往下传：0号位阿禾，3号位阿桥，6号位阿柳，1号位阿杏，4号位阿豆，7号位阿笛，2号位阿枣，5号位阿鱼，第8次又回到0号位阿禾，恰好人人接灯一次。\n\n孩子们先记下，八与三不通约。长者点破：“三与八不通约,故灯不漏一人。”\n\n旁边有人提议隔一人传（步长2），试两轮发现单双两边半数人永远接不到灯；没接到灯的正是1号、3号、5号、7号那一边。",
+    "story_en": "On a lantern night at the river landing, eight people sat around a round table and passed a lamp by a fixed three-step rule. The lamp visited each person once and came back to the first hand on the eighth pass; when someone tried handing it on with a two-step hop, only half the seats ever saw it.",
+    "why_shape": "The story spells out the visit order 0,3,6,1,4,7,2,5 for n=8 and k=3, shows that gcd(3,8)=1 makes one full pass through all eight people before returning to the start, and contrasts it with step 2, which stays in the even coset.",
+    "motif_id": "coprime_orbit",
+    "equation": "\\langle k \\rangle = \\mathbb{Z}_n \\iff \\gcd(k,n)=1",
+    "model": "gpt-5.5:stable",
+    "judge": {
+      "device_passed": true,
+      "device_checks": "(i) 点名序列为0,3,6,1,4,7,2,5，与0,k,2k,…(mod 8)一致；(ii) 序列长度为8，覆盖0到7各一次，第8次回到0号位；(iii) 文中明写n=8、k=3、gcd(k,n)=1，并有“三与八不通约,故灯不漏一人”；(iv) 对照步长2试两轮后，漏灯者为1、3、5、7号，恰为非平凡陪集。排除条款未见违反。",
+      "blind_motif": "coprime_orbit",
+      "model": "gpt-5.2:stable",
+      "passed": true
+    },
+    "story_id": "coprime_orbit_s3"
+  },
+  {
+    "title": "鸽笼必撞",
+    "domain": "潮乡灯会",
+    "story_zh": "海边的芦花村，每年春潮大时，都要在旧盐仓里办一夜签灯会。仓墙上嵌着十二个小木格，漆成十二个月令：正月杏花，二月燕子，三月青麦，一直到腊月雪靴。\n那年风从海上吹来，带来了十三位远客：补网的阿圆、卖糖的金嫂、吹笙的罗七、赶鹅的满仓、修伞的青竹、挑贝壳的梨花、染布的乌豆、说书的黄鹂、磨刀的铁生、采药的阿芷、画船眼的白叔、捏泥人的小满，还有背着小鼓的石榴。\n村里的规矩很旧：每位远客都要把自己的名签，放进自己生月的木格里，灯会才算开得吉利。\n众人刚进盐仓，湿鞋还没脱，谁也没有报过生月，也没人去摸那些木格。守仓的长者阿潮公坐在竹椅上，看了看十二个木格，又看了看十三位远客，便说：“十三多于十二，今晚必有两位客人的名签落在同一个木格。”\n远客们笑了。罗七说：“阿公连我的生月都没问呢。”金嫂摇着糖担说：“也许人人都不同。”石榴敲了一下小鼓，咚地一声，像替大家壮胆。\n阿潮公只把茶碗推到灯下，说：“先喝姜茶，再慢慢放签。”\n于是盐仓里暖起来。阿圆说自己生在二月，把签放进燕子格；金嫂生在八月，放进桂花格；罗七生在五月，放进菖蒲格；满仓生在冬月，放进芦絮格；青竹生在三月，放进青麦格；梨花生在正月，放进杏花格；乌豆生在六月，放进荷叶格；黄鹂生在九月，放进菊盏格；铁生生在腊月，放进雪靴格；阿芷生在四月，放进桃雨格；白叔生在七月，放进萤火格；小满生在十月，放进柿灯格。\n最后轮到石榴。她摸摸小鼓，笑着说：“我也是五月生。”她把名签放进菖蒲格，正贴在罗七的名签旁边。\n灯火一晃，众人都看见了：十二个木格没有挤成一个，许多木格各有各的名签，只有五月菖蒲格里，罗七和石榴的签并排躺着。\n阿潮公没有得意，只把仓门推开，让春潮的声音进来。那一夜，罗七吹笙，石榴打鼓，两人的曲子先是各走各的，后来在灯下碰了一下，孩子们听了，都说像两只燕子误进了同一片月光。",
+    "story_en": "In a seaside village, the old salt storehouse had twelve little wooden compartments, one for each month. Thirteen travelers arrived for the lantern night, and the rule was that every traveler had to place a name slip into the compartment of their birth month. Before anyone had said a month or checked a compartment, old A-Chao looked at the twelve compartments and the thirteen guests and declared that two slips would surely end up together. The travelers laughed, because he did not yet know any of their birthdays. One by one they placed their slips in different months, until the last traveler, Shiliu, said she too was born in May and put her slip beside Luo Qi’s. The old man’s claim was true, though he had not known in advance which two it would be.",
+    "why_shape": "明写12个格位与13位到来者，长者在逐一核对前仅凭13>12作存在性断言，结尾才给出罗七与石榴同在五月格的见证，且非全体同格、非枢纽强制。",
+    "motif_id": "pigeonhole",
+    "equation": "|A| > |B| \\;\\Rightarrow\\; \\forall f: A\\to B,\\ \\exists\\, x\\neq y:\\ f(x)=f(y)",
+    "model": "gpt-5.5",
+    "judge": {
+      "device_passed": true,
+      "device_checks": "1. 明写了两个计数：十二个木格与十三位远客，且13>12。2. 规则明写为“每位远客都要把自己的名签，放进自己生月的木格里”。3. 长者阿潮公在任何逐一报生月、放签之前，先凭“十三多于十二”断言“必有两位客人的名签落在同一个木格”。4. 之后才逐一核对并放签，属于先断言、后验证。5. 结尾明确揭晓重合者是罗七和石榴，且与前述断言一致。6. 没有把所有人归入同一格，也没有靠地形要冲或中介强制重合。",
+      "blind_motif": "pigeonhole",
+      "model": "gpt-5.2",
+      "passed": true
+    },
+    "story_id": "pigeonhole_s0"
+  },
+  {
+    "title": "鸽笼必撞",
+    "domain": "药市客栈",
+    "story_zh": "白石岭脚下有个草药市，市边一座老客栈，后院晾药棚里钉着十二个挂名的格位，从正月到腊月，各有一块小木牌。\n每逢雨夜，远客进门，都要按店里的规矩，把自己的名牌挂到生月的格位下，好让掌柜明早照册分茶饭。\n那天山雨来得急，十三位远客先后到了：挑黄连的、背石斛的、卖蜂蜡的、牵小骡的，衣角都滴着水。\n掌柜阿榆忙着添火，正要一个个问生月，坐在灶边烤手的柳婆婆摆摆手说：“慢些问。十二个格位，十三位远客，必有两位同月而生。”\n众人听了都笑，说山南海北的人，哪有这样早下话的。\n柳婆婆只把湿鞋往火边挪了挪，说：“问吧，问完自然明白。”\n阿榆便从门口问起。\n挑黄连的叫罗青，生在二月。\n背石斛的叫孟满，生在五月。\n卖蜂蜡的叫金婶，生在八月。\n牵小骡的叫小陆，生在冬月。\n补伞骨的叫胡七，生在三月。\n带松子油的叫阿霜，生在正月。\n卖姜糖的叫陶姐，生在六月。\n抱铜铃的叫梁醒，生在九月。\n采野菊的叫许苗，生在重阳前的九月。\n卖鹿茸角的叫段白，生在腊月。\n磨药刀的叫沈砚，生在四月。\n带红枣的叫秋娘，生在七月。\n最后那个少年叫燕回，生在十月。\n阿榆把十三块名牌一一挂好，棚里没有哪一格挤满人，也没有哪条路把人赶到一处；只是九月木牌下，并排挂着梁醒和许苗两块名牌。\n众人这才收了笑声。柳婆婆端起热茶，像早就听见雨停一样，说：“茶饭照分，九月那桌多添一只碗。”",
+    "story_en": "At the foot of White Stone Ridge stood an old inn beside an herb market. In its drying shed were twelve labeled spaces, one for each month. On rainy nights every traveler had to hang a name tag under the month of their birth, so the innkeeper could serve tea and meals properly in the morning. One stormy evening thirteen travelers arrived. Before the innkeeper asked anyone their birth month, old Granny Liu said that with twelve spaces and thirteen travelers, two must have been born in the same month. The others laughed, since the guests had come from many places. Then the innkeeper asked them one by one and hung the tags. In the end, the September space held two names, Liang Xing and Xu Miao, while the other guests were spread among other months. Granny Liu had known only that some pair must meet there, not which pair it would be.",
+    "why_shape": "明写12个格位与13位远客，长者在逐一核对前仅凭计数断言至少一处重合，结尾才给出见证者，且无convergence或bottleneck。",
+    "motif_id": "pigeonhole",
+    "equation": "|A| > |B| \\;\\Rightarrow\\; \\forall f: A\\to B,\\ \\exists\\, x\\neq y:\\ f(x)=f(y)",
+    "model": "gpt-5.5:stable",
+    "judge": {
+      "device_passed": true,
+      "device_checks": [
+        "明写两个计数：`十二个挂名的格位` 与 `十三位远客`，且 `13 > 12`。",
+        "存在性断言先于逐一核对：柳婆婆先说“必有两位同月而生”，之后才开始逐个问生月。",
+        "结尾验证为真：最后明确点出九月同格的两人是梁醒和许苗。",
+        "未出现“所有人归入同一格”的情形。",
+        "未使用地形要冲或中介强制重合；重合仅来自生日月份归类。"
+      ],
+      "blind_motif": "pigeonhole",
+      "model": "gpt-5.2:stable",
+      "passed": true
+    },
+    "story_id": "pigeonhole_s1"
+  },
+  {
+    "title": "月牌铺",
+    "domain": "月牌铺",
+    "story_zh": "青溪镇的月牌铺里，墙上挂着十二个月份的木牌，十三位远客一到，照规矩每人只许认一块月牌，把自己的生辰报在那块牌下。众人还没来得及挨个问清，白胡子的葛掌柜先把烟杆往门槛上一磕，说：“十三多于十二，必有二客同月而生。”客人们都笑他嘴快，说且等名字和月份都清点完再信。等到夜深，灯下一一对过，才知道阿兰和石生都生在五月，其余人也各有去处，葛掌柜先前那句断言，果然不差。",
+    "story_en": "At the Moon-Tag shop in Qingxi Town, twelve month-marked wooden plaques hung on the wall, and thirteen travelers arrived. By custom, each person chose one plaque and announced the month of their birth beneath it. Before anyone had finished checking one by one, the white-bearded shopkeeper tapped his pipe on the doorstep and said, “Thirteen is more than twelve; two of you must have been born in the same month.” The travelers laughed and told him to wait until the names and months were all counted. When the lantern-lit tally was done, it turned out that A Lan and Shi Sheng were both born in May; everyone else had their own month, and the shopkeeper’s early remark proved true.",
+    "why_shape": "十二个月牌对应十二个去处，十三位来客先于逐一清点被断言必有一对同月，结尾只验证这对是谁，不靠中转点或全员同归。",
+    "motif_id": "pigeonhole",
+    "equation": "|A| > |B| \\;\\Rightarrow\\; \\forall f: A\\to B,\\ \\exists\\, x\\neq y:\\ f(x)=f(y)",
+    "model": "gpt-5.5:stable",
+    "judge": {
+      "device_passed": true,
+      "device_checks": "明写两个计数：十二个月份与十三位远客，且13>12；长者在任何逐一核对前先断言“必有二客同月而生”；结尾清点后验证为真，指出阿兰和石生同在五月；未出现全员归入同一格，也未用地形要冲或中介强制重合",
+      "blind_motif": "pigeonhole",
+      "model": "gpt-5.2:stable",
+      "passed": true
+    },
+    "story_id": "pigeonhole_s2"
+  },
+  {
+    "title": "鸽笼必撞",
+    "domain": "竹院",
+    "story_zh": "秋收后的青栎湾，竹院里摆着十二块月牌，正好写着正月、二月、三月，一直排到腊月。那天来了十三位远客，每人都要把木签放进自己出生那个月的月牌下。\n\n席还没热，白胡子长者先说：“十三个人，只有十二块月牌，不用一一问，我也敢说，必有两位同月而生。”众人笑他嘴快，说不看完怎知是谁。长者只摸了摸胡子，叫大家照着自己的生辰站好，不许挤，不许换牌。\n\n阿梅站正月，石生站二月，蓝姑站三月，舟子站四月；阿梨站五月，阿泉也站五月；黑豆站六月，柳芽站七月，贺儿站八月，陶哥站九月，阿竹站十月，米婆站冬月，红扣站腊月。等到最后清点，果然是阿梨和阿泉同在五月；其余的人，各自落在不同的月牌下，长者先前的话一字不差。",
+    "story_en": "After the harvest in Qingli Bay, the bamboo yard was set with twelve month plaques, from the first month all the way to the twelfth. Thirteen travelers arrived that day, and each one was to place a wooden slip under the plaque for the month they were born in.\n\nBefore anyone had even warmed their seat, the white-bearded elder said, “Thirteen people and only twelve month plaques — I do not need to ask one by one to know this: two of them must share a birth month.” The crowd laughed and said he was talking too fast. He only stroked his beard and asked everyone to stand by their own birthday month, without crowding or switching places.\n\nMei stood by the first month, Shisheng by the second, Langu by the third, and Zhouzi by the fourth; Ali stood by the fifth month, and Aquan did too; Heidou stood by the sixth, Liuya by the seventh, He'er by the eighth, Taoge by the ninth, Azhu by the tenth, Mipo by the eleventh, and Hongkou by the twelfth. When the final tally was done, it was indeed Ali and Aquan who shared the fifth month; everyone else stood under a different plaque, and the elder's words had been right all along.",
+    "why_shape": "先写出十二个格位与十三位到来者，并让长者在逐一核对前就凭“十三多于十二”断言必有同月者；结尾再点明阿梨与阿泉同在五月，验证断言成立，同时其余人分散在各月，未出现全入一格或由中介强推重合。",
+    "motif_id": "pigeonhole",
+    "equation": "|A| > |B| \\;\\Rightarrow\\; \\forall f: A\\to B,\\ \\exists\\, x\\neq y:\\ f(x)=f(y)",
+    "model": "gpt-5.5:stable",
+    "judge": {
+      "device_passed": true,
+      "device_checks": "1) 两个计数明写：n=12（“十二块月牌”且列出正月到腊月）；N=n+1=13（“十三位远客/十三个人”）满足，且N>n成立。\n2) 规则“每客必归一格”明写： “每人都要把木签放进自己出生那个月的月牌下”满足。\n3) 纯计数存在性断言位置：长者在任何逐一核对/逐人分配之前即说“十三个人，只有十二块月牌，不用一一问…必有两位同月而生”满足“先断言后核对”。\n4) 断言不依赖揭晓：断言理由文本仅依“十三个人/十二块月牌”且明确“不用一一问”满足。\n5) 结尾验证为真：结尾清点“果然是阿梨和阿泉同在五月”满足“结尾验证”。\n6) 排除条款-不得全入同一格：分配结果覆盖多个月份（正月、二月、三月、四月、五月(2人)、六月、七月、八月、九月、十月、冬月、腊月）不为convergence，满足。\n7) 排除条款-bottleneck/hub强制：重合原因仅因出生月相同；无地形要冲/中介强制机制，满足。\n8) 结论性质：长者只给出“必有两位同月而生”的存在性结论，未在断言时构造是哪两位；具体是哪两位留到结尾清点揭晓，满足。",
+      "blind_motif": "pigeonhole",
+      "model": "gpt-5.2:stable",
+      "passed": true
+    },
+    "story_id": "pigeonhole_s3"
+  },
+  {
+    "title": "小埂上的甜香",
+    "domain": "蜂场花圃",
+    "story_zh": "本故事的换词：赶蜂人↔护花人；蜂箱↔花棚；蜜脾↔花粉。\n第一遍：\n赶蜂人阿满住在蜂箱旁，护花人青枝住在花棚旁。\n清早，赶蜂人沿小埂来到花棚，护花人开门迎他。\n他带来一盒蜜脾，说蜂箱昨夜暖得早；她捧出一盒花粉，说花棚今晨香得迟。\n赶蜂人把蜜脾放在花棚旁的老木板上，护花人把花粉放在蜂箱旁的老木板上。\n到黄昏，蜂箱边多了花棚的香气，花棚边也多了蜂箱的甜味。\n第二遍：\n护花人阿满住在花棚旁，赶蜂人青枝住在蜂箱旁。\n清早，护花人沿小埂来到蜂箱，赶蜂人开门迎他。\n他带来一盒花粉，说花棚昨夜暖得早；她捧出一盒蜜脾，说蜂箱今晨香得迟。\n护花人把花粉放在蜂箱旁的老木板上，赶蜂人把蜜脾放在花棚旁的老木板上。\n到黄昏，花棚边多了蜂箱的香气，蜂箱边也多了花棚的甜味。\n再换一次即得原话",
+    "story_en": "In a little bee yard beside a flower shed, Aman and Qingzhi visit each other at dawn. One brings a box of honeycomb, the other a box of pollen, and each leaves a gift near the other’s home. By evening, the beehives smell more like flowers, and the flower shed tastes a little sweeter. The tale is then told again with the two keepers, their places, and their gifts exchanged.",
+    "why_shape": "正文首句给出三组内部对偶词，第二遍五句与第一遍五句逐句对应；对第二遍施行同一替换会逐字还原第一遍，且σ²=id。",
+    "motif_id": "projective_duality",
+    "equation": "\\sigma:\\ (a{:}b{:}c)\\ \\leftrightarrow\\ \\{ax+by+cz=0\\},\\qquad \\sigma^{2}=\\mathrm{id},\\qquad \\vdash P\\ \\Leftrightarrow\\ \\vdash P^{\\sigma}",
+    "model": "gpt-5.5",
+    "judge": {
+      "device_passed": true,
+      "device_checks": "① 篇首已明文列出对调词典，且3对均成双、无剩余项；② 第一遍与第二遍均为5句，句数相等且逐句对齐；③ 以词典对第二遍做机械替换后，可逐字还原第一遍；④ 两遍各自语义通顺，末尾也有“再换一次即得原话”声明。",
+      "blind_motif": "projective_duality",
+      "model": "gpt-5.2",
+      "passed": true
+    },
+    "story_id": "projective_duality_s0"
+  },
+  {
+    "title": "两岸乌篷船",
+    "domain": "河岸借船",
+    "story_zh": "词典：阿柳↔阿桥；东岸↔西岸；借来↔借去。\n第一遍\n阿柳住在东岸，靠补旧网过日子。\n阿桥住在西岸，守着一只乌篷船。\n春水涨时，阿柳从阿桥那里借来乌篷船，去东岸外的芦滩接迷路的小羊。\n傍晚风停，阿柳把乌篷船停在西岸柳树下，阿桥端来一碗姜汤。\n后来阿柳逢人便说，东岸的好日子，有阿桥一份。\n第二遍\n阿桥住在西岸，靠补旧网过日子。\n阿柳住在东岸，守着一只乌篷船。\n春水涨时，阿桥从阿柳那里借去乌篷船，去西岸外的芦滩接迷路的小羊。\n傍晚风停，阿桥把乌篷船停在东岸柳树下，阿柳端来一碗姜汤。\n后来阿桥逢人便说，西岸的好日子，有阿柳一份。\n再换一次即得原话",
+    "story_en": "A-Liu lives on the east bank mending old nets, while A-Qiao lives on the west bank and keeps a black-awning boat. When the spring water rises, A-Liu borrows the boat from A-Qiao to fetch a lost lamb from the reeds, then leaves the boat under the willows on the west bank, where A-Qiao brings ginger soup. Later A-Liu tells everyone that A-Qiao has a share in the east bank’s good days. The tale is then retold with A-Liu and A-Qiao, east and west, and borrowing in and borrowing out exchanged, and the second telling is just as plain and true.",
+    "why_shape": "篇首给出三组对调词典，第二遍与第一遍五句逐句对应；对第二遍施行同一对偶替换可逐字还原第一遍，且顺序不反转。",
+    "motif_id": "projective_duality",
+    "equation": "\\sigma:\\ (a{:}b{:}c)\\ \\leftrightarrow\\ \\{ax+by+cz=0\\},\\qquad \\sigma^{2}=\\mathrm{id},\\qquad \\vdash P\\ \\Leftrightarrow\\ \\vdash P^{\\sigma}",
+    "model": "gpt-5.5:stable",
+    "judge": {
+      "device_passed": true,
+      "device_checks": "① 篇首首句明文列出3对对调词典，左右成对且无剩余项；② 第一遍、第二遍均为5句，句序逐句对齐；③ 逐词对第二遍施行词典替换后，可逐字还原第一遍；④ 两遍各自读来命题都通顺；⑤ 篇末含指定声明“再换一次即得原话”。",
+      "blind_motif": "projective_duality",
+      "model": "gpt-5.2:stable",
+      "passed": true
+    },
+    "story_id": "projective_duality_s1"
+  },
+  {
+    "title": "纸伞铺两回",
+    "domain": "纸伞铺",
+    "story_zh": "阿柳↔阿生，借去↔送回，热茶↔冷茶。\n南街尽头的纸伞铺里，阿柳正给一把油纸伞换新骨。\n傍晚，阿生抱着那把湿伞进门，说昨夜借去那回正赶上大雨，幸亏它挡住了风。\n阿柳把一碗热茶放到阿生手边，听阿生说山路上的红灯怎样在雨里一晃一晃。\n再换一次即得原话。\n\n阿生↔阿柳，送回↔借去，冷茶↔热茶。\n南街尽头的纸伞铺里，阿生正给一把油纸伞换新骨。\n傍晚，阿柳抱着那把湿伞进门，说昨夜送回那回正赶上大雨，幸亏它挡住了风。\n阿生把一碗冷茶放到阿柳手边，听阿柳说山路上的红灯怎样在雨里一晃一晃。\n再换一次即得原话。",
+    "story_en": "In a paper-umbrella shop at the end of South Street, two people trade places in a little rainy-day visit: one brings back a wet umbrella, one sets out tea. A red lantern on the mountain road, the smell of fresh wood, and the old umbrella itself hold the day together. Read it again with the words turned around, and the same tale stands there once more.",
+    "why_shape": "前后两段各五句；第二段把首句词对和文中的三组词逐一换向后重述，换回去便与前段逐字重合，末句固定不动。",
+    "motif_id": "projective_duality",
+    "equation": "\\sigma:\\ (a{:}b{:}c)\\ \\leftrightarrow\\ \\{ax+by+cz=0\\},\\qquad \\sigma^{2}=\\mathrm{id},\\qquad \\vdash P\\ \\Leftrightarrow\\ \\vdash P^{\\sigma}",
+    "model": "gpt-5.5:stable",
+    "judge": {
+      "device_passed": true,
+      "device_checks": "1) 篇首第一句为对调词典，三对词项成双且无剩余；2) 两遍均为5句，句数相等且逐句对齐；3) 将第二遍按词典机械替换后，可逐字还原第一遍；4) 两遍各自语义通顺；5) 未见逐项逆序或其他明显排除项。",
+      "blind_motif": "projective_duality",
+      "model": "gpt-5.2:stable",
+      "passed": true
+    },
+    "story_id": "projective_duality_s2"
+  },
+  {
+    "title": "乌岬盐村的小陶罐",
+    "domain": "潮盐",
+    "story_zh": "在乌岬盐村，老灶婆教孩子们一个唱法：每唱一遍删去后一半的词；碰见前后分不齐，就让前头多留一个词。\n那年春潮大，阿柳家的蓝盐总带着苦味。老灶婆说，盐怕急火，也怕闹声，要用小陶罐收着，傍晚搁在篱门边，让风替它睡一觉。\n阿柳照做了。篱笆外，晒盐的浅池一片银亮，螺壳在泥里吐泡，远处有人收网，木桨敲着船舷。阿柳抱来小陶罐，罐肚凉凉的，像藏着一枚小月亮。她不敢大声，只照老灶婆的话，轻轻唱给罐子听：\n海风 把 蓝盐 送进 小陶罐 阿柳 关上 篱门 等 月牙 落在 渔网 旁边 睡吧 小舟 安安 静静\n海风 把 蓝盐 送进 小陶罐 阿柳 关上 篱门 等\n海风 把 蓝盐 送进 小陶罐\n海风 把 蓝盐\n海风 把\n海风\n海风",
+    "story_en": "In the salt village of Wu Cape, Granny Stove teaches the children a way of singing: each time the song is sung, the latter half of its words is dropped; if the words do not split evenly, the front part keeps one more. One spring, A-Liu’s blue salt tastes bitter, so Granny tells her to keep it in a small clay jar by the fence at dusk and let the wind settle it. A-Liu follows the advice beside the shining salt pans and sings the jar a little song, each singing shorter than the last, until only the sea wind remains—and when she sings once more, it remains just the same.",
+    "why_shape": "正文中的歌谣按 17→9→5→3→2→1→1 逐轮删去后 ⌊n/2⌋ 个词，最后一词再次施行规则不变，呈现收缩不动点。",
+    "motif_id": "contraction_fixed_point",
+    "equation": "d(f(x),f(y))\\le q\\,d(x,y)\\ (q<1)\\ \\text{ on complete }(X,d)\\;\\Rightarrow\\;\\exists!\\,x^{*}:\\ f(x^{*})=x^{*},\\quad x_{n+1}=f(x_n)\\to x^{*}",
+    "model": "gpt-5.5",
+    "judge": {
+      "device_passed": true,
+      "device_checks": "1) 篇首明文给出删半词规则；2) 词数序列为17→9→5→3→2→1→1，符合n→ceil(n/2)；3) 各轮均为上一轮删去后半词后的逐字前缀，机械施行吻合；4) 末句为一词“海风”，再照录一轮后仍逐字相同；5) 未见自指、回环、第二线索汇入或括号递归。",
+      "blind_motif": "contraction_fixed_point",
+      "model": "gpt-5.2",
+      "passed": true
+    },
+    "story_id": "contraction_fixed_point_s0"
+  },
+  {
+    "title": "灯到戏棚",
+    "domain": "木偶戏",
+    "story_zh": "唱灯的规矩：每唱一遍删去后一半（向下取整）个词。\n榆桥村的老戏棚塌了半边檐，春社将近，孩子们还想看小马木偶踏台。青辫阿榆把木偶擦亮，把银铃系在马脖子上，提着一盏没点着的红灯，去麦场那头请花婆。花婆耳背，认人全凭歌声。阿榆每到一处田埂，就按规矩唱一遍；风把后头的话收走些，前头的话却越发清楚。等她站到老戏棚门口，花婆已经披衣出来，拿火煤子一点，红灯亮了，小马的影子在墙上抬起前蹄。\n歌：榆桥 木偶 小马 银铃 青辫 阿榆 走 过 麦场 进 老 戏棚 求 花婆 点 红 灯\n歌：榆桥 木偶 小马 银铃 青辫 阿榆 走 过 麦场\n歌：榆桥 木偶 小马 银铃 青辫\n歌：榆桥 木偶 小马\n歌：榆桥 木偶\n歌：榆桥\n歌：榆桥",
+    "story_en": "In Yuqiao village, the old puppet shed needed a lamp before the spring play. Ayu, the girl with the blue braid, carried a wooden horse puppet with a silver bell and went across the wheat ground to ask Granny Hua for fire. Granny Hua knew people by their songs, so Ayu sang the lamp song again and again; each time the song grew shorter, while what remained sounded clearer. By the time Ayu reached the shed, Granny Hua came out, lit the red lamp, and the little horse's shadow lifted its foreleg on the wall. The song had dwindled to one place-name, and singing it once more left it unchanged.",
+    "why_shape": "歌谣词数按明示规则逐轮为17→9→5→3→2→1→1，最后一词句再施行删⌊1/2⌋词后不变，体现收缩不动点。",
+    "motif_id": "contraction_fixed_point",
+    "equation": "d(f(x),f(y))\\le q\\,d(x,y)\\ (q<1)\\ \\text{ on complete }(X,d)\\;\\Rightarrow\\;\\exists!\\,x^{*}:\\ f(x^{*})=x^{*},\\quad x_{n+1}=f(x_n)\\to x^{*}",
+    "model": "gpt-5.5:stable",
+    "judge": {
+      "device_passed": true,
+      "device_checks": "1) 规矩在篇首明示，缩短规则为删去后一半（向下取整）个词；2) 词数链为17→9→5→3→2→1→1，符合 n→ceil(n/2)；3) 各轮均为上一轮机械删词后的前缀，逐字吻合；4) 末句“榆桥”施行规则后不变，且下一轮与之逐字相同；5) 全文只有一条缩短链，无分支、回环、回到旧完整句或自指内容。",
+      "blind_motif": "contraction_fixed_point",
+      "model": "gpt-5.2:stable",
+      "passed": true
+    },
+    "story_id": "contraction_fixed_point_s1"
+  },
+  {
+    "title": "石桥清晨",
+    "domain": "乡桥",
+    "story_zh": "每唱一遍删去后一半个词\n清晨 阿婆 笑着 站在 石桥边 听 雨燕 掠过 水面 把 蓝布伞 收起 递给 小孙女 当 春风 来时\n清晨 阿婆 笑着 站在 石桥边 听 雨燕 掠过 水面\n清晨 阿婆 笑着 站在 石桥边\n清晨 阿婆 笑着\n清晨 阿婆\n清晨\n清晨",
+    "story_en": "At dawn, Granny smiles on the stone bridge, watching swallows skim the water; she folds away her blue umbrella and gives it to her little granddaughter when the spring wind comes.",
+    "why_shape": "歌谣每轮只删去末尾一半词，前缀依次变短，最后落在“清晨”并原样再写一遍，呈现收缩不动点。",
+    "motif_id": "contraction_fixed_point",
+    "equation": "d(f(x),f(y))\\le q\\,d(x,y)\\ (q<1)\\ \\text{ on complete }(X,d)\\;\\Rightarrow\\;\\exists!\\,x^{*}:\\ f(x^{*})=x^{*},\\quad x_{n+1}=f(x_n)\\to x^{*}",
+    "model": "gpt-5.5:stable",
+    "judge": {
+      "device_passed": true,
+      "device_checks": "首行给出删半规则；正文链条逐轮为 17→9→5→3→2→1→1，符合每轮删去后 floor(n/2) 个词的机械缩短；各轮均为上一轮的前缀截断，逐字吻合；最终不动句为“一词之句”「清晨」，对其再施行规则仍逐字不变，且随后一轮与之相同；全篇只有一条缩短链，没有并线、回环或括号式递归。",
+      "blind_motif": "contraction_fixed_point",
+      "model": "gpt-5.2:stable",
+      "passed": true
+    },
+    "story_id": "contraction_fixed_point_s2"
+  },
+  {
+    "title": "收缩不动点",
+    "domain": "豆腐坊",
+    "story_zh": "豆腐坊 里 阿满 对 着 旧灯 轻唱 一支 送客 小调 说 今夜 风 稳 霜 也 软\n豆腐坊 里 阿满 对 着 旧灯 轻唱 一支 送客\n豆腐坊 里 阿满 对 着\n豆腐坊 里 阿满\n豆腐坊 里\n豆腐坊\n豆腐坊",
+    "story_en": "At a tofu shop, Aman softly sings a farewell tune under an old lamp. The song keeps losing its tail words until only the shop name remains, and then it stays there.",
+    "why_shape": "Each line is the previous line with its last half of words removed; the one-word line is then repeated unchanged once, so the ending stays exactly the same under the rule.",
+    "motif_id": "contraction_fixed_point",
+    "equation": "d(f(x),f(y))\\le q\\,d(x,y)\\ (q<1)\\ \\text{ on complete }(X,d)\\;\\Rightarrow\\;\\exists!\\,x^{*}:\\ f(x^{*})=x^{*},\\quad x_{n+1}=f(x_n)\\to x^{*}",
+    "model": "gpt-5.5:stable",
+    "judge": {
+      "device_passed": true,
+      "device_checks": "1) 词数序列为17→9→5→3→2→1→1，逐轮都等于上一轮删去后⌊n/2⌋个词后的结果；2) 每一行都与上一轮逐字一致地保留前半段，无额外增删改；3) 共有6轮缩短，满足连续施行≥5轮；4) 末句为单词“豆腐坊”，施行规则后不变，且下一轮与之逐字相同；5) 全程只有一条缩短链，没有分支、回环或括号式嵌套。",
+      "blind_motif": "contraction_fixed_point",
+      "model": "gpt-5.2:stable",
+      "passed": true
+    },
+    "story_id": "contraction_fixed_point_s3"
+  },
+  {
+    "title": "贝母盐仓",
+    "domain": "盐仓修缮",
+    "story_zh": "海边盐仓换了新顶，阿篾带着两个徒弟来铺贝母片。\n小满问「哪片」。\n阿篾把宽叶形和细鱼形分开，只让牙口相亲的边挨边。\n晨潮退后，第一排从灶门旁伸出，像湿沙上的鸟脚印。\n阿篾说「看纹」。\n每片都有青线和白点，青线只迎白点，白点只靠青线。\n小满说「懂了」。\n他们铺到午后，仓里没有一道缝，风却能从梁上轻轻过。\n宽片总比窄片多些，可谁也不去数，只觉得眼前越铺越顺。\n阿篾笑「慢来」。\n晚饭前，晒盐的婆婆送来热粥，认出门边一朵像蟹钳的花。\n她绕到后墙，又看见那花的亲戚，却少了一粒白点。\n婆婆说「怪亲」。\n夜里油灯晃着，徒弟们以为前面那排会照旧回来，等了许久也没有。\n小满问「错吗」。\n阿篾沿边摸过去，所有牙口都咬得安稳，连最小的角也服帖。\n第二天孩子们来玩，在东角找到昨日的蟹钳花，又在西角找到另一朵。\n孩子喊「又有」。\n他们越找越欢，觉得仓顶像老朋友讲新话，处处熟，处处不肯照抄。\n阿篾说「收工」。\n秋雨落下时，盐粒安睡在干仓里，贝母顶泛着温温的光。",
+    "story_en": "By the sea, an old salt storehouse received a new roof. A-Mie and two apprentices laid shell pieces in two shapes, broad leaves and slim fish, joining only the edges whose marks belonged together. The roof closed without a gap, and the broad pieces seemed always a little more common than the narrow ones. Here and there the villagers recognized a crab-claw flower or something kin to it, yet each return was slightly changed. The children searched the roof and felt it was like an old friend telling fresh stories: familiar everywhere, never merely copied. When autumn rain came, the salt slept dry beneath the warm shine of the shell roof.",
+    "why_shape": "正文21句的A/B句型严格为ABAABABAABAABABAABABA，其中A为无引号且≥15汉字的叙述句，B为含「」且≤8汉字的直接引语句，对应Fibonacci词第7次迭代。",
+    "motif_id": "aperiodic_tiling",
+    "equation": "\\frac{N_{\\text{fat}}(n)}{N_{\\text{thin}}(n)}\\xrightarrow[n\\to\\infty]{}\\varphi=\\frac{1+\\sqrt{5}}{2}",
+    "model": "gpt-5.5",
+    "judge": {
+      "device_passed": true,
+      "device_checks": "1) 共21句，按句号分句成立；2) A/B节拍序列为 ABAABABAABAABABAABABA，与第7次迭代逐位吻合，A=13、B=8；3) 7个B句均含「」且均≤8字，14个A句均无引号且均≥15字；4) 真因子1/3/7均无法整段重复；5) 作为Fibonacci/Sturmian前缀，等长窗口A数差至多1。",
+      "blind_motif": "aperiodic_tiling",
+      "model": "gpt-5.2",
+      "passed": true
+    },
+    "story_id": "aperiodic_tiling_s0"
+  },
+  {
+    "title": "祠堂陶花",
+    "domain": "祠堂铺陶",
+    "story_zh": "柳溪镇的瓦匠阿青，清早背着两篮陶片进祠堂。\n「慢些。」\n老槐树下的孩子们跟在后面，看见陶片有胖有瘦。\n阿青只按祖母留下的缺口相接，青边挨黄角。\n「别乱。」\n每放一片，他都摸摸边上的小燕尾，才肯落手。\n「像花。」\n晌午的光从梁缝落下，地面慢慢长出野菊田。\n胖陶片总比瘦陶片多些，可谁也说不出准头。\n「真巧。」\n王婶端来米糕，忽然指着脚边说，这朵昨夜梦见过。\n阿青笑着摇头，又在远处拼出相近的一簇菱叶。\n「又来了。」\n孩子跑遍厅堂，处处认得旧影，却找不到同一处。\n「不一样。」\n到了傍晚，整块地皮像溪水铺平，鞋底走去毫无缝响。\n镇长搬来旧门板比量，想寻一段能整齐挪回原样。\n「寻不着。」\n阿青收起小锤，说只要照着边口，空地总会自己安稳。\n「回家吧。」\n夜里祠堂灯灭，月光照着满地熟面孔，没有一张肯排成老行列。",
+    "story_en": "In Liuxi Town, a tiler named A-Qing carries two baskets of clay pieces into the ancestral hall. The children follow him and see that some pieces are broad and some are narrow. He joins them only by the little marks his grandmother taught him: blue edge to yellow corner, swallow-tail to its mate. By noon the floor looks like a field of wild chrysanthemums. The broad pieces always seem a little more common, though nobody can say by how much. Villagers keep recognizing little clusters they feel they have seen before, yet whenever they search for the exact same place, it is not there. By dusk the hall floor is smooth underfoot, full of familiar faces, and not one part can simply be shifted to make the whole stand as it did before.",
+    "why_shape": "正文21句严格按ABAABABAABAABABAABABA排列，A句均无引号且不少于15个汉字，B句均含「」且不超过8字，对应13:8、非幂周期与Sturmian平衡性。",
+    "motif_id": "aperiodic_tiling",
+    "equation": "\\frac{N_{\\text{fat}}(n)}{N_{\\text{thin}}(n)}\\xrightarrow[n\\to\\infty]{}\\varphi=\\frac{1+\\sqrt{5}}{2}",
+    "model": "gpt-5.5:stable",
+    "judge": {
+      "device_passed": true,
+      "device_checks": "1) 共21句，逐句对应Fibonacci词7次迭代串ABAABABAABAABABAABABA，A/B位置完全吻合；2) A句13句、B句8句，比例为13:8；3) 对真因子p=1、3、7，均不构成前p拍的整数次重复；4) 该21拍前缀满足平衡性要求，任取等长滑窗时A拍数目差不超过1；5) 所有A句均不含引号且不少于15个汉字，所有B句均含「」且不超过8个汉字。",
+      "blind_motif": "aperiodic_tiling",
+      "model": "gpt-5.2:stable",
+      "passed": true
+    },
+    "story_id": "aperiodic_tiling_s1"
+  },
+  {
+    "title": "柳巷花伞",
+    "domain": "伞坊",
+    "story_zh": "江南雨多，柳巷有个糊伞匠阿梧，专给孩子做花伞。\n「往东。」\n他把胖菱纸和瘦菱纸摆在竹骨间，边边只许青线贴青线。\n红线须靠红线，缺口须让给尖角，谁也不肯越规矩。\n「添叶。」\n阿梧的女儿小满递来桑叶，照着纸上小齿一片片压平。\n「别齐。」\n胖菱像睡鹅，瘦菱像小鱼，两样挨着竟把伞面铺得无一丝漏光。\n邻家木匠看了半晌，想找一处能整把搬到别处的花脸。\n「缝紧。」\n他转了一圈又一圈，只觉每处都像见过，却没有两处全然相同。\n小满笑着把余纸收入竹篮，胖的总比瘦的多些，也多得不恼人。\n「又见。」\n三日后庙会落雨，巷头巷尾的孩子举伞跑过青石桥。\n「莫量。」\n老茶客说那花伞不靠尺子争胜，靠的是每片都认得左右邻居。\n风吹伞面微微颤动，鹅影鱼影到处相逢，却从不排成呆板队伍。\n「不挪。」\n有个富商愿出重钱买下法子，阿梧只送他一包胖瘦纸样。\n「真美。」\n后来柳巷雨声年年相似，孩子们撑开的花却总叫老人抬头久看。",
+    "story_en": "In rainy Willow Lane, the umbrella maker Awu makes flowered umbrellas for children. He lays broad diamond papers and narrow diamond papers between bamboo ribs, matching blue edges to blue, red to red, notch to point. His daughter Xiaoman helps press each piece flat. The whole canopy closes without a crack of light. A neighbor tries to find one part that can simply be moved elsewhere and match again, but wherever he looks the work feels familiar without ever being exactly the same. At the temple fair, children run over the wet stone bridge under those umbrellas, and even years later the old people still look up at the flowers opening in the rain.",
+    "why_shape": "正文21句严格按 Fibonacci 词第7次迭代 ABAABABAABAABABAABABA 排列，A句无引号且不少于15个汉字，B句含「」且不超过8字，形成13:8的可核查拍型。",
+    "motif_id": "aperiodic_tiling",
+    "equation": "\\frac{N_{\\text{fat}}(n)}{N_{\\text{thin}}(n)}\\xrightarrow[n\\to\\infty]{}\\varphi=\\frac{1+\\sqrt{5}}{2}",
+    "model": "gpt-5.5:stable",
+    "judge": {
+      "device_passed": true,
+      "device_checks": "1. 共21句，逐句计数成立。2. 句型节拍与Fibonacci词第7次迭代 ABAABABAABAABABAABABA 逐位吻合；A=13句、B=8句。3. A句均为不含引号的叙述句，且长度均≥15个汉字；B句均含「」直接引语，且长度均≤8个汉字。4. 对真因子p∈{1,3,7}的整周期重复逐项核查，均不成立。5. 作为21拍有限前缀，满足所述平衡性要求：任取等长滑窗，A拍数差不超过1。",
+      "blind_motif": "aperiodic_tiling",
+      "model": "gpt-5.2:stable",
+      "passed": true
+    },
+    "story_id": "aperiodic_tiling_s2"
+  },
+  {
+    "title": "鹿溪湾的鱼网",
+    "domain": "补网",
+    "story_zh": "鹿溪湾有个补网的姑娘阿杏，手指快得像燕尾。\n老爹说「慢些。」\n她把宽青篾和窄白篾交错压进旧网眼里。\n每片篾边都按祖母留下的缺口相咬。\n小弟喊「真密。」\n她不照满幅花样，只认每个缺口该接哪片篾。\n阿杏应「记得。」\n晨潮退后，网铺在黑泥上，像一块会呼吸的田。\n宽篾旁常跟窄篾，窄篾又引来下一片宽篾。\n渔嫂笑「眼熟。」\n孩子们蹲着找相同的小角花，隔几步总能撞见。\n可他们跑遍整张网，也找不到两处完全对齐。\n阿杏说「别急。」\n日头偏西时，银鱼影子从孔里一闪一闪过去。\n船公问「成吗？」\n阿杏把最后一根白篾塞紧，掌心磨出细红痕。\n老爹提起网角轻抖，水珠沿着陌生又熟的路滚落。\n众人赞「好网。」\n那夜鹿溪湾下了小雨，补好的鱼网挂在槐树间。\n小弟喊「鱼来。」\n天明以后，阿杏背网出门，河风把每个结吹得亮亮的。",
+    "story_en": "In Deer Creek Bay, Axing repairs an old fishing net with broad green strips and narrow white ones, following only how each notch fits the next. Children keep finding little familiar corners in it, yet nowhere can they find two places that line up exactly. By evening the net is whole again, catching rainlight, fish-shadows, and the villagers' praise, and at dawn Axing carries it back to the river wind.",
+    "why_shape": "正文21句严格按 Fibonacci 词第7次迭代 ABAABABAABAABABAABABA 排布，A为无引号且不少于15汉字的叙述句，B为含「」且不超过8汉字的引语句，对应13:8的频率比并满足可枚举的非幂周期与平衡性。",
+    "motif_id": "aperiodic_tiling",
+    "equation": "\\frac{N_{\\text{fat}}(n)}{N_{\\text{thin}}(n)}\\xrightarrow[n\\to\\infty]{}\\varphi=\\frac{1+\\sqrt{5}}{2}",
+    "model": "gpt-5.5:stable",
+    "judge": {
+      "device_passed": false,
+      "device_checks": [
+        "(句数) 共21句：逐行计数=21 ✅",
+        "(i) 7次迭代Fibonacci词拍串) 目标串=ABAABABAABAABABAABABA；逐句判型得到=ABAAAAAAAABAAABAAAABA；逐位比对：第4位起大量不符 ❌",
+        "(A/B硬判据-逐句) 1=A(无引号,≥15字)✅；2=B(含「」,≤8字)✅；3=A✅；4=A✅；5=B✅；6=A✅；7=B✅；8=A✅；9=A✅；10=B✅；11=A✅；12=A✅；13=B✅；14=A✅；15=B✅；16=A✅；17=A✅；18=B✅；19=A✅；20=B✅；21=A✅",
+        "(ii) A:B计数) 实得A=13,B=8，且13/8=1.625 ✅",
+        "(i-补充) 与替换规则逐位吻合性：不吻合（如第4拍应为B但为A；第6拍应为B但为A；第10拍应为A但为B等）❌",
+        "(iii) 非幂周期-对p∈{1,3,7}逐位证伪) 以实得串核查：p=1不可能(存在A/B)✅；p=3:前3拍=ABA，重复7次应在第4拍为A但实得第4拍为A(未证伪于第4)；继续比对到第5拍应为B但实得第5拍为B；第6拍应为A但实得第6拍为A；第7拍应为A但实得第7拍为B→证伪✅；p=7:前7拍=ABAAAAB，重复3次应使第8拍=A而实得第8拍为A(未证伪于第8)；第9拍应为B但实得第9拍为A→证伪✅",
+        "(iv) 平衡性(Sturmian) 需对全部等长滑窗枚举；在未满足(i)前即与目标Fibonacci前缀无关。仅就实得串做机械反例搜索：长度2窗口'A A'出现多次，而'B B'从不出现，差=1(未违)；长度4窗口中A数可为4(如AAAA)也可为2(如ABAA含3；BAAA含3；BABA含2)，对比AAAA(4个A)与BABA(2个A)差=2→违反“至多差1”❌"
+      ],
+      "blind_motif": "aperiodic_tiling",
+      "model": "gpt-5.2:stable",
+      "passed": false
+    },
+    "story_id": "aperiodic_tiling_s3"
+  }
+]

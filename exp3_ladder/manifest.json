@@ -1,0 +1,10 @@
+[
+ {
+  "motif": "aperiodic_tiling",
+  "level": 6,
+  "seed": 2,
+  "path": "exp3_ladder/images/aperiodic_tiling/L6_s2.png",
+  "prompt": "Use the attached diagram ONLY as a compositional skeleton: the composition of the output must follow the drawn structure exactly — every connection, containment, crossing, repetition and exception preserved, nothing structural added or removed. Create a richly detailed photorealistic image of the following scene: 牛津大学 Andrew Wiles 数学楼门前 Penrose 菱形铺地的正上方俯拍,行人立于'太阳'中心,五瓣放射向画面四角延伸不见重复. A dense, busy environment: many surrounding objects, textures, bystanders and incidental detail from the scene's world fill the frame, so the structure must be found within the clutter — yet the scene's key elements still realize the drawn composition exactly. It must look like a real photograph, NOT a diagram: no visible diagram lines, no floating abstract shapes. No text, no words, no letters, no numbers.",
+  "status": "ok"
+ }
+]

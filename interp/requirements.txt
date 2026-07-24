@@ -1,0 +1,12 @@
+# GEB-Bench GemmaScope interpretability experiment
+# Target: single RTX 3090 (24 GB), CUDA 12.x
+torch>=2.3
+transformers>=4.44        # gemma-2 support
+sae_lens>=4.0             # loads google/gemma-scope-*-pt-res canonical SAEs
+accelerate>=0.30
+numpy>=1.26
+scipy>=1.11
+scikit-learn>=1.4
+matplotlib>=3.8
+huggingface_hub>=0.24
+# NOTE: google/gemma-2-2b is gated on HF — run `huggingface-cli login` once on the GPU box.

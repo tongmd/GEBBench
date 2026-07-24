@@ -1,0 +1,378 @@
+[
+ {
+  "model": "gpt-5.2",
+  "accuracy": {
+   "single": 0.64,
+   "near": 0.6,
+   "far": 0.52,
+   "foil": 0.64,
+   "instructed": 0.64
+  },
+  "n_items": {
+   "single": 25,
+   "near": 25,
+   "far": 25,
+   "foil": 25,
+   "instructed": 25
+  },
+  "mcnemar_vs_single": {
+   "near": {
+    "n_discordant": 1,
+    "a_only": 0,
+    "b_only": 1,
+    "p": 1.0
+   },
+   "far": {
+    "n_discordant": 3,
+    "a_only": 0,
+    "b_only": 3,
+    "p": 0.25
+   },
+   "foil": {
+    "n_discordant": 2,
+    "a_only": 1,
+    "b_only": 1,
+    "p": 1.0
+   },
+   "instructed": {
+    "n_discordant": 6,
+    "a_only": 3,
+    "b_only": 3,
+    "p": 1.0
+   }
+  },
+  "contrasts": {
+   "near_vs_far (interaction)": {
+    "n_discordant": 2,
+    "a_only": 2,
+    "b_only": 0,
+    "p": 0.5
+   },
+   "foil_vs_single": {
+    "n_discordant": 2,
+    "a_only": 1,
+    "b_only": 1,
+    "p": 1.0
+   },
+   "instructed_vs_far": {
+    "n_discordant": 3,
+    "a_only": 3,
+    "b_only": 0,
+    "p": 0.25
+   }
+  },
+  "delta": {
+   "near": {
+    "mean": -0.04,
+    "ci95": [
+     -0.12,
+     0.0
+    ]
+   },
+   "far": {
+    "mean": -0.12,
+    "ci95": [
+     -0.24,
+     0.0
+    ]
+   },
+   "foil": {
+    "mean": 0.0,
+    "ci95": [
+     -0.12,
+     0.12
+    ]
+   },
+   "instructed": {
+    "mean": 0.0,
+    "ci95": [
+     -0.2,
+     0.2
+    ]
+   }
+  },
+  "verdict": "no — neither spontaneous nor instructed comparison reliably improves abstraction over single scenes"
+ },
+ {
+  "model": "gpt-5.5",
+  "accuracy": {
+   "single": 0.6,
+   "near": 0.68,
+   "far": 0.6,
+   "foil": 0.68,
+   "instructed": 0.72
+  },
+  "n_items": {
+   "single": 25,
+   "near": 25,
+   "far": 25,
+   "foil": 25,
+   "instructed": 25
+  },
+  "mcnemar_vs_single": {
+   "near": {
+    "n_discordant": 2,
+    "a_only": 2,
+    "b_only": 0,
+    "p": 0.5
+   },
+   "far": {
+    "n_discordant": 4,
+    "a_only": 2,
+    "b_only": 2,
+    "p": 1.0
+   },
+   "foil": {
+    "n_discordant": 2,
+    "a_only": 2,
+    "b_only": 0,
+    "p": 0.5
+   },
+   "instructed": {
+    "n_discordant": 5,
+    "a_only": 4,
+    "b_only": 1,
+    "p": 0.375
+   }
+  },
+  "contrasts": {
+   "near_vs_far (interaction)": {
+    "n_discordant": 4,
+    "a_only": 3,
+    "b_only": 1,
+    "p": 0.625
+   },
+   "foil_vs_single": {
+    "n_discordant": 2,
+    "a_only": 2,
+    "b_only": 0,
+    "p": 0.5
+   },
+   "instructed_vs_far": {
+    "n_discordant": 5,
+    "a_only": 4,
+    "b_only": 1,
+    "p": 0.375
+   }
+  },
+  "delta": {
+   "near": {
+    "mean": 0.08,
+    "ci95": [
+     0.0,
+     0.2
+    ]
+   },
+   "far": {
+    "mean": 0.0,
+    "ci95": [
+     -0.16,
+     0.16
+    ]
+   },
+   "foil": {
+    "mean": 0.08,
+    "ci95": [
+     0.0,
+     0.2
+    ]
+   },
+   "instructed": {
+    "mean": 0.12,
+    "ci95": [
+     -0.04,
+     0.28
+    ]
+   }
+  },
+  "verdict": "no — neither spontaneous nor instructed comparison reliably improves abstraction over single scenes"
+ },
+ {
+  "model": "qwen2-vl-7b",
+  "accuracy": {
+   "single": 0.2,
+   "near": 0.2,
+   "far": 0.2,
+   "foil": 0.16,
+   "instructed": 0.24
+  },
+  "n_items": {
+   "single": 25,
+   "near": 25,
+   "far": 25,
+   "foil": 25,
+   "instructed": 25
+  },
+  "mcnemar_vs_single": {
+   "near": {
+    "n_discordant": 2,
+    "a_only": 1,
+    "b_only": 1,
+    "p": 1.0
+   },
+   "far": {
+    "n_discordant": 2,
+    "a_only": 1,
+    "b_only": 1,
+    "p": 1.0
+   },
+   "foil": {
+    "n_discordant": 5,
+    "a_only": 2,
+    "b_only": 3,
+    "p": 1.0
+   },
+   "instructed": {
+    "n_discordant": 3,
+    "a_only": 2,
+    "b_only": 1,
+    "p": 1.0
+   }
+  },
+  "contrasts": {
+   "near_vs_far (interaction)": {
+    "n_discordant": 2,
+    "a_only": 1,
+    "b_only": 1,
+    "p": 1.0
+   },
+   "foil_vs_single": {
+    "n_discordant": 5,
+    "a_only": 2,
+    "b_only": 3,
+    "p": 1.0
+   },
+   "instructed_vs_far": {
+    "n_discordant": 1,
+    "a_only": 1,
+    "b_only": 0,
+    "p": 1.0
+   }
+  },
+  "delta": {
+   "near": {
+    "mean": 0.0,
+    "ci95": [
+     -0.12,
+     0.12
+    ]
+   },
+   "far": {
+    "mean": 0.0,
+    "ci95": [
+     -0.12,
+     0.12
+    ]
+   },
+   "foil": {
+    "mean": -0.04,
+    "ci95": [
+     -0.2,
+     0.12
+    ]
+   },
+   "instructed": {
+    "mean": 0.04,
+    "ci95": [
+     -0.08,
+     0.16
+    ]
+   }
+  },
+  "verdict": "no — neither spontaneous nor instructed comparison reliably improves abstraction over single scenes"
+ },
+ {
+  "model": "qwen2.5-vl-32b",
+  "accuracy": {
+   "single": 0.4,
+   "near": 0.36,
+   "far": 0.4,
+   "foil": 0.4,
+   "instructed": 0.48
+  },
+  "n_items": {
+   "single": 25,
+   "near": 25,
+   "far": 25,
+   "foil": 25,
+   "instructed": 25
+  },
+  "mcnemar_vs_single": {
+   "near": {
+    "n_discordant": 5,
+    "a_only": 2,
+    "b_only": 3,
+    "p": 1.0
+   },
+   "far": {
+    "n_discordant": 4,
+    "a_only": 2,
+    "b_only": 2,
+    "p": 1.0
+   },
+   "foil": {
+    "n_discordant": 2,
+    "a_only": 1,
+    "b_only": 1,
+    "p": 1.0
+   },
+   "instructed": {
+    "n_discordant": 2,
+    "a_only": 2,
+    "b_only": 0,
+    "p": 0.5
+   }
+  },
+  "contrasts": {
+   "near_vs_far (interaction)": {
+    "n_discordant": 5,
+    "a_only": 2,
+    "b_only": 3,
+    "p": 1.0
+   },
+   "foil_vs_single": {
+    "n_discordant": 2,
+    "a_only": 1,
+    "b_only": 1,
+    "p": 1.0
+   },
+   "instructed_vs_far": {
+    "n_discordant": 4,
+    "a_only": 3,
+    "b_only": 1,
+    "p": 0.625
+   }
+  },
+  "delta": {
+   "near": {
+    "mean": -0.04,
+    "ci95": [
+     -0.2,
+     0.12
+    ]
+   },
+   "far": {
+    "mean": 0.0,
+    "ci95": [
+     -0.16,
+     0.16
+    ]
+   },
+   "foil": {
+    "mean": 0.0,
+    "ci95": [
+     -0.12,
+     0.12
+    ]
+   },
+   "instructed": {
+    "mean": 0.08,
+    "ci95": [
+     0.0,
+     0.2
+    ]
+   }
+  },
+  "verdict": "no — neither spontaneous nor instructed comparison reliably improves abstraction over single scenes"
+ }
+]

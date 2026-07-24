@@ -1,0 +1,484 @@
+{
+ "items": [
+  {
+   "task": "scene2motif",
+   "id": "scene:resample_00:alternation",
+   "image": "exp1_geometry/renders/alternation/resample_00.png",
+   "answer": "alternation"
+  },
+  {
+   "task": "scene2motif",
+   "id": "scene:resample_01:alternation",
+   "image": "exp1_geometry/renders/alternation/resample_01.png",
+   "answer": "alternation"
+  },
+  {
+   "task": "scene2motif",
+   "id": "scene:resample_02:alternation",
+   "image": "exp1_geometry/renders/alternation/resample_02.png",
+   "answer": "alternation"
+  },
+  {
+   "task": "scene2motif",
+   "id": "scene:resample_00:aperiodic_tiling",
+   "image": "exp1_geometry/renders/aperiodic_tiling/resample_00.png",
+   "answer": "aperiodic_tiling"
+  },
+  {
+   "task": "scene2motif",
+   "id": "scene:resample_01:aperiodic_tiling",
+   "image": "exp1_geometry/renders/aperiodic_tiling/resample_01.png",
+   "answer": "aperiodic_tiling"
+  },
+  {
+   "task": "scene2motif",
+   "id": "scene:resample_02:aperiodic_tiling",
+   "image": "exp1_geometry/renders/aperiodic_tiling/resample_02.png",
+   "answer": "aperiodic_tiling"
+  },
+  {
+   "task": "scene2motif",
+   "id": "scene:resample_03:aperiodic_tiling",
+   "image": "exp1_geometry/renders/aperiodic_tiling/resample_03.png",
+   "answer": "aperiodic_tiling"
+  },
+  {
+   "task": "scene2motif",
+   "id": "scene:resample_00:bottleneck",
+   "image": "exp1_geometry/renders/bottleneck/resample_00.png",
+   "answer": "bottleneck"
+  },
+  {
+   "task": "scene2motif",
+   "id": "scene:resample_01:bottleneck",
+   "image": "exp1_geometry/renders/bottleneck/resample_01.png",
+   "answer": "bottleneck"
+  },
+  {
+   "task": "scene2motif",
+   "id": "scene:resample_02:bottleneck",
+   "image": "exp1_geometry/renders/bottleneck/resample_02.png",
+   "answer": "bottleneck"
+  },
+  {
+   "task": "scene2motif",
+   "id": "scene:resample_00:braiding",
+   "image": "exp1_geometry/renders/braiding/resample_00.png",
+   "answer": "braiding"
+  },
+  {
+   "task": "scene2motif",
+   "id": "scene:resample_01:braiding",
+   "image": "exp1_geometry/renders/braiding/resample_01.png",
+   "answer": "braiding"
+  },
+  {
+   "task": "scene2motif",
+   "id": "scene:resample_02:braiding",
+   "image": "exp1_geometry/renders/braiding/resample_02.png",
+   "answer": "braiding"
+  },
+  {
+   "task": "scene2motif",
+   "id": "scene:resample_00:contraction_fixed_point",
+   "image": "exp1_geometry/renders/contraction_fixed_point/resample_00.png",
+   "answer": "contraction_fixed_point"
+  },
+  {
+   "task": "scene2motif",
+   "id": "scene:resample_01:contraction_fixed_point",
+   "image": "exp1_geometry/renders/contraction_fixed_point/resample_01.png",
+   "answer": "contraction_fixed_point"
+  },
+  {
+   "task": "scene2motif",
+   "id": "scene:resample_02:contraction_fixed_point",
+   "image": "exp1_geometry/renders/contraction_fixed_point/resample_02.png",
+   "answer": "contraction_fixed_point"
+  },
+  {
+   "task": "scene2motif",
+   "id": "scene:resample_03:contraction_fixed_point",
+   "image": "exp1_geometry/renders/contraction_fixed_point/resample_03.png",
+   "answer": "contraction_fixed_point"
+  },
+  {
+   "task": "scene2motif",
+   "id": "scene:resample_00:convergence",
+   "image": "exp1_geometry/renders/convergence/resample_00.png",
+   "answer": "convergence"
+  },
+  {
+   "task": "scene2motif",
+   "id": "scene:resample_01:convergence",
+   "image": "exp1_geometry/renders/convergence/resample_01.png",
+   "answer": "convergence"
+  },
+  {
+   "task": "scene2motif",
+   "id": "scene:resample_02:convergence",
+   "image": "exp1_geometry/renders/convergence/resample_02.png",
+   "answer": "convergence"
+  },
+  {
+   "task": "scene2motif",
+   "id": "scene:resample_00:coprime_orbit",
+   "image": "exp1_geometry/renders/coprime_orbit/resample_00.png",
+   "answer": "coprime_orbit"
+  },
+  {
+   "task": "scene2motif",
+   "id": "scene:resample_01:coprime_orbit",
+   "image": "exp1_geometry/renders/coprime_orbit/resample_01.png",
+   "answer": "coprime_orbit"
+  },
+  {
+   "task": "scene2motif",
+   "id": "scene:resample_02:coprime_orbit",
+   "image": "exp1_geometry/renders/coprime_orbit/resample_02.png",
+   "answer": "coprime_orbit"
+  },
+  {
+   "task": "scene2motif",
+   "id": "scene:resample_03:coprime_orbit",
+   "image": "exp1_geometry/renders/coprime_orbit/resample_03.png",
+   "answer": "coprime_orbit"
+  },
+  {
+   "task": "scene2motif",
+   "id": "scene:resample_00:cycle",
+   "image": "exp1_geometry/renders/cycle/resample_00.png",
+   "answer": "cycle"
+  },
+  {
+   "task": "scene2motif",
+   "id": "scene:resample_01:cycle",
+   "image": "exp1_geometry/renders/cycle/resample_01.png",
+   "answer": "cycle"
+  },
+  {
+   "task": "scene2motif",
+   "id": "scene:resample_02:cycle",
+   "image": "exp1_geometry/renders/cycle/resample_02.png",
+   "answer": "cycle"
+  },
+  {
+   "task": "scene2motif",
+   "id": "scene:resample_00:diagonalization",
+   "image": "exp1_geometry/renders/diagonalization/resample_00.png",
+   "answer": "diagonalization"
+  },
+  {
+   "task": "scene2motif",
+   "id": "scene:resample_01:diagonalization",
+   "image": "exp1_geometry/renders/diagonalization/resample_01.png",
+   "answer": "diagonalization"
+  },
+  {
+   "task": "scene2motif",
+   "id": "scene:resample_02:diagonalization",
+   "image": "exp1_geometry/renders/diagonalization/resample_02.png",
+   "answer": "diagonalization"
+  },
+  {
+   "task": "scene2motif",
+   "id": "scene:resample_03:diagonalization",
+   "image": "exp1_geometry/renders/diagonalization/resample_03.png",
+   "answer": "diagonalization"
+  },
+  {
+   "task": "scene2motif",
+   "id": "scene:resample_00:figure_ground",
+   "image": "exp1_geometry/renders/figure_ground/resample_00.png",
+   "answer": "figure_ground"
+  },
+  {
+   "task": "scene2motif",
+   "id": "scene:resample_01:figure_ground",
+   "image": "exp1_geometry/renders/figure_ground/resample_01.png",
+   "answer": "figure_ground"
+  },
+  {
+   "task": "scene2motif",
+   "id": "scene:resample_02:figure_ground",
+   "image": "exp1_geometry/renders/figure_ground/resample_02.png",
+   "answer": "figure_ground"
+  },
+  {
+   "task": "scene2motif",
+   "id": "scene:resample_00:hub",
+   "image": "exp1_geometry/renders/hub/resample_00.png",
+   "answer": "hub"
+  },
+  {
+   "task": "scene2motif",
+   "id": "scene:resample_01:hub",
+   "image": "exp1_geometry/renders/hub/resample_01.png",
+   "answer": "hub"
+  },
+  {
+   "task": "scene2motif",
+   "id": "scene:resample_02:hub",
+   "image": "exp1_geometry/renders/hub/resample_02.png",
+   "answer": "hub"
+  },
+  {
+   "task": "scene2motif",
+   "id": "scene:resample_00:infinite_descent",
+   "image": "exp1_geometry/renders/infinite_descent/resample_00.png",
+   "answer": "infinite_descent"
+  },
+  {
+   "task": "scene2motif",
+   "id": "scene:resample_01:infinite_descent",
+   "image": "exp1_geometry/renders/infinite_descent/resample_01.png",
+   "answer": "infinite_descent"
+  },
+  {
+   "task": "scene2motif",
+   "id": "scene:resample_02:infinite_descent",
+   "image": "exp1_geometry/renders/infinite_descent/resample_02.png",
+   "answer": "infinite_descent"
+  },
+  {
+   "task": "scene2motif",
+   "id": "scene:resample_03:infinite_descent",
+   "image": "exp1_geometry/renders/infinite_descent/resample_03.png",
+   "answer": "infinite_descent"
+  },
+  {
+   "task": "scene2motif",
+   "id": "scene:resample_00:interference",
+   "image": "exp1_geometry/renders/interference/resample_00.png",
+   "answer": "interference"
+  },
+  {
+   "task": "scene2motif",
+   "id": "scene:resample_01:interference",
+   "image": "exp1_geometry/renders/interference/resample_01.png",
+   "answer": "interference"
+  },
+  {
+   "task": "scene2motif",
+   "id": "scene:resample_02:interference",
+   "image": "exp1_geometry/renders/interference/resample_02.png",
+   "answer": "interference"
+  },
+  {
+   "task": "scene2motif",
+   "id": "scene:resample_00:isomorphism",
+   "image": "exp1_geometry/renders/isomorphism/resample_00.png",
+   "answer": "isomorphism"
+  },
+  {
+   "task": "scene2motif",
+   "id": "scene:resample_01:isomorphism",
+   "image": "exp1_geometry/renders/isomorphism/resample_01.png",
+   "answer": "isomorphism"
+  },
+  {
+   "task": "scene2motif",
+   "id": "scene:resample_02:isomorphism",
+   "image": "exp1_geometry/renders/isomorphism/resample_02.png",
+   "answer": "isomorphism"
+  },
+  {
+   "task": "scene2motif",
+   "id": "scene:resample_00:mobius",
+   "image": "exp1_geometry/renders/mobius/resample_00.png",
+   "answer": "mobius"
+  },
+  {
+   "task": "scene2motif",
+   "id": "scene:resample_01:mobius",
+   "image": "exp1_geometry/renders/mobius/resample_01.png",
+   "answer": "mobius"
+  },
+  {
+   "task": "scene2motif",
+   "id": "scene:resample_02:mobius",
+   "image": "exp1_geometry/renders/mobius/resample_02.png",
+   "answer": "mobius"
+  },
+  {
+   "task": "scene2motif",
+   "id": "scene:resample_00:nesting",
+   "image": "exp1_geometry/renders/nesting/resample_00.png",
+   "answer": "nesting"
+  },
+  {
+   "task": "scene2motif",
+   "id": "scene:resample_01:nesting",
+   "image": "exp1_geometry/renders/nesting/resample_01.png",
+   "answer": "nesting"
+  },
+  {
+   "task": "scene2motif",
+   "id": "scene:resample_00:pigeonhole",
+   "image": "exp1_geometry/renders/pigeonhole/resample_00.png",
+   "answer": "pigeonhole"
+  },
+  {
+   "task": "scene2motif",
+   "id": "scene:resample_01:pigeonhole",
+   "image": "exp1_geometry/renders/pigeonhole/resample_01.png",
+   "answer": "pigeonhole"
+  },
+  {
+   "task": "scene2motif",
+   "id": "scene:resample_02:pigeonhole",
+   "image": "exp1_geometry/renders/pigeonhole/resample_02.png",
+   "answer": "pigeonhole"
+  },
+  {
+   "task": "scene2motif",
+   "id": "scene:resample_03:pigeonhole",
+   "image": "exp1_geometry/renders/pigeonhole/resample_03.png",
+   "answer": "pigeonhole"
+  },
+  {
+   "task": "scene2motif",
+   "id": "scene:resample_00:projective_duality",
+   "image": "exp1_geometry/renders/projective_duality/resample_00.png",
+   "answer": "projective_duality"
+  },
+  {
+   "task": "scene2motif",
+   "id": "scene:resample_01:projective_duality",
+   "image": "exp1_geometry/renders/projective_duality/resample_01.png",
+   "answer": "projective_duality"
+  },
+  {
+   "task": "scene2motif",
+   "id": "scene:resample_02:projective_duality",
+   "image": "exp1_geometry/renders/projective_duality/resample_02.png",
+   "answer": "projective_duality"
+  },
+  {
+   "task": "scene2motif",
+   "id": "scene:resample_03:projective_duality",
+   "image": "exp1_geometry/renders/projective_duality/resample_03.png",
+   "answer": "projective_duality"
+  },
+  {
+   "task": "scene2motif",
+   "id": "scene:resample_00:recursion",
+   "image": "exp1_geometry/renders/recursion/resample_00.png",
+   "answer": "recursion"
+  },
+  {
+   "task": "scene2motif",
+   "id": "scene:resample_01:recursion",
+   "image": "exp1_geometry/renders/recursion/resample_01.png",
+   "answer": "recursion"
+  },
+  {
+   "task": "scene2motif",
+   "id": "scene:resample_00:self_reference",
+   "image": "exp1_geometry/renders/self_reference/resample_00.png",
+   "answer": "self_reference"
+  },
+  {
+   "task": "scene2motif",
+   "id": "scene:resample_01:self_reference",
+   "image": "exp1_geometry/renders/self_reference/resample_01.png",
+   "answer": "self_reference"
+  },
+  {
+   "task": "scene2motif",
+   "id": "scene:resample_02:self_reference",
+   "image": "exp1_geometry/renders/self_reference/resample_02.png",
+   "answer": "self_reference"
+  },
+  {
+   "task": "scene2motif",
+   "id": "scene:resample_00:spiral",
+   "image": "exp1_geometry/renders/spiral/resample_00.png",
+   "answer": "spiral"
+  },
+  {
+   "task": "scene2motif",
+   "id": "scene:resample_01:spiral",
+   "image": "exp1_geometry/renders/spiral/resample_01.png",
+   "answer": "spiral"
+  },
+  {
+   "task": "scene2motif",
+   "id": "scene:resample_02:spiral",
+   "image": "exp1_geometry/renders/spiral/resample_02.png",
+   "answer": "spiral"
+  },
+  {
+   "task": "scene2motif",
+   "id": "scene:resample_00:strange_loop",
+   "image": "exp1_geometry/renders/strange_loop/resample_00.png",
+   "answer": "strange_loop"
+  },
+  {
+   "task": "scene2motif",
+   "id": "scene:resample_01:strange_loop",
+   "image": "exp1_geometry/renders/strange_loop/resample_01.png",
+   "answer": "strange_loop"
+  },
+  {
+   "task": "scene2motif",
+   "id": "scene:resample_02:strange_loop",
+   "image": "exp1_geometry/renders/strange_loop/resample_02.png",
+   "answer": "strange_loop"
+  },
+  {
+   "task": "scene2motif",
+   "id": "scene:resample_00:symmetry",
+   "image": "exp1_geometry/renders/symmetry/resample_00.png",
+   "answer": "symmetry"
+  },
+  {
+   "task": "scene2motif",
+   "id": "scene:resample_01:symmetry",
+   "image": "exp1_geometry/renders/symmetry/resample_01.png",
+   "answer": "symmetry"
+  },
+  {
+   "task": "scene2motif",
+   "id": "scene:resample_02:symmetry",
+   "image": "exp1_geometry/renders/symmetry/resample_02.png",
+   "answer": "symmetry"
+  },
+  {
+   "task": "scene2motif",
+   "id": "scene:resample_00:symmetry_breaking",
+   "image": "exp1_geometry/renders/symmetry_breaking/resample_00.png",
+   "answer": "symmetry_breaking"
+  },
+  {
+   "task": "scene2motif",
+   "id": "scene:resample_01:symmetry_breaking",
+   "image": "exp1_geometry/renders/symmetry_breaking/resample_01.png",
+   "answer": "symmetry_breaking"
+  },
+  {
+   "task": "scene2motif",
+   "id": "scene:resample_02:symmetry_breaking",
+   "image": "exp1_geometry/renders/symmetry_breaking/resample_02.png",
+   "answer": "symmetry_breaking"
+  },
+  {
+   "task": "scene2motif",
+   "id": "scene:resample_00:tiling",
+   "image": "exp1_geometry/renders/tiling/resample_00.png",
+   "answer": "tiling"
+  },
+  {
+   "task": "scene2motif",
+   "id": "scene:resample_01:tiling",
+   "image": "exp1_geometry/renders/tiling/resample_01.png",
+   "answer": "tiling"
+  },
+  {
+   "task": "scene2motif",
+   "id": "scene:resample_02:tiling",
+   "image": "exp1_geometry/renders/tiling/resample_02.png",
+   "answer": "tiling"
+  }
+ ]
+}

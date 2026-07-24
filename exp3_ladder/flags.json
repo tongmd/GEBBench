@@ -1,0 +1,1117 @@
+{
+ "checker_model": "gpt-5.2",
+ "checks": {
+  "exp3_ladder/images/self_reference/L5_s0.png": {
+   "image": "exp3_ladder/images/self_reference/L5_s0.png",
+   "motif": "self_reference",
+   "description": "The composition is built from concentric, centered rectangular frames that repeat and recursively contain the same scene, with the subject and camera aligned along the middle so the image reads as a nested, self-referential sequence.",
+   "match": true,
+   "reason": "The described composition is recursively self-contained and centered on repeated frame-within-frame structure, which plausibly matches a self-referential invariant that points back to itself without depending on an external hierarchy or second system."
+  },
+  "exp3_ladder/images/recursion/L5_s1.png": {
+   "image": "exp3_ladder/images/recursion/L5_s1.png",
+   "motif": "recursion",
+   "description": "A single vertical form rises from the bottom center and splits into two mirrored branching halves that repeat smaller Y-shaped offshoots outward, with the whole structure centered against a large, open background.",
+   "match": true,
+   "reason": "The described composition is structurally self-similar: a central stem branches into mirrored Y-shaped offshoots that repeat at smaller scales, which plausibly reflects recursive generation from a base case and layered return through the same branching rule."
+  },
+  "exp3_ladder/images/recursion/L5_s2.png": {
+   "image": "exp3_ladder/images/recursion/L5_s2.png",
+   "motif": "recursion",
+   "description": "A single bright vertical line anchors the center and repeatedly bifurcates into mirrored branch pairs, creating a symmetrical, tree-like structure that expands upward against a dark empty field.",
+   "match": true,
+   "reason": "Yes. The described composition is structurally recursive: a central line splits into mirrored branch pairs in repeated levels, which matches a self-generating pattern that proceeds through successive layers and terminates at a base form before unwinding back through the hierarchy."
+  },
+  "exp3_ladder/images/recursion/L6_s1.png": {
+   "image": "exp3_ladder/images/recursion/L6_s1.png",
+   "motif": "recursion",
+   "description": "A single vertical channel rises from the bottom center and repeatedly branches into mirrored Y-shaped offshoots, creating a tree-like network that is contained within and contrasted against the surrounding dense field.",
+   "match": true,
+   "reason": "The described composition is structurally recursive: a main vertical trunk repeatedly splits into mirrored Y-shaped branches, which is a self-similar branching pattern consistent with layered generation from a base case and unwinding through multiple levels."
+  },
+  "exp3_ladder/images/recursion/L6_s2.png": {
+   "image": "exp3_ladder/images/recursion/L6_s2.png",
+   "motif": "recursion",
+   "description": "A single bright vertical spine rises from the bottom center and splits into a mirrored, repeating network of branching arms that fan outward symmetrically against a mostly empty dark field.",
+   "match": true,
+   "reason": "The described composition is structurally consistent with a recursive self-similar invariant: a central spine branches into mirrored arms that repeat outward in layers, which plausibly suggests the same rule applied at smaller scales and a base-to-return hierarchy."
+  },
+  "exp3_ladder/images/nesting/L5_s0.png": {
+   "image": "exp3_ladder/images/nesting/L5_s0.png",
+   "motif": "nesting",
+   "description": "A series of concentric circular frames is stacked symmetrically around a central vanishing point, creating a repeated nested tunnel effect that encloses the dark center.",
+   "match": true,
+   "reason": "The described concentric, nested tunnel composition is structurally monotonic in depth: each frame is a deeper enclosing layer around the vanishing point, so moving inward means progressing to the next layer without returning to a previous one."
+  },
+  "exp3_ladder/images/nesting/L5_s1.png": {
+   "image": "exp3_ladder/images/nesting/L5_s1.png",
+   "motif": "nesting",
+   "description": "The image is built from a set of concentric circular bands centered on a single point, with repeated radial divisions and crossing spokes that segment the rings while a few straight roads and outer clusters interrupt the otherwise strict symmetry.",
+   "match": true,
+   "reason": "The composition is dominated by nested concentric bands, which naturally encode successive layers where moving inward or outward does not require returning to a previous layer. The radial divisions and spokes segment the layers but do not imply depth reversal, so the invariant is plausibly realized."
+  },
+  "exp3_ladder/images/nesting/L5_s2.png": {
+   "image": "exp3_ladder/images/nesting/L5_s2.png",
+   "motif": "nesting",
+   "description": "The composition is a centered stack of evenly spaced concentric rings that repeat outward in near-perfect symmetry, isolated against a plain background.",
+   "match": true,
+   "reason": "The composition of centered concentric rings is a monotonic layered structure: moving outward adds new layers without returning to earlier ones, so it plausibly realizes the invariant of depth only increasing."
+  },
+  "exp3_ladder/images/nesting/L6_s0.png": {
+   "image": "exp3_ladder/images/nesting/L6_s0.png",
+   "motif": "nesting",
+   "description": "The composition is built from a strong central axis of repeating concentric circles that frame one another into a deep receding tunnel, with surrounding vertical foliage and side details acting as asymmetrical interruptions to the otherwise symmetrical order.",
+   "match": true,
+   "reason": "The composition’s nested concentric circles create a one-way receding tunnel, which plausibly matches the invariant of moving into deeper layers without returning to earlier ones; the side foliage reads as secondary interruption rather than a structural contradiction."
+  },
+  "exp3_ladder/images/nesting/L6_s1.png": {
+   "image": "exp3_ladder/images/nesting/L6_s1.png",
+   "motif": "nesting",
+   "description": "A tightly centered series of concentric rings is crossed by evenly spaced radial spokes, creating repeated circular bands that radiate outward from a small central core to a larger enclosing perimeter.",
+   "match": true,
+   "reason": "The described composition is strongly hierarchical and nested: concentric rings form successive layers around a central core, and moving outward never returns to an earlier layer. The radial spokes do not break that one-way layering, so the structure plausibly matches the invariant of strictly increasing depth."
+  },
+  "exp3_ladder/images/nesting/L6_s2.png": {
+   "image": "exp3_ladder/images/nesting/L6_s2.png",
+   "motif": "nesting",
+   "description": "A single, centrally placed circular form dominates the frame, with repeated concentric rings radiating inward and outward against a softly blurred background that recedes without competing.",
+   "match": true,
+   "reason": "The composition is plausibly hierarchical and monotonic: the concentric rings create nested layers that progress inward without suggesting a return to earlier layers, and the subdued background reinforces one-way depth increase rather than cyclical movement."
+  },
+  "exp3_ladder/images/cycle/L5_s0.png": {
+   "image": "exp3_ladder/images/cycle/L5_s0.png",
+   "motif": "cycle",
+   "description": "A ring of repeated curved elements is spaced around a large central open area, creating a near-symmetrical enclosure with small variations in size and orientation.",
+   "match": true,
+   "reason": "The described composition is structurally consistent with a closed cycle: repeated elements arranged in a ring around an open center suggests an equal-status, non-hierarchical loop that returns to the starting point. The small size/orientation variations weaken exactness, but they do not rule out a plausible realization of the invariant."
+  },
+  "exp3_ladder/images/cycle/L5_s1.png": {
+   "image": "exp3_ladder/images/cycle/L5_s1.png",
+   "motif": "cycle",
+   "description": "Four curved image segments repeat around a central empty circular void to form a continuous ring, with thin arrow markers along the ring linking each segment in a directional cycle.",
+   "match": true,
+   "reason": "The described ring structure fits a same-level cycle through multiple distinct segments that returns to the start, with repeated elements arranged equally around a central void and directional arrows marking the loop. That plausibly matches the invariant’s non-hierarchical, closed causal cycle with n>=3 and exact return."
+  },
+  "exp3_ladder/images/cycle/L5_s2.png": {
+   "image": "exp3_ladder/images/cycle/L5_s2.png",
+   "motif": "cycle",
+   "description": "A segmented circular ring of arrow-like arcs wraps around a large empty center, with each curved panel connected in a continuous loop and subtly broken by gaps at the segment joins.",
+   "match": true,
+   "reason": "The composition plausibly encodes a same-level cycle: a closed ring of repeated arrow-like segments around an empty center suggests n >= 3 distinct events returning to the start with no hierarchy. The evenly arranged segments also fit the idea of equal status. The small gaps at joins do not break the overall cyclical structure."
+  },
+  "exp3_ladder/images/cycle/L6_s0.png": {
+   "image": "exp3_ladder/images/cycle/L6_s0.png",
+   "motif": "cycle",
+   "description": "A near-circular ring of repeated island-like forms encloses a large open center, with the elements evenly spaced around the perimeter and separated by water, leaving a slight gap at the bottom where two segments nearly meet.",
+   "match": true,
+   "reason": "The described composition is a closed, near-circular ring of repeated, evenly spaced elements with no clear hierarchy, which plausibly matches a same-level cycle of distinct nodes returning to the start. The slight bottom gap does not undermine the overall cyclic structure."
+  },
+  "exp3_ladder/images/symmetry/L5_s0.png": {
+   "image": "exp3_ladder/images/symmetry/L5_s0.png",
+   "motif": "symmetry",
+   "description": "A single central mountain anchors a strong vertical symmetry, with flanking slopes converging toward it and a near-perfect mirrored reflection across the horizontal waterline below.",
+   "match": true,
+   "reason": "The described composition is strongly symmetric around a central axis and a midpoint: the central mountain acts as a focal center, the flanking slopes mirror each other, and the reflection across the waterline reinforces midpoint correspondence. That makes it plausible as a structural realization of a sequence that reads the same forward and backward."
+  },
+  "exp3_ladder/images/symmetry/L5_s1.png": {
+   "image": "exp3_ladder/images/symmetry/L5_s1.png",
+   "motif": "symmetry",
+   "description": "A single centered subject is arranged on a strong vertical axis, with its mirrored wings and repeated markings spreading horizontally while the blurred background and leaves recede to frame it.",
+   "match": true,
+   "reason": "The composition is strongly centered on a vertical axis and uses mirrored left-right elements with repeated markings, which is a plausible visual analogue of a forward/reverse invariant where corresponding parts coincide about the midpoint."
+  },
+  "exp3_ladder/images/symmetry/L5_s2.png": {
+   "image": "exp3_ladder/images/symmetry/L5_s2.png",
+   "motif": "symmetry",
+   "description": "A rigidly symmetrical central arch anchors the composition, with repeated roof tiers and paired side elements flanking a strong vertical opening that cuts through the horizontal wall into the depth beyond.",
+   "match": true,
+   "reason": "The described composition is strongly centered and bilaterally mirrored: a central arch/opening is flanked by paired side elements and repeated tiers, which plausibly corresponds to a sequence that reads the same forward and backward around a midpoint."
+  },
+  "exp3_ladder/images/symmetry/L6_s0.png": {
+   "image": "exp3_ladder/images/symmetry/L6_s0.png",
+   "motif": "symmetry",
+   "description": "A dominant central peak anchors a near-symmetrical composition, flanked by receding side masses and mirrored across the horizontal waterline, with vertical edge elements framing the scene and the reflection creating the strongest repetition.",
+   "match": true,
+   "reason": "The description emphasizes a centered, near-symmetrical layout with mirrored repetition across the waterline, which is structurally consistent with a palindromic invariant where forward and reverse order coincide pointwise."
+  },
+  "exp3_ladder/images/symmetry/L6_s2.png": {
+   "image": "exp3_ladder/images/symmetry/L6_s2.png",
+   "motif": "symmetry",
+   "description": "A strong central vertical gateway anchors the composition, with near-perfect bilateral symmetry and repeated flanking structures that recede inward along a straight path, creating layered containment and depth.",
+   "match": true,
+   "reason": "The composition is strongly centered and near-perfectly mirrored across a vertical axis, with repeated structures on both sides that converge toward the middle. That kind of bilateral, midpoint-centered organization plausibly matches a forward/backward pointwise symmetry invariant."
+  },
+  "exp3_ladder/images/alternation/L5_s0.png": {
+   "image": "exp3_ladder/images/alternation/L5_s0.png",
+   "motif": "alternation",
+   "description": "A dense, repeating series of bold diagonal bands runs across a broad horizontal form, with the pattern interrupted by the body’s curves and cropped at the edges against a soft, unobtrusive background.",
+   "match": true,
+   "reason": "The composition described as dense, repeating bold diagonal bands is consistent with a strict two-state alternation pattern. The interruption by curvature and edge cropping does not contradict the invariant, since the underlying band sequence can still be period-two and strictly alternating."
+  },
+  "exp3_ladder/images/alternation/L5_s1.png": {
+   "image": "exp3_ladder/images/alternation/L5_s1.png",
+   "motif": "alternation",
+   "description": "A repeating zigzag chain of connected circular nodes runs horizontally across the middle, alternating between lower gray circles and upper green circles, over a background of vertical field bands.",
+   "match": true,
+   "reason": "The described chain alternates strictly between two node states (lower gray, upper green) along a repeating horizontal sequence, which satisfies both adjacency difference and every-second repetition. The vertical background bands do not affect the invariant."
+  },
+  "exp3_ladder/images/alternation/L5_s2.png": {
+   "image": "exp3_ladder/images/alternation/L5_s2.png",
+   "motif": "alternation",
+   "description": "A large empty horizontal plane is crossed by a repeated sequence of diagonal light bands and shadows from left to right, with the wall and baseboard forming a restrained top border that contains the composition.",
+   "match": true,
+   "reason": "The described composition suggests a repeating two-state pattern of light bands and shadows that alternates across the plane, which is consistent with strict period-2 alternation (adjacent different, every other same)."
+  },
+  "exp3_ladder/images/spiral/L5_s0.png": {
+   "image": "exp3_ladder/images/spiral/L5_s0.png",
+   "motif": "spiral",
+   "description": "A tightly centered spiral of repeating nested chambers builds inward containment, while one large outer curve wraps around and anchors the composition with a slight asymmetrical protrusion.",
+   "match": true,
+   "reason": "The composition is plausibly spiral-based and self-similar: repeating nested chambers arranged around a center and a larger wrapping outer curve fit an expanding rotational pattern. The slight asymmetry does not contradict the invariant, and the described structure can reasonably realize the idea of returning to the same orientation at a different scale rather than the original one."
+  },
+  "exp3_ladder/images/spiral/L5_s1.png": {
+   "image": "exp3_ladder/images/spiral/L5_s1.png",
+   "motif": "spiral",
+   "description": "A tight central void anchors the composition while thick, repeated spiral bands wrap around it in widening arcs that sweep outward across the frame against a dark background.",
+   "match": true,
+   "reason": "The composition is spiral-based and outward-widening, which fits the invariant of returning to the same orientation at a larger scale each turn. The repeated bands and expanding arcs suggest self-similar growth rather than a return to the original size."
+  },
+  "exp3_ladder/images/spiral/L5_s2.png": {
+   "image": "exp3_ladder/images/spiral/L5_s2.png",
+   "motif": "spiral",
+   "description": "A single bright spiral dominates the center, with a smaller nested spiral enclosed inside it against a soft blurred background, creating strong repetition and containment with no other competing elements.",
+   "match": true,
+   "reason": "The composition centers on a spiral with a nested smaller spiral, which strongly suggests recursive self-similarity and proportional growth on each turn without returning to the same scale. The blurred background and lack of competing elements do not conflict with that invariant."
+  },
+  "exp3_ladder/images/spiral/L6_s0.png": {
+   "image": "exp3_ladder/images/spiral/L6_s0.png",
+   "motif": "spiral",
+   "description": "A large central spiral shell anchors the composition, with its repeated curved chambers radiating inward while irregular textured fragments encircle it closely, creating a nested focal center against a busy, uneven background.",
+   "match": true,
+   "reason": "The described composition is spiral and self-nesting: a central spiral form with repeated curved chambers suggests a structure that revisits the same orientation while expanding by a consistent ratio, rather than returning to a fixed scale."
+  },
+  "exp3_ladder/images/spiral/L6_s1.png": {
+   "image": "exp3_ladder/images/spiral/L6_s1.png",
+   "motif": "spiral",
+   "description": "A large spiral of repeated curved bands radiates from a tight central core, with denser forms contained near the middle and looser outer arcs sweeping outward across the frame.",
+   "match": true,
+   "reason": "The described composition is a spiral with repeated bands that expand outward from a tight center, which fits the invariant of returning to the same orientation while increasing scale by a consistent ratio rather than reverting to the original scale."
+  },
+  "exp3_ladder/images/spiral/L6_s2.png": {
+   "image": "exp3_ladder/images/spiral/L6_s2.png",
+   "motif": "spiral",
+   "description": "A single bright spiral dominates the center, with a nested repetition of smaller coils inside it, set against a softly blurred, irregular background that recedes to emphasize the curved form.",
+   "match": true,
+   "reason": "The described composition is structurally consistent with a self-similar spiral: a dominant central spiral with nested smaller coils suggests repeated turns at a changing scale, which fits the invariant of growing by the same proportion each return to the same orientation rather than repeating at the original size."
+  },
+  "exp3_ladder/images/convergence/L5_s0.png": {
+   "image": "exp3_ladder/images/convergence/L5_s0.png",
+   "motif": "convergence",
+   "description": "A series of repeated, winding bands runs diagonally across the frame, branching and converging as they are contained by the surrounding land and ultimately feed into the large body at the right edge.",
+   "match": true,
+   "reason": "The described composition fits the invariant structurally: multiple separate winding bands advance independently, then branch and converge toward a single endpoint at the right edge, where they terminate."
+  },
+  "exp3_ladder/images/convergence/L5_s1.png": {
+   "image": "exp3_ladder/images/convergence/L5_s1.png",
+   "motif": "convergence",
+   "description": "Several parallel glowing curves repeat from the left, gradually converge and cross into a shared flow toward the right, and terminate by wrapping around the lone vertical mass near the edge, which anchors the composition as an exception to the otherwise airy diagonals.",
+   "match": true,
+   "reason": "The composition fits the invariant structurally: multiple independent lines begin separately, move in parallel, converge into a shared path, and come to a stop at a single terminal anchor near the edge."
+  },
+  "exp3_ladder/images/convergence/L5_s2.png": {
+   "image": "exp3_ladder/images/convergence/L5_s2.png",
+   "motif": "convergence",
+   "description": "A series of nearly parallel branching paths repeats across the slope and progressively converges into a single route that leads to the compact structure at the right edge, creating a strong left-to-right funneling composition.",
+   "match": true,
+   "reason": "The described composition fits the invariant well: several separate paths advance independently, then progressively merge into one route that terminates at a single compact structure on the right. That satisfies the idea of multiple unrelated clues converging on the same endpoint and stopping there."
+  },
+  "exp3_ladder/images/convergence/L6_s0.png": {
+   "image": "exp3_ladder/images/convergence/L6_s0.png",
+   "motif": "convergence",
+   "description": "A set of bright, branching diagonal bands repeats across the frame, intersecting and converging toward the right edge where they meet a large contiguous blue area, while the textured landmass fills the rest in layered containment.",
+   "match": true,
+   "reason": "The composition describes multiple diagonal bands advancing separately across the frame and converging at the same right-edge terminus, where they stop against a single large blue क्षेत्र. That matches the invariant’s structure of parallel lines of progression resolving into one shared endpoint and ending there."
+  },
+  "exp3_ladder/images/convergence/L6_s1.png": {
+   "image": "exp3_ladder/images/convergence/L6_s1.png",
+   "motif": "convergence",
+   "description": "Repeated clusters on the left stream along sweeping diagonal curves that converge and cross at a few bright junctions before funneling into the large anchored mass on the right, with the sky as open negative space around the flowing bands.",
+   "match": true,
+   "reason": "The composition shows multiple independent elements moving along separate curves, converging through shared junctions, and ultimately funneling into one anchored mass on the right, which fits the invariant’s structure of distinct threads merging into a single endpoint and ending there."
+  },
+  "exp3_ladder/images/convergence/L6_s2.png": {
+   "image": "exp3_ladder/images/convergence/L6_s2.png",
+   "motif": "convergence",
+   "description": "A series of repeated, horizontally layered switchback lines zigzag across the slope, converging toward a single focal structure on the right while enclosing broad green spaces between them.",
+   "match": true,
+   "reason": "The composition describes several distinct, repeated lines advancing separately and then converging on a single focal structure, which matches the invariant of multiple independent threads all arriving at the same endpoint and stopping there."
+  },
+  "exp3_ladder/images/bottleneck/L5_s0.png": {
+   "image": "exp3_ladder/images/bottleneck/L5_s0.png",
+   "motif": "bottleneck",
+   "description": "A central vertical gorge is bisected by a horizontal bridge, while mirrored networks of pale paths on both sides repeatedly crisscross outward in a roughly symmetrical, star-like arrangement around the void.",
+   "match": true,
+   "reason": "The composition plausibly matches the invariant: each side appears to have its own internally crisscrossing network, and the two sides are joined only through a single central bridge/crossing over the gorge. That makes the center act like a shared articulation point, so removing it would split the whole structure into two still-connected halves."
+  },
+  "exp3_ladder/images/bottleneck/L5_s1.png": {
+   "image": "exp3_ladder/images/bottleneck/L5_s1.png",
+   "motif": "bottleneck",
+   "description": "A strongly symmetrical composition places two near-identical rounded forms on the left and right, joined at a narrow central pinch, with repeated inner shapes mirrored across the middle and a few subtle asymmetries in size and shading.",
+   "match": true,
+   "reason": "The description plausibly matches the invariant: two internally connected halves are mirrored on either side, and the narrow central pinch suggests a single articulation point through which all cross-connections pass. Removing that point would separate the image into two still-connected pieces rather than isolated fragments."
+  },
+  "exp3_ladder/images/bottleneck/L5_s2.png": {
+   "image": "exp3_ladder/images/bottleneck/L5_s2.png",
+   "motif": "bottleneck",
+   "description": "Two mirrored clusters of angular, looped forms sit on the left and right, linked by a thin central horizontal connection and echoed by repeated diagonal crossings and triangular enclosures.",
+   "match": true,
+   "reason": "The composition is structurally consistent with a graph that has two internally connected clusters on either side and a single narrow central bottleneck joining them. A thin central link between mirrored left and right groups plausibly serves as the unique passage whose removal would split the image into two still-connected halves."
+  },
+  "exp3_ladder/images/bottleneck/L6_s0.png": {
+   "image": "exp3_ladder/images/bottleneck/L6_s0.png",
+   "motif": "bottleneck",
+   "description": "A mirrored lattice of diagonal paths repeats across both sides of a central vertical cleft, all converging on a horizontal bridge that acts as the compositional anchor and crossing point.",
+   "match": true,
+   "reason": "The description fits a graph-like structure with two internally interconnected sides, a central cleft, and all cross-side movement funneled through one shared bridge/crossing point. That matches the invariant’s requirement that any path between the two sides must pass through the same intermediate point, and that removing it leaves two still-connected halves rather than isolated fragments."
+  },
+  "exp3_ladder/images/bottleneck/L6_s1.png": {
+   "image": "exp3_ladder/images/bottleneck/L6_s1.png",
+   "motif": "bottleneck",
+   "description": "A tall, vertically centered hourglass anchors the composition while dense, repeating clusters of rounded objects crowd in from both sides to frame and partially enclose it in near-symmetry.",
+   "match": true,
+   "reason": "The described hourglass-like center with dense, internally repetitive clusters on both sides plausibly encodes two connected regions joined through a single bottleneck/articulation point, which matches the invariant’s structure."
+  },
+  "exp3_ladder/images/symmetry_breaking/L5_s0.png": {
+   "image": "exp3_ladder/images/symmetry_breaking/L5_s0.png",
+   "motif": "symmetry_breaking",
+   "description": "The image is dominated by a dense field of evenly repeated vertical bands, interrupted by a single small green circular form that stands isolated as the only clear exception.",
+   "match": true,
+   "reason": "The composition is governed by one repeated rule across the whole field (even vertical bands), with a single precisely localizable exception (the small green circle) that is isolated and unique."
+  },
+  "exp3_ladder/images/symmetry_breaking/L5_s1.png": {
+   "image": "exp3_ladder/images/symmetry_breaking/L5_s1.png",
+   "motif": "symmetry_breaking",
+   "description": "A regular grid of intersecting horizontal and vertical lines is filled with evenly repeated small motifs, interrupted by a single contrasting red element that breaks the otherwise uniform pattern.",
+   "match": true,
+   "reason": "The described composition fits the invariant well: a single uniform grid-and-motif rule spans the whole image, and there is exactly one clearly localizable contrasting red element that serves as the sole exception while the rest remain regular and consistent."
+  },
+  "exp3_ladder/images/symmetry_breaking/L5_s2.png": {
+   "image": "exp3_ladder/images/symmetry_breaking/L5_s2.png",
+   "motif": "symmetry_breaking",
+   "description": "The image is a near-regular field of identical motifs repeated in evenly spaced horizontal rows, with one smaller displaced element near the center breaking the otherwise uniform alignment.",
+   "match": true,
+   "reason": "The composition is a uniform repeated field with a single clearly identifiable deviation: one smaller, displaced element near the center. That fits the invariant of one unique, precisely locatable exception against an otherwise fully regular structure."
+  },
+  "exp3_ladder/images/symmetry_breaking/L6_s0.png": {
+   "image": "exp3_ladder/images/symmetry_breaking/L6_s0.png",
+   "motif": "symmetry_breaking",
+   "description": "The image is dominated by tightly repeated horizontal bands that fill the frame edge to edge, interrupted only by a small isolated central cluster that breaks the uniform pattern.",
+   "match": true,
+   "reason": "The composition matches the invariant: a single repeated rule dominates the entire frame, and there is one clearly isolated central deviation that is uniquely locatable while the rest remains uniformly consistent."
+  },
+  "exp3_ladder/images/symmetry_breaking/L6_s1.png": {
+   "image": "exp3_ladder/images/symmetry_breaking/L6_s1.png",
+   "motif": "symmetry_breaking",
+   "description": "A dense lattice of crisscrossing branches is covered by a repeating grid of pale blossoms and buds, interrupted near the center-right by a single vivid red flower that stands out as the only strong exception.",
+   "match": true,
+   "reason": "The description presents a uniform repeating pattern across the field, with one precisely located standout element near the center-right that is the sole clear deviation, which matches the invariant of a single unique exception against an otherwise consistent rule."
+  },
+  "exp3_ladder/images/symmetry_breaking/L6_s2.png": {
+   "image": "exp3_ladder/images/symmetry_breaking/L6_s2.png",
+   "motif": "symmetry_breaking",
+   "description": "A tight rectangular grid of evenly spaced square units fills most of the frame, with one dark circular element interrupting the otherwise highly repetitive pattern near the center-right, while surrounding tools and edges loosely frame the composition.",
+   "match": true,
+   "reason": "The described composition is governed by a single repetitive grid structure across the frame, with one clearly localized dark circular interruption near the center-right. That fits the invariant of one unique, precisely identifiable violation against an otherwise exception-free rule."
+  },
+  "exp3_ladder/images/strange_loop/L5_s0.png": {
+   "image": "exp3_ladder/images/strange_loop/L5_s0.png",
+   "motif": "strange_loop",
+   "description": "A repeated stair sequence zigzags around a central vertical slab, creating a looping, contained pathway that is echoed by the duplicated figures and set off by the surrounding open negative space.",
+   "match": true,
+   "reason": "The composition suggests a recursive, self-referential loop: the stair sequence climbs in a layered way, wraps around a central axis, and returns into a contained cycle rather than resolving into a clear higher level. That fits the invariant’s idea of ascending through narration levels only to come back to the origin, leaving the hierarchy effectively unassignable."
+  },
+  "exp3_ladder/images/strange_loop/L5_s2.png": {
+   "image": "exp3_ladder/images/strange_loop/L5_s2.png",
+   "motif": "strange_loop",
+   "description": "A single figure anchors the left foreground while a large framed image dominates the right, creating a recursive nesting of smaller frames and repeated figures that is overlaid by intersecting diagonal and curved guide lines linking the repeated focal points.",
+   "match": true,
+   "reason": "The composition is plausibly recursive: a large framed image contains smaller repeated frames and figures, and the guide lines connect repeated focal points in a way that suggests a hierarchy looping back on itself rather than terminating cleanly. That fits the invariant’s self-referential upward traversal that returns to the origin, making the hierarchy non-assignable."
+  },
+  "exp3_ladder/images/strange_loop/L6_s1.png": {
+   "image": "exp3_ladder/images/strange_loop/L6_s1.png",
+   "motif": "strange_loop",
+   "description": "The composition forms a looping ring of repeated easels and drawings, with each arm and pencil extending diagonally to connect one frame to the next, creating a continuous chain around a central empty space.",
+   "match": true,
+   "reason": "The described composition is a closed loop of repeated elements, with each unit linked to the next and eventually circling back to the start. That cyclic structure fits the invariant’s idea of moving up a hierarchy and then returning to the origin, preventing any stable top-level assignment."
+  },
+  "exp3_ladder/images/strange_loop/L6_s2.png": {
+   "image": "exp3_ladder/images/strange_loop/L6_s2.png",
+   "motif": "strange_loop",
+   "description": "The composition is built as a recursive stack of nested frames and windows, with the large central painting echoed by smaller inset interior scenes below and around it, creating repeated containment and visual self-reference.",
+   "match": true,
+   "reason": "The described composition is recursively nested and self-referential: frames contain smaller scenes that echo the larger one, creating a containment loop rather than a clean one-way hierarchy. That plausibly matches a structure where the hierarchy climbs but ultimately folds back to its origin, making the level assignment unstable."
+  },
+  "exp3_ladder/images/isomorphism/L5_s0.png": {
+   "image": "exp3_ladder/images/isomorphism/L5_s0.png",
+   "motif": "isomorphism",
+   "description": "The image is split into two vertical halves that mirror each other in arrangement and geometry, with a central pentagram-like network of branches repeated in left and right panels but rendered with inverted background and density, creating a strong contrast between open containment and dense crossing lines.",
+   "match": true,
+   "reason": "The composition strongly suggests a one-to-one structural correspondence: two halves share the same geometric arrangement and branching network, with elements mapped in the same order across the split. The inversion of background and density changes appearance without breaking the underlying correspondence, so it plausibly realizes the invariant at the level of structure."
+  },
+  "exp3_ladder/images/isomorphism/L5_s1.png": {
+   "image": "exp3_ladder/images/isomorphism/L5_s1.png",
+   "motif": "isomorphism",
+   "description": "The image presents two side-by-side five-pointed arrangements, each with five peripheral nodes connected into a closed star/polygon around an empty center, with the left form filled in solidly and the right form rendered as an intersecting network of lines.",
+   "match": true,
+   "reason": "The composition shows two structurally equivalent five-node star/polygon forms side by side, with the same cyclic/peripheral relations preserved despite different visual rendering. That plausibly conveys a one-to-one correspondence that translates item-by-item without exception, which matches the invariant at the structural level."
+  },
+  "exp3_ladder/images/isomorphism/L5_s2.png": {
+   "image": "exp3_ladder/images/isomorphism/L5_s2.png",
+   "motif": "isomorphism",
+   "description": "A large, softly blended landform on the left and a crisp leaf on the right are balanced across the frame and linked by several dashed lines that cross and converge, echoing each other’s star-like radial structure while keeping the left side as the looser, more expansive mass.",
+   "match": true,
+   "reason": "The composition does suggest a structured one-to-one correspondence between two distinct forms: the left landform and right leaf are visually balanced, and the dashed lines imply systematic translation between matched elements. The echoed radial structure supports the idea of preserved relations across the two sides, even if the left side is looser in appearance."
+  },
+  "exp3_ladder/images/isomorphism/L6_s1.png": {
+   "image": "exp3_ladder/images/isomorphism/L6_s1.png",
+   "motif": "isomorphism",
+   "description": "The image is split into two contrasting halves, each organized around a central star-like network of branching lines that repeats a similar geometry through containment, intersection, and radial symmetry.",
+   "match": true,
+   "reason": "The composition description suggests a strong structural correspondence: two distinct halves mirror a shared star-like branching geometry through containment, intersection, and radial symmetry, which plausibly reflects a one-to-one preserving mapping between two different structures."
+  },
+  "exp3_ladder/images/mobius/L5_s0.png": {
+   "image": "exp3_ladder/images/mobius/L5_s0.png",
+   "motif": "mobius",
+   "description": "A single broad looped band dominates the center, crossing over itself to form an overlapping oval opening while a repeated row of small elements traces its edges against a mostly empty background.",
+   "match": true,
+   "reason": "The composition describes a single dominant looped band with a self-overlapping twist-like form, which plausibly corresponds to a one-sided band: traversing it once would reverse orientation, and twice would restore it."
+  },
+  "exp3_ladder/images/mobius/L5_s1.png": {
+   "image": "exp3_ladder/images/mobius/L5_s1.png",
+   "motif": "mobius",
+   "description": "A single elongated loop dominates the center, crossing and overlapping itself at the left while enclosing an empty oval space, with repeating diagonal bands running along the continuous form against a plain background.",
+   "match": true,
+   "reason": "The composition sounds like a single ribbon-like loop with a twist, shown by the continuous band, diagonal striping, and self-overlapping crossing. That is structurally consistent with a Möbius-like band where one circuit returns to the start with reversed orientation, and two circuits restore the original orientation."
+  },
+  "exp3_ladder/images/braiding/L5_s0.png": {
+   "image": "exp3_ladder/images/braiding/L5_s0.png",
+   "motif": "braiding",
+   "description": "A single braided band runs horizontally across the center, with a tightly repeated over-under pattern of alternating strands that overlaps itself and leaves the textured background unobstructed around it.",
+   "match": true,
+   "reason": "The description plausibly matches a braid-like structure with repeated adjacent over-under crossings of multiple strands, which fits the invariant’s requirement of three or more lines crossing in sequence where order matters."
+  },
+  "exp3_ladder/images/braiding/L5_s1.png": {
+   "image": "exp3_ladder/images/braiding/L5_s1.png",
+   "motif": "braiding",
+   "description": "A long chain of repeated elevated road loops weaves back and forth in overlapping crossings across the frame, with each curve containing a roadway segment while the whole pattern sits embedded in the surrounding greenery.",
+   "match": true,
+   "reason": "The described composition is plausibly braid-like: multiple continuous strands/loops cross repeatedly in sequence across the frame, so the overall arrangement depends on the order of crossings rather than allowing arbitrary reordering. The subject matter is roads, but the structure matches the invariant."
+  },
+  "exp3_ladder/images/braiding/L5_s2.png": {
+   "image": "exp3_ladder/images/braiding/L5_s2.png",
+   "motif": "braiding",
+   "description": "A repeating series of green vines snakes in a rhythmic zigzag across the horizontal log, with each loop crossing the next to create a layered, interwoven pattern against the blurred background.",
+   "match": true,
+   "reason": "The composition is structurally braid-like: multiple strands/vines cross repeatedly in adjacent, sequential intersections, producing an ordered interwoven pattern where the crossing sequence matters rather than being freely interchangeable."
+  },
+  "exp3_ladder/images/braiding/L6_s0.png": {
+   "image": "exp3_ladder/images/braiding/L6_s0.png",
+   "motif": "braiding",
+   "description": "A horizontal braided band runs straight across the center, tightly repeating in a rhythmic pattern while the darker surrounding forms overlap and tuck behind it, creating a dense layered backdrop.",
+   "match": true,
+   "reason": "The description of a horizontal braided band with tightly repeating adjacent crossings matches the invariant’s requirement of three or more strands crossing in sequence with order-sensitive composition. The layered backdrop does not conflict with that braid structure."
+  },
+  "exp3_ladder/images/interference/L5_s0.png": {
+   "image": "exp3_ladder/images/interference/L5_s0.png",
+   "motif": "interference",
+   "description": "Two nearly symmetrical circular ripple systems overlap at the center, creating a dense field of repeated concentric arcs that intersect and interlock across the frame.",
+   "match": true,
+   "reason": "The composition describes two overlapping concentric-ripple systems, which is a plausible superposition of two repeating periodic patterns. Their intersection can create a larger emergent rhythm or moir\\u00e9-like structure, so it reasonably fits the invariant at the level of structure."
+  },
+  "exp3_ladder/images/interference/L6_s0.png": {
+   "image": "exp3_ladder/images/interference/L6_s0.png",
+   "motif": "interference",
+   "description": "The composition is dominated by densely repeated concentric rings from two offset centers that overlap and interlace across the frame, with the pattern clipped at the edges and only a few small debris elements breaking the continuity.",
+   "match": true,
+   "reason": "The composition describes two offset, repeating ring patterns superimposed across the frame, which can plausibly create a larger emergent beat or moir\\u00e9 period than either ring set alone. The clipped edges and small debris do not undermine that structural reading."
+  },
+  "exp3_ladder/images/interference/L6_s1.png": {
+   "image": "exp3_ladder/images/interference/L6_s1.png",
+   "motif": "interference",
+   "description": "A dense field of concentric circular lines is centered and symmetrically layered over a brighter interior backdrop, with vertical window bands and objects receding behind the intersecting rings.",
+   "match": true,
+   "reason": "The composition plausibly fits the invariant: it combines two distinct repeating structures with different periodicity-like spacing—dense concentric rings and vertical window bands—whose superposition can produce a larger-scale emergent pattern (moiré/beat effect) beyond either original repeat."
+  },
+  "exp3_ladder/images/interference/L6_s2.png": {
+   "image": "exp3_ladder/images/interference/L6_s2.png",
+   "motif": "interference",
+   "description": "A dense field of repeated concentric arcs overlaps and crosses throughout the frame, creating a layered lattice that converges around a roughly bilateral pair of central circular zones.",
+   "match": true,
+   "reason": "The composition plausibly fits the invariant: two overlapping families of repeated arcs/lattices can imply distinct periodic patterns, and their crossings can produce a larger-scale emergent repeat than either family alone. The bilateral central zones are consistent with a superposed structural rhythm rather than a single simple repetition."
+  },
+  "exp3_ladder/images/tiling/L5_s0.png": {
+   "image": "exp3_ladder/images/tiling/L5_s0.png",
+   "motif": "tiling",
+   "description": "A tightly packed, repeating hexagonal grid fills the frame edge to edge, with each cell interlocking uniformly into the next and no single element breaking the pattern.",
+   "match": true,
+   "reason": "The described composition is a uniform, repeating hexagonal tiling with no visible disruption, which plausibly satisfies the invariant of exact seamless self-alignment after a one-cell shift."
+  },
+  "exp3_ladder/images/tiling/L5_s1.png": {
+   "image": "exp3_ladder/images/tiling/L5_s1.png",
+   "motif": "tiling",
+   "description": "A tightly packed, repeating hexagonal grid fills the frame edge to edge, with each cell touching its neighbors in a seamless tessellation and only subtle tonal shifts breaking the uniform pattern.",
+   "match": true,
+   "reason": "The described image is a seamless, repeating hexagonal tessellation that fills the frame, which plausibly satisfies the stated translational periodicity invariant."
+  },
+  "exp3_ladder/images/tiling/L5_s2.png": {
+   "image": "exp3_ladder/images/tiling/L5_s2.png",
+   "motif": "tiling",
+   "description": "A repeating hexagonal grid fills the frame in staggered rows, with alternating colors creating a rhythmic pattern and no single focal point, aside from the slight cropping at the edges.",
+   "match": true,
+   "reason": "The described image is a repeating hexagonal tiling with staggered rows and no focal point, which is consistent with a seamless translational pattern. The slight edge cropping does not contradict the core invariant."
+  },
+  "exp3_ladder/images/hub/L5_s0.png": {
+   "image": "exp3_ladder/images/hub/L5_s0.png",
+   "motif": "hub",
+   "description": "The composition is a radial starburst of repeated glowing lines that all converge at a single bright center and extend outward symmetrically to isolated endpoints.",
+   "match": true,
+   "reason": "Yes. The described radial starburst has a single central hub with multiple outward spokes ending in isolated endpoints, which matches the invariant that all endpoint pairs connect only through the center and that removing the center leaves isolated points."
+  },
+  "exp3_ladder/images/hub/L5_s1.png": {
+   "image": "exp3_ladder/images/hub/L5_s1.png",
+   "motif": "hub",
+   "description": "A strong radial layout centers on a circular hub, with evenly spaced spoke-like elements extending outward to repeated endpoint nodes, creating a near-symmetric starburst with minor irregularities at the edges.",
+   "match": true,
+   "reason": "The description matches a star-like structure: a single central hub with spokes to separate endpoints. That plausibly satisfies the invariant that any two endpoints are connected only through the center, and removing the center leaves isolated nodes."
+  },
+  "exp3_ladder/images/hub/L5_s2.png": {
+   "image": "exp3_ladder/images/hub/L5_s2.png",
+   "motif": "hub",
+   "description": "A single central form radiates five evenly spaced arms in a near-symmetrical star, standing isolated against a uniformly textured background with only scattered small interruptions around it.",
+   "match": true,
+   "reason": "The described composition is structurally consistent with a star graph: one central element connects to multiple endpoints, so any two endpoints are separated only through the center, and removing the center would leave the endpoints isolated from each other."
+  },
+  "exp3_ladder/images/hub/L6_s1.png": {
+   "image": "exp3_ladder/images/hub/L6_s1.png",
+   "motif": "hub",
+   "description": "A strong radial symmetry organizes the image, with a central circular hub sending repeated straight spokes outward to evenly spaced peripheral circles, all crossing the surrounding textured patches of landscape.",
+   "match": true,
+   "reason": "The described composition is a classic star-like radial structure: one central hub connects to multiple peripheral nodes by straight spokes, and the outer circles are not connected to each other. That matches the invariant that any two endpoints are separated only by the center, and removing the center leaves isolated points."
+  },
+  "exp3_ladder/images/hub/L6_s2.png": {
+   "image": "exp3_ladder/images/hub/L6_s2.png",
+   "motif": "hub",
+   "description": "A five-armed form is centered in the frame with strong radial symmetry, while the surrounding smaller scattered elements create an irregular, textured field that contrasts with its ordered structure.",
+   "match": true,
+   "reason": "The described composition is consistent with a star-like structure: five radial arms meeting at a single center, so any two endpoints would connect only through that center, and removing the center would leave isolated arms/endpoints. The surrounding scattered texture does not obviously alter the core connectivity."
+  },
+  "exp3_ladder/images/diagonalization/L6_s2.png": {
+   "image": "exp3_ladder/images/diagonalization/L6_s2.png",
+   "motif": "diagonalization",
+   "description": "A large tilted grid of evenly spaced compartments dominates the frame, with repeated small objects nested inside each cell, a diagonal chain of circular inserts breaking the uniformity, and a separate row of blocks aligned along the bottom edge.",
+   "match": true,
+   "reason": "The composition is structurally consistent with a diagonalization motif: a repeated grid/table, a moving diagonal of differing inserts, and a separate enumerated row along the bottom together suggest a new row constructed to differ at successive positions from the listed rows, which matches the invariant better than a mere isolated defect or self-reference."
+  },
+  "exp3_ladder/images/infinite_descent/L5_s0.png": {
+   "image": "exp3_ladder/images/infinite_descent/L5_s0.png",
+   "motif": "infinite_descent",
+   "description": "A descending diagonal row of repeated nested forms marches from a large clustered pair on the left to progressively smaller single units on the right, ending with an open exception that breaks the filled pattern.",
+   "match": true,
+   "reason": "The composition plausibly encodes a strict descent chain: repeated nested forms shrink step by step from left to right, and the final open exception breaks the otherwise closed pattern, which fits the invariant’s emphasis on forced smaller cases and the impossibility of an endless descending chain."
+  },
+  "exp3_ladder/images/infinite_descent/L5_s1.png": {
+   "image": "exp3_ladder/images/infinite_descent/L5_s1.png",
+   "motif": "infinite_descent",
+   "description": "A diagonal, descending chain of similarly textured blocks steps from the upper left toward the lower right, each touching or slightly overlapping the next until the smallest element extends into the water on a thin support.",
+   "match": true,
+   "reason": "The composition shows a clear monotone descent: a chain of similar blocks steps diagonally downward, with each successive element smaller and the sequence terminating at a smallest piece. That structurally echoes a strict descent toward a minimum rather than a cyclic or ascending pattern."
+  },
+  "exp3_ladder/images/infinite_descent/L5_s2.png": {
+   "image": "exp3_ladder/images/infinite_descent/L5_s2.png",
+   "motif": "infinite_descent",
+   "description": "A series of nested, stepped rectangular frames repeats diagonally from large left foreground to small right background, with each opening contained within the next scale sequence, while a horizontal base crosses the bottom edge and a lone red X acts as a small exception.",
+   "match": true,
+   "reason": "The composition structurally suggests a descending chain of same-type cases: repeated nested frames shrink step by step, and the horizontal base provides a visible floor that blocks further descent. The lone red X can plausibly serve as the impossibility marker, matching the invariant’s claim that an infinite strictly decreasing chain cannot exist."
+  },
+  "exp3_ladder/images/infinite_descent/L6_s0.png": {
+   "image": "exp3_ladder/images/infinite_descent/L6_s0.png",
+   "motif": "infinite_descent",
+   "description": "A diagonal procession of nested forms steps from a large clustered group on the left down to progressively smaller singles on the right, with strong repetition, containment, and scale reduction creating a rhythmic line across the table.",
+   "match": true,
+   "reason": "The composition’s diagonal chain of nested forms that repeatedly shrinks from a larger clustered group to smaller singles plausibly mirrors the invariant’s strict descent structure: each step forces a strictly smaller same-kind case, with the rhythmic reduction and containment conveying an impossible infinite descent."
+  },
+  "exp3_ladder/images/infinite_descent/L6_s1.png": {
+   "image": "exp3_ladder/images/infinite_descent/L6_s1.png",
+   "motif": "infinite_descent",
+   "description": "A descending diagonal chain of repeating blocks steps from the upper left toward the lower right, culminating in a single vertical support that intersects a horizontal ledge, while the misty background encloses the structure and the flowing base provides contrast beneath it.",
+   "match": true,
+   "reason": "The composition structurally reads as a strictly descending, self-similar chain, which fits the idea of repeated smaller same-kind cases. Its visual termination at a support/ledge also suggests the descent cannot continue indefinitely, matching the no-infinite-descent invariant."
+  },
+  "exp3_ladder/images/infinite_descent/L6_s2.png": {
+   "image": "exp3_ladder/images/infinite_descent/L6_s2.png",
+   "motif": "infinite_descent",
+   "description": "A sequence of nested, off-center arches repeats rhythmically from foreground to background, creating a strong receding corridor that is balanced by dense shelving on the sides and a few isolated vertical elements on the right.",
+   "match": true,
+   "reason": "The repeated nested arches create a self-similar sequence of progressively smaller same-type forms receding into depth, which plausibly encodes the idea of strict descent through ever-smaller cases. The corridor-like recession also supports a structural reading of forced continuation without an obvious terminal base, so the composition fits the invariant at the level of form."
+  },
+  "exp3_ladder/images/coprime_orbit/L5_s0.png": {
+   "image": "exp3_ladder/images/coprime_orbit/L5_s0.png",
+   "motif": "coprime_orbit",
+   "description": "A set of evenly spaced pins around a square board are linked by repeated diagonal crossings, forming a centered star-like web with symmetrical overlaps and no single element dominating.",
+   "match": true,
+   "reason": "The composition of evenly spaced pins connected by repeated diagonal crossings is structurally consistent with a single fixed-step jump pattern on a discrete cycle, producing a star-like web with symmetric overlaps. It also fits the one-orbit, no-central-node nature of the invariant better than a plain cycle, interference pattern, or hub layout."
+  },
+  "exp3_ladder/images/coprime_orbit/L5_s1.png": {
+   "image": "exp3_ladder/images/coprime_orbit/L5_s1.png",
+   "motif": "coprime_orbit",
+   "description": "A centered circular frame encloses a repeated crisscross of straight strands that form a star-like polygon, with the lines anchored at evenly spaced rim points and converging across the opening.",
+   "match": true,
+   "reason": "The described composition is structurally consistent with a single circle of evenly spaced boundary points connected by repeated long chords that crisscross into a star-like polygon, which matches the fixed-step jump-on-a-cycle invariant. It also suggests one closed trajectory rather than a centered hub or two independent periodic systems, so it plausibly realizes the stated gcd-dependent traversal pattern."
+  },
+  "exp3_ladder/images/coprime_orbit/L5_s2.png": {
+   "image": "exp3_ladder/images/coprime_orbit/L5_s2.png",
+   "motif": "coprime_orbit",
+   "description": "A ring of evenly spaced figures anchors the composition, while the glowing light-beams connect their hands into a symmetric, star-like web with repeated crossings and a single central interlock.",
+   "match": true,
+   "reason": "The description fits a star-polygon-like construction on evenly spaced points around a ring, which matches the invariant’s fixed-step jump-connection idea. The repeated crossings and symmetric web are consistent with a single traversal structure rather than adjacent-cycle links or multi-period interference. The mention of a central interlock does not strongly contradict it, since it can describe the crossing geometry rather than a true hub."
+  },
+  "exp3_ladder/images/coprime_orbit/L6_s1.png": {
+   "image": "exp3_ladder/images/coprime_orbit/L6_s1.png",
+   "motif": "coprime_orbit",
+   "description": "A large central circular form is overlain by a repeated star-like lattice of crossing strips, while similar rounded woven forms recede around it in the background and a smaller matching motif sits off to the lower right as a secondary exception.",
+   "match": true,
+   "reason": "The composition centers on a circular form with a star-like crossing lattice, which fits the jump-by-k star polygon idea. The repeated rounded forms and the smaller offset motif can also read as component/split variants, so the structure plausibly echoes the gcd-driven single-orbit vs. fragmented-cycle behavior."
+  },
+  "exp3_ladder/images/coprime_orbit/L6_s2.png": {
+   "image": "exp3_ladder/images/coprime_orbit/L6_s2.png",
+   "motif": "coprime_orbit",
+   "description": "A tight circular arrangement of evenly spaced figures links bright lines into a crisscrossing star network at the center, all encircled by a darker outer ring of onlookers that frames and contains the scene.",
+   "match": true,
+   "reason": "The core composition matches a jump-step circle: evenly spaced points on a ring are connected by chords that form a star-like crisscross pattern, which fits the invariant’s fixed-step traversal on a circle. The extra outer ring of onlookers is decorative framing rather than a structural conflict."
+  },
+  "exp3_ladder/images/pigeonhole/L5_s1.png": {
+   "image": "exp3_ladder/images/pigeonhole/L5_s1.png",
+   "motif": "pigeonhole",
+   "description": "A row of five hanging labels repeats across the top and sends downward strings/arrows to four aligned storage boxes below, with the center red box acting as the visual exception where two labels converge.",
+   "match": true,
+   "reason": "The composition matches the counting structure of the invariant: five labels map into four boxes, so at least two must converge into one box by count alone. The described center red box serves as the unspecified shared destination, which fits the non-constructive 'somewhere two end up together' nature of the invariant."
+  },
+  "exp3_ladder/images/pigeonhole/L5_s2.png": {
+   "image": "exp3_ladder/images/pigeonhole/L5_s2.png",
+   "motif": "pigeonhole",
+   "description": "A row of nearly identical hanging forms repeats across the wall, each suspended from a top anchor and contained within a framed rectangular niche, with one paired element breaking the otherwise regular spacing.",
+   "match": true,
+   "reason": "The composition suggests a pigeonhole-style count: a repeated set of nearly identical forms occupies repeated framed niches, and the single paired element breaks the one-per-niche regularity, implying at least one shared slot without specifying any special meeting point or bottleneck."
+  },
+  "exp3_ladder/images/pigeonhole/L6_s0.png": {
+   "image": "exp3_ladder/images/pigeonhole/L6_s0.png",
+   "motif": "pigeonhole",
+   "description": "A layered horizontal composition stacks repeated dark forms along the top and middle bands, with the lower band left open as negative space while a few isolated silhouettes break the repetition and extend across the central strip.",
+   "match": true,
+   "reason": "The composition is plausibly count-based rather than hub-based: repeated forms are distributed across horizontal bands, with open negative space and a few isolated elements, so it suggests an unavoidable same-band/same-container coincidence without emphasizing any single convergence point or bottleneck."
+  },
+  "exp3_ladder/images/contraction_fixed_point/L5_s1.png": {
+   "image": "exp3_ladder/images/contraction_fixed_point/L5_s1.png",
+   "motif": "contraction_fixed_point",
+   "description": "A stack of slightly offset rectangular sheets creates a layered frame, while a strong diagonal line cuts across them and is echoed by smaller stepped segments and a small circular node near the center.",
+   "match": true,
+   "reason": "The composition suggests a single directed chain: one dominant diagonal is repeatedly echoed by smaller stepped segments, which reads like self-iteration with diminishing scale toward a terminal node. The small circular center can plausibly serve as the fixed point, and the layered rectangles act as a framing context rather than multiple independent convergences."
+  },
+  "exp3_ladder/images/contraction_fixed_point/L5_s2.png": {
+   "image": "exp3_ladder/images/contraction_fixed_point/L5_s2.png",
+   "motif": "contraction_fixed_point",
+   "description": "A broad curved bowl dominates the frame while two diagonal lines cross its interior, with a small circular accent near their intersection and a repeated red stepped line leading into it.",
+   "match": true,
+   "reason": "The repeated stepped red line visually suggests a single self-iterating process that contracts toward a terminal point, and the small circular accent near the intersection can serve as the fixed point. The broad bowl and crossing diagonals do not contradict that structure, so the composition plausibly fits the invariant."
+  },
+  "exp3_ladder/images/contraction_fixed_point/L6_s1.png": {
+   "image": "exp3_ladder/images/contraction_fixed_point/L6_s1.png",
+   "motif": "contraction_fixed_point",
+   "description": "A strong diagonal transparent plane slices the image from lower left to upper right, with a repeated row of rectangular elements receding along its edge while larger machine forms and stacks are contained around it and the blurred background stays secondary.",
+   "match": true,
+   "reason": "The composition shows a single directional chain of repeated elements shrinking along one path toward a terminal point, which structurally fits a self-iterative process with monotone contraction toward a fixed end state. The blurred surroundings and larger surrounding forms read as secondary context, so the core structure remains one forward-only sequence rather than multiple independent lines or a return-based recursion."
+  },
+  "exp3_ladder/images/self_reference/L5_s1.png": {
+   "image": "exp3_ladder/images/self_reference/L5_s1.png",
+   "motif": "self_reference",
+   "description": "A series of progressively smaller, evenly spaced rectangles is nested concentrically at the center, creating a repeated inward framing structure with no crossings or exceptions.",
+   "match": false,
+   "reason": "The composition describes repeated concentric nesting with multiple inward levels, which is a hierarchical recursive structure rather than a single direct self-reference. It does not clearly realize the invariant’s requirement of one step pointing back to itself without climbing levels or invoking a second system."
+  },
+  "exp3_ladder/images/self_reference/L5_s2.png": {
+   "image": "exp3_ladder/images/self_reference/L5_s2.png",
+   "motif": "self_reference",
+   "description": "A large bordered sheet contains a smaller bordered painting, which in turn contains an even smaller inset scene centered on the figure, creating a nested, concentric composition with the soft landscape motifs spread around the inner frame.",
+   "match": false,
+   "reason": "The invariant requires a single-step self-reference: the object contains one description of itself that is directly and verifiably true without climbing levels or invoking a second system. The described composition is explicitly multi-level nesting (sheet → painting → smaller inset), which relies on hierarchical recursion (a mise-en-abyme) rather than a one-step, non-hierarchical self-description that can be checked within the same level."
+  },
+  "exp3_ladder/images/self_reference/L6_s0.png": {
+   "image": "exp3_ladder/images/self_reference/L6_s0.png",
+   "motif": "self_reference",
+   "description": "The composition is built from concentric rectangular frames centered in the image, with the smallest inner frame echoing the larger ones, while foreground objects form a horizontal base and the side elements and background figures remain secondary and asymmetrically dispersed around the central axis.",
+   "match": true,
+   "reason": "The composition centers on nested, concentric rectangular frames, and the smallest inner frame echoes the outer ones in a directly self-similar way. That supports a one-step self-reference structure rather than a hierarchy climb or an appeal to a separate system, so it plausibly realizes the invariant."
+  },
+  "exp3_ladder/images/self_reference/L6_s1.png": {
+   "image": "exp3_ladder/images/self_reference/L6_s1.png",
+   "motif": "self_reference",
+   "description": "The composition is built around a centered set of nested, open rectangles that repeat the same shape at smaller scales, with each book contained within the larger one and all aligned along the same vertical axis.",
+   "match": false,
+   "reason": "The invariant requires a single-step self-reference that validates itself without moving up a hierarchy or invoking a second system. The described composition is explicitly hierarchical: nested rectangles/books repeating at smaller scales, implying multi-level recursion. That structure suggests self-similarity via an infinite regress rather than a direct, one-step self-pointing statement that can be checked as true within the same level."
+  },
+  "exp3_ladder/images/self_reference/L6_s2.png": {
+   "image": "exp3_ladder/images/self_reference/L6_s2.png",
+   "motif": "self_reference",
+   "description": "The composition is built from concentric, recursively nested rectangular frames that repeat the same arrangement inward, with a single centered figure interrupting the symmetry and drawing the eye toward the vanishing center.",
+   "match": false,
+   "reason": "The described structure is recursive nesting of frames with a vanishing center (a kind of infinite regress), plus a centered interrupting figure. That suggests repeated self-similarity rather than a single-step self-reference that verifies its own description as true. It also implies a hierarchy of levels (outer frame to inner frames), which conflicts with the invariant’s requirement of pointing back to itself without climbing levels or invoking a second system."
+  },
+  "exp3_ladder/images/recursion/L5_s0.png": {
+   "image": "exp3_ladder/images/recursion/L5_s0.png",
+   "motif": "recursion",
+   "description": "A single central vertical form anchors the composition, with two mirrored branching structures radiating outward symmetrically against a broad open background and a bright glow centered behind the junction.",
+   "match": false,
+   "reason": "The described composition is symmetrical and branching, but it does not clearly show recursive self-similarity or nested smaller versions of the whole generated by the same rule. It reads more like a single bifurcating form than an invariant with multi-level recursion and unwinding from a base case."
+  },
+  "exp3_ladder/images/recursion/L6_s0.png": {
+   "image": "exp3_ladder/images/recursion/L6_s0.png",
+   "motif": "recursion",
+   "description": "A single symmetrical, branching form anchors the center and rises vertically, flanked by darker edge elements that frame it while the bright horizon backlights the whole scene and creates strong contrast and depth.",
+   "match": true,
+   "reason": "The description suggests a recursively generated structure: a central, symmetrical branching form implies self-similar sub-branches repeated by the same rule across levels. The strong central anchor and framed edges are consistent with nested layers, and the idea of depth/horizon backlighting can support the perception of tiered levels. While the “returning after a base case” is procedural and not directly visible, the overall branching symmetry plausibly corresponds to a multi-level recursive construction."
+  },
+  "exp3_ladder/images/cycle/L6_s1.png": {
+   "image": "exp3_ladder/images/cycle/L6_s1.png",
+   "motif": "cycle",
+   "description": "Six circular vignettes are arranged in a loose ring around a central star-shaped empty space, repeating the same contained scene motif while touching and slightly overlapping into a balanced radial composition.",
+   "match": true,
+   "reason": "The composition is a balanced ring of six equal circular vignettes with no clear hierarchy, which plausibly fits the invariant’s cyclic, same-level return-to-start structure. The repeating motif and radial loop support the idea of a closed, non-upgrading cycle."
+  },
+  "exp3_ladder/images/cycle/L6_s2.png": {
+   "image": "exp3_ladder/images/cycle/L6_s2.png",
+   "motif": "cycle",
+   "description": "A large central plume anchors the composition, with the ocean-like expanse balancing the rugged, rain-streaked land on either side while the stream in the foreground creates a diagonal flow that connects the lower edge to the center.",
+   "match": false,
+   "reason": "The described composition is centered and hierarchical: a large central plume anchors the scene, with surrounding elements balancing around it and a diagonal stream directing attention toward the center. That is not a same-level closed causal cycle of 3+ equal events returning to the start, so it does not plausibly realize the invariant."
+  },
+  "exp3_ladder/images/symmetry/L6_s1.png": {
+   "image": "exp3_ladder/images/symmetry/L6_s1.png",
+   "motif": "symmetry",
+   "description": "A single, vertically centered, bilaterally symmetrical form dominates the frame, its sharp angular edges and repeated markings contrasting with the soft, crowded, out-of-focus background of overlapping leaves and scattered color accents.",
+   "match": true,
+   "reason": "The described composition is strongly structurally symmetric: a single vertically centered form with bilateral symmetry and repeated features fits the idea of mirrored overlap across a midpoint. Ignoring subject matter, that makes it a plausible realization of the invariant."
+  },
+  "exp3_ladder/images/alternation/L6_s0.png": {
+   "image": "exp3_ladder/images/alternation/L6_s0.png",
+   "motif": "alternation",
+   "description": "A large, horizontally cropped central form dominates the frame, with repeating bold diagonal bands creating a rhythmic zigzag pattern across its surface while blurred foreground and background layers partially obscure and frame it.",
+   "match": true,
+   "reason": "The invariant requires exactly two states alternating strictly (ABAB...), where adjacent elements differ and every other element matches, with a fixed period of two. The described composition features repeating bold diagonal bands forming a rhythmic zigzag pattern, which plausibly corresponds to alternating band states across the surface. The mention of foreground/background blur framing does not contradict the alternation; it just adds occlusion layers. While the description doesn’t explicitly confirm there are only two distinct band states, the zigzag band repetition makes a strict two-state alternation structurally plausible."
+  },
+  "exp3_ladder/images/alternation/L6_s1.png": {
+   "image": "exp3_ladder/images/alternation/L6_s1.png",
+   "motif": "alternation",
+   "description": "The composition is a repeating zigzag rhythm of long vertical forms separated by narrow channels, linked by diagonal bands and punctuated by evenly spaced circular nodes that create a strong modular pattern across the frame.",
+   "match": false,
+   "reason": "The description suggests a repeating modular zigzag pattern with multiple element types (vertical forms, channels, diagonal bands, circular nodes), not a strict two-state alternation where adjacent units always differ and every second unit matches exactly. It does not clearly indicate a period-2 invariant with no exceptions."
+  },
+  "exp3_ladder/images/alternation/L6_s2.png": {
+   "image": "exp3_ladder/images/alternation/L6_s2.png",
+   "motif": "alternation",
+   "description": "A row of repeated bright circular light spots linked by angled shadow “V”s spans the middle of the frame, while plants and furniture densely contain the composition around the edges and leave a broad open floor as the central field.",
+   "match": true,
+   "reason": "The described middle band has two recurring states — bright circular spots and angled V-shaped shadows — arranged in an alternating sequence, which fits a period-2 pattern where neighbors differ and every second element matches. The edge clutter and open central floor do not conflict with that structural invariant."
+  },
+  "exp3_ladder/images/bottleneck/L6_s2.png": {
+   "image": "exp3_ladder/images/bottleneck/L6_s2.png",
+   "motif": "bottleneck",
+   "description": "Two large, irregular blue masses sit on the left and right, linked by a narrow central corridor and surrounded by many small island-like fragments that repeat and cluster along the edges, creating a loose bilateral balance around the darker land in the middle.",
+   "match": true,
+   "reason": "从结构上看，这幅图像把左右两岸分成两个各自较为连续的大块，中间只有一条很窄的中心通道作为唯一的跨越处，符合“彼此之间的通路都要经过同一中途点/瓶颈点”的直观。删去这个中枢后，图面也会自然分成左右两大块，而不是散成很多孤立碎片；边缘那些小碎片不影响这一主干结构。"
+  },
+  "exp3_ladder/images/strange_loop/L5_s1.png": {
+   "image": "exp3_ladder/images/strange_loop/L5_s1.png",
+   "motif": "strange_loop",
+   "description": "Three repeated hand-and-pencil drawings are stacked diagonally across the page and linked by bold arrowed lines and a dashed curved arc, with the live hand at top right overlapping the sequence as the active endpoint.",
+   "match": true,
+   "reason": "The composition sounds like a recursive upward sequence: repeated hand-and-pencil instances are linked as successive levels, and the arrows/curved arc suggest the progression folds back to the starting hand as the active endpoint. That fits a structure where the hierarchy climbs by narration level but then loops to its origin, making the level assignment unstable."
+  },
+  "exp3_ladder/images/strange_loop/L6_s0.png": {
+   "image": "exp3_ladder/images/strange_loop/L6_s0.png",
+   "motif": "strange_loop",
+   "description": "A pair of parallel diagonal stair runs repeatedly link staggered platforms around a central void, while a sweeping curved ramp wraps the lower edge and crosses the scene to contrast the rigid geometry.",
+   "match": true,
+   "reason": "The description suggests a self-referential circulation: repeated diagonal stair runs connect staggered platforms around a central void, implying an ascent through levels that continuously link onward. Because the connections are repetitive and wrap around the void, the path can plausibly return to its starting point after a sequence of “higher” steps, creating a loop where a consistent global level assignment breaks (an Escher-like impossible hierarchy). The curved ramp reinforcing a wraparound traversal further supports a closed cycle rather than a linear, well-founded progression."
+  },
+  "exp3_ladder/images/figure_ground/L5_s0.png": {
+   "image": "exp3_ladder/images/figure_ground/L5_s0.png",
+   "motif": "figure_ground",
+   "description": "A tightly repeating tessellation of alternating black and white triangles fills the frame in staggered rows, creating a continuous zigzag pattern with no central focal exception.",
+   "match": false,
+   "reason": "The described image is a uniform repeating tessellation with no clear upper/lower figure-ground inversion or complementary swap between halves. The invariant calls for a specific structural reversal where one half becomes the other’s ground while preserving order, which is not evident here."
+  },
+  "exp3_ladder/images/figure_ground/L5_s1.png": {
+   "image": "exp3_ladder/images/figure_ground/L5_s1.png",
+   "motif": "figure_ground",
+   "description": "A tightly repeating grid of dark triangular forms is arranged in staggered horizontal rows, separated by bright textured bands that create strong rhythm and contrast across the frame.",
+   "match": false,
+   "reason": "The description only supports a repeating triangular grid with alternating bright bands. It does not indicate the required top/bottom figure-ground inversion where the lower half reuses the upper half's background as figure while preserving the same event order."
+  },
+  "exp3_ladder/images/figure_ground/L5_s2.png": {
+   "image": "exp3_ladder/images/figure_ground/L5_s2.png",
+   "motif": "figure_ground",
+   "description": "A tightly packed, staggered grid of nearly identical bird forms repeats across the frame, with each figure overlapping its neighbors so the black-and-white wing shapes interlock into a continuous pattern.",
+   "match": false,
+   "reason": "The description fits a repeated tessellation with interlocking figure-ground, but it does not show the specific top/bottom complementary inversion required by the invariant. There is no clear evidence that the lower half is formed from the upper half's background as figure, or that the upper and lower halves preserve the same structural order in that complementary way."
+  },
+  "exp3_ladder/images/figure_ground/L6_s0.png": {
+   "image": "exp3_ladder/images/figure_ground/L6_s0.png",
+   "motif": "figure_ground",
+   "description": "A tightly packed grid of repeated red triangles fills the center, with each triangle containing intricate cutouts while scattered scraps and the partially visible hands/tools at the edges break the regularity and frame the composition.",
+   "match": false,
+   "reason": "The described image is a dense central grid of repeated triangles with edge clutter, but it does not indicate the required figure-ground complementation across upper and lower halves, nor the preserved event/order structure. It sounds like a patterned composition with framing irregularities, not a structural swap of figure and ground over the full domain."
+  },
+  "exp3_ladder/images/figure_ground/L6_s1.png": {
+   "image": "exp3_ladder/images/figure_ground/L6_s1.png",
+   "motif": "figure_ground",
+   "description": "A dense, repeating pattern of dark triangular forms is staggered in offset rows across a pale field, creating an interlocking lattice with strong rhythm and diagonal shadow connections.",
+   "match": false,
+   "reason": "The described image is a regular repeating lattice of dark triangles on a pale ground, but it does not clearly show the required figure-ground complementarity across halves or the background itself forming a distinct shape. There is no indication of the upper/lower half inversion while preserving the same event order."
+  },
+  "exp3_ladder/images/figure_ground/L6_s2.png": {
+   "image": "exp3_ladder/images/figure_ground/L6_s2.png",
+   "motif": "figure_ground",
+   "description": "The image is a dense tiled repetition of similarly posed forms in alternating dark and light bands, with each figure overlapping and interlocking its neighbors so the whole field reads as a tightly packed rhythmic pattern.",
+   "match": false,
+   "reason": "The description suggests a dense repeating pattern with alternating bands and interlocking forms, but it does not clearly show the required structural inversion between upper and lower halves, nor the preserved event order within a figure-ground swap. It reads as a rhythmic tessellation rather than the specific complementary half-to-half transformation described in the invariant."
+  },
+  "exp3_ladder/images/isomorphism/L6_s0.png": {
+   "image": "exp3_ladder/images/isomorphism/L6_s0.png",
+   "motif": "isomorphism",
+   "description": "The image is split into two side-by-side panels that repeat a roughly star-like lattice of intersecting branches, with the left form isolated against a soft background and the right embedded in a denser, more cluttered field.",
+   "match": true,
+   "reason": "The composition suggests two side-by-side instances of the same underlying lattice, with a clear structural correspondence despite different surrounding contexts. That plausibly conveys a one-to-one, order-preserving translation of relations rather than a mere visual coincidence."
+  },
+  "exp3_ladder/images/isomorphism/L6_s2.png": {
+   "image": "exp3_ladder/images/isomorphism/L6_s2.png",
+   "motif": "isomorphism",
+   "description": "Two large textured masses dominate the left and right halves, linked by a branching network of dark lines that repeatedly crosses and subdivides the frame into irregular polygonal sections, with the right side acting as the denser visual anchor.",
+   "match": false,
+   "reason": "The composition suggests a divided frame with a linking network, but it does not clearly express a strict one-to-one correspondence that preserves all relations and operations without exception. The structure reads as irregular subdivision and visual linkage rather than an exact, item-by-item isomorphism between two distinct systems."
+  },
+  "exp3_ladder/images/mobius/L5_s2.png": {
+   "image": "exp3_ladder/images/mobius/L5_s2.png",
+   "motif": "mobius",
+   "description": "A single elongated oval form dominates the center, with its repeated ribbed segments wrapping around an open void, while the blurred trees and sky form a calm background that isolates the sculpture from the flat ground plane.",
+   "match": false,
+   "reason": "The description suggests a looped oval sculpture around a void, but it does not indicate the key Möbius-like feature of a one-sided band with a half-twist that flips orientation after one circuit. Structurally it reads more like a closed ring/oval form than a non-orientable strip."
+  },
+  "exp3_ladder/images/mobius/L6_s0.png": {
+   "image": "exp3_ladder/images/mobius/L6_s0.png",
+   "motif": "mobius",
+   "description": "A large oval ring dominates the center, its surface densely covered by repeated small elements while the darker, cluttered background and a few edge fragments sit around and partly overlap it, creating a strong enclosed loop with one pronounced opening on the right.",
+   "match": false,
+   "reason": "The described composition reads as a closed oval ring with an opening and layered clutter, which suggests a loop or torus-like form rather than a single-sided band with a half-twist. The key invariant requires one circuit to reverse orientation and two circuits to restore it, and the description does not clearly indicate that twisted, Möbius-like structure."
+  },
+  "exp3_ladder/images/mobius/L6_s1.png": {
+   "image": "exp3_ladder/images/mobius/L6_s1.png",
+   "motif": "mobius",
+   "description": "A large central loop anchors the composition while smaller objects densely ring it in layered overlap around the edges, creating a cluttered, enclosing frame with strong foreground-background depth.",
+   "match": false,
+   "reason": "The description suggests a central loop surrounded by layered clutter, which reads as a framed/encircled composition rather than a single twisted band with one-sided topology. It does not clearly convey the key invariant of returning mirrored after one traversal and restored after two."
+  },
+  "exp3_ladder/images/mobius/L6_s2.png": {
+   "image": "exp3_ladder/images/mobius/L6_s2.png",
+   "motif": "mobius",
+   "description": "A large elliptical ring dominates the foreground as a single continuous form, while smaller vertical and human elements recede behind it, creating a layered contrast between the closed central shape and the more scattered background.",
+   "match": false,
+   "reason": "The composition is described as a simple closed elliptical ring with layered background elements, not a band with a half-twist or other one-sided structure. Nothing in the description suggests the key invariant of returning to the start reversed after one circuit and restored only after two circuits."
+  },
+  "exp3_ladder/images/braiding/L6_s1.png": {
+   "image": "exp3_ladder/images/braiding/L6_s1.png",
+   "motif": "braiding",
+   "description": "A repeating series of elevated looping forms weaves across the frame in layered crossings and overlaps, creating a dense rhythmic lattice over the more rectilinear background.",
+   "match": true,
+   "reason": "The description suggests multiple strands forming repeated adjacent crossings in a clear order, with a braid-like layered structure. That is structurally consistent with the invariant’s requirement of three or more lines crossing successively, where the final arrangement depends on the order of the crossings."
+  },
+  "exp3_ladder/images/braiding/L6_s2.png": {
+   "image": "exp3_ladder/images/braiding/L6_s2.png",
+   "motif": "braiding",
+   "description": "A horizontal central band is dominated by a repeating series of interlaced loops that rhythmically cross over and under one another, while the log beneath and scattered foliage around the edges act as enclosing, irregular counterpoints.",
+   "match": true,
+   "reason": "描述中的水平中央带由多股相邻的交织环路反复上下穿越构成，符合“三股以上的线几经相邻交叉”且强调交叉的连续顺序；末端未被打乱重排的结构感也与“先后次序不可随意对调”相符。"
+  },
+  "exp3_ladder/images/interference/L5_s1.png": {
+   "image": "exp3_ladder/images/interference/L5_s1.png",
+   "motif": "interference",
+   "description": "A dense lattice of repeated concentric circles overlaps and interlocks across the frame, with two slightly offset focal clusters mirrored left and right and a brighter central gap where the arcs converge and cross.",
+   "match": true,
+   "reason": "The composition suggests two repeating circular lattices with a slight offset, and their overlap creates a larger-scale emergent structure around the central gap. That is consistent with two different periodic patterns combining into a new, larger apparent period."
+  },
+  "exp3_ladder/images/interference/L5_s2.png": {
+   "image": "exp3_ladder/images/interference/L5_s2.png",
+   "motif": "interference",
+   "description": "A dense lattice of repeated concentric arcs radiates from two offset centers, interlocking and crossing to fill the frame in a near-symmetrical, layered pattern.",
+   "match": true,
+   "reason": "The described composition plausibly fits the invariant: two repeated arc systems centered at different offsets suggest two distinct periodic patterns, and their interlocking crossings can create a larger emergent repetition scale than either pattern alone. The near-symmetrical layered lattice is structurally consistent with superposed cycles producing a new, slower pattern."
+  },
+  "exp3_ladder/images/tiling/L6_s0.png": {
+   "image": "exp3_ladder/images/tiling/L6_s0.png",
+   "motif": "tiling",
+   "description": "A tightly repeated hexagonal grid fills the frame edge to edge, with each cell interlocked by shared borders and only slight tonal variation breaking the otherwise uniform tessellation.",
+   "match": true,
+   "reason": "A regular hexagonal tessellation is inherently translation-repeating, so shifting it by one lattice step can align it with itself without gaps or overlaps. The described edge-to-edge interlocked grid plausibly satisfies the invariant structurally."
+  },
+  "exp3_ladder/images/tiling/L6_s1.png": {
+   "image": "exp3_ladder/images/tiling/L6_s1.png",
+   "motif": "tiling",
+   "description": "A tight, repeating hexagonal grid fills the frame edge to edge, with each cell contained by shared borders and subtly varying in color and texture while occasional small structures punctuate the otherwise uniform pattern.",
+   "match": false,
+   "reason": "The described image is a repeating hexagonal grid, but the mention of subtly varying color/texture and occasional punctuating structures suggests it is not exactly invariant under a one-cell translation with no exceptions."
+  },
+  "exp3_ladder/images/tiling/L6_s2.png": {
+   "image": "exp3_ladder/images/tiling/L6_s2.png",
+   "motif": "tiling",
+   "description": "A tightly packed tessellation of hexagonal tiles repeats in staggered rows, with alternating motif types interlocking edge-to-edge across the entire frame.",
+   "match": true,
+   "reason": "The described layout is a regular hexagonal tessellation with repeating, interlocking motifs, which strongly suggests translational periodicity; shifting the image by one tile step would plausibly align it exactly without gaps or overlap."
+  },
+  "exp3_ladder/images/hub/L6_s0.png": {
+   "image": "exp3_ladder/images/hub/L6_s0.png",
+   "motif": "hub",
+   "description": "A strong radial symmetry dominates the frame, with repeated bright lines converging at a central point and fanning outward, while darker foreground and side elements frame and anchor the composition.",
+   "match": true,
+   "reason": "The described composition is structurally star-like: multiple elements radiate from and converge on a single center, which matches the invariant that all endpoints connect only through the center. Removing the center would leave disconnected peripheral elements, consistent with the stated property."
+  },
+  "exp3_ladder/images/diagonalization/L5_s0.png": {
+   "image": "exp3_ladder/images/diagonalization/L5_s0.png",
+   "motif": "diagonalization",
+   "description": "A regular grid of small square motifs is interrupted by a diagonal chain of circular highlights that cuts across the pattern from upper left to lower right, creating a strong repeated structure with one dominant crossing exception.",
+   "match": false,
+   "reason": "The composition sounds like a regular grid with a single diagonal interruption, which is closer to a symmetry-breaking accent than to diagonalization. The invariant requires a row-by-row construction that differs from every listed row at its own indexed position and thus lies outside the enumeration, not just one prominent diagonal exception within the pattern."
+  },
+  "exp3_ladder/images/diagonalization/L5_s1.png": {
+   "image": "exp3_ladder/images/diagonalization/L5_s1.png",
+   "motif": "diagonalization",
+   "description": "A rigid grid of evenly spaced square openings fills the frame, with a few warm lit windows acting as scattered exceptions that punctuate the otherwise dark, repetitive facade.",
+   "match": false,
+   "reason": "The composition is a regular grid with a few scattered exceptions, which suggests isolated symmetry-breaking rather than the invariant’s systematic diagonal construction. The invariant requires one difference per row along a shifting diagonal so each row is guaranteed distinct from the nth row and from every enumerated row; the described image does not convey that diagonal, row-indexed pattern."
+  },
+  "exp3_ladder/images/diagonalization/L5_s2.png": {
+   "image": "exp3_ladder/images/diagonalization/L5_s2.png",
+   "motif": "diagonalization",
+   "description": "A rigid square grid of repeated circular units is organized by a strong descending diagonal that links matching positions across the board, with dashed vertical extensions connecting the lower edge to a separate row of aligned pieces below, creating a clear pattern-plus-exception structure.",
+   "match": true,
+   "reason": "The described square grid with a strong descending diagonal and a separate aligned row below plausibly matches the diagonalization structure: a new row is constructed from diagonal positions and sits outside the table, rather than a single isolated defect."
+  },
+  "exp3_ladder/images/diagonalization/L6_s0.png": {
+   "image": "exp3_ladder/images/diagonalization/L6_s0.png",
+   "motif": "diagonalization",
+   "description": "A regular grid of circular marks is interrupted by a single thick diagonal line running from the upper left to the lower right, with dashed vertical connectors and repeated circle patterns creating a layered, intersecting structure around that dominant crossing.",
+   "match": true,
+   "reason": "The composition is structurally aligned with diagonalization: a regular grid is overlaid by a prominent top-left-to-bottom-right diagonal that can encode the row-by-row, position-by-position mismatch pattern, while the repeated grid marks and connectors suggest an enumerated table rather than a single isolated defect. It is not just a lone symmetry break; it plausibly depicts a systematic diagonal construction that stays outside every listed row."
+  },
+  "exp3_ladder/images/diagonalization/L6_s1.png": {
+   "image": "exp3_ladder/images/diagonalization/L6_s1.png",
+   "motif": "diagonalization",
+   "description": "A rigid grid of repeated vertical openings spans the facade, with a brighter band of larger storefront panes anchoring the base while horizontal motion streaks cross the foreground and animate the otherwise symmetrical, static composition.",
+   "match": false,
+   "reason": "The invariant requires a systematic diagonal pattern of per-row differences (a moving diagonal with one deliberate inversion per row) that guarantees the constructed row differs from every enumerated row. The described composition is mainly a rigid, repetitive grid with a brighter base band and foreground motion streaks; it does not specify or imply a diagonal, row-indexed sequence of unique deviations—only general symmetry with added horizontal motion and a base contrast. That reads as uniform repetition plus an overall banding effect, not a Cantor-diagonal-like construction."
+  },
+  "exp3_ladder/images/coprime_orbit/L6_s0.png": {
+   "image": "exp3_ladder/images/coprime_orbit/L6_s0.png",
+   "motif": "coprime_orbit",
+   "description": "A set of evenly spaced nails around a central wooden board are connected by repeated straight strings that crisscross into a symmetric star-like web, with the board acting as the contained backdrop and a few workshop tools framing the edges as secondary elements.",
+   "match": true,
+   "reason": "The composition plausibly matches the invariant’s structure: evenly spaced perimeter points linked by repeated straight chords that form a symmetric star-like web, which is exactly the visual pattern of fixed-step jumping on a circle. It does not introduce a true central hub, and the board functions as a backdrop rather than a node, so the geometry is consistent with the one-trajectory, crisscrossing star form described by the invariant."
+  },
+  "exp3_ladder/images/pigeonhole/L5_s0.png": {
+   "image": "exp3_ladder/images/pigeonhole/L5_s0.png",
+   "motif": "pigeonhole",
+   "description": "A strong diagonal roof beam cuts across the frame while repeated birds and nests form two staggered rows beneath it, with the nests enclosing the lower birds and the upper birds perched along the edge as a rhythmic pattern broken only by the open sky and blurred background at the bottom.",
+   "match": false,
+   "reason": "The composition reads as a rhythmic diagonal arrangement of repeated birds and nests, but it does not clearly encode a pigeonhole-style surplus of items over enclosures. There is no structural cue that forces two elements into one unspecified container, so it feels like ordered repetition rather than the invariant’s anonymous collision-by-counting."
+  },
+  "exp3_ladder/images/pigeonhole/L6_s1.png": {
+   "image": "exp3_ladder/images/pigeonhole/L6_s1.png",
+   "motif": "pigeonhole",
+   "description": "The image is organized around five tall vertical compartments in a tight repeating grid, each containing a narrow slot above a tray, with one central tray breaking the pattern by being filled while the others are mostly empty.",
+   "match": false,
+   "reason": "The composition shows a repeated set of five compartments with one central tray emphasized, but it does not structurally express the key counting idea of the invariant: that more items than bins force at least two into the same bin. There is no clear overabundance, no visible shared slot/collision, and no unspecified meeting point analogous to the invariant's 'at least two in one cage' logic."
+  },
+  "exp3_ladder/images/pigeonhole/L6_s2.png": {
+   "image": "exp3_ladder/images/pigeonhole/L6_s2.png",
+   "motif": "pigeonhole",
+   "description": "The composition is built from a repeated row of wall hooks and hanging vertical forms, anchored by a secondary row of footwear along the bottom, with a denser central cluster and edge elements that frame and slightly interrupt the otherwise symmetrical rhythm.",
+   "match": false,
+   "reason": "The composition suggests a regular, mostly symmetrical arrangement with a denser center, but it does not clearly encode the pigeonhole structure of 'more items than slots leading to at least one shared slot.' It reads as repeated display and clustering rather than a count-based inevitability without a specified witness."
+  },
+  "exp3_ladder/images/projective_duality/L5_s0.png": {
+   "image": "exp3_ladder/images/projective_duality/L5_s0.png",
+   "motif": "projective_duality",
+   "description": "The image is split into two nearly identical side-by-side panels, each organized as a sparse network of intersecting straight lines anchored by four nodes, with the repeated structure differing mainly in brightness and slight angle shifts.",
+   "match": false,
+   "reason": "The composition reads as two nearly identical duplicated panels with minor geometric and brightness changes, which suggests repetition or simple variation rather than a true internal role-swap duality. There is no clear evidence that two classes of roles are exchanged within one system while preserving the same relational propositions, nor that applying the swap twice restores the original by structure alone."
+  },
+  "exp3_ladder/images/projective_duality/L5_s1.png": {
+   "image": "exp3_ladder/images/projective_duality/L5_s1.png",
+   "motif": "projective_duality",
+   "description": "The composition pairs two side-by-side panels linked by opposing arrows, each built from a repeated network of thick intersecting diagonal and horizontal lines anchored by circular nodes, with the right panel echoing the left but adding more lit nodes and denser layering.",
+   "match": false,
+   "reason": "The composition suggests a two-panel comparison or transformation, but it does not clearly show an involutive role swap within one system. The right panel is described as a denser, embellished echo of the left rather than a strict exchanged counterpart, so the structure reads more like progression or variation than duality with exact self-inverse interchange."
+  },
+  "exp3_ladder/images/projective_duality/L5_s2.png": {
+   "image": "exp3_ladder/images/projective_duality/L5_s2.png",
+   "motif": "projective_duality",
+   "description": "The composition presents a left-to-right transformation from a roughly square, symmetrically braced frame with repeated corner nodes and crossing diagonals into a looser, offset cluster of intersecting beams and joints, linked by a central bidirectional arrow.",
+   "match": false,
+   "reason": "The composition reads as a one-way morph from a rigid symmetric frame to a different loose cluster, connected by a bidirectional arrow, rather than two views of the same system whose roles are swapped and then restored by an involution. It suggests transformation or correspondence, but not an internal role-exchange invariant with sigma^2 = id."
+  },
+  "exp3_ladder/images/projective_duality/L6_s0.png": {
+   "image": "exp3_ladder/images/projective_duality/L6_s0.png",
+   "motif": "projective_duality",
+   "description": "A dense, roughly square lattice with repeated corner nodes and crossing diagonals on the left transitions via a central bidirectional connector into a sparser, asymmetrical branching network on the right.",
+   "match": false,
+   "reason": "The composition reads as two different regions linked by a connector: a dense lattice on the left and a sparse branching network on the right. That suggests contrast or transformation between non-equivalent structures, not a single internally consistent system shown twice with roles globally swapped in a way that is involutive (sigma^2 = id)."
+  },
+  "exp3_ladder/images/projective_duality/L6_s1.png": {
+   "image": "exp3_ladder/images/projective_duality/L6_s1.png",
+   "motif": "projective_duality",
+   "description": "Two square compositions sit side by side like a before/after pair, each built from a repeated grid crossed by strong diagonal and horizontal bands that converge at circular nodes, with a pair of opposing arrows linking the two panels in the center.",
+   "match": true,
+   "reason": "The side-by-side paired panels and the opposing arrows strongly suggest a bidirectional swap between two states of the same system, which fits an involutive role exchange. It is not a perfect explicit encoding of the abstract invariant, but the structure is plausibly aligned with it."
+  },
+  "exp3_ladder/images/projective_duality/L6_s2.png": {
+   "image": "exp3_ladder/images/projective_duality/L6_s2.png",
+   "motif": "projective_duality",
+   "description": "Two clustered frameworks sit on opposite sides of the frame, each built from repeated crossing bars and corner joints, with the right cluster loosely echoing and rotating the left while a small gap and opposing arrows mark the transition between them.",
+   "match": false,
+   "reason": "The composition reads as two separate but similar frameworks with a rotation/echo relation between them, which is closer to a transformation or isomorphism than to an internal role swap. It does not clearly show a single system whose roles are exchanged and then restored by an involution, so the duality invariant is only weakly, if at all, realized."
+  },
+  "exp3_ladder/images/contraction_fixed_point/L5_s0.png": {
+   "image": "exp3_ladder/images/contraction_fixed_point/L5_s0.png",
+   "motif": "contraction_fixed_point",
+   "description": "A large diagonal bronze slab dominates the frame, crossed by two thin lines that converge at a small circular ring near the center, while surrounding gray tiles form a contrasting border and the stepped gold line creates a repeating zigzag that interrupts the slab’s otherwise planar geometry.",
+   "match": false,
+   "reason": "The composition reads more like multiple elements converging toward a central ring and a separate repeating zigzag than a single self-iterating chain that steadily contracts to one fixed point. It lacks a clear one-track, monotone contraction toward an internally selected endpoint `f(x*) = x*`, and the convergence of two thin lines pushes it toward ordinary convergence rather than the stated invariant."
+  },
+  "exp3_ladder/images/contraction_fixed_point/L6_s0.png": {
+   "image": "exp3_ladder/images/contraction_fixed_point/L6_s0.png",
+   "motif": "contraction_fixed_point",
+   "description": "A long diagonal brass strip cuts across the tiled ground and is segmented into nested, zigzagging panels that converge at a central node, while cropped pedestrians repeat along the top edge as a loose peripheral band.",
+   "match": true,
+   "reason": "结构上像一条单一的自迭代链：斜向金属带被分段并向中央节点逐级收缩，体现了“同一规则反复施于自身输出、距离按定比缩小并停在固定点”的感觉；没有多条独立线条汇聚或往返层级，因此与该不动点式塌缩较相符。"
+  },
+  "exp3_ladder/images/contraction_fixed_point/L6_s2.png": {
+   "image": "exp3_ladder/images/contraction_fixed_point/L6_s2.png",
+   "motif": "contraction_fixed_point",
+   "description": "A large central bowl anchors the composition while smaller vessels and objects cluster tightly around the edges, creating a crowded frame that contrasts with the bowl’s open interior and is crossed by a diagonal blurred streak converging on its center.",
+   "match": false,
+   "reason": "The composition does center attention on a fixed focal point, but it reads as a static radial arrangement rather than a single self-iterating chain with stepwise contraction toward a fixed point. The crowded edge vessels and diagonal streak suggest convergence, yet they do not clearly encode repeated application of one rule to its own output or an internal fixed-point dynamic."
+  },
+  "exp3_ladder/images/aperiodic_tiling/L5_s0.png": {
+   "image": "exp3_ladder/images/aperiodic_tiling/L5_s0.png",
+   "motif": "aperiodic_tiling",
+   "description": "A centrally placed octagonal mosaic is built from interlocking yellow facets arranged in a radial, star-like pattern, enclosed by a blue outer ring and framed by the surrounding stone recess.",
+   "match": false,
+   "reason": "The described image reads as a single centrally framed octagonal decorative motif with clear radial symmetry and finite closure, not as an aperiodic tiling that repeats local rules everywhere without any translational period. It suggests a bounded ornamental composition rather than an endlessly nonperiodic, locally recurrent structure."
+  },
+  "exp3_ladder/images/aperiodic_tiling/L5_s1.png": {
+   "image": "exp3_ladder/images/aperiodic_tiling/L5_s1.png",
+   "motif": "aperiodic_tiling",
+   "description": "A dense, nearly circular cluster of repeating bright points is arranged in radial symmetry around a central core, with faint connecting lines and mirrored spokes extending outward to a ring of stronger edge nodes.",
+   "match": false,
+   "reason": "The description suggests a radially symmetric, center-outward composition with spokes and an outer ring, which reads as a finite symmetric motif rather than a translation-aperiodic structure governed by local matching rules. It does not clearly indicate the kind of nonperiodic, uniformly recurrent whole that has no translational period yet reappears locally everywhere."
+  },
+  "exp3_ladder/images/aperiodic_tiling/L5_s2.png": {
+   "image": "exp3_ladder/images/aperiodic_tiling/L5_s2.png",
+   "motif": "aperiodic_tiling",
+   "description": "A large, repeated ring of dark geometric bands encloses a centrally aligned five-part tan star/polygon, with all axes converging on a small figure at the exact center and a few peripheral edges intruding at the frame.",
+   "match": false,
+   "reason": "The description suggests a centrally symmetric, radial composition with repeated ring bands and a five-part star/polygon, which reads as deliberate global symmetry rather than an aperiodic tiling. Nothing in the description indicates the key invariant: no translational period while every finite patch recurs within bounded gaps. Instead, it sounds like a structured decorative motif with strong repeat and center-based organization."
+  },
+  "exp3_ladder/images/aperiodic_tiling/L6_s0.png": {
+   "image": "exp3_ladder/images/aperiodic_tiling/L6_s0.png",
+   "motif": "aperiodic_tiling",
+   "description": "A centrally placed, radially symmetrical polygonal motif is tightly contained within a square frame and visually echoed by repeating border bands and adjacent vertical ornament strips that enclose it on both sides.",
+   "match": false,
+   "reason": "The described layout reads as a framed, centrally centered composition with repeated border bands and mirrored side strips, which suggests explicit symmetry and likely translational repetition rather than an aperiodic, no-period tiling. It does not indicate the local-rule-driven, everywhere-nonperiodic structure required by the invariant."
+  },
+  "exp3_ladder/images/aperiodic_tiling/L6_s1.png": {
+   "image": "exp3_ladder/images/aperiodic_tiling/L6_s1.png",
+   "motif": "aperiodic_tiling",
+   "description": "A centrally anchored, near-radially symmetric polygonal lattice is built from overlapping hexagon-like facets that repeat around a bright core, with smaller nodes distributed along the edges and within the interior against a largely empty dark surround.",
+   "match": false,
+   "reason": "The description sounds like a finite, centrally anchored radial composition with repeated hexagon-like facets around a core, not a translation-aperiodic structure that fills the plane. It suggests strong global symmetry and a bounded motif, whereas the invariant requires a nonperiodic tiling of the whole domain with local repetition but no translational period."
+  },
+  "exp3_ladder/images/aperiodic_tiling/L6_s2.png": {
+   "image": "exp3_ladder/images/aperiodic_tiling/L6_s2.png",
+   "motif": "aperiodic_tiling",
+   "description": "A large, symmetrical star-like shape anchors the center, while smaller repeated clusters around the edges form an asymmetrical frame with a few isolated figures breaking the repetition.",
+   "match": false,
+   "reason": "The described composition reads as a central dominant motif with edge clusters and a few isolated irregular elements, which fits a structured, possibly decorative layout with local exceptions. That does not plausibly capture the target invariant of a globally aperiodic pattern with uniform local matching rules and bounded-gap recurrence everywhere; it instead suggests repetition plus localized deviations, closer to symmetry-breaking than to an everywhere-aperiodic tiling."
+  }
+ },
+ "regenerated": [
+  "exp3_ladder/images/self_reference/L5_s1.png",
+  "exp3_ladder/images/self_reference/L5_s2.png",
+  "exp3_ladder/images/self_reference/L6_s0.png",
+  "exp3_ladder/images/self_reference/L6_s1.png",
+  "exp3_ladder/images/self_reference/L6_s2.png",
+  "exp3_ladder/images/recursion/L5_s0.png",
+  "exp3_ladder/images/recursion/L6_s0.png",
+  "exp3_ladder/images/cycle/L6_s1.png",
+  "exp3_ladder/images/cycle/L6_s2.png",
+  "exp3_ladder/images/symmetry/L6_s1.png",
+  "exp3_ladder/images/alternation/L6_s0.png",
+  "exp3_ladder/images/alternation/L6_s1.png",
+  "exp3_ladder/images/alternation/L6_s2.png",
+  "exp3_ladder/images/bottleneck/L6_s2.png",
+  "exp3_ladder/images/strange_loop/L5_s1.png",
+  "exp3_ladder/images/strange_loop/L6_s0.png",
+  "exp3_ladder/images/figure_ground/L5_s0.png",
+  "exp3_ladder/images/figure_ground/L5_s1.png",
+  "exp3_ladder/images/figure_ground/L5_s2.png",
+  "exp3_ladder/images/figure_ground/L6_s0.png",
+  "exp3_ladder/images/figure_ground/L6_s1.png",
+  "exp3_ladder/images/figure_ground/L6_s2.png",
+  "exp3_ladder/images/isomorphism/L6_s0.png",
+  "exp3_ladder/images/isomorphism/L6_s2.png",
+  "exp3_ladder/images/mobius/L5_s2.png",
+  "exp3_ladder/images/mobius/L6_s0.png",
+  "exp3_ladder/images/mobius/L6_s1.png",
+  "exp3_ladder/images/mobius/L6_s2.png",
+  "exp3_ladder/images/braiding/L6_s1.png",
+  "exp3_ladder/images/braiding/L6_s2.png",
+  "exp3_ladder/images/interference/L5_s1.png",
+  "exp3_ladder/images/interference/L5_s2.png",
+  "exp3_ladder/images/tiling/L6_s0.png",
+  "exp3_ladder/images/tiling/L6_s1.png",
+  "exp3_ladder/images/tiling/L6_s2.png",
+  "exp3_ladder/images/hub/L6_s0.png",
+  "exp3_ladder/images/diagonalization/L5_s0.png",
+  "exp3_ladder/images/diagonalization/L5_s1.png",
+  "exp3_ladder/images/diagonalization/L5_s2.png",
+  "exp3_ladder/images/diagonalization/L6_s0.png",
+  "exp3_ladder/images/diagonalization/L6_s1.png",
+  "exp3_ladder/images/coprime_orbit/L6_s0.png",
+  "exp3_ladder/images/pigeonhole/L5_s0.png",
+  "exp3_ladder/images/pigeonhole/L6_s1.png",
+  "exp3_ladder/images/pigeonhole/L6_s2.png",
+  "exp3_ladder/images/projective_duality/L5_s0.png",
+  "exp3_ladder/images/projective_duality/L5_s1.png",
+  "exp3_ladder/images/projective_duality/L5_s2.png",
+  "exp3_ladder/images/projective_duality/L6_s0.png",
+  "exp3_ladder/images/projective_duality/L6_s1.png",
+  "exp3_ladder/images/projective_duality/L6_s2.png",
+  "exp3_ladder/images/contraction_fixed_point/L5_s0.png",
+  "exp3_ladder/images/contraction_fixed_point/L6_s0.png",
+  "exp3_ladder/images/contraction_fixed_point/L6_s2.png",
+  "exp3_ladder/images/aperiodic_tiling/L5_s0.png",
+  "exp3_ladder/images/aperiodic_tiling/L5_s1.png",
+  "exp3_ladder/images/aperiodic_tiling/L5_s2.png",
+  "exp3_ladder/images/aperiodic_tiling/L6_s0.png",
+  "exp3_ladder/images/aperiodic_tiling/L6_s1.png",
+  "exp3_ladder/images/aperiodic_tiling/L6_s2.png"
+ ]
+}

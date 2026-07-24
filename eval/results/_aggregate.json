@@ -50,6 +50,56 @@
    },
    "avg": 0.7529
   },
+  "api_claude-opus-4-8": {
+   "tasks": {
+    "scene2motif": {
+     "n": 45,
+     "acc": 0.6889
+    },
+    "skeleton2motif": {
+     "n": 25,
+     "acc": 0.8
+    },
+    "story2motif": {
+     "n": 25,
+     "acc": 0.76
+    },
+    "theorem2motif": {
+     "n": 25,
+     "acc": 0.92
+    },
+    "crossvoice": {
+     "n": 45,
+     "acc": 0.6
+    }
+   },
+   "avg": 0.7538
+  },
+  "qwen2.5-vl-32b": {
+   "tasks": {
+    "scene2motif": {
+     "n": 45,
+     "acc": 0.4444
+    },
+    "skeleton2motif": {
+     "n": 25,
+     "acc": 0.52
+    },
+    "story2motif": {
+     "n": 25,
+     "acc": 0.64
+    },
+    "theorem2motif": {
+     "n": 25,
+     "acc": 0.8
+    },
+    "crossvoice": {
+     "n": 45,
+     "acc": 0.2667
+    }
+   },
+   "avg": 0.5342
+  },
   "qwen2.5-coder-32b": {
    "tasks": {
     "story2motif": {
@@ -113,6 +163,45 @@
     }
    },
    "avg": 0.2693
+  },
+  "deepseek-coder-v2-lite": {
+   "tasks": {
+    "story2motif": {
+     "n": 25,
+     "acc": 0.16
+    },
+    "theorem2motif": {
+     "n": 25,
+     "acc": 0.4
+    }
+   },
+   "avg": 0.28
+  },
+  "codegeex4-9b": {
+   "tasks": {
+    "story2motif": {
+     "n": 25,
+     "acc": 0.04
+    },
+    "theorem2motif": {
+     "n": 25,
+     "acc": 0.32
+    }
+   },
+   "avg": 0.18
+  },
+  "yi-coder-9b": {
+   "tasks": {
+    "story2motif": {
+     "n": 25,
+     "acc": 0.08
+    },
+    "theorem2motif": {
+     "n": 25,
+     "acc": 0.36
+    }
+   },
+   "avg": 0.22
   }
  },
  "baseline": {
@@ -126,88 +215,88 @@
   {
    "true": "strange_loop",
    "pred": "cycle",
-   "n": 6
+   "n": 12
   },
   {
    "true": "self_reference",
-   "pred": "convergence",
-   "n": 5
+   "pred": "recursion",
+   "n": 10
   },
   {
    "true": "recursion",
    "pred": "isomorphism",
-   "n": 5
-  },
-  {
-   "true": "figure_ground",
-   "pred": "symmetry",
-   "n": 5
-  },
-  {
-   "true": "projective_duality",
-   "pred": "isomorphism",
-   "n": 5
+   "n": 9
   },
   {
    "true": "contraction_fixed_point",
    "pred": "recursion",
-   "n": 5
+   "n": 9
   },
   {
    "true": "self_reference",
-   "pred": "strange_loop",
-   "n": 4
+   "pred": "convergence",
+   "n": 7
   },
   {
    "true": "nesting",
    "pred": "convergence",
-   "n": 4
+   "n": 7
+  },
+  {
+   "true": "figure_ground",
+   "pred": "symmetry",
+   "n": 7
+  },
+  {
+   "true": "projective_duality",
+   "pred": "isomorphism",
+   "n": 7
+  },
+  {
+   "true": "figure_ground",
+   "pred": "tiling",
+   "n": 7
+  },
+  {
+   "true": "coprime_orbit",
+   "pred": "cycle",
+   "n": 7
   },
   {
    "true": "interference",
    "pred": "cycle",
-   "n": 4
+   "n": 6
   },
   {
-   "true": "aperiodic_tiling",
-   "pred": "symmetry",
-   "n": 4
-  },
-  {
-   "true": "braiding",
-   "pred": "cycle",
-   "n": 4
-  },
-  {
-   "true": "self_reference",
+   "true": "nesting",
    "pred": "recursion",
-   "n": 4
+   "n": 6
   }
  ],
  "hardest_motifs": [
   {
    "motif": "self_reference",
-   "recall": 0.286
-  },
-  {
-   "motif": "figure_ground",
-   "recall": 0.333
-  },
-  {
-   "motif": "aperiodic_tiling",
-   "recall": 0.444
+   "recall": 0.27
   },
   {
    "motif": "nesting",
-   "recall": 0.458
+   "recall": 0.333
+  },
+  {
+   "motif": "figure_ground",
+   "recall": 0.351
   },
   {
    "motif": "symmetry",
-   "recall": 0.476
+   "recall": 0.432
   },
   {
-   "motif": "projective_duality",
-   "recall": 0.5
+   "motif": "strange_loop",
+   "recall": 0.432
+  },
+  {
+   "motif": "hub",
+   "recall": 0.432
   }
  ],
  "n_motifs": 25

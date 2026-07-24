@@ -1,0 +1,416 @@
+{
+ "model": "deepseek-coder-v2-lite",
+ "base": "http://localhost:8001/v1",
+ "summary": {
+  "story2motif": {
+   "n": 25,
+   "acc": 0.16
+  },
+  "theorem2motif": {
+   "n": 25,
+   "acc": 0.4
+  }
+ },
+ "records": [
+  {
+   "id": "story:self_reference",
+   "task": "story2motif",
+   "answer": "self_reference",
+   "pred": "bottleneck",
+   "correct": false,
+   "raw": " {\"motif_id\": \"bottleneck\"}"
+  },
+  {
+   "id": "thm:self_reference",
+   "task": "theorem2motif",
+   "answer": "self_reference",
+   "pred": "recursion",
+   "correct": false,
+   "raw": " {\"motif_id\": \"recursion\"}"
+  },
+  {
+   "id": "story:recursion",
+   "task": "story2motif",
+   "answer": "recursion",
+   "pred": "bottleneck",
+   "correct": false,
+   "raw": " {\"motif_id\": \"bottleneck\"}"
+  },
+  {
+   "id": "thm:recursion",
+   "task": "theorem2motif",
+   "answer": "recursion",
+   "pred": "isomorphism",
+   "correct": false,
+   "raw": " {\"motif_id\": \"isomorphism\"}"
+  },
+  {
+   "id": "story:nesting",
+   "task": "story2motif",
+   "answer": "nesting",
+   "pred": "alternation",
+   "correct": false,
+   "raw": " {\"motif_id\": \"alternation\"}"
+  },
+  {
+   "id": "thm:nesting",
+   "task": "theorem2motif",
+   "answer": "nesting",
+   "pred": "Cantor闭区间套定理",
+   "correct": false,
+   "raw": " {\"motif_id\": \"Cantor闭区间套定理\"}"
+  },
+  {
+   "id": "story:cycle",
+   "task": "story2motif",
+   "answer": "cycle",
+   "pred": "alternation",
+   "correct": false,
+   "raw": " {\"motif_id\": \"alternation\"}"
+  },
+  {
+   "id": "thm:cycle",
+   "task": "theorem2motif",
+   "answer": "cycle",
+   "pred": "coprime_orbit",
+   "correct": false,
+   "raw": " {\"motif_id\": \"coprime_orbit\"}"
+  },
+  {
+   "id": "story:symmetry",
+   "task": "story2motif",
+   "answer": "symmetry",
+   "pred": "alternation",
+   "correct": false,
+   "raw": " {\"motif_id\": \"alternation\"}"
+  },
+  {
+   "id": "thm:symmetry",
+   "task": "theorem2motif",
+   "answer": "symmetry",
+   "pred": "Droubay-Justin-Pirillo",
+   "correct": false,
+   "raw": " {\"motif_id\": \"Droubay-Justin-Pirillo\"}"
+  },
+  {
+   "id": "story:alternation",
+   "task": "story2motif",
+   "answer": "alternation",
+   "pred": "alternation",
+   "correct": true,
+   "raw": " {\"motif_id\": \"alternation\"}"
+  },
+  {
+   "id": "thm:alternation",
+   "task": "theorem2motif",
+   "answer": "alternation",
+   "pred": "König",
+   "correct": false,
+   "raw": " {\"motif_id\": \"König\"}"
+  },
+  {
+   "id": "story:spiral",
+   "task": "story2motif",
+   "answer": "spiral",
+   "pred": "bottleneck",
+   "correct": false,
+   "raw": " {\"motif_id\": \"bottleneck\"}"
+  },
+  {
+   "id": "thm:spiral",
+   "task": "theorem2motif",
+   "answer": "spiral",
+   "pred": "logarithmic_spiral",
+   "correct": false,
+   "raw": " {\"motif_id\": \"logarithmic_spiral\"}"
+  },
+  {
+   "id": "story:convergence",
+   "task": "story2motif",
+   "answer": "convergence",
+   "pred": "alternation",
+   "correct": false,
+   "raw": " {\"motif_id\": \"alternation\"}"
+  },
+  {
+   "id": "thm:convergence",
+   "task": "theorem2motif",
+   "answer": "convergence",
+   "pred": "convergence",
+   "correct": true,
+   "raw": " {\"motif_id\": \"convergence\"}"
+  },
+  {
+   "id": "story:bottleneck",
+   "task": "story2motif",
+   "answer": "bottleneck",
+   "pred": "bottleneck",
+   "correct": true,
+   "raw": " {\"motif_id\": \"bottleneck\"}"
+  },
+  {
+   "id": "thm:bottleneck",
+   "task": "theorem2motif",
+   "answer": "bottleneck",
+   "pred": "bottleneck",
+   "correct": true,
+   "raw": " {\"motif_id\": \"bottleneck\"}"
+  },
+  {
+   "id": "story:symmetry_breaking",
+   "task": "story2motif",
+   "answer": "symmetry_breaking",
+   "pred": "alternation",
+   "correct": false,
+   "raw": " {\"motif_id\": \"alternation\"}"
+  },
+  {
+   "id": "thm:symmetry_breaking",
+   "task": "theorem2motif",
+   "answer": "symmetry_breaking",
+   "pred": "coprime_orbit",
+   "correct": false,
+   "raw": " {\"motif_id\": \"coprime_orbit\"}"
+  },
+  {
+   "id": "story:strange_loop",
+   "task": "story2motif",
+   "answer": "strange_loop",
+   "pred": "alternation",
+   "correct": false,
+   "raw": " {\"motif_id\": \"alternation\"}"
+  },
+  {
+   "id": "thm:strange_loop",
+   "task": "theorem2motif",
+   "answer": "strange_loop",
+   "pred": "cycle",
+   "correct": false,
+   "raw": " {\"motif_id\": \"cycle\"}"
+  },
+  {
+   "id": "story:figure_ground",
+   "task": "story2motif",
+   "answer": "figure_ground",
+   "pred": "alternation",
+   "correct": false,
+   "raw": " {\"motif_id\": \"alternation\"}"
+  },
+  {
+   "id": "thm:figure_ground",
+   "task": "theorem2motif",
+   "answer": "figure_ground",
+   "pred": "bottleneck",
+   "correct": false,
+   "raw": " {\"motif_id\": \"bottleneck\"}"
+  },
+  {
+   "id": "story:isomorphism",
+   "task": "story2motif",
+   "answer": "isomorphism",
+   "pred": "alternation",
+   "correct": false,
+   "raw": " {\"motif_id\": \"alternation\"}"
+  },
+  {
+   "id": "thm:isomorphism",
+   "task": "theorem2motif",
+   "answer": "isomorphism",
+   "pred": "isomorphism",
+   "correct": true,
+   "raw": " {\"motif_id\": \"isomorphism\"}"
+  },
+  {
+   "id": "story:mobius",
+   "task": "story2motif",
+   "answer": "mobius",
+   "pred": "alternation",
+   "correct": false,
+   "raw": " {\"motif_id\": \"alternation\"}"
+  },
+  {
+   "id": "thm:mobius",
+   "task": "theorem2motif",
+   "answer": "mobius",
+   "pred": "mobius",
+   "correct": true,
+   "raw": " {\"motif_id\": \"mobius\"}"
+  },
+  {
+   "id": "story:braiding",
+   "task": "story2motif",
+   "answer": "braiding",
+   "pred": "alternation",
+   "correct": false,
+   "raw": " {\"motif_id\": \"alternation\"}"
+  },
+  {
+   "id": "thm:braiding",
+   "task": "theorem2motif",
+   "answer": "braiding",
+   "pred": "coprime_orbit",
+   "correct": false,
+   "raw": " {\"motif_id\": \"coprime_orbit\"}"
+  },
+  {
+   "id": "story:interference",
+   "task": "story2motif",
+   "answer": "interference",
+   "pred": "alternation",
+   "correct": false,
+   "raw": " {\"motif_id\": \"alternation\"}"
+  },
+  {
+   "id": "thm:interference",
+   "task": "theorem2motif",
+   "answer": "interference",
+   "pred": "interference",
+   "correct": true,
+   "raw": " {\"motif_id\": \"interference\"}"
+  },
+  {
+   "id": "story:tiling",
+   "task": "story2motif",
+   "answer": "tiling",
+   "pred": "alternation",
+   "correct": false,
+   "raw": " {\"motif_id\": \"alternation\"}"
+  },
+  {
+   "id": "thm:tiling",
+   "task": "theorem2motif",
+   "answer": "tiling",
+   "pred": "tiling",
+   "correct": true,
+   "raw": " {\"motif_id\": \"tiling\"}"
+  },
+  {
+   "id": "story:hub",
+   "task": "story2motif",
+   "answer": "hub",
+   "pred": "alternation",
+   "correct": false,
+   "raw": " {\"motif_id\": \"alternation\"}"
+  },
+  {
+   "id": "thm:hub",
+   "task": "theorem2motif",
+   "answer": "hub",
+   "pred": "tree_Wiener_index",
+   "correct": false,
+   "raw": " {\"motif_id\": \"tree_Wiener_index\"}"
+  },
+  {
+   "id": "story:diagonalization",
+   "task": "story2motif",
+   "answer": "diagonalization",
+   "pred": "alternation",
+   "correct": false,
+   "raw": " {\"motif_id\": \"alternation\"}"
+  },
+  {
+   "id": "thm:diagonalization",
+   "task": "theorem2motif",
+   "answer": "diagonalization",
+   "pred": "Cantor定理",
+   "correct": false,
+   "raw": " {\"motif_id\": \"Cantor定理\"}"
+  },
+  {
+   "id": "story:infinite_descent",
+   "task": "story2motif",
+   "answer": "infinite_descent",
+   "pred": "bottleneck",
+   "correct": false,
+   "raw": " {\"motif_id\": \"bottleneck\"}"
+  },
+  {
+   "id": "thm:infinite_descent",
+   "task": "theorem2motif",
+   "answer": "infinite_descent",
+   "pred": "infinite_descent",
+   "correct": true,
+   "raw": " {\"motif_id\": \"infinite_descent\"}"
+  },
+  {
+   "id": "story:coprime_orbit",
+   "task": "story2motif",
+   "answer": "coprime_orbit",
+   "pred": "coprime_orbit",
+   "correct": true,
+   "raw": " {\"motif_id\": \"coprime_orbit\"}"
+  },
+  {
+   "id": "thm:coprime_orbit",
+   "task": "theorem2motif",
+   "answer": "coprime_orbit",
+   "pred": "coprime_orbit",
+   "correct": true,
+   "raw": " {\"motif_id\": \"coprime_orbit\"}"
+  },
+  {
+   "id": "story:pigeonhole",
+   "task": "story2motif",
+   "answer": "pigeonhole",
+   "pred": "pigeonhole",
+   "correct": true,
+   "raw": " {\"motif_id\": \"pigeonhole\"}"
+  },
+  {
+   "id": "thm:pigeonhole",
+   "task": "theorem2motif",
+   "answer": "pigeonhole",
+   "pred": "pigeonhole",
+   "correct": true,
+   "raw": " {\"motif_id\": \"pigeonhole\"}"
+  },
+  {
+   "id": "story:projective_duality",
+   "task": "story2motif",
+   "answer": "projective_duality",
+   "pred": "alternation",
+   "correct": false,
+   "raw": " {\"motif_id\": \"alternation\"}"
+  },
+  {
+   "id": "thm:projective_duality",
+   "task": "theorem2motif",
+   "answer": "projective_duality",
+   "pred": "coprime_orbit",
+   "correct": false,
+   "raw": " {\"motif_id\": \"coprime_orbit\"}"
+  },
+  {
+   "id": "story:contraction_fixed_point",
+   "task": "story2motif",
+   "answer": "contraction_fixed_point",
+   "pred": "alternation",
+   "correct": false,
+   "raw": " {\"motif_id\": \"alternation\"}"
+  },
+  {
+   "id": "thm:contraction_fixed_point",
+   "task": "theorem2motif",
+   "answer": "contraction_fixed_point",
+   "pred": "contraction_fixed_point",
+   "correct": true,
+   "raw": " {\"motif_id\": \"contraction_fixed_point\"}"
+  },
+  {
+   "id": "story:aperiodic_tiling",
+   "task": "story2motif",
+   "answer": "aperiodic_tiling",
+   "pred": "alternation",
+   "correct": false,
+   "raw": " {\"motif_id\": \"alternation\"}"
+  },
+  {
+   "id": "thm:aperiodic_tiling",
+   "task": "theorem2motif",
+   "answer": "aperiodic_tiling",
+   "pred": "tiling",
+   "correct": false,
+   "raw": " {\"motif_id\": \"tiling\"}"
+  }
+ ]
+}

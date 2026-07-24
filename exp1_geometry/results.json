@@ -1,0 +1,205 @@
+{
+ "n_motifs": 25,
+ "n_perm": 10000,
+ "decoupling": {
+  "dino_vs_family": {
+   "mantel_r": 0.0219,
+   "p": 0.70423
+  },
+  "dino_vs_ged": {
+   "mantel_r": 0.0578,
+   "p": 0.58164
+  },
+  "clip_vs_family": {
+   "mantel_r": 0.0691,
+   "p": 0.23008
+  },
+  "dino_vs_label": {
+   "mantel_r": 0.2198,
+   "p": 0.0018
+  },
+  "family_vs_ged": {
+   "mantel_r": 0.1461,
+   "p": 0.0087
+  }
+ },
+ "regression": {
+  "claude-opus-4-8": {
+   "beta": {
+    "formal_family": 0.3071,
+    "formal_ged": -0.1304,
+    "perceptual_dino": 0.3349,
+    "label_prior": 0.3102
+   },
+   "p_perm": {
+    "formal_family": 0.18498,
+    "formal_ged": 0.58114,
+    "perceptual_dino": 0.18638,
+    "label_prior": 0.21638
+   },
+   "n_errors": 47
+  },
+  "gpt-5.2": {
+   "beta": {
+    "formal_family": 0.284,
+    "formal_ged": -0.1004,
+    "perceptual_dino": 0.0985,
+    "label_prior": 0.2671
+   },
+   "p_perm": {
+    "formal_family": 0.30087,
+    "formal_ged": 0.64154,
+    "perceptual_dino": 0.66593,
+    "label_prior": 0.32477
+   },
+   "n_errors": 52
+  },
+  "gpt-5.5": {
+   "beta": {
+    "formal_family": 0.383,
+    "formal_ged": 0.0962,
+    "perceptual_dino": 0.1549,
+    "label_prior": 0.1642
+   },
+   "p_perm": {
+    "formal_family": 0.11449,
+    "formal_ged": 0.62884,
+    "perceptual_dino": 0.44576,
+    "label_prior": 0.48255
+   },
+   "n_errors": 49
+  },
+  "qwen2-vl-7b": {
+   "beta": {
+    "formal_family": 0.181,
+    "formal_ged": -0.7817,
+    "perceptual_dino": 0.2137,
+    "label_prior": 0.5484
+   },
+   "p_perm": {
+    "formal_family": 0.41056,
+    "formal_ged": 0.0261,
+    "perceptual_dino": 0.36596,
+    "label_prior": 0.0309
+   },
+   "n_errors": 53
+  },
+  "qwen2.5-vl-32b": {
+   "beta": {
+    "formal_family": 0.2379,
+    "formal_ged": 0.0468,
+    "perceptual_dino": 0.1818,
+    "label_prior": 0.3288
+   },
+   "p_perm": {
+    "formal_family": 0.18788,
+    "formal_ged": 0.79122,
+    "perceptual_dino": 0.30487,
+    "label_prior": 0.08709
+   },
+   "n_errors": 90
+  },
+  "POOLED": {
+   "beta": {
+    "formal_family": 0.27,
+    "formal_ged": -0.1903,
+    "perceptual_dino": 0.1906,
+    "label_prior": 0.3371
+   },
+   "p_perm": {
+    "formal_family": 0.08849,
+    "formal_ged": 0.25217,
+    "perceptual_dino": 0.22368,
+    "label_prior": 0.0434
+   },
+   "n_errors": 291
+  }
+ },
+ "regression_clip_robustness": {
+  "beta": {
+   "formal_family": 0.2453,
+   "formal_ged": -0.1841,
+   "perceptual_dino": 0.1394,
+   "label_prior": 0.36
+  },
+  "p_perm": {
+   "formal_family": 0.12199,
+   "formal_ged": 0.26537,
+   "perceptual_dino": 0.40406,
+   "label_prior": 0.0298
+  }
+ },
+ "regression_univariate_pooled": {
+  "formal_family": {
+   "beta": 0.4165,
+   "p_perm": 0.0033
+  },
+  "formal_ged": {
+   "beta": -0.0255,
+   "p_perm": 0.86911
+  },
+  "perceptual_dino": {
+   "beta": 0.2335,
+   "p_perm": 0.12019
+  },
+  "label_prior": {
+   "beta": 0.4734,
+   "p_perm": 0.0012
+  }
+ },
+ "same_family_enrichment": {
+  "errors_same_family": 125,
+  "errors_total": 291,
+  "same_family_dyad_share": 0.2133,
+  "per_model": {
+   "claude-opus-4-8": {
+    "same_family": 21,
+    "total": 47
+   },
+   "gpt-5.2": {
+    "same_family": 22,
+    "total": 52
+   },
+   "gpt-5.5": {
+    "same_family": 23,
+    "total": 49
+   },
+   "qwen2-vl-7b": {
+    "same_family": 20,
+    "total": 53
+   },
+   "qwen2.5-vl-32b": {
+    "same_family": 39,
+    "total": 90
+   }
+  }
+ },
+ "kill_shot": {
+  "claude-opus-4-8": {
+   "r": 0.1718,
+   "p": 0.0898,
+   "n": 125
+  },
+  "gpt-5.2": {
+   "r": 0.1137,
+   "p": 0.1357,
+   "n": 125
+  },
+  "gpt-5.5": {
+   "r": -0.077,
+   "p": 0.3457,
+   "n": 125
+  },
+  "qwen2-vl-7b": {
+   "r": -0.0235,
+   "p": 1.0,
+   "n": 45
+  },
+  "qwen2.5-vl-32b": {
+   "r": 0.0648,
+   "p": 0.502,
+   "n": 125
+  }
+ },
+ "verdict": "FORMAL DOES NOT WIN: beta_formal_family=+0.270 (p=0.0885) vs beta_perceptual=+0.191 (p=0.2237)"
+}

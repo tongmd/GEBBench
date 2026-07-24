@@ -1,0 +1,1630 @@
+{
+ "menu": "- self_reference: 对象内含一句对自身的描述且逐字核对为真——一步指回自己，不经层级攀升，也不指涉第二套系统\n- recursion: 整体由更小的自身按同一规则生成，入几层必出几层，终止于基例后逐层原路返回\n- nesting: 每进入新一层便不再返回上一层，深度只增不减\n- cycle: 沿同一层级的因果箭头依次经过 n≥3 个互不相同的事件后回到出发事件，一圈即逐字复原（不升级、不放大、不翻面），各点地位平等、无层级\n- symmetry: 事件序列倒读与正读逐项相同，沿时间中点翻转逐点重合\n- alternation: 仅两种状态严格轮流出现：相邻必异、隔一必同，周期恒为二，无一例外\n- spiral: 每转回同一方位就按同一比例长大一号，绝不回到原尺度\n- convergence: 多条互不知晓的线索各自推进，最终全部汇入同一终点且到此为止\n- bottleneck: 两岸各自内部多路互通，而两岸之间的一切通路必经同一中途之点、过点后各自继续；删去该点，全图恰裂为仍各自连通的两大块，而非碎成孤点\n- symmetry_breaking: 同一规则覆盖全场，唯有一处可精确定位的违例，该违例唯一、其余处处无例外\n- strange_loop: 沿「谁在叙述谁」的层级逐步上行，最后一步却回到起点，层级无法赋值\n- figure_ground: 图与底互补拼满全域且底自成一形：下半以上半之底为图、以上半之图为底，所述事件及其顺序保持不变（非逆序，亦非两套词汇之间的互译）\n- isomorphism: 两套素材完全不同的事物之间存在一部保持全部运算与关系的一一对应字典，同序逐项可译、无一例外\n- mobius: 沿带绕行一圈回到原地却定向翻转（左右互换），绕两圈才逐点复原\n- braiding: 三股以上的线几经相邻交叉，末端排列恰等于全部交叉依次复合之积，先后次序不可随意对调\n- interference: 两个周期不同、各自单调重复的模式，叠加后浮现出比任一原周期都大的新周期\n- tiling: 把整幅图案挪动一格与原图完全重合，无缝亦无叠、无一例外\n- hub: 任意两端点之间只隔中心一点；去掉中心，全图碎成孤点\n- diagonalization: 一张按行枚举的表,沿对角线逐格取反造出的新行,与表中第 n 行保证性地在第 n 位不同,故与每一行都不相等——永在表外。区别于 self_reference(对象一步指回自己):对角元素并不谈论自己,矛头指向整张表的『全部枚举』而非自身。关键区别于 symmetry_breaking(整幅规整图案中恰一处孤立违例):这里不是一格孤立反常,而是沿移动对角线的 n 处系统性差异——第 n 行差在第 n 位,位置随行逐格右移、每行恰一处,由这套构造保证『不等于任何一行』;symmetry_breaking 只是单点瑕疵,既不逃逸也不否证任何枚举。\n- infinite_descent: 每个案例都强迫出一个严格更小的同类案例，而自然数没有无底的下降链，于是第一个案例根本不存在——证明的刀锋向回挥：不是推进到终点，而是取消开端。与 recursion 恰相反：递归入几层出几层、靠基例的存在而成立，递降靠基例的缺席而把一切见证者判为虚无；与 zeno_halving 不同：芝诺的无穷步按定比缩短、总长有限、旅程完成，递降的下降量任意但每步是整数、链条被良序原理禁止、结论是“不可能”；与 contraction_fixed_point 不同：压缩迭代无穷进行并收敛于一个真实存在的不动点，递降链不收敛于任何点、必须在有限步内撞上地板 1、于是整条链连同起点被判不存在；与 ordinal_ascent 方向相反：序数攀升向上无界而每级真实存在，递降向下有底而全链虚妄；与 invariant_barrier 不同：不诉诸任何守恒量，杀招只有一条——严格变小不能无穷。\n- coprime_orbit: 一圈 n 点上以固定跨步 k 跳跃连线,步幅与圈长互素则一笔遍历所有点方才闭合,不互素则圈裂成 gcd 份——与 cycle(相邻箭头首尾闭合一圈)不同在于大跨步织出星形且遍历性以互素为条件、且有不互素即分裂的失败模式;与 interference(两个独立周期叠加浮现 lcm 更大周期)不同在于只有一条轨道、一个数论条件;与 hub(经中心中转)不同在于无任何中心点,遍历纯由 gcd(k,n)=1 担保。\n- pigeonhole: 物多于笼则必有同笼:证得了“一定相撞”,却指不出“撞在何处”——与 convergence(所有线知情或不知情地终于同一「已知」点)不同:这里只由计数保证某个「未指明」之处至少二者相遇,并不构造见证者;与 bottleneck(一切通路被迫经同一中途点)不同:这里没有任何强制路径,也无中转枢纽,只有一次计数。\n- projective_duality: 同一体系内两类角色整体互换后,一切关系命题依然成立,且换两次逐字复原(对合 σ²=id)。排除:区别于 isomorphism(两套异质素材间的保关系字典)——对偶是一套素材内部的角色对调且必为对合;区别于 figure_ground(一幅画面上图与底互补拼满)——对偶产出两幅各自完整的图,不靠负形;区别于 transformed_canon(同一主题经固定变换在滞后声部并行重现)——对偶是先后整体重述、交换角色词汇而命题真值不变,非声部级音高/时间变换;区别于 chirality(镜像与原物不可叠合、以『合不上』为要点)——对偶的两述在同体系内都成立且互换后严丝还原;区别于 mobius(须沿路径绕行一圈方获翻转)——对偶无路径、是整体即时的角色对调;区别于 symmetry(逐项逆序回文)——对偶不倒转顺序,只换角色。\n- contraction_fixed_point: 同一条规则反复施于自己的输出,每步与终点的距离按定比 q<1 缩小,最终停在被规则原样送回自身的那一点——终点不是预先宣布的,而是由 f(x*)=x* 的不动性从规则内部选出。区别于 spiral(定比放大、永不回原尺度):方向相反且有真实终点;区别于 convergence(多条互不知晓的线终于一处):这里自始至终只有一条自迭代链;区别于 recursion(入几层出几层、层层返回调用者):迭代只向前塌缩、绝无返回;区别于 zeno_halving(无穷缩段首尾相接,看点在『无穷之和恰为有限整体』):这里看点在终点被映射固定,核查的是 f(x*)=x* 而非路程求和;区别于 negative_feedback(围绕篇首明示的目标正负过冲交替纠偏):这里目标不得预先明示、亦不要求符号交替,单侧塌缩即可,终点由不动性自证。\n- aperiodic_tiling: 处处遵守同一套局部匹配规则、无缝铺满全域,却不存在任何平移使整幅复原;同时任一局部图案在有界间隙内处处再现——'似曾相识,永不重演'。排除条款:与 tiling 不同(彼挪一格即整体重合,此处证明无任何平移周期);与 symmetry_breaking 不同(彼有周期背景且恰有一处可定位的违例,此处无一处违例、却根本无周期可言);与 spiral 不同(φ 在此是两种瓦片的频率比,不是逐层定比放大的生长,图形无自相似缩放中心);与 transformed_canon 不同(彼是同一主题经固定变换后逐字再现,此处任何块都不以固定间隔精确重现);与 interference 不同(彼两周期叠加仍得 lcm 大周期,此处极限结构频率为无理数,永无周期)。",
+ "items": [
+  {
+   "task": "comparison",
+   "condition": "single",
+   "id": "cmp:single:recursion",
+   "motif": "recursion",
+   "image": "motifs/recursion/scene_river_delta.png",
+   "answer": "recursion",
+   "meta": {
+    "target_scene": "river_delta",
+    "far_scene": "lightning",
+    "foil": "convergence/scene_watershed"
+   }
+  },
+  {
+   "task": "comparison",
+   "condition": "near",
+   "id": "cmp:near:recursion",
+   "motif": "recursion",
+   "image": "exp2_comparison/stimuli/pair_near_recursion.png",
+   "answer": "recursion",
+   "meta": {
+    "target_scene": "river_delta",
+    "far_scene": "lightning",
+    "foil": "convergence/scene_watershed"
+   }
+  },
+  {
+   "task": "comparison",
+   "condition": "far",
+   "id": "cmp:far:recursion",
+   "motif": "recursion",
+   "image": "exp2_comparison/stimuli/pair_far_recursion.png",
+   "answer": "recursion",
+   "meta": {
+    "target_scene": "river_delta",
+    "far_scene": "lightning",
+    "foil": "convergence/scene_watershed"
+   }
+  },
+  {
+   "task": "comparison",
+   "condition": "foil",
+   "id": "cmp:foil:recursion",
+   "motif": "recursion",
+   "image": "exp2_comparison/stimuli/pair_foil_recursion.png",
+   "answer": "recursion",
+   "meta": {
+    "target_scene": "river_delta",
+    "far_scene": "lightning",
+    "foil": "convergence/scene_watershed"
+   }
+  },
+  {
+   "task": "comparison",
+   "condition": "instructed",
+   "id": "cmp:instructed:recursion",
+   "motif": "recursion",
+   "image": "exp2_comparison/stimuli/pair_far_recursion.png",
+   "answer": "recursion",
+   "meta": {
+    "target_scene": "river_delta",
+    "far_scene": "lightning",
+    "foil": "convergence/scene_watershed"
+   }
+  },
+  {
+   "task": "comparison",
+   "condition": "single",
+   "id": "cmp:single:nesting",
+   "motif": "nesting",
+   "image": "motifs/nesting/scene_pond_ripples.png",
+   "answer": "nesting",
+   "meta": {
+    "target_scene": "pond_ripples",
+    "far_scene": "moon_gates",
+    "foil": "spiral/scene_typhoon"
+   }
+  },
+  {
+   "task": "comparison",
+   "condition": "near",
+   "id": "cmp:near:nesting",
+   "motif": "nesting",
+   "image": "exp2_comparison/stimuli/pair_near_nesting.png",
+   "answer": "nesting",
+   "meta": {
+    "target_scene": "pond_ripples",
+    "far_scene": "moon_gates",
+    "foil": "spiral/scene_typhoon"
+   }
+  },
+  {
+   "task": "comparison",
+   "condition": "far",
+   "id": "cmp:far:nesting",
+   "motif": "nesting",
+   "image": "exp2_comparison/stimuli/pair_far_nesting.png",
+   "answer": "nesting",
+   "meta": {
+    "target_scene": "pond_ripples",
+    "far_scene": "moon_gates",
+    "foil": "spiral/scene_typhoon"
+   }
+  },
+  {
+   "task": "comparison",
+   "condition": "foil",
+   "id": "cmp:foil:nesting",
+   "motif": "nesting",
+   "image": "exp2_comparison/stimuli/pair_foil_nesting.png",
+   "answer": "nesting",
+   "meta": {
+    "target_scene": "pond_ripples",
+    "far_scene": "moon_gates",
+    "foil": "spiral/scene_typhoon"
+   }
+  },
+  {
+   "task": "comparison",
+   "condition": "instructed",
+   "id": "cmp:instructed:nesting",
+   "motif": "nesting",
+   "image": "exp2_comparison/stimuli/pair_far_nesting.png",
+   "answer": "nesting",
+   "meta": {
+    "target_scene": "pond_ripples",
+    "far_scene": "moon_gates",
+    "foil": "spiral/scene_typhoon"
+   }
+  },
+  {
+   "task": "comparison",
+   "condition": "single",
+   "id": "cmp:single:cycle",
+   "motif": "cycle",
+   "image": "motifs/cycle/scene_canal_town.png",
+   "answer": "cycle",
+   "meta": {
+    "target_scene": "canal_town",
+    "far_scene": "ouroboros",
+    "foil": "interference/scene_two_ripples"
+   }
+  },
+  {
+   "task": "comparison",
+   "condition": "near",
+   "id": "cmp:near:cycle",
+   "motif": "cycle",
+   "image": "exp2_comparison/stimuli/pair_near_cycle.png",
+   "answer": "cycle",
+   "meta": {
+    "target_scene": "canal_town",
+    "far_scene": "ouroboros",
+    "foil": "interference/scene_two_ripples"
+   }
+  },
+  {
+   "task": "comparison",
+   "condition": "far",
+   "id": "cmp:far:cycle",
+   "motif": "cycle",
+   "image": "exp2_comparison/stimuli/pair_far_cycle.png",
+   "answer": "cycle",
+   "meta": {
+    "target_scene": "canal_town",
+    "far_scene": "ouroboros",
+    "foil": "interference/scene_two_ripples"
+   }
+  },
+  {
+   "task": "comparison",
+   "condition": "foil",
+   "id": "cmp:foil:cycle",
+   "motif": "cycle",
+   "image": "exp2_comparison/stimuli/pair_foil_cycle.png",
+   "answer": "cycle",
+   "meta": {
+    "target_scene": "canal_town",
+    "far_scene": "ouroboros",
+    "foil": "interference/scene_two_ripples"
+   }
+  },
+  {
+   "task": "comparison",
+   "condition": "instructed",
+   "id": "cmp:instructed:cycle",
+   "motif": "cycle",
+   "image": "exp2_comparison/stimuli/pair_far_cycle.png",
+   "answer": "cycle",
+   "meta": {
+    "target_scene": "canal_town",
+    "far_scene": "ouroboros",
+    "foil": "interference/scene_two_ripples"
+   }
+  },
+  {
+   "task": "comparison",
+   "condition": "single",
+   "id": "cmp:single:self_reference",
+   "motif": "self_reference",
+   "image": "motifs/self_reference/scene_droste_study.png",
+   "answer": "self_reference",
+   "meta": {
+    "target_scene": "droste_study",
+    "far_scene": "mountain_temple",
+    "foil": "strange_loop/scene_drawing_hands"
+   }
+  },
+  {
+   "task": "comparison",
+   "condition": "near",
+   "id": "cmp:near:self_reference",
+   "motif": "self_reference",
+   "image": "exp2_comparison/stimuli/pair_near_self_reference.png",
+   "answer": "self_reference",
+   "meta": {
+    "target_scene": "droste_study",
+    "far_scene": "mountain_temple",
+    "foil": "strange_loop/scene_drawing_hands"
+   }
+  },
+  {
+   "task": "comparison",
+   "condition": "far",
+   "id": "cmp:far:self_reference",
+   "motif": "self_reference",
+   "image": "exp2_comparison/stimuli/pair_far_self_reference.png",
+   "answer": "self_reference",
+   "meta": {
+    "target_scene": "droste_study",
+    "far_scene": "mountain_temple",
+    "foil": "strange_loop/scene_drawing_hands"
+   }
+  },
+  {
+   "task": "comparison",
+   "condition": "foil",
+   "id": "cmp:foil:self_reference",
+   "motif": "self_reference",
+   "image": "exp2_comparison/stimuli/pair_foil_self_reference.png",
+   "answer": "self_reference",
+   "meta": {
+    "target_scene": "droste_study",
+    "far_scene": "mountain_temple",
+    "foil": "strange_loop/scene_drawing_hands"
+   }
+  },
+  {
+   "task": "comparison",
+   "condition": "instructed",
+   "id": "cmp:instructed:self_reference",
+   "motif": "self_reference",
+   "image": "exp2_comparison/stimuli/pair_far_self_reference.png",
+   "answer": "self_reference",
+   "meta": {
+    "target_scene": "droste_study",
+    "far_scene": "mountain_temple",
+    "foil": "strange_loop/scene_drawing_hands"
+   }
+  },
+  {
+   "task": "comparison",
+   "condition": "single",
+   "id": "cmp:single:symmetry",
+   "motif": "symmetry",
+   "image": "motifs/symmetry/scene_butterfly.png",
+   "answer": "symmetry",
+   "meta": {
+    "target_scene": "butterfly",
+    "far_scene": "temple_facade",
+    "foil": "mobius/scene_silk_band"
+   }
+  },
+  {
+   "task": "comparison",
+   "condition": "near",
+   "id": "cmp:near:symmetry",
+   "motif": "symmetry",
+   "image": "exp2_comparison/stimuli/pair_near_symmetry.png",
+   "answer": "symmetry",
+   "meta": {
+    "target_scene": "butterfly",
+    "far_scene": "temple_facade",
+    "foil": "mobius/scene_silk_band"
+   }
+  },
+  {
+   "task": "comparison",
+   "condition": "far",
+   "id": "cmp:far:symmetry",
+   "motif": "symmetry",
+   "image": "exp2_comparison/stimuli/pair_far_symmetry.png",
+   "answer": "symmetry",
+   "meta": {
+    "target_scene": "butterfly",
+    "far_scene": "temple_facade",
+    "foil": "mobius/scene_silk_band"
+   }
+  },
+  {
+   "task": "comparison",
+   "condition": "foil",
+   "id": "cmp:foil:symmetry",
+   "motif": "symmetry",
+   "image": "exp2_comparison/stimuli/pair_foil_symmetry.png",
+   "answer": "symmetry",
+   "meta": {
+    "target_scene": "butterfly",
+    "far_scene": "temple_facade",
+    "foil": "mobius/scene_silk_band"
+   }
+  },
+  {
+   "task": "comparison",
+   "condition": "instructed",
+   "id": "cmp:instructed:symmetry",
+   "motif": "symmetry",
+   "image": "exp2_comparison/stimuli/pair_far_symmetry.png",
+   "answer": "symmetry",
+   "meta": {
+    "target_scene": "butterfly",
+    "far_scene": "temple_facade",
+    "foil": "mobius/scene_silk_band"
+   }
+  },
+  {
+   "task": "comparison",
+   "condition": "single",
+   "id": "cmp:single:alternation",
+   "motif": "alternation",
+   "image": "motifs/alternation/scene_zebra.png",
+   "answer": "alternation",
+   "meta": {
+    "target_scene": "zebra",
+    "far_scene": "lantern_row",
+    "foil": "interference/scene_moire_curtains"
+   }
+  },
+  {
+   "task": "comparison",
+   "condition": "near",
+   "id": "cmp:near:alternation",
+   "motif": "alternation",
+   "image": "exp2_comparison/stimuli/pair_near_alternation.png",
+   "answer": "alternation",
+   "meta": {
+    "target_scene": "zebra",
+    "far_scene": "lantern_row",
+    "foil": "interference/scene_moire_curtains"
+   }
+  },
+  {
+   "task": "comparison",
+   "condition": "far",
+   "id": "cmp:far:alternation",
+   "motif": "alternation",
+   "image": "exp2_comparison/stimuli/pair_far_alternation.png",
+   "answer": "alternation",
+   "meta": {
+    "target_scene": "zebra",
+    "far_scene": "lantern_row",
+    "foil": "interference/scene_moire_curtains"
+   }
+  },
+  {
+   "task": "comparison",
+   "condition": "foil",
+   "id": "cmp:foil:alternation",
+   "motif": "alternation",
+   "image": "exp2_comparison/stimuli/pair_foil_alternation.png",
+   "answer": "alternation",
+   "meta": {
+    "target_scene": "zebra",
+    "far_scene": "lantern_row",
+    "foil": "interference/scene_moire_curtains"
+   }
+  },
+  {
+   "task": "comparison",
+   "condition": "instructed",
+   "id": "cmp:instructed:alternation",
+   "motif": "alternation",
+   "image": "exp2_comparison/stimuli/pair_far_alternation.png",
+   "answer": "alternation",
+   "meta": {
+    "target_scene": "zebra",
+    "far_scene": "lantern_row",
+    "foil": "interference/scene_moire_curtains"
+   }
+  },
+  {
+   "task": "comparison",
+   "condition": "single",
+   "id": "cmp:single:spiral",
+   "motif": "spiral",
+   "image": "motifs/spiral/scene_nautilus.png",
+   "answer": "spiral",
+   "meta": {
+    "target_scene": "nautilus",
+    "far_scene": "typhoon",
+    "foil": "mobius/scene_silk_band"
+   }
+  },
+  {
+   "task": "comparison",
+   "condition": "near",
+   "id": "cmp:near:spiral",
+   "motif": "spiral",
+   "image": "exp2_comparison/stimuli/pair_near_spiral.png",
+   "answer": "spiral",
+   "meta": {
+    "target_scene": "nautilus",
+    "far_scene": "typhoon",
+    "foil": "mobius/scene_silk_band"
+   }
+  },
+  {
+   "task": "comparison",
+   "condition": "far",
+   "id": "cmp:far:spiral",
+   "motif": "spiral",
+   "image": "exp2_comparison/stimuli/pair_far_spiral.png",
+   "answer": "spiral",
+   "meta": {
+    "target_scene": "nautilus",
+    "far_scene": "typhoon",
+    "foil": "mobius/scene_silk_band"
+   }
+  },
+  {
+   "task": "comparison",
+   "condition": "foil",
+   "id": "cmp:foil:spiral",
+   "motif": "spiral",
+   "image": "exp2_comparison/stimuli/pair_foil_spiral.png",
+   "answer": "spiral",
+   "meta": {
+    "target_scene": "nautilus",
+    "far_scene": "typhoon",
+    "foil": "mobius/scene_silk_band"
+   }
+  },
+  {
+   "task": "comparison",
+   "condition": "instructed",
+   "id": "cmp:instructed:spiral",
+   "motif": "spiral",
+   "image": "exp2_comparison/stimuli/pair_far_spiral.png",
+   "answer": "spiral",
+   "meta": {
+    "target_scene": "nautilus",
+    "far_scene": "typhoon",
+    "foil": "mobius/scene_silk_band"
+   }
+  },
+  {
+   "task": "comparison",
+   "condition": "single",
+   "id": "cmp:single:convergence",
+   "motif": "convergence",
+   "image": "motifs/convergence/scene_watershed.png",
+   "answer": "convergence",
+   "meta": {
+    "target_scene": "watershed",
+    "far_scene": "homing_birds",
+    "foil": "recursion/scene_river_delta"
+   }
+  },
+  {
+   "task": "comparison",
+   "condition": "near",
+   "id": "cmp:near:convergence",
+   "motif": "convergence",
+   "image": "exp2_comparison/stimuli/pair_near_convergence.png",
+   "answer": "convergence",
+   "meta": {
+    "target_scene": "watershed",
+    "far_scene": "homing_birds",
+    "foil": "recursion/scene_river_delta"
+   }
+  },
+  {
+   "task": "comparison",
+   "condition": "far",
+   "id": "cmp:far:convergence",
+   "motif": "convergence",
+   "image": "exp2_comparison/stimuli/pair_far_convergence.png",
+   "answer": "convergence",
+   "meta": {
+    "target_scene": "watershed",
+    "far_scene": "homing_birds",
+    "foil": "recursion/scene_river_delta"
+   }
+  },
+  {
+   "task": "comparison",
+   "condition": "foil",
+   "id": "cmp:foil:convergence",
+   "motif": "convergence",
+   "image": "exp2_comparison/stimuli/pair_foil_convergence.png",
+   "answer": "convergence",
+   "meta": {
+    "target_scene": "watershed",
+    "far_scene": "homing_birds",
+    "foil": "recursion/scene_river_delta"
+   }
+  },
+  {
+   "task": "comparison",
+   "condition": "instructed",
+   "id": "cmp:instructed:convergence",
+   "motif": "convergence",
+   "image": "exp2_comparison/stimuli/pair_far_convergence.png",
+   "answer": "convergence",
+   "meta": {
+    "target_scene": "watershed",
+    "far_scene": "homing_birds",
+    "foil": "recursion/scene_river_delta"
+   }
+  },
+  {
+   "task": "comparison",
+   "condition": "single",
+   "id": "cmp:single:bottleneck",
+   "motif": "bottleneck",
+   "image": "motifs/bottleneck/scene_gorge_bridge.png",
+   "answer": "bottleneck",
+   "meta": {
+    "target_scene": "gorge_bridge",
+    "far_scene": "hourglass",
+    "foil": "convergence/scene_watershed"
+   }
+  },
+  {
+   "task": "comparison",
+   "condition": "near",
+   "id": "cmp:near:bottleneck",
+   "motif": "bottleneck",
+   "image": "exp2_comparison/stimuli/pair_near_bottleneck.png",
+   "answer": "bottleneck",
+   "meta": {
+    "target_scene": "gorge_bridge",
+    "far_scene": "hourglass",
+    "foil": "convergence/scene_watershed"
+   }
+  },
+  {
+   "task": "comparison",
+   "condition": "far",
+   "id": "cmp:far:bottleneck",
+   "motif": "bottleneck",
+   "image": "exp2_comparison/stimuli/pair_far_bottleneck.png",
+   "answer": "bottleneck",
+   "meta": {
+    "target_scene": "gorge_bridge",
+    "far_scene": "hourglass",
+    "foil": "convergence/scene_watershed"
+   }
+  },
+  {
+   "task": "comparison",
+   "condition": "foil",
+   "id": "cmp:foil:bottleneck",
+   "motif": "bottleneck",
+   "image": "exp2_comparison/stimuli/pair_foil_bottleneck.png",
+   "answer": "bottleneck",
+   "meta": {
+    "target_scene": "gorge_bridge",
+    "far_scene": "hourglass",
+    "foil": "convergence/scene_watershed"
+   }
+  },
+  {
+   "task": "comparison",
+   "condition": "instructed",
+   "id": "cmp:instructed:bottleneck",
+   "motif": "bottleneck",
+   "image": "exp2_comparison/stimuli/pair_far_bottleneck.png",
+   "answer": "bottleneck",
+   "meta": {
+    "target_scene": "gorge_bridge",
+    "far_scene": "hourglass",
+    "foil": "convergence/scene_watershed"
+   }
+  },
+  {
+   "task": "comparison",
+   "condition": "single",
+   "id": "cmp:single:symmetry_breaking",
+   "motif": "symmetry_breaking",
+   "image": "motifs/symmetry_breaking/scene_orchard_anomaly.png",
+   "answer": "symmetry_breaking",
+   "meta": {
+    "target_scene": "orchard_anomaly",
+    "far_scene": "red_plum",
+    "foil": "tiling/scene_salt_pans"
+   }
+  },
+  {
+   "task": "comparison",
+   "condition": "near",
+   "id": "cmp:near:symmetry_breaking",
+   "motif": "symmetry_breaking",
+   "image": "exp2_comparison/stimuli/pair_near_symmetry_breaking.png",
+   "answer": "symmetry_breaking",
+   "meta": {
+    "target_scene": "orchard_anomaly",
+    "far_scene": "red_plum",
+    "foil": "tiling/scene_salt_pans"
+   }
+  },
+  {
+   "task": "comparison",
+   "condition": "far",
+   "id": "cmp:far:symmetry_breaking",
+   "motif": "symmetry_breaking",
+   "image": "exp2_comparison/stimuli/pair_far_symmetry_breaking.png",
+   "answer": "symmetry_breaking",
+   "meta": {
+    "target_scene": "orchard_anomaly",
+    "far_scene": "red_plum",
+    "foil": "tiling/scene_salt_pans"
+   }
+  },
+  {
+   "task": "comparison",
+   "condition": "foil",
+   "id": "cmp:foil:symmetry_breaking",
+   "motif": "symmetry_breaking",
+   "image": "exp2_comparison/stimuli/pair_foil_symmetry_breaking.png",
+   "answer": "symmetry_breaking",
+   "meta": {
+    "target_scene": "orchard_anomaly",
+    "far_scene": "red_plum",
+    "foil": "tiling/scene_salt_pans"
+   }
+  },
+  {
+   "task": "comparison",
+   "condition": "instructed",
+   "id": "cmp:instructed:symmetry_breaking",
+   "motif": "symmetry_breaking",
+   "image": "exp2_comparison/stimuli/pair_far_symmetry_breaking.png",
+   "answer": "symmetry_breaking",
+   "meta": {
+    "target_scene": "orchard_anomaly",
+    "far_scene": "red_plum",
+    "foil": "tiling/scene_salt_pans"
+   }
+  },
+  {
+   "task": "comparison",
+   "condition": "single",
+   "id": "cmp:single:strange_loop",
+   "motif": "strange_loop",
+   "image": "motifs/strange_loop/scene_impossible_stairs.png",
+   "answer": "strange_loop",
+   "meta": {
+    "target_scene": "impossible_stairs",
+    "far_scene": "drawing_hands",
+    "foil": "self_reference/scene_droste_study"
+   }
+  },
+  {
+   "task": "comparison",
+   "condition": "near",
+   "id": "cmp:near:strange_loop",
+   "motif": "strange_loop",
+   "image": "exp2_comparison/stimuli/pair_near_strange_loop.png",
+   "answer": "strange_loop",
+   "meta": {
+    "target_scene": "impossible_stairs",
+    "far_scene": "drawing_hands",
+    "foil": "self_reference/scene_droste_study"
+   }
+  },
+  {
+   "task": "comparison",
+   "condition": "far",
+   "id": "cmp:far:strange_loop",
+   "motif": "strange_loop",
+   "image": "exp2_comparison/stimuli/pair_far_strange_loop.png",
+   "answer": "strange_loop",
+   "meta": {
+    "target_scene": "impossible_stairs",
+    "far_scene": "drawing_hands",
+    "foil": "self_reference/scene_droste_study"
+   }
+  },
+  {
+   "task": "comparison",
+   "condition": "foil",
+   "id": "cmp:foil:strange_loop",
+   "motif": "strange_loop",
+   "image": "exp2_comparison/stimuli/pair_foil_strange_loop.png",
+   "answer": "strange_loop",
+   "meta": {
+    "target_scene": "impossible_stairs",
+    "far_scene": "drawing_hands",
+    "foil": "self_reference/scene_droste_study"
+   }
+  },
+  {
+   "task": "comparison",
+   "condition": "instructed",
+   "id": "cmp:instructed:strange_loop",
+   "motif": "strange_loop",
+   "image": "exp2_comparison/stimuli/pair_far_strange_loop.png",
+   "answer": "strange_loop",
+   "meta": {
+    "target_scene": "impossible_stairs",
+    "far_scene": "drawing_hands",
+    "foil": "self_reference/scene_droste_study"
+   }
+  },
+  {
+   "task": "comparison",
+   "condition": "single",
+   "id": "cmp:single:figure_ground",
+   "motif": "figure_ground",
+   "image": "motifs/figure_ground/scene_day_night_birds.png",
+   "answer": "figure_ground",
+   "meta": {
+    "target_scene": "day_night_birds",
+    "far_scene": "papercut",
+    "foil": "symmetry/scene_temple_facade"
+   }
+  },
+  {
+   "task": "comparison",
+   "condition": "near",
+   "id": "cmp:near:figure_ground",
+   "motif": "figure_ground",
+   "image": "exp2_comparison/stimuli/pair_near_figure_ground.png",
+   "answer": "figure_ground",
+   "meta": {
+    "target_scene": "day_night_birds",
+    "far_scene": "papercut",
+    "foil": "symmetry/scene_temple_facade"
+   }
+  },
+  {
+   "task": "comparison",
+   "condition": "far",
+   "id": "cmp:far:figure_ground",
+   "motif": "figure_ground",
+   "image": "exp2_comparison/stimuli/pair_far_figure_ground.png",
+   "answer": "figure_ground",
+   "meta": {
+    "target_scene": "day_night_birds",
+    "far_scene": "papercut",
+    "foil": "symmetry/scene_temple_facade"
+   }
+  },
+  {
+   "task": "comparison",
+   "condition": "foil",
+   "id": "cmp:foil:figure_ground",
+   "motif": "figure_ground",
+   "image": "exp2_comparison/stimuli/pair_foil_figure_ground.png",
+   "answer": "figure_ground",
+   "meta": {
+    "target_scene": "day_night_birds",
+    "far_scene": "papercut",
+    "foil": "symmetry/scene_temple_facade"
+   }
+  },
+  {
+   "task": "comparison",
+   "condition": "instructed",
+   "id": "cmp:instructed:figure_ground",
+   "motif": "figure_ground",
+   "image": "exp2_comparison/stimuli/pair_far_figure_ground.png",
+   "answer": "figure_ground",
+   "meta": {
+    "target_scene": "day_night_birds",
+    "far_scene": "papercut",
+    "foil": "symmetry/scene_temple_facade"
+   }
+  },
+  {
+   "task": "comparison",
+   "condition": "single",
+   "id": "cmp:single:isomorphism",
+   "motif": "isomorphism",
+   "image": "motifs/isomorphism/scene_constellations.png",
+   "answer": "isomorphism",
+   "meta": {
+    "target_scene": "constellations",
+    "far_scene": "tree_and_roots",
+    "foil": "projective_duality/scene_spiderweb_dewfall"
+   }
+  },
+  {
+   "task": "comparison",
+   "condition": "near",
+   "id": "cmp:near:isomorphism",
+   "motif": "isomorphism",
+   "image": "exp2_comparison/stimuli/pair_near_isomorphism.png",
+   "answer": "isomorphism",
+   "meta": {
+    "target_scene": "constellations",
+    "far_scene": "tree_and_roots",
+    "foil": "projective_duality/scene_spiderweb_dewfall"
+   }
+  },
+  {
+   "task": "comparison",
+   "condition": "far",
+   "id": "cmp:far:isomorphism",
+   "motif": "isomorphism",
+   "image": "exp2_comparison/stimuli/pair_far_isomorphism.png",
+   "answer": "isomorphism",
+   "meta": {
+    "target_scene": "constellations",
+    "far_scene": "tree_and_roots",
+    "foil": "projective_duality/scene_spiderweb_dewfall"
+   }
+  },
+  {
+   "task": "comparison",
+   "condition": "foil",
+   "id": "cmp:foil:isomorphism",
+   "motif": "isomorphism",
+   "image": "exp2_comparison/stimuli/pair_foil_isomorphism.png",
+   "answer": "isomorphism",
+   "meta": {
+    "target_scene": "constellations",
+    "far_scene": "tree_and_roots",
+    "foil": "projective_duality/scene_spiderweb_dewfall"
+   }
+  },
+  {
+   "task": "comparison",
+   "condition": "instructed",
+   "id": "cmp:instructed:isomorphism",
+   "motif": "isomorphism",
+   "image": "exp2_comparison/stimuli/pair_far_isomorphism.png",
+   "answer": "isomorphism",
+   "meta": {
+    "target_scene": "constellations",
+    "far_scene": "tree_and_roots",
+    "foil": "projective_duality/scene_spiderweb_dewfall"
+   }
+  },
+  {
+   "task": "comparison",
+   "condition": "single",
+   "id": "cmp:single:mobius",
+   "motif": "mobius",
+   "image": "motifs/mobius/scene_silk_band.png",
+   "answer": "mobius",
+   "meta": {
+    "target_scene": "silk_band",
+    "far_scene": "ant_band",
+    "foil": "spiral/scene_nautilus"
+   }
+  },
+  {
+   "task": "comparison",
+   "condition": "near",
+   "id": "cmp:near:mobius",
+   "motif": "mobius",
+   "image": "exp2_comparison/stimuli/pair_near_mobius.png",
+   "answer": "mobius",
+   "meta": {
+    "target_scene": "silk_band",
+    "far_scene": "ant_band",
+    "foil": "spiral/scene_nautilus"
+   }
+  },
+  {
+   "task": "comparison",
+   "condition": "far",
+   "id": "cmp:far:mobius",
+   "motif": "mobius",
+   "image": "exp2_comparison/stimuli/pair_far_mobius.png",
+   "answer": "mobius",
+   "meta": {
+    "target_scene": "silk_band",
+    "far_scene": "ant_band",
+    "foil": "spiral/scene_nautilus"
+   }
+  },
+  {
+   "task": "comparison",
+   "condition": "foil",
+   "id": "cmp:foil:mobius",
+   "motif": "mobius",
+   "image": "exp2_comparison/stimuli/pair_foil_mobius.png",
+   "answer": "mobius",
+   "meta": {
+    "target_scene": "silk_band",
+    "far_scene": "ant_band",
+    "foil": "spiral/scene_nautilus"
+   }
+  },
+  {
+   "task": "comparison",
+   "condition": "instructed",
+   "id": "cmp:instructed:mobius",
+   "motif": "mobius",
+   "image": "exp2_comparison/stimuli/pair_far_mobius.png",
+   "answer": "mobius",
+   "meta": {
+    "target_scene": "silk_band",
+    "far_scene": "ant_band",
+    "foil": "spiral/scene_nautilus"
+   }
+  },
+  {
+   "task": "comparison",
+   "condition": "single",
+   "id": "cmp:single:braiding",
+   "motif": "braiding",
+   "image": "motifs/braiding/scene_hair_braid.png",
+   "answer": "braiding",
+   "meta": {
+    "target_scene": "hair_braid",
+    "far_scene": "interchange",
+    "foil": "interference/scene_moire_curtains"
+   }
+  },
+  {
+   "task": "comparison",
+   "condition": "near",
+   "id": "cmp:near:braiding",
+   "motif": "braiding",
+   "image": "exp2_comparison/stimuli/pair_near_braiding.png",
+   "answer": "braiding",
+   "meta": {
+    "target_scene": "hair_braid",
+    "far_scene": "interchange",
+    "foil": "interference/scene_moire_curtains"
+   }
+  },
+  {
+   "task": "comparison",
+   "condition": "far",
+   "id": "cmp:far:braiding",
+   "motif": "braiding",
+   "image": "exp2_comparison/stimuli/pair_far_braiding.png",
+   "answer": "braiding",
+   "meta": {
+    "target_scene": "hair_braid",
+    "far_scene": "interchange",
+    "foil": "interference/scene_moire_curtains"
+   }
+  },
+  {
+   "task": "comparison",
+   "condition": "foil",
+   "id": "cmp:foil:braiding",
+   "motif": "braiding",
+   "image": "exp2_comparison/stimuli/pair_foil_braiding.png",
+   "answer": "braiding",
+   "meta": {
+    "target_scene": "hair_braid",
+    "far_scene": "interchange",
+    "foil": "interference/scene_moire_curtains"
+   }
+  },
+  {
+   "task": "comparison",
+   "condition": "instructed",
+   "id": "cmp:instructed:braiding",
+   "motif": "braiding",
+   "image": "exp2_comparison/stimuli/pair_far_braiding.png",
+   "answer": "braiding",
+   "meta": {
+    "target_scene": "hair_braid",
+    "far_scene": "interchange",
+    "foil": "interference/scene_moire_curtains"
+   }
+  },
+  {
+   "task": "comparison",
+   "condition": "single",
+   "id": "cmp:single:interference",
+   "motif": "interference",
+   "image": "motifs/interference/scene_two_ripples.png",
+   "answer": "interference",
+   "meta": {
+    "target_scene": "two_ripples",
+    "far_scene": "moire_curtains",
+    "foil": "cycle/scene_canal_town"
+   }
+  },
+  {
+   "task": "comparison",
+   "condition": "near",
+   "id": "cmp:near:interference",
+   "motif": "interference",
+   "image": "exp2_comparison/stimuli/pair_near_interference.png",
+   "answer": "interference",
+   "meta": {
+    "target_scene": "two_ripples",
+    "far_scene": "moire_curtains",
+    "foil": "cycle/scene_canal_town"
+   }
+  },
+  {
+   "task": "comparison",
+   "condition": "far",
+   "id": "cmp:far:interference",
+   "motif": "interference",
+   "image": "exp2_comparison/stimuli/pair_far_interference.png",
+   "answer": "interference",
+   "meta": {
+    "target_scene": "two_ripples",
+    "far_scene": "moire_curtains",
+    "foil": "cycle/scene_canal_town"
+   }
+  },
+  {
+   "task": "comparison",
+   "condition": "foil",
+   "id": "cmp:foil:interference",
+   "motif": "interference",
+   "image": "exp2_comparison/stimuli/pair_foil_interference.png",
+   "answer": "interference",
+   "meta": {
+    "target_scene": "two_ripples",
+    "far_scene": "moire_curtains",
+    "foil": "cycle/scene_canal_town"
+   }
+  },
+  {
+   "task": "comparison",
+   "condition": "instructed",
+   "id": "cmp:instructed:interference",
+   "motif": "interference",
+   "image": "exp2_comparison/stimuli/pair_far_interference.png",
+   "answer": "interference",
+   "meta": {
+    "target_scene": "two_ripples",
+    "far_scene": "moire_curtains",
+    "foil": "cycle/scene_canal_town"
+   }
+  },
+  {
+   "task": "comparison",
+   "condition": "single",
+   "id": "cmp:single:tiling",
+   "motif": "tiling",
+   "image": "motifs/tiling/scene_honeycomb.png",
+   "answer": "tiling",
+   "meta": {
+    "target_scene": "honeycomb",
+    "far_scene": "salt_pans",
+    "foil": "aperiodic_tiling/scene_penrose_floor"
+   }
+  },
+  {
+   "task": "comparison",
+   "condition": "near",
+   "id": "cmp:near:tiling",
+   "motif": "tiling",
+   "image": "exp2_comparison/stimuli/pair_near_tiling.png",
+   "answer": "tiling",
+   "meta": {
+    "target_scene": "honeycomb",
+    "far_scene": "salt_pans",
+    "foil": "aperiodic_tiling/scene_penrose_floor"
+   }
+  },
+  {
+   "task": "comparison",
+   "condition": "far",
+   "id": "cmp:far:tiling",
+   "motif": "tiling",
+   "image": "exp2_comparison/stimuli/pair_far_tiling.png",
+   "answer": "tiling",
+   "meta": {
+    "target_scene": "honeycomb",
+    "far_scene": "salt_pans",
+    "foil": "aperiodic_tiling/scene_penrose_floor"
+   }
+  },
+  {
+   "task": "comparison",
+   "condition": "foil",
+   "id": "cmp:foil:tiling",
+   "motif": "tiling",
+   "image": "exp2_comparison/stimuli/pair_foil_tiling.png",
+   "answer": "tiling",
+   "meta": {
+    "target_scene": "honeycomb",
+    "far_scene": "salt_pans",
+    "foil": "aperiodic_tiling/scene_penrose_floor"
+   }
+  },
+  {
+   "task": "comparison",
+   "condition": "instructed",
+   "id": "cmp:instructed:tiling",
+   "motif": "tiling",
+   "image": "exp2_comparison/stimuli/pair_far_tiling.png",
+   "answer": "tiling",
+   "meta": {
+    "target_scene": "honeycomb",
+    "far_scene": "salt_pans",
+    "foil": "aperiodic_tiling/scene_penrose_floor"
+   }
+  },
+  {
+   "task": "comparison",
+   "condition": "single",
+   "id": "cmp:single:hub",
+   "motif": "hub",
+   "image": "motifs/hub/scene_firework.png",
+   "answer": "hub",
+   "meta": {
+    "target_scene": "firework",
+    "far_scene": "starfish",
+    "foil": "convergence/scene_homing_birds"
+   }
+  },
+  {
+   "task": "comparison",
+   "condition": "near",
+   "id": "cmp:near:hub",
+   "motif": "hub",
+   "image": "exp2_comparison/stimuli/pair_near_hub.png",
+   "answer": "hub",
+   "meta": {
+    "target_scene": "firework",
+    "far_scene": "starfish",
+    "foil": "convergence/scene_homing_birds"
+   }
+  },
+  {
+   "task": "comparison",
+   "condition": "far",
+   "id": "cmp:far:hub",
+   "motif": "hub",
+   "image": "exp2_comparison/stimuli/pair_far_hub.png",
+   "answer": "hub",
+   "meta": {
+    "target_scene": "firework",
+    "far_scene": "starfish",
+    "foil": "convergence/scene_homing_birds"
+   }
+  },
+  {
+   "task": "comparison",
+   "condition": "foil",
+   "id": "cmp:foil:hub",
+   "motif": "hub",
+   "image": "exp2_comparison/stimuli/pair_foil_hub.png",
+   "answer": "hub",
+   "meta": {
+    "target_scene": "firework",
+    "far_scene": "starfish",
+    "foil": "convergence/scene_homing_birds"
+   }
+  },
+  {
+   "task": "comparison",
+   "condition": "instructed",
+   "id": "cmp:instructed:hub",
+   "motif": "hub",
+   "image": "exp2_comparison/stimuli/pair_far_hub.png",
+   "answer": "hub",
+   "meta": {
+    "target_scene": "firework",
+    "far_scene": "starfish",
+    "foil": "convergence/scene_homing_birds"
+   }
+  },
+  {
+   "task": "comparison",
+   "condition": "single",
+   "id": "cmp:single:diagonalization",
+   "motif": "diagonalization",
+   "image": "motifs/diagonalization/scene_jacquard_loom.png",
+   "answer": "diagonalization",
+   "meta": {
+    "target_scene": "jacquard_loom",
+    "far_scene": "gen:far_src_diagonalization",
+    "foil": "symmetry_breaking/scene_orchard_anomaly"
+   }
+  },
+  {
+   "task": "comparison",
+   "condition": "near",
+   "id": "cmp:near:diagonalization",
+   "motif": "diagonalization",
+   "image": "exp2_comparison/stimuli/pair_near_diagonalization.png",
+   "answer": "diagonalization",
+   "meta": {
+    "target_scene": "jacquard_loom",
+    "far_scene": "gen:far_src_diagonalization",
+    "foil": "symmetry_breaking/scene_orchard_anomaly"
+   }
+  },
+  {
+   "task": "comparison",
+   "condition": "far",
+   "id": "cmp:far:diagonalization",
+   "motif": "diagonalization",
+   "image": "exp2_comparison/stimuli/pair_far_diagonalization.png",
+   "answer": "diagonalization",
+   "meta": {
+    "target_scene": "jacquard_loom",
+    "far_scene": "gen:far_src_diagonalization",
+    "foil": "symmetry_breaking/scene_orchard_anomaly"
+   }
+  },
+  {
+   "task": "comparison",
+   "condition": "foil",
+   "id": "cmp:foil:diagonalization",
+   "motif": "diagonalization",
+   "image": "exp2_comparison/stimuli/pair_foil_diagonalization.png",
+   "answer": "diagonalization",
+   "meta": {
+    "target_scene": "jacquard_loom",
+    "far_scene": "gen:far_src_diagonalization",
+    "foil": "symmetry_breaking/scene_orchard_anomaly"
+   }
+  },
+  {
+   "task": "comparison",
+   "condition": "instructed",
+   "id": "cmp:instructed:diagonalization",
+   "motif": "diagonalization",
+   "image": "exp2_comparison/stimuli/pair_far_diagonalization.png",
+   "answer": "diagonalization",
+   "meta": {
+    "target_scene": "jacquard_loom",
+    "far_scene": "gen:far_src_diagonalization",
+    "foil": "symmetry_breaking/scene_orchard_anomaly"
+   }
+  },
+  {
+   "task": "comparison",
+   "condition": "single",
+   "id": "cmp:single:infinite_descent",
+   "motif": "infinite_descent",
+   "image": "motifs/infinite_descent/scene_nesting_dolls.png",
+   "answer": "infinite_descent",
+   "meta": {
+    "target_scene": "nesting_dolls",
+    "far_scene": "gen:far_src_infinite_descent",
+    "foil": "contraction_fixed_point/scene_you_are_here"
+   }
+  },
+  {
+   "task": "comparison",
+   "condition": "near",
+   "id": "cmp:near:infinite_descent",
+   "motif": "infinite_descent",
+   "image": "exp2_comparison/stimuli/pair_near_infinite_descent.png",
+   "answer": "infinite_descent",
+   "meta": {
+    "target_scene": "nesting_dolls",
+    "far_scene": "gen:far_src_infinite_descent",
+    "foil": "contraction_fixed_point/scene_you_are_here"
+   }
+  },
+  {
+   "task": "comparison",
+   "condition": "far",
+   "id": "cmp:far:infinite_descent",
+   "motif": "infinite_descent",
+   "image": "exp2_comparison/stimuli/pair_far_infinite_descent.png",
+   "answer": "infinite_descent",
+   "meta": {
+    "target_scene": "nesting_dolls",
+    "far_scene": "gen:far_src_infinite_descent",
+    "foil": "contraction_fixed_point/scene_you_are_here"
+   }
+  },
+  {
+   "task": "comparison",
+   "condition": "foil",
+   "id": "cmp:foil:infinite_descent",
+   "motif": "infinite_descent",
+   "image": "exp2_comparison/stimuli/pair_foil_infinite_descent.png",
+   "answer": "infinite_descent",
+   "meta": {
+    "target_scene": "nesting_dolls",
+    "far_scene": "gen:far_src_infinite_descent",
+    "foil": "contraction_fixed_point/scene_you_are_here"
+   }
+  },
+  {
+   "task": "comparison",
+   "condition": "instructed",
+   "id": "cmp:instructed:infinite_descent",
+   "motif": "infinite_descent",
+   "image": "exp2_comparison/stimuli/pair_far_infinite_descent.png",
+   "answer": "infinite_descent",
+   "meta": {
+    "target_scene": "nesting_dolls",
+    "far_scene": "gen:far_src_infinite_descent",
+    "foil": "contraction_fixed_point/scene_you_are_here"
+   }
+  },
+  {
+   "task": "comparison",
+   "condition": "single",
+   "id": "cmp:single:coprime_orbit",
+   "motif": "coprime_orbit",
+   "image": "motifs/coprime_orbit/scene_string_art_star.png",
+   "answer": "coprime_orbit",
+   "meta": {
+    "target_scene": "string_art_star",
+    "far_scene": "gen:far_src_coprime_orbit",
+    "foil": "cycle/scene_ouroboros"
+   }
+  },
+  {
+   "task": "comparison",
+   "condition": "near",
+   "id": "cmp:near:coprime_orbit",
+   "motif": "coprime_orbit",
+   "image": "exp2_comparison/stimuli/pair_near_coprime_orbit.png",
+   "answer": "coprime_orbit",
+   "meta": {
+    "target_scene": "string_art_star",
+    "far_scene": "gen:far_src_coprime_orbit",
+    "foil": "cycle/scene_ouroboros"
+   }
+  },
+  {
+   "task": "comparison",
+   "condition": "far",
+   "id": "cmp:far:coprime_orbit",
+   "motif": "coprime_orbit",
+   "image": "exp2_comparison/stimuli/pair_far_coprime_orbit.png",
+   "answer": "coprime_orbit",
+   "meta": {
+    "target_scene": "string_art_star",
+    "far_scene": "gen:far_src_coprime_orbit",
+    "foil": "cycle/scene_ouroboros"
+   }
+  },
+  {
+   "task": "comparison",
+   "condition": "foil",
+   "id": "cmp:foil:coprime_orbit",
+   "motif": "coprime_orbit",
+   "image": "exp2_comparison/stimuli/pair_foil_coprime_orbit.png",
+   "answer": "coprime_orbit",
+   "meta": {
+    "target_scene": "string_art_star",
+    "far_scene": "gen:far_src_coprime_orbit",
+    "foil": "cycle/scene_ouroboros"
+   }
+  },
+  {
+   "task": "comparison",
+   "condition": "instructed",
+   "id": "cmp:instructed:coprime_orbit",
+   "motif": "coprime_orbit",
+   "image": "exp2_comparison/stimuli/pair_far_coprime_orbit.png",
+   "answer": "coprime_orbit",
+   "meta": {
+    "target_scene": "string_art_star",
+    "far_scene": "gen:far_src_coprime_orbit",
+    "foil": "cycle/scene_ouroboros"
+   }
+  },
+  {
+   "task": "comparison",
+   "condition": "single",
+   "id": "cmp:single:pigeonhole",
+   "motif": "pigeonhole",
+   "image": "motifs/pigeonhole/scene_swallow_nests.png",
+   "answer": "pigeonhole",
+   "meta": {
+    "target_scene": "swallow_nests",
+    "far_scene": "gen:far_src_pigeonhole",
+    "foil": "convergence/scene_homing_birds"
+   }
+  },
+  {
+   "task": "comparison",
+   "condition": "near",
+   "id": "cmp:near:pigeonhole",
+   "motif": "pigeonhole",
+   "image": "exp2_comparison/stimuli/pair_near_pigeonhole.png",
+   "answer": "pigeonhole",
+   "meta": {
+    "target_scene": "swallow_nests",
+    "far_scene": "gen:far_src_pigeonhole",
+    "foil": "convergence/scene_homing_birds"
+   }
+  },
+  {
+   "task": "comparison",
+   "condition": "far",
+   "id": "cmp:far:pigeonhole",
+   "motif": "pigeonhole",
+   "image": "exp2_comparison/stimuli/pair_far_pigeonhole.png",
+   "answer": "pigeonhole",
+   "meta": {
+    "target_scene": "swallow_nests",
+    "far_scene": "gen:far_src_pigeonhole",
+    "foil": "convergence/scene_homing_birds"
+   }
+  },
+  {
+   "task": "comparison",
+   "condition": "foil",
+   "id": "cmp:foil:pigeonhole",
+   "motif": "pigeonhole",
+   "image": "exp2_comparison/stimuli/pair_foil_pigeonhole.png",
+   "answer": "pigeonhole",
+   "meta": {
+    "target_scene": "swallow_nests",
+    "far_scene": "gen:far_src_pigeonhole",
+    "foil": "convergence/scene_homing_birds"
+   }
+  },
+  {
+   "task": "comparison",
+   "condition": "instructed",
+   "id": "cmp:instructed:pigeonhole",
+   "motif": "pigeonhole",
+   "image": "exp2_comparison/stimuli/pair_far_pigeonhole.png",
+   "answer": "pigeonhole",
+   "meta": {
+    "target_scene": "swallow_nests",
+    "far_scene": "gen:far_src_pigeonhole",
+    "foil": "convergence/scene_homing_birds"
+   }
+  },
+  {
+   "task": "comparison",
+   "condition": "single",
+   "id": "cmp:single:projective_duality",
+   "motif": "projective_duality",
+   "image": "motifs/projective_duality/scene_spiderweb_dewfall.png",
+   "answer": "projective_duality",
+   "meta": {
+    "target_scene": "spiderweb_dewfall",
+    "far_scene": "gen:far_src_projective_duality",
+    "foil": "isomorphism/scene_constellations"
+   }
+  },
+  {
+   "task": "comparison",
+   "condition": "near",
+   "id": "cmp:near:projective_duality",
+   "motif": "projective_duality",
+   "image": "exp2_comparison/stimuli/pair_near_projective_duality.png",
+   "answer": "projective_duality",
+   "meta": {
+    "target_scene": "spiderweb_dewfall",
+    "far_scene": "gen:far_src_projective_duality",
+    "foil": "isomorphism/scene_constellations"
+   }
+  },
+  {
+   "task": "comparison",
+   "condition": "far",
+   "id": "cmp:far:projective_duality",
+   "motif": "projective_duality",
+   "image": "exp2_comparison/stimuli/pair_far_projective_duality.png",
+   "answer": "projective_duality",
+   "meta": {
+    "target_scene": "spiderweb_dewfall",
+    "far_scene": "gen:far_src_projective_duality",
+    "foil": "isomorphism/scene_constellations"
+   }
+  },
+  {
+   "task": "comparison",
+   "condition": "foil",
+   "id": "cmp:foil:projective_duality",
+   "motif": "projective_duality",
+   "image": "exp2_comparison/stimuli/pair_foil_projective_duality.png",
+   "answer": "projective_duality",
+   "meta": {
+    "target_scene": "spiderweb_dewfall",
+    "far_scene": "gen:far_src_projective_duality",
+    "foil": "isomorphism/scene_constellations"
+   }
+  },
+  {
+   "task": "comparison",
+   "condition": "instructed",
+   "id": "cmp:instructed:projective_duality",
+   "motif": "projective_duality",
+   "image": "exp2_comparison/stimuli/pair_far_projective_duality.png",
+   "answer": "projective_duality",
+   "meta": {
+    "target_scene": "spiderweb_dewfall",
+    "far_scene": "gen:far_src_projective_duality",
+    "foil": "isomorphism/scene_constellations"
+   }
+  },
+  {
+   "task": "comparison",
+   "condition": "single",
+   "id": "cmp:single:contraction_fixed_point",
+   "motif": "contraction_fixed_point",
+   "image": "motifs/contraction_fixed_point/scene_you_are_here.png",
+   "answer": "contraction_fixed_point",
+   "meta": {
+    "target_scene": "you_are_here",
+    "far_scene": "gen:far_src_contraction_fixed_point",
+    "foil": "spiral/scene_nautilus"
+   }
+  },
+  {
+   "task": "comparison",
+   "condition": "near",
+   "id": "cmp:near:contraction_fixed_point",
+   "motif": "contraction_fixed_point",
+   "image": "exp2_comparison/stimuli/pair_near_contraction_fixed_point.png",
+   "answer": "contraction_fixed_point",
+   "meta": {
+    "target_scene": "you_are_here",
+    "far_scene": "gen:far_src_contraction_fixed_point",
+    "foil": "spiral/scene_nautilus"
+   }
+  },
+  {
+   "task": "comparison",
+   "condition": "far",
+   "id": "cmp:far:contraction_fixed_point",
+   "motif": "contraction_fixed_point",
+   "image": "exp2_comparison/stimuli/pair_far_contraction_fixed_point.png",
+   "answer": "contraction_fixed_point",
+   "meta": {
+    "target_scene": "you_are_here",
+    "far_scene": "gen:far_src_contraction_fixed_point",
+    "foil": "spiral/scene_nautilus"
+   }
+  },
+  {
+   "task": "comparison",
+   "condition": "foil",
+   "id": "cmp:foil:contraction_fixed_point",
+   "motif": "contraction_fixed_point",
+   "image": "exp2_comparison/stimuli/pair_foil_contraction_fixed_point.png",
+   "answer": "contraction_fixed_point",
+   "meta": {
+    "target_scene": "you_are_here",
+    "far_scene": "gen:far_src_contraction_fixed_point",
+    "foil": "spiral/scene_nautilus"
+   }
+  },
+  {
+   "task": "comparison",
+   "condition": "instructed",
+   "id": "cmp:instructed:contraction_fixed_point",
+   "motif": "contraction_fixed_point",
+   "image": "exp2_comparison/stimuli/pair_far_contraction_fixed_point.png",
+   "answer": "contraction_fixed_point",
+   "meta": {
+    "target_scene": "you_are_here",
+    "far_scene": "gen:far_src_contraction_fixed_point",
+    "foil": "spiral/scene_nautilus"
+   }
+  },
+  {
+   "task": "comparison",
+   "condition": "single",
+   "id": "cmp:single:aperiodic_tiling",
+   "motif": "aperiodic_tiling",
+   "image": "motifs/aperiodic_tiling/scene_penrose_floor.png",
+   "answer": "aperiodic_tiling",
+   "meta": {
+    "target_scene": "penrose_floor",
+    "far_scene": "gen:far_src_aperiodic_tiling",
+    "foil": "tiling/scene_salt_pans"
+   }
+  },
+  {
+   "task": "comparison",
+   "condition": "near",
+   "id": "cmp:near:aperiodic_tiling",
+   "motif": "aperiodic_tiling",
+   "image": "exp2_comparison/stimuli/pair_near_aperiodic_tiling.png",
+   "answer": "aperiodic_tiling",
+   "meta": {
+    "target_scene": "penrose_floor",
+    "far_scene": "gen:far_src_aperiodic_tiling",
+    "foil": "tiling/scene_salt_pans"
+   }
+  },
+  {
+   "task": "comparison",
+   "condition": "far",
+   "id": "cmp:far:aperiodic_tiling",
+   "motif": "aperiodic_tiling",
+   "image": "exp2_comparison/stimuli/pair_far_aperiodic_tiling.png",
+   "answer": "aperiodic_tiling",
+   "meta": {
+    "target_scene": "penrose_floor",
+    "far_scene": "gen:far_src_aperiodic_tiling",
+    "foil": "tiling/scene_salt_pans"
+   }
+  },
+  {
+   "task": "comparison",
+   "condition": "foil",
+   "id": "cmp:foil:aperiodic_tiling",
+   "motif": "aperiodic_tiling",
+   "image": "exp2_comparison/stimuli/pair_foil_aperiodic_tiling.png",
+   "answer": "aperiodic_tiling",
+   "meta": {
+    "target_scene": "penrose_floor",
+    "far_scene": "gen:far_src_aperiodic_tiling",
+    "foil": "tiling/scene_salt_pans"
+   }
+  },
+  {
+   "task": "comparison",
+   "condition": "instructed",
+   "id": "cmp:instructed:aperiodic_tiling",
+   "motif": "aperiodic_tiling",
+   "image": "exp2_comparison/stimuli/pair_far_aperiodic_tiling.png",
+   "answer": "aperiodic_tiling",
+   "meta": {
+    "target_scene": "penrose_floor",
+    "far_scene": "gen:far_src_aperiodic_tiling",
+    "foil": "tiling/scene_salt_pans"
+   }
+  }
+ ]
+}

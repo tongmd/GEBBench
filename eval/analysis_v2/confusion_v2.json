@@ -1,0 +1,360 @@
+{
+ "seed": 20260721,
+ "n_perm": 10000,
+ "models": [
+  "api_gpt-5.5",
+  "api_gpt-5.2",
+  "api_claude-opus-4-8",
+  "qwen2.5-vl-32b",
+  "qwen2-vl-7b",
+  "qwen2.5-14b",
+  "qwen2.5-7b",
+  "deepseek-coder-v2-lite"
+ ],
+ "id_tasks": [
+  "scene2motif",
+  "skeleton2motif",
+  "story2motif",
+  "theorem2motif"
+ ],
+ "meta": {
+  "n_id_records": 2463,
+  "n_wrong_total": 1081,
+  "n_invalid_pred": 16,
+  "n_valid_errors": 1065
+ },
+ "distance_share": {
+  "n_errors": 1065,
+  "counts": {
+   "1": 471,
+   "2": 325,
+   "3": 269
+  },
+  "share": {
+   "1": 0.4422535211267606,
+   "2": 0.3051643192488263,
+   "3": 0.25258215962441316
+  },
+  "chance_share": {
+   "1": 0.20477308294208324,
+   "2": 0.33521126760565506,
+   "3": 0.4600156494523472
+  },
+  "d1_over_chance": 2.159724875812144,
+  "perm_p_d1": 9.999000099990002e-05
+ },
+ "mantel_confusion_vs_family": {
+  "r": 0.3459523658267987,
+  "p": 9.999000099990002e-05
+ },
+ "scene_skeleton_subset": {
+  "n_errors": 536,
+  "n_same_family": 272,
+  "same_family_share": 0.5074626865671642,
+  "mantel_r": 0.31863599666560355,
+  "mantel_p": 9.999000099990002e-05,
+  "mean_count_inside": 4.25,
+  "mean_count_outside": 1.11864406779661,
+  "inside_over_outside": 3.7992424242424248,
+  "family_dyad_share": 0.21333333333333335
+ },
+ "ged_concentration": {
+  "pooled": {
+   "n_errors": 1065,
+   "mean_percentile_rank": 0.3838130230659318,
+   "median_percentile_rank": 0.30434782608695654,
+   "null_mean": 0.5002144641763622,
+   "null_sd": 0.009180183590517432,
+   "p_perm_lower": 9.999000099990002e-05,
+   "share_in_nearest_quartile": 0.3211267605633803
+  },
+  "frontier": {
+   "n_errors": 300,
+   "mean_percentile_rank": 0.36768115942028984,
+   "median_percentile_rank": 0.30434782608695654,
+   "null_mean": 0.4998143115942029,
+   "null_sd": 0.01730970226037216,
+   "p_perm_lower": 9.999000099990002e-05,
+   "share_in_nearest_quartile": 0.36
+  },
+  "vision_tasks": {
+   "n_errors": 536,
+   "mean_percentile_rank": 0.4269143413367943,
+   "median_percentile_rank": 0.391304347826087,
+   "null_mean": 0.5000315298507462,
+   "null_sd": 0.012973162818774288,
+   "p_perm_lower": 9.999000099990002e-05,
+   "share_in_nearest_quartile": 0.31716417910447764
+  },
+  "text_tasks": {
+   "n_errors": 529,
+   "mean_percentile_rank": 0.34014136598997285,
+   "median_percentile_rank": 0.2608695652173913,
+   "null_mean": 0.49989710692857714,
+   "null_sd": 0.013152703870716789,
+   "p_perm_lower": 9.999000099990002e-05,
+   "share_in_nearest_quartile": 0.32514177693761814
+  }
+ },
+ "dyadic_family_ged": {
+  "beta": {
+   "family": 0.41181596860165043,
+   "ged_sim": 0.070297193493215
+  },
+  "p_perm": {
+   "family": 0.00019998000199980003,
+   "ged_sim": 0.5916408359164084
+  },
+  "n_errors": 1065
+ },
+ "cross_model": {
+  "api_gpt-5.5__api_gpt-5.2": {
+   "n_shared": 405,
+   "kappa": 0.5920841571231394,
+   "n_both_wrong": 56,
+   "n_same_wrong_pred": 42,
+   "same_wrong_share": 0.75
+  },
+  "api_gpt-5.5__api_claude-opus-4-8": {
+   "n_shared": 405,
+   "kappa": 0.38107463781404755,
+   "n_both_wrong": 56,
+   "n_same_wrong_pred": 30,
+   "same_wrong_share": 0.5357142857142857
+  },
+  "api_gpt-5.2__api_claude-opus-4-8": {
+   "n_shared": 405,
+   "kappa": 0.4381475250154965,
+   "n_both_wrong": 68,
+   "n_same_wrong_pred": 32,
+   "same_wrong_share": 0.47058823529411764
+  },
+  "api_gpt-5.5__qwen2-vl-7b": {
+   "n_shared": 405,
+   "kappa": 0.0886273152155098,
+   "n_both_wrong": 64,
+   "n_same_wrong_pred": 9,
+   "same_wrong_share": 0.140625
+  },
+  "api_gpt-5.2__qwen2-vl-7b": {
+   "n_shared": 405,
+   "kappa": 0.13307170888333925,
+   "n_both_wrong": 82,
+   "n_same_wrong_pred": 13,
+   "same_wrong_share": 0.15853658536585366
+  },
+  "api_claude-opus-4-8__qwen2-vl-7b": {
+   "n_shared": 405,
+   "kappa": 0.22518862449216473,
+   "n_both_wrong": 124,
+   "n_same_wrong_pred": 25,
+   "same_wrong_share": 0.20161290322580644
+  }
+ },
+ "per_motif_recall": {
+  "self_reference": {
+   "recall": 0.35398230088495575,
+   "n": 113
+  },
+  "recursion": {
+   "recall": 0.48672566371681414,
+   "n": 113
+  },
+  "nesting": {
+   "recall": 0.39823008849557523,
+   "n": 113
+  },
+  "cycle": {
+   "recall": 0.8425925925925926,
+   "n": 108
+  },
+  "symmetry": {
+   "recall": 0.6601941747572816,
+   "n": 103
+  },
+  "alternation": {
+   "recall": 0.8849557522123894,
+   "n": 113
+  },
+  "spiral": {
+   "recall": 0.7522123893805309,
+   "n": 113
+  },
+  "convergence": {
+   "recall": 0.6116504854368932,
+   "n": 103
+  },
+  "bottleneck": {
+   "recall": 0.6504854368932039,
+   "n": 103
+  },
+  "symmetry_breaking": {
+   "recall": 0.5398230088495575,
+   "n": 113
+  },
+  "strange_loop": {
+   "recall": 0.5256410256410257,
+   "n": 78
+  },
+  "figure_ground": {
+   "recall": 0.18823529411764706,
+   "n": 85
+  },
+  "isomorphism": {
+   "recall": 0.5048543689320388,
+   "n": 103
+  },
+  "mobius": {
+   "recall": 0.6796116504854369,
+   "n": 103
+  },
+  "braiding": {
+   "recall": 0.6213592233009708,
+   "n": 103
+  },
+  "interference": {
+   "recall": 0.49473684210526314,
+   "n": 95
+  },
+  "tiling": {
+   "recall": 0.6804123711340206,
+   "n": 97
+  },
+  "hub": {
+   "recall": 0.5663716814159292,
+   "n": 113
+  },
+  "diagonalization": {
+   "recall": 0.5128205128205128,
+   "n": 78
+  },
+  "infinite_descent": {
+   "recall": 0.5060240963855421,
+   "n": 83
+  },
+  "coprime_orbit": {
+   "recall": 0.7475728155339806,
+   "n": 103
+  },
+  "pigeonhole": {
+   "recall": 0.6794871794871795,
+   "n": 78
+  },
+  "projective_duality": {
+   "recall": 0.3010752688172043,
+   "n": 93
+  },
+  "contraction_fixed_point": {
+   "recall": 0.2653061224489796,
+   "n": 98
+  },
+  "aperiodic_tiling": {
+   "recall": 0.3620689655172414,
+   "n": 58
+  }
+ },
+ "hardest_bottom5": [
+  {
+   "motif": "figure_ground",
+   "recall": 0.18823529411764706,
+   "n": 85
+  },
+  {
+   "motif": "contraction_fixed_point",
+   "recall": 0.2653061224489796,
+   "n": 98
+  },
+  {
+   "motif": "projective_duality",
+   "recall": 0.3010752688172043,
+   "n": 93
+  },
+  {
+   "motif": "self_reference",
+   "recall": 0.35398230088495575,
+   "n": 113
+  },
+  {
+   "motif": "aperiodic_tiling",
+   "recall": 0.3620689655172414,
+   "n": 58
+  }
+ ],
+ "top_confusions": [
+  {
+   "true": "braiding",
+   "pred": "cycle",
+   "count": 29
+  },
+  {
+   "true": "contraction_fixed_point",
+   "pred": "recursion",
+   "count": 28
+  },
+  {
+   "true": "self_reference",
+   "pred": "recursion",
+   "count": 27
+  },
+  {
+   "true": "self_reference",
+   "pred": "nesting",
+   "count": 27
+  },
+  {
+   "true": "figure_ground",
+   "pred": "tiling",
+   "count": 24
+  },
+  {
+   "true": "symmetry",
+   "pred": "cycle",
+   "count": 23
+  },
+  {
+   "true": "projective_duality",
+   "pred": "isomorphism",
+   "count": 23
+  },
+  {
+   "true": "strange_loop",
+   "pred": "cycle",
+   "count": 18
+  },
+  {
+   "true": "diagonalization",
+   "pred": "alternation",
+   "count": 18
+  },
+  {
+   "true": "isomorphism",
+   "pred": "symmetry",
+   "count": 17
+  },
+  {
+   "true": "nesting",
+   "pred": "spiral",
+   "count": 16
+  },
+  {
+   "true": "spiral",
+   "pred": "cycle",
+   "count": 16
+  },
+  {
+   "true": "nesting",
+   "pred": "recursion",
+   "count": 15
+  },
+  {
+   "true": "figure_ground",
+   "pred": "alternation",
+   "count": 15
+  },
+  {
+   "true": "mobius",
+   "pred": "alternation",
+   "count": 15
+  }
+ ]
+}

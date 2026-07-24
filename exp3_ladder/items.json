@@ -1,0 +1,3797 @@
+{
+ "menu": "- self_reference: 对象内含一句对自身的描述且逐字核对为真——一步指回自己，不经层级攀升，也不指涉第二套系统\n- recursion: 整体由更小的自身按同一规则生成，入几层必出几层，终止于基例后逐层原路返回\n- nesting: 每进入新一层便不再返回上一层，深度只增不减\n- cycle: 沿同一层级的因果箭头依次经过 n≥3 个互不相同的事件后回到出发事件，一圈即逐字复原（不升级、不放大、不翻面），各点地位平等、无层级\n- symmetry: 事件序列倒读与正读逐项相同，沿时间中点翻转逐点重合\n- alternation: 仅两种状态严格轮流出现：相邻必异、隔一必同，周期恒为二，无一例外\n- spiral: 每转回同一方位就按同一比例长大一号，绝不回到原尺度\n- convergence: 多条互不知晓的线索各自推进，最终全部汇入同一终点且到此为止\n- bottleneck: 两岸各自内部多路互通，而两岸之间的一切通路必经同一中途之点、过点后各自继续；删去该点，全图恰裂为仍各自连通的两大块，而非碎成孤点\n- symmetry_breaking: 同一规则覆盖全场，唯有一处可精确定位的违例，该违例唯一、其余处处无例外\n- strange_loop: 沿「谁在叙述谁」的层级逐步上行，最后一步却回到起点，层级无法赋值\n- figure_ground: 图与底互补拼满全域且底自成一形：下半以上半之底为图、以上半之图为底，所述事件及其顺序保持不变（非逆序，亦非两套词汇之间的互译）\n- isomorphism: 两套素材完全不同的事物之间存在一部保持全部运算与关系的一一对应字典，同序逐项可译、无一例外\n- mobius: 沿带绕行一圈回到原地却定向翻转（左右互换），绕两圈才逐点复原\n- braiding: 三股以上的线几经相邻交叉，末端排列恰等于全部交叉依次复合之积，先后次序不可随意对调\n- interference: 两个周期不同、各自单调重复的模式，叠加后浮现出比任一原周期都大的新周期\n- tiling: 把整幅图案挪动一格与原图完全重合，无缝亦无叠、无一例外\n- hub: 任意两端点之间只隔中心一点；去掉中心，全图碎成孤点\n- diagonalization: 一张按行枚举的表,沿对角线逐格取反造出的新行,与表中第 n 行保证性地在第 n 位不同,故与每一行都不相等——永在表外。区别于 self_reference(对象一步指回自己):对角元素并不谈论自己,矛头指向整张表的『全部枚举』而非自身。关键区别于 symmetry_breaking(整幅规整图案中恰一处孤立违例):这里不是一格孤立反常,而是沿移动对角线的 n 处系统性差异——第 n 行差在第 n 位,位置随行逐格右移、每行恰一处,由这套构造保证『不等于任何一行』;symmetry_breaking 只是单点瑕疵,既不逃逸也不否证任何枚举。\n- infinite_descent: 每个案例都强迫出一个严格更小的同类案例，而自然数没有无底的下降链，于是第一个案例根本不存在——证明的刀锋向回挥：不是推进到终点，而是取消开端。与 recursion 恰相反：递归入几层出几层、靠基例的存在而成立，递降靠基例的缺席而把一切见证者判为虚无；与 zeno_halving 不同：芝诺的无穷步按定比缩短、总长有限、旅程完成，递降的下降量任意但每步是整数、链条被良序原理禁止、结论是“不可能”；与 contraction_fixed_point 不同：压缩迭代无穷进行并收敛于一个真实存在的不动点，递降链不收敛于任何点、必须在有限步内撞上地板 1、于是整条链连同起点被判不存在；与 ordinal_ascent 方向相反：序数攀升向上无界而每级真实存在，递降向下有底而全链虚妄；与 invariant_barrier 不同：不诉诸任何守恒量，杀招只有一条——严格变小不能无穷。\n- coprime_orbit: 一圈 n 点上以固定跨步 k 跳跃连线,步幅与圈长互素则一笔遍历所有点方才闭合,不互素则圈裂成 gcd 份——与 cycle(相邻箭头首尾闭合一圈)不同在于大跨步织出星形且遍历性以互素为条件、且有不互素即分裂的失败模式;与 interference(两个独立周期叠加浮现 lcm 更大周期)不同在于只有一条轨道、一个数论条件;与 hub(经中心中转)不同在于无任何中心点,遍历纯由 gcd(k,n)=1 担保。\n- pigeonhole: 物多于笼则必有同笼:证得了“一定相撞”,却指不出“撞在何处”——与 convergence(所有线知情或不知情地终于同一「已知」点)不同:这里只由计数保证某个「未指明」之处至少二者相遇,并不构造见证者;与 bottleneck(一切通路被迫经同一中途点)不同:这里没有任何强制路径,也无中转枢纽,只有一次计数。\n- projective_duality: 同一体系内两类角色整体互换后,一切关系命题依然成立,且换两次逐字复原(对合 σ²=id)。排除:区别于 isomorphism(两套异质素材间的保关系字典)——对偶是一套素材内部的角色对调且必为对合;区别于 figure_ground(一幅画面上图与底互补拼满)——对偶产出两幅各自完整的图,不靠负形;区别于 transformed_canon(同一主题经固定变换在滞后声部并行重现)——对偶是先后整体重述、交换角色词汇而命题真值不变,非声部级音高/时间变换;区别于 chirality(镜像与原物不可叠合、以『合不上』为要点)——对偶的两述在同体系内都成立且互换后严丝还原;区别于 mobius(须沿路径绕行一圈方获翻转)——对偶无路径、是整体即时的角色对调;区别于 symmetry(逐项逆序回文)——对偶不倒转顺序,只换角色。\n- contraction_fixed_point: 同一条规则反复施于自己的输出,每步与终点的距离按定比 q<1 缩小,最终停在被规则原样送回自身的那一点——终点不是预先宣布的,而是由 f(x*)=x* 的不动性从规则内部选出。区别于 spiral(定比放大、永不回原尺度):方向相反且有真实终点;区别于 convergence(多条互不知晓的线终于一处):这里自始至终只有一条自迭代链;区别于 recursion(入几层出几层、层层返回调用者):迭代只向前塌缩、绝无返回;区别于 zeno_halving(无穷缩段首尾相接,看点在『无穷之和恰为有限整体』):这里看点在终点被映射固定,核查的是 f(x*)=x* 而非路程求和;区别于 negative_feedback(围绕篇首明示的目标正负过冲交替纠偏):这里目标不得预先明示、亦不要求符号交替,单侧塌缩即可,终点由不动性自证。\n- aperiodic_tiling: 处处遵守同一套局部匹配规则、无缝铺满全域,却不存在任何平移使整幅复原;同时任一局部图案在有界间隙内处处再现——'似曾相识,永不重演'。排除条款:与 tiling 不同(彼挪一格即整体重合,此处证明无任何平移周期);与 symmetry_breaking 不同(彼有周期背景且恰有一处可定位的违例,此处无一处违例、却根本无周期可言);与 spiral 不同(φ 在此是两种瓦片的频率比,不是逐层定比放大的生长,图形无自相似缩放中心);与 transformed_canon 不同(彼是同一主题经固定变换后逐字再现,此处任何块都不以固定间隔精确重现);与 interference 不同(彼两周期叠加仍得 lcm 大周期,此处极限结构频率为无理数,永无周期)。",
+ "items": [
+  {
+   "task": "scene2motif",
+   "id": "ladder:recursion:L0_s0",
+   "image": "motifs/recursion/skeleton_tree.png",
+   "answer": "recursion",
+   "level": 0,
+   "seed": 0
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:recursion:L1_s0",
+   "image": "exp3_ladder/images/recursion/L1_s0.png",
+   "answer": "recursion",
+   "level": 1,
+   "seed": 0
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:recursion:L1_s1",
+   "image": "exp3_ladder/images/recursion/L1_s1.png",
+   "answer": "recursion",
+   "level": 1,
+   "seed": 1
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:recursion:L1_s2",
+   "image": "exp3_ladder/images/recursion/L1_s2.png",
+   "answer": "recursion",
+   "level": 1,
+   "seed": 2
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:recursion:L2_s0",
+   "image": "exp3_ladder/images/recursion/L2_s0.png",
+   "answer": "recursion",
+   "level": 2,
+   "seed": 0
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:recursion:L2_s1",
+   "image": "exp3_ladder/images/recursion/L2_s1.png",
+   "answer": "recursion",
+   "level": 2,
+   "seed": 1
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:recursion:L2_s2",
+   "image": "exp3_ladder/images/recursion/L2_s2.png",
+   "answer": "recursion",
+   "level": 2,
+   "seed": 2
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:recursion:L3_s0",
+   "image": "exp3_ladder/images/recursion/L3_s0.png",
+   "answer": "recursion",
+   "level": 3,
+   "seed": 0
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:recursion:L3_s1",
+   "image": "exp3_ladder/images/recursion/L3_s1.png",
+   "answer": "recursion",
+   "level": 3,
+   "seed": 1
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:recursion:L3_s2",
+   "image": "exp3_ladder/images/recursion/L3_s2.png",
+   "answer": "recursion",
+   "level": 3,
+   "seed": 2
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:recursion:L4_s0",
+   "image": "exp3_ladder/images/recursion/L4_s0.png",
+   "answer": "recursion",
+   "level": 4,
+   "seed": 0
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:recursion:L4_s1",
+   "image": "exp3_ladder/images/recursion/L4_s1.png",
+   "answer": "recursion",
+   "level": 4,
+   "seed": 1
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:recursion:L4_s2",
+   "image": "exp3_ladder/images/recursion/L4_s2.png",
+   "answer": "recursion",
+   "level": 4,
+   "seed": 2
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:recursion:L5_s0",
+   "image": "exp3_ladder/images/recursion/L5_s0.png",
+   "answer": "recursion",
+   "level": 5,
+   "seed": 0
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:recursion:L5_s1",
+   "image": "exp3_ladder/images/recursion/L5_s1.png",
+   "answer": "recursion",
+   "level": 5,
+   "seed": 1
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:recursion:L5_s2",
+   "image": "exp3_ladder/images/recursion/L5_s2.png",
+   "answer": "recursion",
+   "level": 5,
+   "seed": 2
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:recursion:L6_s0",
+   "image": "exp3_ladder/images/recursion/L6_s0.png",
+   "answer": "recursion",
+   "level": 6,
+   "seed": 0
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:recursion:L6_s1",
+   "image": "exp3_ladder/images/recursion/L6_s1.png",
+   "answer": "recursion",
+   "level": 6,
+   "seed": 1
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:recursion:L6_s2",
+   "image": "exp3_ladder/images/recursion/L6_s2.png",
+   "answer": "recursion",
+   "level": 6,
+   "seed": 2
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:nesting:L0_s0",
+   "image": "motifs/nesting/skeleton_concentric.png",
+   "answer": "nesting",
+   "level": 0,
+   "seed": 0
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:nesting:L1_s0",
+   "image": "exp3_ladder/images/nesting/L1_s0.png",
+   "answer": "nesting",
+   "level": 1,
+   "seed": 0
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:nesting:L1_s1",
+   "image": "exp3_ladder/images/nesting/L1_s1.png",
+   "answer": "nesting",
+   "level": 1,
+   "seed": 1
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:nesting:L1_s2",
+   "image": "exp3_ladder/images/nesting/L1_s2.png",
+   "answer": "nesting",
+   "level": 1,
+   "seed": 2
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:nesting:L2_s0",
+   "image": "exp3_ladder/images/nesting/L2_s0.png",
+   "answer": "nesting",
+   "level": 2,
+   "seed": 0
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:nesting:L2_s1",
+   "image": "exp3_ladder/images/nesting/L2_s1.png",
+   "answer": "nesting",
+   "level": 2,
+   "seed": 1
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:nesting:L2_s2",
+   "image": "exp3_ladder/images/nesting/L2_s2.png",
+   "answer": "nesting",
+   "level": 2,
+   "seed": 2
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:nesting:L3_s0",
+   "image": "exp3_ladder/images/nesting/L3_s0.png",
+   "answer": "nesting",
+   "level": 3,
+   "seed": 0
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:nesting:L3_s1",
+   "image": "exp3_ladder/images/nesting/L3_s1.png",
+   "answer": "nesting",
+   "level": 3,
+   "seed": 1
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:nesting:L3_s2",
+   "image": "exp3_ladder/images/nesting/L3_s2.png",
+   "answer": "nesting",
+   "level": 3,
+   "seed": 2
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:nesting:L4_s0",
+   "image": "exp3_ladder/images/nesting/L4_s0.png",
+   "answer": "nesting",
+   "level": 4,
+   "seed": 0
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:nesting:L4_s1",
+   "image": "exp3_ladder/images/nesting/L4_s1.png",
+   "answer": "nesting",
+   "level": 4,
+   "seed": 1
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:nesting:L4_s2",
+   "image": "exp3_ladder/images/nesting/L4_s2.png",
+   "answer": "nesting",
+   "level": 4,
+   "seed": 2
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:nesting:L5_s0",
+   "image": "exp3_ladder/images/nesting/L5_s0.png",
+   "answer": "nesting",
+   "level": 5,
+   "seed": 0
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:nesting:L5_s1",
+   "image": "exp3_ladder/images/nesting/L5_s1.png",
+   "answer": "nesting",
+   "level": 5,
+   "seed": 1
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:nesting:L5_s2",
+   "image": "exp3_ladder/images/nesting/L5_s2.png",
+   "answer": "nesting",
+   "level": 5,
+   "seed": 2
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:nesting:L6_s0",
+   "image": "exp3_ladder/images/nesting/L6_s0.png",
+   "answer": "nesting",
+   "level": 6,
+   "seed": 0
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:nesting:L6_s1",
+   "image": "exp3_ladder/images/nesting/L6_s1.png",
+   "answer": "nesting",
+   "level": 6,
+   "seed": 1
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:nesting:L6_s2",
+   "image": "exp3_ladder/images/nesting/L6_s2.png",
+   "answer": "nesting",
+   "level": 6,
+   "seed": 2
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:cycle:L0_s0",
+   "image": "motifs/cycle/skeleton_ring.png",
+   "answer": "cycle",
+   "level": 0,
+   "seed": 0
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:cycle:L1_s0",
+   "image": "exp3_ladder/images/cycle/L1_s0.png",
+   "answer": "cycle",
+   "level": 1,
+   "seed": 0
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:cycle:L1_s1",
+   "image": "exp3_ladder/images/cycle/L1_s1.png",
+   "answer": "cycle",
+   "level": 1,
+   "seed": 1
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:cycle:L1_s2",
+   "image": "exp3_ladder/images/cycle/L1_s2.png",
+   "answer": "cycle",
+   "level": 1,
+   "seed": 2
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:cycle:L2_s0",
+   "image": "exp3_ladder/images/cycle/L2_s0.png",
+   "answer": "cycle",
+   "level": 2,
+   "seed": 0
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:cycle:L2_s1",
+   "image": "exp3_ladder/images/cycle/L2_s1.png",
+   "answer": "cycle",
+   "level": 2,
+   "seed": 1
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:cycle:L2_s2",
+   "image": "exp3_ladder/images/cycle/L2_s2.png",
+   "answer": "cycle",
+   "level": 2,
+   "seed": 2
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:cycle:L3_s0",
+   "image": "exp3_ladder/images/cycle/L3_s0.png",
+   "answer": "cycle",
+   "level": 3,
+   "seed": 0
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:cycle:L3_s1",
+   "image": "exp3_ladder/images/cycle/L3_s1.png",
+   "answer": "cycle",
+   "level": 3,
+   "seed": 1
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:cycle:L3_s2",
+   "image": "exp3_ladder/images/cycle/L3_s2.png",
+   "answer": "cycle",
+   "level": 3,
+   "seed": 2
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:cycle:L4_s0",
+   "image": "exp3_ladder/images/cycle/L4_s0.png",
+   "answer": "cycle",
+   "level": 4,
+   "seed": 0
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:cycle:L4_s1",
+   "image": "exp3_ladder/images/cycle/L4_s1.png",
+   "answer": "cycle",
+   "level": 4,
+   "seed": 1
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:cycle:L4_s2",
+   "image": "exp3_ladder/images/cycle/L4_s2.png",
+   "answer": "cycle",
+   "level": 4,
+   "seed": 2
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:cycle:L5_s0",
+   "image": "exp3_ladder/images/cycle/L5_s0.png",
+   "answer": "cycle",
+   "level": 5,
+   "seed": 0
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:cycle:L5_s1",
+   "image": "exp3_ladder/images/cycle/L5_s1.png",
+   "answer": "cycle",
+   "level": 5,
+   "seed": 1
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:cycle:L5_s2",
+   "image": "exp3_ladder/images/cycle/L5_s2.png",
+   "answer": "cycle",
+   "level": 5,
+   "seed": 2
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:cycle:L6_s0",
+   "image": "exp3_ladder/images/cycle/L6_s0.png",
+   "answer": "cycle",
+   "level": 6,
+   "seed": 0
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:cycle:L6_s1",
+   "image": "exp3_ladder/images/cycle/L6_s1.png",
+   "answer": "cycle",
+   "level": 6,
+   "seed": 1
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:cycle:L6_s2",
+   "image": "exp3_ladder/images/cycle/L6_s2.png",
+   "answer": "cycle",
+   "level": 6,
+   "seed": 2
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:self_reference:L0_s0",
+   "image": "motifs/self_reference/skeleton_frames.png",
+   "answer": "self_reference",
+   "level": 0,
+   "seed": 0
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:self_reference:L1_s0",
+   "image": "exp3_ladder/images/self_reference/L1_s0.png",
+   "answer": "self_reference",
+   "level": 1,
+   "seed": 0
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:self_reference:L1_s1",
+   "image": "exp3_ladder/images/self_reference/L1_s1.png",
+   "answer": "self_reference",
+   "level": 1,
+   "seed": 1
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:self_reference:L1_s2",
+   "image": "exp3_ladder/images/self_reference/L1_s2.png",
+   "answer": "self_reference",
+   "level": 1,
+   "seed": 2
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:self_reference:L2_s0",
+   "image": "exp3_ladder/images/self_reference/L2_s0.png",
+   "answer": "self_reference",
+   "level": 2,
+   "seed": 0
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:self_reference:L2_s1",
+   "image": "exp3_ladder/images/self_reference/L2_s1.png",
+   "answer": "self_reference",
+   "level": 2,
+   "seed": 1
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:self_reference:L2_s2",
+   "image": "exp3_ladder/images/self_reference/L2_s2.png",
+   "answer": "self_reference",
+   "level": 2,
+   "seed": 2
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:self_reference:L3_s0",
+   "image": "exp3_ladder/images/self_reference/L3_s0.png",
+   "answer": "self_reference",
+   "level": 3,
+   "seed": 0
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:self_reference:L3_s1",
+   "image": "exp3_ladder/images/self_reference/L3_s1.png",
+   "answer": "self_reference",
+   "level": 3,
+   "seed": 1
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:self_reference:L3_s2",
+   "image": "exp3_ladder/images/self_reference/L3_s2.png",
+   "answer": "self_reference",
+   "level": 3,
+   "seed": 2
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:self_reference:L4_s0",
+   "image": "exp3_ladder/images/self_reference/L4_s0.png",
+   "answer": "self_reference",
+   "level": 4,
+   "seed": 0
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:self_reference:L4_s1",
+   "image": "exp3_ladder/images/self_reference/L4_s1.png",
+   "answer": "self_reference",
+   "level": 4,
+   "seed": 1
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:self_reference:L4_s2",
+   "image": "exp3_ladder/images/self_reference/L4_s2.png",
+   "answer": "self_reference",
+   "level": 4,
+   "seed": 2
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:self_reference:L5_s0",
+   "image": "exp3_ladder/images/self_reference/L5_s0.png",
+   "answer": "self_reference",
+   "level": 5,
+   "seed": 0
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:self_reference:L5_s2",
+   "image": "exp3_ladder/images/self_reference/L5_s2.png",
+   "answer": "self_reference",
+   "level": 5,
+   "seed": 2
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:self_reference:L6_s0",
+   "image": "exp3_ladder/images/self_reference/L6_s0.png",
+   "answer": "self_reference",
+   "level": 6,
+   "seed": 0
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:self_reference:L6_s1",
+   "image": "exp3_ladder/images/self_reference/L6_s1.png",
+   "answer": "self_reference",
+   "level": 6,
+   "seed": 1
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:self_reference:L6_s2",
+   "image": "exp3_ladder/images/self_reference/L6_s2.png",
+   "answer": "self_reference",
+   "level": 6,
+   "seed": 2
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:symmetry:L0_s0",
+   "image": "motifs/symmetry/skeleton_mirror.png",
+   "answer": "symmetry",
+   "level": 0,
+   "seed": 0
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:symmetry:L1_s0",
+   "image": "exp3_ladder/images/symmetry/L1_s0.png",
+   "answer": "symmetry",
+   "level": 1,
+   "seed": 0
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:symmetry:L1_s1",
+   "image": "exp3_ladder/images/symmetry/L1_s1.png",
+   "answer": "symmetry",
+   "level": 1,
+   "seed": 1
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:symmetry:L1_s2",
+   "image": "exp3_ladder/images/symmetry/L1_s2.png",
+   "answer": "symmetry",
+   "level": 1,
+   "seed": 2
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:symmetry:L2_s0",
+   "image": "exp3_ladder/images/symmetry/L2_s0.png",
+   "answer": "symmetry",
+   "level": 2,
+   "seed": 0
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:symmetry:L2_s1",
+   "image": "exp3_ladder/images/symmetry/L2_s1.png",
+   "answer": "symmetry",
+   "level": 2,
+   "seed": 1
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:symmetry:L2_s2",
+   "image": "exp3_ladder/images/symmetry/L2_s2.png",
+   "answer": "symmetry",
+   "level": 2,
+   "seed": 2
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:symmetry:L3_s0",
+   "image": "exp3_ladder/images/symmetry/L3_s0.png",
+   "answer": "symmetry",
+   "level": 3,
+   "seed": 0
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:symmetry:L3_s1",
+   "image": "exp3_ladder/images/symmetry/L3_s1.png",
+   "answer": "symmetry",
+   "level": 3,
+   "seed": 1
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:symmetry:L3_s2",
+   "image": "exp3_ladder/images/symmetry/L3_s2.png",
+   "answer": "symmetry",
+   "level": 3,
+   "seed": 2
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:symmetry:L4_s0",
+   "image": "exp3_ladder/images/symmetry/L4_s0.png",
+   "answer": "symmetry",
+   "level": 4,
+   "seed": 0
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:symmetry:L4_s1",
+   "image": "exp3_ladder/images/symmetry/L4_s1.png",
+   "answer": "symmetry",
+   "level": 4,
+   "seed": 1
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:symmetry:L4_s2",
+   "image": "exp3_ladder/images/symmetry/L4_s2.png",
+   "answer": "symmetry",
+   "level": 4,
+   "seed": 2
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:symmetry:L5_s0",
+   "image": "exp3_ladder/images/symmetry/L5_s0.png",
+   "answer": "symmetry",
+   "level": 5,
+   "seed": 0
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:symmetry:L5_s1",
+   "image": "exp3_ladder/images/symmetry/L5_s1.png",
+   "answer": "symmetry",
+   "level": 5,
+   "seed": 1
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:symmetry:L5_s2",
+   "image": "exp3_ladder/images/symmetry/L5_s2.png",
+   "answer": "symmetry",
+   "level": 5,
+   "seed": 2
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:symmetry:L6_s0",
+   "image": "exp3_ladder/images/symmetry/L6_s0.png",
+   "answer": "symmetry",
+   "level": 6,
+   "seed": 0
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:symmetry:L6_s1",
+   "image": "exp3_ladder/images/symmetry/L6_s1.png",
+   "answer": "symmetry",
+   "level": 6,
+   "seed": 1
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:symmetry:L6_s2",
+   "image": "exp3_ladder/images/symmetry/L6_s2.png",
+   "answer": "symmetry",
+   "level": 6,
+   "seed": 2
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:alternation:L0_s0",
+   "image": "motifs/alternation/skeleton_chain.png",
+   "answer": "alternation",
+   "level": 0,
+   "seed": 0
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:alternation:L1_s0",
+   "image": "exp3_ladder/images/alternation/L1_s0.png",
+   "answer": "alternation",
+   "level": 1,
+   "seed": 0
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:alternation:L1_s1",
+   "image": "exp3_ladder/images/alternation/L1_s1.png",
+   "answer": "alternation",
+   "level": 1,
+   "seed": 1
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:alternation:L1_s2",
+   "image": "exp3_ladder/images/alternation/L1_s2.png",
+   "answer": "alternation",
+   "level": 1,
+   "seed": 2
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:alternation:L2_s0",
+   "image": "exp3_ladder/images/alternation/L2_s0.png",
+   "answer": "alternation",
+   "level": 2,
+   "seed": 0
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:alternation:L2_s1",
+   "image": "exp3_ladder/images/alternation/L2_s1.png",
+   "answer": "alternation",
+   "level": 2,
+   "seed": 1
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:alternation:L2_s2",
+   "image": "exp3_ladder/images/alternation/L2_s2.png",
+   "answer": "alternation",
+   "level": 2,
+   "seed": 2
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:alternation:L3_s0",
+   "image": "exp3_ladder/images/alternation/L3_s0.png",
+   "answer": "alternation",
+   "level": 3,
+   "seed": 0
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:alternation:L3_s1",
+   "image": "exp3_ladder/images/alternation/L3_s1.png",
+   "answer": "alternation",
+   "level": 3,
+   "seed": 1
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:alternation:L3_s2",
+   "image": "exp3_ladder/images/alternation/L3_s2.png",
+   "answer": "alternation",
+   "level": 3,
+   "seed": 2
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:alternation:L4_s0",
+   "image": "exp3_ladder/images/alternation/L4_s0.png",
+   "answer": "alternation",
+   "level": 4,
+   "seed": 0
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:alternation:L4_s1",
+   "image": "exp3_ladder/images/alternation/L4_s1.png",
+   "answer": "alternation",
+   "level": 4,
+   "seed": 1
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:alternation:L4_s2",
+   "image": "exp3_ladder/images/alternation/L4_s2.png",
+   "answer": "alternation",
+   "level": 4,
+   "seed": 2
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:alternation:L5_s0",
+   "image": "exp3_ladder/images/alternation/L5_s0.png",
+   "answer": "alternation",
+   "level": 5,
+   "seed": 0
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:alternation:L5_s1",
+   "image": "exp3_ladder/images/alternation/L5_s1.png",
+   "answer": "alternation",
+   "level": 5,
+   "seed": 1
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:alternation:L5_s2",
+   "image": "exp3_ladder/images/alternation/L5_s2.png",
+   "answer": "alternation",
+   "level": 5,
+   "seed": 2
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:alternation:L6_s0",
+   "image": "exp3_ladder/images/alternation/L6_s0.png",
+   "answer": "alternation",
+   "level": 6,
+   "seed": 0
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:alternation:L6_s1",
+   "image": "exp3_ladder/images/alternation/L6_s1.png",
+   "answer": "alternation",
+   "level": 6,
+   "seed": 1
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:alternation:L6_s2",
+   "image": "exp3_ladder/images/alternation/L6_s2.png",
+   "answer": "alternation",
+   "level": 6,
+   "seed": 2
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:spiral:L0_s0",
+   "image": "motifs/spiral/skeleton_logspiral.png",
+   "answer": "spiral",
+   "level": 0,
+   "seed": 0
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:spiral:L1_s0",
+   "image": "exp3_ladder/images/spiral/L1_s0.png",
+   "answer": "spiral",
+   "level": 1,
+   "seed": 0
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:spiral:L1_s1",
+   "image": "exp3_ladder/images/spiral/L1_s1.png",
+   "answer": "spiral",
+   "level": 1,
+   "seed": 1
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:spiral:L1_s2",
+   "image": "exp3_ladder/images/spiral/L1_s2.png",
+   "answer": "spiral",
+   "level": 1,
+   "seed": 2
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:spiral:L2_s0",
+   "image": "exp3_ladder/images/spiral/L2_s0.png",
+   "answer": "spiral",
+   "level": 2,
+   "seed": 0
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:spiral:L2_s1",
+   "image": "exp3_ladder/images/spiral/L2_s1.png",
+   "answer": "spiral",
+   "level": 2,
+   "seed": 1
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:spiral:L2_s2",
+   "image": "exp3_ladder/images/spiral/L2_s2.png",
+   "answer": "spiral",
+   "level": 2,
+   "seed": 2
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:spiral:L3_s0",
+   "image": "exp3_ladder/images/spiral/L3_s0.png",
+   "answer": "spiral",
+   "level": 3,
+   "seed": 0
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:spiral:L3_s1",
+   "image": "exp3_ladder/images/spiral/L3_s1.png",
+   "answer": "spiral",
+   "level": 3,
+   "seed": 1
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:spiral:L3_s2",
+   "image": "exp3_ladder/images/spiral/L3_s2.png",
+   "answer": "spiral",
+   "level": 3,
+   "seed": 2
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:spiral:L4_s0",
+   "image": "exp3_ladder/images/spiral/L4_s0.png",
+   "answer": "spiral",
+   "level": 4,
+   "seed": 0
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:spiral:L4_s1",
+   "image": "exp3_ladder/images/spiral/L4_s1.png",
+   "answer": "spiral",
+   "level": 4,
+   "seed": 1
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:spiral:L4_s2",
+   "image": "exp3_ladder/images/spiral/L4_s2.png",
+   "answer": "spiral",
+   "level": 4,
+   "seed": 2
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:spiral:L5_s0",
+   "image": "exp3_ladder/images/spiral/L5_s0.png",
+   "answer": "spiral",
+   "level": 5,
+   "seed": 0
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:spiral:L5_s1",
+   "image": "exp3_ladder/images/spiral/L5_s1.png",
+   "answer": "spiral",
+   "level": 5,
+   "seed": 1
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:spiral:L5_s2",
+   "image": "exp3_ladder/images/spiral/L5_s2.png",
+   "answer": "spiral",
+   "level": 5,
+   "seed": 2
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:spiral:L6_s0",
+   "image": "exp3_ladder/images/spiral/L6_s0.png",
+   "answer": "spiral",
+   "level": 6,
+   "seed": 0
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:spiral:L6_s1",
+   "image": "exp3_ladder/images/spiral/L6_s1.png",
+   "answer": "spiral",
+   "level": 6,
+   "seed": 1
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:spiral:L6_s2",
+   "image": "exp3_ladder/images/spiral/L6_s2.png",
+   "answer": "spiral",
+   "level": 6,
+   "seed": 2
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:convergence:L0_s0",
+   "image": "motifs/convergence/skeleton_funnel.png",
+   "answer": "convergence",
+   "level": 0,
+   "seed": 0
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:convergence:L1_s0",
+   "image": "exp3_ladder/images/convergence/L1_s0.png",
+   "answer": "convergence",
+   "level": 1,
+   "seed": 0
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:convergence:L1_s1",
+   "image": "exp3_ladder/images/convergence/L1_s1.png",
+   "answer": "convergence",
+   "level": 1,
+   "seed": 1
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:convergence:L1_s2",
+   "image": "exp3_ladder/images/convergence/L1_s2.png",
+   "answer": "convergence",
+   "level": 1,
+   "seed": 2
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:convergence:L2_s0",
+   "image": "exp3_ladder/images/convergence/L2_s0.png",
+   "answer": "convergence",
+   "level": 2,
+   "seed": 0
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:convergence:L2_s1",
+   "image": "exp3_ladder/images/convergence/L2_s1.png",
+   "answer": "convergence",
+   "level": 2,
+   "seed": 1
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:convergence:L2_s2",
+   "image": "exp3_ladder/images/convergence/L2_s2.png",
+   "answer": "convergence",
+   "level": 2,
+   "seed": 2
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:convergence:L3_s0",
+   "image": "exp3_ladder/images/convergence/L3_s0.png",
+   "answer": "convergence",
+   "level": 3,
+   "seed": 0
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:convergence:L3_s1",
+   "image": "exp3_ladder/images/convergence/L3_s1.png",
+   "answer": "convergence",
+   "level": 3,
+   "seed": 1
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:convergence:L3_s2",
+   "image": "exp3_ladder/images/convergence/L3_s2.png",
+   "answer": "convergence",
+   "level": 3,
+   "seed": 2
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:convergence:L4_s0",
+   "image": "exp3_ladder/images/convergence/L4_s0.png",
+   "answer": "convergence",
+   "level": 4,
+   "seed": 0
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:convergence:L4_s1",
+   "image": "exp3_ladder/images/convergence/L4_s1.png",
+   "answer": "convergence",
+   "level": 4,
+   "seed": 1
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:convergence:L4_s2",
+   "image": "exp3_ladder/images/convergence/L4_s2.png",
+   "answer": "convergence",
+   "level": 4,
+   "seed": 2
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:convergence:L5_s0",
+   "image": "exp3_ladder/images/convergence/L5_s0.png",
+   "answer": "convergence",
+   "level": 5,
+   "seed": 0
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:convergence:L5_s1",
+   "image": "exp3_ladder/images/convergence/L5_s1.png",
+   "answer": "convergence",
+   "level": 5,
+   "seed": 1
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:convergence:L5_s2",
+   "image": "exp3_ladder/images/convergence/L5_s2.png",
+   "answer": "convergence",
+   "level": 5,
+   "seed": 2
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:convergence:L6_s0",
+   "image": "exp3_ladder/images/convergence/L6_s0.png",
+   "answer": "convergence",
+   "level": 6,
+   "seed": 0
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:convergence:L6_s1",
+   "image": "exp3_ladder/images/convergence/L6_s1.png",
+   "answer": "convergence",
+   "level": 6,
+   "seed": 1
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:convergence:L6_s2",
+   "image": "exp3_ladder/images/convergence/L6_s2.png",
+   "answer": "convergence",
+   "level": 6,
+   "seed": 2
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:bottleneck:L0_s0",
+   "image": "motifs/bottleneck/skeleton_dumbbell.png",
+   "answer": "bottleneck",
+   "level": 0,
+   "seed": 0
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:bottleneck:L1_s0",
+   "image": "exp3_ladder/images/bottleneck/L1_s0.png",
+   "answer": "bottleneck",
+   "level": 1,
+   "seed": 0
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:bottleneck:L1_s1",
+   "image": "exp3_ladder/images/bottleneck/L1_s1.png",
+   "answer": "bottleneck",
+   "level": 1,
+   "seed": 1
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:bottleneck:L1_s2",
+   "image": "exp3_ladder/images/bottleneck/L1_s2.png",
+   "answer": "bottleneck",
+   "level": 1,
+   "seed": 2
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:bottleneck:L2_s0",
+   "image": "exp3_ladder/images/bottleneck/L2_s0.png",
+   "answer": "bottleneck",
+   "level": 2,
+   "seed": 0
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:bottleneck:L2_s1",
+   "image": "exp3_ladder/images/bottleneck/L2_s1.png",
+   "answer": "bottleneck",
+   "level": 2,
+   "seed": 1
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:bottleneck:L2_s2",
+   "image": "exp3_ladder/images/bottleneck/L2_s2.png",
+   "answer": "bottleneck",
+   "level": 2,
+   "seed": 2
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:bottleneck:L3_s0",
+   "image": "exp3_ladder/images/bottleneck/L3_s0.png",
+   "answer": "bottleneck",
+   "level": 3,
+   "seed": 0
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:bottleneck:L3_s1",
+   "image": "exp3_ladder/images/bottleneck/L3_s1.png",
+   "answer": "bottleneck",
+   "level": 3,
+   "seed": 1
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:bottleneck:L3_s2",
+   "image": "exp3_ladder/images/bottleneck/L3_s2.png",
+   "answer": "bottleneck",
+   "level": 3,
+   "seed": 2
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:bottleneck:L4_s0",
+   "image": "exp3_ladder/images/bottleneck/L4_s0.png",
+   "answer": "bottleneck",
+   "level": 4,
+   "seed": 0
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:bottleneck:L4_s1",
+   "image": "exp3_ladder/images/bottleneck/L4_s1.png",
+   "answer": "bottleneck",
+   "level": 4,
+   "seed": 1
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:bottleneck:L4_s2",
+   "image": "exp3_ladder/images/bottleneck/L4_s2.png",
+   "answer": "bottleneck",
+   "level": 4,
+   "seed": 2
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:bottleneck:L5_s0",
+   "image": "exp3_ladder/images/bottleneck/L5_s0.png",
+   "answer": "bottleneck",
+   "level": 5,
+   "seed": 0
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:bottleneck:L5_s1",
+   "image": "exp3_ladder/images/bottleneck/L5_s1.png",
+   "answer": "bottleneck",
+   "level": 5,
+   "seed": 1
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:bottleneck:L5_s2",
+   "image": "exp3_ladder/images/bottleneck/L5_s2.png",
+   "answer": "bottleneck",
+   "level": 5,
+   "seed": 2
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:bottleneck:L6_s0",
+   "image": "exp3_ladder/images/bottleneck/L6_s0.png",
+   "answer": "bottleneck",
+   "level": 6,
+   "seed": 0
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:bottleneck:L6_s1",
+   "image": "exp3_ladder/images/bottleneck/L6_s1.png",
+   "answer": "bottleneck",
+   "level": 6,
+   "seed": 1
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:bottleneck:L6_s2",
+   "image": "exp3_ladder/images/bottleneck/L6_s2.png",
+   "answer": "bottleneck",
+   "level": 6,
+   "seed": 2
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:symmetry_breaking:L0_s0",
+   "image": "motifs/symmetry_breaking/skeleton_field.png",
+   "answer": "symmetry_breaking",
+   "level": 0,
+   "seed": 0
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:symmetry_breaking:L1_s0",
+   "image": "exp3_ladder/images/symmetry_breaking/L1_s0.png",
+   "answer": "symmetry_breaking",
+   "level": 1,
+   "seed": 0
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:symmetry_breaking:L1_s1",
+   "image": "exp3_ladder/images/symmetry_breaking/L1_s1.png",
+   "answer": "symmetry_breaking",
+   "level": 1,
+   "seed": 1
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:symmetry_breaking:L1_s2",
+   "image": "exp3_ladder/images/symmetry_breaking/L1_s2.png",
+   "answer": "symmetry_breaking",
+   "level": 1,
+   "seed": 2
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:symmetry_breaking:L2_s0",
+   "image": "exp3_ladder/images/symmetry_breaking/L2_s0.png",
+   "answer": "symmetry_breaking",
+   "level": 2,
+   "seed": 0
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:symmetry_breaking:L2_s1",
+   "image": "exp3_ladder/images/symmetry_breaking/L2_s1.png",
+   "answer": "symmetry_breaking",
+   "level": 2,
+   "seed": 1
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:symmetry_breaking:L2_s2",
+   "image": "exp3_ladder/images/symmetry_breaking/L2_s2.png",
+   "answer": "symmetry_breaking",
+   "level": 2,
+   "seed": 2
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:symmetry_breaking:L3_s0",
+   "image": "exp3_ladder/images/symmetry_breaking/L3_s0.png",
+   "answer": "symmetry_breaking",
+   "level": 3,
+   "seed": 0
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:symmetry_breaking:L3_s1",
+   "image": "exp3_ladder/images/symmetry_breaking/L3_s1.png",
+   "answer": "symmetry_breaking",
+   "level": 3,
+   "seed": 1
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:symmetry_breaking:L3_s2",
+   "image": "exp3_ladder/images/symmetry_breaking/L3_s2.png",
+   "answer": "symmetry_breaking",
+   "level": 3,
+   "seed": 2
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:symmetry_breaking:L4_s0",
+   "image": "exp3_ladder/images/symmetry_breaking/L4_s0.png",
+   "answer": "symmetry_breaking",
+   "level": 4,
+   "seed": 0
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:symmetry_breaking:L4_s1",
+   "image": "exp3_ladder/images/symmetry_breaking/L4_s1.png",
+   "answer": "symmetry_breaking",
+   "level": 4,
+   "seed": 1
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:symmetry_breaking:L4_s2",
+   "image": "exp3_ladder/images/symmetry_breaking/L4_s2.png",
+   "answer": "symmetry_breaking",
+   "level": 4,
+   "seed": 2
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:symmetry_breaking:L5_s0",
+   "image": "exp3_ladder/images/symmetry_breaking/L5_s0.png",
+   "answer": "symmetry_breaking",
+   "level": 5,
+   "seed": 0
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:symmetry_breaking:L5_s1",
+   "image": "exp3_ladder/images/symmetry_breaking/L5_s1.png",
+   "answer": "symmetry_breaking",
+   "level": 5,
+   "seed": 1
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:symmetry_breaking:L5_s2",
+   "image": "exp3_ladder/images/symmetry_breaking/L5_s2.png",
+   "answer": "symmetry_breaking",
+   "level": 5,
+   "seed": 2
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:symmetry_breaking:L6_s0",
+   "image": "exp3_ladder/images/symmetry_breaking/L6_s0.png",
+   "answer": "symmetry_breaking",
+   "level": 6,
+   "seed": 0
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:symmetry_breaking:L6_s1",
+   "image": "exp3_ladder/images/symmetry_breaking/L6_s1.png",
+   "answer": "symmetry_breaking",
+   "level": 6,
+   "seed": 1
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:symmetry_breaking:L6_s2",
+   "image": "exp3_ladder/images/symmetry_breaking/L6_s2.png",
+   "answer": "symmetry_breaking",
+   "level": 6,
+   "seed": 2
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:strange_loop:L0_s0",
+   "image": "motifs/strange_loop/skeleton_ladder.png",
+   "answer": "strange_loop",
+   "level": 0,
+   "seed": 0
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:strange_loop:L1_s0",
+   "image": "exp3_ladder/images/strange_loop/L1_s0.png",
+   "answer": "strange_loop",
+   "level": 1,
+   "seed": 0
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:strange_loop:L1_s1",
+   "image": "exp3_ladder/images/strange_loop/L1_s1.png",
+   "answer": "strange_loop",
+   "level": 1,
+   "seed": 1
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:strange_loop:L1_s2",
+   "image": "exp3_ladder/images/strange_loop/L1_s2.png",
+   "answer": "strange_loop",
+   "level": 1,
+   "seed": 2
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:strange_loop:L2_s0",
+   "image": "exp3_ladder/images/strange_loop/L2_s0.png",
+   "answer": "strange_loop",
+   "level": 2,
+   "seed": 0
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:strange_loop:L2_s1",
+   "image": "exp3_ladder/images/strange_loop/L2_s1.png",
+   "answer": "strange_loop",
+   "level": 2,
+   "seed": 1
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:strange_loop:L2_s2",
+   "image": "exp3_ladder/images/strange_loop/L2_s2.png",
+   "answer": "strange_loop",
+   "level": 2,
+   "seed": 2
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:strange_loop:L3_s0",
+   "image": "exp3_ladder/images/strange_loop/L3_s0.png",
+   "answer": "strange_loop",
+   "level": 3,
+   "seed": 0
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:strange_loop:L3_s1",
+   "image": "exp3_ladder/images/strange_loop/L3_s1.png",
+   "answer": "strange_loop",
+   "level": 3,
+   "seed": 1
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:strange_loop:L3_s2",
+   "image": "exp3_ladder/images/strange_loop/L3_s2.png",
+   "answer": "strange_loop",
+   "level": 3,
+   "seed": 2
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:strange_loop:L4_s0",
+   "image": "exp3_ladder/images/strange_loop/L4_s0.png",
+   "answer": "strange_loop",
+   "level": 4,
+   "seed": 0
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:strange_loop:L4_s1",
+   "image": "exp3_ladder/images/strange_loop/L4_s1.png",
+   "answer": "strange_loop",
+   "level": 4,
+   "seed": 1
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:strange_loop:L4_s2",
+   "image": "exp3_ladder/images/strange_loop/L4_s2.png",
+   "answer": "strange_loop",
+   "level": 4,
+   "seed": 2
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:strange_loop:L5_s0",
+   "image": "exp3_ladder/images/strange_loop/L5_s0.png",
+   "answer": "strange_loop",
+   "level": 5,
+   "seed": 0
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:strange_loop:L5_s1",
+   "image": "exp3_ladder/images/strange_loop/L5_s1.png",
+   "answer": "strange_loop",
+   "level": 5,
+   "seed": 1
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:strange_loop:L5_s2",
+   "image": "exp3_ladder/images/strange_loop/L5_s2.png",
+   "answer": "strange_loop",
+   "level": 5,
+   "seed": 2
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:strange_loop:L6_s0",
+   "image": "exp3_ladder/images/strange_loop/L6_s0.png",
+   "answer": "strange_loop",
+   "level": 6,
+   "seed": 0
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:strange_loop:L6_s1",
+   "image": "exp3_ladder/images/strange_loop/L6_s1.png",
+   "answer": "strange_loop",
+   "level": 6,
+   "seed": 1
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:strange_loop:L6_s2",
+   "image": "exp3_ladder/images/strange_loop/L6_s2.png",
+   "answer": "strange_loop",
+   "level": 6,
+   "seed": 2
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:figure_ground:L0_s0",
+   "image": "motifs/figure_ground/skeleton_tessellation.png",
+   "answer": "figure_ground",
+   "level": 0,
+   "seed": 0
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:figure_ground:L1_s0",
+   "image": "exp3_ladder/images/figure_ground/L1_s0.png",
+   "answer": "figure_ground",
+   "level": 1,
+   "seed": 0
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:figure_ground:L1_s1",
+   "image": "exp3_ladder/images/figure_ground/L1_s1.png",
+   "answer": "figure_ground",
+   "level": 1,
+   "seed": 1
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:figure_ground:L1_s2",
+   "image": "exp3_ladder/images/figure_ground/L1_s2.png",
+   "answer": "figure_ground",
+   "level": 1,
+   "seed": 2
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:figure_ground:L2_s0",
+   "image": "exp3_ladder/images/figure_ground/L2_s0.png",
+   "answer": "figure_ground",
+   "level": 2,
+   "seed": 0
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:figure_ground:L2_s1",
+   "image": "exp3_ladder/images/figure_ground/L2_s1.png",
+   "answer": "figure_ground",
+   "level": 2,
+   "seed": 1
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:figure_ground:L2_s2",
+   "image": "exp3_ladder/images/figure_ground/L2_s2.png",
+   "answer": "figure_ground",
+   "level": 2,
+   "seed": 2
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:figure_ground:L3_s0",
+   "image": "exp3_ladder/images/figure_ground/L3_s0.png",
+   "answer": "figure_ground",
+   "level": 3,
+   "seed": 0
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:figure_ground:L3_s1",
+   "image": "exp3_ladder/images/figure_ground/L3_s1.png",
+   "answer": "figure_ground",
+   "level": 3,
+   "seed": 1
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:figure_ground:L3_s2",
+   "image": "exp3_ladder/images/figure_ground/L3_s2.png",
+   "answer": "figure_ground",
+   "level": 3,
+   "seed": 2
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:figure_ground:L4_s0",
+   "image": "exp3_ladder/images/figure_ground/L4_s0.png",
+   "answer": "figure_ground",
+   "level": 4,
+   "seed": 0
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:figure_ground:L4_s1",
+   "image": "exp3_ladder/images/figure_ground/L4_s1.png",
+   "answer": "figure_ground",
+   "level": 4,
+   "seed": 1
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:figure_ground:L4_s2",
+   "image": "exp3_ladder/images/figure_ground/L4_s2.png",
+   "answer": "figure_ground",
+   "level": 4,
+   "seed": 2
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:figure_ground:L5_s0",
+   "image": "exp3_ladder/images/figure_ground/L5_s0.png",
+   "answer": "figure_ground",
+   "level": 5,
+   "seed": 0
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:figure_ground:L5_s1",
+   "image": "exp3_ladder/images/figure_ground/L5_s1.png",
+   "answer": "figure_ground",
+   "level": 5,
+   "seed": 1
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:figure_ground:L5_s2",
+   "image": "exp3_ladder/images/figure_ground/L5_s2.png",
+   "answer": "figure_ground",
+   "level": 5,
+   "seed": 2
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:figure_ground:L6_s0",
+   "image": "exp3_ladder/images/figure_ground/L6_s0.png",
+   "answer": "figure_ground",
+   "level": 6,
+   "seed": 0
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:figure_ground:L6_s1",
+   "image": "exp3_ladder/images/figure_ground/L6_s1.png",
+   "answer": "figure_ground",
+   "level": 6,
+   "seed": 1
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:figure_ground:L6_s2",
+   "image": "exp3_ladder/images/figure_ground/L6_s2.png",
+   "answer": "figure_ground",
+   "level": 6,
+   "seed": 2
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:isomorphism:L0_s0",
+   "image": "motifs/isomorphism/skeleton_twographs.png",
+   "answer": "isomorphism",
+   "level": 0,
+   "seed": 0
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:isomorphism:L1_s0",
+   "image": "exp3_ladder/images/isomorphism/L1_s0.png",
+   "answer": "isomorphism",
+   "level": 1,
+   "seed": 0
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:isomorphism:L1_s1",
+   "image": "exp3_ladder/images/isomorphism/L1_s1.png",
+   "answer": "isomorphism",
+   "level": 1,
+   "seed": 1
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:isomorphism:L1_s2",
+   "image": "exp3_ladder/images/isomorphism/L1_s2.png",
+   "answer": "isomorphism",
+   "level": 1,
+   "seed": 2
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:isomorphism:L2_s0",
+   "image": "exp3_ladder/images/isomorphism/L2_s0.png",
+   "answer": "isomorphism",
+   "level": 2,
+   "seed": 0
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:isomorphism:L2_s1",
+   "image": "exp3_ladder/images/isomorphism/L2_s1.png",
+   "answer": "isomorphism",
+   "level": 2,
+   "seed": 1
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:isomorphism:L2_s2",
+   "image": "exp3_ladder/images/isomorphism/L2_s2.png",
+   "answer": "isomorphism",
+   "level": 2,
+   "seed": 2
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:isomorphism:L3_s0",
+   "image": "exp3_ladder/images/isomorphism/L3_s0.png",
+   "answer": "isomorphism",
+   "level": 3,
+   "seed": 0
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:isomorphism:L3_s1",
+   "image": "exp3_ladder/images/isomorphism/L3_s1.png",
+   "answer": "isomorphism",
+   "level": 3,
+   "seed": 1
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:isomorphism:L3_s2",
+   "image": "exp3_ladder/images/isomorphism/L3_s2.png",
+   "answer": "isomorphism",
+   "level": 3,
+   "seed": 2
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:isomorphism:L4_s0",
+   "image": "exp3_ladder/images/isomorphism/L4_s0.png",
+   "answer": "isomorphism",
+   "level": 4,
+   "seed": 0
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:isomorphism:L4_s1",
+   "image": "exp3_ladder/images/isomorphism/L4_s1.png",
+   "answer": "isomorphism",
+   "level": 4,
+   "seed": 1
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:isomorphism:L4_s2",
+   "image": "exp3_ladder/images/isomorphism/L4_s2.png",
+   "answer": "isomorphism",
+   "level": 4,
+   "seed": 2
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:isomorphism:L5_s0",
+   "image": "exp3_ladder/images/isomorphism/L5_s0.png",
+   "answer": "isomorphism",
+   "level": 5,
+   "seed": 0
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:isomorphism:L5_s1",
+   "image": "exp3_ladder/images/isomorphism/L5_s1.png",
+   "answer": "isomorphism",
+   "level": 5,
+   "seed": 1
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:isomorphism:L5_s2",
+   "image": "exp3_ladder/images/isomorphism/L5_s2.png",
+   "answer": "isomorphism",
+   "level": 5,
+   "seed": 2
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:isomorphism:L6_s0",
+   "image": "exp3_ladder/images/isomorphism/L6_s0.png",
+   "answer": "isomorphism",
+   "level": 6,
+   "seed": 0
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:isomorphism:L6_s1",
+   "image": "exp3_ladder/images/isomorphism/L6_s1.png",
+   "answer": "isomorphism",
+   "level": 6,
+   "seed": 1
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:isomorphism:L6_s2",
+   "image": "exp3_ladder/images/isomorphism/L6_s2.png",
+   "answer": "isomorphism",
+   "level": 6,
+   "seed": 2
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:mobius:L0_s0",
+   "image": "motifs/mobius/skeleton_band.png",
+   "answer": "mobius",
+   "level": 0,
+   "seed": 0
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:mobius:L1_s0",
+   "image": "exp3_ladder/images/mobius/L1_s0.png",
+   "answer": "mobius",
+   "level": 1,
+   "seed": 0
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:mobius:L1_s1",
+   "image": "exp3_ladder/images/mobius/L1_s1.png",
+   "answer": "mobius",
+   "level": 1,
+   "seed": 1
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:mobius:L1_s2",
+   "image": "exp3_ladder/images/mobius/L1_s2.png",
+   "answer": "mobius",
+   "level": 1,
+   "seed": 2
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:mobius:L2_s0",
+   "image": "exp3_ladder/images/mobius/L2_s0.png",
+   "answer": "mobius",
+   "level": 2,
+   "seed": 0
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:mobius:L2_s1",
+   "image": "exp3_ladder/images/mobius/L2_s1.png",
+   "answer": "mobius",
+   "level": 2,
+   "seed": 1
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:mobius:L2_s2",
+   "image": "exp3_ladder/images/mobius/L2_s2.png",
+   "answer": "mobius",
+   "level": 2,
+   "seed": 2
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:mobius:L3_s0",
+   "image": "exp3_ladder/images/mobius/L3_s0.png",
+   "answer": "mobius",
+   "level": 3,
+   "seed": 0
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:mobius:L3_s1",
+   "image": "exp3_ladder/images/mobius/L3_s1.png",
+   "answer": "mobius",
+   "level": 3,
+   "seed": 1
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:mobius:L3_s2",
+   "image": "exp3_ladder/images/mobius/L3_s2.png",
+   "answer": "mobius",
+   "level": 3,
+   "seed": 2
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:mobius:L4_s0",
+   "image": "exp3_ladder/images/mobius/L4_s0.png",
+   "answer": "mobius",
+   "level": 4,
+   "seed": 0
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:mobius:L4_s1",
+   "image": "exp3_ladder/images/mobius/L4_s1.png",
+   "answer": "mobius",
+   "level": 4,
+   "seed": 1
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:mobius:L4_s2",
+   "image": "exp3_ladder/images/mobius/L4_s2.png",
+   "answer": "mobius",
+   "level": 4,
+   "seed": 2
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:mobius:L5_s0",
+   "image": "exp3_ladder/images/mobius/L5_s0.png",
+   "answer": "mobius",
+   "level": 5,
+   "seed": 0
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:mobius:L5_s1",
+   "image": "exp3_ladder/images/mobius/L5_s1.png",
+   "answer": "mobius",
+   "level": 5,
+   "seed": 1
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:mobius:L5_s2",
+   "image": "exp3_ladder/images/mobius/L5_s2.png",
+   "answer": "mobius",
+   "level": 5,
+   "seed": 2
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:mobius:L6_s0",
+   "image": "exp3_ladder/images/mobius/L6_s0.png",
+   "answer": "mobius",
+   "level": 6,
+   "seed": 0
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:mobius:L6_s1",
+   "image": "exp3_ladder/images/mobius/L6_s1.png",
+   "answer": "mobius",
+   "level": 6,
+   "seed": 1
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:mobius:L6_s2",
+   "image": "exp3_ladder/images/mobius/L6_s2.png",
+   "answer": "mobius",
+   "level": 6,
+   "seed": 2
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:braiding:L0_s0",
+   "image": "motifs/braiding/skeleton_weave.png",
+   "answer": "braiding",
+   "level": 0,
+   "seed": 0
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:braiding:L1_s0",
+   "image": "exp3_ladder/images/braiding/L1_s0.png",
+   "answer": "braiding",
+   "level": 1,
+   "seed": 0
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:braiding:L1_s1",
+   "image": "exp3_ladder/images/braiding/L1_s1.png",
+   "answer": "braiding",
+   "level": 1,
+   "seed": 1
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:braiding:L1_s2",
+   "image": "exp3_ladder/images/braiding/L1_s2.png",
+   "answer": "braiding",
+   "level": 1,
+   "seed": 2
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:braiding:L2_s0",
+   "image": "exp3_ladder/images/braiding/L2_s0.png",
+   "answer": "braiding",
+   "level": 2,
+   "seed": 0
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:braiding:L2_s1",
+   "image": "exp3_ladder/images/braiding/L2_s1.png",
+   "answer": "braiding",
+   "level": 2,
+   "seed": 1
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:braiding:L2_s2",
+   "image": "exp3_ladder/images/braiding/L2_s2.png",
+   "answer": "braiding",
+   "level": 2,
+   "seed": 2
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:braiding:L3_s0",
+   "image": "exp3_ladder/images/braiding/L3_s0.png",
+   "answer": "braiding",
+   "level": 3,
+   "seed": 0
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:braiding:L3_s1",
+   "image": "exp3_ladder/images/braiding/L3_s1.png",
+   "answer": "braiding",
+   "level": 3,
+   "seed": 1
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:braiding:L3_s2",
+   "image": "exp3_ladder/images/braiding/L3_s2.png",
+   "answer": "braiding",
+   "level": 3,
+   "seed": 2
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:braiding:L4_s0",
+   "image": "exp3_ladder/images/braiding/L4_s0.png",
+   "answer": "braiding",
+   "level": 4,
+   "seed": 0
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:braiding:L4_s1",
+   "image": "exp3_ladder/images/braiding/L4_s1.png",
+   "answer": "braiding",
+   "level": 4,
+   "seed": 1
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:braiding:L4_s2",
+   "image": "exp3_ladder/images/braiding/L4_s2.png",
+   "answer": "braiding",
+   "level": 4,
+   "seed": 2
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:braiding:L5_s0",
+   "image": "exp3_ladder/images/braiding/L5_s0.png",
+   "answer": "braiding",
+   "level": 5,
+   "seed": 0
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:braiding:L5_s1",
+   "image": "exp3_ladder/images/braiding/L5_s1.png",
+   "answer": "braiding",
+   "level": 5,
+   "seed": 1
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:braiding:L5_s2",
+   "image": "exp3_ladder/images/braiding/L5_s2.png",
+   "answer": "braiding",
+   "level": 5,
+   "seed": 2
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:braiding:L6_s0",
+   "image": "exp3_ladder/images/braiding/L6_s0.png",
+   "answer": "braiding",
+   "level": 6,
+   "seed": 0
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:braiding:L6_s1",
+   "image": "exp3_ladder/images/braiding/L6_s1.png",
+   "answer": "braiding",
+   "level": 6,
+   "seed": 1
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:braiding:L6_s2",
+   "image": "exp3_ladder/images/braiding/L6_s2.png",
+   "answer": "braiding",
+   "level": 6,
+   "seed": 2
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:interference:L0_s0",
+   "image": "motifs/interference/skeleton_ripples.png",
+   "answer": "interference",
+   "level": 0,
+   "seed": 0
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:interference:L1_s0",
+   "image": "exp3_ladder/images/interference/L1_s0.png",
+   "answer": "interference",
+   "level": 1,
+   "seed": 0
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:interference:L1_s1",
+   "image": "exp3_ladder/images/interference/L1_s1.png",
+   "answer": "interference",
+   "level": 1,
+   "seed": 1
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:interference:L1_s2",
+   "image": "exp3_ladder/images/interference/L1_s2.png",
+   "answer": "interference",
+   "level": 1,
+   "seed": 2
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:interference:L2_s0",
+   "image": "exp3_ladder/images/interference/L2_s0.png",
+   "answer": "interference",
+   "level": 2,
+   "seed": 0
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:interference:L2_s1",
+   "image": "exp3_ladder/images/interference/L2_s1.png",
+   "answer": "interference",
+   "level": 2,
+   "seed": 1
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:interference:L2_s2",
+   "image": "exp3_ladder/images/interference/L2_s2.png",
+   "answer": "interference",
+   "level": 2,
+   "seed": 2
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:interference:L3_s0",
+   "image": "exp3_ladder/images/interference/L3_s0.png",
+   "answer": "interference",
+   "level": 3,
+   "seed": 0
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:interference:L3_s1",
+   "image": "exp3_ladder/images/interference/L3_s1.png",
+   "answer": "interference",
+   "level": 3,
+   "seed": 1
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:interference:L3_s2",
+   "image": "exp3_ladder/images/interference/L3_s2.png",
+   "answer": "interference",
+   "level": 3,
+   "seed": 2
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:interference:L4_s0",
+   "image": "exp3_ladder/images/interference/L4_s0.png",
+   "answer": "interference",
+   "level": 4,
+   "seed": 0
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:interference:L4_s1",
+   "image": "exp3_ladder/images/interference/L4_s1.png",
+   "answer": "interference",
+   "level": 4,
+   "seed": 1
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:interference:L4_s2",
+   "image": "exp3_ladder/images/interference/L4_s2.png",
+   "answer": "interference",
+   "level": 4,
+   "seed": 2
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:interference:L5_s0",
+   "image": "exp3_ladder/images/interference/L5_s0.png",
+   "answer": "interference",
+   "level": 5,
+   "seed": 0
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:interference:L5_s1",
+   "image": "exp3_ladder/images/interference/L5_s1.png",
+   "answer": "interference",
+   "level": 5,
+   "seed": 1
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:interference:L5_s2",
+   "image": "exp3_ladder/images/interference/L5_s2.png",
+   "answer": "interference",
+   "level": 5,
+   "seed": 2
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:interference:L6_s0",
+   "image": "exp3_ladder/images/interference/L6_s0.png",
+   "answer": "interference",
+   "level": 6,
+   "seed": 0
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:interference:L6_s1",
+   "image": "exp3_ladder/images/interference/L6_s1.png",
+   "answer": "interference",
+   "level": 6,
+   "seed": 1
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:interference:L6_s2",
+   "image": "exp3_ladder/images/interference/L6_s2.png",
+   "answer": "interference",
+   "level": 6,
+   "seed": 2
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:tiling:L0_s0",
+   "image": "motifs/tiling/skeleton_honeycomb.png",
+   "answer": "tiling",
+   "level": 0,
+   "seed": 0
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:tiling:L1_s0",
+   "image": "exp3_ladder/images/tiling/L1_s0.png",
+   "answer": "tiling",
+   "level": 1,
+   "seed": 0
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:tiling:L1_s1",
+   "image": "exp3_ladder/images/tiling/L1_s1.png",
+   "answer": "tiling",
+   "level": 1,
+   "seed": 1
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:tiling:L1_s2",
+   "image": "exp3_ladder/images/tiling/L1_s2.png",
+   "answer": "tiling",
+   "level": 1,
+   "seed": 2
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:tiling:L2_s0",
+   "image": "exp3_ladder/images/tiling/L2_s0.png",
+   "answer": "tiling",
+   "level": 2,
+   "seed": 0
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:tiling:L2_s1",
+   "image": "exp3_ladder/images/tiling/L2_s1.png",
+   "answer": "tiling",
+   "level": 2,
+   "seed": 1
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:tiling:L2_s2",
+   "image": "exp3_ladder/images/tiling/L2_s2.png",
+   "answer": "tiling",
+   "level": 2,
+   "seed": 2
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:tiling:L3_s0",
+   "image": "exp3_ladder/images/tiling/L3_s0.png",
+   "answer": "tiling",
+   "level": 3,
+   "seed": 0
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:tiling:L3_s1",
+   "image": "exp3_ladder/images/tiling/L3_s1.png",
+   "answer": "tiling",
+   "level": 3,
+   "seed": 1
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:tiling:L3_s2",
+   "image": "exp3_ladder/images/tiling/L3_s2.png",
+   "answer": "tiling",
+   "level": 3,
+   "seed": 2
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:tiling:L4_s0",
+   "image": "exp3_ladder/images/tiling/L4_s0.png",
+   "answer": "tiling",
+   "level": 4,
+   "seed": 0
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:tiling:L4_s1",
+   "image": "exp3_ladder/images/tiling/L4_s1.png",
+   "answer": "tiling",
+   "level": 4,
+   "seed": 1
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:tiling:L4_s2",
+   "image": "exp3_ladder/images/tiling/L4_s2.png",
+   "answer": "tiling",
+   "level": 4,
+   "seed": 2
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:tiling:L5_s0",
+   "image": "exp3_ladder/images/tiling/L5_s0.png",
+   "answer": "tiling",
+   "level": 5,
+   "seed": 0
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:tiling:L5_s1",
+   "image": "exp3_ladder/images/tiling/L5_s1.png",
+   "answer": "tiling",
+   "level": 5,
+   "seed": 1
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:tiling:L5_s2",
+   "image": "exp3_ladder/images/tiling/L5_s2.png",
+   "answer": "tiling",
+   "level": 5,
+   "seed": 2
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:tiling:L6_s0",
+   "image": "exp3_ladder/images/tiling/L6_s0.png",
+   "answer": "tiling",
+   "level": 6,
+   "seed": 0
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:tiling:L6_s1",
+   "image": "exp3_ladder/images/tiling/L6_s1.png",
+   "answer": "tiling",
+   "level": 6,
+   "seed": 1
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:tiling:L6_s2",
+   "image": "exp3_ladder/images/tiling/L6_s2.png",
+   "answer": "tiling",
+   "level": 6,
+   "seed": 2
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:hub:L0_s0",
+   "image": "motifs/hub/skeleton_star.png",
+   "answer": "hub",
+   "level": 0,
+   "seed": 0
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:hub:L1_s0",
+   "image": "exp3_ladder/images/hub/L1_s0.png",
+   "answer": "hub",
+   "level": 1,
+   "seed": 0
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:hub:L1_s1",
+   "image": "exp3_ladder/images/hub/L1_s1.png",
+   "answer": "hub",
+   "level": 1,
+   "seed": 1
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:hub:L1_s2",
+   "image": "exp3_ladder/images/hub/L1_s2.png",
+   "answer": "hub",
+   "level": 1,
+   "seed": 2
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:hub:L2_s0",
+   "image": "exp3_ladder/images/hub/L2_s0.png",
+   "answer": "hub",
+   "level": 2,
+   "seed": 0
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:hub:L2_s1",
+   "image": "exp3_ladder/images/hub/L2_s1.png",
+   "answer": "hub",
+   "level": 2,
+   "seed": 1
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:hub:L2_s2",
+   "image": "exp3_ladder/images/hub/L2_s2.png",
+   "answer": "hub",
+   "level": 2,
+   "seed": 2
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:hub:L3_s0",
+   "image": "exp3_ladder/images/hub/L3_s0.png",
+   "answer": "hub",
+   "level": 3,
+   "seed": 0
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:hub:L3_s1",
+   "image": "exp3_ladder/images/hub/L3_s1.png",
+   "answer": "hub",
+   "level": 3,
+   "seed": 1
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:hub:L3_s2",
+   "image": "exp3_ladder/images/hub/L3_s2.png",
+   "answer": "hub",
+   "level": 3,
+   "seed": 2
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:hub:L4_s0",
+   "image": "exp3_ladder/images/hub/L4_s0.png",
+   "answer": "hub",
+   "level": 4,
+   "seed": 0
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:hub:L4_s1",
+   "image": "exp3_ladder/images/hub/L4_s1.png",
+   "answer": "hub",
+   "level": 4,
+   "seed": 1
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:hub:L4_s2",
+   "image": "exp3_ladder/images/hub/L4_s2.png",
+   "answer": "hub",
+   "level": 4,
+   "seed": 2
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:hub:L5_s0",
+   "image": "exp3_ladder/images/hub/L5_s0.png",
+   "answer": "hub",
+   "level": 5,
+   "seed": 0
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:hub:L5_s1",
+   "image": "exp3_ladder/images/hub/L5_s1.png",
+   "answer": "hub",
+   "level": 5,
+   "seed": 1
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:hub:L5_s2",
+   "image": "exp3_ladder/images/hub/L5_s2.png",
+   "answer": "hub",
+   "level": 5,
+   "seed": 2
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:hub:L6_s0",
+   "image": "exp3_ladder/images/hub/L6_s0.png",
+   "answer": "hub",
+   "level": 6,
+   "seed": 0
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:hub:L6_s1",
+   "image": "exp3_ladder/images/hub/L6_s1.png",
+   "answer": "hub",
+   "level": 6,
+   "seed": 1
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:hub:L6_s2",
+   "image": "exp3_ladder/images/hub/L6_s2.png",
+   "answer": "hub",
+   "level": 6,
+   "seed": 2
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:diagonalization:L0_s0",
+   "image": "motifs/diagonalization/skeleton_grid.png",
+   "answer": "diagonalization",
+   "level": 0,
+   "seed": 0
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:diagonalization:L1_s0",
+   "image": "exp3_ladder/images/diagonalization/L1_s0.png",
+   "answer": "diagonalization",
+   "level": 1,
+   "seed": 0
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:diagonalization:L1_s1",
+   "image": "exp3_ladder/images/diagonalization/L1_s1.png",
+   "answer": "diagonalization",
+   "level": 1,
+   "seed": 1
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:diagonalization:L1_s2",
+   "image": "exp3_ladder/images/diagonalization/L1_s2.png",
+   "answer": "diagonalization",
+   "level": 1,
+   "seed": 2
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:diagonalization:L2_s0",
+   "image": "exp3_ladder/images/diagonalization/L2_s0.png",
+   "answer": "diagonalization",
+   "level": 2,
+   "seed": 0
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:diagonalization:L2_s1",
+   "image": "exp3_ladder/images/diagonalization/L2_s1.png",
+   "answer": "diagonalization",
+   "level": 2,
+   "seed": 1
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:diagonalization:L2_s2",
+   "image": "exp3_ladder/images/diagonalization/L2_s2.png",
+   "answer": "diagonalization",
+   "level": 2,
+   "seed": 2
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:diagonalization:L3_s0",
+   "image": "exp3_ladder/images/diagonalization/L3_s0.png",
+   "answer": "diagonalization",
+   "level": 3,
+   "seed": 0
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:diagonalization:L3_s1",
+   "image": "exp3_ladder/images/diagonalization/L3_s1.png",
+   "answer": "diagonalization",
+   "level": 3,
+   "seed": 1
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:diagonalization:L3_s2",
+   "image": "exp3_ladder/images/diagonalization/L3_s2.png",
+   "answer": "diagonalization",
+   "level": 3,
+   "seed": 2
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:diagonalization:L4_s0",
+   "image": "exp3_ladder/images/diagonalization/L4_s0.png",
+   "answer": "diagonalization",
+   "level": 4,
+   "seed": 0
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:diagonalization:L4_s1",
+   "image": "exp3_ladder/images/diagonalization/L4_s1.png",
+   "answer": "diagonalization",
+   "level": 4,
+   "seed": 1
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:diagonalization:L4_s2",
+   "image": "exp3_ladder/images/diagonalization/L4_s2.png",
+   "answer": "diagonalization",
+   "level": 4,
+   "seed": 2
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:diagonalization:L5_s0",
+   "image": "exp3_ladder/images/diagonalization/L5_s0.png",
+   "answer": "diagonalization",
+   "level": 5,
+   "seed": 0
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:diagonalization:L5_s1",
+   "image": "exp3_ladder/images/diagonalization/L5_s1.png",
+   "answer": "diagonalization",
+   "level": 5,
+   "seed": 1
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:diagonalization:L5_s2",
+   "image": "exp3_ladder/images/diagonalization/L5_s2.png",
+   "answer": "diagonalization",
+   "level": 5,
+   "seed": 2
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:diagonalization:L6_s0",
+   "image": "exp3_ladder/images/diagonalization/L6_s0.png",
+   "answer": "diagonalization",
+   "level": 6,
+   "seed": 0
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:diagonalization:L6_s1",
+   "image": "exp3_ladder/images/diagonalization/L6_s1.png",
+   "answer": "diagonalization",
+   "level": 6,
+   "seed": 1
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:diagonalization:L6_s2",
+   "image": "exp3_ladder/images/diagonalization/L6_s2.png",
+   "answer": "diagonalization",
+   "level": 6,
+   "seed": 2
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:infinite_descent:L0_s0",
+   "image": "motifs/infinite_descent/skeleton_staircase.png",
+   "answer": "infinite_descent",
+   "level": 0,
+   "seed": 0
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:infinite_descent:L1_s0",
+   "image": "exp3_ladder/images/infinite_descent/L1_s0.png",
+   "answer": "infinite_descent",
+   "level": 1,
+   "seed": 0
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:infinite_descent:L1_s1",
+   "image": "exp3_ladder/images/infinite_descent/L1_s1.png",
+   "answer": "infinite_descent",
+   "level": 1,
+   "seed": 1
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:infinite_descent:L1_s2",
+   "image": "exp3_ladder/images/infinite_descent/L1_s2.png",
+   "answer": "infinite_descent",
+   "level": 1,
+   "seed": 2
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:infinite_descent:L2_s0",
+   "image": "exp3_ladder/images/infinite_descent/L2_s0.png",
+   "answer": "infinite_descent",
+   "level": 2,
+   "seed": 0
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:infinite_descent:L2_s1",
+   "image": "exp3_ladder/images/infinite_descent/L2_s1.png",
+   "answer": "infinite_descent",
+   "level": 2,
+   "seed": 1
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:infinite_descent:L2_s2",
+   "image": "exp3_ladder/images/infinite_descent/L2_s2.png",
+   "answer": "infinite_descent",
+   "level": 2,
+   "seed": 2
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:infinite_descent:L3_s0",
+   "image": "exp3_ladder/images/infinite_descent/L3_s0.png",
+   "answer": "infinite_descent",
+   "level": 3,
+   "seed": 0
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:infinite_descent:L3_s1",
+   "image": "exp3_ladder/images/infinite_descent/L3_s1.png",
+   "answer": "infinite_descent",
+   "level": 3,
+   "seed": 1
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:infinite_descent:L3_s2",
+   "image": "exp3_ladder/images/infinite_descent/L3_s2.png",
+   "answer": "infinite_descent",
+   "level": 3,
+   "seed": 2
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:infinite_descent:L4_s0",
+   "image": "exp3_ladder/images/infinite_descent/L4_s0.png",
+   "answer": "infinite_descent",
+   "level": 4,
+   "seed": 0
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:infinite_descent:L4_s1",
+   "image": "exp3_ladder/images/infinite_descent/L4_s1.png",
+   "answer": "infinite_descent",
+   "level": 4,
+   "seed": 1
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:infinite_descent:L4_s2",
+   "image": "exp3_ladder/images/infinite_descent/L4_s2.png",
+   "answer": "infinite_descent",
+   "level": 4,
+   "seed": 2
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:infinite_descent:L5_s0",
+   "image": "exp3_ladder/images/infinite_descent/L5_s0.png",
+   "answer": "infinite_descent",
+   "level": 5,
+   "seed": 0
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:infinite_descent:L5_s1",
+   "image": "exp3_ladder/images/infinite_descent/L5_s1.png",
+   "answer": "infinite_descent",
+   "level": 5,
+   "seed": 1
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:infinite_descent:L5_s2",
+   "image": "exp3_ladder/images/infinite_descent/L5_s2.png",
+   "answer": "infinite_descent",
+   "level": 5,
+   "seed": 2
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:infinite_descent:L6_s0",
+   "image": "exp3_ladder/images/infinite_descent/L6_s0.png",
+   "answer": "infinite_descent",
+   "level": 6,
+   "seed": 0
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:infinite_descent:L6_s1",
+   "image": "exp3_ladder/images/infinite_descent/L6_s1.png",
+   "answer": "infinite_descent",
+   "level": 6,
+   "seed": 1
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:infinite_descent:L6_s2",
+   "image": "exp3_ladder/images/infinite_descent/L6_s2.png",
+   "answer": "infinite_descent",
+   "level": 6,
+   "seed": 2
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:coprime_orbit:L0_s0",
+   "image": "motifs/coprime_orbit/skeleton_star.png",
+   "answer": "coprime_orbit",
+   "level": 0,
+   "seed": 0
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:coprime_orbit:L1_s0",
+   "image": "exp3_ladder/images/coprime_orbit/L1_s0.png",
+   "answer": "coprime_orbit",
+   "level": 1,
+   "seed": 0
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:coprime_orbit:L1_s1",
+   "image": "exp3_ladder/images/coprime_orbit/L1_s1.png",
+   "answer": "coprime_orbit",
+   "level": 1,
+   "seed": 1
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:coprime_orbit:L1_s2",
+   "image": "exp3_ladder/images/coprime_orbit/L1_s2.png",
+   "answer": "coprime_orbit",
+   "level": 1,
+   "seed": 2
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:coprime_orbit:L2_s0",
+   "image": "exp3_ladder/images/coprime_orbit/L2_s0.png",
+   "answer": "coprime_orbit",
+   "level": 2,
+   "seed": 0
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:coprime_orbit:L2_s1",
+   "image": "exp3_ladder/images/coprime_orbit/L2_s1.png",
+   "answer": "coprime_orbit",
+   "level": 2,
+   "seed": 1
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:coprime_orbit:L2_s2",
+   "image": "exp3_ladder/images/coprime_orbit/L2_s2.png",
+   "answer": "coprime_orbit",
+   "level": 2,
+   "seed": 2
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:coprime_orbit:L3_s0",
+   "image": "exp3_ladder/images/coprime_orbit/L3_s0.png",
+   "answer": "coprime_orbit",
+   "level": 3,
+   "seed": 0
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:coprime_orbit:L3_s1",
+   "image": "exp3_ladder/images/coprime_orbit/L3_s1.png",
+   "answer": "coprime_orbit",
+   "level": 3,
+   "seed": 1
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:coprime_orbit:L3_s2",
+   "image": "exp3_ladder/images/coprime_orbit/L3_s2.png",
+   "answer": "coprime_orbit",
+   "level": 3,
+   "seed": 2
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:coprime_orbit:L4_s0",
+   "image": "exp3_ladder/images/coprime_orbit/L4_s0.png",
+   "answer": "coprime_orbit",
+   "level": 4,
+   "seed": 0
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:coprime_orbit:L4_s1",
+   "image": "exp3_ladder/images/coprime_orbit/L4_s1.png",
+   "answer": "coprime_orbit",
+   "level": 4,
+   "seed": 1
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:coprime_orbit:L4_s2",
+   "image": "exp3_ladder/images/coprime_orbit/L4_s2.png",
+   "answer": "coprime_orbit",
+   "level": 4,
+   "seed": 2
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:coprime_orbit:L5_s0",
+   "image": "exp3_ladder/images/coprime_orbit/L5_s0.png",
+   "answer": "coprime_orbit",
+   "level": 5,
+   "seed": 0
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:coprime_orbit:L5_s1",
+   "image": "exp3_ladder/images/coprime_orbit/L5_s1.png",
+   "answer": "coprime_orbit",
+   "level": 5,
+   "seed": 1
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:coprime_orbit:L5_s2",
+   "image": "exp3_ladder/images/coprime_orbit/L5_s2.png",
+   "answer": "coprime_orbit",
+   "level": 5,
+   "seed": 2
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:coprime_orbit:L6_s0",
+   "image": "exp3_ladder/images/coprime_orbit/L6_s0.png",
+   "answer": "coprime_orbit",
+   "level": 6,
+   "seed": 0
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:coprime_orbit:L6_s1",
+   "image": "exp3_ladder/images/coprime_orbit/L6_s1.png",
+   "answer": "coprime_orbit",
+   "level": 6,
+   "seed": 1
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:coprime_orbit:L6_s2",
+   "image": "exp3_ladder/images/coprime_orbit/L6_s2.png",
+   "answer": "coprime_orbit",
+   "level": 6,
+   "seed": 2
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:pigeonhole:L0_s0",
+   "image": "motifs/pigeonhole/skeleton_boxes.png",
+   "answer": "pigeonhole",
+   "level": 0,
+   "seed": 0
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:pigeonhole:L1_s0",
+   "image": "exp3_ladder/images/pigeonhole/L1_s0.png",
+   "answer": "pigeonhole",
+   "level": 1,
+   "seed": 0
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:pigeonhole:L1_s1",
+   "image": "exp3_ladder/images/pigeonhole/L1_s1.png",
+   "answer": "pigeonhole",
+   "level": 1,
+   "seed": 1
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:pigeonhole:L1_s2",
+   "image": "exp3_ladder/images/pigeonhole/L1_s2.png",
+   "answer": "pigeonhole",
+   "level": 1,
+   "seed": 2
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:pigeonhole:L2_s0",
+   "image": "exp3_ladder/images/pigeonhole/L2_s0.png",
+   "answer": "pigeonhole",
+   "level": 2,
+   "seed": 0
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:pigeonhole:L2_s1",
+   "image": "exp3_ladder/images/pigeonhole/L2_s1.png",
+   "answer": "pigeonhole",
+   "level": 2,
+   "seed": 1
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:pigeonhole:L2_s2",
+   "image": "exp3_ladder/images/pigeonhole/L2_s2.png",
+   "answer": "pigeonhole",
+   "level": 2,
+   "seed": 2
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:pigeonhole:L3_s0",
+   "image": "exp3_ladder/images/pigeonhole/L3_s0.png",
+   "answer": "pigeonhole",
+   "level": 3,
+   "seed": 0
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:pigeonhole:L3_s1",
+   "image": "exp3_ladder/images/pigeonhole/L3_s1.png",
+   "answer": "pigeonhole",
+   "level": 3,
+   "seed": 1
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:pigeonhole:L3_s2",
+   "image": "exp3_ladder/images/pigeonhole/L3_s2.png",
+   "answer": "pigeonhole",
+   "level": 3,
+   "seed": 2
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:pigeonhole:L4_s0",
+   "image": "exp3_ladder/images/pigeonhole/L4_s0.png",
+   "answer": "pigeonhole",
+   "level": 4,
+   "seed": 0
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:pigeonhole:L4_s1",
+   "image": "exp3_ladder/images/pigeonhole/L4_s1.png",
+   "answer": "pigeonhole",
+   "level": 4,
+   "seed": 1
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:pigeonhole:L4_s2",
+   "image": "exp3_ladder/images/pigeonhole/L4_s2.png",
+   "answer": "pigeonhole",
+   "level": 4,
+   "seed": 2
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:pigeonhole:L5_s0",
+   "image": "exp3_ladder/images/pigeonhole/L5_s0.png",
+   "answer": "pigeonhole",
+   "level": 5,
+   "seed": 0
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:pigeonhole:L5_s1",
+   "image": "exp3_ladder/images/pigeonhole/L5_s1.png",
+   "answer": "pigeonhole",
+   "level": 5,
+   "seed": 1
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:pigeonhole:L5_s2",
+   "image": "exp3_ladder/images/pigeonhole/L5_s2.png",
+   "answer": "pigeonhole",
+   "level": 5,
+   "seed": 2
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:pigeonhole:L6_s0",
+   "image": "exp3_ladder/images/pigeonhole/L6_s0.png",
+   "answer": "pigeonhole",
+   "level": 6,
+   "seed": 0
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:pigeonhole:L6_s1",
+   "image": "exp3_ladder/images/pigeonhole/L6_s1.png",
+   "answer": "pigeonhole",
+   "level": 6,
+   "seed": 1
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:pigeonhole:L6_s2",
+   "image": "exp3_ladder/images/pigeonhole/L6_s2.png",
+   "answer": "pigeonhole",
+   "level": 6,
+   "seed": 2
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:projective_duality:L0_s0",
+   "image": "motifs/projective_duality/skeleton_quadrangle.png",
+   "answer": "projective_duality",
+   "level": 0,
+   "seed": 0
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:projective_duality:L1_s0",
+   "image": "exp3_ladder/images/projective_duality/L1_s0.png",
+   "answer": "projective_duality",
+   "level": 1,
+   "seed": 0
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:projective_duality:L1_s1",
+   "image": "exp3_ladder/images/projective_duality/L1_s1.png",
+   "answer": "projective_duality",
+   "level": 1,
+   "seed": 1
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:projective_duality:L1_s2",
+   "image": "exp3_ladder/images/projective_duality/L1_s2.png",
+   "answer": "projective_duality",
+   "level": 1,
+   "seed": 2
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:projective_duality:L2_s0",
+   "image": "exp3_ladder/images/projective_duality/L2_s0.png",
+   "answer": "projective_duality",
+   "level": 2,
+   "seed": 0
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:projective_duality:L2_s1",
+   "image": "exp3_ladder/images/projective_duality/L2_s1.png",
+   "answer": "projective_duality",
+   "level": 2,
+   "seed": 1
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:projective_duality:L2_s2",
+   "image": "exp3_ladder/images/projective_duality/L2_s2.png",
+   "answer": "projective_duality",
+   "level": 2,
+   "seed": 2
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:projective_duality:L3_s0",
+   "image": "exp3_ladder/images/projective_duality/L3_s0.png",
+   "answer": "projective_duality",
+   "level": 3,
+   "seed": 0
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:projective_duality:L3_s1",
+   "image": "exp3_ladder/images/projective_duality/L3_s1.png",
+   "answer": "projective_duality",
+   "level": 3,
+   "seed": 1
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:projective_duality:L3_s2",
+   "image": "exp3_ladder/images/projective_duality/L3_s2.png",
+   "answer": "projective_duality",
+   "level": 3,
+   "seed": 2
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:projective_duality:L4_s0",
+   "image": "exp3_ladder/images/projective_duality/L4_s0.png",
+   "answer": "projective_duality",
+   "level": 4,
+   "seed": 0
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:projective_duality:L4_s1",
+   "image": "exp3_ladder/images/projective_duality/L4_s1.png",
+   "answer": "projective_duality",
+   "level": 4,
+   "seed": 1
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:projective_duality:L4_s2",
+   "image": "exp3_ladder/images/projective_duality/L4_s2.png",
+   "answer": "projective_duality",
+   "level": 4,
+   "seed": 2
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:projective_duality:L5_s0",
+   "image": "exp3_ladder/images/projective_duality/L5_s0.png",
+   "answer": "projective_duality",
+   "level": 5,
+   "seed": 0
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:projective_duality:L5_s1",
+   "image": "exp3_ladder/images/projective_duality/L5_s1.png",
+   "answer": "projective_duality",
+   "level": 5,
+   "seed": 1
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:projective_duality:L5_s2",
+   "image": "exp3_ladder/images/projective_duality/L5_s2.png",
+   "answer": "projective_duality",
+   "level": 5,
+   "seed": 2
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:projective_duality:L6_s0",
+   "image": "exp3_ladder/images/projective_duality/L6_s0.png",
+   "answer": "projective_duality",
+   "level": 6,
+   "seed": 0
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:projective_duality:L6_s1",
+   "image": "exp3_ladder/images/projective_duality/L6_s1.png",
+   "answer": "projective_duality",
+   "level": 6,
+   "seed": 1
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:projective_duality:L6_s2",
+   "image": "exp3_ladder/images/projective_duality/L6_s2.png",
+   "answer": "projective_duality",
+   "level": 6,
+   "seed": 2
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:contraction_fixed_point:L0_s0",
+   "image": "motifs/contraction_fixed_point/skeleton_cobweb.png",
+   "answer": "contraction_fixed_point",
+   "level": 0,
+   "seed": 0
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:contraction_fixed_point:L1_s0",
+   "image": "exp3_ladder/images/contraction_fixed_point/L1_s0.png",
+   "answer": "contraction_fixed_point",
+   "level": 1,
+   "seed": 0
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:contraction_fixed_point:L1_s1",
+   "image": "exp3_ladder/images/contraction_fixed_point/L1_s1.png",
+   "answer": "contraction_fixed_point",
+   "level": 1,
+   "seed": 1
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:contraction_fixed_point:L1_s2",
+   "image": "exp3_ladder/images/contraction_fixed_point/L1_s2.png",
+   "answer": "contraction_fixed_point",
+   "level": 1,
+   "seed": 2
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:contraction_fixed_point:L2_s0",
+   "image": "exp3_ladder/images/contraction_fixed_point/L2_s0.png",
+   "answer": "contraction_fixed_point",
+   "level": 2,
+   "seed": 0
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:contraction_fixed_point:L2_s1",
+   "image": "exp3_ladder/images/contraction_fixed_point/L2_s1.png",
+   "answer": "contraction_fixed_point",
+   "level": 2,
+   "seed": 1
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:contraction_fixed_point:L2_s2",
+   "image": "exp3_ladder/images/contraction_fixed_point/L2_s2.png",
+   "answer": "contraction_fixed_point",
+   "level": 2,
+   "seed": 2
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:contraction_fixed_point:L3_s0",
+   "image": "exp3_ladder/images/contraction_fixed_point/L3_s0.png",
+   "answer": "contraction_fixed_point",
+   "level": 3,
+   "seed": 0
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:contraction_fixed_point:L3_s1",
+   "image": "exp3_ladder/images/contraction_fixed_point/L3_s1.png",
+   "answer": "contraction_fixed_point",
+   "level": 3,
+   "seed": 1
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:contraction_fixed_point:L3_s2",
+   "image": "exp3_ladder/images/contraction_fixed_point/L3_s2.png",
+   "answer": "contraction_fixed_point",
+   "level": 3,
+   "seed": 2
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:contraction_fixed_point:L4_s0",
+   "image": "exp3_ladder/images/contraction_fixed_point/L4_s0.png",
+   "answer": "contraction_fixed_point",
+   "level": 4,
+   "seed": 0
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:contraction_fixed_point:L4_s1",
+   "image": "exp3_ladder/images/contraction_fixed_point/L4_s1.png",
+   "answer": "contraction_fixed_point",
+   "level": 4,
+   "seed": 1
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:contraction_fixed_point:L4_s2",
+   "image": "exp3_ladder/images/contraction_fixed_point/L4_s2.png",
+   "answer": "contraction_fixed_point",
+   "level": 4,
+   "seed": 2
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:contraction_fixed_point:L5_s0",
+   "image": "exp3_ladder/images/contraction_fixed_point/L5_s0.png",
+   "answer": "contraction_fixed_point",
+   "level": 5,
+   "seed": 0
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:contraction_fixed_point:L5_s1",
+   "image": "exp3_ladder/images/contraction_fixed_point/L5_s1.png",
+   "answer": "contraction_fixed_point",
+   "level": 5,
+   "seed": 1
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:contraction_fixed_point:L5_s2",
+   "image": "exp3_ladder/images/contraction_fixed_point/L5_s2.png",
+   "answer": "contraction_fixed_point",
+   "level": 5,
+   "seed": 2
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:contraction_fixed_point:L6_s0",
+   "image": "exp3_ladder/images/contraction_fixed_point/L6_s0.png",
+   "answer": "contraction_fixed_point",
+   "level": 6,
+   "seed": 0
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:contraction_fixed_point:L6_s1",
+   "image": "exp3_ladder/images/contraction_fixed_point/L6_s1.png",
+   "answer": "contraction_fixed_point",
+   "level": 6,
+   "seed": 1
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:contraction_fixed_point:L6_s2",
+   "image": "exp3_ladder/images/contraction_fixed_point/L6_s2.png",
+   "answer": "contraction_fixed_point",
+   "level": 6,
+   "seed": 2
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:aperiodic_tiling:L0_s0",
+   "image": "motifs/aperiodic_tiling/skeleton_penrose.png",
+   "answer": "aperiodic_tiling",
+   "level": 0,
+   "seed": 0
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:aperiodic_tiling:L1_s0",
+   "image": "exp3_ladder/images/aperiodic_tiling/L1_s0.png",
+   "answer": "aperiodic_tiling",
+   "level": 1,
+   "seed": 0
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:aperiodic_tiling:L1_s1",
+   "image": "exp3_ladder/images/aperiodic_tiling/L1_s1.png",
+   "answer": "aperiodic_tiling",
+   "level": 1,
+   "seed": 1
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:aperiodic_tiling:L1_s2",
+   "image": "exp3_ladder/images/aperiodic_tiling/L1_s2.png",
+   "answer": "aperiodic_tiling",
+   "level": 1,
+   "seed": 2
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:aperiodic_tiling:L2_s0",
+   "image": "exp3_ladder/images/aperiodic_tiling/L2_s0.png",
+   "answer": "aperiodic_tiling",
+   "level": 2,
+   "seed": 0
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:aperiodic_tiling:L2_s1",
+   "image": "exp3_ladder/images/aperiodic_tiling/L2_s1.png",
+   "answer": "aperiodic_tiling",
+   "level": 2,
+   "seed": 1
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:aperiodic_tiling:L2_s2",
+   "image": "exp3_ladder/images/aperiodic_tiling/L2_s2.png",
+   "answer": "aperiodic_tiling",
+   "level": 2,
+   "seed": 2
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:aperiodic_tiling:L3_s0",
+   "image": "exp3_ladder/images/aperiodic_tiling/L3_s0.png",
+   "answer": "aperiodic_tiling",
+   "level": 3,
+   "seed": 0
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:aperiodic_tiling:L3_s1",
+   "image": "exp3_ladder/images/aperiodic_tiling/L3_s1.png",
+   "answer": "aperiodic_tiling",
+   "level": 3,
+   "seed": 1
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:aperiodic_tiling:L3_s2",
+   "image": "exp3_ladder/images/aperiodic_tiling/L3_s2.png",
+   "answer": "aperiodic_tiling",
+   "level": 3,
+   "seed": 2
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:aperiodic_tiling:L4_s0",
+   "image": "exp3_ladder/images/aperiodic_tiling/L4_s0.png",
+   "answer": "aperiodic_tiling",
+   "level": 4,
+   "seed": 0
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:aperiodic_tiling:L4_s1",
+   "image": "exp3_ladder/images/aperiodic_tiling/L4_s1.png",
+   "answer": "aperiodic_tiling",
+   "level": 4,
+   "seed": 1
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:aperiodic_tiling:L4_s2",
+   "image": "exp3_ladder/images/aperiodic_tiling/L4_s2.png",
+   "answer": "aperiodic_tiling",
+   "level": 4,
+   "seed": 2
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:aperiodic_tiling:L5_s0",
+   "image": "exp3_ladder/images/aperiodic_tiling/L5_s0.png",
+   "answer": "aperiodic_tiling",
+   "level": 5,
+   "seed": 0
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:aperiodic_tiling:L5_s1",
+   "image": "exp3_ladder/images/aperiodic_tiling/L5_s1.png",
+   "answer": "aperiodic_tiling",
+   "level": 5,
+   "seed": 1
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:aperiodic_tiling:L5_s2",
+   "image": "exp3_ladder/images/aperiodic_tiling/L5_s2.png",
+   "answer": "aperiodic_tiling",
+   "level": 5,
+   "seed": 2
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:aperiodic_tiling:L6_s0",
+   "image": "exp3_ladder/images/aperiodic_tiling/L6_s0.png",
+   "answer": "aperiodic_tiling",
+   "level": 6,
+   "seed": 0
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:aperiodic_tiling:L6_s1",
+   "image": "exp3_ladder/images/aperiodic_tiling/L6_s1.png",
+   "answer": "aperiodic_tiling",
+   "level": 6,
+   "seed": 1
+  },
+  {
+   "task": "scene2motif",
+   "id": "ladder:aperiodic_tiling:L6_s2",
+   "image": "exp3_ladder/images/aperiodic_tiling/L6_s2.png",
+   "answer": "aperiodic_tiling",
+   "level": 6,
+   "seed": 2
+  }
+ ]
+}

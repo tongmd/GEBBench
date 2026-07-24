@@ -1,0 +1,652 @@
+{
+ "model": "claude-opus-4-8",
+ "base": "https://yunwu.ai/v1",
+ "summary": {
+  "scene2motif": {
+   "n": 80,
+   "acc": 0.425
+  }
+ },
+ "records": [
+  {
+   "id": "scene:resample_00:alternation",
+   "task": "scene2motif",
+   "answer": "alternation",
+   "pred": "alternation",
+   "correct": true,
+   "raw": "{\"motif_id\": \"alternation\"}"
+  },
+  {
+   "id": "scene:resample_01:alternation",
+   "task": "scene2motif",
+   "answer": "alternation",
+   "pred": "alternation",
+   "correct": true,
+   "raw": "{\"motif_id\": \"alternation\"}"
+  },
+  {
+   "id": "scene:resample_02:alternation",
+   "task": "scene2motif",
+   "answer": "alternation",
+   "pred": "recursion",
+   "correct": false,
+   "raw": "{\"motif_id\": \"recursion\"}"
+  },
+  {
+   "id": "scene:resample_00:aperiodic_tiling",
+   "task": "scene2motif",
+   "answer": "aperiodic_tiling",
+   "pred": "five_fold_star_rosette",
+   "correct": false,
+   "raw": "{\"motif_id\": \"five_fold_star_rosette\"}"
+  },
+  {
+   "id": "scene:resample_01:aperiodic_tiling",
+   "task": "scene2motif",
+   "answer": "aperiodic_tiling",
+   "pred": "aperiodic_tiling",
+   "correct": true,
+   "raw": "{\"motif_id\": \"aperiodic_tiling\"}"
+  },
+  {
+   "id": "scene:resample_02:aperiodic_tiling",
+   "task": "scene2motif",
+   "answer": "aperiodic_tiling",
+   "pred": "aperiodic_tiling",
+   "correct": true,
+   "raw": "{\"motif_id\": \"aperiodic_tiling\"}"
+  },
+  {
+   "id": "scene:resample_03:aperiodic_tiling",
+   "task": "scene2motif",
+   "answer": "aperiodic_tiling",
+   "pred": null,
+   "correct": false,
+   "raw": "I don't see any answer options listed in your message. The选项 (options) section appears to be empty, so I can't select a motif_id.\n\nCould you paste the list of available motif options? Once I have them, I'll return the JSON."
+  },
+  {
+   "id": "scene:resample_00:bottleneck",
+   "task": "scene2motif",
+   "answer": "bottleneck",
+   "pred": "pentagram",
+   "correct": false,
+   "raw": "{\"motif_id\": \"pentagram\"}"
+  },
+  {
+   "id": "scene:resample_01:bottleneck",
+   "task": "scene2motif",
+   "answer": "bottleneck",
+   "pred": "bottleneck",
+   "correct": true,
+   "raw": "{\"motif_id\": \"bottleneck\"}"
+  },
+  {
+   "id": "scene:resample_02:bottleneck",
+   "task": "scene2motif",
+   "answer": "bottleneck",
+   "pred": "recursion",
+   "correct": false,
+   "raw": "{\"motif_id\": \"recursion\"}"
+  },
+  {
+   "id": "scene:resample_00:braiding",
+   "task": "scene2motif",
+   "answer": "braiding",
+   "pred": "interlace",
+   "correct": false,
+   "raw": "我没有看到具体的选项列表——你的消息里\"选项：\"后面是空的。\n\n不过基于图像本身，它显示的是两股（或多股）线条相互交叉、上下穿插的连续编织结构，这对应的抽象母题是\"辫状交织/编结\"（interlace / plait / braid）。\n\n如果你能把候选选项贴出来，我可以直接选出对应的 motif_id。目前只能根据图像内容给出最贴切的判断：\n\n{\"motif_id\": \"interlace\"}"
+  },
+  {
+   "id": "scene:resample_01:braiding",
+   "task": "scene2motif",
+   "answer": "braiding",
+   "pred": "braiding",
+   "correct": true,
+   "raw": "{\"motif_id\": \"braiding\"}"
+  },
+  {
+   "id": "scene:resample_02:braiding",
+   "task": "scene2motif",
+   "answer": "braiding",
+   "pred": "intertwined_vines_helix",
+   "correct": false,
+   "raw": "{\"motif_id\": \"intertwined_vines_helix\"}"
+  },
+  {
+   "id": "scene:resample_00:contraction_fixed_point",
+   "task": "scene2motif",
+   "answer": "contraction_fixed_point",
+   "pred": "hub",
+   "correct": false,
+   "raw": "{\"motif_id\": \"hub\"}"
+  },
+  {
+   "id": "scene:resample_01:contraction_fixed_point",
+   "task": "scene2motif",
+   "answer": "contraction_fixed_point",
+   "pred": "contraction_fixed_point",
+   "correct": true,
+   "raw": "{\"motif_id\": \"contraction_fixed_point\"}"
+  },
+  {
+   "id": "scene:resample_02:contraction_fixed_point",
+   "task": "scene2motif",
+   "answer": "contraction_fixed_point",
+   "pred": "infinite_descent",
+   "correct": false,
+   "raw": "{\"motif_id\": \"infinite_descent\"}"
+  },
+  {
+   "id": "scene:resample_03:contraction_fixed_point",
+   "task": "scene2motif",
+   "answer": "contraction_fixed_point",
+   "pred": null,
+   "correct": false,
+   "raw": "I don't see any answer options listed in your message. The selection choices (the list of motif_id values) didn't come through.\n\nCould you paste the options? Once I have them, I'll return the JSON with the matching motif_id.\n\nBased on the image alone, I can describe what I see: two tapering triangular wedges meeting at a central circular boss/node, creating a bowtie or hourglass form along a diagonal axis — an abstract structural motif of convergence toward a central point."
+  },
+  {
+   "id": "scene:resample_00:convergence",
+   "task": "scene2motif",
+   "answer": "convergence",
+   "pred": "convergence",
+   "correct": true,
+   "raw": "{\"motif_id\": \"convergence\"}"
+  },
+  {
+   "id": "scene:resample_01:convergence",
+   "task": "scene2motif",
+   "answer": "convergence",
+   "pred": "convergence",
+   "correct": true,
+   "raw": "{\"motif_id\": \"convergence\"}"
+  },
+  {
+   "id": "scene:resample_02:convergence",
+   "task": "scene2motif",
+   "answer": "convergence",
+   "pred": "recursion",
+   "correct": false,
+   "raw": "{\"motif_id\": \"recursion\"}"
+  },
+  {
+   "id": "scene:resample_00:coprime_orbit",
+   "task": "scene2motif",
+   "answer": "coprime_orbit",
+   "pred": "octagram_star_polygon_8",
+   "correct": false,
+   "raw": "{\"motif_id\": \"octagram_star_polygon_8\"}"
+  },
+  {
+   "id": "scene:resample_01:coprime_orbit",
+   "task": "scene2motif",
+   "answer": "coprime_orbit",
+   "pred": "coprime_orbit",
+   "correct": true,
+   "raw": "{\"motif_id\": \"coprime_orbit\"}"
+  },
+  {
+   "id": "scene:resample_02:coprime_orbit",
+   "task": "scene2motif",
+   "answer": "coprime_orbit",
+   "pred": "coprime_orbit",
+   "correct": true,
+   "raw": "{\"motif_id\": \"coprime_orbit\"}"
+  },
+  {
+   "id": "scene:resample_03:coprime_orbit",
+   "task": "scene2motif",
+   "answer": "coprime_orbit",
+   "pred": "recursion",
+   "correct": false,
+   "raw": "{\"motif_id\": \"recursion\"}"
+  },
+  {
+   "id": "scene:resample_00:cycle",
+   "task": "scene2motif",
+   "answer": "cycle",
+   "pred": "cycle",
+   "correct": true,
+   "raw": "{\"motif_id\": \"cycle\"}"
+  },
+  {
+   "id": "scene:resample_01:cycle",
+   "task": "scene2motif",
+   "answer": "cycle",
+   "pred": "cycle",
+   "correct": true,
+   "raw": "{\"motif_id\": \"cycle\"}"
+  },
+  {
+   "id": "scene:resample_02:cycle",
+   "task": "scene2motif",
+   "answer": "cycle",
+   "pred": "cycle",
+   "correct": true,
+   "raw": "{\"motif_id\": \"cycle\"}"
+  },
+  {
+   "id": "scene:resample_00:diagonalization",
+   "task": "scene2motif",
+   "answer": "diagonalization",
+   "pred": "diagonalization",
+   "correct": true,
+   "raw": "{\"motif_id\": \"diagonalization\"}"
+  },
+  {
+   "id": "scene:resample_01:diagonalization",
+   "task": "scene2motif",
+   "answer": "diagonalization",
+   "pred": "interference",
+   "correct": false,
+   "raw": "{\"motif_id\": \"interference\"}"
+  },
+  {
+   "id": "scene:resample_02:diagonalization",
+   "task": "scene2motif",
+   "answer": "diagonalization",
+   "pred": "alternation",
+   "correct": false,
+   "raw": "{\"motif_id\": \"alternation\"}"
+  },
+  {
+   "id": "scene:resample_03:diagonalization",
+   "task": "scene2motif",
+   "answer": "diagonalization",
+   "pred": "diagonalization",
+   "correct": true,
+   "raw": "{\"motif_id\": \"diagonalization\"}"
+  },
+  {
+   "id": "scene:resample_00:figure_ground",
+   "task": "scene2motif",
+   "answer": "figure_ground",
+   "pred": "triangular_tessellation",
+   "correct": false,
+   "raw": "{\"motif_id\": \"triangular_tessellation\"}"
+  },
+  {
+   "id": "scene:resample_01:figure_ground",
+   "task": "scene2motif",
+   "answer": "figure_ground",
+   "pred": "tessellation",
+   "correct": false,
+   "raw": "{\"motif_id\": \"tessellation\"}"
+  },
+  {
+   "id": "scene:resample_02:figure_ground",
+   "task": "scene2motif",
+   "answer": "figure_ground",
+   "pred": "recursion",
+   "correct": false,
+   "raw": "{\"motif_id\": \"recursion\"}"
+  },
+  {
+   "id": "scene:resample_00:hub",
+   "task": "scene2motif",
+   "answer": "hub",
+   "pred": "hub",
+   "correct": true,
+   "raw": "{\"motif_id\": \"hub\"}"
+  },
+  {
+   "id": "scene:resample_01:hub",
+   "task": "scene2motif",
+   "answer": "hub",
+   "pred": "hub",
+   "correct": true,
+   "raw": "{\"motif_id\": \"hub\"}"
+  },
+  {
+   "id": "scene:resample_02:hub",
+   "task": "scene2motif",
+   "answer": "hub",
+   "pred": "radial_symmetry",
+   "correct": false,
+   "raw": "{\"motif_id\": \"radial_symmetry\"}"
+  },
+  {
+   "id": "scene:resample_00:infinite_descent",
+   "task": "scene2motif",
+   "answer": "infinite_descent",
+   "pred": "recursion",
+   "correct": false,
+   "raw": "{\"motif_id\": \"recursion\"}"
+  },
+  {
+   "id": "scene:resample_01:infinite_descent",
+   "task": "scene2motif",
+   "answer": "infinite_descent",
+   "pred": "infinite_descent",
+   "correct": true,
+   "raw": "{\"motif_id\": \"infinite_descent\"}"
+  },
+  {
+   "id": "scene:resample_02:infinite_descent",
+   "task": "scene2motif",
+   "answer": "infinite_descent",
+   "pred": "recursion",
+   "correct": false,
+   "raw": "{\"motif_id\": \"recursion\"}"
+  },
+  {
+   "id": "scene:resample_03:infinite_descent",
+   "task": "scene2motif",
+   "answer": "infinite_descent",
+   "pred": "nesting",
+   "correct": false,
+   "raw": "{\"motif_id\": \"nesting\"}"
+  },
+  {
+   "id": "scene:resample_00:interference",
+   "task": "scene2motif",
+   "answer": "interference",
+   "pred": "concentric_ripples_interference",
+   "correct": false,
+   "raw": "{\"motif_id\": \"concentric_ripples_interference\"}"
+  },
+  {
+   "id": "scene:resample_01:interference",
+   "task": "scene2motif",
+   "answer": "interference",
+   "pred": "recursion",
+   "correct": false,
+   "raw": "{\"motif_id\": \"recursion\"}"
+  },
+  {
+   "id": "scene:resample_02:interference",
+   "task": "scene2motif",
+   "answer": "interference",
+   "pred": "recursion",
+   "correct": false,
+   "raw": "{\"motif_id\": \"recursion\"}"
+  },
+  {
+   "id": "scene:resample_00:isomorphism",
+   "task": "scene2motif",
+   "answer": "isomorphism",
+   "pred": "branching_recursion",
+   "correct": false,
+   "raw": "{\"motif_id\": \"branching_recursion\"}"
+  },
+  {
+   "id": "scene:resample_01:isomorphism",
+   "task": "scene2motif",
+   "answer": "isomorphism",
+   "pred": "isomorphism",
+   "correct": true,
+   "raw": "{\"motif_id\": \"isomorphism\"}"
+  },
+  {
+   "id": "scene:resample_02:isomorphism",
+   "task": "scene2motif",
+   "answer": "isomorphism",
+   "pred": "recursion",
+   "correct": false,
+   "raw": "{\"motif_id\": \"recursion\"}"
+  },
+  {
+   "id": "scene:resample_00:mobius",
+   "task": "scene2motif",
+   "answer": "mobius",
+   "pred": "mobius",
+   "correct": true,
+   "raw": "{\"motif_id\": \"mobius\"}"
+  },
+  {
+   "id": "scene:resample_01:mobius",
+   "task": "scene2motif",
+   "answer": "mobius",
+   "pred": "mobius",
+   "correct": true,
+   "raw": "{\"motif_id\": \"mobius\"}"
+  },
+  {
+   "id": "scene:resample_02:mobius",
+   "task": "scene2motif",
+   "answer": "mobius",
+   "pred": "mobius_strip",
+   "correct": false,
+   "raw": "图像显示的是一个只有单面、经过半扭转连接的带状结构，这是典型的莫比乌斯带（Möbius strip）母题。\n\n但你的消息中并没有实际列出可供选择的选项列表。请把选项（及其对应的 motif_id）补充完整，我才能返回准确的 JSON。\n\n如果选项中存在莫比乌斯带对应项，答案应为该项。基于图像内容，最合理的推断是：\n\n{\"motif_id\": \"mobius_strip\"}"
+  },
+  {
+   "id": "scene:resample_00:nesting",
+   "task": "scene2motif",
+   "answer": "nesting",
+   "pred": "nesting",
+   "correct": true,
+   "raw": "{\"motif_id\": \"nesting\"}"
+  },
+  {
+   "id": "scene:resample_01:nesting",
+   "task": "scene2motif",
+   "answer": "nesting",
+   "pred": "recursion",
+   "correct": false,
+   "raw": "{\"motif_id\": \"recursion\"}"
+  },
+  {
+   "id": "scene:resample_00:pigeonhole",
+   "task": "scene2motif",
+   "answer": "pigeonhole",
+   "pred": "pigeonhole",
+   "correct": true,
+   "raw": "{\"motif_id\": \"pigeonhole\"}"
+  },
+  {
+   "id": "scene:resample_01:pigeonhole",
+   "task": "scene2motif",
+   "answer": "pigeonhole",
+   "pred": "symmetry_breaking",
+   "correct": false,
+   "raw": "{\"motif_id\": \"symmetry_breaking\"}"
+  },
+  {
+   "id": "scene:resample_02:pigeonhole",
+   "task": "scene2motif",
+   "answer": "pigeonhole",
+   "pred": "symmetry_breaking",
+   "correct": false,
+   "raw": "{\"motif_id\": \"symmetry_breaking\"}"
+  },
+  {
+   "id": "scene:resample_03:pigeonhole",
+   "task": "scene2motif",
+   "answer": "pigeonhole",
+   "pred": null,
+   "correct": false,
+   "raw": "I can't complete this request as posed—no answer options were provided, so there's no list to select a motif_id from.\n\nIf you share the option set, I'll return the JSON."
+  },
+  {
+   "id": "scene:resample_00:projective_duality",
+   "task": "scene2motif",
+   "answer": "projective_duality",
+   "pred": "bottleneck",
+   "correct": false,
+   "raw": "{\"motif_id\": \"bottleneck\"}"
+  },
+  {
+   "id": "scene:resample_01:projective_duality",
+   "task": "scene2motif",
+   "answer": "projective_duality",
+   "pred": "projective_duality",
+   "correct": true,
+   "raw": "{\"motif_id\": \"projective_duality\"}"
+  },
+  {
+   "id": "scene:resample_02:projective_duality",
+   "task": "scene2motif",
+   "answer": "projective_duality",
+   "pred": "figure_ground",
+   "correct": false,
+   "raw": "{\"motif_id\": \"figure_ground\"}"
+  },
+  {
+   "id": "scene:resample_03:projective_duality",
+   "task": "scene2motif",
+   "answer": "projective_duality",
+   "pred": "bottleneck",
+   "correct": false,
+   "raw": "{\"motif_id\": \"bottleneck\"}"
+  },
+  {
+   "id": "scene:resample_00:recursion",
+   "task": "scene2motif",
+   "answer": "recursion",
+   "pred": "recursion",
+   "correct": true,
+   "raw": "{\"motif_id\": \"recursion\"}"
+  },
+  {
+   "id": "scene:resample_01:recursion",
+   "task": "scene2motif",
+   "answer": "recursion",
+   "pred": "recursive_branching",
+   "correct": false,
+   "raw": "{\"motif_id\": \"recursive_branching\"}"
+  },
+  {
+   "id": "scene:resample_00:self_reference",
+   "task": "scene2motif",
+   "answer": "self_reference",
+   "pred": "recursion",
+   "correct": false,
+   "raw": "{\"motif_id\": \"recursion\"}"
+  },
+  {
+   "id": "scene:resample_01:self_reference",
+   "task": "scene2motif",
+   "answer": "self_reference",
+   "pred": "nesting",
+   "correct": false,
+   "raw": "{\"motif_id\": \"nesting\"}"
+  },
+  {
+   "id": "scene:resample_02:self_reference",
+   "task": "scene2motif",
+   "answer": "self_reference",
+   "pred": "recursion",
+   "correct": false,
+   "raw": "{\"motif_id\": \"recursion\"}"
+  },
+  {
+   "id": "scene:resample_00:spiral",
+   "task": "scene2motif",
+   "answer": "spiral",
+   "pred": "spiral",
+   "correct": true,
+   "raw": "{\"motif_id\": \"spiral\"}"
+  },
+  {
+   "id": "scene:resample_01:spiral",
+   "task": "scene2motif",
+   "answer": "spiral",
+   "pred": "spiral",
+   "correct": true,
+   "raw": "{\"motif_id\": \"spiral\"}"
+  },
+  {
+   "id": "scene:resample_02:spiral",
+   "task": "scene2motif",
+   "answer": "spiral",
+   "pred": "spiral",
+   "correct": true,
+   "raw": "{\"motif_id\": \"spiral\"}"
+  },
+  {
+   "id": "scene:resample_00:strange_loop",
+   "task": "scene2motif",
+   "answer": "strange_loop",
+   "pred": "nesting",
+   "correct": false,
+   "raw": "{\"motif_id\": \"nesting\"}"
+  },
+  {
+   "id": "scene:resample_01:strange_loop",
+   "task": "scene2motif",
+   "answer": "strange_loop",
+   "pred": "strange_loop",
+   "correct": true,
+   "raw": "{\"motif_id\": \"strange_loop\"}"
+  },
+  {
+   "id": "scene:resample_02:strange_loop",
+   "task": "scene2motif",
+   "answer": "strange_loop",
+   "pred": "recursion",
+   "correct": false,
+   "raw": "{\"motif_id\": \"recursion\"}"
+  },
+  {
+   "id": "scene:resample_00:symmetry",
+   "task": "scene2motif",
+   "answer": "symmetry",
+   "pred": "symmetry",
+   "correct": true,
+   "raw": "{\"motif_id\": \"symmetry\"}"
+  },
+  {
+   "id": "scene:resample_01:symmetry",
+   "task": "scene2motif",
+   "answer": "symmetry",
+   "pred": "symmetry",
+   "correct": true,
+   "raw": "{\"motif_id\": \"symmetry\"}"
+  },
+  {
+   "id": "scene:resample_02:symmetry",
+   "task": "scene2motif",
+   "answer": "symmetry",
+   "pred": "bilateral_symmetry",
+   "correct": false,
+   "raw": "{\"motif_id\": \"bilateral_symmetry\"}"
+  },
+  {
+   "id": "scene:resample_00:symmetry_breaking",
+   "task": "scene2motif",
+   "answer": "symmetry_breaking",
+   "pred": "single_point_in_field",
+   "correct": false,
+   "raw": "{\"motif_id\": \"single_point_in_field\"}"
+  },
+  {
+   "id": "scene:resample_01:symmetry_breaking",
+   "task": "scene2motif",
+   "answer": "symmetry_breaking",
+   "pred": "symmetry_breaking",
+   "correct": true,
+   "raw": "{\"motif_id\": \"symmetry_breaking\"}"
+  },
+  {
+   "id": "scene:resample_02:symmetry_breaking",
+   "task": "scene2motif",
+   "answer": "symmetry_breaking",
+   "pred": "recursion",
+   "correct": false,
+   "raw": "{\"motif_id\": \"recursion\"}"
+  },
+  {
+   "id": "scene:resample_00:tiling",
+   "task": "scene2motif",
+   "answer": "tiling",
+   "pred": "hexagonal_tessellation",
+   "correct": false,
+   "raw": "{\"motif_id\": \"hexagonal_tessellation\"}"
+  },
+  {
+   "id": "scene:resample_01:tiling",
+   "task": "scene2motif",
+   "answer": "tiling",
+   "pred": "tiling",
+   "correct": true,
+   "raw": "{\"motif_id\": \"tiling\"}"
+  },
+  {
+   "id": "scene:resample_02:tiling",
+   "task": "scene2motif",
+   "answer": "tiling",
+   "pred": "recursion",
+   "correct": false,
+   "raw": "{\"motif_id\": \"recursion\"}"
+  }
+ ]
+}

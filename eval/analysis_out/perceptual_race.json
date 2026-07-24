@@ -1,0 +1,397 @@
+{
+ "n_motifs": 25,
+ "n_perm": 10000,
+ "n_models_pooled": 5,
+ "embeddings": {
+  "dinov2": "facebook/dinov2-base (CLS), precomputed",
+  "clip_b32": "openai/clip-vit-base-patch32 image features",
+  "siglip": "google/siglip-base-patch16-224 image features"
+ },
+ "mantel": {
+  "dinov2": {
+   "vs_family": {
+    "mantel_r": 0.0219,
+    "p": 0.70743
+   },
+   "vs_pooled_confusion": {
+    "mantel_r": -0.1185,
+    "p": 0.07209
+   }
+  },
+  "clip_b32": {
+   "vs_family": {
+    "mantel_r": 0.0797,
+    "p": 0.16498
+   },
+   "vs_pooled_confusion": {
+    "mantel_r": -0.1699,
+    "p": 0.0173
+   }
+  },
+  "siglip": {
+   "vs_family": {
+    "mantel_r": 0.0983,
+    "p": 0.08389
+   },
+   "vs_pooled_confusion": {
+    "mantel_r": -0.1322,
+    "p": 0.05489
+   }
+  },
+  "formal_family_ref": {
+   "vs_pooled_confusion": {
+    "mantel_r": 0.2272,
+    "p": 0.0003
+   }
+  }
+ },
+ "mantel_inter_embedding": {
+  "dinov2_vs_clip_b32": {
+   "mantel_r": 0.485,
+   "p": 0.0001
+  },
+  "dinov2_vs_siglip": {
+   "mantel_r": 0.4835,
+   "p": 0.0001
+  },
+  "clip_b32_vs_siglip": {
+   "mantel_r": 0.8276,
+   "p": 0.0001
+  }
+ },
+ "race_pooled": {
+  "beta": {
+   "formal_family": 0.2539,
+   "label_prior": 0.2796,
+   "dinov2": 0.0317,
+   "clip_b32": 0.4303,
+   "siglip": -0.1186
+  },
+  "p_perm": {
+   "formal_family": 0.10819,
+   "label_prior": 0.09219,
+   "dinov2": 0.86481,
+   "clip_b32": 0.14589,
+   "siglip": 0.68263
+  },
+  "n_errors": 291,
+  "deviance_explained": 0.1095
+ },
+ "univariate_pooled": {
+  "formal_family": {
+   "beta": 0.4165,
+   "p_perm": 0.0029,
+   "deviance_explained": 0.0564,
+   "ols_r2_rate": 0.0261
+  },
+  "label_prior": {
+   "beta": 0.4734,
+   "p_perm": 0.001,
+   "deviance_explained": 0.0705,
+   "ols_r2_rate": 0.0321
+  },
+  "dinov2": {
+   "beta": 0.2335,
+   "p_perm": 0.12229,
+   "deviance_explained": 0.0161,
+   "ols_r2_rate": 0.0069
+  },
+  "clip_b32": {
+   "beta": 0.4212,
+   "p_perm": 0.0088,
+   "deviance_explained": 0.0383,
+   "ols_r2_rate": 0.0146
+  },
+  "siglip": {
+   "beta": 0.3106,
+   "p_perm": 0.05019,
+   "deviance_explained": 0.0222,
+   "ols_r2_rate": 0.0086
+  }
+ },
+ "max_perceptual_alone": {
+  "ols_r2": {
+   "value": 0.0146,
+   "embedding": "clip_b32"
+  },
+  "deviance_explained": {
+   "value": 0.0383,
+   "embedding": "clip_b32"
+  }
+ },
+ "race_per_model": {
+  "claude-opus-4-8": {
+   "beta": {
+    "formal_family": 0.3066,
+    "label_prior": 0.2492,
+    "dinov2": 0.2489,
+    "clip_b32": 0.4658,
+    "siglip": -0.3134
+   },
+   "p_perm": {
+    "formal_family": 0.17891,
+    "label_prior": 0.31784,
+    "dinov2": 0.43578,
+    "clip_b32": 0.36482,
+    "siglip": 0.47826
+   },
+   "n_errors": 47
+  },
+  "gpt-5.2": {
+   "beta": {
+    "formal_family": 0.2915,
+    "label_prior": 0.22,
+    "dinov2": -0.1744,
+    "clip_b32": 0.985,
+    "siglip": -0.4482
+   },
+   "p_perm": {
+    "formal_family": 0.28386,
+    "label_prior": 0.4068,
+    "dinov2": 0.49525,
+    "clip_b32": 0.01799,
+    "siglip": 0.27036
+   },
+   "n_errors": 52
+  },
+  "gpt-5.5": {
+   "beta": {
+    "formal_family": 0.3848,
+    "label_prior": 0.1699,
+    "dinov2": -0.0172,
+    "clip_b32": 0.6384,
+    "siglip": -0.265
+   },
+   "p_perm": {
+    "formal_family": 0.12244,
+    "label_prior": 0.46077,
+    "dinov2": 0.94103,
+    "clip_b32": 0.07046,
+    "siglip": 0.43628
+   },
+   "n_errors": 49
+  },
+  "qwen2-vl-7b": {
+   "beta": {
+    "formal_family": 0.1009,
+    "label_prior": 0.3736,
+    "dinov2": 0.0193,
+    "clip_b32": 0.1277,
+    "siglip": 0.0668
+   },
+   "p_perm": {
+    "formal_family": 0.62519,
+    "label_prior": 0.11544,
+    "dinov2": 0.95152,
+    "clip_b32": 0.7986,
+    "siglip": 0.87656
+   },
+   "n_errors": 53
+  },
+  "qwen2.5-vl-32b": {
+   "beta": {
+    "formal_family": 0.2231,
+    "label_prior": 0.3403,
+    "dinov2": 0.0549,
+    "clip_b32": 0.203,
+    "siglip": 0.1109
+   },
+   "p_perm": {
+    "formal_family": 0.21539,
+    "label_prior": 0.07796,
+    "dinov2": 0.7946,
+    "clip_b32": 0.56822,
+    "siglip": 0.74063
+   },
+   "n_errors": 90
+  }
+ },
+ "within_motif_control": {
+  "dinov2": {
+   "POOLED": {
+    "r": 0.0341,
+    "p": 0.41166,
+    "n": 545
+   },
+   "claude-opus-4-8": {
+    "r": 0.1718,
+    "p": 0.09095,
+    "n": 125
+   },
+   "gpt-5.2": {
+    "r": 0.1137,
+    "p": 0.13393,
+    "n": 125
+   },
+   "gpt-5.5": {
+    "r": -0.077,
+    "p": 0.35332,
+    "n": 125
+   },
+   "qwen2-vl-7b": {
+    "r": -0.0235,
+    "p": 1.0,
+    "n": 45
+   },
+   "qwen2.5-vl-32b": {
+    "r": 0.0648,
+    "p": 0.48526,
+    "n": 125
+   }
+  },
+  "clip_b32": {
+   "POOLED": {
+    "r": 0.0651,
+    "p": 0.15038,
+    "n": 545
+   },
+   "claude-opus-4-8": {
+    "r": 0.2059,
+    "p": 0.05797,
+    "n": 125
+   },
+   "gpt-5.2": {
+    "r": 0.0983,
+    "p": 0.33283,
+    "n": 125
+   },
+   "gpt-5.5": {
+    "r": -0.0461,
+    "p": 0.64418,
+    "n": 125
+   },
+   "qwen2-vl-7b": {
+    "r": -0.1176,
+    "p": 0.73363,
+    "n": 45
+   },
+   "qwen2.5-vl-32b": {
+    "r": 0.2077,
+    "p": 0.08546,
+    "n": 125
+   }
+  },
+  "siglip": {
+   "POOLED": {
+    "r": 0.0642,
+    "p": 0.14289,
+    "n": 545
+   },
+   "claude-opus-4-8": {
+    "r": 0.2047,
+    "p": 0.04448,
+    "n": 125
+   },
+   "gpt-5.2": {
+    "r": 0.1241,
+    "p": 0.18291,
+    "n": 125
+   },
+   "gpt-5.5": {
+    "r": -0.1009,
+    "p": 0.33633,
+    "n": 125
+   },
+   "qwen2-vl-7b": {
+    "r": 0.0396,
+    "p": 1.0,
+    "n": 45
+   },
+   "qwen2.5-vl-32b": {
+    "r": 0.1185,
+    "p": 0.22339,
+    "n": 125
+   }
+  }
+ },
+ "race_one_perceptual_at_a_time": {
+  "dinov2": {
+   "beta": {
+    "formal_family": 0.2613,
+    "label_prior": 0.2908,
+    "dinov2": 0.1745
+   },
+   "p_perm": {
+    "formal_family": 0.09439,
+    "label_prior": 0.07669,
+    "dinov2": 0.26737
+   },
+   "deviance_explained": 0.0913
+  },
+  "clip_b32": {
+   "beta": {
+    "formal_family": 0.2442,
+    "label_prior": 0.2911,
+    "clip_b32": 0.347
+   },
+   "p_perm": {
+    "formal_family": 0.11779,
+    "label_prior": 0.07739,
+    "clip_b32": 0.0388
+   },
+   "deviance_explained": 0.1084
+  },
+  "siglip": {
+   "beta": {
+    "formal_family": 0.2314,
+    "label_prior": 0.3176,
+    "siglip": 0.2466
+   },
+   "p_perm": {
+    "formal_family": 0.14109,
+    "label_prior": 0.05229,
+    "siglip": 0.13759
+   },
+   "deviance_explained": 0.0966
+  }
+ },
+ "race_family_vs_each_perceptual": {
+  "dinov2": {
+   "beta": {
+    "formal_family": 0.4159,
+    "dinov2": 0.2416
+   },
+   "p_perm": {
+    "formal_family": 0.0029,
+    "dinov2": 0.11189
+   },
+   "deviance_explained": 0.0723
+  },
+  "clip_b32": {
+   "beta": {
+    "formal_family": 0.3911,
+    "clip_b32": 0.3915
+   },
+   "p_perm": {
+    "formal_family": 0.0053,
+    "clip_b32": 0.017
+   },
+   "deviance_explained": 0.0882
+  },
+  "siglip": {
+   "beta": {
+    "formal_family": 0.3932,
+    "siglip": 0.2707
+   },
+   "p_perm": {
+    "formal_family": 0.0053,
+    "siglip": 0.09599
+   },
+   "deviance_explained": 0.0725
+  }
+ },
+ "sign_conventions": {
+  "mantel_vs_family": "perceptual DISTANCE vs family DISTANCE (0=same family); r near 0 = decoupled",
+  "mantel_vs_pooled_confusion": "perceptual DISTANCE vs symmetric confusion RATE; negative r = perceptually closer pairs confused more",
+  "regressions": "all predictors entered as standardized SIMILARITIES; beta>0 = closer in that space -> more confusions"
+ },
+ "headline": {
+  "decoupling_holds_all_three": "Mantel r(perceptual, formal family) = 0.02 (DINOv2), 0.08 (CLIP-B/32), 0.10 (SigLIP); all p>=0.08",
+  "formal_family_robust": "family similarity vs confusion Mantel r=+0.23 (p=3e-4); head-to-head dyadic race vs each perceptual geometry: beta_family=+0.39 (p=0.005) in all three",
+  "perceptual_not_zero": "CLIP-B/32 similarity carries significant independent signal: beta=+0.39 (p=0.017) head-to-head, +0.35 (p=0.039) after family+label controls; univariate beta=+0.42 (p=0.009). DINOv2 n.s. throughout; SigLIP marginal (p=0.05-0.14)",
+  "max_variance_perceptual_alone": "CLIP-B/32: 3.8% of pooled confusion deviance (1.5% OLS R2 on rates); cf. formal family 5.6%, label prior 7.1%",
+  "within_motif_control_replicates": "distance to own-motif centroid does not predict correctness in any embedding: r=0.03/0.07/0.06 (DINOv2/CLIP/SigLIP), all p>0.14, n=545",
+  "clip_siglip_collinear": "Mantel r(CLIP, SigLIP)=0.83 -> joint 5-way race uninterpretable; report one-perceptual-at-a-time races",
+  "verdict": "Original 'conceptual space, not pixel space' overclaims: the zero-perceptual-signal result was specific to DINOv2. Calibrated claim: errors align at least as strongly with the designed formal geometry as with any of three measured perceptual geometries (more strongly at the matrix level: 0.23 vs <=0.17), and the formal signal survives controlling for each; but CLIP retains independent signal of comparable size."
+ }
+}

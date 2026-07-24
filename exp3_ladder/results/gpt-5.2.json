@@ -1,0 +1,4006 @@
+{
+ "model": "gpt-5.2",
+ "base": "https://yunwu.ai/v1",
+ "summary": {
+  "L0": {
+   "n": 25,
+   "acc": 0.76
+  },
+  "L1": {
+   "n": 75,
+   "acc": 0.7333
+  },
+  "L2": {
+   "n": 75,
+   "acc": 0.8
+  },
+  "L3": {
+   "n": 75,
+   "acc": 0.72
+  },
+  "L4": {
+   "n": 75,
+   "acc": 0.6667
+  },
+  "L5": {
+   "n": 57,
+   "acc": 0.7018
+  },
+  "L6": {
+   "n": 55,
+   "acc": 0.7091
+  }
+ },
+ "records": [
+  {
+   "id": "ladder:recursion:L0_s0",
+   "task": "scene2motif",
+   "answer": "recursion",
+   "level": 0,
+   "seed": 0,
+   "pred": "recursion",
+   "correct": true,
+   "raw": "{\"motif_id\":\"recursion\"}"
+  },
+  {
+   "id": "ladder:nesting:L0_s0",
+   "task": "scene2motif",
+   "answer": "nesting",
+   "level": 0,
+   "seed": 0,
+   "pred": "nesting",
+   "correct": true,
+   "raw": "{\"motif_id\":\"nesting\"}"
+  },
+  {
+   "id": "ladder:cycle:L0_s0",
+   "task": "scene2motif",
+   "answer": "cycle",
+   "level": 0,
+   "seed": 0,
+   "pred": "cycle",
+   "correct": true,
+   "raw": "{\"motif_id\":\"cycle\"}"
+  },
+  {
+   "id": "ladder:self_reference:L0_s0",
+   "task": "scene2motif",
+   "answer": "self_reference",
+   "level": 0,
+   "seed": 0,
+   "pred": "nesting",
+   "correct": false,
+   "raw": "{\"motif_id\":\"nesting\"}"
+  },
+  {
+   "id": "ladder:symmetry:L0_s0",
+   "task": "scene2motif",
+   "answer": "symmetry",
+   "level": 0,
+   "seed": 0,
+   "pred": "symmetry",
+   "correct": true,
+   "raw": "{\"motif_id\":\"symmetry\"}"
+  },
+  {
+   "id": "ladder:alternation:L0_s0",
+   "task": "scene2motif",
+   "answer": "alternation",
+   "level": 0,
+   "seed": 0,
+   "pred": "alternation",
+   "correct": true,
+   "raw": "{\"motif_id\":\"alternation\"}"
+  },
+  {
+   "id": "ladder:spiral:L0_s0",
+   "task": "scene2motif",
+   "answer": "spiral",
+   "level": 0,
+   "seed": 0,
+   "pred": "spiral",
+   "correct": true,
+   "raw": "{\"motif_id\":\"spiral\"}"
+  },
+  {
+   "id": "ladder:convergence:L0_s0",
+   "task": "scene2motif",
+   "answer": "convergence",
+   "level": 0,
+   "seed": 0,
+   "pred": "convergence",
+   "correct": true,
+   "raw": "{\"motif_id\":\"convergence\"}"
+  },
+  {
+   "id": "ladder:bottleneck:L0_s0",
+   "task": "scene2motif",
+   "answer": "bottleneck",
+   "level": 0,
+   "seed": 0,
+   "pred": "bottleneck",
+   "correct": true,
+   "raw": "{\"motif_id\":\"bottleneck\"}"
+  },
+  {
+   "id": "ladder:symmetry_breaking:L0_s0",
+   "task": "scene2motif",
+   "answer": "symmetry_breaking",
+   "level": 0,
+   "seed": 0,
+   "pred": "symmetry_breaking",
+   "correct": true,
+   "raw": "{\"motif_id\":\"symmetry_breaking\"}"
+  },
+  {
+   "id": "ladder:strange_loop:L0_s0",
+   "task": "scene2motif",
+   "answer": "strange_loop",
+   "level": 0,
+   "seed": 0,
+   "pred": "cycle",
+   "correct": false,
+   "raw": "{\"motif_id\":\"cycle\"}"
+  },
+  {
+   "id": "ladder:figure_ground:L0_s0",
+   "task": "scene2motif",
+   "answer": "figure_ground",
+   "level": 0,
+   "seed": 0,
+   "pred": "tiling",
+   "correct": false,
+   "raw": "{\"motif_id\":\"tiling\"}"
+  },
+  {
+   "id": "ladder:isomorphism:L0_s0",
+   "task": "scene2motif",
+   "answer": "isomorphism",
+   "level": 0,
+   "seed": 0,
+   "pred": "isomorphism",
+   "correct": true,
+   "raw": "{\"motif_id\":\"isomorphism\"}"
+  },
+  {
+   "id": "ladder:mobius:L0_s0",
+   "task": "scene2motif",
+   "answer": "mobius",
+   "level": 0,
+   "seed": 0,
+   "pred": "mobius",
+   "correct": true,
+   "raw": "{\"motif_id\":\"mobius\"}"
+  },
+  {
+   "id": "ladder:braiding:L0_s0",
+   "task": "scene2motif",
+   "answer": "braiding",
+   "level": 0,
+   "seed": 0,
+   "pred": "braiding",
+   "correct": true,
+   "raw": "{\"motif_id\":\"braiding\"}"
+  },
+  {
+   "id": "ladder:interference:L0_s0",
+   "task": "scene2motif",
+   "answer": "interference",
+   "level": 0,
+   "seed": 0,
+   "pred": "symmetry",
+   "correct": false,
+   "raw": "{\"motif_id\":\"symmetry\"}"
+  },
+  {
+   "id": "ladder:tiling:L0_s0",
+   "task": "scene2motif",
+   "answer": "tiling",
+   "level": 0,
+   "seed": 0,
+   "pred": "tiling",
+   "correct": true,
+   "raw": "{\"motif_id\":\"tiling\"}"
+  },
+  {
+   "id": "ladder:hub:L0_s0",
+   "task": "scene2motif",
+   "answer": "hub",
+   "level": 0,
+   "seed": 0,
+   "pred": "hub",
+   "correct": true,
+   "raw": "{\"motif_id\":\"hub\"}"
+  },
+  {
+   "id": "ladder:diagonalization:L0_s0",
+   "task": "scene2motif",
+   "answer": "diagonalization",
+   "level": 0,
+   "seed": 0,
+   "pred": "diagonalization",
+   "correct": true,
+   "raw": "{\"motif_id\":\"diagonalization\"}"
+  },
+  {
+   "id": "ladder:infinite_descent:L0_s0",
+   "task": "scene2motif",
+   "answer": "infinite_descent",
+   "level": 0,
+   "seed": 0,
+   "pred": "infinite_descent",
+   "correct": true,
+   "raw": "{\"motif_id\":\"infinite_descent\"}"
+  },
+  {
+   "id": "ladder:coprime_orbit:L0_s0",
+   "task": "scene2motif",
+   "answer": "coprime_orbit",
+   "level": 0,
+   "seed": 0,
+   "pred": "coprime_orbit",
+   "correct": true,
+   "raw": "{\"motif_id\":\"coprime_orbit\"}"
+  },
+  {
+   "id": "ladder:pigeonhole:L0_s0",
+   "task": "scene2motif",
+   "answer": "pigeonhole",
+   "level": 0,
+   "seed": 0,
+   "pred": "convergence",
+   "correct": false,
+   "raw": "{\"motif_id\":\"convergence\"}"
+  },
+  {
+   "id": "ladder:projective_duality:L0_s0",
+   "task": "scene2motif",
+   "answer": "projective_duality",
+   "level": 0,
+   "seed": 0,
+   "pred": "projective_duality",
+   "correct": true,
+   "raw": "{\"motif_id\":\"projective_duality\"}"
+  },
+  {
+   "id": "ladder:contraction_fixed_point:L0_s0",
+   "task": "scene2motif",
+   "answer": "contraction_fixed_point",
+   "level": 0,
+   "seed": 0,
+   "pred": "contraction_fixed_point",
+   "correct": true,
+   "raw": "{\"motif_id\":\"contraction_fixed_point\"}"
+  },
+  {
+   "id": "ladder:aperiodic_tiling:L0_s0",
+   "task": "scene2motif",
+   "answer": "aperiodic_tiling",
+   "level": 0,
+   "seed": 0,
+   "pred": "symmetry",
+   "correct": false,
+   "raw": "{\"motif_id\":\"symmetry\"}"
+  },
+  {
+   "id": "ladder:recursion:L1_s0",
+   "task": "scene2motif",
+   "answer": "recursion",
+   "level": 1,
+   "seed": 0,
+   "pred": "recursion",
+   "correct": true,
+   "raw": "{\"motif_id\":\"recursion\"}"
+  },
+  {
+   "id": "ladder:recursion:L1_s1",
+   "task": "scene2motif",
+   "answer": "recursion",
+   "level": 1,
+   "seed": 1,
+   "pred": "recursion",
+   "correct": true,
+   "raw": "{\"motif_id\":\"recursion\"}"
+  },
+  {
+   "id": "ladder:recursion:L1_s2",
+   "task": "scene2motif",
+   "answer": "recursion",
+   "level": 1,
+   "seed": 2,
+   "pred": "recursion",
+   "correct": true,
+   "raw": "{\"motif_id\":\"recursion\"}"
+  },
+  {
+   "id": "ladder:recursion:L2_s0",
+   "task": "scene2motif",
+   "answer": "recursion",
+   "level": 2,
+   "seed": 0,
+   "pred": "recursion",
+   "correct": true,
+   "raw": "{\"motif_id\":\"recursion\"}"
+  },
+  {
+   "id": "ladder:recursion:L2_s1",
+   "task": "scene2motif",
+   "answer": "recursion",
+   "level": 2,
+   "seed": 1,
+   "pred": "recursion",
+   "correct": true,
+   "raw": "{\"motif_id\":\"recursion\"}"
+  },
+  {
+   "id": "ladder:recursion:L2_s2",
+   "task": "scene2motif",
+   "answer": "recursion",
+   "level": 2,
+   "seed": 2,
+   "pred": "recursion",
+   "correct": true,
+   "raw": "{\"motif_id\":\"recursion\"}"
+  },
+  {
+   "id": "ladder:recursion:L3_s0",
+   "task": "scene2motif",
+   "answer": "recursion",
+   "level": 3,
+   "seed": 0,
+   "pred": "recursion",
+   "correct": true,
+   "raw": "{\"motif_id\":\"recursion\"}"
+  },
+  {
+   "id": "ladder:recursion:L3_s1",
+   "task": "scene2motif",
+   "answer": "recursion",
+   "level": 3,
+   "seed": 1,
+   "pred": "recursion",
+   "correct": true,
+   "raw": "{\"motif_id\":\"recursion\"}"
+  },
+  {
+   "id": "ladder:recursion:L3_s2",
+   "task": "scene2motif",
+   "answer": "recursion",
+   "level": 3,
+   "seed": 2,
+   "pred": "recursion",
+   "correct": true,
+   "raw": "{\"motif_id\":\"recursion\"}"
+  },
+  {
+   "id": "ladder:recursion:L4_s0",
+   "task": "scene2motif",
+   "answer": "recursion",
+   "level": 4,
+   "seed": 0,
+   "pred": "recursion",
+   "correct": true,
+   "raw": "{\"motif_id\":\"recursion\"}"
+  },
+  {
+   "id": "ladder:recursion:L4_s1",
+   "task": "scene2motif",
+   "answer": "recursion",
+   "level": 4,
+   "seed": 1,
+   "pred": "recursion",
+   "correct": true,
+   "raw": "{\"motif_id\":\"recursion\"}"
+  },
+  {
+   "id": "ladder:recursion:L4_s2",
+   "task": "scene2motif",
+   "answer": "recursion",
+   "level": 4,
+   "seed": 2,
+   "pred": "recursion",
+   "correct": true,
+   "raw": "{\"motif_id\":\"recursion\"}"
+  },
+  {
+   "id": "ladder:recursion:L5_s1",
+   "task": "scene2motif",
+   "answer": "recursion",
+   "level": 5,
+   "seed": 1,
+   "pred": "recursion",
+   "correct": true,
+   "raw": "{\"motif_id\":\"recursion\"}"
+  },
+  {
+   "id": "ladder:recursion:L5_s2",
+   "task": "scene2motif",
+   "answer": "recursion",
+   "level": 5,
+   "seed": 2,
+   "pred": "recursion",
+   "correct": true,
+   "raw": "{\"motif_id\":\"recursion\"}"
+  },
+  {
+   "id": "ladder:recursion:L6_s1",
+   "task": "scene2motif",
+   "answer": "recursion",
+   "level": 6,
+   "seed": 1,
+   "pred": "recursion",
+   "correct": true,
+   "raw": "{\"motif_id\":\"recursion\"}"
+  },
+  {
+   "id": "ladder:recursion:L6_s2",
+   "task": "scene2motif",
+   "answer": "recursion",
+   "level": 6,
+   "seed": 2,
+   "pred": "recursion",
+   "correct": true,
+   "raw": "{\"motif_id\":\"recursion\"}"
+  },
+  {
+   "id": "ladder:nesting:L1_s0",
+   "task": "scene2motif",
+   "answer": "nesting",
+   "level": 1,
+   "seed": 0,
+   "pred": "nesting",
+   "correct": true,
+   "raw": "{\"motif_id\":\"nesting\"}"
+  },
+  {
+   "id": "ladder:nesting:L1_s1",
+   "task": "scene2motif",
+   "answer": "nesting",
+   "level": 1,
+   "seed": 1,
+   "pred": "nesting",
+   "correct": true,
+   "raw": "{\"motif_id\":\"nesting\"}"
+  },
+  {
+   "id": "ladder:nesting:L1_s2",
+   "task": "scene2motif",
+   "answer": "nesting",
+   "level": 1,
+   "seed": 2,
+   "pred": "nesting",
+   "correct": true,
+   "raw": "{\"motif_id\":\"nesting\"}"
+  },
+  {
+   "id": "ladder:nesting:L2_s0",
+   "task": "scene2motif",
+   "answer": "nesting",
+   "level": 2,
+   "seed": 0,
+   "pred": "nesting",
+   "correct": true,
+   "raw": "{\"motif_id\":\"nesting\"}"
+  },
+  {
+   "id": "ladder:nesting:L2_s1",
+   "task": "scene2motif",
+   "answer": "nesting",
+   "level": 2,
+   "seed": 1,
+   "pred": "nesting",
+   "correct": true,
+   "raw": "{\"motif_id\":\"nesting\"}"
+  },
+  {
+   "id": "ladder:nesting:L2_s2",
+   "task": "scene2motif",
+   "answer": "nesting",
+   "level": 2,
+   "seed": 2,
+   "pred": "nesting",
+   "correct": true,
+   "raw": "{\"motif_id\":\"nesting\"}"
+  },
+  {
+   "id": "ladder:nesting:L3_s0",
+   "task": "scene2motif",
+   "answer": "nesting",
+   "level": 3,
+   "seed": 0,
+   "pred": "recursion",
+   "correct": false,
+   "raw": "{\"motif_id\":\"recursion\"}"
+  },
+  {
+   "id": "ladder:nesting:L3_s1",
+   "task": "scene2motif",
+   "answer": "nesting",
+   "level": 3,
+   "seed": 1,
+   "pred": "nesting",
+   "correct": true,
+   "raw": "{\"motif_id\":\"nesting\"}"
+  },
+  {
+   "id": "ladder:nesting:L3_s2",
+   "task": "scene2motif",
+   "answer": "nesting",
+   "level": 3,
+   "seed": 2,
+   "pred": "nesting",
+   "correct": true,
+   "raw": "{\"motif_id\":\"nesting\"}"
+  },
+  {
+   "id": "ladder:nesting:L4_s0",
+   "task": "scene2motif",
+   "answer": "nesting",
+   "level": 4,
+   "seed": 0,
+   "pred": "nesting",
+   "correct": true,
+   "raw": "{\"motif_id\":\"nesting\"}"
+  },
+  {
+   "id": "ladder:nesting:L4_s1",
+   "task": "scene2motif",
+   "answer": "nesting",
+   "level": 4,
+   "seed": 1,
+   "pred": "nesting",
+   "correct": true,
+   "raw": "{\"motif_id\":\"nesting\"}"
+  },
+  {
+   "id": "ladder:nesting:L4_s2",
+   "task": "scene2motif",
+   "answer": "nesting",
+   "level": 4,
+   "seed": 2,
+   "pred": "nesting",
+   "correct": true,
+   "raw": "{\"motif_id\":\"nesting\"}"
+  },
+  {
+   "id": "ladder:nesting:L5_s0",
+   "task": "scene2motif",
+   "answer": "nesting",
+   "level": 5,
+   "seed": 0,
+   "pred": "nesting",
+   "correct": true,
+   "raw": "{\"motif_id\":\"nesting\"}"
+  },
+  {
+   "id": "ladder:nesting:L5_s1",
+   "task": "scene2motif",
+   "answer": "nesting",
+   "level": 5,
+   "seed": 1,
+   "pred": "nesting",
+   "correct": true,
+   "raw": "{\"motif_id\":\"nesting\"}"
+  },
+  {
+   "id": "ladder:nesting:L5_s2",
+   "task": "scene2motif",
+   "answer": "nesting",
+   "level": 5,
+   "seed": 2,
+   "pred": "nesting",
+   "correct": true,
+   "raw": "{\"motif_id\":\"nesting\"}"
+  },
+  {
+   "id": "ladder:nesting:L6_s0",
+   "task": "scene2motif",
+   "answer": "nesting",
+   "level": 6,
+   "seed": 0,
+   "pred": "nesting",
+   "correct": true,
+   "raw": "{\"motif_id\":\"nesting\"}"
+  },
+  {
+   "id": "ladder:nesting:L6_s1",
+   "task": "scene2motif",
+   "answer": "nesting",
+   "level": 6,
+   "seed": 1,
+   "pred": "nesting",
+   "correct": true,
+   "raw": "{\"motif_id\":\"nesting\"}"
+  },
+  {
+   "id": "ladder:nesting:L6_s2",
+   "task": "scene2motif",
+   "answer": "nesting",
+   "level": 6,
+   "seed": 2,
+   "pred": "nesting",
+   "correct": true,
+   "raw": "{\"motif_id\":\"nesting\"}"
+  },
+  {
+   "id": "ladder:cycle:L1_s0",
+   "task": "scene2motif",
+   "answer": "cycle",
+   "level": 1,
+   "seed": 0,
+   "pred": "cycle",
+   "correct": true,
+   "raw": "{\"motif_id\":\"cycle\"}"
+  },
+  {
+   "id": "ladder:cycle:L1_s1",
+   "task": "scene2motif",
+   "answer": "cycle",
+   "level": 1,
+   "seed": 1,
+   "pred": "cycle",
+   "correct": true,
+   "raw": "{\"motif_id\":\"cycle\"}"
+  },
+  {
+   "id": "ladder:cycle:L1_s2",
+   "task": "scene2motif",
+   "answer": "cycle",
+   "level": 1,
+   "seed": 2,
+   "pred": "cycle",
+   "correct": true,
+   "raw": "{\"motif_id\":\"cycle\"}"
+  },
+  {
+   "id": "ladder:cycle:L2_s0",
+   "task": "scene2motif",
+   "answer": "cycle",
+   "level": 2,
+   "seed": 0,
+   "pred": "cycle",
+   "correct": true,
+   "raw": "{\"motif_id\":\"cycle\"}"
+  },
+  {
+   "id": "ladder:cycle:L2_s1",
+   "task": "scene2motif",
+   "answer": "cycle",
+   "level": 2,
+   "seed": 1,
+   "pred": "cycle",
+   "correct": true,
+   "raw": "{\"motif_id\":\"cycle\"}"
+  },
+  {
+   "id": "ladder:cycle:L2_s2",
+   "task": "scene2motif",
+   "answer": "cycle",
+   "level": 2,
+   "seed": 2,
+   "pred": "cycle",
+   "correct": true,
+   "raw": "{\"motif_id\":\"cycle\"}"
+  },
+  {
+   "id": "ladder:cycle:L3_s0",
+   "task": "scene2motif",
+   "answer": "cycle",
+   "level": 3,
+   "seed": 0,
+   "pred": "cycle",
+   "correct": true,
+   "raw": "{\"motif_id\":\"cycle\"}"
+  },
+  {
+   "id": "ladder:cycle:L3_s1",
+   "task": "scene2motif",
+   "answer": "cycle",
+   "level": 3,
+   "seed": 1,
+   "pred": "cycle",
+   "correct": true,
+   "raw": "{\"motif_id\":\"cycle\"}"
+  },
+  {
+   "id": "ladder:cycle:L3_s2",
+   "task": "scene2motif",
+   "answer": "cycle",
+   "level": 3,
+   "seed": 2,
+   "pred": "cycle",
+   "correct": true,
+   "raw": "{\"motif_id\":\"cycle\"}"
+  },
+  {
+   "id": "ladder:cycle:L4_s0",
+   "task": "scene2motif",
+   "answer": "cycle",
+   "level": 4,
+   "seed": 0,
+   "pred": "cycle",
+   "correct": true,
+   "raw": "{\"motif_id\":\"cycle\"}"
+  },
+  {
+   "id": "ladder:cycle:L4_s1",
+   "task": "scene2motif",
+   "answer": "cycle",
+   "level": 4,
+   "seed": 1,
+   "pred": "cycle",
+   "correct": true,
+   "raw": "{\"motif_id\":\"cycle\"}"
+  },
+  {
+   "id": "ladder:cycle:L4_s2",
+   "task": "scene2motif",
+   "answer": "cycle",
+   "level": 4,
+   "seed": 2,
+   "pred": "cycle",
+   "correct": true,
+   "raw": "{\"motif_id\":\"cycle\"}"
+  },
+  {
+   "id": "ladder:cycle:L5_s0",
+   "task": "scene2motif",
+   "answer": "cycle",
+   "level": 5,
+   "seed": 0,
+   "pred": "cycle",
+   "correct": true,
+   "raw": "{\"motif_id\":\"cycle\"}"
+  },
+  {
+   "id": "ladder:cycle:L5_s1",
+   "task": "scene2motif",
+   "answer": "cycle",
+   "level": 5,
+   "seed": 1,
+   "pred": "cycle",
+   "correct": true,
+   "raw": "{\"motif_id\":\"cycle\"}"
+  },
+  {
+   "id": "ladder:cycle:L5_s2",
+   "task": "scene2motif",
+   "answer": "cycle",
+   "level": 5,
+   "seed": 2,
+   "pred": "cycle",
+   "correct": true,
+   "raw": "{\"motif_id\":\"cycle\"}"
+  },
+  {
+   "id": "ladder:cycle:L6_s0",
+   "task": "scene2motif",
+   "answer": "cycle",
+   "level": 6,
+   "seed": 0,
+   "pred": "cycle",
+   "correct": true,
+   "raw": "{\"motif_id\":\"cycle\"}"
+  },
+  {
+   "id": "ladder:self_reference:L1_s0",
+   "task": "scene2motif",
+   "answer": "self_reference",
+   "level": 1,
+   "seed": 0,
+   "pred": "nesting",
+   "correct": false,
+   "raw": "{\"motif_id\":\"nesting\"}"
+  },
+  {
+   "id": "ladder:self_reference:L1_s1",
+   "task": "scene2motif",
+   "answer": "self_reference",
+   "level": 1,
+   "seed": 1,
+   "pred": "nesting",
+   "correct": false,
+   "raw": "{\"motif_id\":\"nesting\"}"
+  },
+  {
+   "id": "ladder:self_reference:L1_s2",
+   "task": "scene2motif",
+   "answer": "self_reference",
+   "level": 1,
+   "seed": 2,
+   "pred": "nesting",
+   "correct": false,
+   "raw": "{\"motif_id\":\"nesting\"}"
+  },
+  {
+   "id": "ladder:self_reference:L2_s0",
+   "task": "scene2motif",
+   "answer": "self_reference",
+   "level": 2,
+   "seed": 0,
+   "pred": "nesting",
+   "correct": false,
+   "raw": "{\"motif_id\":\"nesting\"}"
+  },
+  {
+   "id": "ladder:self_reference:L2_s1",
+   "task": "scene2motif",
+   "answer": "self_reference",
+   "level": 2,
+   "seed": 1,
+   "pred": "nesting",
+   "correct": false,
+   "raw": "{\"motif_id\":\"nesting\"}"
+  },
+  {
+   "id": "ladder:self_reference:L2_s2",
+   "task": "scene2motif",
+   "answer": "self_reference",
+   "level": 2,
+   "seed": 2,
+   "pred": "nesting",
+   "correct": false,
+   "raw": "{\"motif_id\":\"nesting\"}"
+  },
+  {
+   "id": "ladder:self_reference:L3_s0",
+   "task": "scene2motif",
+   "answer": "self_reference",
+   "level": 3,
+   "seed": 0,
+   "pred": "recursion",
+   "correct": false,
+   "raw": "{\"motif_id\":\"recursion\"}"
+  },
+  {
+   "id": "ladder:self_reference:L3_s1",
+   "task": "scene2motif",
+   "answer": "self_reference",
+   "level": 3,
+   "seed": 1,
+   "pred": "nesting",
+   "correct": false,
+   "raw": "{\"motif_id\":\"nesting\"}"
+  },
+  {
+   "id": "ladder:self_reference:L3_s2",
+   "task": "scene2motif",
+   "answer": "self_reference",
+   "level": 3,
+   "seed": 2,
+   "pred": "recursion",
+   "correct": false,
+   "raw": "{\"motif_id\":\"recursion\"}"
+  },
+  {
+   "id": "ladder:self_reference:L4_s0",
+   "task": "scene2motif",
+   "answer": "self_reference",
+   "level": 4,
+   "seed": 0,
+   "pred": "recursion",
+   "correct": false,
+   "raw": "{\"motif_id\":\"recursion\"}"
+  },
+  {
+   "id": "ladder:self_reference:L4_s1",
+   "task": "scene2motif",
+   "answer": "self_reference",
+   "level": 4,
+   "seed": 1,
+   "pred": "recursion",
+   "correct": false,
+   "raw": "{\"motif_id\":\"recursion\"}"
+  },
+  {
+   "id": "ladder:self_reference:L4_s2",
+   "task": "scene2motif",
+   "answer": "self_reference",
+   "level": 4,
+   "seed": 2,
+   "pred": "recursion",
+   "correct": false,
+   "raw": "{\"motif_id\":\"recursion\"}"
+  },
+  {
+   "id": "ladder:self_reference:L5_s0",
+   "task": "scene2motif",
+   "answer": "self_reference",
+   "level": 5,
+   "seed": 0,
+   "pred": "recursion",
+   "correct": false,
+   "raw": "{\"motif_id\":\"recursion\"}"
+  },
+  {
+   "id": "ladder:symmetry:L1_s0",
+   "task": "scene2motif",
+   "answer": "symmetry",
+   "level": 1,
+   "seed": 0,
+   "pred": "symmetry",
+   "correct": true,
+   "raw": "{\"motif_id\":\"symmetry\"}"
+  },
+  {
+   "id": "ladder:symmetry:L1_s1",
+   "task": "scene2motif",
+   "answer": "symmetry",
+   "level": 1,
+   "seed": 1,
+   "pred": "symmetry",
+   "correct": true,
+   "raw": "{\"motif_id\":\"symmetry\"}"
+  },
+  {
+   "id": "ladder:symmetry:L1_s2",
+   "task": "scene2motif",
+   "answer": "symmetry",
+   "level": 1,
+   "seed": 2,
+   "pred": "symmetry",
+   "correct": true,
+   "raw": "{\"motif_id\":\"symmetry\"}"
+  },
+  {
+   "id": "ladder:symmetry:L2_s0",
+   "task": "scene2motif",
+   "answer": "symmetry",
+   "level": 2,
+   "seed": 0,
+   "pred": "symmetry",
+   "correct": true,
+   "raw": "{\"motif_id\":\"symmetry\"}"
+  },
+  {
+   "id": "ladder:symmetry:L2_s1",
+   "task": "scene2motif",
+   "answer": "symmetry",
+   "level": 2,
+   "seed": 1,
+   "pred": "symmetry",
+   "correct": true,
+   "raw": "{\"motif_id\":\"symmetry\"}"
+  },
+  {
+   "id": "ladder:symmetry:L2_s2",
+   "task": "scene2motif",
+   "answer": "symmetry",
+   "level": 2,
+   "seed": 2,
+   "pred": "symmetry",
+   "correct": true,
+   "raw": "{\"motif_id\":\"symmetry\"}"
+  },
+  {
+   "id": "ladder:symmetry:L3_s0",
+   "task": "scene2motif",
+   "answer": "symmetry",
+   "level": 3,
+   "seed": 0,
+   "pred": "symmetry",
+   "correct": true,
+   "raw": "{\"motif_id\":\"symmetry\"}"
+  },
+  {
+   "id": "ladder:symmetry:L3_s1",
+   "task": "scene2motif",
+   "answer": "symmetry",
+   "level": 3,
+   "seed": 1,
+   "pred": "symmetry",
+   "correct": true,
+   "raw": "{\"motif_id\":\"symmetry\"}"
+  },
+  {
+   "id": "ladder:symmetry:L3_s2",
+   "task": "scene2motif",
+   "answer": "symmetry",
+   "level": 3,
+   "seed": 2,
+   "pred": "symmetry",
+   "correct": true,
+   "raw": "{\"motif_id\":\"symmetry\"}"
+  },
+  {
+   "id": "ladder:symmetry:L4_s0",
+   "task": "scene2motif",
+   "answer": "symmetry",
+   "level": 4,
+   "seed": 0,
+   "pred": "figure_ground",
+   "correct": false,
+   "raw": "{\"motif_id\":\"figure_ground\"}"
+  },
+  {
+   "id": "ladder:symmetry:L4_s1",
+   "task": "scene2motif",
+   "answer": "symmetry",
+   "level": 4,
+   "seed": 1,
+   "pred": "symmetry",
+   "correct": true,
+   "raw": "{\"motif_id\":\"symmetry\"}"
+  },
+  {
+   "id": "ladder:symmetry:L4_s2",
+   "task": "scene2motif",
+   "answer": "symmetry",
+   "level": 4,
+   "seed": 2,
+   "pred": "symmetry",
+   "correct": true,
+   "raw": "{\"motif_id\":\"symmetry\"}"
+  },
+  {
+   "id": "ladder:symmetry:L5_s0",
+   "task": "scene2motif",
+   "answer": "symmetry",
+   "level": 5,
+   "seed": 0,
+   "pred": "symmetry",
+   "correct": true,
+   "raw": "{\"motif_id\":\"symmetry\"}"
+  },
+  {
+   "id": "ladder:symmetry:L5_s1",
+   "task": "scene2motif",
+   "answer": "symmetry",
+   "level": 5,
+   "seed": 1,
+   "pred": "symmetry",
+   "correct": true,
+   "raw": "{\"motif_id\":\"symmetry\"}"
+  },
+  {
+   "id": "ladder:symmetry:L5_s2",
+   "task": "scene2motif",
+   "answer": "symmetry",
+   "level": 5,
+   "seed": 2,
+   "pred": "symmetry",
+   "correct": true,
+   "raw": "{\"motif_id\":\"symmetry\"}"
+  },
+  {
+   "id": "ladder:symmetry:L6_s0",
+   "task": "scene2motif",
+   "answer": "symmetry",
+   "level": 6,
+   "seed": 0,
+   "pred": "symmetry",
+   "correct": true,
+   "raw": "{\"motif_id\":\"symmetry\"}"
+  },
+  {
+   "id": "ladder:symmetry:L6_s2",
+   "task": "scene2motif",
+   "answer": "symmetry",
+   "level": 6,
+   "seed": 2,
+   "pred": "symmetry",
+   "correct": true,
+   "raw": "{\"motif_id\":\"symmetry\"}"
+  },
+  {
+   "id": "ladder:alternation:L1_s0",
+   "task": "scene2motif",
+   "answer": "alternation",
+   "level": 1,
+   "seed": 0,
+   "pred": "alternation",
+   "correct": true,
+   "raw": "{\"motif_id\":\"alternation\"}"
+  },
+  {
+   "id": "ladder:alternation:L1_s1",
+   "task": "scene2motif",
+   "answer": "alternation",
+   "level": 1,
+   "seed": 1,
+   "pred": "alternation",
+   "correct": true,
+   "raw": "{\"motif_id\":\"alternation\"}"
+  },
+  {
+   "id": "ladder:alternation:L1_s2",
+   "task": "scene2motif",
+   "answer": "alternation",
+   "level": 1,
+   "seed": 2,
+   "pred": "alternation",
+   "correct": true,
+   "raw": "{\"motif_id\":\"alternation\"}"
+  },
+  {
+   "id": "ladder:alternation:L2_s0",
+   "task": "scene2motif",
+   "answer": "alternation",
+   "level": 2,
+   "seed": 0,
+   "pred": "alternation",
+   "correct": true,
+   "raw": "{\"motif_id\":\"alternation\"}"
+  },
+  {
+   "id": "ladder:alternation:L2_s1",
+   "task": "scene2motif",
+   "answer": "alternation",
+   "level": 2,
+   "seed": 1,
+   "pred": "alternation",
+   "correct": true,
+   "raw": "{\"motif_id\":\"alternation\"}"
+  },
+  {
+   "id": "ladder:alternation:L2_s2",
+   "task": "scene2motif",
+   "answer": "alternation",
+   "level": 2,
+   "seed": 2,
+   "pred": "alternation",
+   "correct": true,
+   "raw": "{\"motif_id\":\"alternation\"}"
+  },
+  {
+   "id": "ladder:alternation:L3_s0",
+   "task": "scene2motif",
+   "answer": "alternation",
+   "level": 3,
+   "seed": 0,
+   "pred": "alternation",
+   "correct": true,
+   "raw": "{\"motif_id\":\"alternation\"}"
+  },
+  {
+   "id": "ladder:alternation:L3_s1",
+   "task": "scene2motif",
+   "answer": "alternation",
+   "level": 3,
+   "seed": 1,
+   "pred": "alternation",
+   "correct": true,
+   "raw": "{\"motif_id\":\"alternation\"}"
+  },
+  {
+   "id": "ladder:alternation:L3_s2",
+   "task": "scene2motif",
+   "answer": "alternation",
+   "level": 3,
+   "seed": 2,
+   "pred": "alternation",
+   "correct": true,
+   "raw": "{\"motif_id\":\"alternation\"}"
+  },
+  {
+   "id": "ladder:alternation:L4_s0",
+   "task": "scene2motif",
+   "answer": "alternation",
+   "level": 4,
+   "seed": 0,
+   "pred": "alternation",
+   "correct": true,
+   "raw": "{\"motif_id\":\"alternation\"}"
+  },
+  {
+   "id": "ladder:alternation:L4_s1",
+   "task": "scene2motif",
+   "answer": "alternation",
+   "level": 4,
+   "seed": 1,
+   "pred": "alternation",
+   "correct": true,
+   "raw": "{\"motif_id\":\"alternation\"}"
+  },
+  {
+   "id": "ladder:alternation:L4_s2",
+   "task": "scene2motif",
+   "answer": "alternation",
+   "level": 4,
+   "seed": 2,
+   "pred": "alternation",
+   "correct": true,
+   "raw": "{\"motif_id\":\"alternation\"}"
+  },
+  {
+   "id": "ladder:alternation:L5_s0",
+   "task": "scene2motif",
+   "answer": "alternation",
+   "level": 5,
+   "seed": 0,
+   "pred": "alternation",
+   "correct": true,
+   "raw": "{\"motif_id\":\"alternation\"}"
+  },
+  {
+   "id": "ladder:alternation:L5_s1",
+   "task": "scene2motif",
+   "answer": "alternation",
+   "level": 5,
+   "seed": 1,
+   "pred": "alternation",
+   "correct": true,
+   "raw": "{\"motif_id\":\"alternation\"}"
+  },
+  {
+   "id": "ladder:alternation:L5_s2",
+   "task": "scene2motif",
+   "answer": "alternation",
+   "level": 5,
+   "seed": 2,
+   "pred": "alternation",
+   "correct": true,
+   "raw": "{\"motif_id\":\"alternation\"}"
+  },
+  {
+   "id": "ladder:spiral:L1_s0",
+   "task": "scene2motif",
+   "answer": "spiral",
+   "level": 1,
+   "seed": 0,
+   "pred": "spiral",
+   "correct": true,
+   "raw": "{\"motif_id\":\"spiral\"}"
+  },
+  {
+   "id": "ladder:spiral:L1_s1",
+   "task": "scene2motif",
+   "answer": "spiral",
+   "level": 1,
+   "seed": 1,
+   "pred": "spiral",
+   "correct": true,
+   "raw": "{\"motif_id\":\"spiral\"}"
+  },
+  {
+   "id": "ladder:spiral:L1_s2",
+   "task": "scene2motif",
+   "answer": "spiral",
+   "level": 1,
+   "seed": 2,
+   "pred": "spiral",
+   "correct": true,
+   "raw": "{\"motif_id\":\"spiral\"}"
+  },
+  {
+   "id": "ladder:spiral:L2_s0",
+   "task": "scene2motif",
+   "answer": "spiral",
+   "level": 2,
+   "seed": 0,
+   "pred": "spiral",
+   "correct": true,
+   "raw": "{\"motif_id\":\"spiral\"}"
+  },
+  {
+   "id": "ladder:spiral:L2_s1",
+   "task": "scene2motif",
+   "answer": "spiral",
+   "level": 2,
+   "seed": 1,
+   "pred": "spiral",
+   "correct": true,
+   "raw": "{\"motif_id\":\"spiral\"}"
+  },
+  {
+   "id": "ladder:spiral:L2_s2",
+   "task": "scene2motif",
+   "answer": "spiral",
+   "level": 2,
+   "seed": 2,
+   "pred": "spiral",
+   "correct": true,
+   "raw": "{\"motif_id\":\"spiral\"}"
+  },
+  {
+   "id": "ladder:spiral:L3_s0",
+   "task": "scene2motif",
+   "answer": "spiral",
+   "level": 3,
+   "seed": 0,
+   "pred": "spiral",
+   "correct": true,
+   "raw": "{\"motif_id\":\"spiral\"}"
+  },
+  {
+   "id": "ladder:spiral:L3_s1",
+   "task": "scene2motif",
+   "answer": "spiral",
+   "level": 3,
+   "seed": 1,
+   "pred": "spiral",
+   "correct": true,
+   "raw": "{\"motif_id\":\"spiral\"}"
+  },
+  {
+   "id": "ladder:spiral:L3_s2",
+   "task": "scene2motif",
+   "answer": "spiral",
+   "level": 3,
+   "seed": 2,
+   "pred": "spiral",
+   "correct": true,
+   "raw": "{\"motif_id\":\"spiral\"}"
+  },
+  {
+   "id": "ladder:spiral:L4_s0",
+   "task": "scene2motif",
+   "answer": "spiral",
+   "level": 4,
+   "seed": 0,
+   "pred": "spiral",
+   "correct": true,
+   "raw": "{\"motif_id\":\"spiral\"}"
+  },
+  {
+   "id": "ladder:spiral:L4_s1",
+   "task": "scene2motif",
+   "answer": "spiral",
+   "level": 4,
+   "seed": 1,
+   "pred": "spiral",
+   "correct": true,
+   "raw": "{\"motif_id\":\"spiral\"}"
+  },
+  {
+   "id": "ladder:spiral:L4_s2",
+   "task": "scene2motif",
+   "answer": "spiral",
+   "level": 4,
+   "seed": 2,
+   "pred": "spiral",
+   "correct": true,
+   "raw": "{\"motif_id\":\"spiral\"}"
+  },
+  {
+   "id": "ladder:spiral:L5_s0",
+   "task": "scene2motif",
+   "answer": "spiral",
+   "level": 5,
+   "seed": 0,
+   "pred": "spiral",
+   "correct": true,
+   "raw": "{\"motif_id\":\"spiral\"}"
+  },
+  {
+   "id": "ladder:spiral:L5_s1",
+   "task": "scene2motif",
+   "answer": "spiral",
+   "level": 5,
+   "seed": 1,
+   "pred": "spiral",
+   "correct": true,
+   "raw": "{\"motif_id\":\"spiral\"}"
+  },
+  {
+   "id": "ladder:spiral:L5_s2",
+   "task": "scene2motif",
+   "answer": "spiral",
+   "level": 5,
+   "seed": 2,
+   "pred": "spiral",
+   "correct": true,
+   "raw": "{\"motif_id\":\"spiral\"}"
+  },
+  {
+   "id": "ladder:spiral:L6_s0",
+   "task": "scene2motif",
+   "answer": "spiral",
+   "level": 6,
+   "seed": 0,
+   "pred": "spiral",
+   "correct": true,
+   "raw": "{\"motif_id\":\"spiral\"}"
+  },
+  {
+   "id": "ladder:spiral:L6_s1",
+   "task": "scene2motif",
+   "answer": "spiral",
+   "level": 6,
+   "seed": 1,
+   "pred": "spiral",
+   "correct": true,
+   "raw": "{\"motif_id\":\"spiral\"}"
+  },
+  {
+   "id": "ladder:spiral:L6_s2",
+   "task": "scene2motif",
+   "answer": "spiral",
+   "level": 6,
+   "seed": 2,
+   "pred": "spiral",
+   "correct": true,
+   "raw": "{\"motif_id\":\"spiral\"}"
+  },
+  {
+   "id": "ladder:convergence:L1_s0",
+   "task": "scene2motif",
+   "answer": "convergence",
+   "level": 1,
+   "seed": 0,
+   "pred": "convergence",
+   "correct": true,
+   "raw": "{\"motif_id\":\"convergence\"}"
+  },
+  {
+   "id": "ladder:convergence:L1_s1",
+   "task": "scene2motif",
+   "answer": "convergence",
+   "level": 1,
+   "seed": 1,
+   "pred": "convergence",
+   "correct": true,
+   "raw": "{\"motif_id\":\"convergence\"}"
+  },
+  {
+   "id": "ladder:convergence:L1_s2",
+   "task": "scene2motif",
+   "answer": "convergence",
+   "level": 1,
+   "seed": 2,
+   "pred": "convergence",
+   "correct": true,
+   "raw": "{\"motif_id\":\"convergence\"}"
+  },
+  {
+   "id": "ladder:convergence:L2_s0",
+   "task": "scene2motif",
+   "answer": "convergence",
+   "level": 2,
+   "seed": 0,
+   "pred": "convergence",
+   "correct": true,
+   "raw": "{\"motif_id\":\"convergence\"}"
+  },
+  {
+   "id": "ladder:convergence:L2_s1",
+   "task": "scene2motif",
+   "answer": "convergence",
+   "level": 2,
+   "seed": 1,
+   "pred": "convergence",
+   "correct": true,
+   "raw": "{\"motif_id\":\"convergence\"}"
+  },
+  {
+   "id": "ladder:convergence:L2_s2",
+   "task": "scene2motif",
+   "answer": "convergence",
+   "level": 2,
+   "seed": 2,
+   "pred": "convergence",
+   "correct": true,
+   "raw": "{\"motif_id\":\"convergence\"}"
+  },
+  {
+   "id": "ladder:convergence:L3_s0",
+   "task": "scene2motif",
+   "answer": "convergence",
+   "level": 3,
+   "seed": 0,
+   "pred": "convergence",
+   "correct": true,
+   "raw": "{\"motif_id\":\"convergence\"}"
+  },
+  {
+   "id": "ladder:convergence:L3_s1",
+   "task": "scene2motif",
+   "answer": "convergence",
+   "level": 3,
+   "seed": 1,
+   "pred": "convergence",
+   "correct": true,
+   "raw": "{\"motif_id\":\"convergence\"}"
+  },
+  {
+   "id": "ladder:convergence:L3_s2",
+   "task": "scene2motif",
+   "answer": "convergence",
+   "level": 3,
+   "seed": 2,
+   "pred": "convergence",
+   "correct": true,
+   "raw": "{\"motif_id\":\"convergence\"}"
+  },
+  {
+   "id": "ladder:convergence:L4_s0",
+   "task": "scene2motif",
+   "answer": "convergence",
+   "level": 4,
+   "seed": 0,
+   "pred": "convergence",
+   "correct": true,
+   "raw": "{\"motif_id\":\"convergence\"}"
+  },
+  {
+   "id": "ladder:convergence:L4_s1",
+   "task": "scene2motif",
+   "answer": "convergence",
+   "level": 4,
+   "seed": 1,
+   "pred": "convergence",
+   "correct": true,
+   "raw": "{\"motif_id\":\"convergence\"}"
+  },
+  {
+   "id": "ladder:convergence:L4_s2",
+   "task": "scene2motif",
+   "answer": "convergence",
+   "level": 4,
+   "seed": 2,
+   "pred": "spiral",
+   "correct": false,
+   "raw": "{\"motif_id\":\"spiral\"}"
+  },
+  {
+   "id": "ladder:convergence:L5_s0",
+   "task": "scene2motif",
+   "answer": "convergence",
+   "level": 5,
+   "seed": 0,
+   "pred": "convergence",
+   "correct": true,
+   "raw": "{\"motif_id\":\"convergence\"}"
+  },
+  {
+   "id": "ladder:convergence:L5_s1",
+   "task": "scene2motif",
+   "answer": "convergence",
+   "level": 5,
+   "seed": 1,
+   "pred": "convergence",
+   "correct": true,
+   "raw": "{\"motif_id\":\"convergence\"}"
+  },
+  {
+   "id": "ladder:convergence:L5_s2",
+   "task": "scene2motif",
+   "answer": "convergence",
+   "level": 5,
+   "seed": 2,
+   "pred": "convergence",
+   "correct": true,
+   "raw": "{\"motif_id\":\"convergence\"}"
+  },
+  {
+   "id": "ladder:convergence:L6_s0",
+   "task": "scene2motif",
+   "answer": "convergence",
+   "level": 6,
+   "seed": 0,
+   "pred": "convergence",
+   "correct": true,
+   "raw": "{\"motif_id\":\"convergence\"}"
+  },
+  {
+   "id": "ladder:convergence:L6_s1",
+   "task": "scene2motif",
+   "answer": "convergence",
+   "level": 6,
+   "seed": 1,
+   "pred": "convergence",
+   "correct": true,
+   "raw": "{\"motif_id\":\"convergence\"}"
+  },
+  {
+   "id": "ladder:convergence:L6_s2",
+   "task": "scene2motif",
+   "answer": "convergence",
+   "level": 6,
+   "seed": 2,
+   "pred": "convergence",
+   "correct": true,
+   "raw": "{\"motif_id\":\"convergence\"}"
+  },
+  {
+   "id": "ladder:bottleneck:L1_s0",
+   "task": "scene2motif",
+   "answer": "bottleneck",
+   "level": 1,
+   "seed": 0,
+   "pred": "bottleneck",
+   "correct": true,
+   "raw": "{\"motif_id\":\"bottleneck\"}"
+  },
+  {
+   "id": "ladder:bottleneck:L1_s1",
+   "task": "scene2motif",
+   "answer": "bottleneck",
+   "level": 1,
+   "seed": 1,
+   "pred": "bottleneck",
+   "correct": true,
+   "raw": "{\"motif_id\":\"bottleneck\"}"
+  },
+  {
+   "id": "ladder:bottleneck:L1_s2",
+   "task": "scene2motif",
+   "answer": "bottleneck",
+   "level": 1,
+   "seed": 2,
+   "pred": "bottleneck",
+   "correct": true,
+   "raw": "{\"motif_id\":\"bottleneck\"}"
+  },
+  {
+   "id": "ladder:bottleneck:L2_s0",
+   "task": "scene2motif",
+   "answer": "bottleneck",
+   "level": 2,
+   "seed": 0,
+   "pred": "bottleneck",
+   "correct": true,
+   "raw": "{\"motif_id\":\"bottleneck\"}"
+  },
+  {
+   "id": "ladder:bottleneck:L2_s1",
+   "task": "scene2motif",
+   "answer": "bottleneck",
+   "level": 2,
+   "seed": 1,
+   "pred": "bottleneck",
+   "correct": true,
+   "raw": "{\"motif_id\":\"bottleneck\"}"
+  },
+  {
+   "id": "ladder:bottleneck:L2_s2",
+   "task": "scene2motif",
+   "answer": "bottleneck",
+   "level": 2,
+   "seed": 2,
+   "pred": "bottleneck",
+   "correct": true,
+   "raw": "{\"motif_id\":\"bottleneck\"}"
+  },
+  {
+   "id": "ladder:bottleneck:L3_s0",
+   "task": "scene2motif",
+   "answer": "bottleneck",
+   "level": 3,
+   "seed": 0,
+   "pred": "symmetry",
+   "correct": false,
+   "raw": "{\"motif_id\":\"symmetry\"}"
+  },
+  {
+   "id": "ladder:bottleneck:L3_s1",
+   "task": "scene2motif",
+   "answer": "bottleneck",
+   "level": 3,
+   "seed": 1,
+   "pred": "bottleneck",
+   "correct": true,
+   "raw": "{\"motif_id\":\"bottleneck\"}"
+  },
+  {
+   "id": "ladder:bottleneck:L3_s2",
+   "task": "scene2motif",
+   "answer": "bottleneck",
+   "level": 3,
+   "seed": 2,
+   "pred": "symmetry",
+   "correct": false,
+   "raw": "{\"motif_id\":\"symmetry\"}"
+  },
+  {
+   "id": "ladder:bottleneck:L4_s0",
+   "task": "scene2motif",
+   "answer": "bottleneck",
+   "level": 4,
+   "seed": 0,
+   "pred": "bottleneck",
+   "correct": true,
+   "raw": "{\"motif_id\":\"bottleneck\"}"
+  },
+  {
+   "id": "ladder:bottleneck:L4_s1",
+   "task": "scene2motif",
+   "answer": "bottleneck",
+   "level": 4,
+   "seed": 1,
+   "pred": "symmetry",
+   "correct": false,
+   "raw": "{\"motif_id\":\"symmetry\"}"
+  },
+  {
+   "id": "ladder:bottleneck:L4_s2",
+   "task": "scene2motif",
+   "answer": "bottleneck",
+   "level": 4,
+   "seed": 2,
+   "pred": "bottleneck",
+   "correct": true,
+   "raw": "{\"motif_id\":\"bottleneck\"}"
+  },
+  {
+   "id": "ladder:bottleneck:L5_s0",
+   "task": "scene2motif",
+   "answer": "bottleneck",
+   "level": 5,
+   "seed": 0,
+   "pred": "bottleneck",
+   "correct": true,
+   "raw": "{\"motif_id\":\"bottleneck\"}"
+  },
+  {
+   "id": "ladder:bottleneck:L5_s1",
+   "task": "scene2motif",
+   "answer": "bottleneck",
+   "level": 5,
+   "seed": 1,
+   "pred": "symmetry",
+   "correct": false,
+   "raw": "{\"motif_id\":\"symmetry\"}"
+  },
+  {
+   "id": "ladder:bottleneck:L5_s2",
+   "task": "scene2motif",
+   "answer": "bottleneck",
+   "level": 5,
+   "seed": 2,
+   "pred": "isomorphism",
+   "correct": false,
+   "raw": "{\"motif_id\":\"isomorphism\"}"
+  },
+  {
+   "id": "ladder:bottleneck:L6_s0",
+   "task": "scene2motif",
+   "answer": "bottleneck",
+   "level": 6,
+   "seed": 0,
+   "pred": "bottleneck",
+   "correct": true,
+   "raw": "{\"motif_id\":\"bottleneck\"}"
+  },
+  {
+   "id": "ladder:bottleneck:L6_s1",
+   "task": "scene2motif",
+   "answer": "bottleneck",
+   "level": 6,
+   "seed": 1,
+   "pred": "symmetry",
+   "correct": false,
+   "raw": "{\"motif_id\":\"symmetry\"}"
+  },
+  {
+   "id": "ladder:symmetry_breaking:L1_s0",
+   "task": "scene2motif",
+   "answer": "symmetry_breaking",
+   "level": 1,
+   "seed": 0,
+   "pred": "symmetry_breaking",
+   "correct": true,
+   "raw": "{\"motif_id\":\"symmetry_breaking\"}"
+  },
+  {
+   "id": "ladder:symmetry_breaking:L1_s1",
+   "task": "scene2motif",
+   "answer": "symmetry_breaking",
+   "level": 1,
+   "seed": 1,
+   "pred": "symmetry_breaking",
+   "correct": true,
+   "raw": "{\"motif_id\":\"symmetry_breaking\"}"
+  },
+  {
+   "id": "ladder:symmetry_breaking:L1_s2",
+   "task": "scene2motif",
+   "answer": "symmetry_breaking",
+   "level": 1,
+   "seed": 2,
+   "pred": "symmetry_breaking",
+   "correct": true,
+   "raw": "{\"motif_id\":\"symmetry_breaking\"}"
+  },
+  {
+   "id": "ladder:symmetry_breaking:L2_s0",
+   "task": "scene2motif",
+   "answer": "symmetry_breaking",
+   "level": 2,
+   "seed": 0,
+   "pred": "symmetry_breaking",
+   "correct": true,
+   "raw": "{\"motif_id\":\"symmetry_breaking\"}"
+  },
+  {
+   "id": "ladder:symmetry_breaking:L2_s1",
+   "task": "scene2motif",
+   "answer": "symmetry_breaking",
+   "level": 2,
+   "seed": 1,
+   "pred": "symmetry_breaking",
+   "correct": true,
+   "raw": "{\"motif_id\":\"symmetry_breaking\"}"
+  },
+  {
+   "id": "ladder:symmetry_breaking:L2_s2",
+   "task": "scene2motif",
+   "answer": "symmetry_breaking",
+   "level": 2,
+   "seed": 2,
+   "pred": "symmetry_breaking",
+   "correct": true,
+   "raw": "{\"motif_id\":\"symmetry_breaking\"}"
+  },
+  {
+   "id": "ladder:symmetry_breaking:L3_s0",
+   "task": "scene2motif",
+   "answer": "symmetry_breaking",
+   "level": 3,
+   "seed": 0,
+   "pred": "symmetry_breaking",
+   "correct": true,
+   "raw": "{\"motif_id\":\"symmetry_breaking\"}"
+  },
+  {
+   "id": "ladder:symmetry_breaking:L3_s1",
+   "task": "scene2motif",
+   "answer": "symmetry_breaking",
+   "level": 3,
+   "seed": 1,
+   "pred": "symmetry_breaking",
+   "correct": true,
+   "raw": "{\"motif_id\":\"symmetry_breaking\"}"
+  },
+  {
+   "id": "ladder:symmetry_breaking:L3_s2",
+   "task": "scene2motif",
+   "answer": "symmetry_breaking",
+   "level": 3,
+   "seed": 2,
+   "pred": "tiling",
+   "correct": false,
+   "raw": "{\"motif_id\":\"tiling\"}"
+  },
+  {
+   "id": "ladder:symmetry_breaking:L4_s0",
+   "task": "scene2motif",
+   "answer": "symmetry_breaking",
+   "level": 4,
+   "seed": 0,
+   "pred": "symmetry_breaking",
+   "correct": true,
+   "raw": "{\"motif_id\":\"symmetry_breaking\"}"
+  },
+  {
+   "id": "ladder:symmetry_breaking:L4_s1",
+   "task": "scene2motif",
+   "answer": "symmetry_breaking",
+   "level": 4,
+   "seed": 1,
+   "pred": "symmetry_breaking",
+   "correct": true,
+   "raw": "{\"motif_id\":\"symmetry_breaking\"}"
+  },
+  {
+   "id": "ladder:symmetry_breaking:L4_s2",
+   "task": "scene2motif",
+   "answer": "symmetry_breaking",
+   "level": 4,
+   "seed": 2,
+   "pred": "tiling",
+   "correct": false,
+   "raw": "{\"motif_id\":\"tiling\"}"
+  },
+  {
+   "id": "ladder:symmetry_breaking:L5_s0",
+   "task": "scene2motif",
+   "answer": "symmetry_breaking",
+   "level": 5,
+   "seed": 0,
+   "pred": "symmetry_breaking",
+   "correct": true,
+   "raw": "{\"motif_id\":\"symmetry_breaking\"}"
+  },
+  {
+   "id": "ladder:symmetry_breaking:L5_s1",
+   "task": "scene2motif",
+   "answer": "symmetry_breaking",
+   "level": 5,
+   "seed": 1,
+   "pred": "symmetry_breaking",
+   "correct": true,
+   "raw": "{\"motif_id\":\"symmetry_breaking\"}"
+  },
+  {
+   "id": "ladder:symmetry_breaking:L5_s2",
+   "task": "scene2motif",
+   "answer": "symmetry_breaking",
+   "level": 5,
+   "seed": 2,
+   "pred": "symmetry_breaking",
+   "correct": true,
+   "raw": "{\"motif_id\":\"symmetry_breaking\"}"
+  },
+  {
+   "id": "ladder:symmetry_breaking:L6_s0",
+   "task": "scene2motif",
+   "answer": "symmetry_breaking",
+   "level": 6,
+   "seed": 0,
+   "pred": "symmetry_breaking",
+   "correct": true,
+   "raw": "{\"motif_id\":\"symmetry_breaking\"}"
+  },
+  {
+   "id": "ladder:symmetry_breaking:L6_s1",
+   "task": "scene2motif",
+   "answer": "symmetry_breaking",
+   "level": 6,
+   "seed": 1,
+   "pred": "symmetry_breaking",
+   "correct": true,
+   "raw": "{\"motif_id\":\"symmetry_breaking\"}"
+  },
+  {
+   "id": "ladder:symmetry_breaking:L6_s2",
+   "task": "scene2motif",
+   "answer": "symmetry_breaking",
+   "level": 6,
+   "seed": 2,
+   "pred": "symmetry_breaking",
+   "correct": true,
+   "raw": "{\"motif_id\":\"symmetry_breaking\"}"
+  },
+  {
+   "id": "ladder:strange_loop:L1_s0",
+   "task": "scene2motif",
+   "answer": "strange_loop",
+   "level": 1,
+   "seed": 0,
+   "pred": "cycle",
+   "correct": false,
+   "raw": "{\"motif_id\":\"cycle\"}"
+  },
+  {
+   "id": "ladder:strange_loop:L1_s1",
+   "task": "scene2motif",
+   "answer": "strange_loop",
+   "level": 1,
+   "seed": 1,
+   "pred": "cycle",
+   "correct": false,
+   "raw": "{\"motif_id\":\"cycle\"}"
+  },
+  {
+   "id": "ladder:strange_loop:L1_s2",
+   "task": "scene2motif",
+   "answer": "strange_loop",
+   "level": 1,
+   "seed": 2,
+   "pred": "cycle",
+   "correct": false,
+   "raw": "{\"motif_id\":\"cycle\"}"
+  },
+  {
+   "id": "ladder:strange_loop:L2_s0",
+   "task": "scene2motif",
+   "answer": "strange_loop",
+   "level": 2,
+   "seed": 0,
+   "pred": "bottleneck",
+   "correct": false,
+   "raw": "{\"motif_id\":\"bottleneck\"}"
+  },
+  {
+   "id": "ladder:strange_loop:L2_s1",
+   "task": "scene2motif",
+   "answer": "strange_loop",
+   "level": 2,
+   "seed": 1,
+   "pred": "cycle",
+   "correct": false,
+   "raw": "{\"motif_id\":\"cycle\"}"
+  },
+  {
+   "id": "ladder:strange_loop:L2_s2",
+   "task": "scene2motif",
+   "answer": "strange_loop",
+   "level": 2,
+   "seed": 2,
+   "pred": "cycle",
+   "correct": false,
+   "raw": "{\"motif_id\":\"cycle\"}"
+  },
+  {
+   "id": "ladder:strange_loop:L3_s0",
+   "task": "scene2motif",
+   "answer": "strange_loop",
+   "level": 3,
+   "seed": 0,
+   "pred": "strange_loop",
+   "correct": true,
+   "raw": "{\"motif_id\":\"strange_loop\"}"
+  },
+  {
+   "id": "ladder:strange_loop:L3_s1",
+   "task": "scene2motif",
+   "answer": "strange_loop",
+   "level": 3,
+   "seed": 1,
+   "pred": "cycle",
+   "correct": false,
+   "raw": "{\"motif_id\":\"cycle\"}"
+  },
+  {
+   "id": "ladder:strange_loop:L3_s2",
+   "task": "scene2motif",
+   "answer": "strange_loop",
+   "level": 3,
+   "seed": 2,
+   "pred": "recursion",
+   "correct": false,
+   "raw": "{\"motif_id\":\"recursion\"}"
+  },
+  {
+   "id": "ladder:strange_loop:L4_s0",
+   "task": "scene2motif",
+   "answer": "strange_loop",
+   "level": 4,
+   "seed": 0,
+   "pred": "strange_loop",
+   "correct": true,
+   "raw": "{\"motif_id\":\"strange_loop\"}"
+  },
+  {
+   "id": "ladder:strange_loop:L4_s1",
+   "task": "scene2motif",
+   "answer": "strange_loop",
+   "level": 4,
+   "seed": 1,
+   "pred": "cycle",
+   "correct": false,
+   "raw": "{\"motif_id\":\"cycle\"}"
+  },
+  {
+   "id": "ladder:strange_loop:L4_s2",
+   "task": "scene2motif",
+   "answer": "strange_loop",
+   "level": 4,
+   "seed": 2,
+   "pred": "recursion",
+   "correct": false,
+   "raw": "{\"motif_id\":\"recursion\"}"
+  },
+  {
+   "id": "ladder:strange_loop:L5_s0",
+   "task": "scene2motif",
+   "answer": "strange_loop",
+   "level": 5,
+   "seed": 0,
+   "pred": "strange_loop",
+   "correct": true,
+   "raw": "{\"motif_id\":\"strange_loop\"}"
+  },
+  {
+   "id": "ladder:strange_loop:L5_s2",
+   "task": "scene2motif",
+   "answer": "strange_loop",
+   "level": 5,
+   "seed": 2,
+   "pred": "recursion",
+   "correct": false,
+   "raw": "{\"motif_id\":\"recursion\"}"
+  },
+  {
+   "id": "ladder:strange_loop:L6_s1",
+   "task": "scene2motif",
+   "answer": "strange_loop",
+   "level": 6,
+   "seed": 1,
+   "pred": "recursion",
+   "correct": false,
+   "raw": "{\"motif_id\":\"recursion\"}"
+  },
+  {
+   "id": "ladder:figure_ground:L1_s0",
+   "task": "scene2motif",
+   "answer": "figure_ground",
+   "level": 1,
+   "seed": 0,
+   "pred": "tiling",
+   "correct": false,
+   "raw": "{\"motif_id\":\"tiling\"}"
+  },
+  {
+   "id": "ladder:figure_ground:L1_s1",
+   "task": "scene2motif",
+   "answer": "figure_ground",
+   "level": 1,
+   "seed": 1,
+   "pred": "tiling",
+   "correct": false,
+   "raw": "{\"motif_id\":\"tiling\"}"
+  },
+  {
+   "id": "ladder:figure_ground:L1_s2",
+   "task": "scene2motif",
+   "answer": "figure_ground",
+   "level": 1,
+   "seed": 2,
+   "pred": "tiling",
+   "correct": false,
+   "raw": "{\"motif_id\":\"tiling\"}"
+  },
+  {
+   "id": "ladder:strange_loop:L6_s2",
+   "task": "scene2motif",
+   "answer": "strange_loop",
+   "level": 6,
+   "seed": 2,
+   "pred": "recursion",
+   "correct": false,
+   "raw": "{\"motif_id\":\"recursion\"}"
+  },
+  {
+   "id": "ladder:figure_ground:L2_s0",
+   "task": "scene2motif",
+   "answer": "figure_ground",
+   "level": 2,
+   "seed": 0,
+   "pred": "tiling",
+   "correct": false,
+   "raw": "{\"motif_id\":\"tiling\"}"
+  },
+  {
+   "id": "ladder:figure_ground:L2_s1",
+   "task": "scene2motif",
+   "answer": "figure_ground",
+   "level": 2,
+   "seed": 1,
+   "pred": "tiling",
+   "correct": false,
+   "raw": "{\"motif_id\":\"tiling\"}"
+  },
+  {
+   "id": "ladder:figure_ground:L2_s2",
+   "task": "scene2motif",
+   "answer": "figure_ground",
+   "level": 2,
+   "seed": 2,
+   "pred": "tiling",
+   "correct": false,
+   "raw": "{\"motif_id\":\"tiling\"}"
+  },
+  {
+   "id": "ladder:figure_ground:L3_s0",
+   "task": "scene2motif",
+   "answer": "figure_ground",
+   "level": 3,
+   "seed": 0,
+   "pred": "tiling",
+   "correct": false,
+   "raw": "{\"motif_id\":\"tiling\"}"
+  },
+  {
+   "id": "ladder:figure_ground:L3_s1",
+   "task": "scene2motif",
+   "answer": "figure_ground",
+   "level": 3,
+   "seed": 1,
+   "pred": "tiling",
+   "correct": false,
+   "raw": "{\"motif_id\":\"tiling\"}"
+  },
+  {
+   "id": "ladder:figure_ground:L3_s2",
+   "task": "scene2motif",
+   "answer": "figure_ground",
+   "level": 3,
+   "seed": 2,
+   "pred": "tiling",
+   "correct": false,
+   "raw": "{\"motif_id\":\"tiling\"}"
+  },
+  {
+   "id": "ladder:figure_ground:L4_s0",
+   "task": "scene2motif",
+   "answer": "figure_ground",
+   "level": 4,
+   "seed": 0,
+   "pred": "tiling",
+   "correct": false,
+   "raw": "{\"motif_id\":\"tiling\"}"
+  },
+  {
+   "id": "ladder:figure_ground:L4_s1",
+   "task": "scene2motif",
+   "answer": "figure_ground",
+   "level": 4,
+   "seed": 1,
+   "pred": "tiling",
+   "correct": false,
+   "raw": "{\"motif_id\":\"tiling\"}"
+  },
+  {
+   "id": "ladder:figure_ground:L4_s2",
+   "task": "scene2motif",
+   "answer": "figure_ground",
+   "level": 4,
+   "seed": 2,
+   "pred": "tiling",
+   "correct": false,
+   "raw": "{\"motif_id\":\"tiling\"}"
+  },
+  {
+   "id": "ladder:isomorphism:L1_s0",
+   "task": "scene2motif",
+   "answer": "isomorphism",
+   "level": 1,
+   "seed": 0,
+   "pred": "isomorphism",
+   "correct": true,
+   "raw": "{\"motif_id\":\"isomorphism\"}"
+  },
+  {
+   "id": "ladder:isomorphism:L1_s1",
+   "task": "scene2motif",
+   "answer": "isomorphism",
+   "level": 1,
+   "seed": 1,
+   "pred": "projective_duality",
+   "correct": false,
+   "raw": "{\"motif_id\":\"projective_duality\"}"
+  },
+  {
+   "id": "ladder:isomorphism:L1_s2",
+   "task": "scene2motif",
+   "answer": "isomorphism",
+   "level": 1,
+   "seed": 2,
+   "pred": "isomorphism",
+   "correct": true,
+   "raw": "{\"motif_id\":\"isomorphism\"}"
+  },
+  {
+   "id": "ladder:isomorphism:L2_s0",
+   "task": "scene2motif",
+   "answer": "isomorphism",
+   "level": 2,
+   "seed": 0,
+   "pred": "isomorphism",
+   "correct": true,
+   "raw": "{\"motif_id\":\"isomorphism\"}"
+  },
+  {
+   "id": "ladder:isomorphism:L2_s1",
+   "task": "scene2motif",
+   "answer": "isomorphism",
+   "level": 2,
+   "seed": 1,
+   "pred": "isomorphism",
+   "correct": true,
+   "raw": "{\"motif_id\":\"isomorphism\"}"
+  },
+  {
+   "id": "ladder:isomorphism:L2_s2",
+   "task": "scene2motif",
+   "answer": "isomorphism",
+   "level": 2,
+   "seed": 2,
+   "pred": "isomorphism",
+   "correct": true,
+   "raw": "{\"motif_id\":\"isomorphism\"}"
+  },
+  {
+   "id": "ladder:isomorphism:L3_s0",
+   "task": "scene2motif",
+   "answer": "isomorphism",
+   "level": 3,
+   "seed": 0,
+   "pred": "projective_duality",
+   "correct": false,
+   "raw": "{\"motif_id\":\"projective_duality\"}"
+  },
+  {
+   "id": "ladder:isomorphism:L3_s1",
+   "task": "scene2motif",
+   "answer": "isomorphism",
+   "level": 3,
+   "seed": 1,
+   "pred": "isomorphism",
+   "correct": true,
+   "raw": "{\"motif_id\":\"isomorphism\"}"
+  },
+  {
+   "id": "ladder:isomorphism:L3_s2",
+   "task": "scene2motif",
+   "answer": "isomorphism",
+   "level": 3,
+   "seed": 2,
+   "pred": "projective_duality",
+   "correct": false,
+   "raw": "{\"motif_id\":\"projective_duality\"}"
+  },
+  {
+   "id": "ladder:isomorphism:L4_s0",
+   "task": "scene2motif",
+   "answer": "isomorphism",
+   "level": 4,
+   "seed": 0,
+   "pred": "projective_duality",
+   "correct": false,
+   "raw": "{\"motif_id\":\"projective_duality\"}"
+  },
+  {
+   "id": "ladder:isomorphism:L4_s1",
+   "task": "scene2motif",
+   "answer": "isomorphism",
+   "level": 4,
+   "seed": 1,
+   "pred": "isomorphism",
+   "correct": true,
+   "raw": "{\"motif_id\":\"isomorphism\"}"
+  },
+  {
+   "id": "ladder:isomorphism:L4_s2",
+   "task": "scene2motif",
+   "answer": "isomorphism",
+   "level": 4,
+   "seed": 2,
+   "pred": "projective_duality",
+   "correct": false,
+   "raw": "{\"motif_id\":\"projective_duality\"}"
+  },
+  {
+   "id": "ladder:isomorphism:L5_s0",
+   "task": "scene2motif",
+   "answer": "isomorphism",
+   "level": 5,
+   "seed": 0,
+   "pred": "projective_duality",
+   "correct": false,
+   "raw": "{\"motif_id\":\"projective_duality\"}"
+  },
+  {
+   "id": "ladder:isomorphism:L5_s1",
+   "task": "scene2motif",
+   "answer": "isomorphism",
+   "level": 5,
+   "seed": 1,
+   "pred": "isomorphism",
+   "correct": true,
+   "raw": "{\"motif_id\":\"isomorphism\"}"
+  },
+  {
+   "id": "ladder:isomorphism:L5_s2",
+   "task": "scene2motif",
+   "answer": "isomorphism",
+   "level": 5,
+   "seed": 2,
+   "pred": "isomorphism",
+   "correct": true,
+   "raw": "{\"motif_id\":\"isomorphism\"}"
+  },
+  {
+   "id": "ladder:isomorphism:L6_s1",
+   "task": "scene2motif",
+   "answer": "isomorphism",
+   "level": 6,
+   "seed": 1,
+   "pred": "isomorphism",
+   "correct": true,
+   "raw": "{\"motif_id\":\"isomorphism\"}"
+  },
+  {
+   "id": "ladder:mobius:L1_s0",
+   "task": "scene2motif",
+   "answer": "mobius",
+   "level": 1,
+   "seed": 0,
+   "pred": "mobius",
+   "correct": true,
+   "raw": "{\"motif_id\":\"mobius\"}"
+  },
+  {
+   "id": "ladder:mobius:L1_s1",
+   "task": "scene2motif",
+   "answer": "mobius",
+   "level": 1,
+   "seed": 1,
+   "pred": "mobius",
+   "correct": true,
+   "raw": "{\"motif_id\":\"mobius\"}"
+  },
+  {
+   "id": "ladder:mobius:L1_s2",
+   "task": "scene2motif",
+   "answer": "mobius",
+   "level": 1,
+   "seed": 2,
+   "pred": "mobius",
+   "correct": true,
+   "raw": "{\"motif_id\":\"mobius\"}"
+  },
+  {
+   "id": "ladder:mobius:L2_s0",
+   "task": "scene2motif",
+   "answer": "mobius",
+   "level": 2,
+   "seed": 0,
+   "pred": "mobius",
+   "correct": true,
+   "raw": "{\"motif_id\":\"mobius\"}"
+  },
+  {
+   "id": "ladder:mobius:L2_s1",
+   "task": "scene2motif",
+   "answer": "mobius",
+   "level": 2,
+   "seed": 1,
+   "pred": "mobius",
+   "correct": true,
+   "raw": "{\"motif_id\":\"mobius\"}"
+  },
+  {
+   "id": "ladder:mobius:L2_s2",
+   "task": "scene2motif",
+   "answer": "mobius",
+   "level": 2,
+   "seed": 2,
+   "pred": "mobius",
+   "correct": true,
+   "raw": "{\"motif_id\":\"mobius\"}"
+  },
+  {
+   "id": "ladder:mobius:L3_s0",
+   "task": "scene2motif",
+   "answer": "mobius",
+   "level": 3,
+   "seed": 0,
+   "pred": "mobius",
+   "correct": true,
+   "raw": "{\"motif_id\":\"mobius\"}"
+  },
+  {
+   "id": "ladder:mobius:L3_s1",
+   "task": "scene2motif",
+   "answer": "mobius",
+   "level": 3,
+   "seed": 1,
+   "pred": "mobius",
+   "correct": true,
+   "raw": "{\"motif_id\":\"mobius\"}"
+  },
+  {
+   "id": "ladder:mobius:L3_s2",
+   "task": "scene2motif",
+   "answer": "mobius",
+   "level": 3,
+   "seed": 2,
+   "pred": "cycle",
+   "correct": false,
+   "raw": "{\"motif_id\":\"cycle\"}"
+  },
+  {
+   "id": "ladder:mobius:L4_s0",
+   "task": "scene2motif",
+   "answer": "mobius",
+   "level": 4,
+   "seed": 0,
+   "pred": "mobius",
+   "correct": true,
+   "raw": "{\"motif_id\":\"mobius\"}"
+  },
+  {
+   "id": "ladder:mobius:L4_s1",
+   "task": "scene2motif",
+   "answer": "mobius",
+   "level": 4,
+   "seed": 1,
+   "pred": "mobius",
+   "correct": true,
+   "raw": "{\"motif_id\":\"mobius\"}"
+  },
+  {
+   "id": "ladder:mobius:L4_s2",
+   "task": "scene2motif",
+   "answer": "mobius",
+   "level": 4,
+   "seed": 2,
+   "pred": "mobius",
+   "correct": true,
+   "raw": "{\"motif_id\":\"mobius\"}"
+  },
+  {
+   "id": "ladder:mobius:L5_s0",
+   "task": "scene2motif",
+   "answer": "mobius",
+   "level": 5,
+   "seed": 0,
+   "pred": "mobius",
+   "correct": true,
+   "raw": "{\"motif_id\":\"mobius\"}"
+  },
+  {
+   "id": "ladder:mobius:L5_s1",
+   "task": "scene2motif",
+   "answer": "mobius",
+   "level": 5,
+   "seed": 1,
+   "pred": "mobius",
+   "correct": true,
+   "raw": "{\"motif_id\":\"mobius\"}"
+  },
+  {
+   "id": "ladder:braiding:L1_s0",
+   "task": "scene2motif",
+   "answer": "braiding",
+   "level": 1,
+   "seed": 0,
+   "pred": "braiding",
+   "correct": true,
+   "raw": "{\"motif_id\":\"braiding\"}"
+  },
+  {
+   "id": "ladder:braiding:L1_s1",
+   "task": "scene2motif",
+   "answer": "braiding",
+   "level": 1,
+   "seed": 1,
+   "pred": "braiding",
+   "correct": true,
+   "raw": "{\"motif_id\":\"braiding\"}"
+  },
+  {
+   "id": "ladder:braiding:L1_s2",
+   "task": "scene2motif",
+   "answer": "braiding",
+   "level": 1,
+   "seed": 2,
+   "pred": "braiding",
+   "correct": true,
+   "raw": "{\"motif_id\":\"braiding\"}"
+  },
+  {
+   "id": "ladder:braiding:L2_s0",
+   "task": "scene2motif",
+   "answer": "braiding",
+   "level": 2,
+   "seed": 0,
+   "pred": "braiding",
+   "correct": true,
+   "raw": "{\"motif_id\":\"braiding\"}"
+  },
+  {
+   "id": "ladder:braiding:L2_s1",
+   "task": "scene2motif",
+   "answer": "braiding",
+   "level": 2,
+   "seed": 1,
+   "pred": "braiding",
+   "correct": true,
+   "raw": "{\"motif_id\":\"braiding\"}"
+  },
+  {
+   "id": "ladder:braiding:L2_s2",
+   "task": "scene2motif",
+   "answer": "braiding",
+   "level": 2,
+   "seed": 2,
+   "pred": "braiding",
+   "correct": true,
+   "raw": "{\"motif_id\":\"braiding\"}"
+  },
+  {
+   "id": "ladder:braiding:L3_s0",
+   "task": "scene2motif",
+   "answer": "braiding",
+   "level": 3,
+   "seed": 0,
+   "pred": "braiding",
+   "correct": true,
+   "raw": "{\"motif_id\":\"braiding\"}"
+  },
+  {
+   "id": "ladder:braiding:L3_s1",
+   "task": "scene2motif",
+   "answer": "braiding",
+   "level": 3,
+   "seed": 1,
+   "pred": "braiding",
+   "correct": true,
+   "raw": "{\"motif_id\":\"braiding\"}"
+  },
+  {
+   "id": "ladder:braiding:L3_s2",
+   "task": "scene2motif",
+   "answer": "braiding",
+   "level": 3,
+   "seed": 2,
+   "pred": "braiding",
+   "correct": true,
+   "raw": "{\"motif_id\":\"braiding\"}"
+  },
+  {
+   "id": "ladder:braiding:L4_s0",
+   "task": "scene2motif",
+   "answer": "braiding",
+   "level": 4,
+   "seed": 0,
+   "pred": "braiding",
+   "correct": true,
+   "raw": "{\"motif_id\":\"braiding\"}"
+  },
+  {
+   "id": "ladder:braiding:L4_s1",
+   "task": "scene2motif",
+   "answer": "braiding",
+   "level": 4,
+   "seed": 1,
+   "pred": "alternation",
+   "correct": false,
+   "raw": "{\"motif_id\":\"alternation\"}"
+  },
+  {
+   "id": "ladder:braiding:L4_s2",
+   "task": "scene2motif",
+   "answer": "braiding",
+   "level": 4,
+   "seed": 2,
+   "pred": "braiding",
+   "correct": true,
+   "raw": "{\"motif_id\":\"braiding\"}"
+  },
+  {
+   "id": "ladder:braiding:L5_s0",
+   "task": "scene2motif",
+   "answer": "braiding",
+   "level": 5,
+   "seed": 0,
+   "pred": "braiding",
+   "correct": true,
+   "raw": "{\"motif_id\":\"braiding\"}"
+  },
+  {
+   "id": "ladder:braiding:L5_s1",
+   "task": "scene2motif",
+   "answer": "braiding",
+   "level": 5,
+   "seed": 1,
+   "pred": "braiding",
+   "correct": true,
+   "raw": "{\"motif_id\":\"braiding\"}"
+  },
+  {
+   "id": "ladder:braiding:L5_s2",
+   "task": "scene2motif",
+   "answer": "braiding",
+   "level": 5,
+   "seed": 2,
+   "pred": "braiding",
+   "correct": true,
+   "raw": "{\"motif_id\":\"braiding\"}"
+  },
+  {
+   "id": "ladder:braiding:L6_s0",
+   "task": "scene2motif",
+   "answer": "braiding",
+   "level": 6,
+   "seed": 0,
+   "pred": "braiding",
+   "correct": true,
+   "raw": "{\"motif_id\":\"braiding\"}"
+  },
+  {
+   "id": "ladder:interference:L1_s0",
+   "task": "scene2motif",
+   "answer": "interference",
+   "level": 1,
+   "seed": 0,
+   "pred": "symmetry",
+   "correct": false,
+   "raw": "{\"motif_id\":\"symmetry\"}"
+  },
+  {
+   "id": "ladder:interference:L1_s1",
+   "task": "scene2motif",
+   "answer": "interference",
+   "level": 1,
+   "seed": 1,
+   "pred": "symmetry",
+   "correct": false,
+   "raw": "{\"motif_id\":\"symmetry\"}"
+  },
+  {
+   "id": "ladder:interference:L1_s2",
+   "task": "scene2motif",
+   "answer": "interference",
+   "level": 1,
+   "seed": 2,
+   "pred": "interference",
+   "correct": true,
+   "raw": "{\"motif_id\":\"interference\"}"
+  },
+  {
+   "id": "ladder:interference:L2_s0",
+   "task": "scene2motif",
+   "answer": "interference",
+   "level": 2,
+   "seed": 0,
+   "pred": "interference",
+   "correct": true,
+   "raw": "{\"motif_id\":\"interference\"}"
+  },
+  {
+   "id": "ladder:interference:L2_s1",
+   "task": "scene2motif",
+   "answer": "interference",
+   "level": 2,
+   "seed": 1,
+   "pred": "interference",
+   "correct": true,
+   "raw": "{\"motif_id\":\"interference\"}"
+  },
+  {
+   "id": "ladder:interference:L2_s2",
+   "task": "scene2motif",
+   "answer": "interference",
+   "level": 2,
+   "seed": 2,
+   "pred": "nesting",
+   "correct": false,
+   "raw": "{\"motif_id\":\"nesting\"}"
+  },
+  {
+   "id": "ladder:interference:L3_s0",
+   "task": "scene2motif",
+   "answer": "interference",
+   "level": 3,
+   "seed": 0,
+   "pred": "interference",
+   "correct": true,
+   "raw": "{\"motif_id\":\"interference\"}"
+  },
+  {
+   "id": "ladder:interference:L3_s1",
+   "task": "scene2motif",
+   "answer": "interference",
+   "level": 3,
+   "seed": 1,
+   "pred": "interference",
+   "correct": true,
+   "raw": "{\"motif_id\":\"interference\"}"
+  },
+  {
+   "id": "ladder:interference:L3_s2",
+   "task": "scene2motif",
+   "answer": "interference",
+   "level": 3,
+   "seed": 2,
+   "pred": "symmetry",
+   "correct": false,
+   "raw": "{\"motif_id\":\"symmetry\"}"
+  },
+  {
+   "id": "ladder:interference:L4_s0",
+   "task": "scene2motif",
+   "answer": "interference",
+   "level": 4,
+   "seed": 0,
+   "pred": "interference",
+   "correct": true,
+   "raw": "{\"motif_id\":\"interference\"}"
+  },
+  {
+   "id": "ladder:interference:L4_s1",
+   "task": "scene2motif",
+   "answer": "interference",
+   "level": 4,
+   "seed": 1,
+   "pred": "interference",
+   "correct": true,
+   "raw": "{\"motif_id\":\"interference\"}"
+  },
+  {
+   "id": "ladder:interference:L4_s2",
+   "task": "scene2motif",
+   "answer": "interference",
+   "level": 4,
+   "seed": 2,
+   "pred": "symmetry",
+   "correct": false,
+   "raw": "{\"motif_id\":\"symmetry\"}"
+  },
+  {
+   "id": "ladder:interference:L5_s0",
+   "task": "scene2motif",
+   "answer": "interference",
+   "level": 5,
+   "seed": 0,
+   "pred": "interference",
+   "correct": true,
+   "raw": "{\"motif_id\":\"interference\"}"
+  },
+  {
+   "id": "ladder:interference:L6_s0",
+   "task": "scene2motif",
+   "answer": "interference",
+   "level": 6,
+   "seed": 0,
+   "pred": "interference",
+   "correct": true,
+   "raw": "{\"motif_id\":\"interference\"}"
+  },
+  {
+   "id": "ladder:interference:L6_s1",
+   "task": "scene2motif",
+   "answer": "interference",
+   "level": 6,
+   "seed": 1,
+   "pred": "nesting",
+   "correct": false,
+   "raw": "{\"motif_id\":\"nesting\"}"
+  },
+  {
+   "id": "ladder:interference:L6_s2",
+   "task": "scene2motif",
+   "answer": "interference",
+   "level": 6,
+   "seed": 2,
+   "pred": "interference",
+   "correct": true,
+   "raw": "{\"motif_id\":\"interference\"}"
+  },
+  {
+   "id": "ladder:tiling:L1_s0",
+   "task": "scene2motif",
+   "answer": "tiling",
+   "level": 1,
+   "seed": 0,
+   "pred": "tiling",
+   "correct": true,
+   "raw": "{\"motif_id\":\"tiling\"}"
+  },
+  {
+   "id": "ladder:tiling:L1_s1",
+   "task": "scene2motif",
+   "answer": "tiling",
+   "level": 1,
+   "seed": 1,
+   "pred": "tiling",
+   "correct": true,
+   "raw": "{\"motif_id\":\"tiling\"}"
+  },
+  {
+   "id": "ladder:tiling:L1_s2",
+   "task": "scene2motif",
+   "answer": "tiling",
+   "level": 1,
+   "seed": 2,
+   "pred": "tiling",
+   "correct": true,
+   "raw": "{\"motif_id\":\"tiling\"}"
+  },
+  {
+   "id": "ladder:tiling:L2_s0",
+   "task": "scene2motif",
+   "answer": "tiling",
+   "level": 2,
+   "seed": 0,
+   "pred": "tiling",
+   "correct": true,
+   "raw": "{\"motif_id\":\"tiling\"}"
+  },
+  {
+   "id": "ladder:tiling:L2_s1",
+   "task": "scene2motif",
+   "answer": "tiling",
+   "level": 2,
+   "seed": 1,
+   "pred": "tiling",
+   "correct": true,
+   "raw": "{\"motif_id\":\"tiling\"}"
+  },
+  {
+   "id": "ladder:tiling:L2_s2",
+   "task": "scene2motif",
+   "answer": "tiling",
+   "level": 2,
+   "seed": 2,
+   "pred": "tiling",
+   "correct": true,
+   "raw": "{\"motif_id\":\"tiling\"}"
+  },
+  {
+   "id": "ladder:tiling:L3_s0",
+   "task": "scene2motif",
+   "answer": "tiling",
+   "level": 3,
+   "seed": 0,
+   "pred": "tiling",
+   "correct": true,
+   "raw": "{\"motif_id\":\"tiling\"}"
+  },
+  {
+   "id": "ladder:tiling:L3_s1",
+   "task": "scene2motif",
+   "answer": "tiling",
+   "level": 3,
+   "seed": 1,
+   "pred": "tiling",
+   "correct": true,
+   "raw": "{\"motif_id\":\"tiling\"}"
+  },
+  {
+   "id": "ladder:tiling:L3_s2",
+   "task": "scene2motif",
+   "answer": "tiling",
+   "level": 3,
+   "seed": 2,
+   "pred": "tiling",
+   "correct": true,
+   "raw": "{\"motif_id\":\"tiling\"}"
+  },
+  {
+   "id": "ladder:tiling:L4_s0",
+   "task": "scene2motif",
+   "answer": "tiling",
+   "level": 4,
+   "seed": 0,
+   "pred": "tiling",
+   "correct": true,
+   "raw": "{\"motif_id\":\"tiling\"}"
+  },
+  {
+   "id": "ladder:tiling:L4_s1",
+   "task": "scene2motif",
+   "answer": "tiling",
+   "level": 4,
+   "seed": 1,
+   "pred": "tiling",
+   "correct": true,
+   "raw": "{\"motif_id\":\"tiling\"}"
+  },
+  {
+   "id": "ladder:tiling:L4_s2",
+   "task": "scene2motif",
+   "answer": "tiling",
+   "level": 4,
+   "seed": 2,
+   "pred": "tiling",
+   "correct": true,
+   "raw": "{\"motif_id\":\"tiling\"}"
+  },
+  {
+   "id": "ladder:tiling:L5_s0",
+   "task": "scene2motif",
+   "answer": "tiling",
+   "level": 5,
+   "seed": 0,
+   "pred": "tiling",
+   "correct": true,
+   "raw": "{\"motif_id\":\"tiling\"}"
+  },
+  {
+   "id": "ladder:tiling:L5_s1",
+   "task": "scene2motif",
+   "answer": "tiling",
+   "level": 5,
+   "seed": 1,
+   "pred": "tiling",
+   "correct": true,
+   "raw": "{\"motif_id\":\"tiling\"}"
+  },
+  {
+   "id": "ladder:tiling:L5_s2",
+   "task": "scene2motif",
+   "answer": "tiling",
+   "level": 5,
+   "seed": 2,
+   "pred": "tiling",
+   "correct": true,
+   "raw": "{\"motif_id\":\"tiling\"}"
+  },
+  {
+   "id": "ladder:hub:L1_s0",
+   "task": "scene2motif",
+   "answer": "hub",
+   "level": 1,
+   "seed": 0,
+   "pred": "hub",
+   "correct": true,
+   "raw": "{\"motif_id\":\"hub\"}"
+  },
+  {
+   "id": "ladder:hub:L1_s1",
+   "task": "scene2motif",
+   "answer": "hub",
+   "level": 1,
+   "seed": 1,
+   "pred": "hub",
+   "correct": true,
+   "raw": "{\"motif_id\":\"hub\"}"
+  },
+  {
+   "id": "ladder:hub:L1_s2",
+   "task": "scene2motif",
+   "answer": "hub",
+   "level": 1,
+   "seed": 2,
+   "pred": "hub",
+   "correct": true,
+   "raw": "{\"motif_id\":\"hub\"}"
+  },
+  {
+   "id": "ladder:hub:L2_s0",
+   "task": "scene2motif",
+   "answer": "hub",
+   "level": 2,
+   "seed": 0,
+   "pred": "hub",
+   "correct": true,
+   "raw": "{\"motif_id\":\"hub\"}"
+  },
+  {
+   "id": "ladder:hub:L2_s1",
+   "task": "scene2motif",
+   "answer": "hub",
+   "level": 2,
+   "seed": 1,
+   "pred": "hub",
+   "correct": true,
+   "raw": "{\"motif_id\":\"hub\"}"
+  },
+  {
+   "id": "ladder:hub:L2_s2",
+   "task": "scene2motif",
+   "answer": "hub",
+   "level": 2,
+   "seed": 2,
+   "pred": "hub",
+   "correct": true,
+   "raw": "{\"motif_id\":\"hub\"}"
+  },
+  {
+   "id": "ladder:hub:L3_s0",
+   "task": "scene2motif",
+   "answer": "hub",
+   "level": 3,
+   "seed": 0,
+   "pred": "hub",
+   "correct": true,
+   "raw": "{\"motif_id\":\"hub\"}"
+  },
+  {
+   "id": "ladder:hub:L3_s1",
+   "task": "scene2motif",
+   "answer": "hub",
+   "level": 3,
+   "seed": 1,
+   "pred": "hub",
+   "correct": true,
+   "raw": "{\"motif_id\":\"hub\"}"
+  },
+  {
+   "id": "ladder:hub:L3_s2",
+   "task": "scene2motif",
+   "answer": "hub",
+   "level": 3,
+   "seed": 2,
+   "pred": "hub",
+   "correct": true,
+   "raw": "{\"motif_id\":\"hub\"}"
+  },
+  {
+   "id": "ladder:hub:L4_s0",
+   "task": "scene2motif",
+   "answer": "hub",
+   "level": 4,
+   "seed": 0,
+   "pred": "hub",
+   "correct": true,
+   "raw": "{\"motif_id\":\"hub\"}"
+  },
+  {
+   "id": "ladder:hub:L4_s1",
+   "task": "scene2motif",
+   "answer": "hub",
+   "level": 4,
+   "seed": 1,
+   "pred": "hub",
+   "correct": true,
+   "raw": "{\"motif_id\":\"hub\"}"
+  },
+  {
+   "id": "ladder:hub:L4_s2",
+   "task": "scene2motif",
+   "answer": "hub",
+   "level": 4,
+   "seed": 2,
+   "pred": "symmetry",
+   "correct": false,
+   "raw": "{\"motif_id\":\"symmetry\"}"
+  },
+  {
+   "id": "ladder:hub:L5_s0",
+   "task": "scene2motif",
+   "answer": "hub",
+   "level": 5,
+   "seed": 0,
+   "pred": "hub",
+   "correct": true,
+   "raw": "{\"motif_id\":\"hub\"}"
+  },
+  {
+   "id": "ladder:hub:L5_s1",
+   "task": "scene2motif",
+   "answer": "hub",
+   "level": 5,
+   "seed": 1,
+   "pred": "hub",
+   "correct": true,
+   "raw": "{\"motif_id\":\"hub\"}"
+  },
+  {
+   "id": "ladder:hub:L5_s2",
+   "task": "scene2motif",
+   "answer": "hub",
+   "level": 5,
+   "seed": 2,
+   "pred": "symmetry",
+   "correct": false,
+   "raw": "{\"motif_id\":\"symmetry\"}"
+  },
+  {
+   "id": "ladder:hub:L6_s1",
+   "task": "scene2motif",
+   "answer": "hub",
+   "level": 6,
+   "seed": 1,
+   "pred": "hub",
+   "correct": true,
+   "raw": "{\"motif_id\":\"hub\"}"
+  },
+  {
+   "id": "ladder:hub:L6_s2",
+   "task": "scene2motif",
+   "answer": "hub",
+   "level": 6,
+   "seed": 2,
+   "pred": "symmetry",
+   "correct": false,
+   "raw": "{\"motif_id\":\"symmetry\"}"
+  },
+  {
+   "id": "ladder:diagonalization:L1_s0",
+   "task": "scene2motif",
+   "answer": "diagonalization",
+   "level": 1,
+   "seed": 0,
+   "pred": "diagonalization",
+   "correct": true,
+   "raw": "{\"motif_id\":\"diagonalization\"}"
+  },
+  {
+   "id": "ladder:diagonalization:L1_s1",
+   "task": "scene2motif",
+   "answer": "diagonalization",
+   "level": 1,
+   "seed": 1,
+   "pred": "diagonalization",
+   "correct": true,
+   "raw": "{\"motif_id\":\"diagonalization\"}"
+  },
+  {
+   "id": "ladder:diagonalization:L1_s2",
+   "task": "scene2motif",
+   "answer": "diagonalization",
+   "level": 1,
+   "seed": 2,
+   "pred": "diagonalization",
+   "correct": true,
+   "raw": "{\"motif_id\":\"diagonalization\"}"
+  },
+  {
+   "id": "ladder:diagonalization:L2_s0",
+   "task": "scene2motif",
+   "answer": "diagonalization",
+   "level": 2,
+   "seed": 0,
+   "pred": "diagonalization",
+   "correct": true,
+   "raw": "{\"motif_id\":\"diagonalization\"}"
+  },
+  {
+   "id": "ladder:diagonalization:L2_s1",
+   "task": "scene2motif",
+   "answer": "diagonalization",
+   "level": 2,
+   "seed": 1,
+   "pred": "diagonalization",
+   "correct": true,
+   "raw": "{\"motif_id\":\"diagonalization\"}"
+  },
+  {
+   "id": "ladder:diagonalization:L2_s2",
+   "task": "scene2motif",
+   "answer": "diagonalization",
+   "level": 2,
+   "seed": 2,
+   "pred": "diagonalization",
+   "correct": true,
+   "raw": "{\"motif_id\":\"diagonalization\"}"
+  },
+  {
+   "id": "ladder:diagonalization:L3_s0",
+   "task": "scene2motif",
+   "answer": "diagonalization",
+   "level": 3,
+   "seed": 0,
+   "pred": "diagonalization",
+   "correct": true,
+   "raw": "{\"motif_id\":\"diagonalization\"}"
+  },
+  {
+   "id": "ladder:diagonalization:L3_s1",
+   "task": "scene2motif",
+   "answer": "diagonalization",
+   "level": 3,
+   "seed": 1,
+   "pred": "diagonalization",
+   "correct": true,
+   "raw": "{\"motif_id\":\"diagonalization\"}"
+  },
+  {
+   "id": "ladder:diagonalization:L3_s2",
+   "task": "scene2motif",
+   "answer": "diagonalization",
+   "level": 3,
+   "seed": 2,
+   "pred": "diagonalization",
+   "correct": true,
+   "raw": "{\"motif_id\":\"diagonalization\"}"
+  },
+  {
+   "id": "ladder:diagonalization:L4_s0",
+   "task": "scene2motif",
+   "answer": "diagonalization",
+   "level": 4,
+   "seed": 0,
+   "pred": "diagonalization",
+   "correct": true,
+   "raw": "{\"motif_id\":\"diagonalization\"}"
+  },
+  {
+   "id": "ladder:diagonalization:L4_s1",
+   "task": "scene2motif",
+   "answer": "diagonalization",
+   "level": 4,
+   "seed": 1,
+   "pred": "diagonalization",
+   "correct": true,
+   "raw": "{\"motif_id\":\"diagonalization\"}"
+  },
+  {
+   "id": "ladder:diagonalization:L4_s2",
+   "task": "scene2motif",
+   "answer": "diagonalization",
+   "level": 4,
+   "seed": 2,
+   "pred": "diagonalization",
+   "correct": true,
+   "raw": "{\"motif_id\":\"diagonalization\"}"
+  },
+  {
+   "id": "ladder:infinite_descent:L1_s0",
+   "task": "scene2motif",
+   "answer": "infinite_descent",
+   "level": 1,
+   "seed": 0,
+   "pred": "contraction_fixed_point",
+   "correct": false,
+   "raw": "{\"motif_id\":\"contraction_fixed_point\"}"
+  },
+  {
+   "id": "ladder:infinite_descent:L1_s1",
+   "task": "scene2motif",
+   "answer": "infinite_descent",
+   "level": 1,
+   "seed": 1,
+   "pred": "contraction_fixed_point",
+   "correct": false,
+   "raw": "{\"motif_id\":\"contraction_fixed_point\"}"
+  },
+  {
+   "id": "ladder:infinite_descent:L1_s2",
+   "task": "scene2motif",
+   "answer": "infinite_descent",
+   "level": 1,
+   "seed": 2,
+   "pred": "contraction_fixed_point",
+   "correct": false,
+   "raw": "{\"motif_id\":\"contraction_fixed_point\"}"
+  },
+  {
+   "id": "ladder:infinite_descent:L2_s0",
+   "task": "scene2motif",
+   "answer": "infinite_descent",
+   "level": 2,
+   "seed": 0,
+   "pred": "contraction_fixed_point",
+   "correct": false,
+   "raw": "{\"motif_id\":\"contraction_fixed_point\"}"
+  },
+  {
+   "id": "ladder:infinite_descent:L2_s1",
+   "task": "scene2motif",
+   "answer": "infinite_descent",
+   "level": 2,
+   "seed": 1,
+   "pred": "infinite_descent",
+   "correct": true,
+   "raw": "{\"motif_id\":\"infinite_descent\"}"
+  },
+  {
+   "id": "ladder:infinite_descent:L2_s2",
+   "task": "scene2motif",
+   "answer": "infinite_descent",
+   "level": 2,
+   "seed": 2,
+   "pred": "infinite_descent",
+   "correct": true,
+   "raw": "{\"motif_id\":\"infinite_descent\"}"
+  },
+  {
+   "id": "ladder:infinite_descent:L3_s0",
+   "task": "scene2motif",
+   "answer": "infinite_descent",
+   "level": 3,
+   "seed": 0,
+   "pred": "infinite_descent",
+   "correct": true,
+   "raw": "{\"motif_id\":\"infinite_descent\"}"
+  },
+  {
+   "id": "ladder:infinite_descent:L3_s1",
+   "task": "scene2motif",
+   "answer": "infinite_descent",
+   "level": 3,
+   "seed": 1,
+   "pred": "infinite_descent",
+   "correct": true,
+   "raw": "{\"motif_id\":\"infinite_descent\"}"
+  },
+  {
+   "id": "ladder:infinite_descent:L3_s2",
+   "task": "scene2motif",
+   "answer": "infinite_descent",
+   "level": 3,
+   "seed": 2,
+   "pred": "recursion",
+   "correct": false,
+   "raw": "{\"motif_id\":\"recursion\"}"
+  },
+  {
+   "id": "ladder:infinite_descent:L4_s0",
+   "task": "scene2motif",
+   "answer": "infinite_descent",
+   "level": 4,
+   "seed": 0,
+   "pred": "nesting",
+   "correct": false,
+   "raw": "{\"motif_id\":\"nesting\"}"
+  },
+  {
+   "id": "ladder:infinite_descent:L4_s1",
+   "task": "scene2motif",
+   "answer": "infinite_descent",
+   "level": 4,
+   "seed": 1,
+   "pred": "recursion",
+   "correct": false,
+   "raw": "{\"motif_id\":\"recursion\"}"
+  },
+  {
+   "id": "ladder:infinite_descent:L4_s2",
+   "task": "scene2motif",
+   "answer": "infinite_descent",
+   "level": 4,
+   "seed": 2,
+   "pred": "recursion",
+   "correct": false,
+   "raw": "{\"motif_id\":\"recursion\"}"
+  },
+  {
+   "id": "ladder:coprime_orbit:L1_s0",
+   "task": "scene2motif",
+   "answer": "coprime_orbit",
+   "level": 1,
+   "seed": 0,
+   "pred": "coprime_orbit",
+   "correct": true,
+   "raw": "{\"motif_id\":\"coprime_orbit\"}"
+  },
+  {
+   "id": "ladder:coprime_orbit:L1_s1",
+   "task": "scene2motif",
+   "answer": "coprime_orbit",
+   "level": 1,
+   "seed": 1,
+   "pred": "coprime_orbit",
+   "correct": true,
+   "raw": "{\"motif_id\":\"coprime_orbit\"}"
+  },
+  {
+   "id": "ladder:coprime_orbit:L1_s2",
+   "task": "scene2motif",
+   "answer": "coprime_orbit",
+   "level": 1,
+   "seed": 2,
+   "pred": "coprime_orbit",
+   "correct": true,
+   "raw": "{\"motif_id\":\"coprime_orbit\"}"
+  },
+  {
+   "id": "ladder:coprime_orbit:L2_s0",
+   "task": "scene2motif",
+   "answer": "coprime_orbit",
+   "level": 2,
+   "seed": 0,
+   "pred": "coprime_orbit",
+   "correct": true,
+   "raw": "{\"motif_id\":\"coprime_orbit\"}"
+  },
+  {
+   "id": "ladder:coprime_orbit:L2_s1",
+   "task": "scene2motif",
+   "answer": "coprime_orbit",
+   "level": 2,
+   "seed": 1,
+   "pred": "coprime_orbit",
+   "correct": true,
+   "raw": "{\"motif_id\":\"coprime_orbit\"}"
+  },
+  {
+   "id": "ladder:coprime_orbit:L2_s2",
+   "task": "scene2motif",
+   "answer": "coprime_orbit",
+   "level": 2,
+   "seed": 2,
+   "pred": "coprime_orbit",
+   "correct": true,
+   "raw": "{\"motif_id\":\"coprime_orbit\"}"
+  },
+  {
+   "id": "ladder:coprime_orbit:L3_s0",
+   "task": "scene2motif",
+   "answer": "coprime_orbit",
+   "level": 3,
+   "seed": 0,
+   "pred": "coprime_orbit",
+   "correct": true,
+   "raw": "{\"motif_id\":\"coprime_orbit\"}"
+  },
+  {
+   "id": "ladder:coprime_orbit:L3_s1",
+   "task": "scene2motif",
+   "answer": "coprime_orbit",
+   "level": 3,
+   "seed": 1,
+   "pred": "coprime_orbit",
+   "correct": true,
+   "raw": "{\"motif_id\":\"coprime_orbit\"}"
+  },
+  {
+   "id": "ladder:coprime_orbit:L3_s2",
+   "task": "scene2motif",
+   "answer": "coprime_orbit",
+   "level": 3,
+   "seed": 2,
+   "pred": "coprime_orbit",
+   "correct": true,
+   "raw": "{\"motif_id\":\"coprime_orbit\"}"
+  },
+  {
+   "id": "ladder:coprime_orbit:L4_s0",
+   "task": "scene2motif",
+   "answer": "coprime_orbit",
+   "level": 4,
+   "seed": 0,
+   "pred": "coprime_orbit",
+   "correct": true,
+   "raw": "{\"motif_id\":\"coprime_orbit\"}"
+  },
+  {
+   "id": "ladder:coprime_orbit:L4_s1",
+   "task": "scene2motif",
+   "answer": "coprime_orbit",
+   "level": 4,
+   "seed": 1,
+   "pred": "coprime_orbit",
+   "correct": true,
+   "raw": "{\"motif_id\":\"coprime_orbit\"}"
+  },
+  {
+   "id": "ladder:coprime_orbit:L4_s2",
+   "task": "scene2motif",
+   "answer": "coprime_orbit",
+   "level": 4,
+   "seed": 2,
+   "pred": "coprime_orbit",
+   "correct": true,
+   "raw": "{\"motif_id\":\"coprime_orbit\"}"
+  },
+  {
+   "id": "ladder:pigeonhole:L1_s0",
+   "task": "scene2motif",
+   "answer": "pigeonhole",
+   "level": 1,
+   "seed": 0,
+   "pred": "convergence",
+   "correct": false,
+   "raw": "{\"motif_id\":\"convergence\"}"
+  },
+  {
+   "id": "ladder:pigeonhole:L1_s1",
+   "task": "scene2motif",
+   "answer": "pigeonhole",
+   "level": 1,
+   "seed": 1,
+   "pred": "pigeonhole",
+   "correct": true,
+   "raw": "{\"motif_id\":\"pigeonhole\"}"
+  },
+  {
+   "id": "ladder:pigeonhole:L1_s2",
+   "task": "scene2motif",
+   "answer": "pigeonhole",
+   "level": 1,
+   "seed": 2,
+   "pred": "convergence",
+   "correct": false,
+   "raw": "{\"motif_id\":\"convergence\"}"
+  },
+  {
+   "id": "ladder:pigeonhole:L2_s0",
+   "task": "scene2motif",
+   "answer": "pigeonhole",
+   "level": 2,
+   "seed": 0,
+   "pred": "symmetry_breaking",
+   "correct": false,
+   "raw": "{\"motif_id\":\"symmetry_breaking\"}"
+  },
+  {
+   "id": "ladder:pigeonhole:L2_s1",
+   "task": "scene2motif",
+   "answer": "pigeonhole",
+   "level": 2,
+   "seed": 1,
+   "pred": "pigeonhole",
+   "correct": true,
+   "raw": "{\"motif_id\":\"pigeonhole\"}"
+  },
+  {
+   "id": "ladder:pigeonhole:L2_s2",
+   "task": "scene2motif",
+   "answer": "pigeonhole",
+   "level": 2,
+   "seed": 2,
+   "pred": "pigeonhole",
+   "correct": true,
+   "raw": "{\"motif_id\":\"pigeonhole\"}"
+  },
+  {
+   "id": "ladder:pigeonhole:L3_s0",
+   "task": "scene2motif",
+   "answer": "pigeonhole",
+   "level": 3,
+   "seed": 0,
+   "pred": "convergence",
+   "correct": false,
+   "raw": "{\"motif_id\":\"convergence\"}"
+  },
+  {
+   "id": "ladder:pigeonhole:L3_s1",
+   "task": "scene2motif",
+   "answer": "pigeonhole",
+   "level": 3,
+   "seed": 1,
+   "pred": "symmetry_breaking",
+   "correct": false,
+   "raw": "{\"motif_id\":\"symmetry_breaking\"}"
+  },
+  {
+   "id": "ladder:pigeonhole:L3_s2",
+   "task": "scene2motif",
+   "answer": "pigeonhole",
+   "level": 3,
+   "seed": 2,
+   "pred": "symmetry_breaking",
+   "correct": false,
+   "raw": "{\"motif_id\":\"symmetry_breaking\"}"
+  },
+  {
+   "id": "ladder:pigeonhole:L4_s0",
+   "task": "scene2motif",
+   "answer": "pigeonhole",
+   "level": 4,
+   "seed": 0,
+   "pred": "pigeonhole",
+   "correct": true,
+   "raw": "{\"motif_id\":\"pigeonhole\"}"
+  },
+  {
+   "id": "ladder:pigeonhole:L4_s1",
+   "task": "scene2motif",
+   "answer": "pigeonhole",
+   "level": 4,
+   "seed": 1,
+   "pred": "pigeonhole",
+   "correct": true,
+   "raw": "{\"motif_id\":\"pigeonhole\"}"
+  },
+  {
+   "id": "ladder:pigeonhole:L4_s2",
+   "task": "scene2motif",
+   "answer": "pigeonhole",
+   "level": 4,
+   "seed": 2,
+   "pred": "symmetry_breaking",
+   "correct": false,
+   "raw": "{\"motif_id\":\"symmetry_breaking\"}"
+  },
+  {
+   "id": "ladder:projective_duality:L1_s0",
+   "task": "scene2motif",
+   "answer": "projective_duality",
+   "level": 1,
+   "seed": 0,
+   "pred": "projective_duality",
+   "correct": true,
+   "raw": "{\"motif_id\":\"projective_duality\"}"
+  },
+  {
+   "id": "ladder:projective_duality:L1_s1",
+   "task": "scene2motif",
+   "answer": "projective_duality",
+   "level": 1,
+   "seed": 1,
+   "pred": "projective_duality",
+   "correct": true,
+   "raw": "{\"motif_id\":\"projective_duality\"}"
+  },
+  {
+   "id": "ladder:projective_duality:L1_s2",
+   "task": "scene2motif",
+   "answer": "projective_duality",
+   "level": 1,
+   "seed": 2,
+   "pred": "projective_duality",
+   "correct": true,
+   "raw": "{\"motif_id\":\"projective_duality\"}"
+  },
+  {
+   "id": "ladder:projective_duality:L2_s0",
+   "task": "scene2motif",
+   "answer": "projective_duality",
+   "level": 2,
+   "seed": 0,
+   "pred": "projective_duality",
+   "correct": true,
+   "raw": "{\"motif_id\":\"projective_duality\"}"
+  },
+  {
+   "id": "ladder:projective_duality:L2_s1",
+   "task": "scene2motif",
+   "answer": "projective_duality",
+   "level": 2,
+   "seed": 1,
+   "pred": "projective_duality",
+   "correct": true,
+   "raw": "{\"motif_id\":\"projective_duality\"}"
+  },
+  {
+   "id": "ladder:projective_duality:L2_s2",
+   "task": "scene2motif",
+   "answer": "projective_duality",
+   "level": 2,
+   "seed": 2,
+   "pred": "projective_duality",
+   "correct": true,
+   "raw": "{\"motif_id\":\"projective_duality\"}"
+  },
+  {
+   "id": "ladder:projective_duality:L3_s0",
+   "task": "scene2motif",
+   "answer": "projective_duality",
+   "level": 3,
+   "seed": 0,
+   "pred": "projective_duality",
+   "correct": true,
+   "raw": "{\"motif_id\":\"projective_duality\"}"
+  },
+  {
+   "id": "ladder:projective_duality:L3_s1",
+   "task": "scene2motif",
+   "answer": "projective_duality",
+   "level": 3,
+   "seed": 1,
+   "pred": "projective_duality",
+   "correct": true,
+   "raw": "{\"motif_id\":\"projective_duality\"}"
+  },
+  {
+   "id": "ladder:projective_duality:L3_s2",
+   "task": "scene2motif",
+   "answer": "projective_duality",
+   "level": 3,
+   "seed": 2,
+   "pred": "projective_duality",
+   "correct": true,
+   "raw": "{\"motif_id\":\"projective_duality\"}"
+  },
+  {
+   "id": "ladder:projective_duality:L4_s0",
+   "task": "scene2motif",
+   "answer": "projective_duality",
+   "level": 4,
+   "seed": 0,
+   "pred": "projective_duality",
+   "correct": true,
+   "raw": "{\"motif_id\":\"projective_duality\"}"
+  },
+  {
+   "id": "ladder:projective_duality:L4_s1",
+   "task": "scene2motif",
+   "answer": "projective_duality",
+   "level": 4,
+   "seed": 1,
+   "pred": "projective_duality",
+   "correct": true,
+   "raw": "{\"motif_id\":\"projective_duality\"}"
+  },
+  {
+   "id": "ladder:projective_duality:L4_s2",
+   "task": "scene2motif",
+   "answer": "projective_duality",
+   "level": 4,
+   "seed": 2,
+   "pred": "isomorphism",
+   "correct": false,
+   "raw": "{\"motif_id\":\"isomorphism\"}"
+  },
+  {
+   "id": "ladder:contraction_fixed_point:L1_s0",
+   "task": "scene2motif",
+   "answer": "contraction_fixed_point",
+   "level": 1,
+   "seed": 0,
+   "pred": "contraction_fixed_point",
+   "correct": true,
+   "raw": "{\"motif_id\":\"contraction_fixed_point\"}"
+  },
+  {
+   "id": "ladder:contraction_fixed_point:L1_s1",
+   "task": "scene2motif",
+   "answer": "contraction_fixed_point",
+   "level": 1,
+   "seed": 1,
+   "pred": "contraction_fixed_point",
+   "correct": true,
+   "raw": "{\"motif_id\":\"contraction_fixed_point\"}"
+  },
+  {
+   "id": "ladder:contraction_fixed_point:L1_s2",
+   "task": "scene2motif",
+   "answer": "contraction_fixed_point",
+   "level": 1,
+   "seed": 2,
+   "pred": "contraction_fixed_point",
+   "correct": true,
+   "raw": "{\"motif_id\":\"contraction_fixed_point\"}"
+  },
+  {
+   "id": "ladder:contraction_fixed_point:L2_s0",
+   "task": "scene2motif",
+   "answer": "contraction_fixed_point",
+   "level": 2,
+   "seed": 0,
+   "pred": "contraction_fixed_point",
+   "correct": true,
+   "raw": "{\"motif_id\":\"contraction_fixed_point\"}"
+  },
+  {
+   "id": "ladder:contraction_fixed_point:L2_s1",
+   "task": "scene2motif",
+   "answer": "contraction_fixed_point",
+   "level": 2,
+   "seed": 1,
+   "pred": "contraction_fixed_point",
+   "correct": true,
+   "raw": "{\"motif_id\":\"contraction_fixed_point\"}"
+  },
+  {
+   "id": "ladder:contraction_fixed_point:L2_s2",
+   "task": "scene2motif",
+   "answer": "contraction_fixed_point",
+   "level": 2,
+   "seed": 2,
+   "pred": "contraction_fixed_point",
+   "correct": true,
+   "raw": "{\"motif_id\":\"contraction_fixed_point\"}"
+  },
+  {
+   "id": "ladder:contraction_fixed_point:L3_s0",
+   "task": "scene2motif",
+   "answer": "contraction_fixed_point",
+   "level": 3,
+   "seed": 0,
+   "pred": "contraction_fixed_point",
+   "correct": true,
+   "raw": "{\"motif_id\":\"contraction_fixed_point\"}"
+  },
+  {
+   "id": "ladder:contraction_fixed_point:L3_s1",
+   "task": "scene2motif",
+   "answer": "contraction_fixed_point",
+   "level": 3,
+   "seed": 1,
+   "pred": "contraction_fixed_point",
+   "correct": true,
+   "raw": "{\"motif_id\":\"contraction_fixed_point\"}"
+  },
+  {
+   "id": "ladder:contraction_fixed_point:L3_s2",
+   "task": "scene2motif",
+   "answer": "contraction_fixed_point",
+   "level": 3,
+   "seed": 2,
+   "pred": "contraction_fixed_point",
+   "correct": true,
+   "raw": "{\"motif_id\":\"contraction_fixed_point\"}"
+  },
+  {
+   "id": "ladder:contraction_fixed_point:L4_s0",
+   "task": "scene2motif",
+   "answer": "contraction_fixed_point",
+   "level": 4,
+   "seed": 0,
+   "pred": "figure_ground",
+   "correct": false,
+   "raw": "{\"motif_id\":\"figure_ground\"}"
+  },
+  {
+   "id": "ladder:contraction_fixed_point:L4_s1",
+   "task": "scene2motif",
+   "answer": "contraction_fixed_point",
+   "level": 4,
+   "seed": 1,
+   "pred": "contraction_fixed_point",
+   "correct": true,
+   "raw": "{\"motif_id\":\"contraction_fixed_point\"}"
+  },
+  {
+   "id": "ladder:contraction_fixed_point:L4_s2",
+   "task": "scene2motif",
+   "answer": "contraction_fixed_point",
+   "level": 4,
+   "seed": 2,
+   "pred": "contraction_fixed_point",
+   "correct": true,
+   "raw": "{\"motif_id\":\"contraction_fixed_point\"}"
+  },
+  {
+   "id": "ladder:aperiodic_tiling:L1_s0",
+   "task": "scene2motif",
+   "answer": "aperiodic_tiling",
+   "level": 1,
+   "seed": 0,
+   "pred": "symmetry",
+   "correct": false,
+   "raw": "{\"motif_id\":\"symmetry\"}"
+  },
+  {
+   "id": "ladder:aperiodic_tiling:L1_s1",
+   "task": "scene2motif",
+   "answer": "aperiodic_tiling",
+   "level": 1,
+   "seed": 1,
+   "pred": "symmetry",
+   "correct": false,
+   "raw": "{\"motif_id\":\"symmetry\"}"
+  },
+  {
+   "id": "ladder:aperiodic_tiling:L1_s2",
+   "task": "scene2motif",
+   "answer": "aperiodic_tiling",
+   "level": 1,
+   "seed": 2,
+   "pred": "symmetry",
+   "correct": false,
+   "raw": "{\"motif_id\":\"symmetry\"}"
+  },
+  {
+   "id": "ladder:aperiodic_tiling:L2_s0",
+   "task": "scene2motif",
+   "answer": "aperiodic_tiling",
+   "level": 2,
+   "seed": 0,
+   "pred": "figure_ground",
+   "correct": false,
+   "raw": "{\"motif_id\":\"figure_ground\"}"
+  },
+  {
+   "id": "ladder:aperiodic_tiling:L2_s1",
+   "task": "scene2motif",
+   "answer": "aperiodic_tiling",
+   "level": 2,
+   "seed": 1,
+   "pred": "symmetry",
+   "correct": false,
+   "raw": "{\"motif_id\":\"symmetry\"}"
+  },
+  {
+   "id": "ladder:aperiodic_tiling:L2_s2",
+   "task": "scene2motif",
+   "answer": "aperiodic_tiling",
+   "level": 2,
+   "seed": 2,
+   "pred": "symmetry",
+   "correct": false,
+   "raw": "{\"motif_id\":\"symmetry\"}"
+  },
+  {
+   "id": "ladder:aperiodic_tiling:L3_s0",
+   "task": "scene2motif",
+   "answer": "aperiodic_tiling",
+   "level": 3,
+   "seed": 0,
+   "pred": "aperiodic_tiling",
+   "correct": true,
+   "raw": "{\"motif_id\":\"aperiodic_tiling\"}"
+  },
+  {
+   "id": "ladder:aperiodic_tiling:L3_s1",
+   "task": "scene2motif",
+   "answer": "aperiodic_tiling",
+   "level": 3,
+   "seed": 1,
+   "pred": "aperiodic_tiling",
+   "correct": true,
+   "raw": "{\"motif_id\":\"aperiodic_tiling\"}"
+  },
+  {
+   "id": "ladder:aperiodic_tiling:L3_s2",
+   "task": "scene2motif",
+   "answer": "aperiodic_tiling",
+   "level": 3,
+   "seed": 2,
+   "pred": "symmetry",
+   "correct": false,
+   "raw": "{\"motif_id\":\"symmetry\"}"
+  },
+  {
+   "id": "ladder:aperiodic_tiling:L4_s0",
+   "task": "scene2motif",
+   "answer": "aperiodic_tiling",
+   "level": 4,
+   "seed": 0,
+   "pred": "symmetry",
+   "correct": false,
+   "raw": "{\"motif_id\":\"symmetry\"}"
+  },
+  {
+   "id": "ladder:aperiodic_tiling:L4_s1",
+   "task": "scene2motif",
+   "answer": "aperiodic_tiling",
+   "level": 4,
+   "seed": 1,
+   "pred": "aperiodic_tiling",
+   "correct": true,
+   "raw": "{\"motif_id\":\"aperiodic_tiling\"}"
+  },
+  {
+   "id": "ladder:aperiodic_tiling:L4_s2",
+   "task": "scene2motif",
+   "answer": "aperiodic_tiling",
+   "level": 4,
+   "seed": 2,
+   "pred": "symmetry",
+   "correct": false,
+   "raw": "{\"motif_id\":\"symmetry\"}"
+  }
+ ]
+}

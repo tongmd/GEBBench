@@ -1,0 +1,416 @@
+{
+ "model": "codegeex4-9b",
+ "base": "http://localhost:8001/v1",
+ "summary": {
+  "story2motif": {
+   "n": 25,
+   "acc": 0.04
+  },
+  "theorem2motif": {
+   "n": 25,
+   "acc": 0.32
+  }
+ },
+ "records": [
+  {
+   "id": "story:self_reference",
+   "task": "story2motif",
+   "answer": "self_reference",
+   "pred": "recursion",
+   "correct": false,
+   "raw": "```json\n{\"motif_id\": \"recursion\"}\n```\n"
+  },
+  {
+   "id": "thm:self_reference",
+   "task": "theorem2motif",
+   "answer": "self_reference",
+   "pred": "self_reference",
+   "correct": true,
+   "raw": "根据题目描述，Kleene 第二定理（1938）是一个抽象结构母题，它刻画了一个全可计算函数 f，存在指标 e 使 φ_e = φ_{f(e)}；推论：任何图灵完备且带可接受编号的编程语言中，都存在输出自身源代码的程序（quine）。这个定理与题目中的其他选项不同，因为它涉及到计算和编程的概念，而其他选项则主要涉及几何、数学和逻辑的概念。\n\n因此，根据题目要求，应该选择 Kleene 第二定理作为"
+  },
+  {
+   "id": "story:recursion",
+   "task": "story2motif",
+   "answer": "recursion",
+   "pred": "figure_ground",
+   "correct": false,
+   "raw": "```json\n{\"motif_id\": \"figure_ground\"}\n```\n"
+  },
+  {
+   "id": "thm:recursion",
+   "task": "theorem2motif",
+   "answer": "recursion",
+   "pred": "isomorphism",
+   "correct": false,
+   "raw": "根据题目描述，这条数学定理刻画了一个抽象结构母题，这个母题涉及到长度为2n的Dyck词、恰有n个内部节点的满二叉树、凸(n+2)边形的三角剖分，这三族对象个数皆为Catalan数C_n=\\binom{2n}{n}/(n+1)，且两两之间存在显式双射。这个母题符合\"isomorphism\"的定义，即两套完全不同的事物之间存在一部保持全部运算与关系的一一对应字典，同序逐项可译、无一例外。因此，正确的答"
+  },
+  {
+   "id": "story:nesting",
+   "task": "story2motif",
+   "answer": "nesting",
+   "pred": "figure_ground",
+   "correct": false,
+   "raw": "```json\n{\"motif_id\": \"figure_ground\"}\n```\n"
+  },
+  {
+   "id": "thm:nesting",
+   "task": "theorem2motif",
+   "answer": "nesting",
+   "pred": "convergence",
+   "correct": false,
+   "raw": "根据提供的数学定理，它描述了一个抽象结构母题，符合 \"convergence\" 的定义。这个定理指出，如果有一系列有界闭区间，每个区间都包含在下一个区间内，并且这些区间的长度逐渐趋近于零，那么这些区间的交集将是一个非空的点，这个点等于所有区间的下确界和上确界。这与 \"convergence\" 的定义相符，即多条互不知晓的线索各自推进，最终全部汇入同一终点且到此为止。\n\n因此，正确的答案是：\n\n``"
+  },
+  {
+   "id": "story:cycle",
+   "task": "story2motif",
+   "answer": "cycle",
+   "pred": "figure_ground",
+   "correct": false,
+   "raw": "```json\n{\"motif_id\": \"figure_ground\"}\n```\n"
+  },
+  {
+   "id": "thm:cycle",
+   "task": "theorem2motif",
+   "answer": "cycle",
+   "pred": "cycle",
+   "correct": true,
+   "raw": "根据您提供的数学定理，它描述了一个抽象结构母题，该母题的关键特征是“轨道引理（□原理推论）”。这个定理表明，对于任何给定的函数 f 和初始值 x，序列 x, f(x), f²(x), ... 的前 n+1 项必有重复，因此轨道最终落入长度 p≤n 的纯循环。特别地，当 f 为双射时，其函数图恰分解为若干不相交的有向环（置换的轮换分解定理）。\n\n因此，根据您提供的选项，最接近这个数学定理描述的抽象结"
+  },
+  {
+   "id": "story:symmetry",
+   "task": "story2motif",
+   "answer": "symmetry",
+   "pred": "figure_ground",
+   "correct": false,
+   "raw": "```json\n{\"motif_id\": \"figure_ground\"}\n```\n"
+  },
+  {
+   "id": "thm:symmetry",
+   "task": "theorem2motif",
+   "answer": "symmetry",
+   "pred": "recursion",
+   "correct": false,
+   "raw": "根据题目描述，Droubay–Justin–Pirillo 定理（2001）是一个关于词的定理，它描述了一个抽象结构母题。这个定理指出，长度为 n 的任意词至多含 n+1 个不同的因子（含空词）。达到上界的词称为 rich 词，例如 aⁿ 的因子恰为 ε,a,aa,…,aⁿ 共 n+1 个。\n\n这个定理符合 \"recursion\" 的定义，即整体由更小的自身按同一规则生成，入几层必出几层，终止于基"
+  },
+  {
+   "id": "story:alternation",
+   "task": "story2motif",
+   "answer": "alternation",
+   "pred": "cycle",
+   "correct": false,
+   "raw": "```json\n{\"motif_id\": \"cycle\"}\n```\n"
+  },
+  {
+   "id": "thm:alternation",
+   "task": "theorem2motif",
+   "answer": "alternation",
+   "pred": "cycle",
+   "correct": false,
+   "raw": "根据您提供的数学定理，它描述了一个抽象结构母题，这个母题涉及到图论中的二部图和合法染色。根据这个描述，最接近的数学定理是 \"König 刻画\"。\n\n因此，正确的选项是：\n\n```json\n{\"motif_id\": \"cycle\"}\n```\n\n请注意，这个选项是基于您提供的定理描述和选项之间的相似性进行的。在实际的数学研究中，可能需要更深入的分析来确定最准确的匹配。\n"
+  },
+  {
+   "id": "story:spiral",
+   "task": "story2motif",
+   "answer": "spiral",
+   "pred": "convergence",
+   "correct": false,
+   "raw": "```json\n{\"motif_id\": \"convergence\"}\n```\n"
+  },
+  {
+   "id": "thm:spiral",
+   "task": "theorem2motif",
+   "answer": "spiral",
+   "pred": "self_reference",
+   "correct": false,
+   "raw": "根据您提供的数学定理，它描述了一个抽象结构母题，这个母题涉及到对数函数和对数曲线的等角性。这个定理可以归类为 \"self_reference\"（对象内含一句对自身的描述且逐字核对为真——一步指回自己，不经层级攀升，也不指涉第二套系统）。\n\n因此，正确的 JSON 输出应该是：\n\n```json\n{\"motif_id\": \"self_reference\"}\n```\n"
+  },
+  {
+   "id": "story:convergence",
+   "task": "story2motif",
+   "answer": "convergence",
+   "pred": "figure_ground",
+   "correct": false,
+   "raw": "```json\n{\"motif_id\": \"figure_ground\"}\n```\n"
+  },
+  {
+   "id": "thm:convergence",
+   "task": "theorem2motif",
+   "answer": "convergence",
+   "pred": "abstract_convergence_motif",
+   "correct": false,
+   "raw": "根据提供的数学定理，Newman 引理（1942）和 Banach 完备性定理（1922）都涉及到抽象结构母题，但它们描述的是不同的概念。Newman 引理关注的是抽象重写系统的全局合流，而 Banach 完备性定理关注的是完备度量空间上的收敛性。因此，这两条定理都不能完全准确地描述一个抽象结构母题。\n\n然而，如果我们考虑这两个定理的共同点，即它们都涉及到某种形式的收敛性，那么我们可以将它们结合起"
+  },
+  {
+   "id": "story:bottleneck",
+   "task": "story2motif",
+   "answer": "bottleneck",
+   "pred": "cycle",
+   "correct": false,
+   "raw": "根据您提供的故事情节骨架，它符合 \"cycle\" 模式。这个模式描述的是事件序列倒读与正读逐项相同，沿时间中点翻转逐点重合。在故事中，阿满和小陆都经历了相似的旅程，从南岸到北岸，然后又返回南岸，形成了一个循环。\n\n所以，这个故事的讲法与情节骨架实现了一个抽象结构母题，这个母题是 \"cycle\"。\n\nJSON 输出如下：\n\n```json\n{\"motif_id\": \"cycle\"}\n```\n"
+  },
+  {
+   "id": "thm:bottleneck",
+   "task": "theorem2motif",
+   "answer": "bottleneck",
+   "pred": "bottleneck",
+   "correct": true,
+   "raw": "根据您提供的数学定理，它描述了一个抽象结构母题，该母题与 \"bottleneck\"（瓶颈）最为接近。瓶颈结构描述了一个中心点，所有路径都必须经过这个点，并且如果删除这个点，整个图将分裂成两个独立的连通部分。这与您提供的定理中描述的无向图中不相邻两点之间内部不交路径的最大条数等于从 V∖{u,v} 中删去顶点以分离二者所需的最小数目的情况相符。\n\n因此，根据您提供的选项，最接近的数学定理母题是 \"b"
+  },
+  {
+   "id": "story:symmetry_breaking",
+   "task": "story2motif",
+   "answer": "symmetry_breaking",
+   "pred": "cycle",
+   "correct": false,
+   "raw": "```json\n{\"motif_id\": \"cycle\"}\n```\n"
+  },
+  {
+   "id": "thm:symmetry_breaking",
+   "task": "theorem2motif",
+   "answer": "symmetry_breaking",
+   "pred": "self_reference",
+   "correct": false,
+   "raw": "根据您提供的数学定理，它描述了一个抽象结构母题，符合 \"self_reference\" 的定义。这个定理涉及一个对象（切向量场）内含一句对自身的描述（零点），且逐字核对为真。因此，正确的选项是：\n\n```json\n{\"motif_id\": \"self_reference\"}\n```\n"
+  },
+  {
+   "id": "story:strange_loop",
+   "task": "story2motif",
+   "answer": "strange_loop",
+   "pred": "figure_ground",
+   "correct": false,
+   "raw": "```json\n{\"motif_id\": \"figure_ground\"}\n```\n"
+  },
+  {
+   "id": "thm:strange_loop",
+   "task": "theorem2motif",
+   "answer": "strange_loop",
+   "pred": "cycle",
+   "correct": false,
+   "raw": "根据您提供的数学定理和选项，这个定理描述了一个抽象结构母题，该母题的关键特征是存在一个有向环。因此，这个定理与选项中的 \"cycle\"（一圈即逐字复原，各点地位平等、无层级）最为接近。\n\n所以，这个定理对应的 JSON 格式输出应该是：\n\n```json\n{\"motif_id\": \"cycle\"}\n```\n"
+  },
+  {
+   "id": "story:figure_ground",
+   "task": "story2motif",
+   "answer": "figure_ground",
+   "pred": "symmetry",
+   "correct": false,
+   "raw": "```json\n{\"motif_id\": \"symmetry\"}\n```\n"
+  },
+  {
+   "id": "thm:figure_ground",
+   "task": "theorem2motif",
+   "answer": "figure_ground",
+   "pred": "self_reference",
+   "correct": false,
+   "raw": "根据题目描述，我们可以看到这是一个关于停机问题的定理，它描述了一个抽象结构母题。这个定理是 Post 互补定理，它指出，如果一个程序是可枚举的，那么它的补程序也是可枚举的。这个定理在计算机科学中非常重要，因为它揭示了停机问题的本质。\n\n因此，根据题目给出的选项，我们可以推断出这个定理对应的母题是 \"self_reference\"。因为 self_reference 是指对象内含一句对自身的描述且逐"
+  },
+  {
+   "id": "story:isomorphism",
+   "task": "story2motif",
+   "answer": "isomorphism",
+   "pred": "figure_ground",
+   "correct": false,
+   "raw": "```json\n{\"motif_id\": \"figure_ground\"}\n```\n"
+  },
+  {
+   "id": "thm:isomorphism",
+   "task": "theorem2motif",
+   "answer": "isomorphism",
+   "pred": "isomorphism",
+   "correct": true,
+   "raw": "根据题目描述，Cayley 定理是一个抽象结构母题，它刻画了任何群 G 经左平移 g↦λ_g（λ_g(x)=gx）映射于 Sym(G) 的一个子群——每个抽象群都与某个具体置换群结构全同。因此，Cayley 定理符合 \"isomorphism\" 的定义，即两套素材完全不同的事物之间存在一部保持全部运算与关系的一一对应字典，同序逐项可译、无一例外。\n\n所以，正确答案是：\n\n```json\n{\"mot"
+  },
+  {
+   "id": "story:mobius",
+   "task": "story2motif",
+   "answer": "mobius",
+   "pred": "cycle",
+   "correct": false,
+   "raw": "```json\n{\"motif_id\": \"cycle\"}\n```\n"
+  },
+  {
+   "id": "thm:mobius",
+   "task": "theorem2motif",
+   "answer": "mobius",
+   "pred": "mobius",
+   "correct": true,
+   "raw": "根据您提供的数学定理，它描述了一个抽象结构母题，该母题的特点是：沿中线剪开带，所得仍是连通的一条带——一条两倍长、可定向（双侧）的环带，而非两条；在 R³ 的标准嵌入下它带有 4 个半扭转（720°）。内蕴等价表述：中心圆周在带内的补集是连通的。\n\n这个定理符合 \"mobius\" 的描述，即沿带绕行一圈回到原地却定向翻转（左右互换），绕两圈才逐点复原。\n\n所以，根据您提供的选项，这个数学定理对应的"
+  },
+  {
+   "id": "story:braiding",
+   "task": "story2motif",
+   "answer": "braiding",
+   "pred": "self_reference",
+   "correct": false,
+   "raw": "```json\n{\"motif_id\": \"self_reference\"}\n```\n"
+  },
+  {
+   "id": "thm:braiding",
+   "task": "theorem2motif",
+   "answer": "braiding",
+   "pred": "isomorphism",
+   "correct": false,
+   "raw": "根据您提供的数学定理，它描述了一个抽象结构母题，这个母题涉及到遗忘每处交叉的上下方向给出满同态 B_n→S_n（σ_i ↦ 对换 (i, i+1)），把每条□映为其端点置换；其核即纯□群 P_n（Artin）。这个定理涉及到群论和置换的概念，因此，它最接近于以下选项：\n\n- isomorphism: 两套素材完全不同的事物之间存在一部保持全部运算与关系的一一对应字典，同序逐项可译、无一例外\n\n因此"
+  },
+  {
+   "id": "story:interference",
+   "task": "story2motif",
+   "answer": "interference",
+   "pred": "figure_ground",
+   "correct": false,
+   "raw": "```json\n{\"motif_id\": \"figure_ground\"}\n```\n"
+  },
+  {
+   "id": "thm:interference",
+   "task": "theorem2motif",
+   "answer": "interference",
+   "pred": "cycle",
+   "correct": false,
+   "raw": "根据您提供的数学定理，它描述了一个抽象结构母题，这个母题涉及到周期性、相位、中国剩余定理等概念。这个定理可以被归类为 \"cycle\"，因为它描述了一个沿同一层级的因果箭头依次经过 n≥3 个互不相同的事件后回到出发事件，一圈即逐字复原的情况。因此，正确的答案是：\n\n```json\n{\"motif_id\": \"cycle\"}\n```\n"
+  },
+  {
+   "id": "story:tiling",
+   "task": "story2motif",
+   "answer": "tiling",
+   "pred": "cycle",
+   "correct": false,
+   "raw": "```json\n{\"motif_id\": \"cycle\"}\n```\n"
+  },
+  {
+   "id": "thm:tiling",
+   "task": "theorem2motif",
+   "answer": "tiling",
+   "pred": "self_reference",
+   "correct": false,
+   "raw": "根据题目描述，Fedorov 定理（1891）是一个关于抽象结构母题的数学定理。它描述了一个抽象结构，即群在某种意义下恰好有 17 个。这个定理还提到了边对边的单一正多边形，只有三种——正三角形、正方形、正六边形，因为顶点处内角须整除 360°，而正 n 边形内角 (n−2)·180°/n 整除 360° 仅当 n=3,4,6。\n\n因此，这个定理与 \"self_reference\"（对象内含一句对"
+  },
+  {
+   "id": "story:hub",
+   "task": "story2motif",
+   "answer": "hub",
+   "pred": "figure_ground",
+   "correct": false,
+   "raw": "```json\n{\"motif_id\": \"figure_ground\"}\n```\n"
+  },
+  {
+   "id": "thm:hub",
+   "task": "theorem2motif",
+   "answer": "hub",
+   "pred": "recursion",
+   "correct": false,
+   "raw": "根据题目描述，这条数学定理描述了一个抽象结构母题，它涉及到树的直径、Wiener指数等概念。因此，最接近的选项是 \"recursion\"，因为整体由更小的自身按同一规则生成，入几层必出几层，终止于基例后逐层原路返回。\n\n所以，答案是：\n\n```json\n{\"motif_id\": \"recursion\"}\n```\n"
+  },
+  {
+   "id": "story:diagonalization",
+   "task": "story2motif",
+   "answer": "diagonalization",
+   "pred": "figure_ground",
+   "correct": false,
+   "raw": "```json\n{\"motif_id\": \"figure_ground\"}\n```\n"
+  },
+  {
+   "id": "thm:diagonalization",
+   "task": "theorem2motif",
+   "answer": "diagonalization",
+   "pred": "diagonalization",
+   "correct": true,
+   "raw": "根据题目描述，Cantor 定理（1891 年证明,Über eine elementare Frage der Mannigfaltigkeitslehre）是一个抽象结构母题，它描述了一个集合与其幂集之间的关系。这个定理表明，对于任意集合 X，不存在 X 到其幂集 P(X) 的满射。特别地，当 X=\\mathbb{N} 时，P(\\mathbb{N})\\cong\\{0,1\\}^{\\mathbb{"
+  },
+  {
+   "id": "story:infinite_descent",
+   "task": "story2motif",
+   "answer": "infinite_descent",
+   "pred": "self_reference",
+   "correct": false,
+   "raw": "```json\n{\"motif_id\": \"self_reference\"}\n```\n"
+  },
+  {
+   "id": "thm:infinite_descent",
+   "task": "theorem2motif",
+   "answer": "infinite_descent",
+   "pred": "self_reference",
+   "correct": false,
+   "raw": "根据您提供的数学定理，它描述了一个抽象结构母题，符合 \"self_reference\" 的定义。这个定理通过自我指涉的方法证明了 x⁴+y⁴=z² 无正整数解，从而 x⁴+y⁴=z⁴ 无正整数解（费马大定理 n=4 情形）。因此，正确的答案是：\n\n```json\n{\"motif_id\": \"self_reference\"}\n```\n"
+  },
+  {
+   "id": "story:coprime_orbit",
+   "task": "story2motif",
+   "answer": "coprime_orbit",
+   "pred": "cycle",
+   "correct": false,
+   "raw": "```json\n{\"motif_id\": \"cycle\"}\n```\n"
+  },
+  {
+   "id": "thm:coprime_orbit",
+   "task": "theorem2motif",
+   "answer": "coprime_orbit",
+   "pred": "coprime_orbit",
+   "correct": true,
+   "raw": "根据您提供的数学定理，它描述了一个循环群生成元定理，该定理指出，k 生成 Z_n 当且仅当 gcd(k,n)=1，因此 Z_n 的生成元恰有 φ(n) 个。这个定理与欧拉函数有关，并且涉及到一个音乐实例，其中 12 音中步长 7 因 gcd(7,12)=1 而走遍全部十二调后回到原点。\n\n这个定理符合 \"coprime_orbit\" 模式，该模式描述了一圈 n 点上以固定跨步 k 跳跃连线，步幅与"
+  },
+  {
+   "id": "story:pigeonhole",
+   "task": "story2motif",
+   "answer": "pigeonhole",
+   "pred": "pigeonhole",
+   "correct": true,
+   "raw": "```json\n{\"motif_id\": \"pigeonhole\"}\n```\n"
+  },
+  {
+   "id": "thm:pigeonhole",
+   "task": "theorem2motif",
+   "answer": "pigeonhole",
+   "pred": "pigeonhole",
+   "correct": true,
+   "raw": "根据您提供的数学定理，它描述了一个抽象结构母题，该母题的特点是：从 {1,…,2n} 中任取 n+1 个整数，必有一个整除另一个。这个定理涉及到数的奇偶性、整除关系和集合的元素数量。因此，这个定理最接近于 \"pigeonhole\" 母题，即“鸽笼原理”。\n\n所以，根据您提供的选项，最接近的母题是 \"pigeonhole\"。\n\n输出 JSON 如下：\n\n```json\n{\"motif_id\": \"p"
+  },
+  {
+   "id": "story:projective_duality",
+   "task": "story2motif",
+   "answer": "projective_duality",
+   "pred": "figure_ground",
+   "correct": false,
+   "raw": "```json\n{\"motif_id\": \"figure_ground\"}\n```\n"
+  },
+  {
+   "id": "thm:projective_duality",
+   "task": "theorem2motif",
+   "answer": "projective_duality",
+   "pred": "geometry_theorem",
+   "correct": false,
+   "raw": "根据题目描述，这条数学定理是一个关于几何图形的定理，它描述了两个定理之间的关系，这两个定理分别是Pascal定理和Brianchon定理。这两个定理都与圆锥曲线有关，并且都与六点的关系有关。因此，这个定理可以被认为是关于几何图形的定理，它描述了两个定理之间的关系。\n\n因此，这个定理的motif_id应该是\"geometry_theorem\"。\n\n输出结果为：\n\n```json\n{\"motif_id"
+  },
+  {
+   "id": "story:contraction_fixed_point",
+   "task": "story2motif",
+   "answer": "contraction_fixed_point",
+   "pred": "recursion",
+   "correct": false,
+   "raw": "```json\n{\"motif_id\": \"recursion\"}\n```\n"
+  },
+  {
+   "id": "thm:contraction_fixed_point",
+   "task": "theorem2motif",
+   "answer": "contraction_fixed_point",
+   "pred": "recursion",
+   "correct": false,
+   "raw": "根据您提供的数学定理，它描述了一个抽象结构母题，该母题符合 \"recursion\" 的定义。递归是指整体由更小的自身按同一规则生成，进入几层必出几层，终止于基例后逐层原路返回。\n\n因此，正确的答案是：\n\n```json\n{\"motif_id\": \"recursion\"}\n```\n"
+  },
+  {
+   "id": "story:aperiodic_tiling",
+   "task": "story2motif",
+   "answer": "aperiodic_tiling",
+   "pred": "figure_ground",
+   "correct": false,
+   "raw": "```json\n{\"motif_id\": \"figure_ground\"}\n```\n"
+  },
+  {
+   "id": "thm:aperiodic_tiling",
+   "task": "theorem2motif",
+   "answer": "aperiodic_tiling",
+   "pred": "tiling",
+   "correct": false,
+   "raw": "根据题目描述，该定理描述了一个抽象结构母题，该母题的特点是带匹配规则的胖、瘦两种菱形能铺满平面，且任何合法铺法都无平移周期。这个定理与选项中的 \"tiling\"（铺满平面）和 \"cycle\"（无平移周期）都有关联，但最直接关联的是 \"tiling\"。因此，最符合该定理描述的选项是 \"tiling\"。\n\n所以，输出为：\n\n```json\n{\"motif_id\": \"tiling\"}\n```\n"
+  }
+ ]
+}

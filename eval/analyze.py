@@ -27,10 +27,18 @@ TASK_SHORT = {"scene2motif": "Scene", "skeleton2motif": "Skel",
               "crossvoice": "Cross"}
 # nicer display names
 DISPLAY = {"api_gpt-5.5": "GPT-5.5", "api_gpt-5.2": "GPT-5.2",
+           "api_claude-opus-4-8": "Claude Opus 4.8",
+           "qwen2.5-vl-32b": "Qwen2.5-VL-32B",
            "qwen2-vl-7b": "Qwen2-VL-7B", "qwen2.5-7b": "Qwen2.5-7B",
-           "qwen2.5-14b": "Qwen2.5-14B", "qwen2.5-coder-32b": "Qwen2.5-Coder-32B"}
-ORDER = ["api_gpt-5.5", "api_gpt-5.2", "qwen2.5-coder-32b",
-         "qwen2.5-14b", "qwen2.5-7b", "qwen2-vl-7b"]
+           "qwen2.5-14b": "Qwen2.5-14B",
+           "deepseek-coder-v2-lite": "DeepSeek-Coder-V2-Lite"}
+# frontier API models first, then open models by size
+ORDER = ["api_gpt-5.5", "api_gpt-5.2", "api_claude-opus-4-8",
+         "qwen2.5-vl-32b",
+         "qwen2.5-14b", "qwen2.5-7b", "qwen2-vl-7b",
+         "deepseek-coder-v2-lite"]
+# coder-family text-only rows live in an appendix table to keep the body compact
+APPENDIX = {"deepseek-coder-v2-lite"}
 
 
 def load() -> dict:
@@ -46,13 +54,12 @@ def main():
     runs = load()
     (ROOT / "paper" / "tables").mkdir(parents=True, exist_ok=True)
 
-    # ---- main results table ----
+    # ---- main results table (+ appendix table for coder-family rows) ----
     tags = [t for t in ORDER if t in runs] + [t for t in runs if t not in ORDER]
-    lines = [r"\begin{tabular}{l" + "c" * (len(TASKS) + 1) + "}", r"\toprule",
-             "Model & " + " & ".join(TASK_SHORT[t] for t in TASKS)
-             + r" & \textbf{Avg} \\", r"\midrule"]
+    n_motifs = len(LIB)
     agg = {}
-    for tag in tags:
+
+    def row(tag):
         summ = runs[tag].get("summary", {})
         cells, accs = [], []
         for t in TASKS:
@@ -63,12 +70,28 @@ def main():
             else:
                 cells.append("--")
         avg = sum(accs) / len(accs) if accs else 0
-        name = DISPLAY.get(tag, tag)
-        lines.append(f"{name} & " + " & ".join(cells)
-                     + f" & \\textbf{{{avg*100:.1f}}} " + r"\\")
         agg[tag] = {"tasks": summ, "avg": round(avg, 4)}
-    lines += [r"\bottomrule", r"\end{tabular}"]
-    (ROOT / "paper" / "tables" / "main_results.tex").write_text("\n".join(lines))
+        return (f"{DISPLAY.get(tag, tag)} & " + " & ".join(cells)
+                + f" & \\textbf{{{avg*100:.1f}}} " + r"\\")
+
+    def table(rows):
+        lines = [r"\begin{tabular}{l" + "c" * (len(TASKS) + 1) + "}",
+                 r"\toprule",
+                 "Model & " + " & ".join(TASK_SHORT[t] for t in TASKS)
+                 + r" & \textbf{Avg} \\", r"\midrule"]
+        lines += rows
+        lines.append(r"\midrule")
+        chance_cells = [f"{(25.0 if t == 'crossvoice' else 100.0 / n_motifs):.1f}"
+                        for t in TASKS]
+        lines.append(r"\textit{Random chance} & "
+                     + " & ".join(chance_cells) + r" & -- \\")
+        lines += [r"\bottomrule", r"\end{tabular}"]
+        return "\n".join(lines)
+
+    body_rows = [row(t) for t in tags if t not in APPENDIX]
+    appx_rows = [row(t) for t in tags if t in APPENDIX]
+    (ROOT / "paper" / "tables" / "main_results.tex").write_text(table(body_rows))
+    (ROOT / "paper" / "tables" / "coder_results.tex").write_text(table(appx_rows))
 
     # ---- per-task random baseline (18-way, crossvoice 4-way) ----
     n_motifs = len(LIB)

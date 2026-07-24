@@ -1,0 +1,119 @@
+{
+  "task": "overclaiming fixes (emergence phrasing, quantifier hedges, limitations additions)",
+  "date": "2026-07-19",
+  "cjk_scan": {
+    "files_scanned": [
+      "paper/geb.tex",
+      "paper/sections/appendix.tex",
+      "paper/sections/library.tex",
+      "paper/sections/results.tex",
+      "paper/sections/tasks.tex",
+      "paper/tables/catalog.tex",
+      "paper/tables/coder_results.tex",
+      "paper/tables/confusion.tex",
+      "paper/tables/main_results.tex"
+    ],
+    "chinese_chars_found": 0,
+    "note": "grep -P over CJK Unified Ideographs + extensions + CJK punctuation + fullwidth forms: zero hits in all 9 files"
+  },
+  "grep_hits": {
+    "emerges only at the frontier": ["geb.tex:44 (abstract iii)", "sections/results.tex:13 (results intro)", "sections/results.tex:165 (sec:mapping)"],
+    "frontier-emergent": ["geb.tex:185 (contribution 4)"],
+    "emerges separately at the frontier": ["geb.tex:256-257 (conclusion)"],
+    "lawful": ["geb.tex:39 (abstract)", "geb.tex:182 (contribution 4)", "geb.tex:254 (conclusion)", "results.tex:9 (results intro)"],
+    "conceptual space, not pixel": ["geb.tex:40 (abstract ii)", "results.tex:115 (sec:geometry heading)"],
+    "separable abilit": ["geb.tex:185", "results.tex:164"],
+    "emerg (benign math-content uses, no action)": ["appendix.tex:327", "appendix.tex:351"]
+  },
+  "edits": [
+    {
+      "file": "paper/geb.tex",
+      "where": "abstract, finding (iii)",
+      "action": "replace",
+      "old_text": "(iii) cross-surface\n\\emph{mapping} is a separate ability that emerges only at the frontier; (iv)",
+      "new_text": "(iii) cross-surface\n\\emph{mapping} is a separate ability, present only in the frontier models we\nevaluate; (iv)",
+      "rationale": "abstract item (iii): 'emerges' -> evidence-calibrated 'present only in the frontier models we evaluate' (cross-sectional data cannot support an emergence claim)"
+    },
+    {
+      "file": "paper/geb.tex",
+      "where": "Contributions paragraph, item (4)",
+      "action": "replace",
+      "old_text": "cross-surface mapping as a\nfrontier-emergent ability separable from recognition;",
+      "new_text": "cross-surface mapping as an\nability separable from recognition and present only in the frontier models\nwe evaluate;",
+      "rationale": "remove 'frontier-emergent' compound; same calibration as abstract"
+    },
+    {
+      "file": "paper/geb.tex",
+      "where": "Conclusion (sec:conclusion)",
+      "action": "replace",
+      "old_text": "cross-surface mapping emerges separately at\nthe frontier,",
+      "new_text": "cross-surface mapping dissociates from\nrecognition and, among the models we test, appears only at the frontier,",
+      "rationale": "conclusion echo of the emergence claim; 'dissociates' keeps the separability finding, scope clause keeps it cross-sectional"
+    },
+    {
+      "file": "paper/geb.tex",
+      "where": "Limitations (sec:limitations), before the final 'Finally, the motif library' sentence",
+      "action": "replace",
+      "old_text": "label-space semantics. Finally, the motif library, though",
+      "new_text": "label-space semantics. At $165$ items, the benchmark is small: item-level\nconfidence intervals are wide (a single item moves a $25$-item task by four\npoints), and expansion through the generative pipeline is ongoing. Our model\ncomparison is also cross-sectional, not longitudinal: eleven pretrained\nmodels of different sizes and vendors can locate an ability among\nthem---as with cross-surface mapping at the frontier---but cannot establish\nhow it emerges with scale. Finally, the motif library, though",
+      "rationale": "Limitations addition (c): exactly two sentences -- benchmark scale + cross-sectional-not-longitudinal"
+    },
+    {
+      "file": "paper/sections/results.tex",
+      "where": "results intro paragraph (before fig:gradient)",
+      "action": "replace",
+      "old_text": "separate ability that emerges only at the frontier (\\S\\ref{sec:mapping});",
+      "new_text": "separate ability that only the frontier models we evaluate exhibit\n(\\S\\ref{sec:mapping});",
+      "rationale": "results-intro echo of the emergence claim"
+    },
+    {
+      "file": "paper/sections/results.tex",
+      "where": "\\subsection{Recognition without mapping} (sec:mapping), final sentence",
+      "action": "replace",
+      "old_text": "changes; recognition and mapping are separable abilities, and the mapping\nability emerges only at the frontier.",
+      "new_text": "changes; recognition and mapping are separable abilities, and the mapping\nability is present only in the frontier models we evaluate---though a\ncross-sectional comparison of a few models can locate the ability, not\nestablish that it \\emph{emerges} with scale.",
+      "rationale": "main rewrite site + the required one-clause emergence caveat (em-dash clause, not a paragraph)"
+    },
+    {
+      "file": "paper/sections/results.tex",
+      "where": "\\subsection{Surface complexity bites only in the transition regime} (sec:psychophysics)",
+      "action": "replace",
+      "old_text": "clutter does\nnot degrade it",
+      "new_text": "clutter does\nnot detectably degrade it",
+      "rationale": "quantifier hedge: flat curve at n=25/rung bounds, does not exclude, a small clutter cost"
+    },
+    {
+      "file": "paper/sections/results.tex",
+      "where": "sec:psychophysics, 'Surface complexity is a hazard' sentence",
+      "action": "replace",
+      "old_text": "Surface\ncomplexity is a hazard specifically for models in their capacity transition\nregime, where abstraction exists but is fragile;",
+      "new_text": "In our model\nset, surface complexity is a hazard specifically for the capacity\ntransition regime, where abstraction exists but is fragile;",
+      "rationale": "the general law rests on ONE declining mid-size model; scope to the evaluated set (title can stay: it describes the observed data)"
+    },
+    {
+      "file": "paper/sections/appendix.tex",
+      "where": "app:extended, 'Coder-family text models' paragraph",
+      "action": "replace",
+      "old_text": "code-specialized pretraining does not\ntransfer to reading structural invariants from theorems or stories.",
+      "new_text": "in this panel, code-specialized pretraining does not\ntransfer to reading structural invariants from theorems or stories.",
+      "rationale": "generalization from 3 coder models x 50 items; scope to the panel"
+    },
+    {
+      "file": "paper/geb.tex",
+      "where": "intro, end of nuisance-variable paragraph ('A model that scores well must have abstracted the structure.')",
+      "action": "replace",
+      "old_text": "A model that scores well must have abstracted the structure.",
+      "new_text": "A model that scores well has little left to rely on but the abstracted\nstructure.",
+      "rationale": "'must have' is falsified by the paper's own finding that label-space prior predicts confusions (beta=+0.47); minimal hedge that keeps the design argument"
+    }
+  ],
+  "caveats_for_integrator": [
+    "OWNED (confusion-geometry, sec:confusion): 'the boundaries are properties of the stimuli, not of any one model' -- supported only by 3 frontier models agreeing + small models not; 'properties of the stimuli' is a universal from a cross-vendor n=3.",
+    "OWNED (confusion-geometry, sec:confusion): 'First, it validates the hard-negative family design of the option menu' -- circular as stated: the d=1 concentration is measured with the same hand-designed families that built the hard negatives; should be reconciled with the independent-distance re-analysis (GED/equation-distance tasks).",
+    "OWNED (errors-live, sec:geometry): 'DINOv2 perceptual similarity does not (beta=+0.23, n.s.)' -- point estimate is positive and non-trivial; 'does not predict' is stronger than a non-significant test on 25 motifs supports; suggest 'is not a significant predictor'. The closing 'misreads an idea' flourish rests on this null.",
+    "OWNED (voice-gradient, sec:voice-gradient): 'the ordering ... is the same' for all three frontier models -- adjacent rungs differ by a few items on 25-item tasks; per-model ordering is observed but CIs on adjacent-rung differences overlap; abstract item (i) 'consistent voice gradient' inherits this.",
+    "SHARED FRAMING: the word 'lawful' (abstract, contribution 4, results intro, conclusion) and abstract item (ii) 'conceptual space, not pixel space' inherit from the owned subsections; if the independent-distance re-analysis weakens Mantel r=0.36 / family beta=+0.42, these four sites need coordinated softening -- flagged, not edited.",
+    "tasks.tex (hard-negatives subsection, possibly owned by the distance-metric agent): 'a model cannot win by spotting gross topic differences' -- design 'cannot' claim built on the same hand-designed families under circularity attack; suggest 'is unlikely to win'.",
+    "appendix fig:confusion caption: 'Every prominent pair crosses a boundary drawn only by the fine print of the invariant' -- 'only' is interpretive for 10 pooled pairs; confusion-geometry territory, listed not edited."
+  ]
+}

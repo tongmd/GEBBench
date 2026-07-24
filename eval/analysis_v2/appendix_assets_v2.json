@@ -1,0 +1,66 @@
+{
+ "bottom10_recall": {
+  "figure_ground": 0.18823529411764706,
+  "contraction_fixed_point": 0.2653061224489796,
+  "projective_duality": 0.3010752688172043,
+  "self_reference": 0.35398230088495575,
+  "aperiodic_tiling": 0.3620689655172414,
+  "nesting": 0.39823008849557523,
+  "recursion": 0.48672566371681414,
+  "interference": 0.49473684210526314,
+  "isomorphism": 0.5048543689320388,
+  "infinite_descent": 0.5060240963855421
+ },
+ "top_confusions": [
+  {
+   "true": "braiding",
+   "pred": "cycle",
+   "count": 29
+  },
+  {
+   "true": "contraction_fixed_point",
+   "pred": "recursion",
+   "count": 28
+  },
+  {
+   "true": "self_reference",
+   "pred": "recursion",
+   "count": 27
+  },
+  {
+   "true": "self_reference",
+   "pred": "nesting",
+   "count": 27
+  },
+  {
+   "true": "figure_ground",
+   "pred": "tiling",
+   "count": 24
+  },
+  {
+   "true": "symmetry",
+   "pred": "cycle",
+   "count": 23
+  },
+  {
+   "true": "projective_duality",
+   "pred": "isomorphism",
+   "count": 23
+  },
+  {
+   "true": "strange_loop",
+   "pred": "cycle",
+   "count": 18
+  },
+  {
+   "true": "diagonalization",
+   "pred": "alternation",
+   "count": 18
+  },
+  {
+   "true": "isomorphism",
+   "pred": "symmetry",
+   "count": 17
+  }
+ ]
+}

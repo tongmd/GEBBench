@@ -1,0 +1,2043 @@
+{
+ "rubric": {
+  "R1_nodes": "Every class of repeated drawn primitive (circle/dot/square/tile/strand endpoint/box) becomes a node. Repetition counts are nuisance: chains and rings are reduced to <=6 elements preserving any 2-periodic pattern; cliques to K3; stars to center+5; grids to the minimal deviant neighborhood. Every reduction is listed in the motif's provenance.",
+  "R2_node_types": "u = generic unit; s0/s1 = one of exactly two visually distinguished states/species (fill parity, tile species, point-vs-line role, strand start/end bank); d = the unique distinguished element (larger radius, deviant color, unpaired center, cut vertex, sink, fixed point, floor, overloaded box, beat marker). Each type must be traceable to an explicit visual distinction in skeleton_spec.",
+  "R3_edge_types": "link = a drawn connection between units (segment, arc, spoke, clique edge); contain = an arrow explicitly stated to point to a deeper/inner element; self = a drawn or equation-level self-loop (unique self-edge, f(x*)=x*, psi<->phi(code(psi))); back = a visually distinguished return edge that closes a closed walk (drawn separately from the uniform edges, e.g. a Bezier return curve); map = a correspondence edge between two distinctly drawn groups (dashed pairing line, rung, assignment arrow into a box, diagonal-to-escape-row arrow); twist = an edge explicitly drawn as a crossing / exchange with over-under gaps (Mobius crossover, braid swap).",
+  "R4_direction": "An edge is directed iff the spec draws an arrowhead (marker) or assigns an explicit level/order index (layer depth d, ladder height, strictly decreasing labels, iteration order); otherwise both directions are inserted.",
+  "R5_costs_nodes": "GED node substitution: 0 same type; 0.25 s0<->s1 (the two state labels are exchangeable); 0.5 u<->s*; 1.0 d<->anything else. Insert/delete 1.0.",
+  "R6_costs_edges": "GED edge substitution: 0 same type; 0.5 link<->contain (containment is a specialized link); 1.0 any other type pair. Insert/delete 1.0.",
+  "R7_normalization": "GED(g1,g2) normalized by (|V1|+|V2|+|E1|+|E2|), the cost of deleting g1 and inserting g2."
+ },
+ "motifs": {
+  "self_reference": {
+   "nodes": [
+    [
+     "a",
+     "u"
+    ]
+   ],
+   "edges": [
+    [
+     "a",
+     "a",
+     "self"
+    ]
+   ],
+   "n_nodes": 1,
+   "n_edges": 1,
+   "provenance": [
+    "node a(u): '画布中心画一枚实心圆节点'",
+    "edge self a->a: '构成唯一自环；全图仅此一个节点、一条边'; eq: psi <-> phi(code(psi))"
+   ]
+  },
+  "recursion": {
+   "nodes": [
+    [
+     "r",
+     "u"
+    ],
+    [
+     "i1",
+     "u"
+    ],
+    [
+     "i2",
+     "u"
+    ],
+    [
+     "l1",
+     "d"
+    ],
+    [
+     "l2",
+     "d"
+    ],
+    [
+     "l3",
+     "d"
+    ],
+    [
+     "l4",
+     "d"
+    ]
+   ],
+   "edges": [
+    [
+     "r",
+     "i1",
+     "link"
+    ],
+    [
+     "r",
+     "i2",
+     "link"
+    ],
+    [
+     "i1",
+     "l1",
+     "link"
+    ],
+    [
+     "i1",
+     "l2",
+     "link"
+    ],
+    [
+     "i2",
+     "l3",
+     "link"
+    ],
+    [
+     "i2",
+     "l4",
+     "link"
+    ]
+   ],
+   "n_nodes": 7,
+   "n_edges": 6,
+   "provenance": [
+    "7 nodes: '深度 3 的满二叉树（7 个圆、6 条线段）'",
+    "leaves typed d: '最底层 4 个叶圆涂实表示基例，其余空心'",
+    "6 link edges directed root->leaf by layer index (R4): '第 d 层节点 y=40+90d'; eq: Node(T,T)"
+   ]
+  },
+  "nesting": {
+   "nodes": [
+    [
+     "c0",
+     "u"
+    ],
+    [
+     "c1",
+     "u"
+    ],
+    [
+     "c2",
+     "u"
+    ],
+    [
+     "c3",
+     "u"
+    ],
+    [
+     "c4",
+     "d"
+    ]
+   ],
+   "edges": [
+    [
+     "c0",
+     "c1",
+     "contain"
+    ],
+    [
+     "c1",
+     "c2",
+     "contain"
+    ],
+    [
+     "c2",
+     "c3",
+     "contain"
+    ],
+    [
+     "c3",
+     "c4",
+     "contain"
+    ]
+   ],
+   "n_nodes": 5,
+   "n_edges": 4,
+   "provenance": [
+    "5 nodes: '画 5 个嵌套圆'",
+    "innermost d: '最内圆改用约 260° 的圆弧留一缺口，表示最深一层未收口'",
+    "4 contain edges, directed inward: '4 条带箭头 line…箭头一律指向更深层、无任何向外箭头'; eq: strict superset chain"
+   ]
+  },
+  "cycle": {
+   "nodes": [
+    [
+     "0",
+     "u"
+    ],
+    [
+     "1",
+     "u"
+    ],
+    [
+     "2",
+     "u"
+    ],
+    [
+     "3",
+     "u"
+    ],
+    [
+     "4",
+     "u"
+    ],
+    [
+     "5",
+     "u"
+    ]
+   ],
+   "edges": [
+    [
+     "0",
+     "1",
+     "link"
+    ],
+    [
+     "1",
+     "2",
+     "link"
+    ],
+    [
+     "2",
+     "3",
+     "link"
+    ],
+    [
+     "3",
+     "4",
+     "link"
+    ],
+    [
+     "4",
+     "5",
+     "link"
+    ],
+    [
+     "5",
+     "0",
+     "link"
+    ]
+   ],
+   "n_nodes": 6,
+   "n_edges": 6,
+   "provenance": [
+    "6 nodes: '取 6 个等距点…每点画半径 6 的实心圆'",
+    "6 uniform directed link edges closing the ring: '从点 i 到点 (i+1) mod 6 画一条略向外凸的弧…marker-end 三角箭头'; no distinguished back edge ('除这 6 条弧外无任何其他边'); eq: v1->...->vn->v1"
+   ]
+  },
+  "symmetry": {
+   "nodes": [
+    [
+     "p1",
+     "u"
+    ],
+    [
+     "q1",
+     "u"
+    ],
+    [
+     "p2",
+     "u"
+    ],
+    [
+     "q2",
+     "u"
+    ],
+    [
+     "p3",
+     "u"
+    ],
+    [
+     "q3",
+     "u"
+    ],
+    [
+     "m",
+     "d"
+    ]
+   ],
+   "edges": [
+    [
+     "p1",
+     "q1",
+     "map"
+    ],
+    [
+     "q1",
+     "p1",
+     "map"
+    ],
+    [
+     "p2",
+     "q2",
+     "map"
+    ],
+    [
+     "q2",
+     "p2",
+     "map"
+    ],
+    [
+     "p3",
+     "q3",
+     "map"
+    ],
+    [
+     "q3",
+     "p3",
+     "map"
+    ]
+   ],
+   "n_nodes": 7,
+   "n_edges": 6,
+   "provenance": [
+    "7 nodes (3 mirror pairs + center): '画 7 个半径 8 的圆'",
+    "center d: '中心点 i=4 填第四色且无弧'",
+    "3 bi map edges: '镜像对 (1,7)(2,6)(3,5)…每对以上方半圆弧相连' (pairing arcs, no arrowheads -> bidirectional); eq: (w^R)_i = w_{n+1-i}"
+   ]
+  },
+  "alternation": {
+   "nodes": [
+    [
+     "0",
+     "s0"
+    ],
+    [
+     "1",
+     "s1"
+    ],
+    [
+     "2",
+     "s0"
+    ],
+    [
+     "3",
+     "s1"
+    ],
+    [
+     "4",
+     "s0"
+    ],
+    [
+     "5",
+     "s1"
+    ]
+   ],
+   "edges": [
+    [
+     "0",
+     "1",
+     "link"
+    ],
+    [
+     "1",
+     "0",
+     "link"
+    ],
+    [
+     "1",
+     "2",
+     "link"
+    ],
+    [
+     "2",
+     "1",
+     "link"
+    ],
+    [
+     "2",
+     "3",
+     "link"
+    ],
+    [
+     "3",
+     "2",
+     "link"
+    ],
+    [
+     "3",
+     "4",
+     "link"
+    ],
+    [
+     "4",
+     "3",
+     "link"
+    ],
+    [
+     "4",
+     "5",
+     "link"
+    ],
+    [
+     "5",
+     "4",
+     "link"
+    ]
+   ],
+   "n_nodes": 6,
+   "n_edges": 10,
+   "provenance": [
+    "chain of 10 reduced to 6 preserving 2-periodicity (R1): '沿水平线等距放 10 个圆'",
+    "alternating s0/s1: 'i 为偶数画黑色实心圆，i 为奇数画白色空心圆…黑白严格相间'; eq: c(i)=i mod 2",
+    "5 bi link edges: '相邻圆心间画黑色线段相连' (no arrowheads)"
+   ]
+  },
+  "spiral": {
+   "nodes": [
+    [
+     "0",
+     "u"
+    ],
+    [
+     "1",
+     "u"
+    ],
+    [
+     "2",
+     "u"
+    ],
+    [
+     "3",
+     "u"
+    ],
+    [
+     "4",
+     "u"
+    ],
+    [
+     "5",
+     "u"
+    ]
+   ],
+   "edges": [
+    [
+     "0",
+     "1",
+     "link"
+    ],
+    [
+     "1",
+     "2",
+     "link"
+    ],
+    [
+     "2",
+     "3",
+     "link"
+    ],
+    [
+     "3",
+     "4",
+     "link"
+    ],
+    [
+     "4",
+     "5",
+     "link"
+    ]
+   ],
+   "n_nodes": 6,
+   "n_edges": 5,
+   "provenance": [
+    "chain of 13 reduced to 6 (R1): '画 k=0..12 共 13 个实心圆点'",
+    "5 directed link edges, ordered by index k (R4): '相邻点依次以直线段相连成向外展开的螺线折线'",
+    "open chain, no closing edge: '首末两点方位角相同而半径比恰为 1.25^12' (scale growth is metric, not topological; recorded as reduction); eq: r = a e^{b theta}"
+   ]
+  },
+  "convergence": {
+   "nodes": [
+    [
+     "a1",
+     "u"
+    ],
+    [
+     "a2",
+     "u"
+    ],
+    [
+     "a3",
+     "u"
+    ],
+    [
+     "a4",
+     "u"
+    ],
+    [
+     "m1",
+     "u"
+    ],
+    [
+     "m2",
+     "u"
+    ],
+    [
+     "z",
+     "d"
+    ]
+   ],
+   "edges": [
+    [
+     "a1",
+     "m1",
+     "link"
+    ],
+    [
+     "a2",
+     "m1",
+     "link"
+    ],
+    [
+     "a3",
+     "m2",
+     "link"
+    ],
+    [
+     "a4",
+     "m2",
+     "link"
+    ],
+    [
+     "m1",
+     "z",
+     "link"
+    ],
+    [
+     "m2",
+     "z",
+     "link"
+    ]
+   ],
+   "n_nodes": 7,
+   "n_edges": 6,
+   "provenance": [
+    "4+2+1 nodes: 'x=40 处竖排 4 个源点…2 个中间点…1 个汇点'",
+    "sink d: '汇点（r=13）' vs r=7 sources; '汇点无出边'",
+    "6 directed link edges toward sink: '6 条带三角箭头的直线边…4→2→1 的漏斗形内向树'; eq: exists! P: v ~> r"
+   ]
+  },
+  "bottleneck": {
+   "nodes": [
+    [
+     "('L', 0)",
+     "u"
+    ],
+    [
+     "('L', 1)",
+     "u"
+    ],
+    [
+     "('L', 2)",
+     "u"
+    ],
+    [
+     "('R', 0)",
+     "u"
+    ],
+    [
+     "('R', 1)",
+     "u"
+    ],
+    [
+     "('R', 2)",
+     "u"
+    ],
+    [
+     "cut",
+     "d"
+    ]
+   ],
+   "edges": [
+    [
+     "('L', 0)",
+     "('L', 1)",
+     "link"
+    ],
+    [
+     "('L', 0)",
+     "('L', 2)",
+     "link"
+    ],
+    [
+     "('L', 0)",
+     "cut",
+     "link"
+    ],
+    [
+     "('L', 1)",
+     "('L', 0)",
+     "link"
+    ],
+    [
+     "('L', 1)",
+     "('L', 2)",
+     "link"
+    ],
+    [
+     "('L', 1)",
+     "cut",
+     "link"
+    ],
+    [
+     "('L', 2)",
+     "('L', 1)",
+     "link"
+    ],
+    [
+     "('L', 2)",
+     "('L', 0)",
+     "link"
+    ],
+    [
+     "('R', 0)",
+     "('R', 1)",
+     "link"
+    ],
+    [
+     "('R', 0)",
+     "('R', 2)",
+     "link"
+    ],
+    [
+     "('R', 0)",
+     "cut",
+     "link"
+    ],
+    [
+     "('R', 1)",
+     "('R', 0)",
+     "link"
+    ],
+    [
+     "('R', 1)",
+     "('R', 2)",
+     "link"
+    ],
+    [
+     "('R', 1)",
+     "cut",
+     "link"
+    ],
+    [
+     "('R', 2)",
+     "('R', 1)",
+     "link"
+    ],
+    [
+     "('R', 2)",
+     "('R', 0)",
+     "link"
+    ],
+    [
+     "cut",
+     "('L', 0)",
+     "link"
+    ],
+    [
+     "cut",
+     "('L', 1)",
+     "link"
+    ],
+    [
+     "cut",
+     "('R', 0)",
+     "link"
+    ],
+    [
+     "cut",
+     "('R', 1)",
+     "link"
+    ]
+   ],
+   "n_nodes": 7,
+   "n_edges": 20,
+   "provenance": [
+    "two K5 cliques reduced to K3 (R1): '左簇 5 个圆点…两两连线（K5 共 10 条），右簇同构'",
+    "cut vertex d: '在 (200,100) 画 r=12 的加大圆点'",
+    "2 spokes per side, no other cross edges: '左、右簇各取…2 个点各连一条线段至该大点，两簇之间除经此点外无任何连线'; eq: min separator = max disjoint paths"
+   ]
+  },
+  "symmetry_breaking": {
+   "nodes": [
+    [
+     "c",
+     "d"
+    ],
+    [
+     "n1",
+     "s1"
+    ],
+    [
+     "n2",
+     "s1"
+    ],
+    [
+     "n3",
+     "s1"
+    ],
+    [
+     "n4",
+     "s1"
+    ],
+    [
+     "f1",
+     "s0"
+    ],
+    [
+     "f2",
+     "s0"
+    ]
+   ],
+   "edges": [
+    [
+     "c",
+     "n1",
+     "link"
+    ],
+    [
+     "c",
+     "n2",
+     "link"
+    ],
+    [
+     "c",
+     "n3",
+     "link"
+    ],
+    [
+     "c",
+     "n4",
+     "link"
+    ],
+    [
+     "n1",
+     "c",
+     "link"
+    ],
+    [
+     "n1",
+     "f1",
+     "link"
+    ],
+    [
+     "n2",
+     "c",
+     "link"
+    ],
+    [
+     "n3",
+     "c",
+     "link"
+    ],
+    [
+     "n3",
+     "f2",
+     "link"
+    ],
+    [
+     "n4",
+     "c",
+     "link"
+    ],
+    [
+     "f1",
+     "n1",
+     "link"
+    ],
+    [
+     "f2",
+     "n3",
+     "link"
+    ]
+   ],
+   "n_nodes": 7,
+   "n_edges": 12,
+   "provenance": [
+    "7x7 lattice reduced to deviant neighborhood (R1): '7×7 圆点阵、间距 40px' (lattice adjacency implicit in the grid)",
+    "center d: '唯中心点…改为半径 8 的红色圆且不画箭头'",
+    "tangential ring s1 (8 neighbors reduced to 4): '其 8 个邻点的箭头改为切向…形成绕中心的漩涡零点'",
+    "uniform field s0: '每点…自圆心向正右方引长 14 的箭头线段（同色同径同向）'; eq: sum of indices = chi(M)"
+   ]
+  },
+  "strange_loop": {
+   "nodes": [
+    [
+     "l0",
+     "u"
+    ],
+    [
+     "l1",
+     "u"
+    ],
+    [
+     "l2",
+     "u"
+    ],
+    [
+     "l3",
+     "u"
+    ]
+   ],
+   "edges": [
+    [
+     "l0",
+     "l1",
+     "link"
+    ],
+    [
+     "l1",
+     "l2",
+     "link"
+    ],
+    [
+     "l2",
+     "l3",
+     "link"
+    ],
+    [
+     "l3",
+     "l0",
+     "back"
+    ]
+   ],
+   "n_nodes": 4,
+   "n_edges": 4,
+   "provenance": [
+    "4 level nodes: '画 4 个圆…排成竖直阶梯；每圆右侧画一段水平虚线标示层高'",
+    "3 directed link edges up the ladder: '相邻圆之间画向上直线箭头'",
+    "1 distinguished back edge (typed back, not link): '再画一条带箭头的三次贝塞尔回边…从最高圆右侧弯回最低圆'; eq: e* = (v_k, v_0)"
+   ]
+  },
+  "figure_ground": {
+   "nodes": [
+    [
+     "('t', 0)",
+     "s1"
+    ],
+    [
+     "('b', 0)",
+     "s0"
+    ],
+    [
+     "('t', 1)",
+     "s0"
+    ],
+    [
+     "('b', 1)",
+     "s1"
+    ],
+    [
+     "('t', 2)",
+     "s1"
+    ],
+    [
+     "('b', 2)",
+     "s0"
+    ],
+    [
+     "('t', 3)",
+     "s0"
+    ],
+    [
+     "('b', 3)",
+     "s1"
+    ]
+   ],
+   "edges": [
+    [
+     "('t', 0)",
+     "('b', 0)",
+     "map"
+    ],
+    [
+     "('b', 0)",
+     "('t', 0)",
+     "map"
+    ],
+    [
+     "('t', 1)",
+     "('b', 1)",
+     "map"
+    ],
+    [
+     "('b', 1)",
+     "('t', 1)",
+     "map"
+    ],
+    [
+     "('t', 2)",
+     "('b', 2)",
+     "map"
+    ],
+    [
+     "('b', 2)",
+     "('t', 2)",
+     "map"
+    ],
+    [
+     "('t', 3)",
+     "('b', 3)",
+     "map"
+    ],
+    [
+     "('b', 3)",
+     "('t', 3)",
+     "map"
+    ]
+   ],
+   "n_nodes": 8,
+   "n_edges": 8,
+   "provenance": [
+    "two rows of 8 reduced to 4 columns (R1): '画两行各 8 个半径 12 的圆'",
+    "complementary states: '下行…填色与上行逐位取反（黑变白、白变黑）'",
+    "4 bi map edges: '每列上下两圆圆心之间画一条 stroke-dasharray 的竖直虚线对齐' (dashed pairing); eq: A in Sigma_1^0, complement not"
+   ]
+  },
+  "isomorphism": {
+   "nodes": [
+    [
+     "('L', 0)",
+     "u"
+    ],
+    [
+     "('L', 1)",
+     "u"
+    ],
+    [
+     "('L', 2)",
+     "u"
+    ],
+    [
+     "('R', 0)",
+     "u"
+    ],
+    [
+     "('R', 1)",
+     "u"
+    ],
+    [
+     "('R', 2)",
+     "u"
+    ]
+   ],
+   "edges": [
+    [
+     "('L', 0)",
+     "('L', 1)",
+     "link"
+    ],
+    [
+     "('L', 0)",
+     "('L', 2)",
+     "link"
+    ],
+    [
+     "('L', 0)",
+     "('R', 0)",
+     "map"
+    ],
+    [
+     "('L', 1)",
+     "('L', 0)",
+     "link"
+    ],
+    [
+     "('L', 1)",
+     "('L', 2)",
+     "link"
+    ],
+    [
+     "('L', 1)",
+     "('R', 1)",
+     "map"
+    ],
+    [
+     "('L', 2)",
+     "('L', 1)",
+     "link"
+    ],
+    [
+     "('L', 2)",
+     "('L', 0)",
+     "link"
+    ],
+    [
+     "('L', 2)",
+     "('R', 2)",
+     "map"
+    ],
+    [
+     "('R', 0)",
+     "('R', 1)",
+     "link"
+    ],
+    [
+     "('R', 0)",
+     "('R', 2)",
+     "link"
+    ],
+    [
+     "('R', 0)",
+     "('L', 0)",
+     "map"
+    ],
+    [
+     "('R', 1)",
+     "('R', 0)",
+     "link"
+    ],
+    [
+     "('R', 1)",
+     "('R', 2)",
+     "link"
+    ],
+    [
+     "('R', 1)",
+     "('L', 1)",
+     "map"
+    ],
+    [
+     "('R', 2)",
+     "('R', 1)",
+     "link"
+    ],
+    [
+     "('R', 2)",
+     "('R', 0)",
+     "link"
+    ],
+    [
+     "('R', 2)",
+     "('L', 2)",
+     "map"
+    ]
+   ],
+   "n_nodes": 6,
+   "n_edges": 18,
+   "provenance": [
+    "same 5-vertex graph drawn twice, reduced to two K3 copies (R1): '左侧按正五边形布局画 G…右侧把同一边集按打乱的固定坐标再画一遍'",
+    "both sides SAME type u (same roles, unlike projective_duality): '外观迥异、边集相同'",
+    "3 bi map edges: '用 5 条灰色虚线把两侧同号顶点 i–i 一一相连'; eq: phi(a.b)=phi(a) o phi(b), bijective"
+   ]
+  },
+  "mobius": {
+   "nodes": [
+    [
+     "('i', 0)",
+     "s0"
+    ],
+    [
+     "('o', 0)",
+     "s1"
+    ],
+    [
+     "('i', 1)",
+     "s0"
+    ],
+    [
+     "('o', 1)",
+     "s1"
+    ],
+    [
+     "('i', 2)",
+     "s0"
+    ],
+    [
+     "('o', 2)",
+     "s1"
+    ]
+   ],
+   "edges": [
+    [
+     "('i', 0)",
+     "('i', 1)",
+     "link"
+    ],
+    [
+     "('i', 0)",
+     "('o', 0)",
+     "map"
+    ],
+    [
+     "('o', 0)",
+     "('o', 1)",
+     "link"
+    ],
+    [
+     "('o', 0)",
+     "('i', 0)",
+     "map"
+    ],
+    [
+     "('i', 1)",
+     "('i', 2)",
+     "link"
+    ],
+    [
+     "('i', 1)",
+     "('o', 1)",
+     "map"
+    ],
+    [
+     "('o', 1)",
+     "('o', 2)",
+     "link"
+    ],
+    [
+     "('o', 1)",
+     "('i', 1)",
+     "map"
+    ],
+    [
+     "('i', 2)",
+     "('o', 0)",
+     "twist"
+    ],
+    [
+     "('i', 2)",
+     "('o', 2)",
+     "map"
+    ],
+    [
+     "('o', 2)",
+     "('i', 0)",
+     "twist"
+    ],
+    [
+     "('o', 2)",
+     "('i', 2)",
+     "map"
+    ]
+   ],
+   "n_nodes": 6,
+   "n_edges": 12,
+   "provenance": [
+    "two rings of 12 reduced to 3+3 (R1): '取内外两个同心圆各 12 个等角圆点'",
+    "inner s0 / outer s1 banks; directed rim links: '对 k=0..10 连线段 内k→内k+1、外k→外k+1'",
+    "2 twist edges: '最后一档改为交叉互换：内11→外0 与 外11→内0，两线交点处…留 6px 空隙表示下穿'",
+    "3 bi map rungs: '再画 12 条内k–外k 短横档示带宽'; eq: (0,t) ~ (1, 1-t)"
+   ]
+  },
+  "braiding": {
+   "nodes": [
+    [
+     "('a', 1)",
+     "s0"
+    ],
+    [
+     "('b', 1)",
+     "s1"
+    ],
+    [
+     "('a', 2)",
+     "s0"
+    ],
+    [
+     "('b', 2)",
+     "s1"
+    ],
+    [
+     "('a', 3)",
+     "s0"
+    ],
+    [
+     "('b', 3)",
+     "s1"
+    ]
+   ],
+   "edges": [
+    [
+     "('a', 1)",
+     "('b', 2)",
+     "twist"
+    ],
+    [
+     "('a', 2)",
+     "('b', 3)",
+     "twist"
+    ],
+    [
+     "('a', 3)",
+     "('b', 1)",
+     "twist"
+    ]
+   ],
+   "n_nodes": 6,
+   "n_edges": 3,
+   "provenance": [
+    "3 strands = 3 left endpoints (s0) + 3 right endpoints (s1): '画三条自左向右的折线（初始 y=50/100/150）'",
+    "3 directed twist edges by the composite permutation (a 3-cycle): '被交换的两线…以斜直线段互换 y 坐标，居下（被越过）的线段…留 6px 缺口示上下方向，右端按复合置换（此例为三轮换…）标注各股编号'; eq: sigma_i sigma_{i+1} sigma_i = ..."
+   ]
+  },
+  "interference": {
+   "nodes": [
+    [
+     "a1",
+     "s0"
+    ],
+    [
+     "a2",
+     "s0"
+    ],
+    [
+     "b1",
+     "s1"
+    ],
+    [
+     "b2",
+     "s1"
+    ],
+    [
+     "z1",
+     "d"
+    ],
+    [
+     "z2",
+     "d"
+    ]
+   ],
+   "edges": [
+    [
+     "a1",
+     "z1",
+     "map"
+    ],
+    [
+     "a2",
+     "z2",
+     "map"
+    ],
+    [
+     "b1",
+     "z1",
+     "map"
+    ],
+    [
+     "b2",
+     "z2",
+     "map"
+    ],
+    [
+     "z1",
+     "a1",
+     "map"
+    ],
+    [
+     "z1",
+     "b1",
+     "map"
+    ],
+    [
+     "z2",
+     "a2",
+     "map"
+    ],
+    [
+     "z2",
+     "b2",
+     "map"
+    ]
+   ],
+   "n_nodes": 6,
+   "n_edges": 8,
+   "provenance": [
+    "two line species s0/s1 (families reduced to 2 lines each, R1): 'A 组 x=20k（周期 20px），B 组 x=24k（周期 24px）两组半透明竖直线段'",
+    "beat markers d (reduced to 2): '叠加后每 lcm(20,24)=120px 出现一次两线重合的深色拍带，并在 x=0,120,… 处各画一个小圆点标记同相位置'",
+    "map edges: each beat marker is the coincidence of one A line and one B line ('两线重合'); eq: sin a + sin b = 2 sin((a+b)/2) cos((a-b)/2)"
+   ]
+  },
+  "tiling": {
+   "nodes": [
+    [
+     "0",
+     "u"
+    ],
+    [
+     "1",
+     "u"
+    ],
+    [
+     "2",
+     "u"
+    ],
+    [
+     "3",
+     "u"
+    ],
+    [
+     "4",
+     "u"
+    ],
+    [
+     "5",
+     "u"
+    ],
+    [
+     "6",
+     "u"
+    ],
+    [
+     "7",
+     "u"
+    ],
+    [
+     "8",
+     "u"
+    ],
+    [
+     "9",
+     "u"
+    ]
+   ],
+   "edges": [
+    [
+     "0",
+     "1",
+     "link"
+    ],
+    [
+     "0",
+     "5",
+     "link"
+    ],
+    [
+     "1",
+     "0",
+     "link"
+    ],
+    [
+     "1",
+     "2",
+     "link"
+    ],
+    [
+     "2",
+     "1",
+     "link"
+    ],
+    [
+     "2",
+     "3",
+     "link"
+    ],
+    [
+     "3",
+     "2",
+     "link"
+    ],
+    [
+     "3",
+     "4",
+     "link"
+    ],
+    [
+     "4",
+     "3",
+     "link"
+    ],
+    [
+     "4",
+     "5",
+     "link"
+    ],
+    [
+     "4",
+     "9",
+     "link"
+    ],
+    [
+     "5",
+     "4",
+     "link"
+    ],
+    [
+     "5",
+     "0",
+     "link"
+    ],
+    [
+     "5",
+     "6",
+     "link"
+    ],
+    [
+     "6",
+     "5",
+     "link"
+    ],
+    [
+     "6",
+     "7",
+     "link"
+    ],
+    [
+     "7",
+     "6",
+     "link"
+    ],
+    [
+     "7",
+     "8",
+     "link"
+    ],
+    [
+     "8",
+     "7",
+     "link"
+    ],
+    [
+     "8",
+     "9",
+     "link"
+    ],
+    [
+     "9",
+     "8",
+     "link"
+    ],
+    [
+     "9",
+     "4",
+     "link"
+    ]
+   ],
+   "n_nodes": 10,
+   "n_edges": 22,
+   "provenance": [
+    "honeycomb of 8x7 hexagons reduced to two edge-sharing cells (R1): '画平顶正六边形蜂窝…i=0..7、j=0..6'",
+    "each cell a 6-ring of bi link edges, shared edge deduplicated: '每个中心把六个顶点…依次连成 6 条线段，并在每个顶点画…圆点（重复顶点去重）'",
+    "single uniform species (contrast aperiodic_tiling); eq: T + lambda = T for the full lattice"
+   ]
+  },
+  "hub": {
+   "nodes": [
+    [
+     "c",
+     "d"
+    ],
+    [
+     "0",
+     "u"
+    ],
+    [
+     "1",
+     "u"
+    ],
+    [
+     "2",
+     "u"
+    ],
+    [
+     "3",
+     "u"
+    ],
+    [
+     "4",
+     "u"
+    ]
+   ],
+   "edges": [
+    [
+     "c",
+     "0",
+     "link"
+    ],
+    [
+     "c",
+     "1",
+     "link"
+    ],
+    [
+     "c",
+     "2",
+     "link"
+    ],
+    [
+     "c",
+     "3",
+     "link"
+    ],
+    [
+     "c",
+     "4",
+     "link"
+    ],
+    [
+     "0",
+     "c",
+     "link"
+    ],
+    [
+     "1",
+     "c",
+     "link"
+    ],
+    [
+     "2",
+     "c",
+     "link"
+    ],
+    [
+     "3",
+     "c",
+     "link"
+    ],
+    [
+     "4",
+     "c",
+     "link"
+    ]
+   ],
+   "n_nodes": 6,
+   "n_edges": 10,
+   "provenance": [
+    "center d: '画半径 14 的实心大圆作中心'",
+    "8 spokes reduced to 5 (R1): '8 个半径 6 的小圆置于半径 120 的圆周上'",
+    "bi link spokes only, no rim: '从中心到每个小圆心各画一条直线段，小圆之间不画任何连线'; eq: G ~ K_{1,n}"
+   ]
+  },
+  "diagonalization": {
+   "nodes": [
+    [
+     "('dg', 0)",
+     "s1"
+    ],
+    [
+     "('e', 0)",
+     "s0"
+    ],
+    [
+     "('dg', 1)",
+     "s0"
+    ],
+    [
+     "('e', 1)",
+     "s1"
+    ],
+    [
+     "('dg', 2)",
+     "s1"
+    ],
+    [
+     "('e', 2)",
+     "s0"
+    ]
+   ],
+   "edges": [
+    [
+     "('dg', 0)",
+     "('e', 0)",
+     "map"
+    ],
+    [
+     "('dg', 1)",
+     "('e', 1)",
+     "map"
+    ],
+    [
+     "('dg', 2)",
+     "('e', 2)",
+     "map"
+    ]
+   ],
+   "n_nodes": 6,
+   "n_edges": 3,
+   "provenance": [
+    "6 diagonal cells reduced to 3 preserving bit alternation (R1): '对角格 (i,i) 各套红圈,其位序为 1 0 1 0 1 0'",
+    "escape row with flipped states: '第 7 行(表外新行):第 i 列点取对角格 (i,i) 的相反填充'",
+    "3 directed map arrows: '从每个对角格…画红色竖直箭头引至正下方新行格…示新行第 i 格 = 对角第 i 格翻面'; eq: d(n) = 1 - f(n)(n)"
+   ]
+  },
+  "infinite_descent": {
+   "nodes": [
+    [
+     "q1",
+     "u"
+    ],
+    [
+     "q2",
+     "u"
+    ],
+    [
+     "q3",
+     "u"
+    ],
+    [
+     "q4",
+     "u"
+    ],
+    [
+     "floor",
+     "d"
+    ]
+   ],
+   "edges": [
+    [
+     "q1",
+     "q2",
+     "link"
+    ],
+    [
+     "q2",
+     "q3",
+     "link"
+    ],
+    [
+     "q3",
+     "q4",
+     "link"
+    ],
+    [
+     "q4",
+     "floor",
+     "link"
+    ]
+   ],
+   "n_nodes": 5,
+   "n_edges": 4,
+   "provenance": [
+    "6 squares reduced to 4 (R1): '六个实心正方形沿对角线向右下排列…编号严格递减'",
+    "directed links toward smaller (R4): '相邻方块中心间画直线箭头（方向指向更小者）'",
+    "floor d: '画一条 4px 加粗横线（地板）…其与地板交点处叠画一个红色大叉。地板下方区域填浅灰色并标 ∅' (blocked terminal); eq: => forall n not P(n)"
+   ]
+  },
+  "coprime_orbit": {
+   "nodes": [
+    [
+     "0",
+     "u"
+    ],
+    [
+     "1",
+     "u"
+    ],
+    [
+     "2",
+     "u"
+    ],
+    [
+     "3",
+     "u"
+    ],
+    [
+     "4",
+     "u"
+    ],
+    [
+     "5",
+     "u"
+    ],
+    [
+     "('c', 0)",
+     "s1"
+    ],
+    [
+     "('c', 1)",
+     "s1"
+    ],
+    [
+     "('c', 2)",
+     "s1"
+    ],
+    [
+     "('c', 3)",
+     "s1"
+    ]
+   ],
+   "edges": [
+    [
+     "0",
+     "1",
+     "link"
+    ],
+    [
+     "1",
+     "2",
+     "link"
+    ],
+    [
+     "2",
+     "3",
+     "link"
+    ],
+    [
+     "3",
+     "4",
+     "link"
+    ],
+    [
+     "4",
+     "5",
+     "link"
+    ],
+    [
+     "5",
+     "0",
+     "link"
+    ],
+    [
+     "('c', 0)",
+     "('c', 1)",
+     "link"
+    ],
+    [
+     "('c', 1)",
+     "('c', 0)",
+     "link"
+    ],
+    [
+     "('c', 2)",
+     "('c', 3)",
+     "link"
+    ],
+    [
+     "('c', 3)",
+     "('c', 2)",
+     "link"
+    ]
+   ],
+   "n_nodes": 10,
+   "n_edges": 10,
+   "provenance": [
+    "main {8/3} star is, as a graph, one closed orbit through all points; 8 reduced to 6 (R1): '按 0→3→6→1→4→7→2→5→0 顺次连直线弦…成一笔闭合的 {8/3} 八角星'",
+    "contrast inset: disjoint sub-orbits in a second style (s1, dashed), two components reduced to two pairs: '小对照圆:同样 8 点按步长 2 连弦,得两个互不相交的正方形,用虚线,并标 gcd=2'; eq: <k> = Z_n iff gcd(k,n)=1"
+   ]
+  },
+  "pigeonhole": {
+   "nodes": [
+    [
+     "('i', 0)",
+     "s0"
+    ],
+    [
+     "('i', 1)",
+     "s0"
+    ],
+    [
+     "('i', 2)",
+     "s0"
+    ],
+    [
+     "('b', 0)",
+     "s1"
+    ],
+    [
+     "('b', 1)",
+     "d"
+    ]
+   ],
+   "edges": [
+    [
+     "('i', 0)",
+     "('b', 0)",
+     "map"
+    ],
+    [
+     "('i', 1)",
+     "('b', 1)",
+     "map"
+    ],
+    [
+     "('i', 2)",
+     "('b', 1)",
+     "map"
+    ]
+   ],
+   "n_nodes": 5,
+   "n_edges": 3,
+   "provenance": [
+    "5 items reduced to 3, 4 boxes to 2, preserving |A|>|B| (R1): '上排 5 个实心圆点…下排 4 个 70×70 方框'; eq: |A| > |B|",
+    "assignment arrows typed map: '画 5 条箭头把每个点分入一框'",
+    "overloaded box d: '其中恰有一框接到两条箭头,该框边线加粗描红且框内画两个点'"
+   ]
+  },
+  "projective_duality": {
+   "nodes": [
+    [
+     "('p', 0)",
+     "s0"
+    ],
+    [
+     "('l', 0)",
+     "s1"
+    ],
+    [
+     "('p', 1)",
+     "s0"
+    ],
+    [
+     "('l', 1)",
+     "s1"
+    ],
+    [
+     "('p', 2)",
+     "s0"
+    ],
+    [
+     "('l', 2)",
+     "s1"
+    ]
+   ],
+   "edges": [
+    [
+     "('p', 0)",
+     "('p', 1)",
+     "link"
+    ],
+    [
+     "('p', 0)",
+     "('p', 2)",
+     "link"
+    ],
+    [
+     "('p', 0)",
+     "('l', 0)",
+     "map"
+    ],
+    [
+     "('l', 0)",
+     "('l', 1)",
+     "link"
+    ],
+    [
+     "('l', 0)",
+     "('l', 2)",
+     "link"
+    ],
+    [
+     "('l', 0)",
+     "('p', 0)",
+     "map"
+    ],
+    [
+     "('p', 1)",
+     "('p', 0)",
+     "link"
+    ],
+    [
+     "('p', 1)",
+     "('p', 2)",
+     "link"
+    ],
+    [
+     "('p', 1)",
+     "('l', 1)",
+     "map"
+    ],
+    [
+     "('l', 1)",
+     "('l', 0)",
+     "link"
+    ],
+    [
+     "('l', 1)",
+     "('l', 2)",
+     "link"
+    ],
+    [
+     "('l', 1)",
+     "('p', 1)",
+     "map"
+    ],
+    [
+     "('p', 2)",
+     "('p', 1)",
+     "link"
+    ],
+    [
+     "('p', 2)",
+     "('p', 0)",
+     "link"
+    ],
+    [
+     "('p', 2)",
+     "('l', 2)",
+     "map"
+    ],
+    [
+     "('l', 2)",
+     "('l', 1)",
+     "link"
+    ],
+    [
+     "('l', 2)",
+     "('l', 0)",
+     "link"
+    ],
+    [
+     "('l', 2)",
+     "('p', 2)",
+     "map"
+    ]
+   ],
+   "n_nodes": 6,
+   "n_edges": 18,
+   "provenance": [
+    "complete quadrilateral pair reduced to K3 copies (R1): '左幅完全四点形:4 个大实心圆点…两两连出 6 条细线；右幅完全四线形:4 条粗线段…两两交点恰 6 个'",
+    "sides carry SWAPPED roles s0 vs s1 (unlike isomorphism where both are u): '视觉互换轻重:左幅点大线细,右幅线粗点小；左 4 点 6 线 ↔ 右 4 线 6 点,计数逐项对调'",
+    "bi map edges between the two panels: '两幅之间画双向箭头,上注 σ、下注 点↔线'; eq: sigma^2 = id"
+   ]
+  },
+  "contraction_fixed_point": {
+   "nodes": [
+    [
+     "x1",
+     "u"
+    ],
+    [
+     "x2",
+     "u"
+    ],
+    [
+     "x3",
+     "u"
+    ],
+    [
+     "x4",
+     "u"
+    ],
+    [
+     "fix",
+     "d"
+    ]
+   ],
+   "edges": [
+    [
+     "x1",
+     "x2",
+     "link"
+    ],
+    [
+     "x2",
+     "x3",
+     "link"
+    ],
+    [
+     "x3",
+     "x4",
+     "link"
+    ],
+    [
+     "x4",
+     "fix",
+     "link"
+    ],
+    [
+     "fix",
+     "fix",
+     "self"
+    ]
+   ],
+   "n_nodes": 5,
+   "n_edges": 5,
+   "provenance": [
+    "cobweb staircase reduced to 4 iterates (R1): '阶梯折线顶点依次…竖直段长 70,35,17.5,8.75 逐次严格减半' (iteration order directs the chain, R4)",
+    "fixed point d: '终点 (160,160) 画实心红点加红圈'",
+    "self-loop at the fixed point, from the drawn annotation and equation: '标注 f(x^*)=x^*'; eq: exists! x*: f(x*)=x*"
+   ]
+  },
+  "aperiodic_tiling": {
+   "nodes": [
+    [
+     "C",
+     "d"
+    ],
+    [
+     "('f', 1)",
+     "s0"
+    ],
+    [
+     "('f', 2)",
+     "s0"
+    ],
+    [
+     "('f', 3)",
+     "s0"
+    ],
+    [
+     "('t', 1)",
+     "s1"
+    ],
+    [
+     "('t', 2)",
+     "s1"
+    ]
+   ],
+   "edges": [
+    [
+     "C",
+     "('f', 1)",
+     "link"
+    ],
+    [
+     "C",
+     "('f', 2)",
+     "link"
+    ],
+    [
+     "C",
+     "('f', 3)",
+     "link"
+    ],
+    [
+     "('f', 1)",
+     "C",
+     "link"
+    ],
+    [
+     "('f', 1)",
+     "('t', 1)",
+     "link"
+    ],
+    [
+     "('f', 2)",
+     "C",
+     "link"
+    ],
+    [
+     "('f', 2)",
+     "('t', 1)",
+     "link"
+    ],
+    [
+     "('f', 2)",
+     "('t', 2)",
+     "link"
+    ],
+    [
+     "('f', 3)",
+     "C",
+     "link"
+    ],
+    [
+     "('f', 3)",
+     "('t', 2)",
+     "link"
+    ],
+    [
+     "('t', 1)",
+     "('f', 1)",
+     "link"
+    ],
+    [
+     "('t', 1)",
+     "('f', 2)",
+     "link"
+    ],
+    [
+     "('t', 2)",
+     "('f', 2)",
+     "link"
+    ],
+    [
+     "('t', 2)",
+     "('f', 3)",
+     "link"
+    ]
+   ],
+   "n_nodes": 6,
+   "n_edges": 14,
+   "provenance": [
+    "sun patch reduced: center + 5 fat + 5 thin -> center + 3 fat + 2 thin (R1): '5 个胖菱尖端共聚 C,恰满 5×72°=360°'",
+    "two tile species s0 (fat) / s1 (thin): '胖菱填 #E8C468(浅金),瘦菱填 #3B4A8C(靛蓝)'",
+    "thin tiles wedged between adjacent fats: '相邻两胖菱在共享外顶点…余 144° 缺口,各嵌 1 个瘦菱形'",
+    "center d, non-uniform neighborhood (contrast tiling): '整体呈五瓣放射状,绝无方格/六角网格感'; eq: N_fat/N_thin -> phi"
+   ]
+  }
+ }
+}

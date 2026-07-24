@@ -1,0 +1,416 @@
+{
+ "model": "yi-coder-9b",
+ "base": "http://localhost:8001/v1",
+ "summary": {
+  "story2motif": {
+   "n": 25,
+   "acc": 0.08
+  },
+  "theorem2motif": {
+   "n": 25,
+   "acc": 0.36
+  }
+ },
+ "records": [
+  {
+   "id": "story:self_reference",
+   "task": "story2motif",
+   "answer": "self_reference",
+   "pred": "self_reference",
+   "correct": true,
+   "raw": "The story describes a motif that can be categorized as a self-reference structure.\n\nThe story tells of a small town that is bordered by a river. In the spring, the town sells peaches, and in the fall,"
+  },
+  {
+   "id": "thm:self_reference",
+   "task": "theorem2motif",
+   "answer": "self_reference",
+   "pred": null,
+   "correct": false,
+   "raw": "The correct answer is \"contraction_fixed_point\". The given theorem describes a structure motif where a certain transformation repeatedly applied to its own output converges to a fixed point, without a"
+  },
+  {
+   "id": "story:recursion",
+   "task": "story2motif",
+   "answer": "recursion",
+   "pred": "recursion",
+   "correct": true,
+   "raw": "The story describes an abstract structure motif, which is a common problem or structure that appears in different contexts. The story you provided is an example of a recursive structure motif.\n\nIn JSO"
+  },
+  {
+   "id": "thm:recursion",
+   "task": "theorem2motif",
+   "answer": "recursion",
+   "pred": "isomorphism",
+   "correct": false,
+   "raw": "{\"motif_id\": \"isomorphism\"}"
+  },
+  {
+   "id": "story:nesting",
+   "task": "story2motif",
+   "answer": "nesting",
+   "pred": "self_reference",
+   "correct": false,
+   "raw": "The story describes a series of vignettes, each one a unique instance of a recurring motif. The motif in question is \"self_reference\".\n\nIn this motif, each narrative self-references by describing itse"
+  },
+  {
+   "id": "thm:nesting",
+   "task": "theorem2motif",
+   "answer": "nesting",
+   "pred": "convergence",
+   "correct": false,
+   "raw": "{\"motif_id\": \"convergence\"}"
+  },
+  {
+   "id": "story:cycle",
+   "task": "story2motif",
+   "answer": "cycle",
+   "pred": "recursion",
+   "correct": false,
+   "raw": "The story describes an abstract structure motif, which is a common problem or structure that appears in different contexts. The story is a recursive structure, where each event or situation leads to a"
+  },
+  {
+   "id": "thm:cycle",
+   "task": "theorem2motif",
+   "answer": "cycle",
+   "pred": "orbit_lemma",
+   "correct": false,
+   "raw": "{\"motif_id\": \"orbit_lemma\"}"
+  },
+  {
+   "id": "story:symmetry",
+   "task": "story2motif",
+   "answer": "symmetry",
+   "pred": null,
+   "correct": false,
+   "raw": "The abstract structure motif or abstract structure mother problem that this story illustrates can be identified as \"recursion\". \n\nThe story describes a series of events that are cyclical and self-simi"
+  },
+  {
+   "id": "thm:symmetry",
+   "task": "theorem2motif",
+   "answer": "symmetry",
+   "pred": "aperiodic_tiling",
+   "correct": false,
+   "raw": "{\"motif_id\": \"aperiodic_tiling\"}"
+  },
+  {
+   "id": "story:alternation",
+   "task": "story2motif",
+   "answer": "alternation",
+   "pred": null,
+   "correct": false,
+   "raw": "The story describes a common abstract structure motif, which is a \"bottleneck\". The story describes a situation where two people, A and B, are each responsible for a different task on opposite sides o"
+  },
+  {
+   "id": "thm:alternation",
+   "task": "theorem2motif",
+   "answer": "alternation",
+   "pred": "convergence",
+   "correct": false,
+   "raw": "{\"motif_id\": \"convergence\"}"
+  },
+  {
+   "id": "story:spiral",
+   "task": "story2motif",
+   "answer": "spiral",
+   "pred": null,
+   "correct": false,
+   "raw": "The story describes a motif that can be abstractly categorized as a self-referential structure. The motif is a narrative that references itself in a way that creates a recursive structure. The story b"
+  },
+  {
+   "id": "thm:spiral",
+   "task": "theorem2motif",
+   "answer": "spiral",
+   "pred": "self_reference",
+   "correct": false,
+   "raw": "The mathematical theorem described by the partially obfuscated statement is the \"Logarithmic Angularity Theorem\". The obfuscated terms have been replaced with \"self_reference\".\n\nHere is the JSON outpu"
+  },
+  {
+   "id": "story:convergence",
+   "task": "story2motif",
+   "answer": "convergence",
+   "pred": "self_reference",
+   "correct": false,
+   "raw": "The story describes a motif that can be abstractly represented as a self-referential structure. The motif is best described as a self_reference motif.\n\nHere is the corresponding JSON output:\n\n```json\n"
+  },
+  {
+   "id": "thm:convergence",
+   "task": "theorem2motif",
+   "answer": "convergence",
+   "pred": "convergence",
+   "correct": true,
+   "raw": "{\"motif_id\": \"convergence\"}"
+  },
+  {
+   "id": "story:bottleneck",
+   "task": "story2motif",
+   "answer": "bottleneck",
+   "pred": null,
+   "correct": false,
+   "raw": "The story describes a complex structure motif. Select it.\n\nStory:\nThe Salt Flat in autumn, like scattered frost, covers the south bank. Old Tao leads his twelve horses laden with salt, covered with bl"
+  },
+  {
+   "id": "thm:bottleneck",
+   "task": "theorem2motif",
+   "answer": "bottleneck",
+   "pred": "bottleneck",
+   "correct": true,
+   "raw": "{\"motif_id\": \"bottleneck\"}"
+  },
+  {
+   "id": "story:symmetry_breaking",
+   "task": "story2motif",
+   "answer": "symmetry_breaking",
+   "pred": "self_reference",
+   "correct": false,
+   "raw": "The story you provided is an example of the \"self_reference\" motif. Here is the corresponding JSON output:\n\n```json\n{\n  \"motif_id\": \"self_reference\"\n}\n```"
+  },
+  {
+   "id": "thm:symmetry_breaking",
+   "task": "theorem2motif",
+   "answer": "symmetry_breaking",
+   "pred": "contraction_fixed_point",
+   "correct": false,
+   "raw": "{\"motif_id\": \"contraction_fixed_point\"}"
+  },
+  {
+   "id": "story:strange_loop",
+   "task": "story2motif",
+   "answer": "strange_loop",
+   "pred": "recursion",
+   "correct": false,
+   "raw": "The story describes a recursive structure motif. The motif is \"recursion\".\n\nHere is the JSON output:\n\n```json\n{\n  \"motif_id\": \"recursion\"\n}\n```"
+  },
+  {
+   "id": "thm:strange_loop",
+   "task": "theorem2motif",
+   "answer": "strange_loop",
+   "pred": null,
+   "correct": false,
+   "raw": "The correct answer is \"bottleneck\". The given statement describes the mathematical concept of a bottleneck, which is a situation where a limited number of paths connect two points, such that removing "
+  },
+  {
+   "id": "story:figure_ground",
+   "task": "story2motif",
+   "answer": "figure_ground",
+   "pred": "self_reference",
+   "correct": false,
+   "raw": "The story describes a motif that can be abstractly represented as a self-referential structure. The motif is a recurring pattern where two individuals, let's call them \"A\" and \"B\", are waiting for eac"
+  },
+  {
+   "id": "thm:figure_ground",
+   "task": "theorem2motif",
+   "answer": "figure_ground",
+   "pred": "figure_ground",
+   "correct": true,
+   "raw": "{\"motif_id\": \"figure_ground\"}"
+  },
+  {
+   "id": "story:isomorphism",
+   "task": "story2motif",
+   "answer": "isomorphism",
+   "pred": null,
+   "correct": false,
+   "raw": "The abstract structure motif of this story is \"recursion\". The story describes a process that is repeated within itself, similar to the recursive definition in programming. The story begins with a cha"
+  },
+  {
+   "id": "thm:isomorphism",
+   "task": "theorem2motif",
+   "answer": "isomorphism",
+   "pred": "isomorphism",
+   "correct": true,
+   "raw": "{\"motif_id\": \"isomorphism\"}"
+  },
+  {
+   "id": "story:mobius",
+   "task": "story2motif",
+   "answer": "mobius",
+   "pred": "self_reference",
+   "correct": false,
+   "raw": "The story describes a motif that can be characterized as a self-reference. The story itself is a self-referential story, as it describes a character (\"阿柚\") who lives in a shop that repairs kites at th"
+  },
+  {
+   "id": "thm:mobius",
+   "task": "theorem2motif",
+   "answer": "mobius",
+   "pred": "mobius",
+   "correct": true,
+   "raw": "{\"motif_id\": \"mobius\"}"
+  },
+  {
+   "id": "story:braiding",
+   "task": "story2motif",
+   "answer": "braiding",
+   "pred": null,
+   "correct": false,
+   "raw": "The abstract structure motif of this story is \"bottleneck\". The story describes a situation where two or more paths converge and must pass through a single common point. This common point serves as a "
+  },
+  {
+   "id": "thm:braiding",
+   "task": "theorem2motif",
+   "answer": "braiding",
+   "pred": "projective_duality",
+   "correct": false,
+   "raw": "{\"motif_id\": \"projective_duality\"}"
+  },
+  {
+   "id": "story:interference",
+   "task": "story2motif",
+   "answer": "interference",
+   "pred": "self_reference",
+   "correct": false,
+   "raw": "The story describes a motif that can be categorized as a self-reference structure. The story describes a person (the girl named \"Arice\") who is doing a repetitive task (switching blue covers on lamps)"
+  },
+  {
+   "id": "thm:interference",
+   "task": "theorem2motif",
+   "answer": "interference",
+   "pred": "interference",
+   "correct": true,
+   "raw": "{\"motif_id\": \"interference\"}"
+  },
+  {
+   "id": "story:tiling",
+   "task": "story2motif",
+   "answer": "tiling",
+   "pred": null,
+   "correct": false,
+   "raw": "The abstract structure motif or abstract structure mother problem that this story illustrates is \"recursion\". \n\nThe story describes a series of individuals who pick up different items (like \"海铃\", \"铜鱼\""
+  },
+  {
+   "id": "thm:tiling",
+   "task": "theorem2motif",
+   "answer": "tiling",
+   "pred": null,
+   "correct": false,
+   "raw": "The correct answer is \"bottleneck\". The given mathematical theorem describes the concept of a bottleneck, which is a scenario in which two points in a graph are connected through a single point or pat"
+  },
+  {
+   "id": "story:hub",
+   "task": "story2motif",
+   "answer": "hub",
+   "pred": "self_reference",
+   "correct": false,
+   "raw": "The story describes a series of transactions between five different characters (A, B, C, D, E) and a mill owner (the narrator). Each character has a unique job in the village, and they all meet at the"
+  },
+  {
+   "id": "thm:hub",
+   "task": "theorem2motif",
+   "answer": "hub",
+   "pred": null,
+   "correct": false,
+   "raw": "The mathematical theorem that describes a structural motif is the following:\n\nThe diameter of 2 is a tree must be a tree of the form K_{1,n} (n≥2); and in a fixed n+1 vertices, all trees, the diameter"
+  },
+  {
+   "id": "story:diagonalization",
+   "task": "story2motif",
+   "answer": "diagonalization",
+   "pred": "figure_ground",
+   "correct": false,
+   "raw": "The story describes an abstract structure motif, which is a common problem or structure that recurs in different contexts. The story you provided is an example of a \"figure-ground\" motif.\n\nIn this cas"
+  },
+  {
+   "id": "thm:diagonalization",
+   "task": "theorem2motif",
+   "answer": "diagonalization",
+   "pred": "contraction_fixed_point",
+   "correct": false,
+   "raw": "{\"motif_id\": \"contraction_fixed_point\"}"
+  },
+  {
+   "id": "story:infinite_descent",
+   "task": "story2motif",
+   "answer": "infinite_descent",
+   "pred": "recursion",
+   "correct": false,
+   "raw": "The story describes an abstract structure motif, which is a recurring pattern or structure that reappears in different contexts. The story is a recursive one, where each part mirrors the whole structu"
+  },
+  {
+   "id": "thm:infinite_descent",
+   "task": "theorem2motif",
+   "answer": "infinite_descent",
+   "pred": null,
+   "correct": false,
+   "raw": "The mathematical theorem that describes a structural motif is the Fermat's theorem. It states that the area of a right-angled triangle with sides of integer lengths cannot be a perfect square. This ca"
+  },
+  {
+   "id": "story:coprime_orbit",
+   "task": "story2motif",
+   "answer": "coprime_orbit",
+   "pred": "cycle",
+   "correct": false,
+   "raw": "The story describes an abstract structure motif, which is a common problem or structure that recurs in various contexts. The story is a cycle where eight people take turns passing a salt lamp around a"
+  },
+  {
+   "id": "thm:coprime_orbit",
+   "task": "theorem2motif",
+   "answer": "coprime_orbit",
+   "pred": "coprime_orbit",
+   "correct": true,
+   "raw": "{\"motif_id\": \"coprime_orbit\"}"
+  },
+  {
+   "id": "story:pigeonhole",
+   "task": "story2motif",
+   "answer": "pigeonhole",
+   "pred": null,
+   "correct": false,
+   "raw": "The abstract structure motif of this story is \"symmetry_breaking\". The story describes a situation where a set of rules or norms is followed by a group of individuals, but one individual breaks the sy"
+  },
+  {
+   "id": "thm:pigeonhole",
+   "task": "theorem2motif",
+   "answer": "pigeonhole",
+   "pred": "convergence",
+   "correct": false,
+   "raw": "The correct answer is:\n\n{\"motif_id\": \"convergence\"}"
+  },
+  {
+   "id": "story:projective_duality",
+   "task": "story2motif",
+   "answer": "projective_duality",
+   "pred": "self_reference",
+   "correct": false,
+   "raw": "The story you provided is an example of the abstract structure motif known as a \"self-referential story\". This motif is characterized by a narrative that involves the main characters referencing or de"
+  },
+  {
+   "id": "thm:projective_duality",
+   "task": "theorem2motif",
+   "answer": "projective_duality",
+   "pred": "convergence",
+   "correct": false,
+   "raw": "The correct answer is \"convergence: 多条互不知晓的线索各自推进，最终全部汇入同一终点且到此为止\".\n\nHere is the JSON output:\n\n```json\n{\n  \"motif_id\": \"convergence\"\n}\n```"
+  },
+  {
+   "id": "story:contraction_fixed_point",
+   "task": "story2motif",
+   "answer": "contraction_fixed_point",
+   "pred": null,
+   "correct": false,
+   "raw": "The abstract structure motif that this story presents is \"recursion\". \n\nThe story describes a method of teaching a child a song, where each time the song is repeated, the last half of the song is remo"
+  },
+  {
+   "id": "thm:contraction_fixed_point",
+   "task": "theorem2motif",
+   "answer": "contraction_fixed_point",
+   "pred": "contraction_fixed_point",
+   "correct": true,
+   "raw": "{\"motif_id\": \"contraction_fixed_point\"}"
+  },
+  {
+   "id": "story:aperiodic_tiling",
+   "task": "story2motif",
+   "answer": "aperiodic_tiling",
+   "pred": null,
+   "correct": false,
+   "raw": "The story describes a motif that can be abstractly categorized as a self-referential structure. The motif is a story about a man named Ait who is working with two apprentices to lay a tile on a salt w"
+  },
+  {
+   "id": "thm:aperiodic_tiling",
+   "task": "theorem2motif",
+   "answer": "aperiodic_tiling",
+   "pred": "aperiodic_tiling",
+   "correct": true,
+   "raw": "{\"motif_id\": \"aperiodic_tiling\"}"
+  }
+ ]
+}

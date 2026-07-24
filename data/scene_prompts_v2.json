@@ -1,0 +1,2186 @@
+{
+  "nesting": [
+    {
+      "name": "open_crates",
+      "skel": "concentric",
+      "size": "1024x1024",
+      "prompt_body": "A photorealistic warehouse photograph from above, cool fluorescent light on unfinished pine packing crates: each drawn outline becomes the upper rim of an open crate, placed inside the previous crate and smaller than it, all mouths facing upward. Straw, cloth, and tools lie only on the ledges between crates, while the deepest wooden mouth falls into shadow. No lids, markings, labels, or writing appear anywhere.",
+      "judge": {
+        "passed": true,
+        "problems": ""
+      }
+    },
+    {
+      "name": "ice_fishing_holes",
+      "skel": "concentric_v2",
+      "size": "1536x1024",
+      "prompt_body": "Aerial winter photograph of a frozen lake at blue hour: each drawn outline becomes the chipped edge of an ice hole cut through the surface, with a smaller dark opening visible farther down inside it, then another deeper opening below. Frost, slush, boot prints, and fishing gear remain on the shelves of ice between levels; the viewer's eye drops inward through the exposed water and never finds a covered end.",
+      "judge": {
+        "passed": true,
+        "problems": ""
+      }
+    },
+    {
+      "name": "cut_cabbage",
+      "skel": "concentric_v3",
+      "size": "1024x1024",
+      "prompt_body": "A macro studio photograph of a halved red cabbage on a slate board, lit with crisp side light: each drawn outline becomes a purple leaf edge encircling a smaller pale hollow farther inward, then another tighter leaf edge beyond. Moist veins and torn white ribs fill the spaces between levels, and the central part vanishes into a dark crevice, with no extra cuts or printed marks.",
+      "judge": {
+        "passed": true,
+        "problems": ""
+      }
+    },
+    {
+      "name": "theater_arches",
+      "skel": "concentric",
+      "size": "1024x1536",
+      "prompt_body": "An oil painting in the style of a nineteenth century opera house backstage view, warm amber lamps and dusty velvet: each drawn outline becomes the painted edge of a proscenium arch, with another smaller arch visible through it, then another receding behind. Stage ropes, curtains, and wooden floorboards occupy the bands between openings; every arch remains uncovered, drawing the gaze deeper into the dim final stage.",
+      "judge": {
+        "passed": true,
+        "problems": ""
+      }
+    },
+    {
+      "name": "cedar_bento",
+      "skel": "concentric_v2",
+      "size": "1024x1024",
+      "prompt_body": "A Japanese woodblock print of stacked cedar lunch trays on a lacquer table, muted indigo, tan, and persimmon ink: each drawn outline becomes the raised lip of an uncovered tray, with a smaller empty tray set inside it, and another set deeper within. Rice grains, pickles, chopsticks, and folded cloth rest only between the lips, while the smallest tray is a dark interior with no lid or written decoration.",
+      "judge": {
+        "passed": true,
+        "problems": ""
+      }
+    },
+    {
+      "name": "quarry_pits",
+      "skel": "concentric_v3",
+      "size": "1536x1024",
+      "prompt_body": "A high altitude satellite view of an abandoned open quarry in ocher desert light: each drawn outline becomes the cut bench of a descending excavation, one ledge inside the last, shrinking toward a shadowed pit. Dirt roads, rusted machinery, puddles, and scrub occupy the terraces between benches, but no ramp climbs back outward; the composition leads step by step into the deepest exposed hollow.",
+      "judge": {
+        "passed": true,
+        "problems": ""
+      }
+    },
+    {
+      "name": "lantern_tunnels",
+      "skel": "concentric",
+      "size": "1024x1536",
+      "prompt_body": "A long exposure night photograph inside a festival installation of square paper lantern frames, glowing crimson and gold: each drawn outline becomes one illuminated frame, and through its open center stands a smaller lit frame, then a farther one beyond. Visitors appear as faint blurs along the floor strips between frames, and the final small opening dissolves into darkness; there are no signs, arrows, or lettering.",
+      "judge": {
+        "passed": true,
+        "problems": ""
+      }
+    }
+  ],
+  "symmetry": [
+    {
+      "name": "alpine_lake",
+      "skel": "mirror",
+      "size": "1536x1024",
+      "prompt_body": "An aerial color photograph of a windless alpine lake at dawn: the central shoreline becomes the drawn middle stroke, the upper half of peaks, fir clusters, cabins, snow cracks and cloud wisps maps to the lower water image point by point. Every bend and small mark above the shore appears below in exact reverse order, with no boats, signs or writing.",
+      "judge": {
+        "passed": true,
+        "problems": ""
+      }
+    },
+    {
+      "name": "opera_stage",
+      "skel": "mirror",
+      "size": "1536x1024",
+      "prompt_body": "A long exposure photograph inside a 1930s opera house, shot straight toward the stage: the central solo dancer becomes the drawn middle stroke, and the two drawn halves become rows of dancers, footlights, curtains and spotlight pools. Each pose, prop and lamp on the left returns on the right in backward order, matching height, spacing and angle, with an empty dark backdrop.",
+      "judge": {
+        "passed": true,
+        "problems": ""
+      }
+    },
+    {
+      "name": "market_still_life",
+      "skel": "mirror",
+      "size": "1024x1024",
+      "prompt_body": "A Dutch golden age oil painting of a market table viewed square on: a tall brass candlestick at the center becomes the drawn middle stroke. The two drawn halves become pears, knives, folded cloth, grapes, clay cups and crumbs arranged left and right. Every object and tiny highlight on one side recurs across the candle in reverse order, without added items or written marks.",
+      "judge": {
+        "passed": true,
+        "problems": ""
+      }
+    },
+    {
+      "name": "desert_caravan",
+      "skel": "mirror",
+      "size": "1536x1024",
+      "prompt_body": "A sepia panoramic photograph of a desert caravan crossing flat salt ground at noon: one standing guide and camel at center become the drawn middle stroke. The two drawn halves become camel silhouettes, footprints, water skins, shadows and low dunes. Each bend of a dune and each animal pose on one side is repeated on the other in backward order, sharply aligned.",
+      "judge": {
+        "passed": true,
+        "problems": ""
+      }
+    },
+    {
+      "name": "canal_fields",
+      "skel": "mirror",
+      "size": "1024x1536",
+      "prompt_body": "A satellite view of irrigated farmland in late summer: the straight central canal becomes the drawn middle stroke, while the two drawn halves become crop plots, dirt roads, ponds, hay bales and tree rows. Every corner, culvert, field color and clump of trees west of the canal appears east of it in reverse order, with no map marks or labels.",
+      "judge": {
+        "passed": true,
+        "problems": ""
+      }
+    },
+    {
+      "name": "koi_pond_print",
+      "skel": "mirror",
+      "size": "1024x1024",
+      "prompt_body": "A Japanese woodblock print of a quiet koi pond seen from above: one vertical reed stalk at center becomes the drawn middle stroke. The two drawn halves become koi, lily pads, fallen petals, ripples and stones. Each fish curve, leaf tear and petal cluster on the left is placed on the right in backward order, using indigo water, vermilion fish and pale cream paper.",
+      "judge": {
+        "passed": true,
+        "problems": ""
+      }
+    },
+    {
+      "name": "coral_tidepool",
+      "skel": "mirror",
+      "size": "1536x1024",
+      "prompt_body": "A macro underwater photograph of a shallow tidepool in clear turquoise light: a straight blade of seagrass at center becomes the drawn middle stroke. The two drawn halves become coral branches, tiny fish, shells, bubbles and sand ridges. Every fork, shell chip and fish position on one side appears across the grass in backward order, held still by glassy water.",
+      "judge": {
+        "passed": true,
+        "problems": ""
+      }
+    },
+    {
+      "name": "hotel_staircase",
+      "skel": "mirror",
+      "size": "1536x1024",
+      "prompt_body": "A crisp Art Deco architectural photograph of a grand double staircase in a marble hotel lobby, seen straight from the entrance: the vertical central carpet is the hinge, the left drawn half becomes one banister, landing edge, lamp row, and potted palms; the right drawn half repeats those same items in reverse order at equal distances, every kink and endpoint paired across the carpet. Warm amber lights, green marble, no people.",
+      "judge": {
+        "passed": true,
+        "problems": ""
+      }
+    }
+  ],
+  "recursion": [
+    {
+      "name": "leaf_veins_macro",
+      "skel": "tree",
+      "size": "1024x1536",
+      "prompt_body": "Shoot a macro photograph of a single translucent amber leaf on a light table: the thick midrib follows the trunk, and every drawn fork becomes a side vein splitting into smaller veinlets. Each child vein is thinner than its parent, following the drawn angle and length, ending in tiny pale tips. Exclude cross veins, holes, dew, insects, and any extra marks.",
+      "judge": {
+        "passed": true,
+        "problems": ""
+      }
+    },
+    {
+      "name": "candle_wax_oil",
+      "skel": "tree_v3",
+      "size": "1024x1536",
+      "prompt_body": "Paint a classical oil still life of ivory candle wax running down a dark bronze holder: the main wax stream occupies the trunk, and every drawn fork becomes a split into two thinner rivulets. Each smaller rivulet follows the exact drawn direction, tapering until it ends as a bead of wax. Use warm lamplight, deep shadows, and no additional drips.",
+      "judge": {
+        "passed": true,
+        "problems": ""
+      }
+    },
+    {
+      "name": "snow_paths_woodblock",
+      "skel": "tree_v2",
+      "size": "1536x1024",
+      "prompt_body": "Make a Japanese woodblock print of a snowy hillside at blue dusk: one dark trodden path rises from the lower edge where the trunk is, and every drawn fork becomes a fork in the footpath. The paths become narrower and lighter with each split, ending as tiny footprints at the tips. Preserve the unequal spacing and angles, with untouched snow elsewhere.",
+      "judge": {
+        "passed": true,
+        "problems": ""
+      }
+    },
+    {
+      "name": "seaweed_ink",
+      "skel": "tree",
+      "size": "1024x1536",
+      "prompt_body": "Create a spare sumi-e ink drawing of black seaweed on cream paper: the thick lower stalk stands where the trunk is, and every drawn fork becomes a split into slimmer seaweed fronds. Each frond tapers through the same drawn sequence until the smallest brush tips stop. Let ink density fade outward, but add no stray fronds, bubbles, stones, or calligraphy.",
+      "judge": {
+        "passed": true,
+        "problems": ""
+      }
+    },
+    {
+      "name": "fiber_optic_long_exposure",
+      "skel": "tree_v3",
+      "size": "1536x1024",
+      "prompt_body": "Stage a long-exposure studio photograph of glowing fiber-optic cables on matte black cloth: the bright main cable follows the trunk, and every drawn fork becomes a Y-shaped connector sending light into thinner cables. Each cable dims and narrows as it proceeds to the next split, ending in tiny colored points. Keep all other cables hidden and avoid any extra crossings.",
+      "judge": {
+        "passed": true,
+        "problems": ""
+      }
+    },
+    {
+      "name": "gold_thread_embroidery",
+      "skel": "tree_v2",
+      "size": "1024x1024",
+      "prompt_body": "Create a Victorian embroidery panel on deep green velvet: a thick raised gold cord follows the trunk, and every drawn fork becomes a sewn split into two finer gold threads. Each thread keeps the drawn bend, length, and uneven fork angle, then tapers to a small knot at the tip. Use subtle red silk shading, with no extra stitches outside the traced form.",
+      "judge": {
+        "passed": true,
+        "problems": ""
+      }
+    },
+    {
+      "name": "red_coral_macro",
+      "skel": "tree_v2",
+      "size": "1024x1536",
+      "prompt_body": "Paint a luminous underwater macro photograph of red coral on dark teal water: one thick coral stalk rises where the trunk is, every fork in the guide becomes a fork in the coral, and each outgoing piece continues as a slimmer coral limb. The same two-way division repeats through larger limbs, smaller twigs, and finally tiny rounded polyps at the tips, with no extra offshoots, bubbles, fish, or text.",
+      "judge": {
+        "passed": true,
+        "problems": ""
+      }
+    }
+  ],
+  "cycle": [
+    {
+      "name": "atoll_lagoon",
+      "skel": "ring",
+      "size": "1024x1024",
+      "prompt_body": "A high-altitude satellite view of coral islets: every arc of the reference becomes a chain of separate sandy motu enclosing one turquoise lagoon; each pointed mark becomes a shallow channel notch aimed toward the next islet, all at the same distance from the calm middle water. The final channel opens back to the first beach with matching width, color, and scale, with no roads, signs, letters, or boats.",
+      "judge": {
+        "passed": true,
+        "problems": ""
+      }
+    },
+    {
+      "name": "oak_year",
+      "skel": "ring_v2",
+      "size": "1536x1024",
+      "prompt_body": "A large-format photographic montage of the same oak in one meadow: every equal segment of the reference becomes one same-sized image placed about an empty sky-blue middle, early blossoms leading to dense green leaves, then orange foliage, then bare snowy branches, with windblown leaves showing the travel direction. The snowy image touches an early-blossom image identical in camera height and scale, no captions or borders with words.",
+      "judge": {
+        "passed": true,
+        "problems": ""
+      }
+    },
+    {
+      "name": "mountain_water",
+      "skel": "ring_v3",
+      "size": "1024x1536",
+      "prompt_body": "A traditional black-ink landscape on rice paper: each curved part of the reference becomes one water event arranged about a blank misty center, sea vapor rising to clouds, clouds raining on mountains, rain entering brooks, brooks joining a river, the river reaching the sea. Each pointed mark becomes a brushstroke of flowing water aimed to the next event; the sea at the end matches the first sea wash exactly.",
+      "judge": {
+        "passed": true,
+        "problems": ""
+      }
+    },
+    {
+      "name": "pollen_bees",
+      "skel": "ring",
+      "size": "1024x1024",
+      "prompt_body": "A macro garden photograph with shallow focus: every bend of the reference becomes a trail of golden pollen grains between six different blossoms set about a soft dark middle; each pointed mark becomes a hovering bee angled toward the next flower. The last bee approaches the first blossom at the same height and size as the opening bee, with equal blossoms, natural dew, no tags, no printed marks.",
+      "judge": {
+        "passed": true,
+        "problems": ""
+      }
+    },
+    {
+      "name": "candle_courtyard",
+      "skel": "ring_v2",
+      "size": "1536x1024",
+      "prompt_body": "A long-exposure night photograph in a stone courtyard: every segment of the reference becomes a person holding a plain wax candle, passing flame to the next person along a closed round path about the unlit fountain. Each pointed mark becomes a warm light streak from one wick to the next. The final streak lights the first candle from the same side and distance, all figures equally sized, no banners or writing.",
+      "judge": {
+        "passed": true,
+        "problems": ""
+      }
+    },
+    {
+      "name": "tea_rain",
+      "skel": "ring_v3",
+      "size": "1024x1536",
+      "prompt_body": "An Edo-period woodblock print in indigo, moss green, and muted red: each section of the reference becomes one tea-making scene around a pale empty pond, rain feeding tea shrubs, hands picking leaves, steam softening leaves, rolled leaves drying, hot water brewing tea, steam rising to rainclouds. Each pointed mark becomes a drifting ribbon of vapor or leaf motion aimed onward; the last cloud matches the first raincloud in scale.",
+      "judge": {
+        "passed": true,
+        "problems": ""
+      }
+    },
+    {
+      "name": "clay_workshop",
+      "skel": "ring",
+      "size": "1536x1024",
+      "prompt_body": "Place four or more equal pottery-workshop stations in a clear one-way chain around an open floor, with no center table, wheel, kiln, or person dominating the scene. Start at a wet clay bowl, then move through throwing, glazing, firing, and shard grinding, using visible motion cues from one station to the next. The final station must return to the same wet clay bowl, unchanged in size, color, and viewpoint, so the path visibly comes back to its start.",
+      "judge": {
+        "passed": true,
+        "problems": ""
+      },
+      "regen": 2
+    },
+    {
+      "name": "crop_fields",
+      "skel": "ring_v2",
+      "size": "1024x1024",
+      "prompt_body": "A crisp aerial photograph of farm plots around a small round pond: each segment of the reference becomes one equal wedge of land, stubble, grazing sheep, dark plowed soil, new shoots, ripe grain, and cut stubble again. Each pointed mark becomes tractor tracks curving toward the next field. The last harvested wedge touches the first stubble wedge with identical tone and scale, no road signs, map marks, or numbers.",
+      "judge": {
+        "passed": true,
+        "problems": ""
+      }
+    }
+  ],
+  "alternation": [
+    {
+      "name": "harbor_buoys",
+      "skel": "chain",
+      "size": "1536x1024",
+      "prompt_body": "Along one taut floating rope in a calm harbor, place at least 8 round buoys evenly spaced from left to right, and make them alternate by color without exception: orange, white, orange, white, orange, white, orange, white. There must be only these two colors on the rope, no two neighboring buoys may match, no extra buoys may appear nearby, and the line should read clearly across the water in a natural seaside scene.",
+      "judge": {
+        "passed": true,
+        "problems": ""
+      },
+      "regen": 1
+    },
+    {
+      "name": "orchard_crates",
+      "skel": "chain_v2",
+      "size": "1024x1536",
+      "prompt_body": "A warm documentary photograph inside an old apple storehouse: each drawn node is a wooden fruit crate placed on the dusty floor, and each drawn link is a narrow plank touching the next crate. The crates switch without exception between two contents, bright red apples then pale green pears then red apples again, following the reference positions exactly, with bare floor around them and no signage.",
+      "judge": {
+        "passed": true,
+        "problems": ""
+      }
+    },
+    {
+      "name": "reef_coral_markers",
+      "skel": "chain_v3",
+      "size": "1536x1024",
+      "prompt_body": "On a single gently curving trail in wet sand, place 10 small stones in one exact chain: lavender sponge-covered stone, bare cream limestone, lavender, cream, lavender, cream, lavender, cream, lavender, cream. Every stone must alternate one by one with no exception, so no two neighboring stones ever match and the last stone must be the opposite of the one before it. Keep the stones evenly spaced, same size, and make the beach otherwise calm and natural.",
+      "judge": {
+        "passed": true,
+        "problems": ""
+      },
+      "regen": 2
+    },
+    {
+      "name": "courtly_chess_pawns",
+      "skel": "chain_v2",
+      "size": "1536x1024",
+      "prompt_body": "A quiet oil painting in a Renaissance study, seen from above a walnut table: each drawn node becomes a carved chess pawn standing at the marked place, and each drawn link is a thin golden cord laid between neighboring pawns. The pawns are only ivory then ebony then ivory again, in strict turn from one end to the other, with no other chessmen present and no writing on the table.",
+      "judge": {
+        "passed": true,
+        "problems": ""
+      }
+    },
+    {
+      "name": "tea_cups_woodblock",
+      "skel": "chain_v3",
+      "size": "1024x1536",
+      "prompt_body": "A Japanese woodblock print of a tea room shelf in muted indigo, tan, and cinnabar: every drawn node is a small teacup on the shelf, while each drawn link is the shelf edge segment connecting one cup to the next. The cups switch perfectly between blue glaze and unglazed brown clay, blue then brown then blue, with identical spacing from the reference and no extra cups elsewhere.",
+      "judge": {
+        "passed": true,
+        "problems": ""
+      }
+    },
+    {
+      "name": "night_market_awning",
+      "skel": "chain_v2",
+      "size": "1536x1024",
+      "prompt_body": "Show a covered market walkway with at least 8 evenly spaced awning panels in a single row. The panels must follow one strict pattern with no exceptions: amber, blue, amber, blue, amber, blue, amber, blue, and so on, with no two adjacent panels ever matching and no third color anywhere. Keep the scene natural and photographic, with wet pavement reflections, hanging hardware between panels, and no signs, labels, or extra objects that could interrupt the sequence.",
+      "judge": {
+        "passed": true,
+        "problems": ""
+      },
+      "regen": 1
+    },
+    {
+      "name": "macaron_counter",
+      "skel": "chain_v2",
+      "size": "1536x1024",
+      "prompt_body": "On a glass pastry counter, place exactly 8 macarons in one straight line, evenly spaced from left to right. Their colors must switch with every single macaron: green, pink, green, pink, green, pink, green, pink. No two neighbors may share a color, and every second macaron must match the one two places away. Keep the scene realistic, with only the pastries, counter reflections, and soft shop lighting.",
+      "judge": {
+        "passed": true,
+        "problems": ""
+      },
+      "regen": 1
+    },
+    {
+      "name": "mountain_stepping_stones",
+      "skel": "chain_v3",
+      "size": "1024x1536",
+      "prompt_body": "A quiet Edo-period woodblock print of a narrow mountain stream crossed by flat stepping stones: every drawn node becomes one stone, ordered from foreground to misty distance, taking strict turns as dark wet basalt then pale dry granite, then dark basalt again. Each drawn segment is the visible strip of water between adjacent stones. The turn is unbroken across the whole crossing, with reeds and banks kept away from the stone centers, no writing or seals.",
+      "judge": {
+        "passed": true,
+        "problems": ""
+      }
+    }
+  ],
+  "spiral": [
+    {
+      "name": "succulent_leaf_macro",
+      "skel": "logspiral",
+      "size": "1024x1024",
+      "prompt_body": "A crisp macro photograph of a blue-green succulent seen from directly above: the row of leaf tips follows exactly the reference curve, the inner tip a tiny spear and each outward tip broader. Every drawn bend becomes a fleshy leaf edge, and each time the tips return to the same compass direction they sit a fixed ratio farther from the center, never matching an earlier scale.",
+      "judge": {
+        "passed": true,
+        "problems": ""
+      }
+    },
+    {
+      "name": "vineyard_road",
+      "skel": "logspiral_v2",
+      "size": "1536x1024",
+      "prompt_body": "An autumn aerial photograph of a hillside vineyard: a pale service road follows exactly the reference curve through red and gold rows, starting at a small hut and widening outward across the slope. Every drawn segment becomes the road centerline between vines, and each time the road faces the same compass direction it lies a fixed ratio farther from the hut than the previous pass.",
+      "judge": {
+        "passed": true,
+        "problems": ""
+      }
+    },
+    {
+      "name": "cinnamon_bun",
+      "skel": "logspiral_v3",
+      "size": "1024x1024",
+      "prompt_body": "A warm macro food photograph of a cinnamon bun on parchment: the dark cinnamon seam follows exactly the reference curve from the tight inner tuck to the broad outer crust. Every drawn bend becomes a glossy seam in the dough, and each time the seam points in the same compass direction it is a fixed ratio farther from the middle than before.",
+      "judge": {
+        "passed": true,
+        "problems": ""
+      }
+    },
+    {
+      "name": "violin_pegbox",
+      "skel": "logspiral",
+      "size": "1024x1536",
+      "prompt_body": "An old-master oil painting of a baroque violin pegbox on a velvet table: the raised maple ridge follows exactly the reference curve, beginning as a tight inner hook and growing into the outer cheek. Every drawn segment becomes a carved ridge with amber varnish, and each time it points the same compass direction it is a fixed ratio larger, never returning to an old size.",
+      "judge": {
+        "passed": true,
+        "problems": ""
+      }
+    },
+    {
+      "name": "sea_eddy",
+      "skel": "logspiral_v2",
+      "size": "1536x1024",
+      "prompt_body": "A nineteenth-century Japanese woodblock print of a sea eddy beside black rocks: the white foam crest follows exactly the reference curve, starting at a dark calm eye and sweeping outward through indigo water. Every drawn bend becomes a jagged foam edge, and each time the crest reaches the same compass direction its distance from the eye has grown by the same ratio.",
+      "judge": {
+        "passed": true,
+        "problems": ""
+      }
+    },
+    {
+      "name": "ram_horn",
+      "skel": "logspiral_v3",
+      "size": "1024x1024",
+      "prompt_body": "A sparse ink drawing of an old ram skull on handmade paper: the outer edge of one horn follows exactly the reference curve, from the small blunt core to the heavy weathered tip. Every drawn bend becomes a dark brush contour on horn keratin, and each time the contour returns to the same compass direction it is enlarged by one constant ratio.",
+      "judge": {
+        "passed": true,
+        "problems": ""
+      }
+    },
+    {
+      "name": "ember_dancer",
+      "skel": "logspiral",
+      "size": "1536x1024",
+      "prompt_body": "A night long-exposure photograph of a dancer on wet pavement: one ember trail follows exactly the reference curve, beginning near the dancer's hand and arcing outward in warm orange light. Every drawn segment becomes a continuous streak of fire, and each time the streak reaches the same compass direction it is a fixed ratio farther from the hand than on the prior pass.",
+      "judge": {
+        "passed": true,
+        "problems": ""
+      }
+    },
+    {
+      "name": "carpet_vine",
+      "skel": "logspiral_v2",
+      "size": "1024x1024",
+      "prompt_body": "A studio close-up of an antique Persian carpet corner, where a single saffron vine winds outward from a tiny bud and completes at least three full turns. Each time the stem comes back to the same facing direction, it must be clearly larger by the same fixed ratio, so the third turn is unmistakably bigger than the second and the second bigger than the first. Keep the growth obvious, not a same-width coil.",
+      "judge": {
+        "passed": true,
+        "problems": ""
+      },
+      "regen": 1
+    }
+  ],
+  "bottleneck": [
+    {
+      "name": "mangrove_culvert",
+      "skel": "dumbbell",
+      "size": "1536x1024",
+      "prompt_body": "A high satellite view of two mangrove lagoons divided by a raised sand road: every drawn line inside the left cluster becomes a winding tidal creek among dark green roots, and every drawn line inside the right cluster becomes its own creek system. All water routes from one lagoon to the other squeeze through the same small culvert under the road, then spread outward again into separate channels. No boats, signs, labels, or markings.",
+      "judge": {
+        "passed": true,
+        "problems": ""
+      }
+    },
+    {
+      "name": "courtyard_moon_gate",
+      "skel": "dumbbell",
+      "size": "1024x1024",
+      "prompt_body": "A late Qing courtyard painting in mineral greens and warm stone: each drawn branch on the left becomes a paved garden walk linking pavilions, wells, and bamboo beds; each drawn branch on the right becomes another set of walks among plum trees and benches. The two courtyards touch at one single round-topped doorway in the dividing wall, and every walk between sides passes through that doorway before splitting again. No calligraphy or seals.",
+      "judge": {
+        "passed": true,
+        "problems": ""
+      }
+    },
+    {
+      "name": "ant_farm_throat",
+      "skel": "dumbbell",
+      "size": "1024x1536",
+      "prompt_body": "A macro photograph through glass of a vertical ant farm, amber sand against a dark studio background: every drawn segment in the upper colony becomes a clean tunnel joining several busy chambers, and every drawn segment in the lower colony becomes another connected set of tunnels. Between them is one narrow throat packed with ants; all travel from upper to lower chambers passes through that same throat, then fans into the lower tunnels. No labels or measuring marks.",
+      "judge": {
+        "passed": true,
+        "problems": ""
+      }
+    },
+    {
+      "name": "rail_yard_switch",
+      "skel": "dumbbell",
+      "size": "1536x1024",
+      "prompt_body": "A 1930s industrial freight scene with two busy rail yards on opposite sides of a long warehouse wall. Each yard is densely interconnected with tracks, switches, sidings, sheds, and parked wagons. The only way from one yard to the other is a single narrow service opening in one central warehouse doorway; every crossing route must pass through that same opening, and there is no other bridge, gap, corridor, or passage anywhere else.",
+      "judge": {
+        "passed": true,
+        "problems": ""
+      },
+      "regen": 1
+    },
+    {
+      "name": "reef_cut",
+      "skel": "dumbbell",
+      "size": "1536x1024",
+      "prompt_body": "Every route from the left coral garden to the right coral garden must pass through one tiny notch in the pale sand ridge, and there is no other gap, tunnel, or shortcut anywhere. Inside each garden, many branching coral lanes and rock passages interconnect densely. The scene is a vivid underwater photograph: two rich reef clusters on either side of the ridge, with the single notch as the only place where fish can move from one side to the other.",
+      "judge": {
+        "passed": true,
+        "problems": ""
+      },
+      "regen": 1
+    },
+    {
+      "name": "market_arcade",
+      "skel": "dumbbell",
+      "size": "1024x1024",
+      "prompt_body": "Build the scene as two crowded market halls packed with many cross-aisles and side paths inside each hall, so shoppers can move around freely within the left half and within the right half. Between the two halls, include exactly one narrow stone archway and no other opening, gap, bridge, or side route. Every trip from one hall to the other must pass through that single archway, and if it were blocked, the two halls would remain separate but still fully walkable inside.",
+      "judge": {
+        "passed": true,
+        "problems": ""
+      },
+      "regen": 1
+    },
+    {
+      "name": "snowshoe_pass",
+      "skel": "dumbbell",
+      "size": "1536x1024",
+      "prompt_body": "A blue-hour aerial photograph of fresh snow over two forest clearings separated by a rocky ridge: each drawn line on the left becomes a packed snowshoe trail connecting cabins, woodpiles, and pines; each drawn line on the right becomes a separate web of trails around tents and sleds. All tracks between clearings merge at one low notch in the ridge, cross that notch, then split apart again. No signposts, words, or painted markers.",
+      "judge": {
+        "passed": true,
+        "problems": ""
+      }
+    },
+    {
+      "name": "cave_lanterns",
+      "skel": "dumbbell",
+      "size": "1024x1536",
+      "prompt_body": "A chiaroscuro ink drawing of two limestone cave halls lit by hand lanterns: each drawn line in the upper hall becomes a dry walkway between stalagmites and pools, and each drawn line in the lower hall becomes its own connected set of walkways. The sole way from one hall to the other is a waist-high squeeze in the central rock wall; every walkway route passes through that squeeze before branching onward. No inscriptions or arrows.",
+      "judge": {
+        "passed": true,
+        "problems": ""
+      }
+    }
+  ],
+  "convergence": [
+    {
+      "name": "rail_terminal",
+      "skel": "funnel",
+      "size": "1536x1024",
+      "prompt_body": "A crisp aerial photograph of a desert rail yard at sunrise: every drawn line is a steel track starting alone among scrub, each drawn fork is a switch where two tracks become one, and the united track ends at one roofed terminal shed with bumper posts. No rails continue beyond the shed, and there are no signs, letters, or labels.",
+      "judge": {
+        "passed": true,
+        "problems": ""
+      }
+    },
+    {
+      "name": "pilgrim_temple",
+      "skel": "funnel",
+      "size": "1024x1536",
+      "prompt_body": "A misty mountain footpath scene with at least seven separate narrow trails starting far apart from different hamlets and terraces. Show each trail traveling independently, then joining only two at a time at clear stone crossings, so the merges are easy to count. Keep combining those shared paths until exactly one temple gate on the summit receives all of them. The gate is the final stop: sheer cliff, cloud, and empty sky lie beyond it, with no path continuing past.",
+      "judge": {
+        "passed": true,
+        "problems": ""
+      },
+      "regen": 1
+    },
+    {
+      "name": "ant_nest",
+      "skel": "funnel",
+      "size": "1024x1024",
+      "prompt_body": "A sharp macro nature photograph of pale sand: each drawn line is a dark trail of ants moving from its own crumb or seed, each drawn fork is where two ant columns meet and continue as one thicker column, and every column disappears into the same round nest entrance at the lower edge. No ants emerge past that hole, and the sand has no marks or lettering.",
+      "judge": {
+        "passed": true,
+        "problems": ""
+      }
+    },
+    {
+      "name": "lightning_rod",
+      "skel": "funnel",
+      "size": "1536x1024",
+      "prompt_body": "A dramatic long-exposure night photograph over a lonely barn: the drawn upper tips are separate cloud patches, each drawn line is a bright lightning channel, each drawn fork is where two channels meet and continue as one, and the last channel ends on a single metal rod atop the roof. The strike stops there, with black fields beyond and no signs or words.",
+      "judge": {
+        "passed": true,
+        "problems": ""
+      }
+    },
+    {
+      "name": "paint_cup",
+      "skel": "funnel",
+      "size": "1024x1024",
+      "prompt_body": "A studio macro photograph of a tilted white enamel tray: each drawn line is a ribbon of colored paint sliding from its own drip at the rim, each drawn fork is the wet place where ribbons mix and become a wider stream, and all paint pours into one small cup at the lower edge and stops there. The tabletop beyond is clean, with no writing.",
+      "judge": {
+        "passed": true,
+        "problems": ""
+      }
+    },
+    {
+      "name": "ski_lodge",
+      "skel": "funnel",
+      "size": "1536x1024",
+      "prompt_body": "Show a snowy mountain slope with at least six separate ski tracks beginning far apart on different ridges. The tracks descend independently, then meet in visible pairings and combine into fewer tracks until every line ends at one single lodge doorway at the bottom. The doorway is the only endpoint: all tracks stop there and nothing continues past it. Use a Japanese woodblock look with cobalt shadows and vermilion accents, but no signs, captions, or people.",
+      "judge": {
+        "passed": true,
+        "problems": ""
+      },
+      "regen": 1
+    },
+    {
+      "name": "mill_belts",
+      "skel": "funnel",
+      "size": "1536x1024",
+      "prompt_body": "A documentary photograph inside an old textile mill: each drawn line is a narrow cloth conveyor coming from a separate loom, each drawn fork is a transfer table where two belts feed one belt, and the last belt drops all fabric into one open packing crate at the back wall. No belt exits the crate, and the walls and machines carry no visible lettering.",
+      "judge": {
+        "passed": true,
+        "problems": ""
+      }
+    },
+    {
+      "name": "candle_wax",
+      "skel": "funnel",
+      "size": "1024x1536",
+      "prompt_body": "Show six or more separate wax drips starting far apart on a long candlelit table, each drip beginning at its own candle and traveling on its own narrow metal channel. Let the channels join only two at a time, then join again, until every stream ends in one small stone cup at the center. The cup is the final stop: wax collects there and nothing continues past it. Keep it like a real still life, with no labels or diagram style.",
+      "judge": {
+        "passed": true,
+        "problems": ""
+      },
+      "regen": 1
+    }
+  ],
+  "symmetry_breaking": [
+    {
+      "name": "broken_solar_panel",
+      "skel": "field",
+      "size": "1536x1024",
+      "prompt_body": "A crisp modern satellite image of a desert solar farm: every drawn square becomes one identical blue-black panel, set at the same tilt and distance across the whole view, except at the drawn black circle, where exactly one panel is pale and shattered. All other panels stay intact, equal in size, and evenly placed, with bare sand between them.",
+      "judge": {
+        "passed": true,
+        "problems": ""
+      }
+    },
+    {
+      "name": "red_beach_umbrella",
+      "skel": "field_v2",
+      "size": "1024x1024",
+      "prompt_body": "A bright midday aerial photograph of a crowded beach seen straight down: every drawn square becomes one closed yellow umbrella with the same shadow and spacing on clean sand, except at the drawn black circle, where exactly one umbrella is open and crimson. Towels, footprints, and waves stay outside the repeated area, leaving all other umbrellas identical.",
+      "judge": {
+        "passed": true,
+        "problems": ""
+      }
+    },
+    {
+      "name": "burnt_bun",
+      "skel": "field_v3",
+      "size": "1024x1536",
+      "prompt_body": "A warm macro photograph of a bakery cooling rack: every drawn square becomes one glossy sesame bun, same size, same golden crust, placed in orderly rows, except at the drawn black circle, where exactly one bun is charred black. The metal rack is plain and clean, and no other bun is split, tilted, darker, or missing.",
+      "judge": {
+        "passed": true,
+        "problems": ""
+      }
+    },
+    {
+      "name": "blue_roof_tile",
+      "skel": "field",
+      "size": "1536x1024",
+      "prompt_body": "A flat-color Japanese woodblock print of a broad temple roof: every drawn square becomes one terracotta roof tile, all facing the same way and cut to the same size, except at the drawn black circle, where exactly one tile is glazed cobalt blue. The sky is empty, the roof edge is straight, and every other tile remains red clay.",
+      "judge": {
+        "passed": true,
+        "problems": ""
+      }
+    },
+    {
+      "name": "dark_lit_window",
+      "skel": "field_v2",
+      "size": "1024x1536",
+      "prompt_body": "A long-exposure night photograph of a glass apartment facade: every drawn square becomes one warm lit window, all equal in shape and brightness, stacked across the wall, except at the drawn black circle, where exactly one window is dark with a single red curtain visible. Reflections are faint and uniform, and every other window glows the same amber.",
+      "judge": {
+        "passed": true,
+        "problems": ""
+      }
+    },
+    {
+      "name": "empty_seed_cell",
+      "skel": "field",
+      "size": "1024x1024",
+      "prompt_body": "A soft natural-light photograph of a greenhouse seed tray from above: every drawn square becomes one dark soil cell holding the same tiny pair of green leaves, except at the drawn black circle, where exactly one cell is bare dry soil. The tray walls are clean, the leaves match in height, and no second cell is empty or wilted.",
+      "judge": {
+        "passed": true,
+        "problems": ""
+      }
+    },
+    {
+      "name": "black_teacup",
+      "skel": "field_v2",
+      "size": "1536x1024",
+      "prompt_body": "A contemporary overhead studio photograph of porcelain teacups on a white table: every drawn square becomes one cup filled with clear pale tea, identical handle direction and spacing, except at the drawn black circle, where exactly one cup holds opaque black coffee. The saucers are all plain white, and every other cup remains unchanged.",
+      "judge": {
+        "passed": true,
+        "problems": ""
+      }
+    },
+    {
+      "name": "salt_pan_anomaly",
+      "skel": "field_v2",
+      "size": "1536x1024",
+      "prompt_body": "A photorealistic aerial photograph of a vast salt farm arranged in a strict array of shallow rectangular basins: every drawn square becomes one pale basin with thin silver water and white crusted edges, and every drawn line becomes a straight earthen dike between basins. At the drawn black circle, one basin is flooded with vivid rose brine and a single blue tarp, the only departure anywhere.",
+      "judge": {
+        "passed": true,
+        "problems": ""
+      }
+    }
+  ],
+  "self_reference": [
+    {
+      "name": "camera_lcd",
+      "skel": "frames",
+      "size": "1536x1024",
+      "prompt_body": "A crisp late-1990s color photograph in a small apartment studio: the outermost rectangle is the printed photo edge, the next rectangle is the camera back, and the innermost rectangle is the glowing LCD. That LCD shows this exact photo’s event: the same hands holding the same camera at this instant, with the same LCD content reduced to a single bright patch, not readable as another scene, no lettering anywhere.",
+      "judge": {
+        "passed": true,
+        "problems": ""
+      }
+    },
+    {
+      "name": "tailor_sampler",
+      "skel": "frames_v2",
+      "size": "1024x1536",
+      "prompt_body": "A framed embroidery hoop hanging above the antique tailor’s worktable must show a clear miniature view of this exact room: the same cream linen cloth, rust border, indigo panels, scissors, thimble, and spool in the same positions, so the picture reads as the whole scene seen again once. Keep it natural and realistic, with no text, labels, or diagram look, and no second copy inside the copy.",
+      "judge": {
+        "passed": true,
+        "problems": ""
+      },
+      "regen": 1
+    },
+    {
+      "name": "greenhouse_pane",
+      "skel": "frames_v3",
+      "size": "1024x1024",
+      "prompt_body": "A rainy Edwardian greenhouse scene painted in soft oil colors: the outer rectangle is the glass wall seen head-on, the next rectangle is a fogged pane cleaned by a gardener’s sleeve, and the remaining rectangles are pane edges within that clear area. The cleared pane contains a painted view of this exact greenhouse wall, gardener, plants, and wiped pane, matching every object placement, with its carried view stopping as wet glass shimmer.",
+      "judge": {
+        "passed": true,
+        "problems": ""
+      }
+    },
+    {
+      "name": "market_awning",
+      "skel": "frames",
+      "size": "1536x1024",
+      "prompt_body": "A sunlit aerial photograph of a seaside produce market, teal shadows and orange crates: the outermost rectangle is the whole plaza boundary, the next rectangle is a striped vendor awning, and the inner rectangle is a printed cloth laid on that stall. The cloth image is the same plaza seen from above, including that stall, awning, crates, and cloth, agreeing item for item; the cloth’s own center becomes plain woven color, no words.",
+      "judge": {
+        "passed": true,
+        "problems": ""
+      }
+    },
+    {
+      "name": "chocolate_plaque",
+      "skel": "frames",
+      "size": "1536x1024",
+      "prompt_body": "A framed picture in the scene must show the entire same kitchen-counter scene, not just the chocolate bar: the ivory-and-espresso counter, parchment, bitten chocolate bar with almond flecks, warm lighting, and the same frame and background objects all visible together in the picture. The picture should be clearly recognizable as a copy of this whole view, and nothing inside that picture should show the scene again. Keep it as a natural tabletop still life with no text, labels, or diagram-like styling.",
+      "judge": {
+        "passed": true,
+        "problems": ""
+      },
+      "regen": 2
+    },
+    {
+      "name": "salt_barge",
+      "skel": "frames_v2",
+      "size": "1024x1024",
+      "prompt_body": "A cozy sunlit living room in warm beige and teal. The key requirement is a framed picture on the wall that clearly shows this same living room from the same angle: the same sofa, floor lamp, window, rug, coffee table, and plant, all arranged exactly like the real scene so it reads as the whole image inside the frame. Inside that framed picture, there is no smaller copy and no extra frame, only the single plain room view. No text or labels.",
+      "judge": {
+        "passed": true,
+        "problems": ""
+      },
+      "regen": 1
+    },
+    {
+      "name": "puppet_booth",
+      "skel": "frames_v3",
+      "size": "1024x1536",
+      "prompt_body": "An 18th-century oil painting with umber shadows and tarnished gold: the outer drawn rectangle is the front opening of a puppet booth; the next drawn rectangle is the little painted backdrop behind the puppets. That backdrop depicts this exact booth, the same red curtains, carved fox puppet, puppeteer's hands, candles, and backdrop; every remaining drawn rectangle is that depicted backdrop returning to the visible backdrop, not another tiny stage.",
+      "judge": {
+        "passed": true,
+        "problems": ""
+      }
+    },
+    {
+      "name": "sushi_tray",
+      "skel": "frames",
+      "size": "1536x1024",
+      "prompt_body": "A top-down Meiji-style sushi-tray scene in indigo, salmon, and rice-paper cream. The main tray, chopsticks, ginger pile, rice grains, and seaweed sheet all appear exactly once. On the tray, a small framed print shows the entire same scene again from the same angle: the same tray, same food, same composition, clearly recognizable as the whole image itself. That framed copy is only one level deep and contains no smaller copy inside it.",
+      "judge": {
+        "passed": true,
+        "problems": ""
+      },
+      "regen": 1
+    }
+  ],
+  "strange_loop": [
+    {
+      "name": "newsroom_desks",
+      "skel": "ladder",
+      "size": "1024x1536",
+      "prompt_body": "The main line of the scene must be one unbroken newsroom path: a ground-floor copy desk rises through stacked desk tiers and balcony-like platforms, then the highest tier turns into a narrow catwalk that visibly descends back and lands on that same copy desk where it began. The return connection must be clear and dominant. Photorealistic black-and-white 1940s newsroom, with filing cabinets, desk lamps, ashtrays, and paper stacks.",
+      "judge": {
+        "passed": true,
+        "problems": ""
+      },
+      "regen": 2
+    },
+    {
+      "name": "court_bench",
+      "skel": "ladder_v2",
+      "size": "1536x1024",
+      "prompt_body": "Make the main composition a single visible ascent that returns to its start: in a courthouse interior, a clerk sits at the lowest bench, a bailiff stands one step above, a judge presides on a raised dais, and a lord watches from an upper gallery. One continuous wooden stair, railing, and balcony path must carry the eye all the way up, then through the top opening and back down to land beside the clerk’s bench where it began. Ukiyo-e woodblock print, indigo and vermilion, late Edo mood.",
+      "judge": {
+        "passed": true,
+        "problems": ""
+      },
+      "regen": 2
+    },
+    {
+      "name": "radio_booth",
+      "skel": "ladder_v3",
+      "size": "1024x1024",
+      "prompt_body": "A midnight radio studio whose main composition is one continuous, traceable path: start at the floor host booth, climb through glass editing booths, then balconies, then a raised control screen, and at the very top the path must visibly come back down and land beside the same host booth where it began. The top screen should show the original floor room below, and a clear stair or catwalk must connect top to bottom in plain sight. No signage, no diagrams, just the studio space.",
+      "judge": {
+        "passed": true,
+        "problems": ""
+      },
+      "regen": 2
+    },
+    {
+      "name": "glasshouse_bench",
+      "skel": "ladder",
+      "size": "1024x1536",
+      "prompt_body": "A single traceable path must climb from the damp potting bench on the ground floor to an upper catwalk, then continue into a glazed screen that shows the same bench below, so the highest level visibly returns to the start. In a warm Victorian greenhouse, gardeners, the curator, and the patron occupy each step and platform, each speaking about the next person up, while iron uprights, hanging ferns, and benches guide the eye along the returning route.",
+      "judge": {
+        "passed": true,
+        "problems": ""
+      },
+      "regen": 1
+    },
+    {
+      "name": "apartment_walkways",
+      "skel": "ladder_v2",
+      "size": "1536x1024",
+      "prompt_body": "Make the entire scene one continuous apartment-building climb that visibly returns to its starting point: an exterior stairway and balconies rise from the ground-floor courtyard to the top terrace, then the same stairway continues and descends back into that very courtyard, ending at the same entrance landing where it began. Keep this return path obvious, unbroken, and dominant in the composition. Show everyday residents, railings, windows, and warm evening light in a realistic hillside apartment block.",
+      "judge": {
+        "passed": true,
+        "problems": ""
+      },
+      "regen": 2
+    },
+    {
+      "name": "museum_carts",
+      "skel": "ladder_v3",
+      "size": "1024x1536",
+      "prompt_body": "In a museum storage room, make one continuous stair-and-catwalk path the main shape of the scene: it begins at a rolling cart on the floor, climbs through three stacked storage levels, and the top landing must connect back to that same cart with a visible stair or ramp that lands where it started. The highest shelf, bridge, and lower cart should be one unbroken route. A registrar on the cart speaks about a restorer, the restorer about a curator, and the curator back about the registrar.",
+      "judge": {
+        "passed": true,
+        "problems": ""
+      },
+      "regen": 2
+    },
+    {
+      "name": "hotel_doors",
+      "skel": "ladder",
+      "size": "1536x1024",
+      "prompt_body": "A small apartment stairwell must show one continuous, traceable route that rises through stairs, landings, and balcony railings, and the highest landing must visibly return to the exact bottom foyer by the same path, like a stair that climbs up and then lands where it began. The viewer should be able to follow the route without interruption from the entrance to the top and back to the starting tile. Everyday interior, warm morning light, no text or signs.",
+      "judge": {
+        "passed": true,
+        "problems": ""
+      },
+      "regen": 2
+    },
+    {
+      "name": "theater_catwalk",
+      "skel": "ladder_v2",
+      "size": "1024x1024",
+      "prompt_body": "Make the scene’s main structure a single visible stairway path that climbs from a dressing-room floor to an upper catwalk, then turns and comes back down to the exact same doorway where it started, so the top level clearly returns to the bottom in one traceable path. Keep it as a backstage theater with dusty rose walls, black ropes, work lights, and wooden railings. On the lower landing, an actor speaks about the director, the director about the playwright, and the playwright about the actor.",
+      "judge": {
+        "passed": true,
+        "problems": ""
+      },
+      "regen": 2
+    }
+  ],
+  "isomorphism": [
+    {
+      "name": "harbor_tram_depot",
+      "skel": "twographs",
+      "size": "1536x1024",
+      "prompt_body": "Make the image split into two realistic panels that share the exact same connection map. On the left, a fishing harbor: one quay leads to four piers, with the same two side slips and the same two final berths in the same order. On the right, a tram depot: one service lane leads to four shed roads, with the same two side pull-ins and the same two final bays in the same positions. Keep the path pattern identical, only the materials and objects differ.",
+      "judge": {
+        "passed": true,
+        "problems": ""
+      },
+      "regen": 1
+    },
+    {
+      "name": "rice_suburb",
+      "skel": "twographs",
+      "size": "1536x1024",
+      "prompt_body": "Show two separate side-by-side aerial panels with the exact same connection skeleton, just made from different things. In the left panel, use rice fields, irrigation ditches, small feeder channels, and tiny turning basins. In the right panel, place a new suburb with streets, driveways, little courts, and cul-de-sacs. Every junction, branch, and dead end must match one-for-one in the same positions, with the whole layout copied and only the materials changed.",
+      "judge": {
+        "passed": true,
+        "problems": ""
+      },
+      "regen": 1
+    },
+    {
+      "name": "seaweed_silk_shop",
+      "skel": "twographs",
+      "size": "1024x1024",
+      "prompt_body": "Create two side-by-side panels that must match node-for-node in connection pattern: every branch, junction, endpoint, and bend on the left must appear in the right panel at the same positions, only made from different materials and mirrored. Left panel: wet seaweed fronds spreading from one stem into smaller offshoots and curled tips. Right panel: a silk ribbon arrangement on hangers with matching main strips, ties, and folded ends. Keep the same number of parts and the same linking order in both halves.",
+      "judge": {
+        "passed": true,
+        "problems": ""
+      },
+      "regen": 1
+    },
+    {
+      "name": "cave_rail_yard",
+      "skel": "twographs",
+      "size": "1536x1024",
+      "prompt_body": "Show two side-by-side panels with a perfect one-to-one match in their connection skeletons: on the left, a cave tourist path with exactly the same number of junctions, side chambers, bends, and dead ends as the right panel’s freight rail yard with tracks, sidings, switches, and buffer stops. Each split on one side must line up with the matching split on the other, in the same layout, only the material changes from rock to steel and gravel. No labels or signs.",
+      "judge": {
+        "passed": true,
+        "problems": ""
+      },
+      "regen": 1
+    },
+    {
+      "name": "salt_parking_lot",
+      "skel": "twographs",
+      "size": "1536x1024",
+      "prompt_body": "A high-contrast woodblock print in indigo and ochre of salt pans on the left and a supermarket parking lot on the right. The left basins are cut by thin raised ridges into smaller basins, while the right asphalt is cut by painted islands into smaller bays; every fork in a channel becomes a fork in a lane, and every corner of a basin becomes a corner of a parking island.",
+      "judge": {
+        "passed": true,
+        "problems": ""
+      }
+    },
+    {
+      "name": "vineyard_village",
+      "skel": "twographs",
+      "size": "1536x1024",
+      "prompt_body": "Split the scene into two equal side-by-side halves with a hard visual divide. Left half: vineyard terraces at dusk with stone walls, dirt tracks, posts, and a few vines. Right half: a hillside village with stair streets, small houses, gates, and alleys. Every bend, junction, dead end, and endpoint on the left must appear once on the right in the exact same arrangement, only the materials change. No blending between halves.",
+      "judge": {
+        "passed": true,
+        "problems": ""
+      },
+      "regen": 1
+    },
+    {
+      "name": "filtration_corridor",
+      "skel": "twographs",
+      "size": "1536x1024",
+      "prompt_body": "An ink drawing washed with pale blue and gray of an aquarium filtration room on the left and a grocery back corridor on the right. The left pipes split into smaller tubes at the same places the right aisles split into stock lanes; each valve cluster matches a loading nook, and each terminal pipe cap matches a closed storage door. The linework keeps every turn and split in step.",
+      "judge": {
+        "passed": true,
+        "problems": ""
+      }
+    },
+    {
+      "name": "promenade_assembly_aisle",
+      "skel": "twographs",
+      "size": "1536x1024",
+      "prompt_body": "A chromogenic photograph of a coastal promenade on the left and a factory assembly aisle on the right, shot in bright overcast light. The promenade's railings split around each lookout recess exactly where the assembly aisle splits around each workbench island; every bench alcove matches one overlook, and every short spur from the path matches one short spur from the aisle. Nothing is added, removed, or shifted.",
+      "judge": {
+        "passed": true,
+        "problems": ""
+      }
+    }
+  ],
+  "figure_ground": [
+    {
+      "name": "rice_paddies",
+      "skel": "tessellation",
+      "size": "1536x1024",
+      "prompt_body": "Build the rice terraces so each dark flooded plot and each pale mist-filled gap share one exact contour and both read as real paddy shapes, not background: the empty channels must be as clearly shaped as the muddy fields. In the upper half, dark water plots are the figures and the pale gaps are their matching forms; in the lower half, keep the same terrace bends and order, but reverse which side reads as figure and which as gap. Dawn aerial view, muddy earth, silver haze, soft green fields.",
+      "judge": {
+        "passed": true,
+        "problems": ""
+      },
+      "regen": 2
+    },
+    {
+      "name": "salt_basins",
+      "skel": "tessellation_v2",
+      "size": "1024x1536",
+      "prompt_body": "From the first glance, the upper half is a field of pale salt basins shaped like shallow triangles, while the lower half must show the same triangle outlines as blue brine channels, so the top's white basins become the bottom's blue strips and the bottom's blue strips become the top's white basins. The dark and light shapes should both read as real connected forms, like interlocking birds and fish, not mere cracks. Chalk white, turquoise, dusty rose, crisp noon light, no extra land.",
+      "judge": {
+        "passed": true,
+        "problems": ""
+      },
+      "regen": 1
+    },
+    {
+      "name": "vineyard_hills",
+      "skel": "tessellation_v3",
+      "size": "1536x1024",
+      "prompt_body": "Fill the entire frame edge to edge with interlocking vineyard hillside rows, but make the empty lanes between the rows form clear, recognizable bird shapes that share the exact same outline as the dark vine masses. In the upper half, the vine rows are the visible figures and the bird-shaped gaps are the pale ground; in the lower half, that same arrangement flips so the bird shapes become the visible figures and the vine masses become the pale gaps, with every curve and spacing kept in the same order. Late-1970s color film, rust, gold, plum, deep green.",
+      "judge": {
+        "passed": true,
+        "problems": ""
+      },
+      "regen": 2
+    },
+    {
+      "name": "shipyard_night",
+      "skel": "tessellation",
+      "size": "1024x1024",
+      "prompt_body": "Make the night shipping yard do the job: the dark container stacks, crane booms, and aisle turns must be readable as one set of solid shapes, and the light gaps between them must read as the same stacks, booms, and turns using the exact same outlines. Pack the frame edge to edge so the upper half’s black forms return in the lower half as bright empty bays, with the same scene order preserved, not reversed or repeated as texture.",
+      "judge": {
+        "passed": true,
+        "problems": ""
+      },
+      "regen": 2
+    },
+    {
+      "name": "fish_racks",
+      "skel": "tessellation_v2",
+      "size": "1536x1024",
+      "prompt_body": "Make the whole print a rack of drying fish where every dark fish shape is matched by a fish-shaped pale gap, and every gap reads as a second fish, so the page is filled edge to edge with interlocking fish silhouettes. In the upper half, dark fish hang in rows with pale fish-shaped openings between them; in the lower half, that exact head-to-tail arrangement returns as pale fish with dark fish-shaped openings, not just a color swap. 1930s Japanese woodblock, indigo, bone, vermilion, crisp carved edges.",
+      "judge": {
+        "passed": true,
+        "problems": ""
+      },
+      "regen": 1
+    },
+    {
+      "name": "laundry_courtyard",
+      "skel": "tessellation_v3",
+      "size": "1024x1536",
+      "prompt_body": "Fill the whole frame with one laundry courtyard that reads in both directions at once: the dark shirts, sheets, and towels hanging across the upper half must have bright counterparts below with the exact same outlines, as if the lower half were cut from soot-dark walls and the gaps were also shirts and sheets. Keep the poles, cloth folds, and spacing in the same order throughout, so no part feels like empty background.",
+      "judge": {
+        "passed": true,
+        "problems": ""
+      },
+      "regen": 2
+    },
+    {
+      "name": "mushroom_trays",
+      "skel": "tessellation",
+      "size": "1024x1024",
+      "prompt_body": "Make the entire cellar read as interlocking mushroom caps and mushroom-shaped gaps, so the dark spaces are not background but clear cap forms with the same outline as the pale caps. Every tray gap should also look like a mushroom, and every mushroom shape should have a matching dark counterpart, filling the full frame. In the upper half, pale caps sit against dark compost; in the lower half, the same scene continues with those exact shapes taking the opposite tones in the same order. Cold blue, cream, earthy brown, damp and intimate.",
+      "judge": {
+        "passed": true,
+        "problems": ""
+      },
+      "regen": 2
+    },
+    {
+      "name": "canal_roofs",
+      "skel": "tessellation",
+      "size": "1536x1024",
+      "prompt_body": "In a canal-side street, the upper half must turn into the lower half’s pale cottage shapes, and the upper half’s gaps must become the lower half’s dark cottages, keeping the same left-to-right order. Every roofline, wall, and chimney outline should be readable as a house in both colors, so the light spaces are not background but houses too. Make the dark and light cottages lock together across the full frame in an Edo woodblock print palette of indigo, soot black, and bone white.",
+      "judge": {
+        "passed": true,
+        "problems": ""
+      },
+      "regen": 2
+    }
+  ],
+  "mobius": [
+    {
+      "name": "film_strip",
+      "skel": "band",
+      "size": "1536x1024",
+      "prompt_body": "The film strip must have one unmistakable half-twist: one visible section where the front surface turns over into the back surface, with the two sides clearly different in color and texture, and the strip crossing itself once before reaching the clamp again. After one full trip around the strip, the printed side should come back flipped left-to-right; only after a second trip should it match exactly. Close-up archival photo on a black table, no labels.",
+      "judge": {
+        "passed": true,
+        "problems": ""
+      },
+      "regen": 2
+    },
+    {
+      "name": "paper_streamer",
+      "skel": "band",
+      "size": "1024x1536",
+      "prompt_body": "Color woodblock print in an Edo-like style of a wide paper streamer pinned across a room as the drawn form: the long edges become the trimmed paper edges, and each crosspiece becomes a pasted fold mark. The streamer makes one half-turn at the upper bend, so the painted face and the plain backside exchange places while the ends are tied to a small nail.",
+      "judge": {
+        "passed": true,
+        "problems": ""
+      }
+    },
+    {
+      "name": "conveyor_belt",
+      "skel": "band",
+      "size": "1536x1024",
+      "prompt_body": "An industrial conveyor belt in a packing plant must visibly make one clear half-twist: the band rises, twists once so the bright rubber face turns into a dark, textured backside, then continues around and meets itself with the faces swapped, so one full pass returns to the start with left and right exchanged, while two passes would restore the original side. Keep it a realistic photo with rollers, guards, and worn rubber texture.",
+      "judge": {
+        "passed": true,
+        "problems": ""
+      },
+      "regen": 1
+    },
+    {
+      "name": "packing_strap",
+      "skel": "band",
+      "size": "1024x1024",
+      "prompt_body": "Realist oil painting of a plastic packing strap draped over a warehouse pallet as the drawn form: the two long edges become the strap edges, and the crosspieces become tiny molded ridges. A single half-turn near the center sends the shiny face to the dull face, and the strap returns to the clip from the far side without breaking.",
+      "judge": {
+        "passed": true,
+        "problems": ""
+      }
+    },
+    {
+      "name": "boardwalk",
+      "skel": "band",
+      "size": "1536x1024",
+      "prompt_body": "A marsh boardwalk made from one continuous wooden strip must have one unmistakable half-twist: at a single point, the sun-bleached top boards visibly roll over and become the darker underside, with the rail and plank edges swapping sides so both faces are seen in one view. The walkway should clearly reconnect as a twisted ring over the water, not a flat oval, so one trip around returns to the start with left and right reversed, while two trips restore the original orientation.",
+      "judge": {
+        "passed": true,
+        "problems": ""
+      },
+      "regen": 2
+    },
+    {
+      "name": "seat_belt",
+      "skel": "band",
+      "size": "1024x1024",
+      "prompt_body": "A parked-car interior photo of a seat belt hanging from the upper anchor to the buckle, but the strap must show one obvious half-twist: along one section the stitched tan front face turns over and becomes the darker, rough back face, with both faces clearly visible side by side and the twist visible edge-on. After that single flip, the strap continues back to the buckle so the belt is a twisted band, not a flat ring.",
+      "judge": {
+        "passed": true,
+        "problems": ""
+      },
+      "regen": 1
+    },
+    {
+      "name": "wool_scarf",
+      "skel": "band",
+      "size": "1024x1536",
+      "prompt_body": "Soft charcoal drawing in a 19th-century sketchbook style of a wool scarf draped over a chair as the drawn form: the two long edges become the knitted edges, and each crosspiece becomes a row of knit ribs. A single half-turn in the center sends the fuzzy outside to the inside and back again as the ends are pinned together with a clasp.",
+      "judge": {
+        "passed": true,
+        "problems": ""
+      }
+    },
+    {
+      "name": "glass_hothouse_walkway",
+      "skel": "band",
+      "size": "1536x1024",
+      "prompt_body": "Inside a Victorian conservatory, the main raised garden walkway is one wide ribbon that visibly makes a single half-turn before joining itself: at one point the walking surface flips over so the pale flowered top becomes a dark stone underside, and the two faces have clearly different colors and textures. A gardener standing on that crossover appears upside down relative to the rest of the path. Walking it once returns you facing backward; two passes restore the original facing. Do not show a second level or ordinary oval ring.",
+      "judge": {
+        "passed": true,
+        "problems": ""
+      },
+      "regen": 2
+    }
+  ],
+  "braiding": [
+    {
+      "name": "silk_ribbons",
+      "skel": "weave",
+      "size": "1536x1024",
+      "prompt_body": "A close macro photograph in late-afternoon light of three silk ribbons lying across a worn pine tabletop. The traced path from the left edge is followed exactly: the crimson ribbon goes over the ivory ribbon, then under the teal one; the ivory ribbon then crosses over the teal and later slips beneath the crimson at the next meeting. At the right edge, the three ends are in a different vertical order than at the start, matching the full chain of crossings.",
+      "judge": {
+        "passed": true,
+        "problems": ""
+      }
+    },
+    {
+      "name": "vine_trellis",
+      "skel": "weave_v2",
+      "size": "1024x1536",
+      "prompt_body": "Three vine stems must be visible the whole time, and they must cross in a repeated over-under weave at several points, with each crossing clearly showing one stem on top and the other two underneath or swapping positions. Do not let it look like only two stems. Keep the stems separate enough that all three can be traced from left to right along the weathered garden fence, with small leaves attached, and end with a different left-to-right order than they began.",
+      "judge": {
+        "passed": true,
+        "problems": ""
+      },
+      "regen": 2
+    },
+    {
+      "name": "garden_hoses",
+      "skel": "weave_v3",
+      "size": "1536x1024",
+      "prompt_body": "A sunlit courtyard photograph of three rubber garden hoses draped across a stone trough. The hoses follow the supplied path line for line: one hose rides over the next at the first crossing, then disappears beneath it at the next, while the third trades places in the same stepwise manner. Metal nozzles mark the ends. The hose ends on the far side arrive in a new top-to-bottom order, produced only by the crossings.",
+      "judge": {
+        "passed": true,
+        "problems": ""
+      }
+    },
+    {
+      "name": "seaweed_fronds",
+      "skel": "weave",
+      "size": "1024x1024",
+      "prompt_body": "A Japanese woodblock print in muted green and indigo of three long seaweed fronds laid on black wet rocks at low tide. Each frond follows the marked sweep across the stone, with one frond passing over another at every contact and then under it at the next contact. Tiny foam patches sit beside the crossings. At the right-hand edge, the fronds emerge in a changed left-to-right order compared with the left.",
+      "judge": {
+        "passed": true,
+        "problems": ""
+      }
+    },
+    {
+      "name": "fishing_lines",
+      "skel": "weave_v2",
+      "size": "1536x1024",
+      "prompt_body": "A long-exposure night photograph on a harbor pier: three taut fishing lines, lit by small lanterns, arc exactly along the reference path above the dark water. At each crossing, the nearest line passes over the other, then drops beneath at the next. Floats and hooks are placed only at the ends. The lines leave the frame in a different vertical order than they entered, so the eye can read the whole exchange from left to right.",
+      "judge": {
+        "passed": true,
+        "problems": ""
+      }
+    },
+    {
+      "name": "prayer_banners",
+      "skel": "weave_v3",
+      "size": "1024x1536",
+      "prompt_body": "A temple-courtyard fresco in faded mineral colors of three narrow prayer banners stretched between poles. The cloth strips follow the prescribed route with no deviation: the saffron strip crosses over the blue, then under the white; the blue then takes its turn over and under in the next contact. Wind flutter is slight, not enough to alter the path. The far ends show a new order from the near ends.",
+      "judge": {
+        "passed": true,
+        "problems": ""
+      }
+    },
+    {
+      "name": "workshop_cables",
+      "skel": "weave",
+      "size": "1536x1024",
+      "prompt_body": "A gritty workshop photograph of three insulated electrical cables draped across a pegboard and over two hooks. The cables copy the given path precisely: each crossing is shown with one cable over the next, then beneath it at the following contact, while cable ties hold only the terminals. The right-side cable ends are not in the same stack order as the left-side ends, because the crossing sequence has been carried out in full.",
+      "judge": {
+        "passed": true,
+        "problems": ""
+      }
+    },
+    {
+      "name": "river_reeds",
+      "skel": "weave_v2",
+      "size": "1024x1024",
+      "prompt_body": "Three or more long reed stalks must be the main focus, and they must visibly cross each other several times in a clear over-under order, with each crossing easy to read from the scene. Show the stalks laid across a muddy riverbank with water, pebbles, and fallen seeds nearby. Keep every stalk separate at both ends, and make the end arrangement different from the starting order because of the repeated crossings. Do not let it look like just two strands twisting together.",
+      "judge": {
+        "passed": true,
+        "problems": ""
+      },
+      "regen": 2
+    }
+  ],
+  "interference": [
+    {
+      "name": "rice_paddy",
+      "skel": "ripples",
+      "size": "1536x1024",
+      "prompt_body": "Aerial photograph of a flooded rice paddy at dawn, seen straight down: the two drawn centers become two sprinkler heads sending tiny waves across the water between young shoots. Each drawn circle becomes a pale line on the surface, and where the two sets cross, brighter and dimmer bands appear with a wider spacing than either source alone. Keep the two origins slightly offset exactly as shown.",
+      "judge": {
+        "passed": true,
+        "problems": ""
+      }
+    },
+    {
+      "name": "soup_bowl",
+      "skel": "ripples",
+      "size": "1024x1024",
+      "prompt_body": "Macro photograph of a ceramic soup bowl on a wooden table after two spoon tips touch the broth at the two drawn points: each drawn circle becomes a faint wave on the glossy surface. Two sets spread outward and cross, making pale and dark bands that settle into a slower spacing than either spoon made alone. Use cool green glaze, 1980s kitchen lighting, and a quiet tabletop setting.",
+      "judge": {
+        "passed": true,
+        "problems": ""
+      }
+    },
+    {
+      "name": "courtyard_cistern",
+      "skel": "ripples",
+      "size": "1024x1536",
+      "prompt_body": "Woodblock print of a courtyard cistern at dusk, with dark eaves above and still water below: the two drawn centers are two roof drips falling into the cistern, and each drawn circle becomes a sharp white arc in the water. The two sets spread, meet, and leave broad light and dark bands that sit farther apart than either drip spacing. Use indigo, bone, and rust with a Meiji-era feel.",
+      "judge": {
+        "passed": true,
+        "problems": ""
+      }
+    },
+    {
+      "name": "fountain_basin",
+      "skel": "ripples",
+      "size": "1536x1024",
+      "prompt_body": "19th-century oil painting of a public fountain basin in a stone courtyard: the two drawn centers are two fingertip touches on the water, and each drawn circle becomes a soft marble-colored wave. The two sets cross and leave alternating bright and shadowed bands that open wider than either touch alone. Warm ochres, wet slate, and late-afternoon sun give the scene a quiet, formal mood.",
+      "judge": {
+        "passed": true,
+        "problems": ""
+      }
+    },
+    {
+      "name": "station_puddle",
+      "skel": "ripples",
+      "size": "1024x1024",
+      "prompt_body": "Long-exposure color photograph of a station puddle under a neon awning after the first rain: the two drawn centers are two drops from a leaking gutter, and each drawn circle becomes a pale smear on the black water. The two sets cross into broad luminous and dark bands with a spacing larger than either drip could make alone. Use magenta, cyan, and tar-black for a late-night city feel.",
+      "judge": {
+        "passed": true,
+        "problems": ""
+      }
+    },
+    {
+      "name": "salt_pan",
+      "skel": "ripples",
+      "size": "1024x1536",
+      "prompt_body": "Monochrome ink drawing of a salt pan seen from above: the two drawn centers are two brine drips from a cracked pipe, and each drawn circle becomes a thin wash line on the flat water skin. As the two sets spread and meet, they leave wider pale and dark bands than either drip spacing. Keep the strokes spare, with dry paper texture and hard midday shadows.",
+      "judge": {
+        "passed": true,
+        "problems": ""
+      }
+    },
+    {
+      "name": "reservoir_inlet",
+      "skel": "ripples",
+      "size": "1536x1024",
+      "prompt_body": "Satellite-style aerial photograph of a reservoir inlet at midday: the two drawn centers are two maintenance boats leaving small wakes from different points, and each drawn circle becomes a pale curve on the green water. The two wake sets cross and produce broader bright and dim bands that return more slowly than either boat wake alone. Cool teal, algae green, and sun-faded concrete anchor the view.",
+      "judge": {
+        "passed": true,
+        "problems": ""
+      }
+    },
+    {
+      "name": "bakery_glaze",
+      "skel": "ripples",
+      "size": "1024x1024",
+      "prompt_body": "Macro photograph of a shallow pastry glaze tray in a bakery: the two drawn centers are two spoonfuls of water dropped onto the shiny icing, and each drawn circle becomes a faint clear line in the amber surface. The two sets cross, making wide pale and shadowed bands that spread farther apart than either drop alone. Soft tungsten light, honey, cream, and copper finish the scene.",
+      "judge": {
+        "passed": true,
+        "problems": ""
+      }
+    }
+  ],
+  "tiling": [
+    {
+      "name": "greenhouse_plots",
+      "skel": "honeycomb",
+      "size": "1536x1024",
+      "prompt_body": "A contemporary aerial photograph of a glass greenhouse farm at dawn: each drawn six-sided cell becomes one raised planting bed filled with lettuce, herbs, and dark soil, the narrow seams between beds become thin wet walkways, and the clipped beds at the frame edges match the reference exactly. Cool mist, pale green leaves, and steel frames keep the view practical and real.",
+      "judge": {
+        "passed": true,
+        "problems": ""
+      }
+    },
+    {
+      "name": "terracotta_roof",
+      "skel": "honeycomb_v2",
+      "size": "1024x1536",
+      "prompt_body": "A late-19th-century oil painting of a terracotta rooftop in warm evening light: every drawn six-sided cell becomes one skylight well with curved clay edging, each seam becomes a narrow gutter, and the partial wells at the borders stay exactly where the reference places them. Faded red tiles, soot, and amber windows give an old-city mood.",
+      "judge": {
+        "passed": true,
+        "problems": ""
+      }
+    },
+    {
+      "name": "archive_boxes",
+      "skel": "honeycomb_v3",
+      "size": "1024x1024",
+      "prompt_body": "A sharp documentary photograph inside a municipal archive: every drawn cell becomes one gray storage box seen from above, packed edge to edge on metal shelving, while the narrow spaces between them become thin shelf rails and aisle slivers. The boxes touch exactly as in the reference and stop at the frame the same way. Neutral fluorescent light and dust keep it plain.",
+      "judge": {
+        "passed": true,
+        "problems": ""
+      }
+    },
+    {
+      "name": "courtyard_pavers",
+      "skel": "honeycomb",
+      "size": "1024x1536",
+      "prompt_body": "A tea house courtyard after rain fills the entire frame with identical wet stone pavers in a repeating grid; every paver has the same shape, size, tone, and sheen, and every seam is a thin line of moss or pooled water. The pattern continues to the edges so the cropped stones match perfectly on every side. Keep only the paving, shadows, and rain gloss—no leaves, tools, doorways, or any one-off object anywhere.",
+      "judge": {
+        "passed": true,
+        "problems": ""
+      },
+      "regen": 1
+    },
+    {
+      "name": "fruit_crates",
+      "skel": "honeycomb_v2",
+      "size": "1536x1024",
+      "prompt_body": "A 1950s color lithograph of a produce warehouse: every drawn cell becomes one wooden apple crate filled with green fruit, the gaps between crates become the slits of the pallets beneath, and the crates at the margins are clipped exactly like the reference. Sunlit dust, orange wood, and bruised pears make a busy but ordinary storage scene.",
+      "judge": {
+        "passed": true,
+        "problems": ""
+      }
+    },
+    {
+      "name": "lantern_ceiling",
+      "skel": "honeycomb_v3",
+      "size": "1024x1536",
+      "prompt_body": "A modern long-exposure photograph of a covered street market at night: each drawn cell becomes one paper lantern viewed from below, each seam becomes a thin hanging wire, and the lanterns at the frame edge are cropped the same way as the reference. Soft red, cream, and gold glow fills the scene, with dark beams and empty air between the lanterns.",
+      "judge": {
+        "passed": true,
+        "problems": ""
+      }
+    },
+    {
+      "name": "laundry_baskets",
+      "skel": "honeycomb",
+      "size": "1024x1024",
+      "prompt_body": "Fill the entire frame with a tiled courtyard of identical wicker laundry baskets, each basket holding the same folded cloth, arranged in evenly spaced rows and columns so the scene can shift by one cell and match exactly. Every cell must look the same, including the baskets at the edges where they are cropped in the same way. Gray ink washes, stone paving between baskets, and quiet everyday laundry-yard details only. No bench, no extra objects, no empty gaps, no odd basket.",
+      "judge": {
+        "passed": true,
+        "problems": ""
+      },
+      "regen": 1
+    },
+    {
+      "name": "reading_cubbies",
+      "skel": "honeycomb_v2",
+      "size": "1024x1536",
+      "prompt_body": "A Victorian etching of a reading room wall of cubby shelves: every drawn cell becomes one open cubby holding a single worn book or folded scarf, each seam becomes the thin wood divider, and the cubbies at the frame edges are clipped exactly as shown. Sepia paper, dark oak, and warm lamp light give the room a quiet old-library feel.",
+      "judge": {
+        "passed": true,
+        "problems": ""
+      }
+    }
+  ],
+  "hub": [
+    {
+      "name": "traffic_roundabout",
+      "skel": "star",
+      "size": "1536x1024",
+      "prompt_body": "A high-altitude color photograph of a new suburb at dusk: one roundabout island sits exactly where the reference center falls, and every road in the reference becomes a separate street that meets only that island before running out to different apartment blocks. The roads keep the drawn angles and unequal lengths, and no street crosses or touches any other street.",
+      "judge": {
+        "passed": true,
+        "problems": ""
+      }
+    },
+    {
+      "name": "desert_well",
+      "skel": "star_v2",
+      "size": "1024x1024",
+      "prompt_body": "A false-color satellite view of a desert farm in late summer: the single well at the reference center becomes the only water shaft, and each line from it becomes its own irrigation ditch leading to a different field. The ditches preserve the exact outward directions of the reference, never meet one another, and only connect at the wellhead.",
+      "judge": {
+        "passed": true,
+        "problems": ""
+      }
+    },
+    {
+      "name": "brass_chandelier",
+      "skel": "star_v3",
+      "size": "1024x1536",
+      "prompt_body": "A close macro photograph of a brass chandelier in a dim 1930s dining room: the center mount is the only point all arms share, and each drawn line becomes one curved arm carrying a small bulb. The arms keep the slight unequal bends from the reference and never touch except at the mount.",
+      "judge": {
+        "passed": true,
+        "problems": ""
+      }
+    },
+    {
+      "name": "garden_parasol",
+      "skel": "star",
+      "size": "1024x1024",
+      "prompt_body": "An Edo-era woodblock print of a garden parasol lying open on tatami: the pole at the reference center becomes the hidden shaft, and every line out of it becomes one bamboo rib reaching the edge of the cloth. The ribs keep the drawn angles and lengths, and each rib stays apart from the others except where all meet at the shaft.",
+      "judge": {
+        "passed": true,
+        "problems": ""
+      }
+    },
+    {
+      "name": "mooring_bollard",
+      "skel": "star_v2",
+      "size": "1536x1024",
+      "prompt_body": "A muted oil painting from the 1880s of a harbor bollard at low tide: the center mark becomes one iron bollard on the pier, and each drawn arm becomes a thick mooring rope running to its own small boat. The ropes keep the uneven spacing and do not touch one another except at the bollard.",
+      "judge": {
+        "passed": true,
+        "problems": ""
+      }
+    },
+    {
+      "name": "laundry_pole",
+      "skel": "star_v3",
+      "size": "1024x1536",
+      "prompt_body": "A bright watercolor from the 1950s of a backyard clothes-drying frame: the middle post becomes the only upright pole, and each drawn line becomes a separate twine strand stretched to a different stake. The twines keep the exact angles and lengths from the reference, never meeting except at the pole, with plain shirts and towels hanging below.",
+      "judge": {
+        "passed": true,
+        "problems": ""
+      }
+    },
+    {
+      "name": "ceiling_fan",
+      "skel": "star",
+      "size": "1024x1024",
+      "prompt_body": "A long-exposure night photograph of a spinning ceiling fan in a modest apartment: the motor housing at the center is the only shared point, and each blade becomes one bright blur reaching outward. The blades keep the drawn lengths and slight offset angles, and no blade crosses any other blade because all contact happens only at the motor.",
+      "judge": {
+        "passed": true,
+        "problems": ""
+      }
+    },
+    {
+      "name": "coat_stand",
+      "skel": "star_v2",
+      "size": "1024x1536",
+      "prompt_body": "A spare ink drawing of a coat stand in a hallway, from a late-Victorian interior: the upright post at the reference center becomes the only shared support, and each drawn arm becomes one hat hook with a scarf or cap hanging from it. The hooks keep the uneven spread of the reference and stay fully separate apart from the post.",
+      "judge": {
+        "passed": true,
+        "problems": ""
+      }
+    }
+  ],
+  "infinite_descent": [
+    {
+      "name": "desert_water_jars",
+      "skel": "staircase",
+      "size": "1536x1024",
+      "prompt_body": "A sun-bleached documentary photograph in a dry courtyard. Every drawn horizontal stair tread becomes a sandstone step holding one clay water jar, each jar strictly smaller than the jar on the step above; every drawn vertical fall is the sharp stair face between them. Each jar’s mouth tilts toward the next lower jar. The drawn hard floor becomes bare bedrock, with the smallest jar still tilted downward toward empty stone, no writing or marks.",
+      "judge": {
+        "passed": true,
+        "problems": ""
+      }
+    },
+    {
+      "name": "rice_paddy_pools",
+      "skel": "staircase",
+      "size": "1024x1536",
+      "prompt_body": "A high aerial photograph of misty mountain rice terraces after rain. Every drawn horizontal stair tread becomes one narrow earthen ledge holding a single water pool, each pool strictly smaller than the one above; every drawn vertical fall is a muddy retaining bank. The pools spill visually toward the next lower ledge. The drawn hard floor becomes a dry rock shelf where the last tiny pool has no lower pool to feed, no signs or lettering.",
+      "judge": {
+        "passed": true,
+        "problems": ""
+      }
+    },
+    {
+      "name": "dew_on_leaves",
+      "skel": "staircase",
+      "size": "1024x1024",
+      "prompt_body": "Show a line of matching dew beads on the same leaf edge, where each bead is visibly smaller than the one above it and seems to force the next smaller bead below it. The largest bead must be hidden beyond the top crop, and the line should continue out of frame so no first bead is visible. The point is that there is no starting bead.",
+      "judge": {
+        "passed": true,
+        "problems": ""
+      },
+      "regen": 2
+    },
+    {
+      "name": "altar_candles",
+      "skel": "staircase",
+      "size": "1536x1024",
+      "prompt_body": "Show an old chapel stair with candles arranged so that each visible candle rests on a smaller copy of the same stair-and-candle scene: every step repeats the same chapel setup, only reduced in size. The largest version must be hidden above the top frame, and the smallest visible one must still continue downward out of the bottom edge. The viewer should never see a first candle or a complete starting scene, only a chain of smaller and smaller copies disappearing beyond the frame.",
+      "judge": {
+        "passed": true,
+        "problems": ""
+      },
+      "regen": 2
+    },
+    {
+      "name": "harbor_boats",
+      "skel": "staircase",
+      "size": "1536x1024",
+      "prompt_body": "Show a row of the same kind of fishing boat stepping downward along a steep harbor slipway, each boat clearly smaller than the one above it. Crucially, the smallest visible boat must be cut off by the bottom edge or hidden behind a quay so the line obviously continues out of frame toward even smaller boats; there must be no visible first boat or landing point. Keep the boats aligned in one continuous descent through wet planks, indigo water, rusted wood, and foam white.",
+      "judge": {
+        "passed": true,
+        "problems": ""
+      },
+      "regen": 1
+    },
+    {
+      "name": "porcelain_teacups",
+      "skel": "staircase",
+      "size": "1024x1024",
+      "prompt_body": "A fine ink-and-wash still life on cream paper. Every drawn horizontal stair tread becomes a lacquered shelf supporting one plain porcelain teacup, each cup strictly smaller than the cup above; every drawn vertical fall becomes the dark shelf side. Each cup is tipped so its open side faces the next lower cup. The drawn hard floor is an empty tabletop under the smallest cup, which tips toward bare wood, with no decorative writing.",
+      "judge": {
+        "passed": true,
+        "problems": ""
+      }
+    },
+    {
+      "name": "cave_lanterns",
+      "skel": "staircase",
+      "size": "1024x1536",
+      "prompt_body": "Hide the largest lantern completely above the ceiling beam so the visible row begins in the middle, with no first lantern shown. In a dim cave stairwell, place one glass lantern on each step, all the same shape and style, and make each lantern strictly smaller than the one above it. The row should keep descending past the bottom edge, with the last lantern partly clipped out of frame, and there must be no base, stopper, or end marker anywhere.",
+      "judge": {
+        "passed": true,
+        "problems": ""
+      },
+      "regen": 2
+    },
+    {
+      "name": "market_baskets",
+      "skel": "staircase",
+      "size": "1536x1024",
+      "prompt_body": "Show a row of woven produce baskets on an empty market stair, each basket forcing the next lower basket to be visibly smaller, with the larger basket opening toward it like it has to give way. The biggest basket must be cut off by the top edge or hidden behind a pillar, and the smaller baskets keep continuing out of the frame below, so no first basket is visible. The chain continues past both edges.",
+      "judge": {
+        "passed": true,
+        "problems": ""
+      },
+      "regen": 1
+    },
+    {
+      "name": "glacier_ice_blocks",
+      "skel": "staircase",
+      "size": "1024x1536",
+      "prompt_body": "Show a kitchen counter with a row of identical white mixing bowls that get strictly smaller one by one, but the largest bowl is not visible because it is cut off behind a cabinet edge or hidden by a hanging towel. The visible bowls begin in the middle of the size chain and continue out of the frame, so there is no first bowl anywhere in view. Make the size steps discrete and unmistakable: each bowl is a whole step smaller than the next.",
+      "judge": {
+        "passed": true,
+        "problems": ""
+      },
+      "regen": 2
+    }
+  ],
+  "coprime_orbit": [
+    {
+      "name": "woven_basket_lip",
+      "skel": "star",
+      "size": "1024x1024",
+      "prompt_body": "A warm macro photograph of an unfinished willow basket mouth: the drawn outer points become ten pierced holes in the cane edge. One pale reed is woven as a single strand, always skipping two holes and entering the third, crossing the open mouth in straight taut runs. It touches every hole once before returning to the starting hole, with the empty interior left untouched.",
+      "judge": {
+        "passed": true,
+        "problems": ""
+      }
+    },
+    {
+      "name": "plaza_lantern_pass",
+      "skel": "star",
+      "size": "1536x1024",
+      "prompt_body": "A night long-exposure photograph in a stone plaza: the drawn outer points become eight dancers standing in a wide round formation, each holding still except for one amber lantern being passed. The light trail always flies past two dancers to the third, making one uninterrupted glowing path that reaches all eight hands before coming back to the first, with no person in the middle.",
+      "judge": {
+        "passed": true,
+        "problems": ""
+      }
+    },
+    {
+      "name": "salt_pan_channels",
+      "skel": "star",
+      "size": "1536x1024",
+      "prompt_body": "A crisp aerial view of coastal salt pans at noon: the drawn outer points become twelve pale round basins set around a flat white field. One turquoise sluice route is the only colored watercourse, always passing four dry basins and entering the fifth. Raised crossings keep overlapping stretches separate; the water reaches every basin once before returning to its first basin, and there is no central reservoir.",
+      "judge": {
+        "passed": true,
+        "problems": ""
+      }
+    },
+    {
+      "name": "glass_jewel_window",
+      "skel": "star",
+      "size": "1024x1536",
+      "prompt_body": "A backlit photograph of a handmade cathedral window without figures: the drawn outer points become eleven ruby glass beads set along the outer iron frame. A single continuous golden lead strip steps past three beads and joins the fourth each time, crossing the clear blue glass in long straight spans. Every bead is touched once before the strip returns to the first, leaving the middle pane clear.",
+      "judge": {
+        "passed": true,
+        "problems": ""
+      }
+    },
+    {
+      "name": "maple_pond_cord",
+      "skel": "star",
+      "size": "1024x1024",
+      "prompt_body": "A quiet ukiyo-e woodblock print of a temple pond in autumn: the drawn outer points become nine black bamboo stakes placed around the water. A single vermilion festival cord runs from stake to stake, always skipping one stake and tying onto the second. The cord forms one continuous journey over the pond, visiting all nine stakes before arriving back where it began; fallen maple leaves float below.",
+      "judge": {
+        "passed": true,
+        "problems": ""
+      }
+    },
+    {
+      "name": "banquet_red_sash",
+      "skel": "star",
+      "size": "1536x1024",
+      "prompt_body": "Place 12 candles evenly around a round dinner table. One single gold ribbon must travel from candle to candle by a fixed jump of 5 seats each time, skipping the ones in between, so the chords crisscross into a sharp star shape and the ribbon reaches every candle exactly once before coming back to the start. Do not add any center post, extra strands, labels, or adjacent linking.",
+      "judge": {
+        "passed": true,
+        "problems": ""
+      },
+      "regen": 1
+    },
+    {
+      "name": "cliff_shrine_bridges",
+      "skel": "star",
+      "size": "1024x1536",
+      "prompt_body": "A monochrome ink wash drawing of a high mountain basin: the drawn outer points become thirteen tiny cliff shrines spaced along the surrounding ledges. One black brush stroke of suspended footbridges always skips three shrines and reaches the fourth, crossing the misty void in straight spans. The route visits every shrine before returning to the first, with open white mist occupying the middle.",
+      "judge": {
+        "passed": true,
+        "problems": ""
+      }
+    },
+    {
+      "name": "dew_grass_filament",
+      "skel": "star",
+      "size": "1024x1024",
+      "prompt_body": "A close-up dawn scene of seven dew-bright grass seed heads arranged evenly around a perfect circle, like markers on a round wreath. One single spider silk makes the only path: it starts at one seed head, then always skips the next head and lands on the following one, repeating the same step all the way around. The strand crosses the open center, touches every bead exactly once, and returns to the start with no extra strands.",
+      "judge": {
+        "passed": true,
+        "problems": ""
+      },
+      "regen": 1
+    },
+    {
+      "name": "bath_floor_mosaic",
+      "skel": "star",
+      "size": "1024x1024",
+      "prompt_body": "A Byzantine-style mosaic floor seen from above in an old bathhouse: the drawn outer points become twelve turquoise scallop shells set into cream stone. One uninterrupted path of gold tesserae always skips four shells and meets the fifth, creating crisp straight bands across the floor. It reaches every shell once before returning to the first shell, and the central tiles remain plain ivory.",
+      "judge": {
+        "passed": true,
+        "problems": ""
+      }
+    }
+  ],
+  "pigeonhole": [
+    {
+      "name": "mail_sort_wall",
+      "skel": "boxes",
+      "size": "1536x1024",
+      "prompt_body": "A quiet photorealistic post office workroom at dawn with no writing anywhere: each drawn box is one open wooden mail slot in a sorting wall, and each drawn upper point is a plain cream envelope on the counter. Every drawn line becomes the slid paper trail and final placement of an envelope into its assigned slot. There are exactly nine envelopes and eight slots; one unmarked slot holds two envelopes, all others hold one.",
+      "judge": {
+        "passed": true,
+        "problems": ""
+      }
+    },
+    {
+      "name": "harbor_dinghy_slips",
+      "skel": "boxes",
+      "size": "1536x1024",
+      "prompt_body": "Show seven small white dinghies moving toward six visible marina slips, with all six slips already occupied or clearly reserved by another boat so the shortage is obvious at a glance. The dinghies are still mid-approach, clustered close enough that at least one pair must end up sharing a slip, but do not reveal which pair; keep several boats equally near the same dock area, with no labels, arrows, or highlighted point.",
+      "judge": {
+        "passed": true,
+        "problems": ""
+      },
+      "regen": 2
+    },
+    {
+      "name": "dumpling_sauce_bowls",
+      "skel": "boxes",
+      "size": "1024x1024",
+      "prompt_body": "Overhead on a dark wooden table, show nine small porcelain bowls as the visible slots and ten steamed dumplings moving toward them at once. Every bowl already has one dumpling pressed against its rim or partly in it, so the tenth dumpling has to share a bowl with another; keep at least two dumplings equally close to the same bowl so no single pair is singled out. Make the 10-to-9 imbalance obvious at a glance. No empty bowl, no extra bowl, no neat two-row lineup.",
+      "judge": {
+        "passed": true,
+        "problems": ""
+      },
+      "regen": 2
+    },
+    {
+      "name": "orchard_crate_harvest",
+      "skel": "boxes",
+      "size": "1536x1024",
+      "prompt_body": "Warm rustic oil painting of an orchard floor after picking: each drawn box is a low wooden apple crate, each drawn upper point is a fallen red apple, and each drawn line becomes a curved roll mark in dusty soil ending at a crate. Paint exactly eight apples and seven crates. One plain crate contains two apples while the other crates contain one, with no worker pointing or sorting.",
+      "judge": {
+        "passed": true,
+        "problems": ""
+      }
+    },
+    {
+      "name": "theater_mask_pegs",
+      "skel": "boxes",
+      "size": "1024x1536",
+      "prompt_body": "An old backstage cloak wall shows eleven theater masks in motion toward ten visible pegs, with every peg already occupied, so at least one arriving mask must end up sharing a peg. Make the imbalance obvious at a glance: more masks than pegs, all pegs claimed, several masks equally close to the same few pegs, but do not point to any single pair. Keep it as a lively woodblock print with curtains, ropes, and props in the background, not a labeled or diagram-like layout.",
+      "judge": {
+        "passed": true,
+        "problems": ""
+      },
+      "regen": 2
+    },
+    {
+      "name": "apiary_landing_slots",
+      "skel": "boxes",
+      "size": "1536x1024",
+      "prompt_body": "Show a calm beekeeper’s wall with exactly six clearly visible hive entrance slots in a row, and seven bees in the air moving toward them. All six slots should already look claimed, while the seventh bee has to crowd in with another bee at one of the same openings. Keep several bees equally close to the same few slots so the shared landing place is obvious by count, but do not point to any single pair. Ink-and-wash style, natural and quiet.",
+      "judge": {
+        "passed": true,
+        "problems": ""
+      },
+      "regen": 2
+    },
+    {
+      "name": "tram_depot_bays",
+      "skel": "boxes",
+      "size": "1536x1024",
+      "prompt_body": "Show a flat side-view of a small tram depot where the counting is obvious at a glance: four open service bays are already filled by four trams, and five more trams are arriving in the yard at the same time, so every bay is claimed and one incoming tram must end up sharing a bay nose-to-tail with another. Keep several arrivals equally close to the occupied bays; do not spotlight any single pair.",
+      "judge": {
+        "passed": true,
+        "problems": ""
+      },
+      "regen": 2
+    },
+    {
+      "name": "pottery_kiln_cubbies",
+      "skel": "boxes",
+      "size": "1024x1536",
+      "prompt_body": "In a soft natural-light ceramic studio photo, show 13 wet clay pots moving toward 12 visible kiln-shelf cubbies. Every cubby already has one pot, while the last pots are still in hands and close enough that two of them must end up in the same cubby; several pots are equally close to that shared spot, so no single pairing is singled out.",
+      "judge": {
+        "passed": true,
+        "problems": ""
+      },
+      "regen": 1
+    },
+    {
+      "name": "tea_cup_sugar",
+      "skel": "boxes",
+      "size": "1536x1024",
+      "prompt_body": "An Edo-period woodblock print in muted indigo, cream, and warm brown: on one low tea tray, show four small handleless cups, each already marked by a cube being lowered toward it, while a fifth sugar cube arrives with no free cup left. The extra cube must share one cup with another, but do not show which cup will get the pair; make several cups look equally close to taking two cubes. Keep the scene natural, everyday, and free of labels or diagram-like marks.",
+      "judge": {
+        "passed": true,
+        "problems": ""
+      },
+      "regen": 2
+    }
+  ],
+  "diagonalization": [
+    {
+      "name": "apartment_lights",
+      "skel": "grid",
+      "size": "1024x1024",
+      "prompt_body": "On a straight-on nighttime apartment facade, make the windows read as a strict grid of rows and columns. Across the grid, a single diagonal of windows must stand out: in each row, exactly one window on that diagonal is flipped from the others in that row, switching lit to dark or closed curtain to open. Beside the building, add one extra horizontal strip of windows that matches row k everywhere except at position k, where it flips.",
+      "judge": {
+        "passed": true,
+        "problems": ""
+      },
+      "regen": 2
+    },
+    {
+      "name": "salt_evaporation_pans",
+      "skel": "grid",
+      "size": "1536x1024",
+      "prompt_body": "Arrange a clear grid of everyday tea cups on market shelves, with rows and columns easy to see. Make one diagonal path of cups cross the whole grid, and at every diagonal position that cup must visibly flip from the rest of its row: dark where the row is light, open where the row is closed, so each row has exactly one mismatch in a different column. Just outside the grid, place one extra row whose k-th cup is the opposite of row k’s k-th cup, so it matches no row.",
+      "judge": {
+        "passed": true,
+        "problems": ""
+      },
+      "regen": 2
+    },
+    {
+      "name": "greenhouse_seed_trays",
+      "skel": "grid",
+      "size": "1024x1024",
+      "prompt_body": "Show a kitchen potting bench as a clear 6x6 grid of small seedling pots. In each row, exactly one pot is visibly the opposite state from the others, and that flipped pot shifts one step to the right on every lower row so the opposite pots run from top-left to bottom-right. Beneath the grid, add one extra row that copies a chosen row everywhere except at the matching position, where it flips state.",
+      "judge": {
+        "passed": true,
+        "problems": ""
+      },
+      "regen": 2
+    },
+    {
+      "name": "harbor_slips",
+      "skel": "grid",
+      "size": "1536x1024",
+      "prompt_body": "A crisp drone view of a marina laid out as a clean grid of boat slips, with rows as candidate lines and columns as features. Make one diagonal line of slips run across the grid; at every diagonal slip, the local state is visibly the opposite of the rest of its row, such as a white dinghy in an otherwise empty dark-water row or an empty slip in an otherwise filled row. Just outside the grid, add one extra row of slips that matches the columns but differs from row k in exactly the k-th position.",
+      "judge": {
+        "passed": true,
+        "problems": ""
+      },
+      "regen": 1
+    },
+    {
+      "name": "monastery_candles",
+      "skel": "grid",
+      "size": "1024x1536",
+      "prompt_body": "A classical oil painting of a stone monastery candle wall, viewed squarely. Each drawn cell is one shallow niche in the drawn rows and columns, holding either a burning candle or a bare cold holder. The diagonal niches have small brass drip plates. On a low shelf below, an added row of holders has one per column, each opposite to the flame state of the matching diagonal niche.",
+      "judge": {
+        "passed": true,
+        "problems": ""
+      }
+    },
+    {
+      "name": "parking_bays",
+      "skel": "grid",
+      "size": "1536x1024",
+      "prompt_body": "Show a parking lot as a clean table-like grid of bays, with rows easy to count and each row using the same base pattern. A single diagonal chain of bays must run across the grid from upper left to lower right; in every bay on that line, the parked/not-parked state is visibly opposite to the rest of its row, so the changed bay shifts one position right on each lower row. Add one separate curbside row outside the main grid that copies a row pattern but flips the matching bay at that same position.",
+      "judge": {
+        "passed": true,
+        "problems": ""
+      },
+      "regen": 2
+    },
+    {
+      "name": "bamboo_fish_racks",
+      "skel": "grid",
+      "size": "1024x1024",
+      "prompt_body": "Show a neat table-like grid of bamboo drying trays in a fishing village courtyard: each row is one candidate, each column is one position. A single path must step one cell farther right in every lower row, and every tray on that path must be visibly flipped from its row mate (fish to empty, or empty to fish). Outside the table, include one extra row that matches row 1, row 2, etc., except at position k where that one tray flips.",
+      "judge": {
+        "passed": true,
+        "problems": ""
+      },
+      "regen": 2
+    },
+    {
+      "name": "stained_glass_panes",
+      "skel": "grid",
+      "size": "1024x1536",
+      "prompt_body": "An art nouveau stained-glass window photographed in soft daylight. Each drawn cell is one square pane, placed in the drawn rows and columns, either amber glass or deep blue glass. The diagonal panes are bordered by thin silver solder. Beneath the main window, an added transom row has one pane per column, each taking the opposite color from the diagonal pane directly above. No letters or symbols.",
+      "judge": {
+        "passed": true,
+        "problems": ""
+      }
+    },
+    {
+      "name": "bakery_pastry_case",
+      "skel": "grid",
+      "size": "1024x1024",
+      "prompt_body": "Show a bakery case arranged as a strict 6-by-6 grid of pastries, with rows and columns clearly visible. Start each row in the same pastry style, then make one pastry in row 1, column 1, row 2, column 2, and so on down to row 6, column 6 visibly flipped to the opposite frosting or decoration while the rest of that row stays unchanged. Place one separate tray outside the grid whose pastries match the rows except each tray row differs at its matching position.",
+      "judge": {
+        "passed": true,
+        "problems": ""
+      },
+      "regen": 2
+    }
+  ],
+  "aperiodic_tiling": [
+    {
+      "name": "harbor_roof",
+      "skel": "penrose",
+      "size": "1536x1024",
+      "prompt_body": "Fill the entire frame edge to edge with a sunlit stone courtyard made only of two interlocking tile shapes: kites and rhombs. Arrange them in a Penrose-like layout where small five-point star clusters appear in scattered places, but there is no single center, no radial layout, and no repeating block or translation unit; if you shift the whole image, it should never line up exactly. Keep the surface ordinary, seamless, and continuous off all four edges.",
+      "judge": {
+        "passed": true,
+        "problems": ""
+      },
+      "regen": 2
+    },
+    {
+      "name": "quilt_bed",
+      "skel": "penrose",
+      "size": "1024x1024",
+      "prompt_body": "A tabletop covered edge to edge with a Penrose-like patchwork of only two tile shapes: wide mustard rhombs and narrow deep-green kite/dart pieces. Every seam must obey the same local matching rule, so the layout never settles into a repeating block, strip, or grid. Scatter small five-point star clusters in several places, but avoid any central star, ring, or mirrored arrangement. Keep the whole frame filled with no border, no empty corners, and no fixed spacing pattern.",
+      "judge": {
+        "passed": true,
+        "problems": ""
+      },
+      "regen": 2
+    },
+    {
+      "name": "herb_terrace",
+      "skel": "penrose",
+      "size": "1024x1536",
+      "prompt_body": "Cover the entire rooftop garden edge to edge with only two paving stones: broad pale rhombs and slimmer dark kite-shaped stones, fitted by one local matching rule so the same joins keep reappearing everywhere without any repeating block or fixed-offset copy. Add scattered five-point star groupings as part of the paving, not as decoration. Keep it as a dusk herb garden with thyme, mint, and planters along the tile edges; no central fountain, no radial layout, no empty borders.",
+      "judge": {
+        "passed": true,
+        "problems": ""
+      },
+      "regen": 2
+    },
+    {
+      "name": "rain_courtyard",
+      "skel": "penrose",
+      "size": "1536x1024",
+      "prompt_body": "The temple courtyard floor must cover the entire frame edge to edge with only two interlocking paving stones: a broad tan diamond and a slimmer blue-black diamond. Lay them so the pattern has no shift that ever makes the whole floor line up again, and no identical block returns at a fixed spacing. Small five-point star clusters can appear here and there, but there must be no single center, no axis, and no repeating patch. Keep the wet stone, lanterns, and gate posts at the edges.",
+      "judge": {
+        "passed": true,
+        "problems": ""
+      },
+      "regen": 2
+    },
+    {
+      "name": "lantern_square",
+      "skel": "penrose",
+      "size": "1024x1024",
+      "prompt_body": "Cover the whole frame edge to edge with a floor made from only two interlocking stone shapes, tan kite-darts and charcoal rhombs, arranged so every local match rule is obeyed but no straight row, repeating block, or single center ever appears. Small five-point star clusters may pop up in scattered places, and any local patch should show up again at irregular distances without lining up into a fixed grid. Set this in a busy evening market with lanterns, stalls, and cropped passersby at the borders.",
+      "judge": {
+        "passed": true,
+        "problems": ""
+      },
+      "regen": 2
+    },
+    {
+      "name": "station_concourse",
+      "skel": "penrose",
+      "size": "1024x1536",
+      "prompt_body": "Lay the station concourse floor edge to edge with only two tile shapes: broad warm-gray rhombs and narrow charcoal kites, fitted exactly like the reference. Scatter small five-point star clusters in several places, but keep the field centerless, with no radial hub and no repeated block or sliding copy anywhere. Let the same local fitting rule continue across the full frame, so small patches reappear in different places while the floor never settles into a repeat.",
+      "judge": {
+        "passed": true,
+        "problems": ""
+      },
+      "regen": 2
+    },
+    {
+      "name": "salt_flats",
+      "skel": "penrose",
+      "size": "1536x1024",
+      "prompt_body": "Fill the entire frame edge to edge with a dry salt-pan landscape built from only two interlocking tile shapes, kite plates and dart plates, using one exact edge-matching rule everywhere. The same small five-point star clusters must appear in many places, and every local pattern should recur within a bounded distance, but never as a repeated block or by sliding the whole image. Keep a pale noon scene with thin water in the cracks, no border, no central hub, no spokes, no labels.",
+      "judge": {
+        "passed": true,
+        "problems": ""
+      },
+      "regen": 2
+    },
+    {
+      "name": "sewing_table",
+      "skel": "penrose",
+      "size": "1024x1024",
+      "prompt_body": "Use the exact Penrose-style arrangement of tan burlap rhombs and indigo kite-dart pieces across a sewing table, filling the entire frame edge to edge. The pieces must fit together in the same local layout everywhere, with small five-point star groupings scattered through the cloth, but no single center, no radial spread, and no repeated block. Keep it as an everyday craft scene with scissors, pins, thread, and scraps nearby.",
+      "judge": {
+        "passed": true,
+        "problems": ""
+      },
+      "regen": 2
+    },
+    {
+      "name": "greenhouse_walk",
+      "skel": "penrose",
+      "size": "1024x1536",
+      "prompt_body": "An overhead greenhouse floor fills the entire frame edge to edge with only two tile shapes, a broad diamond and a narrow dart, arranged by the same local join rules everywhere. The tiles must never line up into any repeating shift or regular grid; nearby clusters may echo each other, but no block can recur at a fixed interval. Scatter small five-point star-like clusters across the walkway, with plants and glass beams around the edges, and no central focal point or ring layout.",
+      "judge": {
+        "passed": true,
+        "problems": ""
+      },
+      "regen": 2
+    }
+  ],
+  "projective_duality": [
+    {
+      "name": "reef_polyps",
+      "skel": "quadrangle",
+      "size": "1536x1024",
+      "prompt_body": "A split underwater photograph of the SAME coral flat. LEFT: pale coral ridges are thick bright paths, matching every drawn stroke, while each drawn dot is a tiny closed sea-anemone polyp at the exact meeting place. RIGHT: at night, fluorescent polyps swell into bright beads at those same places, while the coral ridges shrink to thin blue seams. No labels, no arrows, no added branches.",
+      "judge": {
+        "passed": true,
+        "problems": ""
+      }
+    },
+    {
+      "name": "canal_lanterns",
+      "skel": "quadrangle",
+      "size": "1536x1024",
+      "prompt_body": "Two-panel aerial view of the same desert farm, with the layout itself as the main structure: one panel shows large irrigation basins at every junction and the connecting canals as thin dark threads; the other panel keeps every bend, crossing, and spacing exactly the same, but the basins and canals trade places, so the basins become the narrow links and the channels become the broad shapes. Swap them a second time and the original arrangement returns exactly. No text, labels, or map style.",
+      "judge": {
+        "passed": true,
+        "problems": ""
+      },
+      "regen": 2
+    },
+    {
+      "name": "stained_glass_lead",
+      "skel": "quadrangle",
+      "size": "1024x1536",
+      "prompt_body": "Classical oil painting of two adjacent views of the SAME chapel window. LEFT: heavy black lead cames carry every drawn stroke, with tiny colored glass bosses marking each drawn dot. RIGHT: sunlight catches the bosses as large jeweled points, while the lead cames recede into hairline dark dividers. The placement, slants, and uneven distances match exactly between views; no inscriptions or heraldic marks.",
+      "judge": {
+        "passed": true,
+        "problems": ""
+      }
+    },
+    {
+      "name": "tea_steam_bowls",
+      "skel": "quadrangle",
+      "size": "1024x1024",
+      "prompt_body": "A tidy afternoon tea on a wooden table in a side-by-side diptych: make the arrangement itself the skeleton. On the left, teacups are the holders and saucers are the bases; on the right, every cup and saucer take each other’s place everywhere at once, while the exact counts, spacing, pairings, and positions stay unchanged. Repeating the exchange would restore the first panel exactly. No text, labels, symbols, or viewpoint change.",
+      "judge": {
+        "passed": true,
+        "problems": ""
+      },
+      "regen": 1
+    },
+    {
+      "name": "forge_rivets",
+      "skel": "quadrangle",
+      "size": "1024x1536",
+      "prompt_body": "Industrial macro photograph diptych of the SAME iron gate corner. LEFT: black forged bars are thick strokes matching all drawn strokes, and each drawn dot is a low rivet head where bars meet. RIGHT: after polishing, rivet heads gleam as dominant metal points, while the bars are thin dark silhouettes between them. The same crossings, offsets, and unequal bar lengths must align precisely; no stamped letters or maker marks.",
+      "judge": {
+        "passed": true,
+        "problems": ""
+      }
+    },
+    {
+      "name": "candle_wax_pools",
+      "skel": "quadrangle",
+      "size": "1024x1024",
+      "prompt_body": "Baroque still-life diptych of the SAME tabletop after a candlelit dinner. LEFT: streams of hardened wax form raised ivory strokes matching every drawn stroke, and each drawn dot is a small blackened wick fragment. RIGHT: candle flames relit at the wick fragments become bright points, while the wax streams turn into thin pale connectors. The same skewed quadrangle and all junctions remain unchanged; no books, notes, or labels.",
+      "judge": {
+        "passed": true,
+        "problems": ""
+      }
+    },
+    {
+      "name": "salt_ponds",
+      "skel": "quadrangle",
+      "size": "1536x1024",
+      "prompt_body": "Modern aerial color view of a coastal salt farm split into left and right views. The four corner pump sheds are the drawn corners, and the straight dikes joining them are the drawn sides. On the left, the sheds are the heavy dark masses and the sluice mouths are tiny pale dots; on the right, the sluice mouths become the heavy bright masses and the sheds shrink to faint markers, while every relation between them stays in place.",
+      "judge": {
+        "passed": true,
+        "problems": ""
+      }
+    },
+    {
+      "name": "joinery_bench",
+      "skel": "quadrangle",
+      "size": "1024x1536",
+      "prompt_body": "Macro photograph of a cabinetmaker's bench in warm workshop light. The four corner pegs on the clamp frame are the drawn corners, and the taut straps between them are the drawn sides. In the first view, the pegs read as solid brass heads and the straps as thin leather lines; in the second, the leather tabs swell into the main shapes and the pegs recede to small fastening points, yet each joint keeps the same partner.",
+      "judge": {
+        "passed": true,
+        "problems": ""
+      }
+    },
+    {
+      "name": "harbor_cranes",
+      "skel": "quadrangle",
+      "size": "1536x1024",
+      "prompt_body": "Make the harbor scene itself carry the rule: use only two visible element types, thick dock posts and thin mooring ropes. In the left half, the posts are the anchors and the ropes only connect them; in the right half, the same harbor arrangement is shown again with those jobs exchanged, so ropes act as the anchors and posts become the connectors, while each boat stays attached to the same neighbor. Then show the original arrangement once more so the first reading is restored exactly. Keep it like a natural blue-hour quay, with no text or diagram look.",
+      "judge": {
+        "passed": true,
+        "problems": ""
+      },
+      "regen": 2
+    }
+  ],
+  "contraction_fixed_point": [
+    {
+      "name": "acetate_fern",
+      "skel": "cobweb",
+      "size": "1024x1024",
+      "prompt_body": "A macro photograph of translucent acetate sheets on a light table: the first sheet holds a pressed fern silhouette, each later sheet shows that fern reduced to three fifths and shifted by the same down-right move. The rising guide becomes the table’s bright front seam, the bowed guide becomes a curved cut edge of acetate. Every sideways leg is a sheet edge, every upright leg another sheet edge, all ending at one unchanged pinhole.",
+      "judge": {
+        "passed": true,
+        "problems": ""
+      }
+    },
+    {
+      "name": "salt_pan_channels",
+      "skel": "cobweb",
+      "size": "1536x1024",
+      "prompt_body": "Aerial drone view of pale desert salt pans after rain, copper and white palette. The rising guide is a dry levee running from lower left to upper right; the bowed guide is a dark tidal creek. Each sideways segment becomes a straight salt road, each upright segment a narrow sluice gate, the next pair always two thirds as long as the last. The single chain tightens toward the levee-creek crossing, where a still black pool remains.",
+      "judge": {
+        "passed": true,
+        "problems": ""
+      }
+    },
+    {
+      "name": "chapel_carpets",
+      "skel": "cobweb",
+      "size": "1024x1536",
+      "prompt_body": "A late Renaissance oil painting inside a quiet stone chapel, warm umber and candle gold. The rising guide becomes a slanting marble aisle seam; the bowed guide becomes the curved altar rail. Every horizontal stroke is a red carpet edge laid across the aisle, every vertical stroke is its forward fold, each fold shorter by a constant share. The final tiny carpet corner rests exactly where seam and rail meet, with no inscription anywhere.",
+      "judge": {
+        "passed": true,
+        "problems": ""
+      }
+    },
+    {
+      "name": "raked_sand_pebble",
+      "skel": "cobweb",
+      "size": "1024x1024",
+      "prompt_body": "A monochrome ink drawing of a small courtyard of raked sand viewed from above. The rising guide becomes a dark rake furrow drawn across the sand; the bowed guide becomes the wet edge around a shallow puddle. Every sideways mark is a crisp rake pass, every upright mark is a short row of fallen pebbles, each new pass-and-pebble pair reduced to half the last. All marks settle on one black pebble at the furrow-puddle contact.",
+      "judge": {
+        "passed": true,
+        "problems": ""
+      }
+    },
+    {
+      "name": "bowl_marble_trace",
+      "skel": "cobweb",
+      "size": "1024x1024",
+      "prompt_body": "Show one continuous glowing path that turns toward a single still point, with at least five visible straight segments. Each new segment should be about half the length of the one before it, so the path clearly gets shorter step by step until the last pieces pile up at the same spot. Use a realistic tabletop scene: a steel marble tracing the path inside a matte black bowl under one blue-white lamp, with the final bright dot fixed where the path ends.",
+      "judge": {
+        "passed": true,
+        "problems": ""
+      },
+      "regen": 1
+    },
+    {
+      "name": "quarry_haul_roads",
+      "skel": "cobweb",
+      "size": "1536x1024",
+      "prompt_body": "In an overhead satellite-style view of a small limestone quarry yard, show one single service path built by repeating the same turn on the end of the previous segment: each new straight section is about half as long as the last, for at least five steps, all along one route and tightening into one fixed stopping point beside a pale seam. Mark that point with a parked loader, and make the final short segments visibly pile up there as the path stops.",
+      "judge": {
+        "passed": true,
+        "problems": ""
+      },
+      "regen": 2
+    },
+    {
+      "name": "glass_leadwork",
+      "skel": "cobweb",
+      "size": "1024x1536",
+      "prompt_body": "Show one continuous stained-glass lead path in a garden-window scene stepping inward toward one small fixed bead: a wide strip begins at the frame, then folds to a shorter segment, then shorter again, with each new segment about half the previous length, for at least five visible steps. The segments must all belong to the same path and pile up at the same tiny stationary point, marked by a still glass jewel where the path ends. Use amber, teal, and smoky violet; no labels or diagram look.",
+      "judge": {
+        "passed": true,
+        "problems": ""
+      },
+      "regen": 1
+    },
+    {
+      "name": "curtain_shadow_steps",
+      "skel": "cobweb",
+      "size": "1024x1024",
+      "prompt_body": "One visible path must fold toward a single resting point across the scene: start from a curtain cord shadow on a wooden floor and make it step forward in at least five clear bent segments, each segment about half the length of the previous one, all on the same line of travel, until the shadows pile up at one tiny dust mote that stays fixed and the last segment stops there. Keep the setting as a quiet morning window with a linen curtain, floorboards, and soft light.",
+      "judge": {
+        "passed": true,
+        "problems": ""
+      },
+      "regen": 1
+    },
+    {
+      "name": "tile_stairwell",
+      "skel": "cobweb",
+      "size": "1024x1536",
+      "prompt_body": "Long-exposure photograph of an old tiled stairwell landing in cool gray and brass tones. A single curved grout seam is the rule, a straight wall seam beside it is the return line, and a lone glass marble traces a chain of shorter right-angle hops between them. Each hop lands closer to the same pale corner tile at the base of the stairs, where the marble finally comes to rest unchanged.",
+      "judge": {
+        "passed": true,
+        "problems": ""
+      }
+    }
+  ]
+}

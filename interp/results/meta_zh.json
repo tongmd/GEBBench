@@ -1,0 +1,49 @@
+{
+  "model": "unsloth/gemma-2-2b",
+  "sae_release": "gemma-scope-2b-pt-res-canonical",
+  "width": "16k",
+  "layers": [
+    4,
+    8,
+    12,
+    16,
+    20,
+    24
+  ],
+  "lang": "zh",
+  "voices": [
+    "story",
+    "theorem",
+    "invariant"
+  ],
+  "motif_ids": [
+    "self_reference",
+    "recursion",
+    "nesting",
+    "cycle",
+    "symmetry",
+    "alternation",
+    "spiral",
+    "convergence",
+    "bottleneck",
+    "symmetry_breaking",
+    "strange_loop",
+    "figure_ground",
+    "isomorphism",
+    "mobius",
+    "braiding",
+    "interference",
+    "tiling",
+    "hub",
+    "diagonalization",
+    "infinite_descent",
+    "coprime_orbit",
+    "pigeonhole",
+    "projective_duality",
+    "contraction_fixed_point",
+    "aperiodic_tiling"
+  ],
+  "d_sae": 16384,
+  "tok_topk": 30,
+  "max_tokens": 1024
+}
