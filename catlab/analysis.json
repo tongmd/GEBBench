@@ -1,0 +1,614 @@
+{
+ "or_claude-opus-4.8": {
+  "model": "anthropic/claude-opus-4.8",
+  "tasks": {
+   "endpoint_id": {
+    "n": 72,
+    "acc": 0.5833,
+    "ci95": [
+     0.468,
+     0.69
+    ]
+   },
+   "square_thm": {
+    "n": 36,
+    "acc": 0.5556,
+    "ci95": [
+     0.396,
+     0.705
+    ]
+   },
+   "square_story": {
+    "n": 36,
+    "acc": 0.3056,
+    "ci95": [
+     0.18,
+     0.469
+    ]
+   },
+   "id_vs_change": {
+    "n": 72,
+    "acc": 0.9167,
+    "ci95": [
+     0.83,
+     0.961
+    ]
+   },
+   "composition": {
+    "n": 6,
+    "acc": 0.5,
+    "ci95": [
+     0.188,
+     0.812
+    ]
+   }
+  },
+  "square_thm": {
+   "P_square_given_both_endpoints": 0.4167,
+   "n_both": 12,
+   "P_square_given_missed_endpoint": 0.625,
+   "n_not_both": 24,
+   "shortcut_ceiling": 0.4167,
+   "acc_minus_ceiling": 0.1389,
+   "identity_pull": {
+    "errors": 16,
+    "chose_identity": 0,
+    "share": 0.0,
+    "chance": 0.333
+   },
+   "per_edge_acc": {
+    "cycle_to_strangeloop": 1.0,
+    "iso_to_duality": 1.0,
+    "nesting_to_recursion": 0.667,
+    "recursion_to_contraction": 0.167,
+    "sym_to_symbreak": 0.5,
+    "tiling_to_aperiodic": 0.0
+   }
+  },
+  "square_story": {
+   "P_square_given_both_endpoints": 0.25,
+   "n_both": 12,
+   "P_square_given_missed_endpoint": 0.3333,
+   "n_not_both": 24,
+   "shortcut_ceiling": 0.4167,
+   "acc_minus_ceiling": -0.1111,
+   "identity_pull": {
+    "errors": 25,
+    "chose_identity": 12,
+    "share": 0.48,
+    "chance": 0.333
+   },
+   "per_edge_acc": {
+    "cycle_to_strangeloop": 0.833,
+    "iso_to_duality": 0.0,
+    "nesting_to_recursion": 0.333,
+    "recursion_to_contraction": 0.5,
+    "sym_to_symbreak": 0.167,
+    "tiling_to_aperiodic": 0.0
+   }
+  },
+  "id_vs_change": {
+   "structural_acc": 0.8333,
+   "nuisance_acc": 1.0,
+   "n_each": 36,
+   "nuisance_called_change": 0.0
+  },
+  "composition": {
+   "acc": 0.5,
+   "n_both_steps_right": 1,
+   "P_composite_given_steps": 1.0,
+   "errors_stopped_after_g1": 0,
+   "n_errors": 3
+  }
+ },
+ "or_gemini-3.1-pro": {
+  "model": "google/gemini-3.1-pro-preview",
+  "tasks": {
+   "endpoint_id": {
+    "n": 72,
+    "acc": 0.7361,
+    "ci95": [
+     0.624,
+     0.824
+    ]
+   },
+   "square_thm": {
+    "n": 36,
+    "acc": 0.5833,
+    "ci95": [
+     0.422,
+     0.729
+    ]
+   },
+   "square_story": {
+    "n": 36,
+    "acc": 0.3333,
+    "ci95": [
+     0.202,
+     0.497
+    ]
+   },
+   "id_vs_change": {
+    "n": 72,
+    "acc": 0.875,
+    "ci95": [
+     0.779,
+     0.933
+    ]
+   },
+   "composition": {
+    "n": 6,
+    "acc": 0.6667,
+    "ci95": [
+     0.3,
+     0.903
+    ]
+   }
+  },
+  "square_thm": {
+   "P_square_given_both_endpoints": 0.5909,
+   "n_both": 22,
+   "P_square_given_missed_endpoint": 0.5714,
+   "n_not_both": 14,
+   "shortcut_ceiling": 0.75,
+   "acc_minus_ceiling": -0.1667,
+   "identity_pull": {
+    "errors": 15,
+    "chose_identity": 0,
+    "share": 0.0,
+    "chance": 0.333
+   },
+   "per_edge_acc": {
+    "cycle_to_strangeloop": 1.0,
+    "iso_to_duality": 1.0,
+    "nesting_to_recursion": 0.833,
+    "recursion_to_contraction": 0.5,
+    "sym_to_symbreak": 0.167,
+    "tiling_to_aperiodic": 0.0
+   }
+  },
+  "square_story": {
+   "P_square_given_both_endpoints": 0.3182,
+   "n_both": 22,
+   "P_square_given_missed_endpoint": 0.3571,
+   "n_not_both": 14,
+   "shortcut_ceiling": 0.7361,
+   "acc_minus_ceiling": -0.4028,
+   "identity_pull": {
+    "errors": 24,
+    "chose_identity": 6,
+    "share": 0.25,
+    "chance": 0.333
+   },
+   "per_edge_acc": {
+    "cycle_to_strangeloop": 0.333,
+    "iso_to_duality": 0.5,
+    "nesting_to_recursion": 0.833,
+    "recursion_to_contraction": 0.333,
+    "sym_to_symbreak": 0.0,
+    "tiling_to_aperiodic": 0.0
+   }
+  },
+  "id_vs_change": {
+   "structural_acc": 0.8889,
+   "nuisance_acc": 0.8611,
+   "n_each": 36,
+   "nuisance_called_change": 0.1389
+  },
+  "composition": {
+   "acc": 0.6667,
+   "n_both_steps_right": 3,
+   "P_composite_given_steps": 0.667,
+   "errors_stopped_after_g1": 1,
+   "n_errors": 2
+  }
+ },
+ "or_gpt-5.2": {
+  "model": "openai/gpt-5.2",
+  "tasks": {
+   "endpoint_id": {
+    "n": 72,
+    "acc": 0.75,
+    "ci95": [
+     0.639,
+     0.836
+    ]
+   },
+   "square_thm": {
+    "n": 36,
+    "acc": 0.8333,
+    "ci95": [
+     0.681,
+     0.921
+    ]
+   },
+   "square_story": {
+    "n": 36,
+    "acc": 0.3611,
+    "ci95": [
+     0.225,
+     0.524
+    ]
+   },
+   "id_vs_change": {
+    "n": 72,
+    "acc": 0.9306,
+    "ci95": [
+     0.848,
+     0.97
+    ]
+   },
+   "composition": {
+    "n": 6,
+    "acc": 0.5,
+    "ci95": [
+     0.188,
+     0.812
+    ]
+   }
+  },
+  "square_thm": {
+   "P_square_given_both_endpoints": 0.8333,
+   "n_both": 24,
+   "P_square_given_missed_endpoint": 0.8333,
+   "n_not_both": 12,
+   "shortcut_ceiling": 0.7153,
+   "acc_minus_ceiling": 0.118,
+   "identity_pull": {
+    "errors": 6,
+    "chose_identity": 0,
+    "share": 0.0,
+    "chance": 0.333
+   },
+   "per_edge_acc": {
+    "cycle_to_strangeloop": 1.0,
+    "iso_to_duality": 0.833,
+    "nesting_to_recursion": 0.833,
+    "recursion_to_contraction": 0.5,
+    "sym_to_symbreak": 1.0,
+    "tiling_to_aperiodic": 0.833
+   }
+  },
+  "square_story": {
+   "P_square_given_both_endpoints": 0.4583,
+   "n_both": 24,
+   "P_square_given_missed_endpoint": 0.1667,
+   "n_not_both": 12,
+   "shortcut_ceiling": 0.7083,
+   "acc_minus_ceiling": -0.3472,
+   "identity_pull": {
+    "errors": 23,
+    "chose_identity": 1,
+    "share": 0.043,
+    "chance": 0.333
+   },
+   "per_edge_acc": {
+    "cycle_to_strangeloop": 0.667,
+    "iso_to_duality": 0.167,
+    "nesting_to_recursion": 1.0,
+    "recursion_to_contraction": 0.167,
+    "sym_to_symbreak": 0.0,
+    "tiling_to_aperiodic": 0.167
+   }
+  },
+  "id_vs_change": {
+   "structural_acc": 0.9167,
+   "nuisance_acc": 0.9444,
+   "n_each": 36,
+   "nuisance_called_change": 0.0556
+  },
+  "composition": {
+   "acc": 0.5,
+   "n_both_steps_right": 3,
+   "P_composite_given_steps": 0.333,
+   "errors_stopped_after_g1": 1,
+   "n_errors": 3
+  }
+ },
+ "or_gpt-5.5": {
+  "model": "openai/gpt-5.5",
+  "tasks": {
+   "endpoint_id": {
+    "n": 72,
+    "acc": 0.8056,
+    "ci95": [
+     0.7,
+     0.88
+    ]
+   },
+   "square_thm": {
+    "n": 36,
+    "acc": 0.8889,
+    "ci95": [
+     0.747,
+     0.956
+    ]
+   },
+   "square_story": {
+    "n": 36,
+    "acc": 0.5278,
+    "ci95": [
+     0.37,
+     0.68
+    ]
+   },
+   "id_vs_change": {
+    "n": 72,
+    "acc": 0.9306,
+    "ci95": [
+     0.848,
+     0.97
+    ]
+   },
+   "composition": {
+    "n": 6,
+    "acc": 0.6667,
+    "ci95": [
+     0.3,
+     0.903
+    ]
+   }
+  },
+  "square_thm": {
+   "P_square_given_both_endpoints": 1.0,
+   "n_both": 23,
+   "P_square_given_missed_endpoint": 0.6923,
+   "n_not_both": 13,
+   "shortcut_ceiling": 0.8542,
+   "acc_minus_ceiling": 0.0347,
+   "identity_pull": {
+    "errors": 4,
+    "chose_identity": 0,
+    "share": 0.0,
+    "chance": 0.333
+   },
+   "per_edge_acc": {
+    "cycle_to_strangeloop": 1.0,
+    "iso_to_duality": 0.833,
+    "nesting_to_recursion": 1.0,
+    "recursion_to_contraction": 0.833,
+    "sym_to_symbreak": 1.0,
+    "tiling_to_aperiodic": 0.667
+   }
+  },
+  "square_story": {
+   "P_square_given_both_endpoints": 0.6522,
+   "n_both": 23,
+   "P_square_given_missed_endpoint": 0.3077,
+   "n_not_both": 13,
+   "shortcut_ceiling": 0.8472,
+   "acc_minus_ceiling": -0.3194,
+   "identity_pull": {
+    "errors": 17,
+    "chose_identity": 0,
+    "share": 0.0,
+    "chance": 0.333
+   },
+   "per_edge_acc": {
+    "cycle_to_strangeloop": 0.333,
+    "iso_to_duality": 0.0,
+    "nesting_to_recursion": 1.0,
+    "recursion_to_contraction": 0.667,
+    "sym_to_symbreak": 0.667,
+    "tiling_to_aperiodic": 0.5
+   }
+  },
+  "id_vs_change": {
+   "structural_acc": 0.8889,
+   "nuisance_acc": 0.9722,
+   "n_each": 36,
+   "nuisance_called_change": 0.0278
+  },
+  "composition": {
+   "acc": 0.6667,
+   "n_both_steps_right": 5,
+   "P_composite_given_steps": 0.6,
+   "errors_stopped_after_g1": 1,
+   "n_errors": 2
+  }
+ },
+ "or_kimi-k2.5": {
+  "model": "moonshotai/kimi-k2.5",
+  "tasks": {
+   "endpoint_id": {
+    "n": 72,
+    "acc": 0.7083,
+    "ci95": [
+     0.595,
+     0.801
+    ]
+   },
+   "square_thm": {
+    "n": 36,
+    "acc": 0.5556,
+    "ci95": [
+     0.396,
+     0.705
+    ]
+   },
+   "square_story": {
+    "n": 36,
+    "acc": 0.4444,
+    "ci95": [
+     0.295,
+     0.604
+    ]
+   },
+   "id_vs_change": {
+    "n": 72,
+    "acc": 0.6667,
+    "ci95": [
+     0.552,
+     0.765
+    ]
+   },
+   "composition": {
+    "n": 6,
+    "acc": 1.0,
+    "ci95": [
+     0.61,
+     1.0
+    ]
+   }
+  },
+  "square_thm": {
+   "P_square_given_both_endpoints": 0.65,
+   "n_both": 20,
+   "P_square_given_missed_endpoint": 0.4375,
+   "n_not_both": 16,
+   "shortcut_ceiling": 0.6597,
+   "acc_minus_ceiling": -0.1041,
+   "identity_pull": {
+    "errors": 16,
+    "chose_identity": 0,
+    "share": 0.0,
+    "chance": 0.333
+   },
+   "per_edge_acc": {
+    "cycle_to_strangeloop": 1.0,
+    "iso_to_duality": 0.333,
+    "nesting_to_recursion": 1.0,
+    "recursion_to_contraction": 0.333,
+    "sym_to_symbreak": 0.333,
+    "tiling_to_aperiodic": 0.333
+   }
+  },
+  "square_story": {
+   "P_square_given_both_endpoints": 0.7,
+   "n_both": 20,
+   "P_square_given_missed_endpoint": 0.125,
+   "n_not_both": 16,
+   "shortcut_ceiling": 0.6597,
+   "acc_minus_ceiling": -0.2153,
+   "identity_pull": {
+    "errors": 20,
+    "chose_identity": 1,
+    "share": 0.05,
+    "chance": 0.333
+   },
+   "per_edge_acc": {
+    "cycle_to_strangeloop": 0.667,
+    "iso_to_duality": 0.0,
+    "nesting_to_recursion": 1.0,
+    "recursion_to_contraction": 0.5,
+    "sym_to_symbreak": 0.5,
+    "tiling_to_aperiodic": 0.0
+   }
+  },
+  "id_vs_change": {
+   "structural_acc": 0.9722,
+   "nuisance_acc": 0.3611,
+   "n_each": 36,
+   "nuisance_called_change": 0.6389
+  },
+  "composition": {
+   "acc": 1.0,
+   "n_both_steps_right": 2,
+   "P_composite_given_steps": 1.0,
+   "errors_stopped_after_g1": 0,
+   "n_errors": 0
+  }
+ },
+ "or_qwen2.5-vl-72b": {
+  "model": "qwen/qwen2.5-vl-72b-instruct",
+  "tasks": {
+   "endpoint_id": {
+    "n": 72,
+    "acc": 0.5694,
+    "ci95": [
+     0.454,
+     0.677
+    ]
+   },
+   "square_thm": {
+    "n": 36,
+    "acc": 0.3056,
+    "ci95": [
+     0.18,
+     0.469
+    ]
+   },
+   "square_story": {
+    "n": 36,
+    "acc": 0.2222,
+    "ci95": [
+     0.117,
+     0.381
+    ]
+   },
+   "id_vs_change": {
+    "n": 72,
+    "acc": 0.6389,
+    "ci95": [
+     0.524,
+     0.74
+    ]
+   },
+   "composition": {
+    "n": 6,
+    "acc": 0.5,
+    "ci95": [
+     0.188,
+     0.812
+    ]
+   }
+  },
+  "square_thm": {
+   "P_square_given_both_endpoints": 0.2727,
+   "n_both": 11,
+   "P_square_given_missed_endpoint": 0.32,
+   "n_not_both": 25,
+   "shortcut_ceiling": 0.4583,
+   "acc_minus_ceiling": -0.1527,
+   "identity_pull": {
+    "errors": 25,
+    "chose_identity": 0,
+    "share": 0.0,
+    "chance": 0.333
+   },
+   "per_edge_acc": {
+    "cycle_to_strangeloop": 1.0,
+    "iso_to_duality": 0.0,
+    "nesting_to_recursion": 0.667,
+    "recursion_to_contraction": 0.167,
+    "sym_to_symbreak": 0.0,
+    "tiling_to_aperiodic": 0.0
+   }
+  },
+  "square_story": {
+   "P_square_given_both_endpoints": 0.1818,
+   "n_both": 11,
+   "P_square_given_missed_endpoint": 0.24,
+   "n_not_both": 25,
+   "shortcut_ceiling": 0.4167,
+   "acc_minus_ceiling": -0.1945,
+   "identity_pull": {
+    "errors": 28,
+    "chose_identity": 17,
+    "share": 0.607,
+    "chance": 0.333
+   },
+   "per_edge_acc": {
+    "cycle_to_strangeloop": 0.333,
+    "iso_to_duality": 0.333,
+    "nesting_to_recursion": 0.333,
+    "recursion_to_contraction": 0.167,
+    "sym_to_symbreak": 0.167,
+    "tiling_to_aperiodic": 0.0
+   }
+  },
+  "id_vs_change": {
+   "structural_acc": 0.75,
+   "nuisance_acc": 0.5278,
+   "n_each": 36,
+   "nuisance_called_change": 0.4722
+  },
+  "composition": {
+   "acc": 0.5,
+   "n_both_steps_right": 1,
+   "P_composite_given_steps": 1.0,
+   "errors_stopped_after_g1": 0,
+   "n_errors": 3
+  }
+ }
+}

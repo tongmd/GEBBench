@@ -1,0 +1,653 @@
+{
+ "model": "anthropic/claude-opus-4.8",
+ "base": "https://openrouter.ai/api/v1",
+ "summary": {
+  "scene2motif": {
+   "n": 80,
+   "acc": 0.525,
+   "n_unparsed": 0
+  }
+ },
+ "records": [
+  {
+   "id": "scene:resample_00:alternation",
+   "task": "scene2motif",
+   "answer": "alternation",
+   "pred": "symmetry_breaking",
+   "correct": false,
+   "raw": "{\"motif_id\": \"symmetry_breaking\"}"
+  },
+  {
+   "id": "scene:resample_01:alternation",
+   "task": "scene2motif",
+   "answer": "alternation",
+   "pred": "alternation",
+   "correct": true,
+   "raw": "{\"motif_id\": \"alternation\"}"
+  },
+  {
+   "id": "scene:resample_02:alternation",
+   "task": "scene2motif",
+   "answer": "alternation",
+   "pred": "figure_ground",
+   "correct": false,
+   "raw": "{\"motif_id\": \"figure_ground\"}"
+  },
+  {
+   "id": "scene:resample_00:aperiodic_tiling",
+   "task": "scene2motif",
+   "answer": "aperiodic_tiling",
+   "pred": "recursion",
+   "correct": false,
+   "raw": "{\"motif_id\": \"recursion\"}"
+  },
+  {
+   "id": "scene:resample_01:aperiodic_tiling",
+   "task": "scene2motif",
+   "answer": "aperiodic_tiling",
+   "pred": "aperiodic_tiling",
+   "correct": true,
+   "raw": "{\"motif_id\": \"aperiodic_tiling\"}"
+  },
+  {
+   "id": "scene:resample_02:aperiodic_tiling",
+   "task": "scene2motif",
+   "answer": "aperiodic_tiling",
+   "pred": "symmetry",
+   "correct": false,
+   "raw": "{\"motif_id\": \"symmetry\"}"
+  },
+  {
+   "id": "scene:resample_03:aperiodic_tiling",
+   "task": "scene2motif",
+   "answer": "aperiodic_tiling",
+   "pred": "symmetry",
+   "correct": false,
+   "raw": "{\"motif_id\": \"symmetry\"}"
+  },
+  {
+   "id": "scene:resample_00:bottleneck",
+   "task": "scene2motif",
+   "answer": "bottleneck",
+   "pred": "bottleneck",
+   "correct": true,
+   "raw": "{\"motif_id\": \"bottleneck\"}"
+  },
+  {
+   "id": "scene:resample_01:bottleneck",
+   "task": "scene2motif",
+   "answer": "bottleneck",
+   "pred": "bottleneck",
+   "correct": true,
+   "raw": "{\"motif_id\": \"bottleneck\"}"
+  },
+  {
+   "id": "scene:resample_02:bottleneck",
+   "task": "scene2motif",
+   "answer": "bottleneck",
+   "pred": "bottleneck",
+   "correct": true,
+   "raw": "{\"motif_id\": \"bottleneck\"}"
+  },
+  {
+   "id": "scene:resample_00:braiding",
+   "task": "scene2motif",
+   "answer": "braiding",
+   "pred": "braiding",
+   "correct": true,
+   "raw": "{\"motif_id\": \"braiding\"}"
+  },
+  {
+   "id": "scene:resample_01:braiding",
+   "task": "scene2motif",
+   "answer": "braiding",
+   "pred": "braiding",
+   "correct": true,
+   "raw": "{\"motif_id\": \"braiding\"}"
+  },
+  {
+   "id": "scene:resample_02:braiding",
+   "task": "scene2motif",
+   "answer": "braiding",
+   "pred": "braiding",
+   "correct": true,
+   "raw": "{\"motif_id\": \"braiding\"}"
+  },
+  {
+   "id": "scene:resample_00:contraction_fixed_point",
+   "task": "scene2motif",
+   "answer": "contraction_fixed_point",
+   "pred": "convergence",
+   "correct": false,
+   "raw": "{\"motif_id\": \"convergence\"}"
+  },
+  {
+   "id": "scene:resample_01:contraction_fixed_point",
+   "task": "scene2motif",
+   "answer": "contraction_fixed_point",
+   "pred": "recursion",
+   "correct": false,
+   "raw": "{\"motif_id\": \"recursion\"}"
+  },
+  {
+   "id": "scene:resample_02:contraction_fixed_point",
+   "task": "scene2motif",
+   "answer": "contraction_fixed_point",
+   "pred": "symmetry_breaking",
+   "correct": false,
+   "raw": "{\"motif_id\": \"symmetry_breaking\"}"
+  },
+  {
+   "id": "scene:resample_03:contraction_fixed_point",
+   "task": "scene2motif",
+   "answer": "contraction_fixed_point",
+   "pred": "hub",
+   "correct": false,
+   "raw": "{\"motif_id\": \"hub\"}"
+  },
+  {
+   "id": "scene:resample_00:convergence",
+   "task": "scene2motif",
+   "answer": "convergence",
+   "pred": "recursion",
+   "correct": false,
+   "raw": "{\"motif_id\": \"recursion\"}"
+  },
+  {
+   "id": "scene:resample_01:convergence",
+   "task": "scene2motif",
+   "answer": "convergence",
+   "pred": "convergence",
+   "correct": true,
+   "raw": "{\"motif_id\": \"convergence\"}"
+  },
+  {
+   "id": "scene:resample_02:convergence",
+   "task": "scene2motif",
+   "answer": "convergence",
+   "pred": "convergence",
+   "correct": true,
+   "raw": "{\"motif_id\": \"convergence\"}"
+  },
+  {
+   "id": "scene:resample_00:coprime_orbit",
+   "task": "scene2motif",
+   "answer": "coprime_orbit",
+   "pred": "coprime_orbit",
+   "correct": true,
+   "raw": "{\"motif_id\": \"coprime_orbit\"}"
+  },
+  {
+   "id": "scene:resample_01:coprime_orbit",
+   "task": "scene2motif",
+   "answer": "coprime_orbit",
+   "pred": "coprime_orbit",
+   "correct": true,
+   "raw": "{\"motif_id\": \"coprime_orbit\"}"
+  },
+  {
+   "id": "scene:resample_02:coprime_orbit",
+   "task": "scene2motif",
+   "answer": "coprime_orbit",
+   "pred": "coprime_orbit",
+   "correct": true,
+   "raw": "{\"motif_id\": \"coprime_orbit\"}"
+  },
+  {
+   "id": "scene:resample_03:coprime_orbit",
+   "task": "scene2motif",
+   "answer": "coprime_orbit",
+   "pred": "coprime_orbit",
+   "correct": true,
+   "raw": "{\"motif_id\": \"coprime_orbit\"}"
+  },
+  {
+   "id": "scene:resample_00:cycle",
+   "task": "scene2motif",
+   "answer": "cycle",
+   "pred": "cycle",
+   "correct": true,
+   "raw": "{\"motif_id\": \"cycle\"}"
+  },
+  {
+   "id": "scene:resample_01:cycle",
+   "task": "scene2motif",
+   "answer": "cycle",
+   "pred": "cycle",
+   "correct": true,
+   "raw": "{\"motif_id\": \"cycle\"}"
+  },
+  {
+   "id": "scene:resample_02:cycle",
+   "task": "scene2motif",
+   "answer": "cycle",
+   "pred": "cycle",
+   "correct": true,
+   "raw": "{\"motif_id\": \"cycle\"}"
+  },
+  {
+   "id": "scene:resample_00:diagonalization",
+   "task": "scene2motif",
+   "answer": "diagonalization",
+   "pred": "alternation",
+   "correct": false,
+   "raw": "{\"motif_id\": \"alternation\"}"
+  },
+  {
+   "id": "scene:resample_01:diagonalization",
+   "task": "scene2motif",
+   "answer": "diagonalization",
+   "pred": "alternation",
+   "correct": false,
+   "raw": "{\"motif_id\": \"alternation\"}"
+  },
+  {
+   "id": "scene:resample_02:diagonalization",
+   "task": "scene2motif",
+   "answer": "diagonalization",
+   "pred": "alternation",
+   "correct": false,
+   "raw": "{\"motif_id\": \"alternation\"}"
+  },
+  {
+   "id": "scene:resample_03:diagonalization",
+   "task": "scene2motif",
+   "answer": "diagonalization",
+   "pred": "diagonalization",
+   "correct": true,
+   "raw": "{\"motif_id\": \"diagonalization\"}"
+  },
+  {
+   "id": "scene:resample_00:figure_ground",
+   "task": "scene2motif",
+   "answer": "figure_ground",
+   "pred": "tiling",
+   "correct": false,
+   "raw": "{\"motif_id\": \"tiling\"}"
+  },
+  {
+   "id": "scene:resample_01:figure_ground",
+   "task": "scene2motif",
+   "answer": "figure_ground",
+   "pred": "tiling",
+   "correct": false,
+   "raw": "{\"motif_id\": \"tiling\"}"
+  },
+  {
+   "id": "scene:resample_02:figure_ground",
+   "task": "scene2motif",
+   "answer": "figure_ground",
+   "pred": "figure_ground",
+   "correct": true,
+   "raw": "{\"motif_id\": \"figure_ground\"}"
+  },
+  {
+   "id": "scene:resample_00:hub",
+   "task": "scene2motif",
+   "answer": "hub",
+   "pred": "hub",
+   "correct": true,
+   "raw": "{\"motif_id\": \"hub\"}"
+  },
+  {
+   "id": "scene:resample_01:hub",
+   "task": "scene2motif",
+   "answer": "hub",
+   "pred": "hub",
+   "correct": true,
+   "raw": "{\"motif_id\": \"hub\"}"
+  },
+  {
+   "id": "scene:resample_02:hub",
+   "task": "scene2motif",
+   "answer": "hub",
+   "pred": "symmetry",
+   "correct": false,
+   "raw": "{\"motif_id\": \"symmetry\"}"
+  },
+  {
+   "id": "scene:resample_00:infinite_descent",
+   "task": "scene2motif",
+   "answer": "infinite_descent",
+   "pred": "recursion",
+   "correct": false,
+   "raw": "{\"motif_id\": \"recursion\"}"
+  },
+  {
+   "id": "scene:resample_01:infinite_descent",
+   "task": "scene2motif",
+   "answer": "infinite_descent",
+   "pred": "self_reference",
+   "correct": false,
+   "raw": "{\"motif_id\": \"self_reference\"}"
+  },
+  {
+   "id": "scene:resample_02:infinite_descent",
+   "task": "scene2motif",
+   "answer": "infinite_descent",
+   "pred": "recursion",
+   "correct": false,
+   "raw": "{\"motif_id\": \"recursion\"}"
+  },
+  {
+   "id": "scene:resample_03:infinite_descent",
+   "task": "scene2motif",
+   "answer": "infinite_descent",
+   "pred": "recursion",
+   "correct": false,
+   "raw": "{\"motif_id\": \"recursion\"}"
+  },
+  {
+   "id": "scene:resample_00:interference",
+   "task": "scene2motif",
+   "answer": "interference",
+   "pred": "interference",
+   "correct": true,
+   "raw": "{\"motif_id\": \"interference\"}"
+  },
+  {
+   "id": "scene:resample_01:interference",
+   "task": "scene2motif",
+   "answer": "interference",
+   "pred": "interference",
+   "correct": true,
+   "raw": "{\"motif_id\": \"interference\"}"
+  },
+  {
+   "id": "scene:resample_02:interference",
+   "task": "scene2motif",
+   "answer": "interference",
+   "pred": "interference",
+   "correct": true,
+   "raw": "{\"motif_id\": \"interference\"}"
+  },
+  {
+   "id": "scene:resample_00:isomorphism",
+   "task": "scene2motif",
+   "answer": "isomorphism",
+   "pred": "symmetry",
+   "correct": false,
+   "raw": "{\"motif_id\": \"symmetry\"}"
+  },
+  {
+   "id": "scene:resample_01:isomorphism",
+   "task": "scene2motif",
+   "answer": "isomorphism",
+   "pred": "isomorphism",
+   "correct": true,
+   "raw": "{\"motif_id\": \"isomorphism\"}"
+  },
+  {
+   "id": "scene:resample_02:isomorphism",
+   "task": "scene2motif",
+   "answer": "isomorphism",
+   "pred": "bottleneck",
+   "correct": false,
+   "raw": "{\"motif_id\": \"bottleneck\"}"
+  },
+  {
+   "id": "scene:resample_00:mobius",
+   "task": "scene2motif",
+   "answer": "mobius",
+   "pred": "mobius",
+   "correct": true,
+   "raw": "{\"motif_id\": \"mobius\"}"
+  },
+  {
+   "id": "scene:resample_01:mobius",
+   "task": "scene2motif",
+   "answer": "mobius",
+   "pred": "mobius",
+   "correct": true,
+   "raw": "{\"motif_id\": \"mobius\"}"
+  },
+  {
+   "id": "scene:resample_02:mobius",
+   "task": "scene2motif",
+   "answer": "mobius",
+   "pred": "mobius",
+   "correct": true,
+   "raw": "{\"motif_id\": \"mobius\"}"
+  },
+  {
+   "id": "scene:resample_00:nesting",
+   "task": "scene2motif",
+   "answer": "nesting",
+   "pred": "recursion",
+   "correct": false,
+   "raw": "{\"motif_id\": \"recursion\"}"
+  },
+  {
+   "id": "scene:resample_01:nesting",
+   "task": "scene2motif",
+   "answer": "nesting",
+   "pred": "hub",
+   "correct": false,
+   "raw": "{\"motif_id\": \"hub\"}"
+  },
+  {
+   "id": "scene:resample_00:pigeonhole",
+   "task": "scene2motif",
+   "answer": "pigeonhole",
+   "pred": "alternation",
+   "correct": false,
+   "raw": "{\"motif_id\": \"alternation\"}"
+  },
+  {
+   "id": "scene:resample_01:pigeonhole",
+   "task": "scene2motif",
+   "answer": "pigeonhole",
+   "pred": "symmetry_breaking",
+   "correct": false,
+   "raw": "{\"motif_id\": \"symmetry_breaking\"}"
+  },
+  {
+   "id": "scene:resample_02:pigeonhole",
+   "task": "scene2motif",
+   "answer": "pigeonhole",
+   "pred": "symmetry_breaking",
+   "correct": false,
+   "raw": "{\"motif_id\": \"symmetry_breaking\"}"
+  },
+  {
+   "id": "scene:resample_03:pigeonhole",
+   "task": "scene2motif",
+   "answer": "pigeonhole",
+   "pred": "alternation",
+   "correct": false,
+   "raw": "{\"motif_id\": \"alternation\"}"
+  },
+  {
+   "id": "scene:resample_00:projective_duality",
+   "task": "scene2motif",
+   "answer": "projective_duality",
+   "pred": "hub",
+   "correct": false,
+   "raw": "{\"motif_id\": \"hub\"}"
+  },
+  {
+   "id": "scene:resample_01:projective_duality",
+   "task": "scene2motif",
+   "answer": "projective_duality",
+   "pred": "bottleneck",
+   "correct": false,
+   "raw": "{\"motif_id\": \"bottleneck\"}"
+  },
+  {
+   "id": "scene:resample_02:projective_duality",
+   "task": "scene2motif",
+   "answer": "projective_duality",
+   "pred": "recursion",
+   "correct": false,
+   "raw": "{\"motif_id\": \"recursion\"}"
+  },
+  {
+   "id": "scene:resample_03:projective_duality",
+   "task": "scene2motif",
+   "answer": "projective_duality",
+   "pred": "hub",
+   "correct": false,
+   "raw": "{\"motif_id\": \"hub\"}"
+  },
+  {
+   "id": "scene:resample_00:recursion",
+   "task": "scene2motif",
+   "answer": "recursion",
+   "pred": "recursion",
+   "correct": true,
+   "raw": "{\"motif_id\": \"recursion\"}"
+  },
+  {
+   "id": "scene:resample_01:recursion",
+   "task": "scene2motif",
+   "answer": "recursion",
+   "pred": "symmetry",
+   "correct": false,
+   "raw": "{\"motif_id\": \"symmetry\"}"
+  },
+  {
+   "id": "scene:resample_00:self_reference",
+   "task": "scene2motif",
+   "answer": "self_reference",
+   "pred": "recursion",
+   "correct": false,
+   "raw": "{\"motif_id\": \"recursion\"}"
+  },
+  {
+   "id": "scene:resample_01:self_reference",
+   "task": "scene2motif",
+   "answer": "self_reference",
+   "pred": "nesting",
+   "correct": false,
+   "raw": "{\"motif_id\": \"nesting\"}"
+  },
+  {
+   "id": "scene:resample_02:self_reference",
+   "task": "scene2motif",
+   "answer": "self_reference",
+   "pred": "recursion",
+   "correct": false,
+   "raw": "{\"motif_id\": \"recursion\"}"
+  },
+  {
+   "id": "scene:resample_00:spiral",
+   "task": "scene2motif",
+   "answer": "spiral",
+   "pred": "spiral",
+   "correct": true,
+   "raw": "{\"motif_id\": \"spiral\"}"
+  },
+  {
+   "id": "scene:resample_01:spiral",
+   "task": "scene2motif",
+   "answer": "spiral",
+   "pred": "spiral",
+   "correct": true,
+   "raw": "{\"motif_id\": \"spiral\"}"
+  },
+  {
+   "id": "scene:resample_02:spiral",
+   "task": "scene2motif",
+   "answer": "spiral",
+   "pred": "spiral",
+   "correct": true,
+   "raw": "{\"motif_id\": \"spiral\"}"
+  },
+  {
+   "id": "scene:resample_00:strange_loop",
+   "task": "scene2motif",
+   "answer": "strange_loop",
+   "pred": "strange_loop",
+   "correct": true,
+   "raw": "{\"motif_id\": \"strange_loop\"}"
+  },
+  {
+   "id": "scene:resample_01:strange_loop",
+   "task": "scene2motif",
+   "answer": "strange_loop",
+   "pred": "recursion",
+   "correct": false,
+   "raw": "{\"motif_id\": \"recursion\"}"
+  },
+  {
+   "id": "scene:resample_02:strange_loop",
+   "task": "scene2motif",
+   "answer": "strange_loop",
+   "pred": "recursion",
+   "correct": false,
+   "raw": "{\"motif_id\": \"recursion\"}"
+  },
+  {
+   "id": "scene:resample_00:symmetry",
+   "task": "scene2motif",
+   "answer": "symmetry",
+   "pred": "symmetry",
+   "correct": true,
+   "raw": "{\"motif_id\": \"symmetry\"}"
+  },
+  {
+   "id": "scene:resample_01:symmetry",
+   "task": "scene2motif",
+   "answer": "symmetry",
+   "pred": "symmetry",
+   "correct": true,
+   "raw": "{\"motif_id\": \"symmetry\"}"
+  },
+  {
+   "id": "scene:resample_02:symmetry",
+   "task": "scene2motif",
+   "answer": "symmetry",
+   "pred": "symmetry",
+   "correct": true,
+   "raw": "{\"motif_id\": \"symmetry\"}"
+  },
+  {
+   "id": "scene:resample_00:symmetry_breaking",
+   "task": "scene2motif",
+   "answer": "symmetry_breaking",
+   "pred": "symmetry_breaking",
+   "correct": true,
+   "raw": "{\"motif_id\": \"symmetry_breaking\"}"
+  },
+  {
+   "id": "scene:resample_01:symmetry_breaking",
+   "task": "scene2motif",
+   "answer": "symmetry_breaking",
+   "pred": "symmetry_breaking",
+   "correct": true,
+   "raw": "{\"motif_id\": \"symmetry_breaking\"}"
+  },
+  {
+   "id": "scene:resample_02:symmetry_breaking",
+   "task": "scene2motif",
+   "answer": "symmetry_breaking",
+   "pred": "symmetry_breaking",
+   "correct": true,
+   "raw": "{\"motif_id\": \"symmetry_breaking\"}"
+  },
+  {
+   "id": "scene:resample_00:tiling",
+   "task": "scene2motif",
+   "answer": "tiling",
+   "pred": "tiling",
+   "correct": true,
+   "raw": "{\"motif_id\": \"tiling\"}"
+  },
+  {
+   "id": "scene:resample_01:tiling",
+   "task": "scene2motif",
+   "answer": "tiling",
+   "pred": "tiling",
+   "correct": true,
+   "raw": "{\"motif_id\": \"tiling\"}"
+  },
+  {
+   "id": "scene:resample_02:tiling",
+   "task": "scene2motif",
+   "answer": "tiling",
+   "pred": "tiling",
+   "correct": true,
+   "raw": "{\"motif_id\": \"tiling\"}"
+  }
+ ]
+}

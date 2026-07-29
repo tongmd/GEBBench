@@ -3,25 +3,67 @@
  "n_items": 25,
  "chance": 0.04,
  "models": {
-  "api_gpt-5.5": {
+  "or_gpt-5.5": {
    "model": "GPT-5.5",
    "n_items": 25,
-   "acc_zh": 0.84,
+   "acc_zh": 0.88,
    "acc_en": 0.76,
-   "gap_zh_minus_en": 0.08,
+   "gap_zh_minus_en": 0.12,
    "contingency": {
     "both_correct": 18,
-    "zh_only": 3,
+    "zh_only": 4,
     "en_only": 1,
-    "neither": 3
+    "neither": 2
    },
-   "mcnemar_exact_p": 0.625,
-   "P_correct_en_given_correct_zh": 0.8571,
+   "mcnemar_exact_p": 0.375,
+   "P_correct_en_given_correct_zh": 0.8182,
    "P_correct_zh_given_correct_en": 0.9474,
-   "cohen_kappa": 0.505,
-   "both_wrong_n": 3,
+   "cohen_kappa": 0.3386,
+   "both_wrong_n": 2,
    "both_wrong_same_pred_n": 1,
    "both_wrong_detail": [
+    {
+     "item": "self_reference",
+     "answer": "self_reference",
+     "pred_zh": "convergence",
+     "pred_en": "figure_ground",
+     "same_wrong_motif": false
+    },
+    {
+     "item": "symmetry",
+     "answer": "symmetry",
+     "pred_zh": "mobius",
+     "pred_en": "mobius",
+     "same_wrong_motif": true
+    }
+   ]
+  },
+  "or_gpt-5.2": {
+   "model": "GPT-5.2",
+   "n_items": 25,
+   "acc_zh": 0.8,
+   "acc_en": 0.84,
+   "gap_zh_minus_en": -0.04,
+   "contingency": {
+    "both_correct": 19,
+    "zh_only": 1,
+    "en_only": 2,
+    "neither": 3
+   },
+   "mcnemar_exact_p": 1.0,
+   "P_correct_en_given_correct_zh": 0.95,
+   "P_correct_zh_given_correct_en": 0.9048,
+   "cohen_kappa": 0.5946,
+   "both_wrong_n": 3,
+   "both_wrong_same_pred_n": 2,
+   "both_wrong_detail": [
+    {
+     "item": "interference",
+     "answer": "interference",
+     "pred_zh": "alternation",
+     "pred_en": "convergence",
+     "same_wrong_motif": false
+    },
     {
      "item": "self_reference",
      "answer": "self_reference",
@@ -33,91 +75,42 @@
      "item": "symmetry",
      "answer": "symmetry",
      "pred_zh": "mobius",
-     "pred_en": "projective_duality",
-     "same_wrong_motif": false
-    },
-    {
-     "item": "tiling",
-     "answer": "tiling",
-     "pred_zh": "isomorphism",
-     "pred_en": "convergence",
-     "same_wrong_motif": false
-    }
-   ]
-  },
-  "api_gpt-5.2": {
-   "model": "GPT-5.2",
-   "n_items": 25,
-   "acc_zh": 0.72,
-   "acc_en": 0.76,
-   "gap_zh_minus_en": -0.04,
-   "contingency": {
-    "both_correct": 16,
-    "zh_only": 2,
-    "en_only": 3,
-    "neither": 4
-   },
-   "mcnemar_exact_p": 1.0,
-   "P_correct_en_given_correct_zh": 0.8889,
-   "P_correct_zh_given_correct_en": 0.8421,
-   "cohen_kappa": 0.4813,
-   "both_wrong_n": 4,
-   "both_wrong_same_pred_n": 3,
-   "both_wrong_detail": [
-    {
-     "item": "interference",
-     "answer": "interference",
-     "pred_zh": "braiding",
-     "pred_en": "convergence",
-     "same_wrong_motif": false
-    },
-    {
-     "item": "self_reference",
-     "answer": "self_reference",
-     "pred_zh": "convergence",
-     "pred_en": "convergence",
-     "same_wrong_motif": true
-    },
-    {
-     "item": "symmetry",
-     "answer": "symmetry",
-     "pred_zh": "projective_duality",
-     "pred_en": "projective_duality",
-     "same_wrong_motif": true
-    },
-    {
-     "item": "tiling",
-     "answer": "tiling",
-     "pred_zh": "convergence",
-     "pred_en": "convergence",
+     "pred_en": "mobius",
      "same_wrong_motif": true
     }
    ]
   },
-  "api_claude-opus-4-8": {
+  "or_claude-opus-4.8": {
    "model": "Claude Opus 4.8",
    "n_items": 25,
    "acc_zh": 0.76,
-   "acc_en": 0.8,
-   "gap_zh_minus_en": -0.04,
+   "acc_en": 0.84,
+   "gap_zh_minus_en": -0.08,
    "contingency": {
-    "both_correct": 17,
-    "zh_only": 2,
+    "both_correct": 18,
+    "zh_only": 1,
     "en_only": 3,
     "neither": 3
    },
-   "mcnemar_exact_p": 1.0,
-   "P_correct_en_given_correct_zh": 0.8947,
-   "P_correct_zh_given_correct_en": 0.85,
-   "cohen_kappa": 0.4186,
+   "mcnemar_exact_p": 0.625,
+   "P_correct_en_given_correct_zh": 0.9474,
+   "P_correct_zh_given_correct_en": 0.8571,
+   "cohen_kappa": 0.505,
    "both_wrong_n": 3,
    "both_wrong_same_pred_n": 1,
    "both_wrong_detail": [
     {
      "item": "alternation",
      "answer": "alternation",
-     "pred_zh": "isomorphism",
-     "pred_en": "bottleneck",
+     "pred_zh": "figure_ground",
+     "pred_en": "symmetry",
+     "same_wrong_motif": false
+    },
+    {
+     "item": "interference",
+     "answer": "interference",
+     "pred_zh": "self_reference",
+     "pred_en": "convergence",
      "same_wrong_motif": false
     },
     {
@@ -126,55 +119,44 @@
      "pred_zh": "convergence",
      "pred_en": "convergence",
      "same_wrong_motif": true
-    },
-    {
-     "item": "symmetry",
-     "answer": "symmetry",
-     "pred_zh": "mobius",
-     "pred_en": "projective_duality",
-     "same_wrong_motif": false
     }
    ]
   }
  },
  "pooled": {
-  "zh_only": 7,
-  "en_only": 7,
+  "zh_only": 6,
+  "en_only": 6,
   "pooled_mcnemar_exact_p": 1.0,
-  "pooled_acc_zh": 0.7733,
-  "pooled_acc_en": 0.7733
+  "pooled_acc_zh": 0.8133,
+  "pooled_acc_en": 0.8133
  },
  "gap_heterogeneity_across_models": {
   "table_zhonly_enonly": [
    [
-    3,
+    4,
     1
    ],
    [
-    2,
-    3
+    1,
+    2
    ],
    [
-    2,
+    1,
     3
    ]
   ],
-  "chi2": 1.4,
+  "chi2": 3.133,
   "dof": 2,
-  "p_heterogeneity": 0.4966,
+  "p_heterogeneity": 0.2087,
   "note": "chi2 on discordant-pair direction; counts are tiny, treat as descriptive"
  },
  "items_with_any_error": {
   "alternation": {
    "zh_wrong_models": 1,
-   "en_wrong_models": 3
-  },
-  "bottleneck": {
-   "zh_wrong_models": 1,
-   "en_wrong_models": 0
+   "en_wrong_models": 2
   },
   "contraction_fixed_point": {
-   "zh_wrong_models": 2,
+   "zh_wrong_models": 1,
    "en_wrong_models": 0
   },
   "figure_ground": {
@@ -182,7 +164,7 @@
    "en_wrong_models": 0
   },
   "interference": {
-   "zh_wrong_models": 1,
+   "zh_wrong_models": 2,
    "en_wrong_models": 3
   },
   "mobius": {
@@ -198,114 +180,12 @@
    "en_wrong_models": 3
   },
   "symmetry": {
-   "zh_wrong_models": 3,
-   "en_wrong_models": 3
-  },
-  "tiling": {
    "zh_wrong_models": 2,
    "en_wrong_models": 2
+  },
+  "tiling": {
+   "zh_wrong_models": 1,
+   "en_wrong_models": 1
   }
- },
- "error_identity_aggregate": {
-  "both_wrong_pairs_total": 10,
-  "same_wrong_motif_total": 5,
-  "share_same_wrong": 0.5,
-  "uniform_chance_reference": 0.0417,
-  "binom_p_vs_uniform": 2.7e-05,
-  "note": "share of both-language errors that pick the SAME wrong motif; 1/24 is uniform-independence reference",
-  "self_reference_to_convergence_all3_models_both_langs": true
- },
- "family_d1_share_of_errors": {
-  "zh_frontier_story_errors": 17,
-  "zh_d1": 10,
-  "en_frontier_story_errors": 17,
-  "en_d1": 6,
-  "zh_d1_share": 0.5882,
-  "en_d1_share": 0.3529,
-  "uniform_chance_d1_reference_from_paper": 0.21
- },
- "item_level_flips": {
-  "all_flips_zhcorrectmodels_encorrectmodels": {
-   "alternation": [
-    2,
-    0
-   ],
-   "bottleneck": [
-    2,
-    3
-   ],
-   "contraction_fixed_point": [
-    1,
-    3
-   ],
-   "figure_ground": [
-    0,
-    3
-   ],
-   "interference": [
-    2,
-    0
-   ],
-   "mobius": [
-    2,
-    3
-   ],
-   "recursion": [
-    3,
-    0
-   ]
-  },
-  "systematic_3model_flips": {
-   "figure_ground": {
-    "zh_correct_models": 0,
-    "en_correct_models": 3,
-    "en_preds": {
-     "api_gpt-5.5": "figure_ground",
-     "api_gpt-5.2": "figure_ground",
-     "api_claude-opus-4-8": "figure_ground"
-    },
-    "zh_preds": {
-     "api_gpt-5.5": "projective_duality",
-     "api_gpt-5.2": "projective_duality",
-     "api_claude-opus-4-8": "projective_duality"
-    }
-   },
-   "recursion": {
-    "zh_correct_models": 3,
-    "en_correct_models": 0,
-    "en_preds": {
-     "api_gpt-5.5": "convergence",
-     "api_gpt-5.2": "convergence",
-     "api_claude-opus-4-8": "convergence"
-    },
-    "zh_preds": {
-     "api_gpt-5.5": "recursion",
-     "api_gpt-5.2": "recursion",
-     "api_claude-opus-4-8": "recursion"
-    }
-   }
-  },
-  "note": "items whose correctness flips with story language for ALL three models flip in the same direction with the same wrong motif -- the language effect is a property of the item text, not of any model"
- },
- "en_cross_model_error_agreement": {
-  "api_gpt-5.5|api_gpt-5.2": {
-   "n_both_wrong": 6,
-   "n_same_pred": 6
-  },
-  "api_gpt-5.5|api_claude-opus-4-8": {
-   "n_both_wrong": 5,
-   "n_same_pred": 4
-  },
-  "api_gpt-5.2|api_claude-opus-4-8": {
-   "n_both_wrong": 5,
-   "n_same_pred": 4
-  }
- },
- "provenance_checks": {
-  "greedy_decoding": "temperature=0, verified deterministic (repeat calls identical)",
-  "not_cached_or_aliased": "nonce probe: appending an invisible cache-busting token yields distinct response ids while keeping the same answer, and response.model echoes the requested id (gpt-5.5 / gpt-5.2 / claude-opus-4-8) -- the two GPT rows are independent",
-  "gpt55_gpt52_en_identical": "under greedy decoding the two GPT models produced byte-identical replies on all 25 EN items (they differed on 5/25 ZH items); this is genuine convergence, not a proxy artifact",
-  "n_calls": 75,
-  "parse_failures_total": 0
  }
 }

@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GEB-Bench — Functorial Abstraction pilot</title>
+<link rel="icon" type="image/png" sizes="96x96" href="images/favicon-96x96.png">
+<link rel="icon" href="images/favicon.ico">
+<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+<style>
+ :root{--ink:#1c1c1c;--paper:#faf8f4;--line:#e3ded4;--accent:#b3402a;
+  --dim:#7a756b;--card:#fffdf9;--code:#f1ede4;}
+ *{box-sizing:border-box}
+ body{margin:0;background:var(--paper);color:var(--ink);
+  font:16px/1.6 Georgia,"Times New Roman",serif}
+ .wrap{max-width:920px;margin:0 auto;padding:32px 20px 80px}
+ h1{font-size:30px;margin:.2em 0}
+ h2{font-size:22px;border-bottom:2px solid var(--line);padding-bottom:6px;
+  margin-top:40px}
+ h3{font-size:19px;color:var(--accent);margin:0 0 2px;font-family:
+  ui-monospace,Menlo,monospace}
+ a{color:var(--accent)}
+ .lede{color:var(--dim);font-size:17px}
+ .demo{background:var(--card);border:1px solid var(--line);border-radius:10px;
+  padding:18px;margin:22px 0}
+ .blurb{margin:.3em 0 12px;color:#333}
+ .pane{display:grid;grid-template-columns:minmax(0,42%) minmax(0,58%);gap:18px;
+  align-items:start}
+ .pane img{width:100%;border:1px solid var(--line);border-radius:6px;
+  background:#fff}
+ pre{background:var(--code);padding:10px;border-radius:6px;font:12px/1.45
+  ui-monospace,Menlo,monospace;white-space:pre-wrap;margin:.4em 0;overflow-x:auto}
+ details summary{cursor:pointer;color:var(--dim);font-family:ui-monospace,
+  Menlo,monospace;font-size:13px}
+ .thm{background:#f7f3ea;border-left:3px solid var(--dim);padding:8px 10px;
+  font-size:13.5px;margin:.5em 0;border-radius:0 6px 6px 0}
+ .opts{margin:.4em 0}
+ .opt{border-top:1px dashed var(--line);padding:7px 0;font-size:13.5px}
+ .lab{font-family:ui-monospace,Menlo,monospace;font-weight:bold}
+ .otext{color:#333;margin-top:2px}
+ .mot{font-family:ui-monospace,Menlo,monospace;font-size:11px;color:var(--dim);
+  background:var(--code);padding:1px 5px;border-radius:4px}
+ .ok{background:#d9ead0;color:#2c5a1e;font-size:11px;padding:1px 6px;
+  border-radius:4px;margin-left:6px}
+ .trap{background:#f3d9d2;color:#9a2f18;font-size:11px;padding:1px 6px;
+  border-radius:4px;margin-left:6px}
+ .ans{font-size:14px;margin:.6em 0 .2em}
+ table{border-collapse:collapse;width:100%;font-family:ui-monospace,Menlo,
+  monospace;font-size:13px}
+ .mini{margin-top:8px;max-width:340px}
+ th,td{border:1px solid var(--line);padding:5px 8px;text-align:center}
+ th{background:var(--code);font-weight:normal;color:var(--dim)}
+ .headline{background:#fbf1ee;border:1px solid #e6c7bd;border-radius:10px;
+  padding:16px 18px;margin:18px 0}
+ .headline b{color:var(--accent)}
+ @media(max-width:680px){.pane{grid-template-columns:1fr}}
+</style></head><body><div class="wrap">
+
+<h1>Does recognizing a structure mean you can move it?</h1>
+<p class="lede">A pilot extension of GEB-Bench. A model sees a structural change <i>g</i> (BEFORE&rarr;AFTER, a minimal edit of one drawing program) and must apply the same g to a structure given in another voice — a theorem or a story. Recognizing both endpoints is not the same as transporting the morphism between them.</p>
+<div class="headline"><b>Headline:</b> across six vision models, detecting a change is easy (id-vs-change genuine-edit 75&ndash;97%) and transporting it in the <b>theorem</b> voice works for the five frontier-tier models (56&ndash;89%), but transport in the <b>story</b> voice collapses toward the floor (22&ndash;53%, four of six at chance, 25% chance). The mapping tax from the main paper reappears at the level of <i>morphisms</i>, and it is sharpest where the target is narrative.</div>
+<h2>The five task types, with real items</h2>
+
+<section class="demo">
+  <h3>endpoint_id</h3>
+  <p class="blurb">Recognition baseline — name the motif in a single diagram (25-way, chance 4%). This is the denominator: every &ldquo;recognizes it but can&rsquo;t move it&rdquo; claim is conditioned on this.</p>
+  <div class="pane">
+    <img src="catlab/nesting_to_recursion_s0_base.png" alt="endpoint_id stimulus" loading="lazy">
+    <div class="side">
+      <details open><summary>Exact prompt</summary>
+        <pre>This diagram depicts an abstract structural motif. Pick the motif it depicts from the options below.
+
+Options:
+{menu}
+
+Output JSON only: {"motif_id": "..."}</pre></details>
+      
+      
+      <p class="ans">Answer: <b>nesting</b></p>
+      <table class="mini"><tr><th>GPT-5.5</th><th>GPT-5.2</th><th>Claude Opus 4.8</th><th>Gemini 3.1 Pro</th><th>Kimi K2.5</th><th>Qwen2.5-VL-72B</th></tr><tr><td>81%</td><td>75%</td><td>58%</td><td>74%</td><td>71%</td><td>57%</td></tr></table>
+    </div>
+  </div>
+</section>
+
+<section class="demo">
+  <h3>square_thm</h3>
+  <p class="blurb">Naturality square, theorem voice. See the change g in the picture (nesting &rarr; recursion), then apply the <em>same</em> g to a structure given as a masked theorem. The four options are the true theorems of four formally-adjacent motifs.</p>
+  <div class="pane">
+    <img src="catlab/nesting_to_recursion_s0_ref.png" alt="square_thm stimulus" loading="lazy">
+    <div class="side">
+      <details open><summary>Exact prompt</summary>
+        <pre>The image shows one structural change applied to a diagram: the BEFORE panel on the left, the AFTER panel on the right. Call this change g.
+
+The mathematical theorem below (some proper names masked with □) characterizes the structure of the BEFORE panel. Exactly one of the four theorems that follow characterizes the structure you would get by applying the SAME change g to it. Pick that one.
+
+Theorem for the BEFORE structure:
+{text}
+
+{options}
+
+Output JSON only: {"choice": "one of A-D"}</pre></details>
+      <div class="thm">Cantor's □ closed interval theorem: If a sequence of bounded closed intervals satisfies [a_{n+1}, b_{n+1}] ⊆ [a_n, b_n] for every n, then ⋂_{n≥1}[a_n, b_n] is nonempty; if, in addition, b_n − a_n → 0, then the intersection is exactly the singleton {ξ}, where ξ = sup_n a_n = inf_n b_n.</div>
+      <div class="opts"><div class="opt"><span class="lab">[A]</span> <span class="mot">infinite_descent</span><div class="otext">Fermat (his account of the method appears in a 1659 letter to Carcavi; the full proof survives in marginal note 45 to his copy of Diophantus's Arithmetica, published by his son Samuel in 1670): a right triangle with integer side lengths cannot have square area — proved by infinite □; consequently, x^4+y^4=z^2 has no positive integer solutions, and therefore x^4+y^4=z^4 has no positive integer solutions (the n=4 case of Fermat's Last Theorem).</div></div><div class="opt"><span class="lab">[B]</span><span class="ok">✓ answer</span> <span class="mot">recursion</span><div class="otext">Dyck words of length 2n, full binary trees with exactly n internal nodes, and triangulations of a convex (n+2)-gon are three families of objects all counted by the Catalan number C_n=\binom{2n}{n}/(n+1) (Euler–Segner enumeration; see Stanley, Catalan Numbers), and there are explicit bijections between each pair.</div></div><div class="opt"><span class="lab">[C]</span> <span class="mot">strange_loop</span><div class="otext">A directed graph admits a vertex ordering in which every arc points from an earlier vertex to a later one if and only if it has no directed □ (the basic theorem). Hence the feedback arc set of the above layered graph is nonempty; moreover, after deleting e*, the whole graph has no directed □, so the minimum feedback arc set of the original graph has size exactly 1, and {e*} is a minimum feedback arc set.</div></div><div class="opt"><span class="lab">[D]</span> <span class="mot">self_reference</span><div class="otext">Kleene's Second □ Theorem (1938): for every total computable function f, there exists an index e such that φ_e = φ_{f(e)}; corollary: in any Turing-complete programming language with an acceptable numbering, there exists a program that □ (a □).</div></div></div>
+      <p class="ans">Answer: <b>B (recursion)</b></p>
+      <table class="mini"><tr><th>GPT-5.5</th><th>GPT-5.2</th><th>Claude Opus 4.8</th><th>Gemini 3.1 Pro</th><th>Kimi K2.5</th><th>Qwen2.5-VL-72B</th></tr><tr><td>89%</td><td>83%</td><td>56%</td><td>58%</td><td>56%</td><td>31%</td></tr></table>
+    </div>
+  </div>
+</section>
+
+<section class="demo">
+  <h3>square_story</h3>
+  <p class="blurb">Same square, story voice — with an <b>identity trap</b>. Option [A] retells the unchanged BEFORE structure in a new setting; picking it means the model mistook a surface change for the structural one.</p>
+  <div class="pane">
+    <img src="catlab/sym_to_symbreak_s0_ref.png" alt="square_story stimulus" loading="lazy">
+    <div class="side">
+      <details open><summary>Exact prompt</summary>
+        <pre>The image shows one structural change applied to a diagram: the BEFORE panel on the left, the AFTER panel on the right. Call this change g.
+
+The short story below is told in a way that realizes the same structure as the BEFORE panel. Exactly one of the four stories that follow is told in a way that realizes the structure you would get by applying the SAME change g to it. Pick that one. (Beware: one of the options realizes the unchanged BEFORE structure in a different setting.)
+
+Story for the BEFORE structure:
+{text}
+
+{options}
+
+Output JSON only: {"choice": "one of A-D"}</pre></details>
+      <div class="thm">1. Old Mara baked oat buns by the station and sold them to neighbors with a smile.
+2. Little Ben carried a red cloth bag and bowed to Mara when the train bells rang.
+3. At dusk Mara gave Ben the last warm bun, and he shared it with a tired dog.
+4. Little Ben carried a red cloth bag and bowed to Mara when the train bells rang.
+5. Old Mara baked oat buns by the station and sold them to neighbors with a smile.</div>
+      <div class="opts"><div class="opt"><span class="lab">[A]</span><span class="trap">identity trap</span> <span class="mot">symmetry</span><div class="otext">1. Mara set a blue teapot on the hob and smiled as the rain tapped the window.
+2. Her son Eli brought two mugs and asked for honey in his tea.
+3. At dusk, the old kettle sang softly while Mara told Eli that a shared cup tastes best.
+4. Her son Eli brought two mugs and asked for honey in his tea.
+5. Mara set a blue teapot on the hob and smiled as the rain tapped the window.</div></div><div class="opt"><span class="lab">[B]</span><span class="ok">✓ answer</span> <span class="mot">symmetry_breaking</span><div class="otext">At dawn, wind brushed Tilly's hilltop dairy. Grandmother Mara heard wind rattle milk pails. She told Tilly, wind favors patient hands. Together they churned while wind teased rafters. A brown calf followed wind through clover. Tilly laughed, letting wind cool her forehead. By noon, one blue bowl stood utterly still. Mara carried bread as wind warmed it. Soon wind carried butter's sweetness downhill softly. Neighbors came, thanking wind and kindly Tilly. That evening, wind sang under silver stars. Tilly kept the bowl when wind returned.</div></div><div class="opt"><span class="lab">[C]</span> <span class="mot">interference</span><div class="otext">① On a rainy evening Mara found two shells in the shed.
+② She carried them to the kitchen and set them by the hearth.
+③ Again Ben brought his tin whistle from the shelf.
+④ At dusk the clock sang: soft ticks beside the fire for us.
+⑤ Ben laughed and blew one clear note from the yard.
+⑥ Again Mara answered with her spoon against the bowl.
+⑦ The goat lifted its head and blinked at the sound.
+⑧ Ben struck the spoon on the rail: bright notes ran under the rafters again.
+⑨ Again the two sounds met and made children grin.
+⑩ Old Nessa brought honey cakes for the weary pair.
+⑪ They ate beside the door while rain tapped the thatch.
+⑫ Again Mara and Ben listened near the stove: the notes met there and smiled softly.
+⑬ After that, Nessa asked for one more song.
+⑭ Ben tried a low hum and the cat yawned wide.
+⑮ Again the spoon and whistle shared the doorway light.
+⑯ The children stepped into the yard: fireflies danced above the wet grass tonight.
+⑰ A frog called from the ditch beside the gate.
+⑱ Again Ben found the tune hiding under his breath.
+⑲ Mara hung the kettle and watched the steam curl up.
+⑳ The old dog settled by the ashes: his tail thumped once then rested quietly.
+㉑ Again Nessa sang a wordless line to the crows.
+㉒ The crows leaned on the fence and bobbed their black heads.
+㉓ Ben laughed and said the night had grown kinder.
+㉔ Again the three of them heard one clear answer: the yard held both songs and more.</div></div><div class="opt"><span class="lab">[D]</span> <span class="mot">figure_ground</span><div class="otext">Alice carried a blue tin pail beside Beth at dawn. Alice picked the rosy apples above Beth while the grass shone with dew. Alice shared warm oatcakes with Beth under the bent tree. Alice sang a gentle thanks to Beth as the sun climbed over the orchard wall. Beth carried a willow basket beside Alice at dawn. Beth picked the fallen apples below Alice while the grass shone with dew. Beth shared cool cider with Alice under the bent tree. Beth sang a gentle answer to Alice as the sun climbed over the orchard wall.</div></div></div>
+      <p class="ans">Answer: <b>B (symmetry_breaking)</b></p>
+      <table class="mini"><tr><th>GPT-5.5</th><th>GPT-5.2</th><th>Claude Opus 4.8</th><th>Gemini 3.1 Pro</th><th>Kimi K2.5</th><th>Qwen2.5-VL-72B</th></tr><tr><td>53%</td><td>36%</td><td>31%</td><td>33%</td><td>44%</td><td>22%</td></tr></table>
+    </div>
+  </div>
+</section>
+
+<section class="demo">
+  <h3>id_vs_change</h3>
+  <p class="blurb">Equivariance vs invariance. One option is always &ldquo;no structural change, only rendering parameters differ&rdquo; — half the items are true nuisance twins where that <em>is</em> the answer.</p>
+  <div class="pane">
+    <img src="catlab/sym_to_symbreak_s0_ref.png" alt="id_vs_change stimulus" loading="lazy">
+    <div class="side">
+      <details open><summary>Exact prompt</summary>
+        <pre>The image shows two diagrams: BEFORE on the left, AFTER on the right. Exactly one statement below correctly describes the relationship between them. Pick it.
+
+{options}
+
+Output JSON only: {"choice": "one of A-D"}</pre></details>
+      
+      <div class="opts"><div class="opt"><span class="lab">[A]</span><div class="otext">No structural change: the two figures realize the same structure and differ only in rendering parameters (counts, sizes, angles, placement).</div></div><div class="opt"><span class="lab">[B]</span><div class="otext">The flat ring is re-laid across levels, so following the arrows climbs a hierarchy and still returns to the start.</div></div><div class="opt"><span class="lab">[C]</span><span class="ok">✓ answer</span><div class="otext">Exactly one of the mirrored correspondences is destroyed.</div></div><div class="opt"><span class="lab">[D]</span><div class="otext">The same two tiles obey the same local rule but the translation period is destroyed.</div></div></div>
+      <p class="ans">Answer: <b>C</b></p>
+      <table class="mini"><tr><th>GPT-5.5</th><th>GPT-5.2</th><th>Claude Opus 4.8</th><th>Gemini 3.1 Pro</th><th>Kimi K2.5</th><th>Qwen2.5-VL-72B</th></tr><tr><td>93%</td><td>93%</td><td>92%</td><td>88%</td><td>67%</td><td>64%</td></tr></table>
+    </div>
+  </div>
+</section>
+
+<section class="demo">
+  <h3>composition</h3>
+  <p class="blurb">Two-step composition. Apply STEP 1 then STEP 2. A distractor encodes &ldquo;stopped after STEP 1&rdquo; — the classic partial-transport failure.</p>
+  <div class="pane">
+    <img src="catlab/comp_s0.png" alt="composition stimulus" loading="lazy">
+    <div class="side">
+      <details open><summary>Exact prompt</summary>
+        <pre>The image shows two structural changes, one per row: STEP 1 (its own BEFORE and AFTER) and STEP 2 (its own BEFORE and AFTER).
+
+The mathematical theorem below (some proper names masked with □) characterizes a starting structure. Apply STEP 1's change to it, then apply STEP 2's change to the result. Exactly one of the four theorems that follow characterizes the final structure. Pick it.
+
+Theorem for the starting structure:
+{text}
+
+{options}
+
+Output JSON only: {"choice": "one of A-D"}</pre></details>
+      <div class="thm">Cantor's □ closed interval theorem: If a sequence of bounded closed intervals satisfies [a_{n+1}, b_{n+1}] ⊆ [a_n, b_n] for every n, then ⋂_{n≥1}[a_n, b_n] is nonempty; if, in addition, b_n − a_n → 0, then the intersection is exactly the singleton {ξ}, where ξ = sup_n a_n = inf_n b_n.</div>
+      <div class="opts"><div class="opt"><span class="lab">[A]</span> <span class="mot">infinite_descent</span><div class="otext">Fermat (his account of the method appears in a 1659 letter to Carcavi; the full proof survives in marginal note 45 to his copy of Diophantus's Arithmetica, published by his son Samuel in 1670): a right triangle with integer side lengths cannot have square area — proved by infinite □; consequently, x^4+y^4=z^2 has no positive integer solutions, and therefore x^4+y^4=z^4 has no positive integer solutions (the n=4 case of Fermat's Last Theorem).</div></div><div class="opt"><span class="lab">[B]</span> <span class="mot">convergence</span><div class="otext">Newman’s lemma (1942): a terminating (strongly normalizing) abstract rewriting system that is locally □ is globally □; hence, for every element, all of its reduction sequences end in the same unique normal form. Banach □ theorem (1922): every □ self-map of a complete metric space has a unique □, and the iterates from any initial value □ to that same □.</div></div><div class="opt"><span class="lab">[C]</span> <span class="mot">recursion</span><div class="otext">Dyck words of length 2n, full binary trees with exactly n internal nodes, and triangulations of a convex (n+2)-gon are three families of objects all counted by the Catalan number C_n=\binom{2n}{n}/(n+1) (Euler–Segner enumeration; see Stanley, Catalan Numbers), and there are explicit bijections between each pair.</div></div><div class="opt"><span class="lab">[D]</span><span class="ok">✓ answer</span> <span class="mot">contraction_fixed_point</span><div class="otext">Banach □ theorem (S. Banach 1922, Fundamenta Mathematicae 3, 133–181): a □ mapping on a complete metric space has a unique □, Picard iteration from any initial value converges to it, and the a priori error satisfies d(x_n,x*) ≤ q^n/(1−q)·d(x_1,x_0).</div></div></div>
+      <p class="ans">Answer: <b>D (contraction_fixed_point)</b></p>
+      <table class="mini"><tr><th>GPT-5.5</th><th>GPT-5.2</th><th>Claude Opus 4.8</th><th>Gemini 3.1 Pro</th><th>Kimi K2.5</th><th>Qwen2.5-VL-72B</th></tr><tr><td>67%</td><td>50%</td><td>50%</td><td>67%</td><td>100%</td><td>50%</td></tr></table>
+    </div>
+  </div>
+</section>
+
+<h2>Honest caveats</h2>
+<p class="lede">Exploratory pilot: n=36 per task per model (Wilson ±16pp),
+6 edges × 6 seeds, three frontier models. Three edges render endpoints too
+minimally to name reliably, so pooled conditionals carry a Simpson
+confound — per-edge is the honest unit. Story options are corpus stories,
+not derived twins. All six arms (GPT-5.5, GPT-5.2, Claude Opus 4.8, Gemini 3.1 Pro, Kimi K2.5, Qwen2.5-VL-72B) run on OpenRouter.
+Every number here traces to <code>catlab/results/or_*.json</code>.</p>
+<p class="lede"><a href="index.html">&larr; back to GEB-Bench</a></p>
+</div></body></html>

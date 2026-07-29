@@ -101,8 +101,8 @@
       <div class="l">motifs &times; voices</div></div>
     <div class="stat"><div class="n">1,156</div>
       <div class="l">items (946 main + 210 adversarial)</div></div>
-    <div class="stat"><div class="n">8</div>
-      <div class="l">models, 4 vendors</div></div>
+    <div class="stat"><div class="n">12</div>
+      <div class="l">models, 6 vendors</div></div>
     <div class="stat"><div class="n">2</div>
       <div class="l">languages (EN primary, ZH mirror)</div></div>
   </div>
@@ -113,14 +113,14 @@
 <div class="finding">
   <p class="headline">On the very same scenes, at the very same 4-way odds,
   identifying the structure beats carrying it across voices by
-  <span class="num">21&ndash;44 points</span>.</p>
+  <span class="num">17&ndash;42 points</span>.</p>
   <p>Our adversarial split asks a model to pick a scene's motif from its three
   nearest confusables (4-way). A separate task asks it to match the same scene
   to the one story (of four) that shares its structure &mdash; same odds, same
   images. Every model does far better at the first:
-  GPT-5.5 <span class="num">86% &rarr; 64%</span>,
-  GPT-5.2 <span class="num">80% &rarr; 36%</span>
-  (McNemar <span class="num">p&lt;10<sup>-8</sup></span>). The bottleneck is not
+  GPT-5.5 <span class="num">86% &rarr; 69%</span>,
+  Claude Opus 4.8 <span class="num">81% &rarr; 42%</span>
+  (exact McNemar <span class="num">p&le;2.8&times;10<sup>-7</sup></span> for every vision model). The bottleneck is not
   fine discrimination; it is cross-voice transport.</p>
 </div>
 <figure><img src="assets/figs/mapping_gap_v2.png" alt="recognition vs mapping gap">
@@ -132,10 +132,10 @@
   by <span class="num">+27 points</span> and moves mapping
   by <span class="num">exactly zero</span>.</p>
   <p>In the Qwen2.5 family, story&nbsp;&rarr;&nbsp;motif identification climbs
-  <span class="num">17% &rarr; 44%</span>
+  <span class="num">16.5% &rarr; 43.8%</span>
   (p&nbsp;=&nbsp;2&times;10<sup>-9</sup>), while story&nbsp;&rarr;&nbsp;theorem
   matching stays pinned at
-  <span class="num">35% &rarr; 35%</span>
+  <span class="num">34.7% &rarr; 34.7%</span>
   (14 items flip each way; p&nbsp;=&nbsp;1.0). A bigger model reads structure
   better and transports it no better at all.</p>
 </div>
@@ -143,9 +143,9 @@
 <div class="finding">
   <p class="headline">When a model is wrong, it is wrong toward the
   formally-nearest motif <span class="num">2.2&times;</span> more often than chance.</p>
-  <p>Across <span class="num">1,065</span> identification errors,
-  <span class="num">44%</span> land on a designed
-  nearest-neighbor motif (chance <span class="num">20%</span>;
+  <p>Across <span class="num">1,450</span> identification errors,
+  <span class="num">45%</span> land on a designed
+  nearest-neighbor motif (chance <span class="num">20.6%</span>;
   permutation p&nbsp;&lt;&nbsp;10<sup>-4</sup>). An <em>independently</em> derived
   graph-edit distance &mdash; read straight off the released skeleton programs,
   never used to build the benchmark &mdash; reproduces the same concentration.
@@ -158,22 +158,22 @@
   across voices &mdash; a clean ordering once you correct for chance.</p>
   <p>Because the tasks differ in difficulty floor (25-way vs 4-way), we score
   every cell as &kappa;&nbsp;=&nbsp;(acc&nbsp;&minus;&nbsp;chance)/(1&nbsp;&minus;&nbsp;chance).
-  Pooled over the three frontier models, &kappa; falls monotonically:
-  theorem <span class="num">0.85</span> &gt;
-  story <span class="num">0.81</span> &gt;
-  skeleton <span class="num">0.77</span> &gt;
-  scene <span class="num">0.68</span> &gt;
-  cross-voice <span class="num">0.31</span>. Cross-voice is
-  the lowest for every vision model in &gt;99.9% of bootstrap resamples.</p>
+  Pooled over the four proprietary frontier models, &kappa; falls monotonically:
+  theorem <span class="num">0.86</span> &gt;
+  story <span class="num">0.85</span> &gt;
+  skeleton <span class="num">0.79</span> &gt;
+  scene <span class="num">0.72</span> &gt;
+  cross-voice <span class="num">0.44</span>. Cross-voice is
+  the lowest for every one of the eight vision models in &ge;99.5% of bootstrap resamples.</p>
 </div>
 <figure><img src="assets/figs/gradient_kappa_v2.png" alt="voice gradient by kappa">
-  <figcaption>Chance-corrected accuracy (&kappa;) by voice, five vision-capable
+  <figcaption>Chance-corrected accuracy (&kappa;) by voice, eight vision-capable
   models, with bootstrap 95% intervals. Chance sits at &kappa;&nbsp;=&nbsp;0.</figcaption></figure>
 <h3>5 &nbsp;Different models fall into the same traps</h3>
 <div class="finding">
   <p class="headline">When two frontier models miss the same item, they pick the
-  <em>same</em> wrong motif <span class="num">75%</span> of the time.</p>
-  <p>Two systems from different vendors, with different training data, converge
+  <em>same</em> wrong motif up to <span class="num">80%</span> of the time.</p>
+  <p>GPT-5.5 and Gemini 3.1 Pro &mdash; different vendors, different training data &mdash; converge
   on the same conceptual confusions on the same stimuli. The hard boundaries are
   properties of the structures, not quirks of one model &mdash; which is what a
   benchmark should measure.</p>
@@ -181,7 +181,7 @@
 <h3>6 &nbsp;Structure survives translation</h3>
 <div class="finding">
   <p class="headline">The same stories in English and Chinese score
-  <span class="num">identically</span> (77.3% each), and when models err in both
+  <span class="num">identically</span> (81.3% each), and when models err in both
   languages they err toward the same motif far above chance.</p>
   <p>What the benchmark probes is structural, not lexical: the shape, not the
   words that carry it. This is why the dataset is English-primary with a Chinese
@@ -189,15 +189,22 @@
 </div>
 <h2><span class="k">the hard edge</span>Where every model struggles</h2>
 <p>Pooled recall is lowest on the motifs at the conceptual core of GEB &mdash;
-<span class="num">figure ground</span> (19%), <span class="num">contraction fixed point</span> (27%), <span class="num">projective duality</span> (30%), <span class="num">self reference</span> (35%), <span class="num">aperiodic tiling</span> (36%). Strikingly, these are also the structures the image generator
+<span class="num">figure ground</span> (23%), <span class="num">contraction fixed point</span> (32%), <span class="num">self reference</span> (34%), <span class="num">projective duality</span> (35%), <span class="num">nesting</span> (41%). Strikingly, these are also the structures the image generator
 itself could least often render faithfully (rank correlation
-&rho;&nbsp;=&nbsp;&minus;0.48): the strange loops and figure&ndash;grounds that
+&rho;&nbsp;=&nbsp;&minus;0.45): the strange loops and figure&ndash;grounds that
 are hard to <em>draw</em> are hard to <em>read</em>.</p>
 <h2><span class="k">get it</span>Dataset &amp; code</h2>
 <p>All 1,156 items, the 25-motif library (real theorems + form devices), the
 generation and evaluation harness, and the analysis scripts are open. Code is
 MIT; the dataset is CC-BY-4.0.</p>
 <p><a href="https://github.com/tongmd/GEB-benchmark">github.com/tongmd/GEB-benchmark</a></p>
+<h2><span class="k">pilot</span>Functorial abstraction</h2>
+<p>A categorical pilot, now a section of the paper: can a model apply a
+<em>structural change</em> (BEFORE&rarr;AFTER) to the same structure told in
+another voice? Models that reliably detect the change transport it far better in the
+theorem voice than in the story voice, where four of six models fall to
+chance &mdash; the mapping tax, lifted from objects to morphisms. All arms run on OpenRouter.
+<a href="catlab-demo.html">See the five task types &amp; live examples &rarr;</a></p>
 <footer>GEB&nbsp;Benchmark · see a scene, grasp a structure ·
   25 motifs &times; 4 voices, 1,156 items · scenes: gpt-image with programmatic
   skeleton references · stories: form-device constrained, dual-screened ·

@@ -15,18 +15,24 @@ ROOT = "/Users/stone/GEB-benchmark"
 RES = os.path.join(ROOT, "eval", "results_v2")
 OUT_TEX = os.path.join(ROOT, "paper", "tables", "main_results.tex")
 
-# (results-file stem, display label)
+# (results-file stem, display label) — all API models via OpenRouter (or_*),
+# open-weight local models via kiti vLLM (unchanged tags)
 MODELS = [
-    ("api_gpt-5.5", "GPT-5.5"),
-    ("api_gpt-5.2", "GPT-5.2"),
-    ("api_claude-opus-4-8", "Claude Opus 4.8"),
+    ("or_gpt-5.5", "GPT-5.5"),
+    ("or_gpt-5.2", "GPT-5.2"),
+    ("or_claude-opus-4.8", "Claude Opus 4.8"),
+    ("or_gemini-3.1-pro", "Gemini 3.1 Pro"),
+    ("or_kimi-k2.5", "Kimi K2.5"),
+    ("or_qwen2.5-vl-72b", "Qwen2.5-VL-72B"),
+    ("or_deepseek-v3.2", "DeepSeek-V3.2"),
     ("qwen2.5-vl-32b", "Qwen2.5-VL-32B"),
     ("deepseek-coder-v2-lite", "DeepSeek-Coder-V2-Lite"),
     ("qwen2.5-14b", "Qwen2.5-14B"),
     ("qwen2.5-7b", "Qwen2.5-7B"),
     ("qwen2-vl-7b", "Qwen2-VL-7B"),
 ]
-FRONTIER_ROWS = 3  # midrule after these
+FRONTIER_ROWS = 4   # midrule after the proprietary frontier block
+OPEN_API_ROWS = 7   # second midrule after the open-weights-via-API block
 
 TASKS = ["scene2motif", "skeleton2motif", "story2motif", "theorem2motif",
          "crossvoice", "xv_scene_thm", "xv_story_thm", "scene2motif_family4"]
@@ -62,8 +68,8 @@ def main():
     lines.append(r" & \multicolumn{4}{c}{$25$-way identification}"
                  r" & \multicolumn{4}{c}{$4$-way} & \\")
     lines.append(r"\cmidrule(lr){2-5}\cmidrule(lr){6-9}")
-    lines.append(r"Model & Scene & Skel & Story & Thm & Cross & XvSc & XvSt"
-                 r" & Fam4 & \textbf{Avg} \\")
+    lines.append(r"Model & Scene & Skel. & Story & Thm. & Sc$\to$St & Sc$\to$Th & St$\to$Th"
+                 r" & Adv. & \textbf{Avg} \\")
     lines.append(r"\midrule")
     summary = {}
     for i, (stem, label) in enumerate(MODELS):
@@ -73,7 +79,7 @@ def main():
         row = [label] + [cell(accs, t) for t in TASKS] + \
               [r"\textbf{%.1f}" % avg]
         lines.append(" & ".join(row) + r" \\")
-        if i == FRONTIER_ROWS - 1:
+        if i in (FRONTIER_ROWS - 1, OPEN_API_ROWS - 1):
             lines.append(r"\midrule")
     lines.append(r"\midrule")
     lines.append(r"\textit{Random chance} & "

@@ -1,0 +1,2423 @@
+{
+ "model": "deepseek/deepseek-v3.2",
+ "base": "https://openrouter.ai/api/v1",
+ "summary": {
+  "story2motif": {
+   "n": 121,
+   "acc": 0.6033
+  },
+  "theorem2motif": {
+   "n": 25,
+   "acc": 0.84
+  },
+  "xv_story_thm": {
+   "n": 121,
+   "acc": 0.4711
+  }
+ },
+ "records": [
+  {
+   "id": "story:self_reference_en_s0",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "self_reference",
+   "pred": "self_reference",
+   "correct": true,
+   "raw": "{\"motif_id\": \"self_reference\"}"
+  },
+  {
+   "id": "story:self_reference_en_s1",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "self_reference",
+   "pred": "self_reference",
+   "correct": true,
+   "raw": "{\"motif_id\": \"self_reference\"}"
+  },
+  {
+   "id": "story:self_reference_en_s2",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "self_reference",
+   "pred": "tiling",
+   "correct": false,
+   "raw": "{\"motif_id\": \"tiling\"}"
+  },
+  {
+   "id": "story:self_reference_en_s3",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "self_reference",
+   "pred": "self_reference",
+   "correct": true,
+   "raw": "{\"motif_id\": \"self_reference\"}"
+  },
+  {
+   "id": "story:self_reference_en_s4",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "self_reference",
+   "pred": "self_reference",
+   "correct": true,
+   "raw": "{\"motif_id\": \"self_reference\"}"
+  },
+  {
+   "id": "thm:self_reference",
+   "task": "theorem2motif",
+   "split": "main",
+   "answer": "self_reference",
+   "pred": "self_reference",
+   "correct": true,
+   "raw": "{\"motif_id\": \"self_reference\"}"
+  },
+  {
+   "id": "xvs:self_reference_en_s0",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "C",
+   "pred": "D",
+   "correct": false,
+   "raw": "{\"choice\": \"D\"}"
+  },
+  {
+   "id": "xvs:self_reference_en_s1",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "D",
+   "pred": "A",
+   "correct": false,
+   "raw": "{\"choice\": \"A\"}"
+  },
+  {
+   "id": "xvs:self_reference_en_s2",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "D",
+   "pred": "B",
+   "correct": false,
+   "raw": "{\"choice\": \"B\"}"
+  },
+  {
+   "id": "xvs:self_reference_en_s3",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "C",
+   "pred": "A",
+   "correct": false,
+   "raw": "{\"choice\": \"A\"}"
+  },
+  {
+   "id": "xvs:self_reference_en_s4",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "A",
+   "pred": "A",
+   "correct": true,
+   "raw": "{\"choice\": \"A\"}"
+  },
+  {
+   "id": "story:recursion_en_s0",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "recursion",
+   "pred": "cycle",
+   "correct": false,
+   "raw": "{\"motif_id\": \"cycle\"}"
+  },
+  {
+   "id": "story:recursion_en_s1",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "recursion",
+   "pred": "recursion",
+   "correct": true,
+   "raw": "{\"motif_id\": \"recursion\"}"
+  },
+  {
+   "id": "story:recursion_en_s2",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "recursion",
+   "pred": "self_reference",
+   "correct": false,
+   "raw": "{\"motif_id\": \"self_reference\"}"
+  },
+  {
+   "id": "story:recursion_en_s3",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "recursion",
+   "pred": "recursion",
+   "correct": true,
+   "raw": "{\"motif_id\": \"recursion\"}"
+  },
+  {
+   "id": "story:recursion_en_s4",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "recursion",
+   "pred": "recursion",
+   "correct": true,
+   "raw": "{\"motif_id\": \"recursion\"}"
+  },
+  {
+   "id": "thm:recursion",
+   "task": "theorem2motif",
+   "split": "main",
+   "answer": "recursion",
+   "pred": "isomorphism",
+   "correct": false,
+   "raw": "{\"motif_id\": \"isomorphism\"}"
+  },
+  {
+   "id": "xvs:recursion_en_s0",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "B",
+   "pred": "D",
+   "correct": false,
+   "raw": "{\"choice\": \"D\"}"
+  },
+  {
+   "id": "xvs:recursion_en_s1",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "A",
+   "pred": "A",
+   "correct": true,
+   "raw": "{\"choice\": \"A\"}"
+  },
+  {
+   "id": "xvs:recursion_en_s2",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "D",
+   "pred": "B",
+   "correct": false,
+   "raw": "{\"choice\": \"B\"}"
+  },
+  {
+   "id": "xvs:recursion_en_s3",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "D",
+   "pred": "B",
+   "correct": false,
+   "raw": "{\"choice\": \"B\"}"
+  },
+  {
+   "id": "xvs:recursion_en_s4",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "C",
+   "pred": "B",
+   "correct": false,
+   "raw": "{\"choice\": \"B\"}"
+  },
+  {
+   "id": "story:nesting_en_s0",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "nesting",
+   "pred": "alternation",
+   "correct": false,
+   "raw": "{\"motif_id\": \"alternation\"}"
+  },
+  {
+   "id": "story:nesting_en_s1",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "nesting",
+   "pred": "nesting",
+   "correct": true,
+   "raw": "{\"motif_id\": \"nesting\"}"
+  },
+  {
+   "id": "story:nesting_en_s2",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "nesting",
+   "pred": "tiling",
+   "correct": false,
+   "raw": "{\"motif_id\": \"tiling\"}"
+  },
+  {
+   "id": "story:nesting_en_s3",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "nesting",
+   "pred": "tiling",
+   "correct": false,
+   "raw": "{\"motif_id\": \"tiling\"}"
+  },
+  {
+   "id": "story:nesting_en_s4",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "nesting",
+   "pred": "recursion",
+   "correct": false,
+   "raw": "{\"motif_id\": \"recursion\"}"
+  },
+  {
+   "id": "thm:nesting",
+   "task": "theorem2motif",
+   "split": "main",
+   "answer": "nesting",
+   "pred": "convergence",
+   "correct": false,
+   "raw": "{\"motif_id\": \"convergence\"}"
+  },
+  {
+   "id": "xvs:nesting_en_s0",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "B",
+   "pred": "A",
+   "correct": false,
+   "raw": "{\"choice\": \"A\"}"
+  },
+  {
+   "id": "xvs:nesting_en_s1",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "D",
+   "pred": "D",
+   "correct": true,
+   "raw": "{\"choice\": \"D\"}"
+  },
+  {
+   "id": "xvs:nesting_en_s2",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "B",
+   "pred": "A",
+   "correct": false,
+   "raw": "{\"choice\": \"A\"}"
+  },
+  {
+   "id": "xvs:nesting_en_s3",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "B",
+   "pred": "A",
+   "correct": false,
+   "raw": "{\"choice\": \"A\"}"
+  },
+  {
+   "id": "xvs:nesting_en_s4",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "D",
+   "pred": "D",
+   "correct": true,
+   "raw": "{\"choice\": \"D\"}"
+  },
+  {
+   "id": "story:cycle_en_s0",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "cycle",
+   "pred": "cycle",
+   "correct": true,
+   "raw": "{\"motif_id\": \"cycle\"}"
+  },
+  {
+   "id": "story:cycle_en_s1",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "cycle",
+   "pred": "cycle",
+   "correct": true,
+   "raw": "{\"motif_id\": \"cycle\"}"
+  },
+  {
+   "id": "story:cycle_en_s2",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "cycle",
+   "pred": "cycle",
+   "correct": true,
+   "raw": "{\"motif_id\": \"cycle\"}"
+  },
+  {
+   "id": "story:cycle_en_s3",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "cycle",
+   "pred": "cycle",
+   "correct": true,
+   "raw": "{\"motif_id\": \"cycle\"}"
+  },
+  {
+   "id": "story:cycle_en_s4",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "cycle",
+   "pred": "cycle",
+   "correct": true,
+   "raw": "{\"motif_id\": \"cycle\"}"
+  },
+  {
+   "id": "thm:cycle",
+   "task": "theorem2motif",
+   "split": "main",
+   "answer": "cycle",
+   "pred": "cycle",
+   "correct": true,
+   "raw": "{\"motif_id\": \"cycle\"}"
+  },
+  {
+   "id": "xvs:cycle_en_s0",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "B",
+   "pred": "B",
+   "correct": true,
+   "raw": "{\"choice\": \"B\"}"
+  },
+  {
+   "id": "xvs:cycle_en_s1",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "B",
+   "pred": "B",
+   "correct": true,
+   "raw": "{\"choice\": \"B\"}"
+  },
+  {
+   "id": "xvs:cycle_en_s2",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "A",
+   "pred": "A",
+   "correct": true,
+   "raw": "{\"choice\": \"A\"}"
+  },
+  {
+   "id": "xvs:cycle_en_s3",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "C",
+   "pred": "C",
+   "correct": true,
+   "raw": "{\"choice\": \"C\"}"
+  },
+  {
+   "id": "xvs:cycle_en_s4",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "C",
+   "pred": "C",
+   "correct": true,
+   "raw": "{\"choice\": \"C\"}"
+  },
+  {
+   "id": "story:symmetry_en_s0",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "symmetry",
+   "pred": "symmetry",
+   "correct": true,
+   "raw": "{\"motif_id\": \"symmetry\"}"
+  },
+  {
+   "id": "story:symmetry_en_s1",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "symmetry",
+   "pred": "cycle",
+   "correct": false,
+   "raw": "{\"motif_id\": \"cycle\"}"
+  },
+  {
+   "id": "story:symmetry_en_s2",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "symmetry",
+   "pred": "cycle",
+   "correct": false,
+   "raw": "{\"motif_id\": \"cycle\"}"
+  },
+  {
+   "id": "story:symmetry_en_s3",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "symmetry",
+   "pred": "symmetry",
+   "correct": true,
+   "raw": "{\"motif_id\": \"symmetry\"}"
+  },
+  {
+   "id": "story:symmetry_en_s4",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "symmetry",
+   "pred": "symmetry",
+   "correct": true,
+   "raw": "{\"motif_id\": \"symmetry\"}"
+  },
+  {
+   "id": "thm:symmetry",
+   "task": "theorem2motif",
+   "split": "main",
+   "answer": "symmetry",
+   "pred": "symmetry",
+   "correct": true,
+   "raw": "{\"motif_id\": \"symmetry\"}"
+  },
+  {
+   "id": "xvs:symmetry_en_s0",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "A",
+   "pred": "A",
+   "correct": true,
+   "raw": "{\"choice\": \"A\"}"
+  },
+  {
+   "id": "xvs:symmetry_en_s1",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "D",
+   "pred": "A",
+   "correct": false,
+   "raw": "{\"choice\": \"A\"}"
+  },
+  {
+   "id": "xvs:symmetry_en_s2",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "D",
+   "pred": "A",
+   "correct": false,
+   "raw": "{\"choice\": \"A\"}"
+  },
+  {
+   "id": "xvs:symmetry_en_s3",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "C",
+   "pred": "A",
+   "correct": false,
+   "raw": "{\"choice\": \"A\"}"
+  },
+  {
+   "id": "xvs:symmetry_en_s4",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "D",
+   "pred": "D",
+   "correct": true,
+   "raw": "{\"choice\": \"D\"}"
+  },
+  {
+   "id": "story:alternation_en_s0",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "alternation",
+   "pred": "alternation",
+   "correct": true,
+   "raw": "{\"motif_id\": \"alternation\"}"
+  },
+  {
+   "id": "story:alternation_en_s1",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "alternation",
+   "pred": "alternation",
+   "correct": true,
+   "raw": "{\"motif_id\": \"alternation\"}"
+  },
+  {
+   "id": "story:alternation_en_s2",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "alternation",
+   "pred": "alternation",
+   "correct": true,
+   "raw": "{\"motif_id\": \"alternation\"}"
+  },
+  {
+   "id": "story:alternation_en_s3",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "alternation",
+   "pred": "alternation",
+   "correct": true,
+   "raw": "{\"motif_id\": \"alternation\"}"
+  },
+  {
+   "id": "story:alternation_en_s4",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "alternation",
+   "pred": "alternation",
+   "correct": true,
+   "raw": "{\"motif_id\": \"alternation\"}"
+  },
+  {
+   "id": "thm:alternation",
+   "task": "theorem2motif",
+   "split": "main",
+   "answer": "alternation",
+   "pred": "alternation",
+   "correct": true,
+   "raw": "{\"motif_id\": \"alternation\"}"
+  },
+  {
+   "id": "xvs:alternation_en_s0",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "B",
+   "pred": "B",
+   "correct": true,
+   "raw": "{\"choice\": \"B\"}"
+  },
+  {
+   "id": "xvs:alternation_en_s1",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "A",
+   "pred": "A",
+   "correct": true,
+   "raw": "{\"choice\": \"A\"}"
+  },
+  {
+   "id": "xvs:alternation_en_s2",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "B",
+   "pred": "B",
+   "correct": true,
+   "raw": "{\"choice\": \"B\"}"
+  },
+  {
+   "id": "xvs:alternation_en_s3",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "C",
+   "pred": "D",
+   "correct": false,
+   "raw": "{\"choice\": \"D\"}"
+  },
+  {
+   "id": "xvs:alternation_en_s4",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "D",
+   "pred": "A",
+   "correct": false,
+   "raw": "{\"choice\": \"A\"}"
+  },
+  {
+   "id": "story:spiral_en_s0",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "spiral",
+   "pred": "spiral",
+   "correct": true,
+   "raw": "{\"motif_id\": \"spiral\"}"
+  },
+  {
+   "id": "story:spiral_en_s1",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "spiral",
+   "pred": "cycle",
+   "correct": false,
+   "raw": "{\"motif_id\": \"cycle\"}"
+  },
+  {
+   "id": "story:spiral_en_s2",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "spiral",
+   "pred": "spiral",
+   "correct": true,
+   "raw": "{\"motif_id\": \"spiral\"}"
+  },
+  {
+   "id": "story:spiral_en_s3",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "spiral",
+   "pred": "spiral",
+   "correct": true,
+   "raw": "{\"motif_id\": \"spiral\"}"
+  },
+  {
+   "id": "story:spiral_en_s4",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "spiral",
+   "pred": "spiral",
+   "correct": true,
+   "raw": "{\"motif_id\": \"spiral\"}"
+  },
+  {
+   "id": "thm:spiral",
+   "task": "theorem2motif",
+   "split": "main",
+   "answer": "spiral",
+   "pred": "spiral",
+   "correct": true,
+   "raw": "{\"motif_id\": \"spiral\"}"
+  },
+  {
+   "id": "xvs:spiral_en_s0",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "A",
+   "pred": "D",
+   "correct": false,
+   "raw": "{\"choice\": \"D\"}"
+  },
+  {
+   "id": "xvs:spiral_en_s1",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "D",
+   "pred": "C",
+   "correct": false,
+   "raw": "{\"choice\": \"C\"}"
+  },
+  {
+   "id": "xvs:spiral_en_s2",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "D",
+   "pred": "A",
+   "correct": false,
+   "raw": "{\"choice\": \"A\"}"
+  },
+  {
+   "id": "xvs:spiral_en_s3",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "C",
+   "pred": "A",
+   "correct": false,
+   "raw": "{\"choice\": \"A\"}"
+  },
+  {
+   "id": "xvs:spiral_en_s4",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "B",
+   "pred": "A",
+   "correct": false,
+   "raw": "{\"choice\": \"A\"}"
+  },
+  {
+   "id": "story:convergence_en_s0",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "convergence",
+   "pred": "convergence",
+   "correct": true,
+   "raw": "{\"motif_id\": \"convergence\"}"
+  },
+  {
+   "id": "story:convergence_en_s1",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "convergence",
+   "pred": "convergence",
+   "correct": true,
+   "raw": "{\"motif_id\": \"convergence\"}"
+  },
+  {
+   "id": "story:convergence_en_s2",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "convergence",
+   "pred": "convergence",
+   "correct": true,
+   "raw": "{\"motif_id\": \"convergence\"}"
+  },
+  {
+   "id": "story:convergence_en_s3",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "convergence",
+   "pred": "convergence",
+   "correct": true,
+   "raw": "{\"motif_id\": \"convergence\"}"
+  },
+  {
+   "id": "story:convergence_en_s4",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "convergence",
+   "pred": "convergence",
+   "correct": true,
+   "raw": "{\"motif_id\": \"convergence\"}"
+  },
+  {
+   "id": "thm:convergence",
+   "task": "theorem2motif",
+   "split": "main",
+   "answer": "convergence",
+   "pred": "convergence",
+   "correct": true,
+   "raw": "{\"motif_id\": \"convergence\"}"
+  },
+  {
+   "id": "xvs:convergence_en_s0",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "B",
+   "pred": "C",
+   "correct": false,
+   "raw": "{\"choice\": \"C\"}"
+  },
+  {
+   "id": "xvs:convergence_en_s1",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "A",
+   "pred": "C",
+   "correct": false,
+   "raw": "{\"choice\": \"C\"}"
+  },
+  {
+   "id": "xvs:convergence_en_s2",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "A",
+   "pred": "D",
+   "correct": false,
+   "raw": "{\"choice\": \"D\"}"
+  },
+  {
+   "id": "xvs:convergence_en_s3",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "C",
+   "pred": "D",
+   "correct": false,
+   "raw": "{\"choice\": \"D\"}"
+  },
+  {
+   "id": "xvs:convergence_en_s4",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "B",
+   "pred": "A",
+   "correct": false,
+   "raw": "{\"choice\": \"A\"}"
+  },
+  {
+   "id": "story:bottleneck_en_s0",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "bottleneck",
+   "pred": "bottleneck",
+   "correct": true,
+   "raw": "{\"motif_id\": \"bottleneck\"}"
+  },
+  {
+   "id": "story:bottleneck_en_s1",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "bottleneck",
+   "pred": "bottleneck",
+   "correct": true,
+   "raw": "{\"motif_id\": \"bottleneck\"}"
+  },
+  {
+   "id": "story:bottleneck_en_s2",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "bottleneck",
+   "pred": "bottleneck",
+   "correct": true,
+   "raw": "{\"motif_id\": \"bottleneck\"}"
+  },
+  {
+   "id": "story:bottleneck_en_s3",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "bottleneck",
+   "pred": "bottleneck",
+   "correct": true,
+   "raw": "{\"motif_id\": \"bottleneck\"}"
+  },
+  {
+   "id": "story:bottleneck_en_s4",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "bottleneck",
+   "pred": "bottleneck",
+   "correct": true,
+   "raw": "{\"motif_id\": \"bottleneck\"}"
+  },
+  {
+   "id": "thm:bottleneck",
+   "task": "theorem2motif",
+   "split": "main",
+   "answer": "bottleneck",
+   "pred": "bottleneck",
+   "correct": true,
+   "raw": "{\"motif_id\": \"bottleneck\"}"
+  },
+  {
+   "id": "xvs:bottleneck_en_s0",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "C",
+   "pred": "C",
+   "correct": true,
+   "raw": "{\"choice\": \"C\"}"
+  },
+  {
+   "id": "xvs:bottleneck_en_s1",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "C",
+   "pred": "C",
+   "correct": true,
+   "raw": "{\"choice\": \"C\"}"
+  },
+  {
+   "id": "xvs:bottleneck_en_s2",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "A",
+   "pred": "A",
+   "correct": true,
+   "raw": "{\"choice\": \"A\"}"
+  },
+  {
+   "id": "xvs:bottleneck_en_s3",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "A",
+   "pred": "A",
+   "correct": true,
+   "raw": "{\"choice\": \"A\"}"
+  },
+  {
+   "id": "xvs:bottleneck_en_s4",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "A",
+   "pred": "A",
+   "correct": true,
+   "raw": "{\"choice\": \"A\"}"
+  },
+  {
+   "id": "story:symmetry_breaking_en_s0",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "symmetry_breaking",
+   "pred": "cycle",
+   "correct": false,
+   "raw": "{\"motif_id\": \"cycle\"}"
+  },
+  {
+   "id": "story:symmetry_breaking_en_s1",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "symmetry_breaking",
+   "pred": "tiling",
+   "correct": false,
+   "raw": "{\"motif_id\": \"tiling\"}"
+  },
+  {
+   "id": "story:symmetry_breaking_en_s2",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "symmetry_breaking",
+   "pred": "symmetry_breaking",
+   "correct": true,
+   "raw": "{\"motif_id\": \"symmetry_breaking\"}"
+  },
+  {
+   "id": "story:symmetry_breaking_en_s3",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "symmetry_breaking",
+   "pred": "cycle",
+   "correct": false,
+   "raw": "{\"motif_id\": \"cycle\"}"
+  },
+  {
+   "id": "story:symmetry_breaking_en_s4",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "symmetry_breaking",
+   "pred": "cycle",
+   "correct": false,
+   "raw": "{\"motif_id\": \"cycle\"}"
+  },
+  {
+   "id": "thm:symmetry_breaking",
+   "task": "theorem2motif",
+   "split": "main",
+   "answer": "symmetry_breaking",
+   "pred": "symmetry_breaking",
+   "correct": true,
+   "raw": "{\"motif_id\": \"symmetry_breaking\"}"
+  },
+  {
+   "id": "xvs:symmetry_breaking_en_s0",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "B",
+   "pred": "B",
+   "correct": true,
+   "raw": "{\"choice\": \"B\"}"
+  },
+  {
+   "id": "xvs:symmetry_breaking_en_s1",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "C",
+   "pred": "A",
+   "correct": false,
+   "raw": "{\"choice\": \"A\"}"
+  },
+  {
+   "id": "xvs:symmetry_breaking_en_s2",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "A",
+   "pred": "A",
+   "correct": true,
+   "raw": "{\"choice\": \"A\"}"
+  },
+  {
+   "id": "xvs:symmetry_breaking_en_s3",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "C",
+   "pred": "C",
+   "correct": true,
+   "raw": "{\"choice\": \"C\"}"
+  },
+  {
+   "id": "xvs:symmetry_breaking_en_s4",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "C",
+   "pred": "A",
+   "correct": false,
+   "raw": "{\"choice\": \"A\"}"
+  },
+  {
+   "id": "story:strange_loop_en_s0",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "strange_loop",
+   "pred": "strange_loop",
+   "correct": true,
+   "raw": "{\"motif_id\": \"strange_loop\"}"
+  },
+  {
+   "id": "story:strange_loop_en_s1",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "strange_loop",
+   "pred": "strange_loop",
+   "correct": true,
+   "raw": "{\"motif_id\": \"strange_loop\"}"
+  },
+  {
+   "id": "story:strange_loop_en_s2",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "strange_loop",
+   "pred": "strange_loop",
+   "correct": true,
+   "raw": "{\"motif_id\": \"strange_loop\"}"
+  },
+  {
+   "id": "story:strange_loop_en_s3",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "strange_loop",
+   "pred": "strange_loop",
+   "correct": true,
+   "raw": "{\"motif_id\": \"strange_loop\"}"
+  },
+  {
+   "id": "story:strange_loop_en_s4",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "strange_loop",
+   "pred": "strange_loop",
+   "correct": true,
+   "raw": "{\"motif_id\": \"strange_loop\"}"
+  },
+  {
+   "id": "thm:strange_loop",
+   "task": "theorem2motif",
+   "split": "main",
+   "answer": "strange_loop",
+   "pred": "cycle",
+   "correct": false,
+   "raw": "{\"motif_id\": \"cycle\"}"
+  },
+  {
+   "id": "xvs:strange_loop_en_s0",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "C",
+   "pred": "A",
+   "correct": false,
+   "raw": "{\"choice\": \"A\"}"
+  },
+  {
+   "id": "xvs:strange_loop_en_s1",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "C",
+   "pred": "B",
+   "correct": false,
+   "raw": "{\"choice\": \"B\"}"
+  },
+  {
+   "id": "xvs:strange_loop_en_s2",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "A",
+   "pred": "A",
+   "correct": true,
+   "raw": "{\"choice\": \"A\"}"
+  },
+  {
+   "id": "xvs:strange_loop_en_s3",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "A",
+   "pred": "A",
+   "correct": true,
+   "raw": "{\"choice\": \"A\"}"
+  },
+  {
+   "id": "xvs:strange_loop_en_s4",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "B",
+   "pred": "A",
+   "correct": false,
+   "raw": "{\"choice\": \"A\"}"
+  },
+  {
+   "id": "story:figure_ground_en_s1",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "figure_ground",
+   "pred": "symmetry",
+   "correct": false,
+   "raw": "{\"motif_id\": \"symmetry\"}"
+  },
+  {
+   "id": "story:figure_ground_en_s2",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "figure_ground",
+   "pred": "symmetry",
+   "correct": false,
+   "raw": "{\"motif_id\": \"symmetry\"}"
+  },
+  {
+   "id": "story:figure_ground_en_s3",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "figure_ground",
+   "pred": "symmetry",
+   "correct": false,
+   "raw": "{\"motif_id\": \"symmetry\"}"
+  },
+  {
+   "id": "story:figure_ground_en_s4",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "figure_ground",
+   "pred": "symmetry",
+   "correct": false,
+   "raw": "{\"motif_id\": \"symmetry\"}"
+  },
+  {
+   "id": "thm:figure_ground",
+   "task": "theorem2motif",
+   "split": "main",
+   "answer": "figure_ground",
+   "pred": "diagonalization",
+   "correct": false,
+   "raw": "{\"motif_id\": \"diagonalization\"}"
+  },
+  {
+   "id": "xvs:figure_ground_en_s1",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "D",
+   "pred": "A",
+   "correct": false,
+   "raw": "{\"choice\": \"A\"}"
+  },
+  {
+   "id": "xvs:figure_ground_en_s2",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "D",
+   "pred": "A",
+   "correct": false,
+   "raw": "{\"choice\": \"A\"}"
+  },
+  {
+   "id": "xvs:figure_ground_en_s3",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "B",
+   "pred": "C",
+   "correct": false,
+   "raw": "{\"choice\": \"C\"}"
+  },
+  {
+   "id": "xvs:figure_ground_en_s4",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "A",
+   "pred": "C",
+   "correct": false,
+   "raw": "{\"choice\": \"C\"}"
+  },
+  {
+   "id": "story:isomorphism_en_s0",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "isomorphism",
+   "pred": "isomorphism",
+   "correct": true,
+   "raw": "{\"motif_id\": \"isomorphism\"}"
+  },
+  {
+   "id": "story:isomorphism_en_s1",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "isomorphism",
+   "pred": "isomorphism",
+   "correct": true,
+   "raw": "{\"motif_id\": \"isomorphism\"}"
+  },
+  {
+   "id": "story:isomorphism_en_s2",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "isomorphism",
+   "pred": "isomorphism",
+   "correct": true,
+   "raw": "{\"motif_id\": \"isomorphism\"}"
+  },
+  {
+   "id": "story:isomorphism_en_s3",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "isomorphism",
+   "pred": "isomorphism",
+   "correct": true,
+   "raw": "{\"motif_id\": \"isomorphism\"}"
+  },
+  {
+   "id": "story:isomorphism_en_s4",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "isomorphism",
+   "pred": "isomorphism",
+   "correct": true,
+   "raw": "{\"motif_id\": \"isomorphism\"}"
+  },
+  {
+   "id": "thm:isomorphism",
+   "task": "theorem2motif",
+   "split": "main",
+   "answer": "isomorphism",
+   "pred": "isomorphism",
+   "correct": true,
+   "raw": "{\"motif_id\": \"isomorphism\"}"
+  },
+  {
+   "id": "xvs:isomorphism_en_s0",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "C",
+   "pred": "D",
+   "correct": false,
+   "raw": "{\"choice\": \"D\"}"
+  },
+  {
+   "id": "xvs:isomorphism_en_s1",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "A",
+   "pred": "A",
+   "correct": true,
+   "raw": "{\"choice\": \"A\"}"
+  },
+  {
+   "id": "xvs:isomorphism_en_s2",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "B",
+   "pred": "A",
+   "correct": false,
+   "raw": "{\"choice\": \"A\"}"
+  },
+  {
+   "id": "xvs:isomorphism_en_s3",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "C",
+   "pred": "D",
+   "correct": false,
+   "raw": "{\"choice\": \"D\"}"
+  },
+  {
+   "id": "xvs:isomorphism_en_s4",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "C",
+   "pred": "A",
+   "correct": false,
+   "raw": "{\"choice\": \"A\"}"
+  },
+  {
+   "id": "story:mobius_en_s0",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "mobius",
+   "pred": "mobius",
+   "correct": true,
+   "raw": "{\"motif_id\": \"mobius\"}"
+  },
+  {
+   "id": "story:mobius_en_s1",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "mobius",
+   "pred": "alternation",
+   "correct": false,
+   "raw": "{\"motif_id\": \"alternation\"}"
+  },
+  {
+   "id": "story:mobius_en_s2",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "mobius",
+   "pred": "alternation",
+   "correct": false,
+   "raw": "{\"motif_id\": \"alternation\"}"
+  },
+  {
+   "id": "story:mobius_en_s3",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "mobius",
+   "pred": "cycle",
+   "correct": false,
+   "raw": "{\"motif_id\": \"cycle\"}"
+  },
+  {
+   "id": "story:mobius_en_s4",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "mobius",
+   "pred": "cycle",
+   "correct": false,
+   "raw": "{\"motif_id\": \"cycle\"}"
+  },
+  {
+   "id": "thm:mobius",
+   "task": "theorem2motif",
+   "split": "main",
+   "answer": "mobius",
+   "pred": "mobius",
+   "correct": true,
+   "raw": "{\"motif_id\": \"mobius\"}"
+  },
+  {
+   "id": "xvs:mobius_en_s0",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "D",
+   "pred": "D",
+   "correct": true,
+   "raw": "{\"choice\": \"D\"}"
+  },
+  {
+   "id": "xvs:mobius_en_s1",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "C",
+   "pred": "C",
+   "correct": true,
+   "raw": "{\"choice\": \"C\"}"
+  },
+  {
+   "id": "xvs:mobius_en_s2",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "C",
+   "pred": "D",
+   "correct": false,
+   "raw": "{\"choice\": \"D\"}"
+  },
+  {
+   "id": "xvs:mobius_en_s3",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "D",
+   "pred": "D",
+   "correct": true,
+   "raw": "{\"choice\": \"D\"}"
+  },
+  {
+   "id": "xvs:mobius_en_s4",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "B",
+   "pred": "B",
+   "correct": true,
+   "raw": "{\"choice\": \"B\"}"
+  },
+  {
+   "id": "story:braiding_en_s0",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "braiding",
+   "pred": "cycle",
+   "correct": false,
+   "raw": "{\"motif_id\": \"cycle\"}"
+  },
+  {
+   "id": "story:braiding_en_s1",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "braiding",
+   "pred": "cycle",
+   "correct": false,
+   "raw": "{\"motif_id\": \"cycle\"}"
+  },
+  {
+   "id": "story:braiding_en_s2",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "braiding",
+   "pred": "cycle",
+   "correct": false,
+   "raw": "{\"motif_id\": \"cycle\"}"
+  },
+  {
+   "id": "story:braiding_en_s3",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "braiding",
+   "pred": "cycle",
+   "correct": false,
+   "raw": "{\"motif_id\": \"cycle\"}"
+  },
+  {
+   "id": "story:braiding_en_s4",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "braiding",
+   "pred": "cycle",
+   "correct": false,
+   "raw": "{\"motif_id\": \"cycle\"}"
+  },
+  {
+   "id": "thm:braiding",
+   "task": "theorem2motif",
+   "split": "main",
+   "answer": "braiding",
+   "pred": "braiding",
+   "correct": true,
+   "raw": "{\"motif_id\": \"braiding\"}"
+  },
+  {
+   "id": "xvs:braiding_en_s0",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "C",
+   "pred": "C",
+   "correct": true,
+   "raw": "{\"choice\": \"C\"}"
+  },
+  {
+   "id": "xvs:braiding_en_s1",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "C",
+   "pred": "C",
+   "correct": true,
+   "raw": "{\"choice\": \"C\"}"
+  },
+  {
+   "id": "xvs:braiding_en_s2",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "A",
+   "pred": "A",
+   "correct": true,
+   "raw": "{\"choice\": \"A\"}"
+  },
+  {
+   "id": "xvs:braiding_en_s3",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "B",
+   "pred": "B",
+   "correct": true,
+   "raw": "{\"choice\": \"B\"}"
+  },
+  {
+   "id": "xvs:braiding_en_s4",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "B",
+   "pred": "B",
+   "correct": true,
+   "raw": "{\"choice\": \"B\"}"
+  },
+  {
+   "id": "story:interference_en_s1",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "interference",
+   "pred": "convergence",
+   "correct": false,
+   "raw": "{\"motif_id\": \"convergence\"}"
+  },
+  {
+   "id": "story:interference_en_s2",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "interference",
+   "pred": "alternation",
+   "correct": false,
+   "raw": "{\"motif_id\": \"alternation\"}"
+  },
+  {
+   "id": "story:interference_en_s3",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "interference",
+   "pred": "alternation",
+   "correct": false,
+   "raw": "{\"motif_id\": \"alternation\"}"
+  },
+  {
+   "id": "story:interference_en_s4",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "interference",
+   "pred": "alternation",
+   "correct": false,
+   "raw": "{\"motif_id\": \"alternation\"}"
+  },
+  {
+   "id": "thm:interference",
+   "task": "theorem2motif",
+   "split": "main",
+   "answer": "interference",
+   "pred": "interference",
+   "correct": true,
+   "raw": "{\"motif_id\": \"interference\"}"
+  },
+  {
+   "id": "xvs:interference_en_s1",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "A",
+   "pred": "A",
+   "correct": true,
+   "raw": "{\"choice\": \"A\"}"
+  },
+  {
+   "id": "xvs:interference_en_s2",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "D",
+   "pred": "C",
+   "correct": false,
+   "raw": "{\"choice\": \"C\"}"
+  },
+  {
+   "id": "xvs:interference_en_s3",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "D",
+   "pred": "D",
+   "correct": true,
+   "raw": "{\"choice\": \"D\"}"
+  },
+  {
+   "id": "xvs:interference_en_s4",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "D",
+   "pred": "D",
+   "correct": true,
+   "raw": "{\"choice\": \"D\"}"
+  },
+  {
+   "id": "story:tiling_en_s0",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "tiling",
+   "pred": "convergence",
+   "correct": false,
+   "raw": "{\"motif_id\": \"convergence\"}"
+  },
+  {
+   "id": "story:tiling_en_s2",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "tiling",
+   "pred": "tiling",
+   "correct": true,
+   "raw": "{\"motif_id\": \"tiling\"}"
+  },
+  {
+   "id": "story:tiling_en_s3",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "tiling",
+   "pred": "tiling",
+   "correct": true,
+   "raw": "{\"motif_id\": \"tiling\"}"
+  },
+  {
+   "id": "thm:tiling",
+   "task": "theorem2motif",
+   "split": "main",
+   "answer": "tiling",
+   "pred": "tiling",
+   "correct": true,
+   "raw": "{\"motif_id\": \"tiling\"}"
+  },
+  {
+   "id": "xvs:tiling_en_s0",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "A",
+   "pred": "D",
+   "correct": false,
+   "raw": "{\"choice\": \"D\"}"
+  },
+  {
+   "id": "xvs:tiling_en_s2",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "A",
+   "pred": "C",
+   "correct": false,
+   "raw": "{\"choice\": \"C\"}"
+  },
+  {
+   "id": "xvs:tiling_en_s3",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "A",
+   "pred": "C",
+   "correct": false,
+   "raw": "{\"choice\": \"C\"}"
+  },
+  {
+   "id": "story:hub_en_s0",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "hub",
+   "pred": "hub",
+   "correct": true,
+   "raw": "{\"motif_id\": \"hub\"}"
+  },
+  {
+   "id": "story:hub_en_s1",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "hub",
+   "pred": "symmetry",
+   "correct": false,
+   "raw": "{\"motif_id\": \"symmetry\"}"
+  },
+  {
+   "id": "story:hub_en_s2",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "hub",
+   "pred": "hub",
+   "correct": true,
+   "raw": "{\"motif_id\": \"hub\"}"
+  },
+  {
+   "id": "story:hub_en_s3",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "hub",
+   "pred": "hub",
+   "correct": true,
+   "raw": "{\"motif_id\": \"hub\"}"
+  },
+  {
+   "id": "story:hub_en_s4",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "hub",
+   "pred": "bottleneck",
+   "correct": false,
+   "raw": "{\"motif_id\": \"bottleneck\"}"
+  },
+  {
+   "id": "thm:hub",
+   "task": "theorem2motif",
+   "split": "main",
+   "answer": "hub",
+   "pred": "hub",
+   "correct": true,
+   "raw": "{\"motif_id\": \"hub\"}"
+  },
+  {
+   "id": "xvs:hub_en_s0",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "A",
+   "pred": "A",
+   "correct": true,
+   "raw": "{\"choice\": \"A\"}"
+  },
+  {
+   "id": "xvs:hub_en_s1",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "A",
+   "pred": "D",
+   "correct": false,
+   "raw": "{\"choice\": \"D\"}"
+  },
+  {
+   "id": "xvs:hub_en_s2",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "D",
+   "pred": "A",
+   "correct": false,
+   "raw": "{\"choice\": \"A\"}"
+  },
+  {
+   "id": "xvs:hub_en_s3",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "A",
+   "pred": "B",
+   "correct": false,
+   "raw": "{\"choice\": \"B\"}"
+  },
+  {
+   "id": "xvs:hub_en_s4",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "C",
+   "pred": "D",
+   "correct": false,
+   "raw": "{\"choice\": \"D\"}"
+  },
+  {
+   "id": "story:diagonalization_en_s0",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "diagonalization",
+   "pred": "diagonalization",
+   "correct": true,
+   "raw": "{\"motif_id\": \"diagonalization\"}"
+  },
+  {
+   "id": "story:diagonalization_en_s1",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "diagonalization",
+   "pred": "symmetry_breaking",
+   "correct": false,
+   "raw": "{\"motif_id\": \"symmetry_breaking\"}"
+  },
+  {
+   "id": "story:diagonalization_en_s2",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "diagonalization",
+   "pred": "diagonalization",
+   "correct": true,
+   "raw": "{\"motif_id\": \"diagonalization\"}"
+  },
+  {
+   "id": "story:diagonalization_en_s3",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "diagonalization",
+   "pred": "cycle",
+   "correct": false,
+   "raw": "{\"motif_id\": \"cycle\"}"
+  },
+  {
+   "id": "story:diagonalization_en_s4",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "diagonalization",
+   "pred": "cycle",
+   "correct": false,
+   "raw": "{\"motif_id\": \"cycle\"}"
+  },
+  {
+   "id": "thm:diagonalization",
+   "task": "theorem2motif",
+   "split": "main",
+   "answer": "diagonalization",
+   "pred": "diagonalization",
+   "correct": true,
+   "raw": "{\"motif_id\": \"diagonalization\"}"
+  },
+  {
+   "id": "xvs:diagonalization_en_s0",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "A",
+   "pred": "A",
+   "correct": true,
+   "raw": "{\"choice\": \"A\"}"
+  },
+  {
+   "id": "xvs:diagonalization_en_s1",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "D",
+   "pred": "A",
+   "correct": false,
+   "raw": "{\"choice\": \"A\"}"
+  },
+  {
+   "id": "xvs:diagonalization_en_s2",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "C",
+   "pred": "C",
+   "correct": true,
+   "raw": "{\"choice\": \"C\"}"
+  },
+  {
+   "id": "xvs:diagonalization_en_s3",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "D",
+   "pred": "A",
+   "correct": false,
+   "raw": "{\"choice\": \"A\"}"
+  },
+  {
+   "id": "xvs:diagonalization_en_s4",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "C",
+   "pred": "D",
+   "correct": false,
+   "raw": "{\"choice\": \"D\"}"
+  },
+  {
+   "id": "story:infinite_descent_en_s0",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "infinite_descent",
+   "pred": "infinite_descent",
+   "correct": true,
+   "raw": "{\"motif_id\": \"infinite_descent\"}"
+  },
+  {
+   "id": "story:infinite_descent_en_s1",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "infinite_descent",
+   "pred": "infinite_descent",
+   "correct": true,
+   "raw": "{\"motif_id\": \"infinite_descent\"}"
+  },
+  {
+   "id": "story:infinite_descent_en_s2",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "infinite_descent",
+   "pred": "infinite_descent",
+   "correct": true,
+   "raw": "{\"motif_id\": \"infinite_descent\"}"
+  },
+  {
+   "id": "story:infinite_descent_en_s3",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "infinite_descent",
+   "pred": "infinite_descent",
+   "correct": true,
+   "raw": "{\"motif_id\": \"infinite_descent\"}"
+  },
+  {
+   "id": "story:infinite_descent_en_s4",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "infinite_descent",
+   "pred": "infinite_descent",
+   "correct": true,
+   "raw": "{\"motif_id\": \"infinite_descent\"}"
+  },
+  {
+   "id": "thm:infinite_descent",
+   "task": "theorem2motif",
+   "split": "main",
+   "answer": "infinite_descent",
+   "pred": "infinite_descent",
+   "correct": true,
+   "raw": "{\"motif_id\": \"infinite_descent\"}"
+  },
+  {
+   "id": "xvs:infinite_descent_en_s0",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "A",
+   "pred": "B",
+   "correct": false,
+   "raw": "{\"choice\": \"B\"}"
+  },
+  {
+   "id": "xvs:infinite_descent_en_s1",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "C",
+   "pred": "A",
+   "correct": false,
+   "raw": "{\"choice\": \"A\"}"
+  },
+  {
+   "id": "xvs:infinite_descent_en_s2",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "B",
+   "pred": "D",
+   "correct": false,
+   "raw": "{\"choice\": \"D\"}"
+  },
+  {
+   "id": "xvs:infinite_descent_en_s3",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "D",
+   "pred": "C",
+   "correct": false,
+   "raw": "{\"choice\": \"C\"}"
+  },
+  {
+   "id": "xvs:infinite_descent_en_s4",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "A",
+   "pred": "B",
+   "correct": false,
+   "raw": "{\"choice\": \"B\"}"
+  },
+  {
+   "id": "story:coprime_orbit_en_s0",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "coprime_orbit",
+   "pred": "coprime_orbit",
+   "correct": true,
+   "raw": "{\"motif_id\": \"coprime_orbit\"}"
+  },
+  {
+   "id": "story:coprime_orbit_en_s1",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "coprime_orbit",
+   "pred": "coprime_orbit",
+   "correct": true,
+   "raw": "{\"motif_id\": \"coprime_orbit\"}"
+  },
+  {
+   "id": "story:coprime_orbit_en_s2",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "coprime_orbit",
+   "pred": "coprime_orbit",
+   "correct": true,
+   "raw": "{\"motif_id\": \"coprime_orbit\"}"
+  },
+  {
+   "id": "story:coprime_orbit_en_s3",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "coprime_orbit",
+   "pred": "coprime_orbit",
+   "correct": true,
+   "raw": "{\"motif_id\": \"coprime_orbit\"}"
+  },
+  {
+   "id": "story:coprime_orbit_en_s4",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "coprime_orbit",
+   "pred": "coprime_orbit",
+   "correct": true,
+   "raw": "{\"motif_id\": \"coprime_orbit\"}"
+  },
+  {
+   "id": "thm:coprime_orbit",
+   "task": "theorem2motif",
+   "split": "main",
+   "answer": "coprime_orbit",
+   "pred": "coprime_orbit",
+   "correct": true,
+   "raw": "{\"motif_id\": \"coprime_orbit\"}"
+  },
+  {
+   "id": "xvs:coprime_orbit_en_s0",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "D",
+   "pred": "D",
+   "correct": true,
+   "raw": "{\"choice\": \"D\"}"
+  },
+  {
+   "id": "xvs:coprime_orbit_en_s1",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "D",
+   "pred": "D",
+   "correct": true,
+   "raw": "{\"choice\": \"D\"}"
+  },
+  {
+   "id": "xvs:coprime_orbit_en_s2",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "D",
+   "pred": "D",
+   "correct": true,
+   "raw": "{\"choice\": \"D\"}"
+  },
+  {
+   "id": "xvs:coprime_orbit_en_s3",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "A",
+   "pred": "A",
+   "correct": true,
+   "raw": "{\"choice\": \"A\"}"
+  },
+  {
+   "id": "xvs:coprime_orbit_en_s4",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "A",
+   "pred": "A",
+   "correct": true,
+   "raw": "{\"choice\": \"A\"}"
+  },
+  {
+   "id": "story:pigeonhole_en_s0",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "pigeonhole",
+   "pred": "pigeonhole",
+   "correct": true,
+   "raw": "{\"motif_id\": \"pigeonhole\"}"
+  },
+  {
+   "id": "story:pigeonhole_en_s1",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "pigeonhole",
+   "pred": "pigeonhole",
+   "correct": true,
+   "raw": "{\"motif_id\": \"pigeonhole\"}"
+  },
+  {
+   "id": "story:pigeonhole_en_s2",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "pigeonhole",
+   "pred": "pigeonhole",
+   "correct": true,
+   "raw": "{\"motif_id\": \"pigeonhole\"}"
+  },
+  {
+   "id": "story:pigeonhole_en_s3",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "pigeonhole",
+   "pred": "pigeonhole",
+   "correct": true,
+   "raw": "{\"motif_id\": \"pigeonhole\"}"
+  },
+  {
+   "id": "story:pigeonhole_en_s4",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "pigeonhole",
+   "pred": "pigeonhole",
+   "correct": true,
+   "raw": "{\"motif_id\": \"pigeonhole\"}"
+  },
+  {
+   "id": "thm:pigeonhole",
+   "task": "theorem2motif",
+   "split": "main",
+   "answer": "pigeonhole",
+   "pred": "pigeonhole",
+   "correct": true,
+   "raw": "{\"motif_id\": \"pigeonhole\"}"
+  },
+  {
+   "id": "xvs:pigeonhole_en_s0",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "D",
+   "pred": "D",
+   "correct": true,
+   "raw": "{\"choice\": \"D\"}"
+  },
+  {
+   "id": "xvs:pigeonhole_en_s1",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "A",
+   "pred": "D",
+   "correct": false,
+   "raw": "{\"choice\": \"D\"}"
+  },
+  {
+   "id": "xvs:pigeonhole_en_s2",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "C",
+   "pred": "C",
+   "correct": true,
+   "raw": "{\"choice\": \"C\"}"
+  },
+  {
+   "id": "xvs:pigeonhole_en_s3",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "C",
+   "pred": "D",
+   "correct": false,
+   "raw": "{\"choice\": \"D\"}"
+  },
+  {
+   "id": "xvs:pigeonhole_en_s4",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "D",
+   "pred": "D",
+   "correct": true,
+   "raw": "{\"choice\": \"D\"}"
+  },
+  {
+   "id": "story:projective_duality_en_s0",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "projective_duality",
+   "pred": "projective_duality",
+   "correct": true,
+   "raw": "{\"motif_id\": \"projective_duality\"}"
+  },
+  {
+   "id": "story:projective_duality_en_s1",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "projective_duality",
+   "pred": "alternation",
+   "correct": false,
+   "raw": "{\"motif_id\": \"alternation\"}"
+  },
+  {
+   "id": "story:projective_duality_en_s2",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "projective_duality",
+   "pred": "alternation",
+   "correct": false,
+   "raw": "{\"motif_id\": \"alternation\"}"
+  },
+  {
+   "id": "story:projective_duality_en_s3",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "projective_duality",
+   "pred": "alternation",
+   "correct": false,
+   "raw": "{\"motif_id\": \"alternation\"}"
+  },
+  {
+   "id": "story:projective_duality_en_s4",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "projective_duality",
+   "pred": "isomorphism",
+   "correct": false,
+   "raw": "{\"motif_id\": \"isomorphism\"}"
+  },
+  {
+   "id": "thm:projective_duality",
+   "task": "theorem2motif",
+   "split": "main",
+   "answer": "projective_duality",
+   "pred": "projective_duality",
+   "correct": true,
+   "raw": "{\"motif_id\": \"projective_duality\"}"
+  },
+  {
+   "id": "xvs:projective_duality_en_s0",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "D",
+   "pred": "D",
+   "correct": true,
+   "raw": "{\"choice\": \"D\"}"
+  },
+  {
+   "id": "xvs:projective_duality_en_s1",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "C",
+   "pred": "D",
+   "correct": false,
+   "raw": "{\"choice\": \"D\"}"
+  },
+  {
+   "id": "xvs:projective_duality_en_s2",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "A",
+   "pred": "B",
+   "correct": false,
+   "raw": "{\"choice\": \"B\"}"
+  },
+  {
+   "id": "xvs:projective_duality_en_s3",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "D",
+   "pred": "A",
+   "correct": false,
+   "raw": "{\"choice\": \"A\"}"
+  },
+  {
+   "id": "xvs:projective_duality_en_s4",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "C",
+   "pred": "C",
+   "correct": true,
+   "raw": "{\"choice\": \"C\"}"
+  },
+  {
+   "id": "story:contraction_fixed_point_en_s0",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "contraction_fixed_point",
+   "pred": "recursion",
+   "correct": false,
+   "raw": "{\"motif_id\": \"recursion\"}"
+  },
+  {
+   "id": "story:contraction_fixed_point_en_s1",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "contraction_fixed_point",
+   "pred": "recursion",
+   "correct": false,
+   "raw": "{\"motif_id\": \"recursion\"}"
+  },
+  {
+   "id": "story:contraction_fixed_point_en_s2",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "contraction_fixed_point",
+   "pred": "recursion",
+   "correct": false,
+   "raw": "{\"motif_id\": \"recursion\"}"
+  },
+  {
+   "id": "story:contraction_fixed_point_en_s3",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "contraction_fixed_point",
+   "pred": "infinite_descent",
+   "correct": false,
+   "raw": "{\"motif_id\": \"infinite_descent\"}"
+  },
+  {
+   "id": "story:contraction_fixed_point_en_s4",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "contraction_fixed_point",
+   "pred": "recursion",
+   "correct": false,
+   "raw": "{\"motif_id\": \"recursion\"}"
+  },
+  {
+   "id": "thm:contraction_fixed_point",
+   "task": "theorem2motif",
+   "split": "main",
+   "answer": "contraction_fixed_point",
+   "pred": "contraction_fixed_point",
+   "correct": true,
+   "raw": "{\"motif_id\": \"contraction_fixed_point\"}"
+  },
+  {
+   "id": "xvs:contraction_fixed_point_en_s0",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "A",
+   "pred": "D",
+   "correct": false,
+   "raw": "{\"choice\": \"D\"}"
+  },
+  {
+   "id": "xvs:contraction_fixed_point_en_s1",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "D",
+   "pred": "D",
+   "correct": true,
+   "raw": "{\"choice\": \"D\"}"
+  },
+  {
+   "id": "xvs:contraction_fixed_point_en_s2",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "D",
+   "pred": "D",
+   "correct": true,
+   "raw": "{\"choice\": \"D\"}"
+  },
+  {
+   "id": "xvs:contraction_fixed_point_en_s3",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "D",
+   "pred": "A",
+   "correct": false,
+   "raw": "{\"choice\": \"A\"}"
+  },
+  {
+   "id": "xvs:contraction_fixed_point_en_s4",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "B",
+   "pred": "D",
+   "correct": false,
+   "raw": "{\"choice\": \"D\"}"
+  },
+  {
+   "id": "story:aperiodic_tiling_en_s0",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "aperiodic_tiling",
+   "pred": "aperiodic_tiling",
+   "correct": true,
+   "raw": "{\"motif_id\": \"aperiodic_tiling\"}"
+  },
+  {
+   "id": "story:aperiodic_tiling_en_s1",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "aperiodic_tiling",
+   "pred": "aperiodic_tiling",
+   "correct": true,
+   "raw": "{\"motif_id\": \"aperiodic_tiling\"}"
+  },
+  {
+   "id": "story:aperiodic_tiling_en_s2",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "aperiodic_tiling",
+   "pred": "aperiodic_tiling",
+   "correct": true,
+   "raw": "{\"motif_id\": \"aperiodic_tiling\"}"
+  },
+  {
+   "id": "story:aperiodic_tiling_en_s3",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "aperiodic_tiling",
+   "pred": "tiling",
+   "correct": false,
+   "raw": "{\"motif_id\": \"tiling\"}"
+  },
+  {
+   "id": "story:aperiodic_tiling_en_s4",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "aperiodic_tiling",
+   "pred": "tiling",
+   "correct": false,
+   "raw": "{\"motif_id\": \"tiling\"}"
+  },
+  {
+   "id": "thm:aperiodic_tiling",
+   "task": "theorem2motif",
+   "split": "main",
+   "answer": "aperiodic_tiling",
+   "pred": "aperiodic_tiling",
+   "correct": true,
+   "raw": "{\"motif_id\": \"aperiodic_tiling\"}"
+  },
+  {
+   "id": "xvs:aperiodic_tiling_en_s0",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "B",
+   "pred": "B",
+   "correct": true,
+   "raw": "{\"choice\": \"B\"}"
+  },
+  {
+   "id": "xvs:aperiodic_tiling_en_s1",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "C",
+   "pred": "C",
+   "correct": true,
+   "raw": "{\"choice\": \"C\"}"
+  },
+  {
+   "id": "xvs:aperiodic_tiling_en_s2",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "C",
+   "pred": "C",
+   "correct": true,
+   "raw": "{\"choice\": \"C\"}"
+  },
+  {
+   "id": "xvs:aperiodic_tiling_en_s3",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "A",
+   "pred": "A",
+   "correct": true,
+   "raw": "{\"choice\": \"A\"}"
+  },
+  {
+   "id": "xvs:aperiodic_tiling_en_s4",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "A",
+   "pred": "A",
+   "correct": true,
+   "raw": "{\"choice\": \"A\"}"
+  }
+ ]
+}

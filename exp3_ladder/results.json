@@ -1,27 +1,27 @@
 {
- "n_records": 1742,
+ "n_records": 1896,
  "models": {
-  "gpt-5.2": {
-   "n": 397,
-   "glm_level_coef": -0.1139,
-   "glm_level_se": 0.1067,
-   "glm_level_p": 0.2856180340952199,
-   "sigmoid_threshold": 15.0,
-   "sigmoid_slope": 0.0,
+  "openai/gpt-5.2": {
+   "n": 474,
+   "glm_level_coef": -0.4056,
+   "glm_level_se": 0.0851,
+   "glm_level_p": 1.8630526375927897e-06,
+   "sigmoid_threshold": 7.53,
+   "sigmoid_slope": 0.209,
    "threshold_ci95": [
-    -1.46,
+    4.872,
     15.0
    ]
   },
-  "gpt-5.5": {
-   "n": 397,
-   "glm_level_coef": 0.1289,
-   "glm_level_se": 0.1242,
-   "glm_level_p": 0.29929964721671076,
-   "sigmoid_threshold": 15.0,
-   "sigmoid_slope": 0.0,
+  "openai/gpt-5.5": {
+   "n": 474,
+   "glm_level_coef": -0.3502,
+   "glm_level_se": 0.0884,
+   "glm_level_p": 7.46772187286179e-05,
+   "sigmoid_threshold": 9.801,
+   "sigmoid_slope": 0.183,
    "threshold_ci95": [
-    15.0,
+    6.418,
     15.0
    ]
   },
@@ -51,64 +51,64 @@
   }
  },
  "per_level": {
-  "gpt-5.2": {
+  "openai/gpt-5.2": {
    "L0": {
-    "acc": 0.76,
+    "acc": 0.84,
     "n": 25
    },
    "L1": {
-    "acc": 0.7333,
-    "n": 75
-   },
-   "L2": {
-    "acc": 0.8,
-    "n": 75
-   },
-   "L3": {
-    "acc": 0.72,
-    "n": 75
-   },
-   "L4": {
-    "acc": 0.6667,
-    "n": 75
-   },
-   "L5": {
-    "acc": 0.8636,
-    "n": 44
-   },
-   "L6": {
-    "acc": 0.8214,
-    "n": 28
-   }
-  },
-  "gpt-5.5": {
-   "L0": {
-    "acc": 0.72,
-    "n": 25
-   },
-   "L1": {
-    "acc": 0.7733,
-    "n": 75
-   },
-   "L2": {
     "acc": 0.7867,
     "n": 75
    },
-   "L3": {
-    "acc": 0.8267,
-    "n": 75
-   },
-   "L4": {
+   "L2": {
     "acc": 0.7733,
     "n": 75
    },
+   "L3": {
+    "acc": 0.76,
+    "n": 75
+   },
+   "L4": {
+    "acc": 0.68,
+    "n": 75
+   },
    "L5": {
-    "acc": 0.9545,
-    "n": 44
+    "acc": 0.6486,
+    "n": 74
    },
    "L6": {
-    "acc": 0.8929,
-    "n": 28
+    "acc": 0.5867,
+    "n": 75
+   }
+  },
+  "openai/gpt-5.5": {
+   "L0": {
+    "acc": 0.84,
+    "n": 25
+   },
+   "L1": {
+    "acc": 0.8133,
+    "n": 75
+   },
+   "L2": {
+    "acc": 0.8133,
+    "n": 75
+   },
+   "L3": {
+    "acc": 0.8533,
+    "n": 75
+   },
+   "L4": {
+    "acc": 0.7333,
+    "n": 75
+   },
+   "L5": {
+    "acc": 0.7297,
+    "n": 74
+   },
+   "L6": {
+    "acc": 0.6533,
+    "n": 75
    }
   },
   "qwen2-vl-7b": {
@@ -173,151 +173,151 @@
   }
  },
  "slope_equality_LRT": {
-  "lr_chi2": 5.659,
+  "lr_chi2": 9.386,
   "df": 3,
-  "p": 0.1294422338311095,
-  "shared_slope_supported": true
+  "p": 0.02457974411995112,
+  "shared_slope_supported": false
  },
  "per_motif": [
   {
    "motif": "alternation",
-   "threshold": 5.054,
-   "slope": 0.282,
+   "threshold": 4.674,
+   "slope": 0.336,
    "family_degree": 9,
-   "overall_acc": 0.6429
+   "overall_acc": 0.6184
   },
   {
    "motif": "aperiodic_tiling",
    "threshold": -5.0,
    "slope": 0.0,
    "family_degree": 3,
-   "overall_acc": 0.1562
+   "overall_acc": 0.1842
   },
   {
    "motif": "bottleneck",
-   "threshold": 2.943,
-   "slope": 0.09,
+   "threshold": 15.0,
+   "slope": 0.0,
    "family_degree": 3,
-   "overall_acc": 0.5135
+   "overall_acc": 0.5789
   },
   {
    "motif": "braiding",
-   "threshold": -1.004,
-   "slope": -0.187,
+   "threshold": 2.071,
+   "slope": -0.255,
    "family_degree": 4,
-   "overall_acc": 0.6944
+   "overall_acc": 0.5921
   },
   {
    "motif": "contraction_fixed_point",
-   "threshold": 0.178,
-   "slope": 0.443,
+   "threshold": 0.759,
+   "slope": 0.361,
    "family_degree": 5,
-   "overall_acc": 0.2812
+   "overall_acc": 0.3289
   },
   {
    "motif": "convergence",
-   "threshold": 5.471,
-   "slope": 0.366,
+   "threshold": 5.092,
+   "slope": 0.418,
    "family_degree": 8,
-   "overall_acc": 0.6842
+   "overall_acc": 0.6711
   },
   {
    "motif": "coprime_orbit",
-   "threshold": 1.538,
-   "slope": 0.323,
+   "threshold": 0.147,
+   "slope": 0.044,
    "family_degree": 3,
-   "overall_acc": 0.4219
+   "overall_acc": 0.4868
   },
   {
    "motif": "cycle",
-   "threshold": 5.996,
-   "slope": 20.992,
+   "threshold": 5.958,
+   "slope": 2.637,
    "family_degree": 7,
-   "overall_acc": 0.9444
+   "overall_acc": 0.9079
   },
   {
    "motif": "diagonalization",
-   "threshold": 2.525,
-   "slope": 0.433,
+   "threshold": 2.991,
+   "slope": 0.267,
    "family_degree": 2,
-   "overall_acc": 0.4844
+   "overall_acc": 0.5
   },
   {
    "motif": "figure_ground",
    "threshold": -5.0,
-   "slope": 3.244,
+   "slope": 3.396,
    "family_degree": 4,
-   "overall_acc": 0.0469
+   "overall_acc": 0.0526
   },
   {
    "motif": "hub",
-   "threshold": 5.427,
-   "slope": 0.706,
+   "threshold": 5.486,
+   "slope": 0.61,
    "family_degree": 3,
-   "overall_acc": 0.7703
+   "overall_acc": 0.75
   },
   {
    "motif": "infinite_descent",
-   "threshold": -2.676,
-   "slope": 0.346,
+   "threshold": 0.586,
+   "slope": 0.603,
    "family_degree": 3,
-   "overall_acc": 0.1719
+   "overall_acc": 0.2368
   },
   {
    "motif": "interference",
-   "threshold": -5.0,
-   "slope": 0.0,
+   "threshold": 4.314,
+   "slope": 0.026,
    "family_degree": 8,
-   "overall_acc": 0.3889
+   "overall_acc": 0.5263
   },
   {
    "motif": "isomorphism",
-   "threshold": 7.074,
-   "slope": 0.053,
+   "threshold": -5.0,
+   "slope": -0.034,
    "family_degree": 4,
-   "overall_acc": 0.5694
+   "overall_acc": 0.6711
   },
   {
    "motif": "mobius",
-   "threshold": 8.949,
-   "slope": 0.127,
+   "threshold": 12.04,
+   "slope": 0.089,
    "family_degree": 7,
-   "overall_acc": 0.6912
+   "overall_acc": 0.6974
   },
   {
    "motif": "nesting",
-   "threshold": 4.151,
-   "slope": 0.098,
+   "threshold": 3.758,
+   "slope": 0.06,
    "family_degree": 6,
-   "overall_acc": 0.5395
+   "overall_acc": 0.5263
   },
   {
    "motif": "pigeonhole",
-   "threshold": -3.469,
-   "slope": 0.189,
+   "threshold": 1.444,
+   "slope": 0.531,
    "family_degree": 6,
-   "overall_acc": 0.2656
+   "overall_acc": 0.3289
   },
   {
    "motif": "projective_duality",
-   "threshold": 1.039,
-   "slope": 0.525,
+   "threshold": 0.538,
+   "slope": 0.627,
    "family_degree": 3,
-   "overall_acc": 0.3281
+   "overall_acc": 0.2368
   },
   {
    "motif": "recursion",
-   "threshold": 4.078,
-   "slope": 0.326,
+   "threshold": 3.252,
+   "slope": 0.474,
    "family_degree": 6,
-   "overall_acc": 0.5833
+   "overall_acc": 0.5132
   },
   {
    "motif": "self_reference",
    "threshold": -5.0,
    "slope": 0.0,
    "family_degree": 5,
-   "overall_acc": 0.1875
+   "overall_acc": 0.1667
   },
   {
    "motif": "spiral",
@@ -328,17 +328,17 @@
   },
   {
    "motif": "strange_loop",
-   "threshold": -5.0,
-   "slope": 0.0,
+   "threshold": 5.766,
+   "slope": -0.535,
    "family_degree": 7,
-   "overall_acc": 0.2222
+   "overall_acc": 0.2763
   },
   {
    "motif": "symmetry",
-   "threshold": 14.357,
-   "slope": 0.061,
+   "threshold": 15.0,
+   "slope": 0.014,
    "family_degree": 4,
-   "overall_acc": 0.6757
+   "overall_acc": 0.6974
   },
   {
    "motif": "symmetry_breaking",
@@ -349,15 +349,15 @@
   },
   {
    "motif": "tiling",
-   "threshold": 6.081,
-   "slope": 19.15,
+   "threshold": 6.128,
+   "slope": 18.349,
    "family_degree": 5,
-   "overall_acc": 0.9857
+   "overall_acc": 0.9868
   }
  ],
  "threshold_vs_family_degree": {
-  "spearman_rho": 0.355,
-  "p": 0.1478145126083109,
-  "n_motifs": 18
+  "spearman_rho": 0.567,
+  "p": 0.017610725393033624,
+  "n_motifs": 17
  }
 }

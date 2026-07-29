@@ -1,66 +1,66 @@
 {
  "bottom10_recall": {
-  "figure_ground": 0.18823529411764706,
-  "contraction_fixed_point": 0.2653061224489796,
-  "projective_duality": 0.3010752688172043,
-  "self_reference": 0.35398230088495575,
-  "aperiodic_tiling": 0.3620689655172414,
-  "nesting": 0.39823008849557523,
-  "recursion": 0.48672566371681414,
-  "interference": 0.49473684210526314,
-  "isomorphism": 0.5048543689320388,
-  "infinite_descent": 0.5060240963855421
+  "figure_ground": 0.23484848484848486,
+  "contraction_fixed_point": 0.3157894736842105,
+  "self_reference": 0.3352272727272727,
+  "projective_duality": 0.3541666666666667,
+  "nesting": 0.4090909090909091,
+  "aperiodic_tiling": 0.5340909090909091,
+  "infinite_descent": 0.546875,
+  "interference": 0.5472972972972973,
+  "strange_loop": 0.5583333333333333,
+  "recursion": 0.5738636363636364
  },
  "top_confusions": [
   {
-   "true": "braiding",
-   "pred": "cycle",
-   "count": 29
-  },
-  {
-   "true": "contraction_fixed_point",
-   "pred": "recursion",
-   "count": 28
-  },
-  {
    "true": "self_reference",
    "pred": "recursion",
-   "count": 27
-  },
-  {
-   "true": "self_reference",
-   "pred": "nesting",
-   "count": 27
-  },
-  {
-   "true": "figure_ground",
-   "pred": "tiling",
-   "count": 24
-  },
-  {
-   "true": "symmetry",
-   "pred": "cycle",
-   "count": 23
+   "count": 52
   },
   {
    "true": "projective_duality",
    "pred": "isomorphism",
-   "count": 23
+   "count": 43
+  },
+  {
+   "true": "braiding",
+   "pred": "cycle",
+   "count": 40
+  },
+  {
+   "true": "self_reference",
+   "pred": "nesting",
+   "count": 39
+  },
+  {
+   "true": "figure_ground",
+   "pred": "tiling",
+   "count": 38
+  },
+  {
+   "true": "contraction_fixed_point",
+   "pred": "recursion",
+   "count": 33
   },
   {
    "true": "strange_loop",
    "pred": "cycle",
-   "count": 18
+   "count": 30
   },
   {
-   "true": "diagonalization",
-   "pred": "alternation",
-   "count": 18
+   "true": "nesting",
+   "pred": "recursion",
+   "count": 28
   },
   {
-   "true": "isomorphism",
-   "pred": "symmetry",
-   "count": 17
+   "true": "symmetry",
+   "pred": "cycle",
+   "count": 28
+  },
+  {
+   "true": "nesting",
+   "pred": "spiral",
+   "count": 24
   }
  ]
 }

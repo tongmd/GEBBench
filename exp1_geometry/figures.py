@@ -16,6 +16,12 @@ from pathlib import Path
 
 import matplotlib
 matplotlib.use("Agg")
+
+import sys
+sys.path.insert(0, "/Users/stone/GEB-benchmark")
+import figstyle
+figstyle.use()
+
 import matplotlib.pyplot as plt
 import numpy as np
 
@@ -24,17 +30,21 @@ EXP = ROOT / "exp1_geometry"
 FIGS = ROOT / "paper" / "figs"
 FIGS.mkdir(exist_ok=True)
 
-TERRA = "#C4612F"
-INK = "#2b2b2b"
-GREY = "#9a9a9a"
+TERRA = figstyle.ACCENT      # formal / highlight accent
+INK = figstyle.NEUTRAL       # drawn means / reference lines / stars
+GREY = "#9a9a9a"             # de-emphasized point clouds
 
-plt.rcParams.update({
-    "figure.facecolor": "white", "axes.facecolor": "white",
-    "axes.edgecolor": INK, "axes.labelcolor": INK,
-    "xtick.color": INK, "ytick.color": INK, "text.color": INK,
-    "font.size": 10, "axes.spines.top": False, "axes.spines.right": False,
-    "pdf.fonttype": 42,
-})
+# display names for model tags (tick labels only; order untouched)
+TAG2NAME = {
+    "openai/gpt-5.5": "GPT-5.5",
+    "openai/gpt-5.2": "GPT-5.2",
+    "anthropic/claude-opus-4.8": "Claude Opus 4.8",
+    "google/gemini-3.1-pro-preview": "Gemini 3.1 Pro",
+    "moonshotai/kimi-k2.5": "Kimi K2.5",
+    "qwen/qwen2.5-vl-72b-instruct": "Qwen2.5-VL-72B",
+    "qwen2.5-vl-32b": "Qwen2.5-VL-32B",
+    "qwen2-vl-7b": "Qwen2-VL-7B",
+}
 
 VISION_TASKS = ("scene2motif", "skeleton2motif")
 
@@ -100,7 +110,7 @@ def fig_scatter(motifs, fam, ged, lab, dino, C, expo):
     pr_d = partial_r(rate, -d, [f, -l])
     rng = np.random.default_rng(0)
 
-    fig, axes = plt.subplots(1, 2, figsize=(7.4, 3.1), sharey=True,
+    fig, axes = plt.subplots(1, 2, figsize=(figstyle.FULL, 2.3), sharey=True,
                              gridspec_kw={"width_ratios": [1, 1.4]})
     # left: primary formal predictor (binary same-family) as strip + means
     ax = axes[0]
@@ -108,34 +118,34 @@ def fig_scatter(motifs, fam, ged, lab, dino, C, expo):
                           (0, "different\nfamily", GREY)):
         s = f == val
         x0 = 1 - val
-        ax.scatter(x0 + rng.uniform(-.13, .13, s.sum()), rate[s], s=14,
+        ax.scatter(x0 + rng.uniform(-.13, .13, s.sum()), rate[s], s=10,
                    alpha=0.45, color=col, edgecolors="none")
-        ax.hlines(rate[s].mean(), x0 - 0.22, x0 + 0.22, color=INK, lw=2,
+        ax.hlines(rate[s].mean(), x0 - 0.22, x0 + 0.22, color=INK, lw=1.6,
                   zorder=5)
     ax.set_xlim(-0.6, 1.6)
     ax.set_xticks([0, 1])
-    ax.set_xticklabels(["same\nfamily", "different\nfamily"], fontsize=9)
+    ax.set_xticklabels(["same\nfamily", "different\nfamily"])
     ax.set_xlabel("formal distance (confusable family)")
     ratio = rate[f == 1].mean() / max(rate[f == 0].mean(), 1e-9)
     ax.annotate(f"mean rate ×{ratio:.1f}\npartial $r$ = {pr_f:+.2f}",
                 xy=(0.96, 0.86), xycoords="axes fraction", ha="right",
-                fontsize=9, fontweight="bold", color=TERRA)
+                fontweight="bold", color=TERRA)
     # right: perceptual DINOv2 distance scatter + binned means
     ax = axes[1]
-    ax.scatter(d, rate, s=14, alpha=0.45, color=GREY, edgecolors="none")
+    ax.scatter(d, rate, s=10, alpha=0.45, color=GREY, edgecolors="none")
     qs = np.quantile(d, np.linspace(0, 1, 7))
     for lo, hi in zip(qs[:-1], qs[1:]):
         s = (d >= lo) & (d <= hi)
         if s.sum():
             ax.plot([(lo + hi) / 2], [rate[s].mean()], "o", color=INK,
-                    ms=6, zorder=5)
+                    ms=5, zorder=5)
     ax.set_xlabel("perceptual distance (DINOv2 centroid cosine)")
     ax.annotate(f"partial $r$ = {pr_d:+.2f}", xy=(0.96, 0.92),
-                xycoords="axes fraction", ha="right", fontsize=10,
+                xycoords="axes fraction", ha="right",
                 color=INK)
     axes[0].set_ylabel("pairwise confusion rate")
     fig.suptitle("Pooled VLM confusions vs formal and perceptual distance",
-                 fontsize=11, y=1.0)
+                 fontsize=matplotlib.rcParams["axes.titlesize"], y=1.0)
     fig.tight_layout()
     fig.savefig(FIGS / "exp1_confusion_vs_distance.pdf", bbox_inches="tight")
     print("wrote", FIGS / "exp1_confusion_vs_distance.pdf")
@@ -150,7 +160,7 @@ def fig_betas():
     colors = [TERRA, "#DBA07A", GREY, "#cfcfcf"]
     x = np.arange(len(models))
     w = 0.2
-    fig, ax = plt.subplots(figsize=(7.0, 3.2))
+    fig, ax = plt.subplots(figsize=(figstyle.FULL, 2.6))
     for k, (key, lb, c) in enumerate(zip(keys, labels, colors)):
         vals = [R[m]["beta"][key] for m in models]
         ps = [R[m]["p_perm"][key] for m in models]
@@ -164,9 +174,9 @@ def fig_betas():
                         ha="center", fontsize=8, color=INK)
     ax.axhline(0, color=INK, lw=0.8)
     ax.set_xticks(x)
-    ax.set_xticklabels(models, fontsize=9)
+    ax.set_xticklabels(models)
     ax.set_ylabel(r"dyadic Poisson $\beta$ (std. similarity)")
-    ax.legend(frameon=False, fontsize=8, ncol=2)
+    ax.legend(ncol=2)
     fig.tight_layout()
     fig.savefig(FIGS / "exp1_betas.pdf", bbox_inches="tight")
     print("wrote", FIGS / "exp1_betas.pdf")

@@ -32,14 +32,18 @@ os.makedirs(OUT, exist_ok=True)
 RNG = np.random.default_rng(20260721)
 N_BOOT = 10000
 
-VISION_MODELS = ["api_gpt-5.5", "api_gpt-5.2", "api_claude-opus-4-8",
+VISION_MODELS = ["or_gpt-5.5", "or_gpt-5.2", "or_claude-opus-4.8",
+                 "or_gemini-3.1-pro", "or_kimi-k2.5", "or_qwen2.5-vl-72b",
                  "qwen2.5-vl-32b", "qwen2-vl-7b"]
-TEXT_PANEL = ["api_gpt-5.5", "api_gpt-5.2", "api_claude-opus-4-8",
+TEXT_PANEL = ["or_gpt-5.5", "or_gpt-5.2", "or_claude-opus-4.8",
+              "or_gemini-3.1-pro", "or_deepseek-v3.2",
               "qwen2.5-14b", "qwen2.5-7b",
               "deepseek-coder-v2-lite"]
 LABELS = {
-    "api_gpt-5.5": "GPT-5.5", "api_gpt-5.2": "GPT-5.2",
-    "api_claude-opus-4-8": "Claude Opus 4.8",
+    "or_gpt-5.5": "GPT-5.5", "or_gpt-5.2": "GPT-5.2",
+    "or_claude-opus-4.8": "Claude Opus 4.8",
+    "or_gemini-3.1-pro": "Gemini 3.1 Pro", "or_kimi-k2.5": "Kimi K2.5",
+    "or_qwen2.5-vl-72b": "Qwen2.5-VL-72B", "or_deepseek-v3.2": "DeepSeek-V3.2",
     "qwen2.5-vl-32b": "Qwen2.5-VL-32B", "qwen2-vl-7b": "Qwen2-VL-7B",
     "qwen2.5-14b": "Qwen2.5-14B", "qwen2.5-7b": "Qwen2.5-7B",
     "deepseek-coder-v2-lite": "DeepSeek-Coder-V2-Lite",
@@ -215,23 +219,18 @@ print("wrote", os.path.join(OUT, "mapping_v2.json"))
 # -------------------------------------------------------------------- figure
 import matplotlib
 matplotlib.use("Agg")
+import sys; sys.path.insert(0, "/Users/stone/GEB-benchmark")
+import figstyle; figstyle.use()
 import matplotlib.pyplot as plt
 from matplotlib.lines import Line2D
 
-BG = "#F7F4EF"; SURFACE = "#FBF9F5"; TERRACOTTA = "#C4612F"
-MUTED = "#5C635D"; INK = "#1F2421"
-plt.rcParams.update({
-    "font.family": "sans-serif",
-    "font.sans-serif": ["Inter", "DejaVu Sans"],
-    "font.size": 9, "axes.labelsize": 9, "axes.titlesize": 9.5,
-    "xtick.labelsize": 8, "ytick.labelsize": 8, "legend.fontsize": 8,
-    "figure.facecolor": BG, "axes.facecolor": SURFACE,
-    "axes.edgecolor": "#E7E1D7", "axes.labelcolor": INK, "text.color": INK,
-    "xtick.color": MUTED, "ytick.color": MUTED,
-    "grid.color": "#E7E1D7", "grid.alpha": 0.4,
-})
+# Two-condition encoding within each model row (recognition vs mapping):
+# dark neutral vs the paper's terracotta accent, from the shared palette.
+RECOG = figstyle.NEUTRAL
+MAPPING = figstyle.ACCENT
+CONNECT = "#D6D0C8"   # light neutral connector between the paired dots
 
-fig, axes = plt.subplots(1, 2, figsize=(7.0, 2.9), sharex=True)
+fig, axes = plt.subplots(1, 2, figsize=(figstyle.FULL, 2.3), sharex=True)
 
 # panel A: vision -- family4 (recognition) vs crossvoice (mapping), both 4-way
 axA = axes[0]
@@ -240,9 +239,9 @@ ys = np.arange(len(vm))[::-1]
 for y, m in zip(ys, vm):
     g = results["matched_arity_gap"][m]
     axA.plot([g["kappa_crossvoice"], g["kappa_family4"]], [y, y],
-             color="#D8CFC2", lw=2.2, zorder=1, solid_capstyle="round")
-    axA.scatter([g["kappa_family4"]], [y], s=52, color=INK, zorder=3)
-    axA.scatter([g["kappa_crossvoice"]], [y], s=52, color=TERRACOTTA, zorder=3)
+             color=CONNECT, lw=1.8, zorder=1, solid_capstyle="round")
+    axA.scatter([g["kappa_family4"]], [y], s=30, color=RECOG, zorder=3)
+    axA.scatter([g["kappa_crossvoice"]], [y], s=30, color=MAPPING, zorder=3)
 axA.set_yticks(ys)
 axA.set_yticklabels([LABELS[m] for m in vm])
 axA.set_title("Vision: identify vs. map (both 4-way)", loc="left")
@@ -255,25 +254,25 @@ ys = np.arange(len(tm))[::-1]
 for y, m in zip(ys, tm):
     g = results["text_mapping_summary"][m]
     axB.plot([g["kappa_xv_story_thm"], g["kappa_story2motif"]], [y, y],
-             color="#D8CFC2", lw=2.2, zorder=1, solid_capstyle="round")
-    axB.scatter([g["kappa_story2motif"]], [y], s=52, color=INK, zorder=3)
-    axB.scatter([g["kappa_xv_story_thm"]], [y], s=52, color=TERRACOTTA, zorder=3)
+             color=CONNECT, lw=1.8, zorder=1, solid_capstyle="round")
+    axB.scatter([g["kappa_story2motif"]], [y], s=30, color=RECOG, zorder=3)
+    axB.scatter([g["kappa_xv_story_thm"]], [y], s=30, color=MAPPING, zorder=3)
 axB.set_yticks(ys)
 axB.set_yticklabels([LABELS[m] for m in tm])
 axB.set_title("Text: identify vs. map (stories)", loc="left")
 axB.set_xlabel(r"chance-corrected accuracy $\kappa$")
 
 for ax in axes:
-    ax.axvline(0, color=MUTED, lw=0.8, ls=":")
-    ax.grid(axis="x", lw=0.6)
+    ax.axvline(0, color=figstyle.NEUTRAL, lw=0.7, ls=":")
+    # horizontal dumbbell: vertical gridlines only
+    ax.grid(False, axis="y")
+    ax.grid(True, axis="x", color=figstyle.GRID, lw=0.5)
     ax.set_axisbelow(True)
     ax.set_xlim(-0.12, 1.0)
-    for sp in ("top", "right"):
-        ax.spines[sp].set_visible(False)
 
-handles = [Line2D([], [], marker="o", ls="", color=INK, label="recognition"),
-           Line2D([], [], marker="o", ls="", color=TERRACOTTA, label="mapping")]
-axA.legend(handles=handles, loc="lower right", frameon=False,
+handles = [Line2D([], [], marker="o", ls="", color=RECOG, label="recognition"),
+           Line2D([], [], marker="o", ls="", color=MAPPING, label="mapping")]
+axB.legend(handles=handles, loc="lower right", frameon=False,
            handletextpad=0.1, borderaxespad=0.2)
 
 fig.tight_layout()

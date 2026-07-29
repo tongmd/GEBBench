@@ -55,7 +55,7 @@ No new calls; pure analysis of the 6 result JSONs. Three sub-analyses:
 **Protocol:** three arms on scene2motif + crossvoice (90 items), GPT-5.5 + GPT-5.2:
 1. current direct-JSON prompt (exists),
 2. "先用两三句话分析图像的抽象结构，再输出 JSON" (CoT-in-prompt; relax the parser to take the *last* JSON object),
-3. API `reasoning_effort` low/high if the yunwu proxy exposes it.
+3. API `reasoning_effort` low/high if the provider exposes it.
 **Cost:** ~$20 (CoT tokens are the expense). **Figure:** Δaccuracy from thinking, per task per model.
 
 ### 7. Distractor-menu hardness: 25-way vs 5-way family menu

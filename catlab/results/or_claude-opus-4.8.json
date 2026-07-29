@@ -1,0 +1,3633 @@
+{
+ "model": "anthropic/claude-opus-4.8",
+ "base": "https://openrouter.ai/api/v1",
+ "summary": {
+  "endpoint_id": {
+   "n": 72,
+   "acc": 0.5833,
+   "unparsed": 0
+  },
+  "square_thm": {
+   "n": 36,
+   "acc": 0.5556,
+   "unparsed": 0
+  },
+  "square_story": {
+   "n": 36,
+   "acc": 0.3056,
+   "unparsed": 0
+  },
+  "id_vs_change": {
+   "n": 72,
+   "acc": 0.9167,
+   "unparsed": 0
+  },
+  "composition": {
+   "n": 6,
+   "acc": 0.5,
+   "unparsed": 0
+  }
+ },
+ "records": [
+  {
+   "id": "eid:sym_to_symbreak:s0:base",
+   "task": "endpoint_id",
+   "answer": "symmetry",
+   "pred": "symmetry",
+   "correct": true,
+   "meta": {
+    "edge": "sym_to_symbreak",
+    "seed": 0,
+    "side": "base"
+   },
+   "option_motifs": null,
+   "raw": "{\"motif_id\": \"symmetry\"}"
+  },
+  {
+   "id": "eid:sym_to_symbreak:s0:img",
+   "task": "endpoint_id",
+   "answer": "symmetry_breaking",
+   "pred": "symmetry",
+   "correct": false,
+   "meta": {
+    "edge": "sym_to_symbreak",
+    "seed": 0,
+    "side": "img"
+   },
+   "option_motifs": null,
+   "raw": "{\"motif_id\": \"symmetry\"}"
+  },
+  {
+   "id": "eid:sym_to_symbreak:s1:base",
+   "task": "endpoint_id",
+   "answer": "symmetry",
+   "pred": "symmetry",
+   "correct": true,
+   "meta": {
+    "edge": "sym_to_symbreak",
+    "seed": 1,
+    "side": "base"
+   },
+   "option_motifs": null,
+   "raw": "{\"motif_id\": \"symmetry\"}"
+  },
+  {
+   "id": "eid:sym_to_symbreak:s1:img",
+   "task": "endpoint_id",
+   "answer": "symmetry_breaking",
+   "pred": "symmetry_breaking",
+   "correct": true,
+   "meta": {
+    "edge": "sym_to_symbreak",
+    "seed": 1,
+    "side": "img"
+   },
+   "option_motifs": null,
+   "raw": "{\"motif_id\": \"symmetry_breaking\"}"
+  },
+  {
+   "id": "eid:sym_to_symbreak:s2:base",
+   "task": "endpoint_id",
+   "answer": "symmetry",
+   "pred": "symmetry",
+   "correct": true,
+   "meta": {
+    "edge": "sym_to_symbreak",
+    "seed": 2,
+    "side": "base"
+   },
+   "option_motifs": null,
+   "raw": "{\"motif_id\": \"symmetry\"}"
+  },
+  {
+   "id": "eid:sym_to_symbreak:s2:img",
+   "task": "endpoint_id",
+   "answer": "symmetry_breaking",
+   "pred": "symmetry",
+   "correct": false,
+   "meta": {
+    "edge": "sym_to_symbreak",
+    "seed": 2,
+    "side": "img"
+   },
+   "option_motifs": null,
+   "raw": "{\"motif_id\": \"symmetry\"}"
+  },
+  {
+   "id": "eid:sym_to_symbreak:s3:base",
+   "task": "endpoint_id",
+   "answer": "symmetry",
+   "pred": "symmetry",
+   "correct": true,
+   "meta": {
+    "edge": "sym_to_symbreak",
+    "seed": 3,
+    "side": "base"
+   },
+   "option_motifs": null,
+   "raw": "{\"motif_id\": \"symmetry\"}"
+  },
+  {
+   "id": "eid:sym_to_symbreak:s3:img",
+   "task": "endpoint_id",
+   "answer": "symmetry_breaking",
+   "pred": "symmetry",
+   "correct": false,
+   "meta": {
+    "edge": "sym_to_symbreak",
+    "seed": 3,
+    "side": "img"
+   },
+   "option_motifs": null,
+   "raw": "{\"motif_id\": \"symmetry\"}"
+  },
+  {
+   "id": "eid:sym_to_symbreak:s4:base",
+   "task": "endpoint_id",
+   "answer": "symmetry",
+   "pred": "symmetry",
+   "correct": true,
+   "meta": {
+    "edge": "sym_to_symbreak",
+    "seed": 4,
+    "side": "base"
+   },
+   "option_motifs": null,
+   "raw": "{\"motif_id\": \"symmetry\"}"
+  },
+  {
+   "id": "eid:sym_to_symbreak:s4:img",
+   "task": "endpoint_id",
+   "answer": "symmetry_breaking",
+   "pred": "symmetry_breaking",
+   "correct": true,
+   "meta": {
+    "edge": "sym_to_symbreak",
+    "seed": 4,
+    "side": "img"
+   },
+   "option_motifs": null,
+   "raw": "{\"motif_id\": \"symmetry_breaking\"}"
+  },
+  {
+   "id": "eid:sym_to_symbreak:s5:base",
+   "task": "endpoint_id",
+   "answer": "symmetry",
+   "pred": "symmetry",
+   "correct": true,
+   "meta": {
+    "edge": "sym_to_symbreak",
+    "seed": 5,
+    "side": "base"
+   },
+   "option_motifs": null,
+   "raw": "{\"motif_id\": \"symmetry\"}"
+  },
+  {
+   "id": "eid:sym_to_symbreak:s5:img",
+   "task": "endpoint_id",
+   "answer": "symmetry_breaking",
+   "pred": "symmetry_breaking",
+   "correct": true,
+   "meta": {
+    "edge": "sym_to_symbreak",
+    "seed": 5,
+    "side": "img"
+   },
+   "option_motifs": null,
+   "raw": "{\"motif_id\": \"symmetry_breaking\"}"
+  },
+  {
+   "id": "eid:cycle_to_strangeloop:s0:base",
+   "task": "endpoint_id",
+   "answer": "cycle",
+   "pred": "cycle",
+   "correct": true,
+   "meta": {
+    "edge": "cycle_to_strangeloop",
+    "seed": 0,
+    "side": "base"
+   },
+   "option_motifs": null,
+   "raw": "{\"motif_id\": \"cycle\"}"
+  },
+  {
+   "id": "eid:cycle_to_strangeloop:s0:img",
+   "task": "endpoint_id",
+   "answer": "strange_loop",
+   "pred": "spiral",
+   "correct": false,
+   "meta": {
+    "edge": "cycle_to_strangeloop",
+    "seed": 0,
+    "side": "img"
+   },
+   "option_motifs": null,
+   "raw": "{\"motif_id\": \"spiral\"}"
+  },
+  {
+   "id": "eid:cycle_to_strangeloop:s1:base",
+   "task": "endpoint_id",
+   "answer": "cycle",
+   "pred": "cycle",
+   "correct": true,
+   "meta": {
+    "edge": "cycle_to_strangeloop",
+    "seed": 1,
+    "side": "base"
+   },
+   "option_motifs": null,
+   "raw": "{\"motif_id\": \"cycle\"}"
+  },
+  {
+   "id": "eid:cycle_to_strangeloop:s1:img",
+   "task": "endpoint_id",
+   "answer": "strange_loop",
+   "pred": "spiral",
+   "correct": false,
+   "meta": {
+    "edge": "cycle_to_strangeloop",
+    "seed": 1,
+    "side": "img"
+   },
+   "option_motifs": null,
+   "raw": "{\"motif_id\": \"spiral\"}"
+  },
+  {
+   "id": "eid:cycle_to_strangeloop:s2:base",
+   "task": "endpoint_id",
+   "answer": "cycle",
+   "pred": "cycle",
+   "correct": true,
+   "meta": {
+    "edge": "cycle_to_strangeloop",
+    "seed": 2,
+    "side": "base"
+   },
+   "option_motifs": null,
+   "raw": "{\"motif_id\": \"cycle\"}"
+  },
+  {
+   "id": "eid:cycle_to_strangeloop:s2:img",
+   "task": "endpoint_id",
+   "answer": "strange_loop",
+   "pred": "recursion",
+   "correct": false,
+   "meta": {
+    "edge": "cycle_to_strangeloop",
+    "seed": 2,
+    "side": "img"
+   },
+   "option_motifs": null,
+   "raw": "{\"motif_id\": \"recursion\"}"
+  },
+  {
+   "id": "eid:cycle_to_strangeloop:s3:base",
+   "task": "endpoint_id",
+   "answer": "cycle",
+   "pred": "cycle",
+   "correct": true,
+   "meta": {
+    "edge": "cycle_to_strangeloop",
+    "seed": 3,
+    "side": "base"
+   },
+   "option_motifs": null,
+   "raw": "{\"motif_id\": \"cycle\"}"
+  },
+  {
+   "id": "eid:cycle_to_strangeloop:s3:img",
+   "task": "endpoint_id",
+   "answer": "strange_loop",
+   "pred": "contraction_fixed_point",
+   "correct": false,
+   "meta": {
+    "edge": "cycle_to_strangeloop",
+    "seed": 3,
+    "side": "img"
+   },
+   "option_motifs": null,
+   "raw": "{\"motif_id\": \"contraction_fixed_point\"}"
+  },
+  {
+   "id": "eid:cycle_to_strangeloop:s4:base",
+   "task": "endpoint_id",
+   "answer": "cycle",
+   "pred": "cycle",
+   "correct": true,
+   "meta": {
+    "edge": "cycle_to_strangeloop",
+    "seed": 4,
+    "side": "base"
+   },
+   "option_motifs": null,
+   "raw": "{\"motif_id\": \"cycle\"}"
+  },
+  {
+   "id": "eid:cycle_to_strangeloop:s4:img",
+   "task": "endpoint_id",
+   "answer": "strange_loop",
+   "pred": "spiral",
+   "correct": false,
+   "meta": {
+    "edge": "cycle_to_strangeloop",
+    "seed": 4,
+    "side": "img"
+   },
+   "option_motifs": null,
+   "raw": "{\"motif_id\": \"spiral\"}"
+  },
+  {
+   "id": "eid:cycle_to_strangeloop:s5:base",
+   "task": "endpoint_id",
+   "answer": "cycle",
+   "pred": "cycle",
+   "correct": true,
+   "meta": {
+    "edge": "cycle_to_strangeloop",
+    "seed": 5,
+    "side": "base"
+   },
+   "option_motifs": null,
+   "raw": "{\"motif_id\": \"cycle\"}"
+  },
+  {
+   "id": "eid:cycle_to_strangeloop:s5:img",
+   "task": "endpoint_id",
+   "answer": "strange_loop",
+   "pred": "recursion",
+   "correct": false,
+   "meta": {
+    "edge": "cycle_to_strangeloop",
+    "seed": 5,
+    "side": "img"
+   },
+   "option_motifs": null,
+   "raw": "{\"motif_id\": \"recursion\"}"
+  },
+  {
+   "id": "eid:nesting_to_recursion:s0:base",
+   "task": "endpoint_id",
+   "answer": "nesting",
+   "pred": "nesting",
+   "correct": true,
+   "meta": {
+    "edge": "nesting_to_recursion",
+    "seed": 0,
+    "side": "base"
+   },
+   "option_motifs": null,
+   "raw": "{\"motif_id\": \"nesting\"}"
+  },
+  {
+   "id": "eid:nesting_to_recursion:s0:img",
+   "task": "endpoint_id",
+   "answer": "recursion",
+   "pred": "recursion",
+   "correct": true,
+   "meta": {
+    "edge": "nesting_to_recursion",
+    "seed": 0,
+    "side": "img"
+   },
+   "option_motifs": null,
+   "raw": "{\"motif_id\": \"recursion\"}"
+  },
+  {
+   "id": "eid:nesting_to_recursion:s1:base",
+   "task": "endpoint_id",
+   "answer": "nesting",
+   "pred": "nesting",
+   "correct": true,
+   "meta": {
+    "edge": "nesting_to_recursion",
+    "seed": 1,
+    "side": "base"
+   },
+   "option_motifs": null,
+   "raw": "{\"motif_id\": \"nesting\"}"
+  },
+  {
+   "id": "eid:nesting_to_recursion:s1:img",
+   "task": "endpoint_id",
+   "answer": "recursion",
+   "pred": "recursion",
+   "correct": true,
+   "meta": {
+    "edge": "nesting_to_recursion",
+    "seed": 1,
+    "side": "img"
+   },
+   "option_motifs": null,
+   "raw": "{\"motif_id\": \"recursion\"}"
+  },
+  {
+   "id": "eid:nesting_to_recursion:s2:base",
+   "task": "endpoint_id",
+   "answer": "nesting",
+   "pred": "nesting",
+   "correct": true,
+   "meta": {
+    "edge": "nesting_to_recursion",
+    "seed": 2,
+    "side": "base"
+   },
+   "option_motifs": null,
+   "raw": "{\"motif_id\": \"nesting\"}"
+  },
+  {
+   "id": "eid:nesting_to_recursion:s2:img",
+   "task": "endpoint_id",
+   "answer": "recursion",
+   "pred": "recursion",
+   "correct": true,
+   "meta": {
+    "edge": "nesting_to_recursion",
+    "seed": 2,
+    "side": "img"
+   },
+   "option_motifs": null,
+   "raw": "{\"motif_id\": \"recursion\"}"
+  },
+  {
+   "id": "eid:nesting_to_recursion:s3:base",
+   "task": "endpoint_id",
+   "answer": "nesting",
+   "pred": "nesting",
+   "correct": true,
+   "meta": {
+    "edge": "nesting_to_recursion",
+    "seed": 3,
+    "side": "base"
+   },
+   "option_motifs": null,
+   "raw": "{\"motif_id\": \"nesting\"}"
+  },
+  {
+   "id": "eid:nesting_to_recursion:s3:img",
+   "task": "endpoint_id",
+   "answer": "recursion",
+   "pred": "recursion",
+   "correct": true,
+   "meta": {
+    "edge": "nesting_to_recursion",
+    "seed": 3,
+    "side": "img"
+   },
+   "option_motifs": null,
+   "raw": "{\"motif_id\": \"recursion\"}"
+  },
+  {
+   "id": "eid:nesting_to_recursion:s4:base",
+   "task": "endpoint_id",
+   "answer": "nesting",
+   "pred": "nesting",
+   "correct": true,
+   "meta": {
+    "edge": "nesting_to_recursion",
+    "seed": 4,
+    "side": "base"
+   },
+   "option_motifs": null,
+   "raw": "{\"motif_id\": \"nesting\"}"
+  },
+  {
+   "id": "eid:nesting_to_recursion:s4:img",
+   "task": "endpoint_id",
+   "answer": "recursion",
+   "pred": "recursion",
+   "correct": true,
+   "meta": {
+    "edge": "nesting_to_recursion",
+    "seed": 4,
+    "side": "img"
+   },
+   "option_motifs": null,
+   "raw": "{\"motif_id\": \"recursion\"}"
+  },
+  {
+   "id": "eid:nesting_to_recursion:s5:base",
+   "task": "endpoint_id",
+   "answer": "nesting",
+   "pred": "nesting",
+   "correct": true,
+   "meta": {
+    "edge": "nesting_to_recursion",
+    "seed": 5,
+    "side": "base"
+   },
+   "option_motifs": null,
+   "raw": "{\"motif_id\": \"nesting\"}"
+  },
+  {
+   "id": "eid:nesting_to_recursion:s5:img",
+   "task": "endpoint_id",
+   "answer": "recursion",
+   "pred": "recursion",
+   "correct": true,
+   "meta": {
+    "edge": "nesting_to_recursion",
+    "seed": 5,
+    "side": "img"
+   },
+   "option_motifs": null,
+   "raw": "{\"motif_id\": \"recursion\"}"
+  },
+  {
+   "id": "eid:tiling_to_aperiodic:s0:base",
+   "task": "endpoint_id",
+   "answer": "tiling",
+   "pred": "alternation",
+   "correct": false,
+   "meta": {
+    "edge": "tiling_to_aperiodic",
+    "seed": 0,
+    "side": "base"
+   },
+   "option_motifs": null,
+   "raw": "{\"motif_id\": \"alternation\"}"
+  },
+  {
+   "id": "eid:tiling_to_aperiodic:s0:img",
+   "task": "endpoint_id",
+   "answer": "aperiodic_tiling",
+   "pred": "alternation",
+   "correct": false,
+   "meta": {
+    "edge": "tiling_to_aperiodic",
+    "seed": 0,
+    "side": "img"
+   },
+   "option_motifs": null,
+   "raw": "{\"motif_id\": \"alternation\"}"
+  },
+  {
+   "id": "eid:tiling_to_aperiodic:s1:base",
+   "task": "endpoint_id",
+   "answer": "tiling",
+   "pred": "alternation",
+   "correct": false,
+   "meta": {
+    "edge": "tiling_to_aperiodic",
+    "seed": 1,
+    "side": "base"
+   },
+   "option_motifs": null,
+   "raw": "{\"motif_id\": \"alternation\"}"
+  },
+  {
+   "id": "eid:tiling_to_aperiodic:s1:img",
+   "task": "endpoint_id",
+   "answer": "aperiodic_tiling",
+   "pred": "alternation",
+   "correct": false,
+   "meta": {
+    "edge": "tiling_to_aperiodic",
+    "seed": 1,
+    "side": "img"
+   },
+   "option_motifs": null,
+   "raw": "{\"motif_id\": \"alternation\"}"
+  },
+  {
+   "id": "eid:tiling_to_aperiodic:s2:base",
+   "task": "endpoint_id",
+   "answer": "tiling",
+   "pred": "alternation",
+   "correct": false,
+   "meta": {
+    "edge": "tiling_to_aperiodic",
+    "seed": 2,
+    "side": "base"
+   },
+   "option_motifs": null,
+   "raw": "{\"motif_id\": \"alternation\"}"
+  },
+  {
+   "id": "eid:tiling_to_aperiodic:s2:img",
+   "task": "endpoint_id",
+   "answer": "aperiodic_tiling",
+   "pred": "alternation",
+   "correct": false,
+   "meta": {
+    "edge": "tiling_to_aperiodic",
+    "seed": 2,
+    "side": "img"
+   },
+   "option_motifs": null,
+   "raw": "{\"motif_id\": \"alternation\"}"
+  },
+  {
+   "id": "eid:tiling_to_aperiodic:s3:base",
+   "task": "endpoint_id",
+   "answer": "tiling",
+   "pred": "alternation",
+   "correct": false,
+   "meta": {
+    "edge": "tiling_to_aperiodic",
+    "seed": 3,
+    "side": "base"
+   },
+   "option_motifs": null,
+   "raw": "{\"motif_id\": \"alternation\"}"
+  },
+  {
+   "id": "eid:tiling_to_aperiodic:s3:img",
+   "task": "endpoint_id",
+   "answer": "aperiodic_tiling",
+   "pred": "interference",
+   "correct": false,
+   "meta": {
+    "edge": "tiling_to_aperiodic",
+    "seed": 3,
+    "side": "img"
+   },
+   "option_motifs": null,
+   "raw": "{\"motif_id\": \"interference\"}"
+  },
+  {
+   "id": "eid:tiling_to_aperiodic:s4:base",
+   "task": "endpoint_id",
+   "answer": "tiling",
+   "pred": "alternation",
+   "correct": false,
+   "meta": {
+    "edge": "tiling_to_aperiodic",
+    "seed": 4,
+    "side": "base"
+   },
+   "option_motifs": null,
+   "raw": "{\"motif_id\": \"alternation\"}"
+  },
+  {
+   "id": "eid:tiling_to_aperiodic:s4:img",
+   "task": "endpoint_id",
+   "answer": "aperiodic_tiling",
+   "pred": "interference",
+   "correct": false,
+   "meta": {
+    "edge": "tiling_to_aperiodic",
+    "seed": 4,
+    "side": "img"
+   },
+   "option_motifs": null,
+   "raw": "{\"motif_id\": \"interference\"}"
+  },
+  {
+   "id": "eid:tiling_to_aperiodic:s5:base",
+   "task": "endpoint_id",
+   "answer": "tiling",
+   "pred": "alternation",
+   "correct": false,
+   "meta": {
+    "edge": "tiling_to_aperiodic",
+    "seed": 5,
+    "side": "base"
+   },
+   "option_motifs": null,
+   "raw": "{\"motif_id\": \"alternation\"}"
+  },
+  {
+   "id": "eid:tiling_to_aperiodic:s5:img",
+   "task": "endpoint_id",
+   "answer": "aperiodic_tiling",
+   "pred": "interference",
+   "correct": false,
+   "meta": {
+    "edge": "tiling_to_aperiodic",
+    "seed": 5,
+    "side": "img"
+   },
+   "option_motifs": null,
+   "raw": "{\"motif_id\": \"interference\"}"
+  },
+  {
+   "id": "eid:iso_to_duality:s0:base",
+   "task": "endpoint_id",
+   "answer": "isomorphism",
+   "pred": "isomorphism",
+   "correct": true,
+   "meta": {
+    "edge": "iso_to_duality",
+    "seed": 0,
+    "side": "base"
+   },
+   "option_motifs": null,
+   "raw": "{\"motif_id\": \"isomorphism\"}"
+  },
+  {
+   "id": "eid:iso_to_duality:s0:img",
+   "task": "endpoint_id",
+   "answer": "projective_duality",
+   "pred": "cycle",
+   "correct": false,
+   "meta": {
+    "edge": "iso_to_duality",
+    "seed": 0,
+    "side": "img"
+   },
+   "option_motifs": null,
+   "raw": "{\"motif_id\": \"cycle\"}"
+  },
+  {
+   "id": "eid:iso_to_duality:s1:base",
+   "task": "endpoint_id",
+   "answer": "isomorphism",
+   "pred": "isomorphism",
+   "correct": true,
+   "meta": {
+    "edge": "iso_to_duality",
+    "seed": 1,
+    "side": "base"
+   },
+   "option_motifs": null,
+   "raw": "{\"motif_id\": \"isomorphism\"}"
+  },
+  {
+   "id": "eid:iso_to_duality:s1:img",
+   "task": "endpoint_id",
+   "answer": "projective_duality",
+   "pred": "cycle",
+   "correct": false,
+   "meta": {
+    "edge": "iso_to_duality",
+    "seed": 1,
+    "side": "img"
+   },
+   "option_motifs": null,
+   "raw": "{\"motif_id\": \"cycle\"}"
+  },
+  {
+   "id": "eid:iso_to_duality:s2:base",
+   "task": "endpoint_id",
+   "answer": "isomorphism",
+   "pred": "isomorphism",
+   "correct": true,
+   "meta": {
+    "edge": "iso_to_duality",
+    "seed": 2,
+    "side": "base"
+   },
+   "option_motifs": null,
+   "raw": "{\"motif_id\": \"isomorphism\"}"
+  },
+  {
+   "id": "eid:iso_to_duality:s2:img",
+   "task": "endpoint_id",
+   "answer": "projective_duality",
+   "pred": "cycle",
+   "correct": false,
+   "meta": {
+    "edge": "iso_to_duality",
+    "seed": 2,
+    "side": "img"
+   },
+   "option_motifs": null,
+   "raw": "{\"motif_id\": \"cycle\"}"
+  },
+  {
+   "id": "eid:iso_to_duality:s3:base",
+   "task": "endpoint_id",
+   "answer": "isomorphism",
+   "pred": "isomorphism",
+   "correct": true,
+   "meta": {
+    "edge": "iso_to_duality",
+    "seed": 3,
+    "side": "base"
+   },
+   "option_motifs": null,
+   "raw": "{\"motif_id\": \"isomorphism\"}"
+  },
+  {
+   "id": "eid:iso_to_duality:s3:img",
+   "task": "endpoint_id",
+   "answer": "projective_duality",
+   "pred": "cycle",
+   "correct": false,
+   "meta": {
+    "edge": "iso_to_duality",
+    "seed": 3,
+    "side": "img"
+   },
+   "option_motifs": null,
+   "raw": "{\"motif_id\": \"cycle\"}"
+  },
+  {
+   "id": "eid:iso_to_duality:s4:base",
+   "task": "endpoint_id",
+   "answer": "isomorphism",
+   "pred": "isomorphism",
+   "correct": true,
+   "meta": {
+    "edge": "iso_to_duality",
+    "seed": 4,
+    "side": "base"
+   },
+   "option_motifs": null,
+   "raw": "{\"motif_id\": \"isomorphism\"}"
+  },
+  {
+   "id": "eid:iso_to_duality:s4:img",
+   "task": "endpoint_id",
+   "answer": "projective_duality",
+   "pred": "cycle",
+   "correct": false,
+   "meta": {
+    "edge": "iso_to_duality",
+    "seed": 4,
+    "side": "img"
+   },
+   "option_motifs": null,
+   "raw": "{\"motif_id\": \"cycle\"}"
+  },
+  {
+   "id": "eid:iso_to_duality:s5:base",
+   "task": "endpoint_id",
+   "answer": "isomorphism",
+   "pred": "isomorphism",
+   "correct": true,
+   "meta": {
+    "edge": "iso_to_duality",
+    "seed": 5,
+    "side": "base"
+   },
+   "option_motifs": null,
+   "raw": "{\"motif_id\": \"isomorphism\"}"
+  },
+  {
+   "id": "eid:iso_to_duality:s5:img",
+   "task": "endpoint_id",
+   "answer": "projective_duality",
+   "pred": "cycle",
+   "correct": false,
+   "meta": {
+    "edge": "iso_to_duality",
+    "seed": 5,
+    "side": "img"
+   },
+   "option_motifs": null,
+   "raw": "{\"motif_id\": \"cycle\"}"
+  },
+  {
+   "id": "eid:recursion_to_contraction:s0:base",
+   "task": "endpoint_id",
+   "answer": "recursion",
+   "pred": "recursion",
+   "correct": true,
+   "meta": {
+    "edge": "recursion_to_contraction",
+    "seed": 0,
+    "side": "base"
+   },
+   "option_motifs": null,
+   "raw": "{\"motif_id\": \"recursion\"}"
+  },
+  {
+   "id": "eid:recursion_to_contraction:s0:img",
+   "task": "endpoint_id",
+   "answer": "contraction_fixed_point",
+   "pred": "contraction_fixed_point",
+   "correct": true,
+   "meta": {
+    "edge": "recursion_to_contraction",
+    "seed": 0,
+    "side": "img"
+   },
+   "option_motifs": null,
+   "raw": "{\"motif_id\": \"contraction_fixed_point\"}"
+  },
+  {
+   "id": "eid:recursion_to_contraction:s1:base",
+   "task": "endpoint_id",
+   "answer": "recursion",
+   "pred": "recursion",
+   "correct": true,
+   "meta": {
+    "edge": "recursion_to_contraction",
+    "seed": 1,
+    "side": "base"
+   },
+   "option_motifs": null,
+   "raw": "{\"motif_id\": \"recursion\"}"
+  },
+  {
+   "id": "eid:recursion_to_contraction:s1:img",
+   "task": "endpoint_id",
+   "answer": "contraction_fixed_point",
+   "pred": "contraction_fixed_point",
+   "correct": true,
+   "meta": {
+    "edge": "recursion_to_contraction",
+    "seed": 1,
+    "side": "img"
+   },
+   "option_motifs": null,
+   "raw": "{\"motif_id\": \"contraction_fixed_point\"}"
+  },
+  {
+   "id": "eid:recursion_to_contraction:s2:base",
+   "task": "endpoint_id",
+   "answer": "recursion",
+   "pred": "recursion",
+   "correct": true,
+   "meta": {
+    "edge": "recursion_to_contraction",
+    "seed": 2,
+    "side": "base"
+   },
+   "option_motifs": null,
+   "raw": "{\"motif_id\": \"recursion\"}"
+  },
+  {
+   "id": "eid:recursion_to_contraction:s2:img",
+   "task": "endpoint_id",
+   "answer": "contraction_fixed_point",
+   "pred": "spiral",
+   "correct": false,
+   "meta": {
+    "edge": "recursion_to_contraction",
+    "seed": 2,
+    "side": "img"
+   },
+   "option_motifs": null,
+   "raw": "{\"motif_id\": \"spiral\"}"
+  },
+  {
+   "id": "eid:recursion_to_contraction:s3:base",
+   "task": "endpoint_id",
+   "answer": "recursion",
+   "pred": "recursion",
+   "correct": true,
+   "meta": {
+    "edge": "recursion_to_contraction",
+    "seed": 3,
+    "side": "base"
+   },
+   "option_motifs": null,
+   "raw": "{\"motif_id\": \"recursion\"}"
+  },
+  {
+   "id": "eid:recursion_to_contraction:s3:img",
+   "task": "endpoint_id",
+   "answer": "contraction_fixed_point",
+   "pred": "contraction_fixed_point",
+   "correct": true,
+   "meta": {
+    "edge": "recursion_to_contraction",
+    "seed": 3,
+    "side": "img"
+   },
+   "option_motifs": null,
+   "raw": "{\"motif_id\": \"contraction_fixed_point\"}"
+  },
+  {
+   "id": "eid:recursion_to_contraction:s4:base",
+   "task": "endpoint_id",
+   "answer": "recursion",
+   "pred": "recursion",
+   "correct": true,
+   "meta": {
+    "edge": "recursion_to_contraction",
+    "seed": 4,
+    "side": "base"
+   },
+   "option_motifs": null,
+   "raw": "{\"motif_id\": \"recursion\"}"
+  },
+  {
+   "id": "eid:recursion_to_contraction:s4:img",
+   "task": "endpoint_id",
+   "answer": "contraction_fixed_point",
+   "pred": "spiral",
+   "correct": false,
+   "meta": {
+    "edge": "recursion_to_contraction",
+    "seed": 4,
+    "side": "img"
+   },
+   "option_motifs": null,
+   "raw": "{\"motif_id\": \"spiral\"}"
+  },
+  {
+   "id": "eid:recursion_to_contraction:s5:base",
+   "task": "endpoint_id",
+   "answer": "recursion",
+   "pred": "recursion",
+   "correct": true,
+   "meta": {
+    "edge": "recursion_to_contraction",
+    "seed": 5,
+    "side": "base"
+   },
+   "option_motifs": null,
+   "raw": "{\"motif_id\": \"recursion\"}"
+  },
+  {
+   "id": "eid:recursion_to_contraction:s5:img",
+   "task": "endpoint_id",
+   "answer": "contraction_fixed_point",
+   "pred": "spiral",
+   "correct": false,
+   "meta": {
+    "edge": "recursion_to_contraction",
+    "seed": 5,
+    "side": "img"
+   },
+   "option_motifs": null,
+   "raw": "{\"motif_id\": \"spiral\"}"
+  },
+  {
+   "id": "sq_thm:sym_to_symbreak:s0",
+   "task": "square_thm",
+   "answer": "D",
+   "pred": "D",
+   "correct": true,
+   "meta": {
+    "edge": "sym_to_symbreak",
+    "seed": 0,
+    "src": "symmetry",
+    "dst": "symmetry_breaking"
+   },
+   "option_motifs": {
+    "A": "mobius",
+    "B": "interference",
+    "C": "figure_ground",
+    "D": "symmetry_breaking"
+   },
+   "raw": "{\"choice\": \"D\"}"
+  },
+  {
+   "id": "sq_story:sym_to_symbreak:s0",
+   "task": "square_story",
+   "answer": "B",
+   "pred": "D",
+   "correct": false,
+   "meta": {
+    "edge": "sym_to_symbreak",
+    "seed": 0,
+    "src": "symmetry",
+    "dst": "symmetry_breaking",
+    "identity_option": "A"
+   },
+   "option_motifs": {
+    "A": "symmetry",
+    "B": "symmetry_breaking",
+    "C": "interference",
+    "D": "figure_ground"
+   },
+   "raw": "{\"choice\": \"D\"}"
+  },
+  {
+   "id": "sq_thm:sym_to_symbreak:s1",
+   "task": "square_thm",
+   "answer": "C",
+   "pred": "A",
+   "correct": false,
+   "meta": {
+    "edge": "sym_to_symbreak",
+    "seed": 1,
+    "src": "symmetry",
+    "dst": "symmetry_breaking"
+   },
+   "option_motifs": {
+    "A": "mobius",
+    "B": "figure_ground",
+    "C": "symmetry_breaking",
+    "D": "interference"
+   },
+   "raw": "{\"choice\": \"A\"}"
+  },
+  {
+   "id": "sq_story:sym_to_symbreak:s1",
+   "task": "square_story",
+   "answer": "C",
+   "pred": "B",
+   "correct": false,
+   "meta": {
+    "edge": "sym_to_symbreak",
+    "seed": 1,
+    "src": "symmetry",
+    "dst": "symmetry_breaking",
+    "identity_option": "B"
+   },
+   "option_motifs": {
+    "A": "figure_ground",
+    "B": "symmetry",
+    "C": "symmetry_breaking",
+    "D": "interference"
+   },
+   "raw": "{\"choice\": \"B\"}"
+  },
+  {
+   "id": "sq_thm:sym_to_symbreak:s2",
+   "task": "square_thm",
+   "answer": "B",
+   "pred": "B",
+   "correct": true,
+   "meta": {
+    "edge": "sym_to_symbreak",
+    "seed": 2,
+    "src": "symmetry",
+    "dst": "symmetry_breaking"
+   },
+   "option_motifs": {
+    "A": "figure_ground",
+    "B": "symmetry_breaking",
+    "C": "interference",
+    "D": "mobius"
+   },
+   "raw": "{\"choice\": \"B\"}"
+  },
+  {
+   "id": "sq_story:sym_to_symbreak:s2",
+   "task": "square_story",
+   "answer": "D",
+   "pred": "D",
+   "correct": true,
+   "meta": {
+    "edge": "sym_to_symbreak",
+    "seed": 2,
+    "src": "symmetry",
+    "dst": "symmetry_breaking",
+    "identity_option": "C"
+   },
+   "option_motifs": {
+    "A": "figure_ground",
+    "B": "interference",
+    "C": "symmetry",
+    "D": "symmetry_breaking"
+   },
+   "raw": "{\"choice\": \"D\"}"
+  },
+  {
+   "id": "sq_thm:sym_to_symbreak:s3",
+   "task": "square_thm",
+   "answer": "D",
+   "pred": "C",
+   "correct": false,
+   "meta": {
+    "edge": "sym_to_symbreak",
+    "seed": 3,
+    "src": "symmetry",
+    "dst": "symmetry_breaking"
+   },
+   "option_motifs": {
+    "A": "figure_ground",
+    "B": "interference",
+    "C": "mobius",
+    "D": "symmetry_breaking"
+   },
+   "raw": "{\"choice\": \"C\"}"
+  },
+  {
+   "id": "sq_story:sym_to_symbreak:s3",
+   "task": "square_story",
+   "answer": "B",
+   "pred": "A",
+   "correct": false,
+   "meta": {
+    "edge": "sym_to_symbreak",
+    "seed": 3,
+    "src": "symmetry",
+    "dst": "symmetry_breaking",
+    "identity_option": "A"
+   },
+   "option_motifs": {
+    "A": "symmetry",
+    "B": "symmetry_breaking",
+    "C": "interference",
+    "D": "figure_ground"
+   },
+   "raw": "{\"choice\": \"A\"}"
+  },
+  {
+   "id": "sq_thm:sym_to_symbreak:s4",
+   "task": "square_thm",
+   "answer": "B",
+   "pred": "D",
+   "correct": false,
+   "meta": {
+    "edge": "sym_to_symbreak",
+    "seed": 4,
+    "src": "symmetry",
+    "dst": "symmetry_breaking"
+   },
+   "option_motifs": {
+    "A": "figure_ground",
+    "B": "symmetry_breaking",
+    "C": "interference",
+    "D": "mobius"
+   },
+   "raw": "{\"choice\": \"D\"}"
+  },
+  {
+   "id": "sq_story:sym_to_symbreak:s4",
+   "task": "square_story",
+   "answer": "B",
+   "pred": "A",
+   "correct": false,
+   "meta": {
+    "edge": "sym_to_symbreak",
+    "seed": 4,
+    "src": "symmetry",
+    "dst": "symmetry_breaking",
+    "identity_option": "C"
+   },
+   "option_motifs": {
+    "A": "interference",
+    "B": "symmetry_breaking",
+    "C": "symmetry",
+    "D": "figure_ground"
+   },
+   "raw": "{\"choice\": \"A\"}"
+  },
+  {
+   "id": "sq_thm:sym_to_symbreak:s5",
+   "task": "square_thm",
+   "answer": "B",
+   "pred": "B",
+   "correct": true,
+   "meta": {
+    "edge": "sym_to_symbreak",
+    "seed": 5,
+    "src": "symmetry",
+    "dst": "symmetry_breaking"
+   },
+   "option_motifs": {
+    "A": "interference",
+    "B": "symmetry_breaking",
+    "C": "mobius",
+    "D": "figure_ground"
+   },
+   "raw": "{\"choice\": \"B\"}"
+  },
+  {
+   "id": "sq_story:sym_to_symbreak:s5",
+   "task": "square_story",
+   "answer": "D",
+   "pred": "A",
+   "correct": false,
+   "meta": {
+    "edge": "sym_to_symbreak",
+    "seed": 5,
+    "src": "symmetry",
+    "dst": "symmetry_breaking",
+    "identity_option": "A"
+   },
+   "option_motifs": {
+    "A": "symmetry",
+    "B": "figure_ground",
+    "C": "interference",
+    "D": "symmetry_breaking"
+   },
+   "raw": "{\"choice\": \"A\"}"
+  },
+  {
+   "id": "sq_thm:cycle_to_strangeloop:s0",
+   "task": "square_thm",
+   "answer": "B",
+   "pred": "B",
+   "correct": true,
+   "meta": {
+    "edge": "cycle_to_strangeloop",
+    "seed": 0,
+    "src": "cycle",
+    "dst": "strange_loop"
+   },
+   "option_motifs": {
+    "A": "spiral",
+    "B": "strange_loop",
+    "C": "mobius",
+    "D": "alternation"
+   },
+   "raw": "{\"choice\": \"B\"}"
+  },
+  {
+   "id": "sq_story:cycle_to_strangeloop:s0",
+   "task": "square_story",
+   "answer": "D",
+   "pred": "D",
+   "correct": true,
+   "meta": {
+    "edge": "cycle_to_strangeloop",
+    "seed": 0,
+    "src": "cycle",
+    "dst": "strange_loop",
+    "identity_option": "A"
+   },
+   "option_motifs": {
+    "A": "cycle",
+    "B": "spiral",
+    "C": "mobius",
+    "D": "strange_loop"
+   },
+   "raw": "{\"choice\": \"D\"}"
+  },
+  {
+   "id": "sq_thm:cycle_to_strangeloop:s1",
+   "task": "square_thm",
+   "answer": "C",
+   "pred": "C",
+   "correct": true,
+   "meta": {
+    "edge": "cycle_to_strangeloop",
+    "seed": 1,
+    "src": "cycle",
+    "dst": "strange_loop"
+   },
+   "option_motifs": {
+    "A": "mobius",
+    "B": "alternation",
+    "C": "strange_loop",
+    "D": "spiral"
+   },
+   "raw": "{\"choice\": \"C\"}"
+  },
+  {
+   "id": "sq_story:cycle_to_strangeloop:s1",
+   "task": "square_story",
+   "answer": "C",
+   "pred": "C",
+   "correct": true,
+   "meta": {
+    "edge": "cycle_to_strangeloop",
+    "seed": 1,
+    "src": "cycle",
+    "dst": "strange_loop",
+    "identity_option": "D"
+   },
+   "option_motifs": {
+    "A": "mobius",
+    "B": "spiral",
+    "C": "strange_loop",
+    "D": "cycle"
+   },
+   "raw": "{\"choice\": \"C\"}"
+  },
+  {
+   "id": "sq_thm:cycle_to_strangeloop:s2",
+   "task": "square_thm",
+   "answer": "D",
+   "pred": "D",
+   "correct": true,
+   "meta": {
+    "edge": "cycle_to_strangeloop",
+    "seed": 2,
+    "src": "cycle",
+    "dst": "strange_loop"
+   },
+   "option_motifs": {
+    "A": "spiral",
+    "B": "mobius",
+    "C": "alternation",
+    "D": "strange_loop"
+   },
+   "raw": "{\"choice\": \"D\"}"
+  },
+  {
+   "id": "sq_story:cycle_to_strangeloop:s2",
+   "task": "square_story",
+   "answer": "A",
+   "pred": "A",
+   "correct": true,
+   "meta": {
+    "edge": "cycle_to_strangeloop",
+    "seed": 2,
+    "src": "cycle",
+    "dst": "strange_loop",
+    "identity_option": "D"
+   },
+   "option_motifs": {
+    "A": "strange_loop",
+    "B": "spiral",
+    "C": "mobius",
+    "D": "cycle"
+   },
+   "raw": "{\"choice\": \"A\"}"
+  },
+  {
+   "id": "sq_thm:cycle_to_strangeloop:s3",
+   "task": "square_thm",
+   "answer": "A",
+   "pred": "A",
+   "correct": true,
+   "meta": {
+    "edge": "cycle_to_strangeloop",
+    "seed": 3,
+    "src": "cycle",
+    "dst": "strange_loop"
+   },
+   "option_motifs": {
+    "A": "strange_loop",
+    "B": "mobius",
+    "C": "alternation",
+    "D": "spiral"
+   },
+   "raw": "{\"choice\": \"A\"}"
+  },
+  {
+   "id": "sq_story:cycle_to_strangeloop:s3",
+   "task": "square_story",
+   "answer": "B",
+   "pred": "A",
+   "correct": false,
+   "meta": {
+    "edge": "cycle_to_strangeloop",
+    "seed": 3,
+    "src": "cycle",
+    "dst": "strange_loop",
+    "identity_option": "C"
+   },
+   "option_motifs": {
+    "A": "spiral",
+    "B": "strange_loop",
+    "C": "cycle",
+    "D": "mobius"
+   },
+   "raw": "{\"choice\": \"A\"}"
+  },
+  {
+   "id": "sq_thm:cycle_to_strangeloop:s4",
+   "task": "square_thm",
+   "answer": "D",
+   "pred": "D",
+   "correct": true,
+   "meta": {
+    "edge": "cycle_to_strangeloop",
+    "seed": 4,
+    "src": "cycle",
+    "dst": "strange_loop"
+   },
+   "option_motifs": {
+    "A": "alternation",
+    "B": "mobius",
+    "C": "spiral",
+    "D": "strange_loop"
+   },
+   "raw": "{\"choice\": \"D\"}"
+  },
+  {
+   "id": "sq_story:cycle_to_strangeloop:s4",
+   "task": "square_story",
+   "answer": "D",
+   "pred": "D",
+   "correct": true,
+   "meta": {
+    "edge": "cycle_to_strangeloop",
+    "seed": 4,
+    "src": "cycle",
+    "dst": "strange_loop",
+    "identity_option": "C"
+   },
+   "option_motifs": {
+    "A": "spiral",
+    "B": "mobius",
+    "C": "cycle",
+    "D": "strange_loop"
+   },
+   "raw": "{\"choice\": \"D\"}"
+  },
+  {
+   "id": "sq_thm:cycle_to_strangeloop:s5",
+   "task": "square_thm",
+   "answer": "B",
+   "pred": "B",
+   "correct": true,
+   "meta": {
+    "edge": "cycle_to_strangeloop",
+    "seed": 5,
+    "src": "cycle",
+    "dst": "strange_loop"
+   },
+   "option_motifs": {
+    "A": "alternation",
+    "B": "strange_loop",
+    "C": "mobius",
+    "D": "spiral"
+   },
+   "raw": "{\"choice\": \"B\"}"
+  },
+  {
+   "id": "sq_story:cycle_to_strangeloop:s5",
+   "task": "square_story",
+   "answer": "A",
+   "pred": "A",
+   "correct": true,
+   "meta": {
+    "edge": "cycle_to_strangeloop",
+    "seed": 5,
+    "src": "cycle",
+    "dst": "strange_loop",
+    "identity_option": "B"
+   },
+   "option_motifs": {
+    "A": "strange_loop",
+    "B": "cycle",
+    "C": "mobius",
+    "D": "spiral"
+   },
+   "raw": "{\"choice\": \"A\"}"
+  },
+  {
+   "id": "sq_thm:nesting_to_recursion:s0",
+   "task": "square_thm",
+   "answer": "B",
+   "pred": "B",
+   "correct": true,
+   "meta": {
+    "edge": "nesting_to_recursion",
+    "seed": 0,
+    "src": "nesting",
+    "dst": "recursion"
+   },
+   "option_motifs": {
+    "A": "infinite_descent",
+    "B": "recursion",
+    "C": "strange_loop",
+    "D": "self_reference"
+   },
+   "raw": "{\"choice\": \"B\"}"
+  },
+  {
+   "id": "sq_story:nesting_to_recursion:s0",
+   "task": "square_story",
+   "answer": "B",
+   "pred": "D",
+   "correct": false,
+   "meta": {
+    "edge": "nesting_to_recursion",
+    "seed": 0,
+    "src": "nesting",
+    "dst": "recursion",
+    "identity_option": "D"
+   },
+   "option_motifs": {
+    "A": "self_reference",
+    "B": "recursion",
+    "C": "infinite_descent",
+    "D": "nesting"
+   },
+   "raw": "{\"choice\": \"D\"}"
+  },
+  {
+   "id": "sq_thm:nesting_to_recursion:s1",
+   "task": "square_thm",
+   "answer": "B",
+   "pred": "B",
+   "correct": true,
+   "meta": {
+    "edge": "nesting_to_recursion",
+    "seed": 1,
+    "src": "nesting",
+    "dst": "recursion"
+   },
+   "option_motifs": {
+    "A": "self_reference",
+    "B": "recursion",
+    "C": "strange_loop",
+    "D": "infinite_descent"
+   },
+   "raw": "{\"choice\": \"B\"}"
+  },
+  {
+   "id": "sq_story:nesting_to_recursion:s1",
+   "task": "square_story",
+   "answer": "B",
+   "pred": "B",
+   "correct": true,
+   "meta": {
+    "edge": "nesting_to_recursion",
+    "seed": 1,
+    "src": "nesting",
+    "dst": "recursion",
+    "identity_option": "C"
+   },
+   "option_motifs": {
+    "A": "self_reference",
+    "B": "recursion",
+    "C": "nesting",
+    "D": "infinite_descent"
+   },
+   "raw": "{\"choice\": \"B\"}"
+  },
+  {
+   "id": "sq_thm:nesting_to_recursion:s2",
+   "task": "square_thm",
+   "answer": "C",
+   "pred": "B",
+   "correct": false,
+   "meta": {
+    "edge": "nesting_to_recursion",
+    "seed": 2,
+    "src": "nesting",
+    "dst": "recursion"
+   },
+   "option_motifs": {
+    "A": "self_reference",
+    "B": "infinite_descent",
+    "C": "recursion",
+    "D": "strange_loop"
+   },
+   "raw": "{\"choice\": \"B\"}"
+  },
+  {
+   "id": "sq_story:nesting_to_recursion:s2",
+   "task": "square_story",
+   "answer": "D",
+   "pred": "A",
+   "correct": false,
+   "meta": {
+    "edge": "nesting_to_recursion",
+    "seed": 2,
+    "src": "nesting",
+    "dst": "recursion",
+    "identity_option": "A"
+   },
+   "option_motifs": {
+    "A": "nesting",
+    "B": "self_reference",
+    "C": "infinite_descent",
+    "D": "recursion"
+   },
+   "raw": "{\"choice\": \"A\"}"
+  },
+  {
+   "id": "sq_thm:nesting_to_recursion:s3",
+   "task": "square_thm",
+   "answer": "B",
+   "pred": "A",
+   "correct": false,
+   "meta": {
+    "edge": "nesting_to_recursion",
+    "seed": 3,
+    "src": "nesting",
+    "dst": "recursion"
+   },
+   "option_motifs": {
+    "A": "infinite_descent",
+    "B": "recursion",
+    "C": "self_reference",
+    "D": "strange_loop"
+   },
+   "raw": "{\"choice\": \"A\"}"
+  },
+  {
+   "id": "sq_story:nesting_to_recursion:s3",
+   "task": "square_story",
+   "answer": "B",
+   "pred": "B",
+   "correct": true,
+   "meta": {
+    "edge": "nesting_to_recursion",
+    "seed": 3,
+    "src": "nesting",
+    "dst": "recursion",
+    "identity_option": "D"
+   },
+   "option_motifs": {
+    "A": "infinite_descent",
+    "B": "recursion",
+    "C": "self_reference",
+    "D": "nesting"
+   },
+   "raw": "{\"choice\": \"B\"}"
+  },
+  {
+   "id": "sq_thm:nesting_to_recursion:s4",
+   "task": "square_thm",
+   "answer": "B",
+   "pred": "B",
+   "correct": true,
+   "meta": {
+    "edge": "nesting_to_recursion",
+    "seed": 4,
+    "src": "nesting",
+    "dst": "recursion"
+   },
+   "option_motifs": {
+    "A": "self_reference",
+    "B": "recursion",
+    "C": "strange_loop",
+    "D": "infinite_descent"
+   },
+   "raw": "{\"choice\": \"B\"}"
+  },
+  {
+   "id": "sq_story:nesting_to_recursion:s4",
+   "task": "square_story",
+   "answer": "C",
+   "pred": "A",
+   "correct": false,
+   "meta": {
+    "edge": "nesting_to_recursion",
+    "seed": 4,
+    "src": "nesting",
+    "dst": "recursion",
+    "identity_option": "A"
+   },
+   "option_motifs": {
+    "A": "nesting",
+    "B": "self_reference",
+    "C": "recursion",
+    "D": "infinite_descent"
+   },
+   "raw": "{\"choice\": \"A\"}"
+  },
+  {
+   "id": "sq_thm:nesting_to_recursion:s5",
+   "task": "square_thm",
+   "answer": "D",
+   "pred": "D",
+   "correct": true,
+   "meta": {
+    "edge": "nesting_to_recursion",
+    "seed": 5,
+    "src": "nesting",
+    "dst": "recursion"
+   },
+   "option_motifs": {
+    "A": "infinite_descent",
+    "B": "strange_loop",
+    "C": "self_reference",
+    "D": "recursion"
+   },
+   "raw": "{\"choice\": \"D\"}"
+  },
+  {
+   "id": "sq_story:nesting_to_recursion:s5",
+   "task": "square_story",
+   "answer": "B",
+   "pred": "A",
+   "correct": false,
+   "meta": {
+    "edge": "nesting_to_recursion",
+    "seed": 5,
+    "src": "nesting",
+    "dst": "recursion",
+    "identity_option": "D"
+   },
+   "option_motifs": {
+    "A": "self_reference",
+    "B": "recursion",
+    "C": "infinite_descent",
+    "D": "nesting"
+   },
+   "raw": "{\"choice\": \"A\"}"
+  },
+  {
+   "id": "sq_thm:tiling_to_aperiodic:s0",
+   "task": "square_thm",
+   "answer": "C",
+   "pred": "B",
+   "correct": false,
+   "meta": {
+    "edge": "tiling_to_aperiodic",
+    "seed": 0,
+    "src": "tiling",
+    "dst": "aperiodic_tiling"
+   },
+   "option_motifs": {
+    "A": "braiding",
+    "B": "interference",
+    "C": "aperiodic_tiling",
+    "D": "alternation"
+   },
+   "raw": "{\"choice\": \"B\"}"
+  },
+  {
+   "id": "sq_story:tiling_to_aperiodic:s0",
+   "task": "square_story",
+   "answer": "C",
+   "pred": "B",
+   "correct": false,
+   "meta": {
+    "edge": "tiling_to_aperiodic",
+    "seed": 0,
+    "src": "tiling",
+    "dst": "aperiodic_tiling",
+    "identity_option": "B"
+   },
+   "option_motifs": {
+    "A": "alternation",
+    "B": "tiling",
+    "C": "aperiodic_tiling",
+    "D": "interference"
+   },
+   "raw": "{\"choice\": \"B\"}"
+  },
+  {
+   "id": "sq_thm:tiling_to_aperiodic:s1",
+   "task": "square_thm",
+   "answer": "C",
+   "pred": "B",
+   "correct": false,
+   "meta": {
+    "edge": "tiling_to_aperiodic",
+    "seed": 1,
+    "src": "tiling",
+    "dst": "aperiodic_tiling"
+   },
+   "option_motifs": {
+    "A": "alternation",
+    "B": "interference",
+    "C": "aperiodic_tiling",
+    "D": "braiding"
+   },
+   "raw": "{\"choice\": \"B\"}"
+  },
+  {
+   "id": "sq_story:tiling_to_aperiodic:s1",
+   "task": "square_story",
+   "answer": "B",
+   "pred": "D",
+   "correct": false,
+   "meta": {
+    "edge": "tiling_to_aperiodic",
+    "seed": 1,
+    "src": "tiling",
+    "dst": "aperiodic_tiling",
+    "identity_option": "C"
+   },
+   "option_motifs": {
+    "A": "alternation",
+    "B": "aperiodic_tiling",
+    "C": "tiling",
+    "D": "interference"
+   },
+   "raw": "{\"choice\": \"D\"}"
+  },
+  {
+   "id": "sq_thm:tiling_to_aperiodic:s2",
+   "task": "square_thm",
+   "answer": "C",
+   "pred": "A",
+   "correct": false,
+   "meta": {
+    "edge": "tiling_to_aperiodic",
+    "seed": 2,
+    "src": "tiling",
+    "dst": "aperiodic_tiling"
+   },
+   "option_motifs": {
+    "A": "interference",
+    "B": "alternation",
+    "C": "aperiodic_tiling",
+    "D": "braiding"
+   },
+   "raw": "{\"choice\": \"A\"}"
+  },
+  {
+   "id": "sq_story:tiling_to_aperiodic:s2",
+   "task": "square_story",
+   "answer": "D",
+   "pred": "C",
+   "correct": false,
+   "meta": {
+    "edge": "tiling_to_aperiodic",
+    "seed": 2,
+    "src": "tiling",
+    "dst": "aperiodic_tiling",
+    "identity_option": "C"
+   },
+   "option_motifs": {
+    "A": "alternation",
+    "B": "interference",
+    "C": "tiling",
+    "D": "aperiodic_tiling"
+   },
+   "raw": "{\"choice\": \"C\"}"
+  },
+  {
+   "id": "sq_thm:tiling_to_aperiodic:s3",
+   "task": "square_thm",
+   "answer": "D",
+   "pred": "B",
+   "correct": false,
+   "meta": {
+    "edge": "tiling_to_aperiodic",
+    "seed": 3,
+    "src": "tiling",
+    "dst": "aperiodic_tiling"
+   },
+   "option_motifs": {
+    "A": "braiding",
+    "B": "interference",
+    "C": "alternation",
+    "D": "aperiodic_tiling"
+   },
+   "raw": "{\"choice\": \"B\"}"
+  },
+  {
+   "id": "sq_story:tiling_to_aperiodic:s3",
+   "task": "square_story",
+   "answer": "C",
+   "pred": "B",
+   "correct": false,
+   "meta": {
+    "edge": "tiling_to_aperiodic",
+    "seed": 3,
+    "src": "tiling",
+    "dst": "aperiodic_tiling",
+    "identity_option": "B"
+   },
+   "option_motifs": {
+    "A": "interference",
+    "B": "tiling",
+    "C": "aperiodic_tiling",
+    "D": "alternation"
+   },
+   "raw": "{\"choice\": \"B\"}"
+  },
+  {
+   "id": "sq_thm:tiling_to_aperiodic:s4",
+   "task": "square_thm",
+   "answer": "B",
+   "pred": "A",
+   "correct": false,
+   "meta": {
+    "edge": "tiling_to_aperiodic",
+    "seed": 4,
+    "src": "tiling",
+    "dst": "aperiodic_tiling"
+   },
+   "option_motifs": {
+    "A": "interference",
+    "B": "aperiodic_tiling",
+    "C": "braiding",
+    "D": "alternation"
+   },
+   "raw": "{\"choice\": \"A\"}"
+  },
+  {
+   "id": "sq_story:tiling_to_aperiodic:s4",
+   "task": "square_story",
+   "answer": "B",
+   "pred": "C",
+   "correct": false,
+   "meta": {
+    "edge": "tiling_to_aperiodic",
+    "seed": 4,
+    "src": "tiling",
+    "dst": "aperiodic_tiling",
+    "identity_option": "C"
+   },
+   "option_motifs": {
+    "A": "interference",
+    "B": "aperiodic_tiling",
+    "C": "tiling",
+    "D": "alternation"
+   },
+   "raw": "{\"choice\": \"C\"}"
+  },
+  {
+   "id": "sq_thm:tiling_to_aperiodic:s5",
+   "task": "square_thm",
+   "answer": "D",
+   "pred": "B",
+   "correct": false,
+   "meta": {
+    "edge": "tiling_to_aperiodic",
+    "seed": 5,
+    "src": "tiling",
+    "dst": "aperiodic_tiling"
+   },
+   "option_motifs": {
+    "A": "braiding",
+    "B": "interference",
+    "C": "alternation",
+    "D": "aperiodic_tiling"
+   },
+   "raw": "{\"choice\": \"B\"}"
+  },
+  {
+   "id": "sq_story:tiling_to_aperiodic:s5",
+   "task": "square_story",
+   "answer": "B",
+   "pred": "C",
+   "correct": false,
+   "meta": {
+    "edge": "tiling_to_aperiodic",
+    "seed": 5,
+    "src": "tiling",
+    "dst": "aperiodic_tiling",
+    "identity_option": "C"
+   },
+   "option_motifs": {
+    "A": "alternation",
+    "B": "aperiodic_tiling",
+    "C": "tiling",
+    "D": "interference"
+   },
+   "raw": "{\"choice\": \"C\"}"
+  },
+  {
+   "id": "sq_thm:iso_to_duality:s0",
+   "task": "square_thm",
+   "answer": "D",
+   "pred": "D",
+   "correct": true,
+   "meta": {
+    "edge": "iso_to_duality",
+    "seed": 0,
+    "src": "isomorphism",
+    "dst": "projective_duality"
+   },
+   "option_motifs": {
+    "A": "symmetry",
+    "B": "figure_ground",
+    "C": "mobius",
+    "D": "projective_duality"
+   },
+   "raw": "{\"choice\": \"D\"}"
+  },
+  {
+   "id": "sq_story:iso_to_duality:s0",
+   "task": "square_story",
+   "answer": "A",
+   "pred": "C",
+   "correct": false,
+   "meta": {
+    "edge": "iso_to_duality",
+    "seed": 0,
+    "src": "isomorphism",
+    "dst": "projective_duality",
+    "identity_option": "B"
+   },
+   "option_motifs": {
+    "A": "projective_duality",
+    "B": "isomorphism",
+    "C": "figure_ground",
+    "D": "symmetry"
+   },
+   "raw": "{\"choice\": \"C\"}"
+  },
+  {
+   "id": "sq_thm:iso_to_duality:s1",
+   "task": "square_thm",
+   "answer": "D",
+   "pred": "D",
+   "correct": true,
+   "meta": {
+    "edge": "iso_to_duality",
+    "seed": 1,
+    "src": "isomorphism",
+    "dst": "projective_duality"
+   },
+   "option_motifs": {
+    "A": "figure_ground",
+    "B": "symmetry",
+    "C": "mobius",
+    "D": "projective_duality"
+   },
+   "raw": "{\"choice\": \"D\"}"
+  },
+  {
+   "id": "sq_story:iso_to_duality:s1",
+   "task": "square_story",
+   "answer": "B",
+   "pred": "A",
+   "correct": false,
+   "meta": {
+    "edge": "iso_to_duality",
+    "seed": 1,
+    "src": "isomorphism",
+    "dst": "projective_duality",
+    "identity_option": "D"
+   },
+   "option_motifs": {
+    "A": "symmetry",
+    "B": "projective_duality",
+    "C": "figure_ground",
+    "D": "isomorphism"
+   },
+   "raw": "{\"choice\": \"A\"}"
+  },
+  {
+   "id": "sq_thm:iso_to_duality:s2",
+   "task": "square_thm",
+   "answer": "A",
+   "pred": "A",
+   "correct": true,
+   "meta": {
+    "edge": "iso_to_duality",
+    "seed": 2,
+    "src": "isomorphism",
+    "dst": "projective_duality"
+   },
+   "option_motifs": {
+    "A": "projective_duality",
+    "B": "mobius",
+    "C": "symmetry",
+    "D": "figure_ground"
+   },
+   "raw": "{\"choice\": \"A\"}"
+  },
+  {
+   "id": "sq_story:iso_to_duality:s2",
+   "task": "square_story",
+   "answer": "A",
+   "pred": "C",
+   "correct": false,
+   "meta": {
+    "edge": "iso_to_duality",
+    "seed": 2,
+    "src": "isomorphism",
+    "dst": "projective_duality",
+    "identity_option": "D"
+   },
+   "option_motifs": {
+    "A": "projective_duality",
+    "B": "symmetry",
+    "C": "figure_ground",
+    "D": "isomorphism"
+   },
+   "raw": "{\"choice\": \"C\"}"
+  },
+  {
+   "id": "sq_thm:iso_to_duality:s3",
+   "task": "square_thm",
+   "answer": "D",
+   "pred": "D",
+   "correct": true,
+   "meta": {
+    "edge": "iso_to_duality",
+    "seed": 3,
+    "src": "isomorphism",
+    "dst": "projective_duality"
+   },
+   "option_motifs": {
+    "A": "mobius",
+    "B": "figure_ground",
+    "C": "symmetry",
+    "D": "projective_duality"
+   },
+   "raw": "{\"choice\": \"D\"}"
+  },
+  {
+   "id": "sq_story:iso_to_duality:s3",
+   "task": "square_story",
+   "answer": "A",
+   "pred": "C",
+   "correct": false,
+   "meta": {
+    "edge": "iso_to_duality",
+    "seed": 3,
+    "src": "isomorphism",
+    "dst": "projective_duality",
+    "identity_option": "B"
+   },
+   "option_motifs": {
+    "A": "projective_duality",
+    "B": "isomorphism",
+    "C": "figure_ground",
+    "D": "symmetry"
+   },
+   "raw": "{\"choice\": \"C\"}"
+  },
+  {
+   "id": "sq_thm:iso_to_duality:s4",
+   "task": "square_thm",
+   "answer": "C",
+   "pred": "C",
+   "correct": true,
+   "meta": {
+    "edge": "iso_to_duality",
+    "seed": 4,
+    "src": "isomorphism",
+    "dst": "projective_duality"
+   },
+   "option_motifs": {
+    "A": "figure_ground",
+    "B": "mobius",
+    "C": "projective_duality",
+    "D": "symmetry"
+   },
+   "raw": "{\"choice\": \"C\"}"
+  },
+  {
+   "id": "sq_story:iso_to_duality:s4",
+   "task": "square_story",
+   "answer": "C",
+   "pred": "B",
+   "correct": false,
+   "meta": {
+    "edge": "iso_to_duality",
+    "seed": 4,
+    "src": "isomorphism",
+    "dst": "projective_duality",
+    "identity_option": "A"
+   },
+   "option_motifs": {
+    "A": "isomorphism",
+    "B": "symmetry",
+    "C": "projective_duality",
+    "D": "figure_ground"
+   },
+   "raw": "{\"choice\": \"B\"}"
+  },
+  {
+   "id": "sq_thm:iso_to_duality:s5",
+   "task": "square_thm",
+   "answer": "A",
+   "pred": "A",
+   "correct": true,
+   "meta": {
+    "edge": "iso_to_duality",
+    "seed": 5,
+    "src": "isomorphism",
+    "dst": "projective_duality"
+   },
+   "option_motifs": {
+    "A": "projective_duality",
+    "B": "figure_ground",
+    "C": "mobius",
+    "D": "symmetry"
+   },
+   "raw": "{\"choice\": \"A\"}"
+  },
+  {
+   "id": "sq_story:iso_to_duality:s5",
+   "task": "square_story",
+   "answer": "D",
+   "pred": "A",
+   "correct": false,
+   "meta": {
+    "edge": "iso_to_duality",
+    "seed": 5,
+    "src": "isomorphism",
+    "dst": "projective_duality",
+    "identity_option": "A"
+   },
+   "option_motifs": {
+    "A": "isomorphism",
+    "B": "figure_ground",
+    "C": "symmetry",
+    "D": "projective_duality"
+   },
+   "raw": "{\"choice\": \"A\"}"
+  },
+  {
+   "id": "sq_thm:recursion_to_contraction:s0",
+   "task": "square_thm",
+   "answer": "B",
+   "pred": "C",
+   "correct": false,
+   "meta": {
+    "edge": "recursion_to_contraction",
+    "seed": 0,
+    "src": "recursion",
+    "dst": "contraction_fixed_point"
+   },
+   "option_motifs": {
+    "A": "convergence",
+    "B": "contraction_fixed_point",
+    "C": "spiral",
+    "D": "infinite_descent"
+   },
+   "raw": "{\"choice\": \"C\"}"
+  },
+  {
+   "id": "sq_story:recursion_to_contraction:s0",
+   "task": "square_story",
+   "answer": "B",
+   "pred": "B",
+   "correct": true,
+   "meta": {
+    "edge": "recursion_to_contraction",
+    "seed": 0,
+    "src": "recursion",
+    "dst": "contraction_fixed_point",
+    "identity_option": "C"
+   },
+   "option_motifs": {
+    "A": "convergence",
+    "B": "contraction_fixed_point",
+    "C": "recursion",
+    "D": "infinite_descent"
+   },
+   "raw": "{\"choice\": \"B\"}"
+  },
+  {
+   "id": "sq_thm:recursion_to_contraction:s1",
+   "task": "square_thm",
+   "answer": "A",
+   "pred": "C",
+   "correct": false,
+   "meta": {
+    "edge": "recursion_to_contraction",
+    "seed": 1,
+    "src": "recursion",
+    "dst": "contraction_fixed_point"
+   },
+   "option_motifs": {
+    "A": "contraction_fixed_point",
+    "B": "convergence",
+    "C": "spiral",
+    "D": "infinite_descent"
+   },
+   "raw": "{\"choice\": \"C\"}"
+  },
+  {
+   "id": "sq_story:recursion_to_contraction:s1",
+   "task": "square_story",
+   "answer": "D",
+   "pred": "C",
+   "correct": false,
+   "meta": {
+    "edge": "recursion_to_contraction",
+    "seed": 1,
+    "src": "recursion",
+    "dst": "contraction_fixed_point",
+    "identity_option": "B"
+   },
+   "option_motifs": {
+    "A": "convergence",
+    "B": "recursion",
+    "C": "infinite_descent",
+    "D": "contraction_fixed_point"
+   },
+   "raw": "{\"choice\": \"C\"}"
+  },
+  {
+   "id": "sq_thm:recursion_to_contraction:s2",
+   "task": "square_thm",
+   "answer": "C",
+   "pred": "B",
+   "correct": false,
+   "meta": {
+    "edge": "recursion_to_contraction",
+    "seed": 2,
+    "src": "recursion",
+    "dst": "contraction_fixed_point"
+   },
+   "option_motifs": {
+    "A": "infinite_descent",
+    "B": "convergence",
+    "C": "contraction_fixed_point",
+    "D": "spiral"
+   },
+   "raw": "{\"choice\": \"B\"}"
+  },
+  {
+   "id": "sq_story:recursion_to_contraction:s2",
+   "task": "square_story",
+   "answer": "D",
+   "pred": "C",
+   "correct": false,
+   "meta": {
+    "edge": "recursion_to_contraction",
+    "seed": 2,
+    "src": "recursion",
+    "dst": "contraction_fixed_point",
+    "identity_option": "A"
+   },
+   "option_motifs": {
+    "A": "recursion",
+    "B": "convergence",
+    "C": "infinite_descent",
+    "D": "contraction_fixed_point"
+   },
+   "raw": "{\"choice\": \"C\"}"
+  },
+  {
+   "id": "sq_thm:recursion_to_contraction:s3",
+   "task": "square_thm",
+   "answer": "C",
+   "pred": "B",
+   "correct": false,
+   "meta": {
+    "edge": "recursion_to_contraction",
+    "seed": 3,
+    "src": "recursion",
+    "dst": "contraction_fixed_point"
+   },
+   "option_motifs": {
+    "A": "convergence",
+    "B": "spiral",
+    "C": "contraction_fixed_point",
+    "D": "infinite_descent"
+   },
+   "raw": "{\"choice\": \"B\"}"
+  },
+  {
+   "id": "sq_story:recursion_to_contraction:s3",
+   "task": "square_story",
+   "answer": "A",
+   "pred": "C",
+   "correct": false,
+   "meta": {
+    "edge": "recursion_to_contraction",
+    "seed": 3,
+    "src": "recursion",
+    "dst": "contraction_fixed_point",
+    "identity_option": "D"
+   },
+   "option_motifs": {
+    "A": "contraction_fixed_point",
+    "B": "convergence",
+    "C": "infinite_descent",
+    "D": "recursion"
+   },
+   "raw": "{\"choice\": \"C\"}"
+  },
+  {
+   "id": "sq_thm:recursion_to_contraction:s4",
+   "task": "square_thm",
+   "answer": "B",
+   "pred": "A",
+   "correct": false,
+   "meta": {
+    "edge": "recursion_to_contraction",
+    "seed": 4,
+    "src": "recursion",
+    "dst": "contraction_fixed_point"
+   },
+   "option_motifs": {
+    "A": "convergence",
+    "B": "contraction_fixed_point",
+    "C": "infinite_descent",
+    "D": "spiral"
+   },
+   "raw": "{\"choice\": \"A\"}"
+  },
+  {
+   "id": "sq_story:recursion_to_contraction:s4",
+   "task": "square_story",
+   "answer": "C",
+   "pred": "C",
+   "correct": true,
+   "meta": {
+    "edge": "recursion_to_contraction",
+    "seed": 4,
+    "src": "recursion",
+    "dst": "contraction_fixed_point",
+    "identity_option": "B"
+   },
+   "option_motifs": {
+    "A": "infinite_descent",
+    "B": "recursion",
+    "C": "contraction_fixed_point",
+    "D": "convergence"
+   },
+   "raw": "{\"choice\": \"C\"}"
+  },
+  {
+   "id": "sq_thm:recursion_to_contraction:s5",
+   "task": "square_thm",
+   "answer": "D",
+   "pred": "D",
+   "correct": true,
+   "meta": {
+    "edge": "recursion_to_contraction",
+    "seed": 5,
+    "src": "recursion",
+    "dst": "contraction_fixed_point"
+   },
+   "option_motifs": {
+    "A": "spiral",
+    "B": "infinite_descent",
+    "C": "convergence",
+    "D": "contraction_fixed_point"
+   },
+   "raw": "{\"choice\": \"D\"}"
+  },
+  {
+   "id": "sq_story:recursion_to_contraction:s5",
+   "task": "square_story",
+   "answer": "B",
+   "pred": "B",
+   "correct": true,
+   "meta": {
+    "edge": "recursion_to_contraction",
+    "seed": 5,
+    "src": "recursion",
+    "dst": "contraction_fixed_point",
+    "identity_option": "D"
+   },
+   "option_motifs": {
+    "A": "infinite_descent",
+    "B": "contraction_fixed_point",
+    "C": "convergence",
+    "D": "recursion"
+   },
+   "raw": "{\"choice\": \"B\"}"
+  },
+  {
+   "id": "ivc:sym_to_symbreak:s0:structural",
+   "task": "id_vs_change",
+   "answer": "C",
+   "pred": "C",
+   "correct": true,
+   "meta": {
+    "edge": "sym_to_symbreak",
+    "seed": 0,
+    "kind": "structural"
+   },
+   "option_motifs": null,
+   "raw": "{\"choice\": \"C\"}"
+  },
+  {
+   "id": "ivc:sym_to_symbreak:s0:nuisance",
+   "task": "id_vs_change",
+   "answer": "B",
+   "pred": "B",
+   "correct": true,
+   "meta": {
+    "edge": "sym_to_symbreak",
+    "seed": 0,
+    "kind": "nuisance"
+   },
+   "option_motifs": null,
+   "raw": "{\"choice\": \"B\"}"
+  },
+  {
+   "id": "ivc:sym_to_symbreak:s1:structural",
+   "task": "id_vs_change",
+   "answer": "D",
+   "pred": "D",
+   "correct": true,
+   "meta": {
+    "edge": "sym_to_symbreak",
+    "seed": 1,
+    "kind": "structural"
+   },
+   "option_motifs": null,
+   "raw": "{\"choice\": \"D\"}"
+  },
+  {
+   "id": "ivc:sym_to_symbreak:s1:nuisance",
+   "task": "id_vs_change",
+   "answer": "A",
+   "pred": "A",
+   "correct": true,
+   "meta": {
+    "edge": "sym_to_symbreak",
+    "seed": 1,
+    "kind": "nuisance"
+   },
+   "option_motifs": null,
+   "raw": "{\"choice\": \"A\"}"
+  },
+  {
+   "id": "ivc:sym_to_symbreak:s2:structural",
+   "task": "id_vs_change",
+   "answer": "C",
+   "pred": "C",
+   "correct": true,
+   "meta": {
+    "edge": "sym_to_symbreak",
+    "seed": 2,
+    "kind": "structural"
+   },
+   "option_motifs": null,
+   "raw": "{\"choice\": \"C\"}"
+  },
+  {
+   "id": "ivc:sym_to_symbreak:s2:nuisance",
+   "task": "id_vs_change",
+   "answer": "B",
+   "pred": "B",
+   "correct": true,
+   "meta": {
+    "edge": "sym_to_symbreak",
+    "seed": 2,
+    "kind": "nuisance"
+   },
+   "option_motifs": null,
+   "raw": "{\"choice\": \"B\"}"
+  },
+  {
+   "id": "ivc:sym_to_symbreak:s3:structural",
+   "task": "id_vs_change",
+   "answer": "D",
+   "pred": "D",
+   "correct": true,
+   "meta": {
+    "edge": "sym_to_symbreak",
+    "seed": 3,
+    "kind": "structural"
+   },
+   "option_motifs": null,
+   "raw": "{\"choice\": \"D\"}"
+  },
+  {
+   "id": "ivc:sym_to_symbreak:s3:nuisance",
+   "task": "id_vs_change",
+   "answer": "C",
+   "pred": "C",
+   "correct": true,
+   "meta": {
+    "edge": "sym_to_symbreak",
+    "seed": 3,
+    "kind": "nuisance"
+   },
+   "option_motifs": null,
+   "raw": "{\"choice\": \"C\"}"
+  },
+  {
+   "id": "ivc:sym_to_symbreak:s4:structural",
+   "task": "id_vs_change",
+   "answer": "D",
+   "pred": "D",
+   "correct": true,
+   "meta": {
+    "edge": "sym_to_symbreak",
+    "seed": 4,
+    "kind": "structural"
+   },
+   "option_motifs": null,
+   "raw": "{\"choice\": \"D\"}"
+  },
+  {
+   "id": "ivc:sym_to_symbreak:s4:nuisance",
+   "task": "id_vs_change",
+   "answer": "C",
+   "pred": "C",
+   "correct": true,
+   "meta": {
+    "edge": "sym_to_symbreak",
+    "seed": 4,
+    "kind": "nuisance"
+   },
+   "option_motifs": null,
+   "raw": "{\"choice\": \"C\"}"
+  },
+  {
+   "id": "ivc:sym_to_symbreak:s5:structural",
+   "task": "id_vs_change",
+   "answer": "C",
+   "pred": "C",
+   "correct": true,
+   "meta": {
+    "edge": "sym_to_symbreak",
+    "seed": 5,
+    "kind": "structural"
+   },
+   "option_motifs": null,
+   "raw": "{\"choice\": \"C\"}"
+  },
+  {
+   "id": "ivc:sym_to_symbreak:s5:nuisance",
+   "task": "id_vs_change",
+   "answer": "D",
+   "pred": "D",
+   "correct": true,
+   "meta": {
+    "edge": "sym_to_symbreak",
+    "seed": 5,
+    "kind": "nuisance"
+   },
+   "option_motifs": null,
+   "raw": "{\"choice\": \"D\"}"
+  },
+  {
+   "id": "ivc:cycle_to_strangeloop:s0:structural",
+   "task": "id_vs_change",
+   "answer": "D",
+   "pred": "D",
+   "correct": true,
+   "meta": {
+    "edge": "cycle_to_strangeloop",
+    "seed": 0,
+    "kind": "structural"
+   },
+   "option_motifs": null,
+   "raw": "{\"choice\": \"D\"}"
+  },
+  {
+   "id": "ivc:cycle_to_strangeloop:s0:nuisance",
+   "task": "id_vs_change",
+   "answer": "B",
+   "pred": "B",
+   "correct": true,
+   "meta": {
+    "edge": "cycle_to_strangeloop",
+    "seed": 0,
+    "kind": "nuisance"
+   },
+   "option_motifs": null,
+   "raw": "{\"choice\": \"B\"}"
+  },
+  {
+   "id": "ivc:cycle_to_strangeloop:s1:structural",
+   "task": "id_vs_change",
+   "answer": "A",
+   "pred": "A",
+   "correct": true,
+   "meta": {
+    "edge": "cycle_to_strangeloop",
+    "seed": 1,
+    "kind": "structural"
+   },
+   "option_motifs": null,
+   "raw": "{\"choice\": \"A\"}"
+  },
+  {
+   "id": "ivc:cycle_to_strangeloop:s1:nuisance",
+   "task": "id_vs_change",
+   "answer": "A",
+   "pred": "A",
+   "correct": true,
+   "meta": {
+    "edge": "cycle_to_strangeloop",
+    "seed": 1,
+    "kind": "nuisance"
+   },
+   "option_motifs": null,
+   "raw": "{\"choice\": \"A\"}"
+  },
+  {
+   "id": "ivc:cycle_to_strangeloop:s2:structural",
+   "task": "id_vs_change",
+   "answer": "A",
+   "pred": "A",
+   "correct": true,
+   "meta": {
+    "edge": "cycle_to_strangeloop",
+    "seed": 2,
+    "kind": "structural"
+   },
+   "option_motifs": null,
+   "raw": "{\"choice\": \"A\"}"
+  },
+  {
+   "id": "ivc:cycle_to_strangeloop:s2:nuisance",
+   "task": "id_vs_change",
+   "answer": "C",
+   "pred": "C",
+   "correct": true,
+   "meta": {
+    "edge": "cycle_to_strangeloop",
+    "seed": 2,
+    "kind": "nuisance"
+   },
+   "option_motifs": null,
+   "raw": "{\"choice\": \"C\"}"
+  },
+  {
+   "id": "ivc:cycle_to_strangeloop:s3:structural",
+   "task": "id_vs_change",
+   "answer": "C",
+   "pred": "C",
+   "correct": true,
+   "meta": {
+    "edge": "cycle_to_strangeloop",
+    "seed": 3,
+    "kind": "structural"
+   },
+   "option_motifs": null,
+   "raw": "{\"choice\": \"C\"}"
+  },
+  {
+   "id": "ivc:cycle_to_strangeloop:s3:nuisance",
+   "task": "id_vs_change",
+   "answer": "D",
+   "pred": "D",
+   "correct": true,
+   "meta": {
+    "edge": "cycle_to_strangeloop",
+    "seed": 3,
+    "kind": "nuisance"
+   },
+   "option_motifs": null,
+   "raw": "{\"choice\": \"D\"}"
+  },
+  {
+   "id": "ivc:cycle_to_strangeloop:s4:structural",
+   "task": "id_vs_change",
+   "answer": "B",
+   "pred": "B",
+   "correct": true,
+   "meta": {
+    "edge": "cycle_to_strangeloop",
+    "seed": 4,
+    "kind": "structural"
+   },
+   "option_motifs": null,
+   "raw": "{\"choice\": \"B\"}"
+  },
+  {
+   "id": "ivc:cycle_to_strangeloop:s4:nuisance",
+   "task": "id_vs_change",
+   "answer": "A",
+   "pred": "A",
+   "correct": true,
+   "meta": {
+    "edge": "cycle_to_strangeloop",
+    "seed": 4,
+    "kind": "nuisance"
+   },
+   "option_motifs": null,
+   "raw": "{\"choice\": \"A\"}"
+  },
+  {
+   "id": "ivc:cycle_to_strangeloop:s5:structural",
+   "task": "id_vs_change",
+   "answer": "D",
+   "pred": "D",
+   "correct": true,
+   "meta": {
+    "edge": "cycle_to_strangeloop",
+    "seed": 5,
+    "kind": "structural"
+   },
+   "option_motifs": null,
+   "raw": "{\"choice\": \"D\"}"
+  },
+  {
+   "id": "ivc:cycle_to_strangeloop:s5:nuisance",
+   "task": "id_vs_change",
+   "answer": "C",
+   "pred": "C",
+   "correct": true,
+   "meta": {
+    "edge": "cycle_to_strangeloop",
+    "seed": 5,
+    "kind": "nuisance"
+   },
+   "option_motifs": null,
+   "raw": "{\"choice\": \"C\"}"
+  },
+  {
+   "id": "ivc:nesting_to_recursion:s0:structural",
+   "task": "id_vs_change",
+   "answer": "B",
+   "pred": "B",
+   "correct": true,
+   "meta": {
+    "edge": "nesting_to_recursion",
+    "seed": 0,
+    "kind": "structural"
+   },
+   "option_motifs": null,
+   "raw": "{\"choice\": \"B\"}"
+  },
+  {
+   "id": "ivc:nesting_to_recursion:s0:nuisance",
+   "task": "id_vs_change",
+   "answer": "A",
+   "pred": "A",
+   "correct": true,
+   "meta": {
+    "edge": "nesting_to_recursion",
+    "seed": 0,
+    "kind": "nuisance"
+   },
+   "option_motifs": null,
+   "raw": "{\"choice\": \"A\"}"
+  },
+  {
+   "id": "ivc:nesting_to_recursion:s1:structural",
+   "task": "id_vs_change",
+   "answer": "A",
+   "pred": "A",
+   "correct": true,
+   "meta": {
+    "edge": "nesting_to_recursion",
+    "seed": 1,
+    "kind": "structural"
+   },
+   "option_motifs": null,
+   "raw": "{\"choice\": \"A\"}"
+  },
+  {
+   "id": "ivc:nesting_to_recursion:s1:nuisance",
+   "task": "id_vs_change",
+   "answer": "A",
+   "pred": "A",
+   "correct": true,
+   "meta": {
+    "edge": "nesting_to_recursion",
+    "seed": 1,
+    "kind": "nuisance"
+   },
+   "option_motifs": null,
+   "raw": "{\"choice\": \"A\"}"
+  },
+  {
+   "id": "ivc:nesting_to_recursion:s2:structural",
+   "task": "id_vs_change",
+   "answer": "A",
+   "pred": "A",
+   "correct": true,
+   "meta": {
+    "edge": "nesting_to_recursion",
+    "seed": 2,
+    "kind": "structural"
+   },
+   "option_motifs": null,
+   "raw": "{\"choice\": \"A\"}"
+  },
+  {
+   "id": "ivc:nesting_to_recursion:s2:nuisance",
+   "task": "id_vs_change",
+   "answer": "B",
+   "pred": "B",
+   "correct": true,
+   "meta": {
+    "edge": "nesting_to_recursion",
+    "seed": 2,
+    "kind": "nuisance"
+   },
+   "option_motifs": null,
+   "raw": "{\"choice\": \"B\"}"
+  },
+  {
+   "id": "ivc:nesting_to_recursion:s3:structural",
+   "task": "id_vs_change",
+   "answer": "A",
+   "pred": "A",
+   "correct": true,
+   "meta": {
+    "edge": "nesting_to_recursion",
+    "seed": 3,
+    "kind": "structural"
+   },
+   "option_motifs": null,
+   "raw": "{\"choice\": \"A\"}"
+  },
+  {
+   "id": "ivc:nesting_to_recursion:s3:nuisance",
+   "task": "id_vs_change",
+   "answer": "A",
+   "pred": "A",
+   "correct": true,
+   "meta": {
+    "edge": "nesting_to_recursion",
+    "seed": 3,
+    "kind": "nuisance"
+   },
+   "option_motifs": null,
+   "raw": "{\"choice\": \"A\"}"
+  },
+  {
+   "id": "ivc:nesting_to_recursion:s4:structural",
+   "task": "id_vs_change",
+   "answer": "A",
+   "pred": "A",
+   "correct": true,
+   "meta": {
+    "edge": "nesting_to_recursion",
+    "seed": 4,
+    "kind": "structural"
+   },
+   "option_motifs": null,
+   "raw": "{\"choice\": \"A\"}"
+  },
+  {
+   "id": "ivc:nesting_to_recursion:s4:nuisance",
+   "task": "id_vs_change",
+   "answer": "D",
+   "pred": "D",
+   "correct": true,
+   "meta": {
+    "edge": "nesting_to_recursion",
+    "seed": 4,
+    "kind": "nuisance"
+   },
+   "option_motifs": null,
+   "raw": "{\"choice\": \"D\"}"
+  },
+  {
+   "id": "ivc:nesting_to_recursion:s5:structural",
+   "task": "id_vs_change",
+   "answer": "A",
+   "pred": "A",
+   "correct": true,
+   "meta": {
+    "edge": "nesting_to_recursion",
+    "seed": 5,
+    "kind": "structural"
+   },
+   "option_motifs": null,
+   "raw": "{\"choice\": \"A\"}"
+  },
+  {
+   "id": "ivc:nesting_to_recursion:s5:nuisance",
+   "task": "id_vs_change",
+   "answer": "A",
+   "pred": "A",
+   "correct": true,
+   "meta": {
+    "edge": "nesting_to_recursion",
+    "seed": 5,
+    "kind": "nuisance"
+   },
+   "option_motifs": null,
+   "raw": "{\"choice\": \"A\"}"
+  },
+  {
+   "id": "ivc:tiling_to_aperiodic:s0:structural",
+   "task": "id_vs_change",
+   "answer": "C",
+   "pred": "D",
+   "correct": false,
+   "meta": {
+    "edge": "tiling_to_aperiodic",
+    "seed": 0,
+    "kind": "structural"
+   },
+   "option_motifs": null,
+   "raw": "{\"choice\": \"D\"}"
+  },
+  {
+   "id": "ivc:tiling_to_aperiodic:s0:nuisance",
+   "task": "id_vs_change",
+   "answer": "C",
+   "pred": "C",
+   "correct": true,
+   "meta": {
+    "edge": "tiling_to_aperiodic",
+    "seed": 0,
+    "kind": "nuisance"
+   },
+   "option_motifs": null,
+   "raw": "{\"choice\": \"C\"}"
+  },
+  {
+   "id": "ivc:tiling_to_aperiodic:s1:structural",
+   "task": "id_vs_change",
+   "answer": "C",
+   "pred": "A",
+   "correct": false,
+   "meta": {
+    "edge": "tiling_to_aperiodic",
+    "seed": 1,
+    "kind": "structural"
+   },
+   "option_motifs": null,
+   "raw": "{\"choice\": \"A\"}"
+  },
+  {
+   "id": "ivc:tiling_to_aperiodic:s1:nuisance",
+   "task": "id_vs_change",
+   "answer": "D",
+   "pred": "D",
+   "correct": true,
+   "meta": {
+    "edge": "tiling_to_aperiodic",
+    "seed": 1,
+    "kind": "nuisance"
+   },
+   "option_motifs": null,
+   "raw": "{\"choice\": \"D\"}"
+  },
+  {
+   "id": "ivc:tiling_to_aperiodic:s2:structural",
+   "task": "id_vs_change",
+   "answer": "B",
+   "pred": "D",
+   "correct": false,
+   "meta": {
+    "edge": "tiling_to_aperiodic",
+    "seed": 2,
+    "kind": "structural"
+   },
+   "option_motifs": null,
+   "raw": "{\"choice\": \"D\"}"
+  },
+  {
+   "id": "ivc:tiling_to_aperiodic:s2:nuisance",
+   "task": "id_vs_change",
+   "answer": "B",
+   "pred": "B",
+   "correct": true,
+   "meta": {
+    "edge": "tiling_to_aperiodic",
+    "seed": 2,
+    "kind": "nuisance"
+   },
+   "option_motifs": null,
+   "raw": "{\"choice\": \"B\"}"
+  },
+  {
+   "id": "ivc:tiling_to_aperiodic:s3:structural",
+   "task": "id_vs_change",
+   "answer": "D",
+   "pred": "C",
+   "correct": false,
+   "meta": {
+    "edge": "tiling_to_aperiodic",
+    "seed": 3,
+    "kind": "structural"
+   },
+   "option_motifs": null,
+   "raw": "{\"choice\": \"C\"}"
+  },
+  {
+   "id": "ivc:tiling_to_aperiodic:s3:nuisance",
+   "task": "id_vs_change",
+   "answer": "B",
+   "pred": "B",
+   "correct": true,
+   "meta": {
+    "edge": "tiling_to_aperiodic",
+    "seed": 3,
+    "kind": "nuisance"
+   },
+   "option_motifs": null,
+   "raw": "{\"choice\": \"B\"}"
+  },
+  {
+   "id": "ivc:tiling_to_aperiodic:s4:structural",
+   "task": "id_vs_change",
+   "answer": "C",
+   "pred": "D",
+   "correct": false,
+   "meta": {
+    "edge": "tiling_to_aperiodic",
+    "seed": 4,
+    "kind": "structural"
+   },
+   "option_motifs": null,
+   "raw": "{\"choice\": \"D\"}"
+  },
+  {
+   "id": "ivc:tiling_to_aperiodic:s4:nuisance",
+   "task": "id_vs_change",
+   "answer": "B",
+   "pred": "B",
+   "correct": true,
+   "meta": {
+    "edge": "tiling_to_aperiodic",
+    "seed": 4,
+    "kind": "nuisance"
+   },
+   "option_motifs": null,
+   "raw": "{\"choice\": \"B\"}"
+  },
+  {
+   "id": "ivc:tiling_to_aperiodic:s5:structural",
+   "task": "id_vs_change",
+   "answer": "A",
+   "pred": "B",
+   "correct": false,
+   "meta": {
+    "edge": "tiling_to_aperiodic",
+    "seed": 5,
+    "kind": "structural"
+   },
+   "option_motifs": null,
+   "raw": "{\"choice\": \"B\"}"
+  },
+  {
+   "id": "ivc:tiling_to_aperiodic:s5:nuisance",
+   "task": "id_vs_change",
+   "answer": "C",
+   "pred": "C",
+   "correct": true,
+   "meta": {
+    "edge": "tiling_to_aperiodic",
+    "seed": 5,
+    "kind": "nuisance"
+   },
+   "option_motifs": null,
+   "raw": "{\"choice\": \"C\"}"
+  },
+  {
+   "id": "ivc:iso_to_duality:s0:structural",
+   "task": "id_vs_change",
+   "answer": "A",
+   "pred": "A",
+   "correct": true,
+   "meta": {
+    "edge": "iso_to_duality",
+    "seed": 0,
+    "kind": "structural"
+   },
+   "option_motifs": null,
+   "raw": "{\"choice\": \"A\"}"
+  },
+  {
+   "id": "ivc:iso_to_duality:s0:nuisance",
+   "task": "id_vs_change",
+   "answer": "A",
+   "pred": "A",
+   "correct": true,
+   "meta": {
+    "edge": "iso_to_duality",
+    "seed": 0,
+    "kind": "nuisance"
+   },
+   "option_motifs": null,
+   "raw": "{\"choice\": \"A\"}"
+  },
+  {
+   "id": "ivc:iso_to_duality:s1:structural",
+   "task": "id_vs_change",
+   "answer": "B",
+   "pred": "B",
+   "correct": true,
+   "meta": {
+    "edge": "iso_to_duality",
+    "seed": 1,
+    "kind": "structural"
+   },
+   "option_motifs": null,
+   "raw": "{\"choice\": \"B\"}"
+  },
+  {
+   "id": "ivc:iso_to_duality:s1:nuisance",
+   "task": "id_vs_change",
+   "answer": "B",
+   "pred": "B",
+   "correct": true,
+   "meta": {
+    "edge": "iso_to_duality",
+    "seed": 1,
+    "kind": "nuisance"
+   },
+   "option_motifs": null,
+   "raw": "{\"choice\": \"B\"}"
+  },
+  {
+   "id": "ivc:iso_to_duality:s2:structural",
+   "task": "id_vs_change",
+   "answer": "D",
+   "pred": "D",
+   "correct": true,
+   "meta": {
+    "edge": "iso_to_duality",
+    "seed": 2,
+    "kind": "structural"
+   },
+   "option_motifs": null,
+   "raw": "{\"choice\": \"D\"}"
+  },
+  {
+   "id": "ivc:iso_to_duality:s2:nuisance",
+   "task": "id_vs_change",
+   "answer": "D",
+   "pred": "D",
+   "correct": true,
+   "meta": {
+    "edge": "iso_to_duality",
+    "seed": 2,
+    "kind": "nuisance"
+   },
+   "option_motifs": null,
+   "raw": "{\"choice\": \"D\"}"
+  },
+  {
+   "id": "ivc:iso_to_duality:s3:structural",
+   "task": "id_vs_change",
+   "answer": "A",
+   "pred": "A",
+   "correct": true,
+   "meta": {
+    "edge": "iso_to_duality",
+    "seed": 3,
+    "kind": "structural"
+   },
+   "option_motifs": null,
+   "raw": "{\"choice\": \"A\"}"
+  },
+  {
+   "id": "ivc:iso_to_duality:s3:nuisance",
+   "task": "id_vs_change",
+   "answer": "B",
+   "pred": "B",
+   "correct": true,
+   "meta": {
+    "edge": "iso_to_duality",
+    "seed": 3,
+    "kind": "nuisance"
+   },
+   "option_motifs": null,
+   "raw": "{\"choice\": \"B\"}"
+  },
+  {
+   "id": "ivc:iso_to_duality:s4:structural",
+   "task": "id_vs_change",
+   "answer": "B",
+   "pred": "B",
+   "correct": true,
+   "meta": {
+    "edge": "iso_to_duality",
+    "seed": 4,
+    "kind": "structural"
+   },
+   "option_motifs": null,
+   "raw": "{\"choice\": \"B\"}"
+  },
+  {
+   "id": "ivc:iso_to_duality:s4:nuisance",
+   "task": "id_vs_change",
+   "answer": "B",
+   "pred": "B",
+   "correct": true,
+   "meta": {
+    "edge": "iso_to_duality",
+    "seed": 4,
+    "kind": "nuisance"
+   },
+   "option_motifs": null,
+   "raw": "{\"choice\": \"B\"}"
+  },
+  {
+   "id": "ivc:iso_to_duality:s5:structural",
+   "task": "id_vs_change",
+   "answer": "C",
+   "pred": "C",
+   "correct": true,
+   "meta": {
+    "edge": "iso_to_duality",
+    "seed": 5,
+    "kind": "structural"
+   },
+   "option_motifs": null,
+   "raw": "{\"choice\": \"C\"}"
+  },
+  {
+   "id": "ivc:iso_to_duality:s5:nuisance",
+   "task": "id_vs_change",
+   "answer": "B",
+   "pred": "B",
+   "correct": true,
+   "meta": {
+    "edge": "iso_to_duality",
+    "seed": 5,
+    "kind": "nuisance"
+   },
+   "option_motifs": null,
+   "raw": "{\"choice\": \"B\"}"
+  },
+  {
+   "id": "ivc:recursion_to_contraction:s0:structural",
+   "task": "id_vs_change",
+   "answer": "A",
+   "pred": "A",
+   "correct": true,
+   "meta": {
+    "edge": "recursion_to_contraction",
+    "seed": 0,
+    "kind": "structural"
+   },
+   "option_motifs": null,
+   "raw": "{\"choice\": \"A\"}"
+  },
+  {
+   "id": "ivc:recursion_to_contraction:s0:nuisance",
+   "task": "id_vs_change",
+   "answer": "B",
+   "pred": "B",
+   "correct": true,
+   "meta": {
+    "edge": "recursion_to_contraction",
+    "seed": 0,
+    "kind": "nuisance"
+   },
+   "option_motifs": null,
+   "raw": "{\"choice\": \"B\"}"
+  },
+  {
+   "id": "ivc:recursion_to_contraction:s1:structural",
+   "task": "id_vs_change",
+   "answer": "C",
+   "pred": "C",
+   "correct": true,
+   "meta": {
+    "edge": "recursion_to_contraction",
+    "seed": 1,
+    "kind": "structural"
+   },
+   "option_motifs": null,
+   "raw": "{\"choice\": \"C\"}"
+  },
+  {
+   "id": "ivc:recursion_to_contraction:s1:nuisance",
+   "task": "id_vs_change",
+   "answer": "A",
+   "pred": "A",
+   "correct": true,
+   "meta": {
+    "edge": "recursion_to_contraction",
+    "seed": 1,
+    "kind": "nuisance"
+   },
+   "option_motifs": null,
+   "raw": "{\"choice\": \"A\"}"
+  },
+  {
+   "id": "ivc:recursion_to_contraction:s2:structural",
+   "task": "id_vs_change",
+   "answer": "D",
+   "pred": "D",
+   "correct": true,
+   "meta": {
+    "edge": "recursion_to_contraction",
+    "seed": 2,
+    "kind": "structural"
+   },
+   "option_motifs": null,
+   "raw": "{\"choice\": \"D\"}"
+  },
+  {
+   "id": "ivc:recursion_to_contraction:s2:nuisance",
+   "task": "id_vs_change",
+   "answer": "C",
+   "pred": "C",
+   "correct": true,
+   "meta": {
+    "edge": "recursion_to_contraction",
+    "seed": 2,
+    "kind": "nuisance"
+   },
+   "option_motifs": null,
+   "raw": "{\"choice\": \"C\"}"
+  },
+  {
+   "id": "ivc:recursion_to_contraction:s3:structural",
+   "task": "id_vs_change",
+   "answer": "B",
+   "pred": "B",
+   "correct": true,
+   "meta": {
+    "edge": "recursion_to_contraction",
+    "seed": 3,
+    "kind": "structural"
+   },
+   "option_motifs": null,
+   "raw": "{\"choice\": \"B\"}"
+  },
+  {
+   "id": "ivc:recursion_to_contraction:s3:nuisance",
+   "task": "id_vs_change",
+   "answer": "A",
+   "pred": "A",
+   "correct": true,
+   "meta": {
+    "edge": "recursion_to_contraction",
+    "seed": 3,
+    "kind": "nuisance"
+   },
+   "option_motifs": null,
+   "raw": "{\"choice\": \"A\"}"
+  },
+  {
+   "id": "ivc:recursion_to_contraction:s4:structural",
+   "task": "id_vs_change",
+   "answer": "C",
+   "pred": "C",
+   "correct": true,
+   "meta": {
+    "edge": "recursion_to_contraction",
+    "seed": 4,
+    "kind": "structural"
+   },
+   "option_motifs": null,
+   "raw": "{\"choice\": \"C\"}"
+  },
+  {
+   "id": "ivc:recursion_to_contraction:s4:nuisance",
+   "task": "id_vs_change",
+   "answer": "D",
+   "pred": "D",
+   "correct": true,
+   "meta": {
+    "edge": "recursion_to_contraction",
+    "seed": 4,
+    "kind": "nuisance"
+   },
+   "option_motifs": null,
+   "raw": "{\"choice\": \"D\"}"
+  },
+  {
+   "id": "ivc:recursion_to_contraction:s5:structural",
+   "task": "id_vs_change",
+   "answer": "D",
+   "pred": "D",
+   "correct": true,
+   "meta": {
+    "edge": "recursion_to_contraction",
+    "seed": 5,
+    "kind": "structural"
+   },
+   "option_motifs": null,
+   "raw": "{\"choice\": \"D\"}"
+  },
+  {
+   "id": "ivc:recursion_to_contraction:s5:nuisance",
+   "task": "id_vs_change",
+   "answer": "D",
+   "pred": "D",
+   "correct": true,
+   "meta": {
+    "edge": "recursion_to_contraction",
+    "seed": 5,
+    "kind": "nuisance"
+   },
+   "option_motifs": null,
+   "raw": "{\"choice\": \"D\"}"
+  },
+  {
+   "id": "comp:s0",
+   "task": "composition",
+   "answer": "D",
+   "pred": "B",
+   "correct": false,
+   "meta": {
+    "seed": 0,
+    "stop_after_g1_option": "C"
+   },
+   "option_motifs": {
+    "A": "infinite_descent",
+    "B": "convergence",
+    "C": "recursion",
+    "D": "contraction_fixed_point"
+   },
+   "raw": "{\"choice\": \"B\"}"
+  },
+  {
+   "id": "comp:s1",
+   "task": "composition",
+   "answer": "D",
+   "pred": "C",
+   "correct": false,
+   "meta": {
+    "seed": 1,
+    "stop_after_g1_option": "B"
+   },
+   "option_motifs": {
+    "A": "convergence",
+    "B": "recursion",
+    "C": "infinite_descent",
+    "D": "contraction_fixed_point"
+   },
+   "raw": "{\"choice\": \"C\"}"
+  },
+  {
+   "id": "comp:s2",
+   "task": "composition",
+   "answer": "C",
+   "pred": "C",
+   "correct": true,
+   "meta": {
+    "seed": 2,
+    "stop_after_g1_option": "B"
+   },
+   "option_motifs": {
+    "A": "infinite_descent",
+    "B": "recursion",
+    "C": "contraction_fixed_point",
+    "D": "convergence"
+   },
+   "raw": "{\"choice\": \"C\"}"
+  },
+  {
+   "id": "comp:s3",
+   "task": "composition",
+   "answer": "B",
+   "pred": "B",
+   "correct": true,
+   "meta": {
+    "seed": 3,
+    "stop_after_g1_option": "C"
+   },
+   "option_motifs": {
+    "A": "infinite_descent",
+    "B": "contraction_fixed_point",
+    "C": "recursion",
+    "D": "convergence"
+   },
+   "raw": "{\"choice\": \"B\"}"
+  },
+  {
+   "id": "comp:s4",
+   "task": "composition",
+   "answer": "C",
+   "pred": "B",
+   "correct": false,
+   "meta": {
+    "seed": 4,
+    "stop_after_g1_option": "A"
+   },
+   "option_motifs": {
+    "A": "recursion",
+    "B": "convergence",
+    "C": "contraction_fixed_point",
+    "D": "infinite_descent"
+   },
+   "raw": "{\"choice\": \"B\"}"
+  },
+  {
+   "id": "comp:s5",
+   "task": "composition",
+   "answer": "D",
+   "pred": "D",
+   "correct": true,
+   "meta": {
+    "seed": 5,
+    "stop_after_g1_option": "A"
+   },
+   "option_motifs": {
+    "A": "recursion",
+    "B": "convergence",
+    "C": "infinite_descent",
+    "D": "contraction_fixed_point"
+   },
+   "raw": "{\"choice\": \"D\"}"
+  }
+ ]
+}

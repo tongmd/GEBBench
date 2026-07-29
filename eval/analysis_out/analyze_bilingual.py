@@ -27,13 +27,15 @@ from scipy import stats
 ROOT = Path(__file__).resolve().parents[2]
 OUT = ROOT / "eval" / "analysis_out"
 
-TAGS = ["api_gpt-5.5", "api_gpt-5.2", "api_claude-opus-4-8"]
-PRETTY = {"api_gpt-5.5": "GPT-5.5", "api_gpt-5.2": "GPT-5.2",
-          "api_claude-opus-4-8": "Claude Opus 4.8"}
+TAGS = ["or_gpt-5.5", "or_gpt-5.2", "or_claude-opus-4.8"]
+PRETTY = {"or_gpt-5.5": "GPT-5.5", "or_gpt-5.2": "GPT-5.2",
+          "or_claude-opus-4.8": "Claude Opus 4.8"}
 
 
 def load_pair(tag):
-    zh = json.loads((ROOT / "eval" / "results" / f"{tag}.json").read_text())
+    zh_name = tag.replace("or_", "or_zh_", 1)
+    zh = json.loads(
+        (ROOT / "eval" / "results_zh_or" / f"{zh_name}.json").read_text())
     en = json.loads((OUT / f"story_en_{tag}.json").read_text())
     zh_recs = {r["id"].split(":")[1]: r for r in zh["records"]
                if r["task"] == "story2motif"}
@@ -149,42 +151,48 @@ def main():
     # ---- figure ----
     import matplotlib
     matplotlib.use("Agg")
+    import sys; sys.path.insert(0, "/Users/stone/GEB-benchmark")
+    import figstyle; figstyle.use()
     import matplotlib.pyplot as plt
 
-    fig, axes = plt.subplots(1, 2, figsize=(9.2, 3.4))
+    fig, axes = plt.subplots(1, 2, figsize=(figstyle.FULL, 2.1))
     ax = axes[0]
     x = np.arange(len(TAGS)); w = 0.36
     zh_acc = [results[t]["acc_zh"] for t in TAGS]
     en_acc = [results[t]["acc_en"] for t in TAGS]
-    ax.bar(x - w/2, zh_acc, w, label="Chinese (shipped)", color="#4477aa")
-    ax.bar(x + w/2, en_acc, w, label="English (replication)", color="#ee6677")
-    ax.axhline(0.04, ls="--", c="gray", lw=1)
-    ax.text(-0.45, 0.06, "chance 4%", fontsize=8, color="gray")
-    ax.set_xticks(x); ax.set_xticklabels([PRETTY[t] for t in TAGS], fontsize=9)
-    ax.set_ylabel("story2motif accuracy"); ax.set_ylim(0, 1.05)
+    # two conditions of the same models: dark neutral (ZH) vs terracotta accent (EN)
+    ax.bar(x - w/2, zh_acc, w, label="Chinese stories", color=figstyle.NEUTRAL)
+    ax.bar(x + w/2, en_acc, w, label="English stories", color=figstyle.ACCENT)
+    ax.axhline(0.04, ls="--", c="gray", lw=0.8)
+    ax.text(0.5, 0.075, "chance 4%", color="#666666", ha="center", va="bottom",
+            fontsize=7,
+            bbox=dict(boxstyle="round,pad=0.25", fc="white", ec="none", alpha=0.85))
+    ax.set_xticks(x); ax.set_xticklabels([PRETTY[t] for t in TAGS])
+    ax.set_ylabel("story2motif accuracy"); ax.set_ylim(0, 1.24)
+    ax.set_yticks([0, 0.2, 0.4, 0.6, 0.8, 1.0])
     for i, t in enumerate(TAGS):
         ax.text(i, max(zh_acc[i], en_acc[i]) + 0.03,
-                f"p={results[t]['mcnemar_exact_p']:.2f}", ha="center", fontsize=8)
-    ax.legend(fontsize=8, loc="lower right", framealpha=0.9)
-    ax.set_title("(a) Accuracy by story language", fontsize=10)
+                f"p={results[t]['mcnemar_exact_p']:.2f}", ha="center")
+    ax.legend(loc="upper center", ncol=2)
+    ax.set_title("(a) Accuracy by story language")
 
     ax = axes[1]
     cats = ["both\ncorrect", "ZH only", "EN only", "neither"]
     bottoms = np.zeros(4)
-    colors = {"api_gpt-5.5": "#4477aa", "api_gpt-5.2": "#66ccee",
-              "api_claude-opus-4-8": "#ee6677"}
     for t in TAGS:
         c = results[t]["contingency"]
         vals = [c["both_correct"], c["zh_only"], c["en_only"], c["neither"]]
-        ax.bar(cats, vals, 0.6, bottom=bottoms, label=PRETTY[t], color=colors[t])
+        ax.bar(cats, vals, 0.6, bottom=bottoms, label=PRETTY[t],
+               color=figstyle.MODEL_COLORS[PRETTY[t]])
         bottoms += np.array(vals)
     ax.set_ylabel("items (stacked over models)")
-    ax.legend(fontsize=8)
-    ax.set_title("(b) Paired outcomes per item", fontsize=10)
+    ax.legend()
+    ax.set_title("(b) Paired outcomes per item")
     fig.tight_layout()
-    fig.savefig(OUT / "bilingual_transport.pdf")
-    fig.savefig(OUT / "bilingual_transport.png", dpi=180)
-    print("figure ->", OUT / "bilingual_transport.pdf")
+    for tgt in (OUT, ROOT / "paper" / "figs"):
+        fig.savefig(tgt / "bilingual_transport.pdf")
+        fig.savefig(tgt / "bilingual_transport.png", dpi=180)
+    print("figure ->", OUT / "bilingual_transport.pdf", "(also paper/figs/)")
 
 
 if __name__ == "__main__":

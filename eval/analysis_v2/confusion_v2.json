@@ -2,9 +2,13 @@
  "seed": 20260721,
  "n_perm": 10000,
  "models": [
-  "api_gpt-5.5",
-  "api_gpt-5.2",
-  "api_claude-opus-4-8",
+  "or_gpt-5.5",
+  "or_gpt-5.2",
+  "or_claude-opus-4.8",
+  "or_gemini-3.1-pro",
+  "or_kimi-k2.5",
+  "or_qwen2.5-vl-72b",
+  "or_deepseek-v3.2",
   "qwen2.5-vl-32b",
   "qwen2-vl-7b",
   "qwen2.5-14b",
@@ -18,343 +22,371 @@
   "theorem2motif"
  ],
  "meta": {
-  "n_id_records": 2463,
-  "n_wrong_total": 1081,
-  "n_invalid_pred": 16,
-  "n_valid_errors": 1065
+  "n_id_records": 3824,
+  "n_wrong_total": 1464,
+  "n_invalid_pred": 14,
+  "n_valid_errors": 1450
  },
  "distance_share": {
-  "n_errors": 1065,
+  "n_errors": 1450,
   "counts": {
-   "1": 471,
-   "2": 325,
-   "3": 269
+   "1": 655,
+   "2": 429,
+   "3": 366
   },
   "share": {
-   "1": 0.4422535211267606,
-   "2": 0.3051643192488263,
-   "3": 0.25258215962441316
+   "1": 0.4517241379310345,
+   "2": 0.29586206896551726,
+   "3": 0.2524137931034483
   },
   "chance_share": {
-   "1": 0.20477308294208324,
-   "2": 0.33521126760565506,
-   "3": 0.4600156494523472
+   "1": 0.20620689655172156,
+   "2": 0.33548850574718264,
+   "3": 0.458304597701118
   },
-  "d1_over_chance": 2.159724875812144,
+  "d1_over_chance": 2.1906354515050444,
   "perm_p_d1": 9.999000099990002e-05
  },
  "mantel_confusion_vs_family": {
-  "r": 0.3459523658267987,
+  "r": 0.34028367614539967,
   "p": 9.999000099990002e-05
  },
  "scene_skeleton_subset": {
-  "n_errors": 536,
-  "n_same_family": 272,
-  "same_family_share": 0.5074626865671642,
-  "mantel_r": 0.31863599666560355,
+  "n_errors": 769,
+  "n_same_family": 388,
+  "same_family_share": 0.5045513654096229,
+  "mantel_r": 0.2903293787353406,
   "mantel_p": 9.999000099990002e-05,
-  "mean_count_inside": 4.25,
-  "mean_count_outside": 1.11864406779661,
-  "inside_over_outside": 3.7992424242424248,
+  "mean_count_inside": 6.0625,
+  "mean_count_outside": 1.6144067796610169,
+  "inside_over_outside": 3.755249343832021,
   "family_dyad_share": 0.21333333333333335
  },
  "ged_concentration": {
   "pooled": {
-   "n_errors": 1065,
-   "mean_percentile_rank": 0.3838130230659318,
+   "n_errors": 1450,
+   "mean_percentile_rank": 0.3708395802098951,
    "median_percentile_rank": 0.30434782608695654,
-   "null_mean": 0.5002144641763622,
-   "null_sd": 0.009180183590517432,
+   "null_mean": 0.4999839235382309,
+   "null_sd": 0.007823206818549075,
    "p_perm_lower": 9.999000099990002e-05,
-   "share_in_nearest_quartile": 0.3211267605633803
+   "share_in_nearest_quartile": 0.3289655172413793
   },
   "frontier": {
-   "n_errors": 300,
-   "mean_percentile_rank": 0.36768115942028984,
+   "n_errors": 347,
+   "mean_percentile_rank": 0.34607192081192834,
    "median_percentile_rank": 0.30434782608695654,
-   "null_mean": 0.4998143115942029,
-   "null_sd": 0.01730970226037216,
+   "null_mean": 0.5000316752286682,
+   "null_sd": 0.016236662725631602,
    "p_perm_lower": 9.999000099990002e-05,
-   "share_in_nearest_quartile": 0.36
+   "share_in_nearest_quartile": 0.37175792507204614
   },
   "vision_tasks": {
-   "n_errors": 536,
-   "mean_percentile_rank": 0.4269143413367943,
+   "n_errors": 769,
+   "mean_percentile_rank": 0.4072482614349522,
    "median_percentile_rank": 0.391304347826087,
-   "null_mean": 0.5000315298507462,
-   "null_sd": 0.012973162818774288,
+   "null_mean": 0.49989056934471593,
+   "null_sd": 0.010808172394804904,
    "p_perm_lower": 9.999000099990002e-05,
-   "share_in_nearest_quartile": 0.31716417910447764
+   "share_in_nearest_quartile": 0.31859557867360205
   },
   "text_tasks": {
-   "n_errors": 529,
-   "mean_percentile_rank": 0.34014136598997285,
+   "n_errors": 681,
+   "mean_percentile_rank": 0.32972610610994063,
    "median_percentile_rank": 0.2608695652173913,
-   "null_mean": 0.49989710692857714,
-   "null_sd": 0.013152703870716789,
+   "null_mean": 0.5002289982761919,
+   "null_sd": 0.011548230045662088,
    "p_perm_lower": 9.999000099990002e-05,
-   "share_in_nearest_quartile": 0.32514177693761814
+   "share_in_nearest_quartile": 0.3406754772393539
   }
  },
  "dyadic_family_ged": {
   "beta": {
-   "family": 0.41181596860165043,
-   "ged_sim": 0.070297193493215
+   "family": 0.4215216440467701,
+   "ged_sim": 0.09173601336070858
   },
   "p_perm": {
    "family": 0.00019998000199980003,
-   "ged_sim": 0.5916408359164084
+   "ged_sim": 0.49725027497250274
   },
-  "n_errors": 1065
+  "n_errors": 1450
  },
  "cross_model": {
-  "api_gpt-5.5__api_gpt-5.2": {
+  "or_gpt-5.5__or_gpt-5.2": {
    "n_shared": 405,
-   "kappa": 0.5920841571231394,
-   "n_both_wrong": 56,
+   "kappa": 0.6622185154295245,
+   "n_both_wrong": 61,
+   "n_same_wrong_pred": 46,
+   "same_wrong_share": 0.7540983606557377
+  },
+  "or_gpt-5.5__or_claude-opus-4.8": {
+   "n_shared": 405,
+   "kappa": 0.5438519171441163,
+   "n_both_wrong": 63,
+   "n_same_wrong_pred": 33,
+   "same_wrong_share": 0.5238095238095238
+  },
+  "or_gpt-5.5__or_gemini-3.1-pro": {
+   "n_shared": 405,
+   "kappa": 0.627348010502929,
+   "n_both_wrong": 45,
+   "n_same_wrong_pred": 36,
+   "same_wrong_share": 0.8
+  },
+  "or_gpt-5.2__or_claude-opus-4.8": {
+   "n_shared": 405,
+   "kappa": 0.5258780036968577,
+   "n_both_wrong": 71,
    "n_same_wrong_pred": 42,
-   "same_wrong_share": 0.75
+   "same_wrong_share": 0.5915492957746479
   },
-  "api_gpt-5.5__api_claude-opus-4-8": {
+  "or_gpt-5.2__or_gemini-3.1-pro": {
    "n_shared": 405,
-   "kappa": 0.38107463781404755,
-   "n_both_wrong": 56,
-   "n_same_wrong_pred": 30,
-   "same_wrong_share": 0.5357142857142857
+   "kappa": 0.5250195465207194,
+   "n_both_wrong": 47,
+   "n_same_wrong_pred": 35,
+   "same_wrong_share": 0.7446808510638298
   },
-  "api_gpt-5.2__api_claude-opus-4-8": {
+  "or_claude-opus-4.8__or_gemini-3.1-pro": {
    "n_shared": 405,
-   "kappa": 0.4381475250154965,
-   "n_both_wrong": 68,
-   "n_same_wrong_pred": 32,
-   "same_wrong_share": 0.47058823529411764
+   "kappa": 0.43898236367322113,
+   "n_both_wrong": 50,
+   "n_same_wrong_pred": 31,
+   "same_wrong_share": 0.62
   },
-  "api_gpt-5.5__qwen2-vl-7b": {
+  "or_gpt-5.5__qwen2-vl-7b": {
    "n_shared": 405,
-   "kappa": 0.0886273152155098,
-   "n_both_wrong": 64,
-   "n_same_wrong_pred": 9,
-   "same_wrong_share": 0.140625
+   "kappa": 0.08385093167701865,
+   "n_both_wrong": 62,
+   "n_same_wrong_pred": 10,
+   "same_wrong_share": 0.16129032258064516
   },
-  "api_gpt-5.2__qwen2-vl-7b": {
+  "or_gpt-5.2__qwen2-vl-7b": {
    "n_shared": 405,
-   "kappa": 0.13307170888333925,
-   "n_both_wrong": 82,
-   "n_same_wrong_pred": 13,
-   "same_wrong_share": 0.15853658536585366
+   "kappa": 0.1407440609592111,
+   "n_both_wrong": 85,
+   "n_same_wrong_pred": 15,
+   "same_wrong_share": 0.17647058823529413
   },
-  "api_claude-opus-4-8__qwen2-vl-7b": {
+  "or_claude-opus-4.8__qwen2-vl-7b": {
    "n_shared": 405,
-   "kappa": 0.22518862449216473,
-   "n_both_wrong": 124,
-   "n_same_wrong_pred": 25,
-   "same_wrong_share": 0.20161290322580644
+   "kappa": 0.19090652358090926,
+   "n_both_wrong": 110,
+   "n_same_wrong_pred": 21,
+   "same_wrong_share": 0.19090909090909092
+  },
+  "or_gemini-3.1-pro__qwen2-vl-7b": {
+   "n_shared": 405,
+   "kappa": 0.03074584002027193,
+   "n_both_wrong": 46,
+   "n_same_wrong_pred": 8,
+   "same_wrong_share": 0.17391304347826086
   }
  },
  "per_motif_recall": {
   "self_reference": {
-   "recall": 0.35398230088495575,
-   "n": 113
+   "recall": 0.3352272727272727,
+   "n": 176
   },
   "recursion": {
-   "recall": 0.48672566371681414,
-   "n": 113
+   "recall": 0.5738636363636364,
+   "n": 176
   },
   "nesting": {
-   "recall": 0.39823008849557523,
-   "n": 113
+   "recall": 0.4090909090909091,
+   "n": 176
   },
   "cycle": {
-   "recall": 0.8425925925925926,
-   "n": 108
+   "recall": 0.8809523809523809,
+   "n": 168
   },
   "symmetry": {
-   "recall": 0.6601941747572816,
-   "n": 103
+   "recall": 0.7125,
+   "n": 160
   },
   "alternation": {
-   "recall": 0.8849557522123894,
-   "n": 113
+   "recall": 0.8693181818181818,
+   "n": 176
   },
   "spiral": {
-   "recall": 0.7522123893805309,
-   "n": 113
+   "recall": 0.8068181818181818,
+   "n": 176
   },
   "convergence": {
-   "recall": 0.6116504854368932,
-   "n": 103
+   "recall": 0.7375,
+   "n": 160
   },
   "bottleneck": {
-   "recall": 0.6504854368932039,
-   "n": 103
+   "recall": 0.7625,
+   "n": 160
   },
   "symmetry_breaking": {
-   "recall": 0.5398230088495575,
-   "n": 113
+   "recall": 0.6420454545454546,
+   "n": 176
   },
   "strange_loop": {
-   "recall": 0.5256410256410257,
-   "n": 78
+   "recall": 0.5583333333333333,
+   "n": 120
   },
   "figure_ground": {
-   "recall": 0.18823529411764706,
-   "n": 85
+   "recall": 0.23484848484848486,
+   "n": 132
   },
   "isomorphism": {
-   "recall": 0.5048543689320388,
-   "n": 103
+   "recall": 0.6,
+   "n": 160
   },
   "mobius": {
-   "recall": 0.6796116504854369,
-   "n": 103
+   "recall": 0.7125,
+   "n": 160
   },
   "braiding": {
-   "recall": 0.6213592233009708,
-   "n": 103
+   "recall": 0.68125,
+   "n": 160
   },
   "interference": {
-   "recall": 0.49473684210526314,
-   "n": 95
+   "recall": 0.5472972972972973,
+   "n": 148
   },
   "tiling": {
-   "recall": 0.6804123711340206,
-   "n": 97
+   "recall": 0.7368421052631579,
+   "n": 152
   },
   "hub": {
-   "recall": 0.5663716814159292,
-   "n": 113
+   "recall": 0.6193181818181818,
+   "n": 176
   },
   "diagonalization": {
-   "recall": 0.5128205128205128,
-   "n": 78
+   "recall": 0.6,
+   "n": 120
   },
   "infinite_descent": {
-   "recall": 0.5060240963855421,
-   "n": 83
+   "recall": 0.546875,
+   "n": 128
   },
   "coprime_orbit": {
-   "recall": 0.7475728155339806,
-   "n": 103
+   "recall": 0.8125,
+   "n": 160
   },
   "pigeonhole": {
-   "recall": 0.6794871794871795,
-   "n": 78
+   "recall": 0.675,
+   "n": 120
   },
   "projective_duality": {
-   "recall": 0.3010752688172043,
-   "n": 93
+   "recall": 0.3541666666666667,
+   "n": 144
   },
   "contraction_fixed_point": {
-   "recall": 0.2653061224489796,
-   "n": 98
+   "recall": 0.3157894736842105,
+   "n": 152
   },
   "aperiodic_tiling": {
-   "recall": 0.3620689655172414,
-   "n": 58
+   "recall": 0.5340909090909091,
+   "n": 88
   }
  },
  "hardest_bottom5": [
   {
    "motif": "figure_ground",
-   "recall": 0.18823529411764706,
-   "n": 85
+   "recall": 0.23484848484848486,
+   "n": 132
   },
   {
    "motif": "contraction_fixed_point",
-   "recall": 0.2653061224489796,
-   "n": 98
-  },
-  {
-   "motif": "projective_duality",
-   "recall": 0.3010752688172043,
-   "n": 93
+   "recall": 0.3157894736842105,
+   "n": 152
   },
   {
    "motif": "self_reference",
-   "recall": 0.35398230088495575,
-   "n": 113
+   "recall": 0.3352272727272727,
+   "n": 176
   },
   {
-   "motif": "aperiodic_tiling",
-   "recall": 0.3620689655172414,
-   "n": 58
+   "motif": "projective_duality",
+   "recall": 0.3541666666666667,
+   "n": 144
+  },
+  {
+   "motif": "nesting",
+   "recall": 0.4090909090909091,
+   "n": 176
   }
  ],
  "top_confusions": [
   {
-   "true": "braiding",
-   "pred": "cycle",
-   "count": 29
-  },
-  {
-   "true": "contraction_fixed_point",
-   "pred": "recursion",
-   "count": 28
-  },
-  {
    "true": "self_reference",
    "pred": "recursion",
-   "count": 27
-  },
-  {
-   "true": "self_reference",
-   "pred": "nesting",
-   "count": 27
-  },
-  {
-   "true": "figure_ground",
-   "pred": "tiling",
-   "count": 24
-  },
-  {
-   "true": "symmetry",
-   "pred": "cycle",
-   "count": 23
+   "count": 52
   },
   {
    "true": "projective_duality",
    "pred": "isomorphism",
-   "count": 23
+   "count": 43
+  },
+  {
+   "true": "braiding",
+   "pred": "cycle",
+   "count": 40
+  },
+  {
+   "true": "self_reference",
+   "pred": "nesting",
+   "count": 39
+  },
+  {
+   "true": "figure_ground",
+   "pred": "tiling",
+   "count": 38
+  },
+  {
+   "true": "contraction_fixed_point",
+   "pred": "recursion",
+   "count": 33
   },
   {
    "true": "strange_loop",
    "pred": "cycle",
-   "count": 18
-  },
-  {
-   "true": "diagonalization",
-   "pred": "alternation",
-   "count": 18
-  },
-  {
-   "true": "isomorphism",
-   "pred": "symmetry",
-   "count": 17
-  },
-  {
-   "true": "nesting",
-   "pred": "spiral",
-   "count": 16
-  },
-  {
-   "true": "spiral",
-   "pred": "cycle",
-   "count": 16
+   "count": 30
   },
   {
    "true": "nesting",
    "pred": "recursion",
-   "count": 15
+   "count": 28
   },
   {
-   "true": "figure_ground",
-   "pred": "alternation",
-   "count": 15
+   "true": "symmetry",
+   "pred": "cycle",
+   "count": 28
   },
   {
-   "true": "mobius",
-   "pred": "alternation",
-   "count": 15
+   "true": "nesting",
+   "pred": "spiral",
+   "count": 24
+  },
+  {
+   "true": "tiling",
+   "pred": "convergence",
+   "count": 23
+  },
+  {
+   "true": "isomorphism",
+   "pred": "symmetry",
+   "count": 22
+  },
+  {
+   "true": "spiral",
+   "pred": "cycle",
+   "count": 21
+  },
+  {
+   "true": "coprime_orbit",
+   "pred": "symmetry",
+   "count": 20
+  },
+  {
+   "true": "recursion",
+   "pred": "symmetry",
+   "count": 19
   }
  ]
 }

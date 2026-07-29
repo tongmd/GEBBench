@@ -16,18 +16,18 @@ os.environ.setdefault("KMP_DUPLICATE_LIB_OK", "TRUE")
 
 import matplotlib
 matplotlib.use("Agg")
+
+import sys
+sys.path.insert(0, "/Users/stone/GEB-benchmark")
+import figstyle
+figstyle.use()
+
 import matplotlib.pyplot as plt
 import numpy as np
 
 OUT = Path("/Users/stone/GEB-benchmark/eval/analysis_out")
+FIGS = Path("/Users/stone/GEB-benchmark/paper/figs")
 R = json.loads((OUT / "perceptual_race.json").read_text())
-
-INK = "#1F2421"
-plt.rcParams.update({
-    "font.size": 10, "figure.facecolor": "white", "axes.facecolor": "white",
-    "axes.edgecolor": "#CCCCCC", "text.color": INK, "axes.labelcolor": INK,
-    "xtick.color": INK, "ytick.color": INK,
-})
 
 EMBS = ["dinov2", "clip_b32", "siglip"]
 EMB_LABEL = {"dinov2": "DINOv2", "clip_b32": "CLIP ViT-B/32",
@@ -35,7 +35,7 @@ EMB_LABEL = {"dinov2": "DINOv2", "clip_b32": "CLIP ViT-B/32",
 BAR_KEYS = ["formal_family", "label_prior", "PERC"]
 BAR_LABEL = {"formal_family": "formal family", "label_prior": "label prior",
              "PERC": "perceptual"}
-COLOR = {"formal_family": "#C4612F", "label_prior": "#D9A066",
+COLOR = {"formal_family": figstyle.ACCENT, "label_prior": "#D9A066",
          "PERC": "#5C7A99"}
 
 
@@ -45,7 +45,7 @@ def mark(p):
 
 races = R["race_one_perceptual_at_a_time"]
 
-fig, ax = plt.subplots(figsize=(6.0, 3.2))
+fig, ax = plt.subplots(figsize=(figstyle.FULL, 2.6))
 width = 0.24
 xs = np.arange(len(EMBS))
 for bi, key in enumerate(BAR_KEYS):
@@ -68,13 +68,13 @@ ax.set_xticklabels([EMB_LABEL[e] for e in EMBS])
 ax.set_xlabel("perceptual baseline entered in the race")
 ax.set_ylabel(r"standardized dyadic $\beta$")
 ax.set_title("Dyadic regression of pooled confusions:\n"
-             "formal family + label prior + one perceptual geometry",
-             fontsize=10)
-ax.spines[["top", "right"]].set_visible(False)
-ax.legend(frameon=False, fontsize=8.5, loc="upper left", ncol=3)
+             "formal family + label prior + one perceptual geometry")
+ax.legend(loc="upper left", ncol=3)
 ax.set_ylim(min(-0.05, ax.get_ylim()[0]), ax.get_ylim()[1] * 1.18)
 
 fig.tight_layout()
 fig.savefig(OUT / "perceptual_race.pdf")
 fig.savefig(OUT / "perceptual_race.png", dpi=200)
-print("wrote", OUT / "perceptual_race.pdf", "and .png")
+fig.savefig(FIGS / "perceptual_race.pdf")
+print("wrote", OUT / "perceptual_race.pdf", "and .png,",
+      "and", FIGS / "perceptual_race.pdf")

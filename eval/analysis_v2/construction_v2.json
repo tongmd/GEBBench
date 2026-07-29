@@ -386,8 +386,9 @@
    "aperiodic_tiling": 1
   },
   "spearman_failrate_vs_acc": {
-   "rho": -0.4846340347959407,
-   "p": 0.01408120462494355
+   "rho": -0.4539463597692583,
+   "p": 0.022645204164121916,
+   "pool": "8 vision models (OpenRouter migration)"
   },
   "spearman_deficit_vs_acc": {
    "rho": -0.5021722458332235,

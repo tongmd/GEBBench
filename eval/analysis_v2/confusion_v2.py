@@ -28,6 +28,10 @@ from pathlib import Path
 
 import matplotlib
 matplotlib.use("Agg")
+import sys
+sys.path.insert(0, "/Users/stone/GEB-benchmark")
+import figstyle
+figstyle.use()
 import matplotlib.pyplot as plt
 import numpy as np
 
@@ -38,10 +42,13 @@ OUT.mkdir(exist_ok=True)
 RNG = np.random.default_rng(20260721)
 N_PERM = 10_000
 
-MODELS = ["api_gpt-5.5", "api_gpt-5.2", "api_claude-opus-4-8",
+MODELS = ["or_gpt-5.5", "or_gpt-5.2", "or_claude-opus-4.8",
+          "or_gemini-3.1-pro", "or_kimi-k2.5", "or_qwen2.5-vl-72b",
+          "or_deepseek-v3.2",
           "qwen2.5-vl-32b", "qwen2-vl-7b",
           "qwen2.5-14b", "qwen2.5-7b", "deepseek-coder-v2-lite"]
-FRONTIER = ["api_gpt-5.5", "api_gpt-5.2", "api_claude-opus-4-8"]
+FRONTIER = ["or_gpt-5.5", "or_gpt-5.2", "or_claude-opus-4.8",
+            "or_gemini-3.1-pro"]
 ID_TASKS = ("scene2motif", "skeleton2motif", "story2motif", "theorem2motif")
 VISION_TASKS = ("scene2motif", "skeleton2motif")
 TEXT_TASKS = ("story2motif", "theorem2motif")
@@ -60,11 +67,6 @@ FAMILIES = [  # verbatim from eval/build_items.py:34
     ["contraction_fixed_point", "spiral", "convergence", "nesting"],
     ["aperiodic_tiling", "tiling", "interference", "alternation"],
 ]
-
-# warm palette (eval/make_additional_figures.py)
-BG, SURFACE = "#F7F4EF", "#FBF9F5"
-TERRACOTTA, MUTED, INK = "#C4612F", "#5C635D", "#1F2421"
-
 
 # ---------------------------------------------------------------- distances
 def same_family(a, b):
@@ -314,32 +316,22 @@ def pair_stats(recs_a, recs_b):
 
 # ---------------------------------------------------------------- figure
 def make_figure(ds):
-    plt.rcParams.update({
-        "font.family": "sans-serif",
-        "font.sans-serif": ["Inter", "DejaVu Sans"],
-        "font.size": 9, "axes.labelsize": 9, "axes.titlesize": 10,
-        "xtick.labelsize": 8, "ytick.labelsize": 8, "legend.fontsize": 8,
-        "figure.facecolor": BG, "axes.facecolor": SURFACE,
-        "axes.edgecolor": "#E7E1D7", "axes.labelcolor": INK,
-        "text.color": INK, "xtick.color": MUTED, "ytick.color": MUTED,
-    })
-    fig, ax = plt.subplots(figsize=(4.6, 3.2))
+    # figure is included at ~0.46\linewidth in the paper -> half-width
+    fig, ax = plt.subplots(figsize=(figstyle.HALF, 1.9))
     dists = [1, 2, 3]
     obs_frac = [ds["share"][d] * 100 for d in dists]
     exp_frac = [ds["chance_share"][d] * 100 for d in dists]
     x = np.arange(3)
     ax.bar(x - 0.18, obs_frac, 0.36, label="Observed errors",
-           color=TERRACOTTA)
+           color=figstyle.ACCENT)
     ax.bar(x + 0.18, exp_frac, 0.36,
-           label="Chance (uniform over wrong options)", color="#B9B3A8")
+           label="Chance (uniform over wrong options)", color="#BBBBBB")
     ax.set_xticks(x)
     ax.set_xticklabels(["Same family\n(d=1)", "Shares a member\n(d=2)",
                         "Unrelated\n(d=3)"])
     ax.set_ylabel("Share of all errors (%)")
-    ax.set_title("Errors concentrate at minimal formal distance",
-                 fontsize=10)
-    ax.legend(frameon=False, fontsize=8)
-    ax.spines[["top", "right"]].set_visible(False)
+    ax.set_title("Errors concentrate at minimal formal distance", pad=26)
+    ax.legend(loc="lower left", bbox_to_anchor=(0, 1.02), borderaxespad=0)
     plt.tight_layout()
     for ext in ("pdf", "png"):
         kw = {"dpi": 150} if ext == "png" else {}
@@ -412,7 +404,7 @@ def main():
     # ---- 1c. GED percentile-rank concentration -------------------------
     conc = {"pooled": perm_test_mean_rank(errors, GED)}
     conc["frontier"] = perm_test_mean_rank(
-        [e for e in errors if e[0].startswith("api_")], GED)
+        [e for e in errors if e[0] in FRONTIER], GED)
     conc["vision_tasks"] = perm_test_mean_rank(
         [e for e in errors if e[1] in VISION_TASKS], GED)
     conc["text_tasks"] = perm_test_mean_rank(

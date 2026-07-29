@@ -90,7 +90,11 @@ def load_confusions(motifs):
     """per model: counts[i,j] = #errors true=i pred=j; exposure[i] = #items."""
     idx = {m: i for i, m in enumerate(motifs)}
     models = {}
-    files = (sorted(glob.glob(str(ROOT / "eval/results/*.json")))
+    # main-eval v2 vision errors (210 scenes + 49 skeletons per vision model)
+    # + the controlled nuisance-resample render pool; both OpenRouter/local
+    # provenance.  (The v1 pilot pool is superseded: its scenes are a subset
+    # of the v2 scene set, so pooling both would double-count stimuli.)
+    files = (sorted(glob.glob(str(ROOT / "eval/results_v2/*.json")))
              + sorted(glob.glob(str(EXP / "results/*.json"))))
     for f in files:
         d = json.loads(Path(f).read_text())

@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """V2 appendix assets: verbatim EN menu table + appendix figures
 (hardest_motifs, confusion_pairs, task_breakdown, per_motif_heatmap, scaling)
-regenerated from eval/results_v2 with the paper's warm palette."""
+regenerated from eval/results_v2 with the shared ICLR figstyle."""
 
 import json
 import re
@@ -11,6 +11,8 @@ from pathlib import Path
 import numpy as np
 import matplotlib
 matplotlib.use("Agg")
+import sys; sys.path.insert(0, "/Users/stone/GEB-benchmark")
+import figstyle; figstyle.use()
 import matplotlib.pyplot as plt
 
 ROOT = Path(__file__).resolve().parents[2]
@@ -21,30 +23,22 @@ LIB = json.loads((ROOT / "data" / "motif_library.json").read_text())
 MOTIFS = [m["id"] for m in LIB]
 LIB_MAP = {m["id"]: m for m in LIB}
 
-MODELS = ["api_gpt-5.5", "api_gpt-5.2", "api_claude-opus-4-8",
+MODELS = ["or_gpt-5.5", "or_gpt-5.2", "or_claude-opus-4.8",
+          "or_gemini-3.1-pro", "or_kimi-k2.5", "or_qwen2.5-vl-72b",
+          "or_deepseek-v3.2",
           "qwen2.5-vl-32b", "deepseek-coder-v2-lite",
           "qwen2.5-14b", "qwen2.5-7b", "qwen2-vl-7b"]
 LABELS = ["GPT-5.5", "GPT-5.2", "Claude Opus 4.8",
+          "Gemini 3.1 Pro", "Kimi K2.5", "Qwen2.5-VL-72B",
+          "DeepSeek-V3.2",
           "Qwen2.5-VL-32B", "DeepSeek-Coder-V2-Lite",
           "Qwen2.5-14B", "Qwen2.5-7B", "Qwen2-VL-7B"]
 ID_TASKS = ["scene2motif", "skeleton2motif", "story2motif", "theorem2motif"]
 
-BG = "#F7F4EF"
-SURFACE = "#FBF9F5"
-TERRACOTTA = "#C4612F"
-MUTED = "#5C635D"
-INK = "#1F2421"
-
-plt.rcParams.update({
-    "font.family": "sans-serif",
-    "font.sans-serif": ["Inter", "DejaVu Sans"],
-    "font.size": 9, "axes.labelsize": 9, "axes.titlesize": 10,
-    "xtick.labelsize": 8, "ytick.labelsize": 8, "legend.fontsize": 8,
-    "figure.facecolor": BG, "axes.facecolor": SURFACE,
-    "axes.edgecolor": "#E7E1D7", "axes.labelcolor": INK, "text.color": INK,
-    "xtick.color": MUTED, "ytick.color": MUTED,
-    "grid.color": "#E7E1D7", "grid.alpha": 0.4,
-})
+# colors come from the shared figstyle palette (aesthetics only)
+ACCENT = figstyle.ACCENT
+MUTED = figstyle.NEUTRAL
+INK = "#222222"
 
 
 def motif_name(mid):
@@ -129,23 +123,23 @@ def per_motif_matrix():
 
 def hardest_fig(recall):
     ranked = sorted(recall.items(), key=lambda kv: kv[1])[:10]
-    fig, ax = plt.subplots(figsize=(8, 5))
+    fig, ax = plt.subplots(figsize=(figstyle.FULL, 3.4))
     ids = [m for m, _ in ranked]
     accs = [a * 100 for _, a in ranked]
-    ax.barh(range(len(ids)), accs, color=TERRACOTTA,
+    ax.barh(range(len(ids)), accs, color=ACCENT,
             edgecolor="white", linewidth=0.5)
     for i, a in enumerate(accs):
-        ax.text(a + 1, i, f"{a:.1f}%", va="center", fontsize=8, color=MUTED)
+        ax.text(a + 1, i, f"{a:.1f}%", va="center", fontsize=7, color=MUTED)
     ax.set_yticks(range(len(ids)))
     ax.set_yticklabels([motif_name(m) for m in ids])
-    ax.set_xlabel("Pooled recall (%), all models, four identification tasks",
-                  weight="medium")
-    ax.set_title("Ten Hardest Motifs", weight="medium", pad=12)
+    ax.set_xlabel("Pooled recall (%), all models, four identification tasks")
+    ax.set_title("Ten Hardest Motifs", pad=10)
     ax.set_xlim(0, 100)
     ax.axvline(4.0, color=MUTED, linestyle="--", linewidth=0.8, alpha=0.5,
                label="Random (4%)")
     ax.legend(loc="lower right")
-    ax.grid(axis="x", alpha=0.3)
+    ax.grid(False, axis="y")
+    ax.grid(True, axis="x")
     ax.invert_yaxis()
     fig.tight_layout()
     save(fig, "hardest_motifs")
@@ -155,29 +149,31 @@ def hardest_fig(recall):
 def heatmap_fig(mat):
     from matplotlib.colors import LinearSegmentedColormap
     cmap = LinearSegmentedColormap.from_list(
-        "warmdiv", ["#D73027", "#FFFFFF", "#4575B4"])
-    fig, ax = plt.subplots(figsize=(14, 4.5))
+        "warmdiv", ["#B3402A", "#FFFFFF", "#3E7DA6"])
+    fig, ax = plt.subplots(figsize=(figstyle.FULL, 3.0))
     im = ax.imshow(mat, cmap=cmap, vmin=0, vmax=1, aspect="auto",
                    interpolation="nearest")
+    ax.grid(False)
     for i in range(mat.shape[0]):
         for j in range(mat.shape[1]):
             v = mat[i, j]
             if not np.isnan(v):
                 c = "white" if v < 0.3 or v > 0.7 else INK
                 ax.text(j, i, f"{v:.0%}", ha="center", va="center",
-                        fontsize=6, color=c, weight="medium")
+                        fontsize=4.2, color=c)
     ax.set_xticks(range(len(MOTIFS)))
     ax.set_xticklabels([motif_name(m) for m in MOTIFS], rotation=90,
-                       ha="right", fontsize=7)
+                       ha="right", fontsize=6)
     ax.set_yticks(range(len(MODELS)))
-    ax.set_yticklabels(LABELS)
-    ax.set_xlabel("Motif (25 total)", weight="medium")
-    ax.set_ylabel("Model", weight="medium")
+    ax.set_yticklabels(LABELS, fontsize=6.5)
+    ax.set_xlabel("Motif (25 total)")
+    ax.set_ylabel("Model")
     ax.set_title("Per-Motif Recall Across Models "
                  "(pooled over the four identification tasks)",
-                 weight="medium", pad=12)
+                 pad=10)
     cbar = plt.colorbar(im, ax=ax, fraction=0.02, pad=0.02)
-    cbar.set_label("Recall", rotation=270, labelpad=15)
+    cbar.set_label("Recall", rotation=270, labelpad=10)
+    cbar.ax.tick_params(labelsize=6.5)
     fig.tight_layout()
     save(fig, "per_motif_heatmap")
 
@@ -189,13 +185,14 @@ def confusion_pairs_fig():
     labels = [f"{c['true'].replace('_', ' ')}  →  "
               f"{c['pred'].replace('_', ' ')}" for c in top][::-1]
     ns = [c["count"] for c in top][::-1]
-    fig, ax = plt.subplots(figsize=(6.4, 3.4))
-    ax.barh(range(len(ns)), ns, color=TERRACOTTA, height=0.62,
+    fig, ax = plt.subplots(figsize=(figstyle.FULL, 2.9))
+    ax.barh(range(len(ns)), ns, color=ACCENT, height=0.62,
             edgecolor="white", linewidth=0.5)
     ax.set_yticks(range(len(ns)))
-    ax.set_yticklabels(labels, fontsize=9.5)
+    ax.set_yticklabels(labels)
     ax.set_xlabel("pooled errors (all models, four identification tasks)")
-    ax.grid(axis="x", alpha=0.3)
+    ax.grid(False, axis="y")
+    ax.grid(True, axis="x")
     fig.tight_layout()
     save(fig, "confusion_pairs")
     return top
@@ -216,7 +213,7 @@ def task_breakdown_fig():
         for j, t in enumerate(tasks):
             if t in nums[tag]["accs"]:
                 data[i, j] = nums[tag]["accs"][t]
-    fig, ax = plt.subplots(figsize=(11, 4))
+    fig, ax = plt.subplots(figsize=(figstyle.FULL, 3.0))
     x = np.arange(len(MODELS))
     width = 0.105
     for j, tl in enumerate(tlabels):
@@ -227,14 +224,14 @@ def task_breakdown_fig():
                label="Chance (25-way)")
     ax.axhline(25.0, color=MUTED, linestyle=":", linewidth=0.8, alpha=0.6,
                label="Chance (4-way)")
-    ax.set_xlabel("Model", weight="medium")
-    ax.set_ylabel("Accuracy (%)", weight="medium")
-    ax.set_title("Per-Task Accuracy Breakdown", weight="medium", pad=12)
+    ax.set_xlabel("Model")
+    ax.set_ylabel("Accuracy (%)")
+    ax.set_title("Per-Task Accuracy Breakdown", pad=10)
     ax.set_xticks(x)
     ax.set_xticklabels(LABELS, rotation=20, ha="right")
     ax.set_ylim(0, 100)
-    ax.legend(loc="upper right", frameon=True, ncol=2)
-    ax.grid(axis="y", alpha=0.3)
+    ax.legend(loc="upper right", ncol=2)
+    ax.grid(True, axis="y")
     fig.tight_layout()
     save(fig, "task_breakdown")
 
@@ -246,16 +243,17 @@ def scaling_fig():
     sizes = [7, 14, 32]
     thm = [nums[t]["accs"]["theorem2motif"] / 100 for t in fam]
     sto = [nums[t]["accs"]["story2motif"] / 100 for t in fam]
-    fig, ax = plt.subplots(figsize=(4.4, 3.1))
-    ax.plot(sizes, thm, "o-", color=TERRACOTTA, label="theorem", lw=2)
-    ax.plot(sizes, sto, "s-", color="#3B4A8C", label="story", lw=2)
-    g55t = nums["api_gpt-5.5"]["accs"]["theorem2motif"] / 100
-    g55s = nums["api_gpt-5.5"]["accs"]["story2motif"] / 100
-    ax.axhline(g55t, color=TERRACOTTA, lw=1, ls="--", alpha=0.55)
-    ax.axhline(g55s, color="#3B4A8C", lw=1, ls="--", alpha=0.55)
-    ax.text(32.7, g55t - 0.015, "GPT-5.5", color=TERRACOTTA, fontsize=8.5,
-            va="top")
-    ax.text(32.7, g55s - 0.015, "GPT-5.5", color="#3B4A8C", fontsize=8.5,
+    STORY_BLUE = "#3E7DA6"  # palette-consistent condition color (task, not model)
+    fig, ax = plt.subplots(figsize=(figstyle.HALF, 2.0))
+    ax.plot(sizes, thm, "o-", color=ACCENT, label="theorem")
+    ax.plot(sizes, sto, "s-", color=STORY_BLUE, label="story")
+    g55t = nums["or_gpt-5.5"]["accs"]["theorem2motif"] / 100
+    g55s = nums["or_gpt-5.5"]["accs"]["story2motif"] / 100
+    ax.axhline(g55t, color=ACCENT, lw=1, ls="--", alpha=0.55)
+    ax.axhline(g55s, color=STORY_BLUE, lw=1, ls="--", alpha=0.55)
+    ax.text(32.7, g55t + 0.015, "GPT-5.5", color=ACCENT, fontsize=7,
+            va="bottom")
+    ax.text(32.7, g55s - 0.015, "GPT-5.5", color=STORY_BLUE, fontsize=7,
             va="top")
     ax.set_xscale("log")
     ax.set_xticks(sizes)
@@ -265,7 +263,7 @@ def scaling_fig():
     ax.set_ylabel("accuracy")
     ax.set_ylim(0.0, 1.0)
     ax.set_xlim(6, 40)
-    ax.legend(frameon=False, loc="lower right", fontsize=9.5)
+    ax.legend(loc="lower right")
     fig.tight_layout()
     save(fig, "scaling")
 

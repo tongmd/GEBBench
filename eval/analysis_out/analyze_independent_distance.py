@@ -273,8 +273,9 @@ def main():
         "text_ged": perm_test_mean_rank(txt, GED),
     }
 
-    # frontier-only robustness
-    fr = [e for e in errors if e[0].startswith("api_")]
+    # frontier-only robustness (OpenRouter frontier arms of the pilot pool)
+    FRONTIER_TAGS = ("or_gpt-5.5", "or_gpt-5.2", "or_claude-opus-4.8")
+    fr = [e for e in errors if e[0] in FRONTIER_TAGS]
     res["error_concentration_frontier_ged"] = perm_test_mean_rank(fr, GED)
 
     # ---- 5. dyadic regressions -----------------------------------------

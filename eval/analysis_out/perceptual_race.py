@@ -94,7 +94,7 @@ def mantel(A, B, n_perm=N_PERM):
 def load_confusions(motifs):
     idx = {m: i for i, m in enumerate(motifs)}
     models = {}
-    files = (sorted(glob.glob(str(ROOT / "eval/results/*.json")))
+    files = (sorted(glob.glob(str(ROOT / "eval/results_v2/*.json")))
              + sorted(glob.glob(str(EXP / "results/*.json"))))
     for f in files:
         d = json.loads(Path(f).read_text())

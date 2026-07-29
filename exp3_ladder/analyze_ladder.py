@@ -31,6 +31,8 @@ import statsmodels.formula.api as smf
 
 import matplotlib
 matplotlib.use("Agg")
+import sys; sys.path.insert(0, "/Users/stone/GEB-benchmark")
+import figstyle; figstyle.use()
 import matplotlib.pyplot as plt
 
 ROOT = Path(__file__).parent.parent
@@ -56,19 +58,11 @@ FAMILIES = [
     ["aperiodic_tiling", "tiling", "interference", "alternation"],
 ]
 
-# paper palette
-TERRACOTTA, MUTED, INK = "#C4612F", "#5C635D", "#1F2421"
-MODEL_COLORS = [TERRACOTTA, "#3B4A8C", "#5C8A5C", "#8C5C8A", "#B89B4A",
-                "#4A8CB8"]
-plt.rcParams.update({
-    "font.family": "sans-serif",
-    "font.sans-serif": ["Inter", "DejaVu Sans", "Helvetica"],
-    "font.size": 9, "axes.labelsize": 10, "axes.titlesize": 10,
-    "xtick.labelsize": 9, "ytick.labelsize": 9, "legend.fontsize": 8.5,
-    "figure.facecolor": "white", "axes.facecolor": "white",
-    "axes.edgecolor": "#CCCCCC", "axes.labelcolor": INK, "text.color": INK,
-    "xtick.color": MUTED, "ytick.color": MUTED,
-})
+# shared paper palette (figstyle): display name per internal result tag
+PRETTY = {"openai/gpt-5.5": "GPT-5.5", "openai/gpt-5.2": "GPT-5.2",
+          "qwen2.5-vl-32b": "Qwen2.5-VL-32B",
+          "qwen2-vl-7b": "Qwen2-VL-7B"}
+MUTED = figstyle.NEUTRAL
 
 
 def family_degree(mid: str) -> int:
@@ -207,19 +201,25 @@ def main():
         print("threshold vs family degree:", out["threshold_vs_family_degree"])
 
     # ------------------------------------------------------------------ figure
-    fig, ax = plt.subplots(figsize=(5.2, 3.6))
+    fig, ax = plt.subplots(figsize=(figstyle.FULL, 2.7))
     xs = np.linspace(-0.2, 6.2, 300)
     for i, m in enumerate(models):
-        c = MODEL_COLORS[i % len(MODEL_COLORS)]
+        pretty = PRETTY.get(m, m)
+        c = figstyle.MODEL_COLORS.get(pretty, figstyle.NEUTRAL)
+        mk = figstyle.MODEL_MARKERS.get(pretty, "o")
         sub = df[df.model == m]
         acc = sub.groupby("level")["correct"].agg(["mean", "count"])
         se = np.sqrt(acc["mean"] * (1 - acc["mean"]) / acc["count"])
-        ax.errorbar(acc.index, acc["mean"], yerr=se, fmt="o", color=c,
+        ax.errorbar(acc.index, acc["mean"], yerr=se, fmt=mk, color=c,
                     ms=4.5, capsize=2, lw=1, zorder=3)
         r = out["models"][m]
         thr, sl = r["sigmoid_threshold"], r["sigmoid_slope"]
-        ax.plot(xs, sigmoid(xs, thr, sl), color=c, lw=1.8, zorder=2,
-                label=f"{m}  (θ={thr:.1f}, β={sl:.1f})")
+        if sl >= 0.01:  # suppress the curve for a degenerate flat fit
+            ax.plot(xs, sigmoid(xs, thr, sl), color=c, lw=1.6, zorder=2,
+                    label=f"{pretty}  (θ={thr:.1f}, β={sl:.1f})")
+        else:
+            ax.plot([], [], color=c, lw=1.6,
+                    label=f"{pretty}  (flat, β≈0)")
         if -0.2 < thr < 6.2:
             half = GUESS + (1 - GUESS) / 2
             ax.plot([thr, thr], [0, half], color=c, lw=0.9, ls=":", zorder=1)
@@ -237,8 +237,7 @@ def main():
     ax.set_ylabel("scene→motif accuracy (25-way)")
     ax.set_ylim(-0.02, 1.02)
     ax.set_xlim(-0.35, 6.35)
-    ax.spines[["top", "right"]].set_visible(False)
-    ax.legend(frameon=False, loc="lower left", handlelength=1.6)
+    ax.legend(loc="upper right", ncol=2, borderaxespad=0.2)
     fig.tight_layout()
     FIGS.mkdir(parents=True, exist_ok=True)
     fig.savefig(FIGS / "psychophysics.pdf", bbox_inches="tight")

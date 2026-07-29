@@ -24,182 +24,254 @@
   }
  },
  "regression": {
-  "claude-opus-4-8": {
+  "anthropic/claude-opus-4.8": {
    "beta": {
-    "formal_family": 0.3071,
-    "formal_ged": -0.1304,
-    "perceptual_dino": 0.3349,
-    "label_prior": 0.3102
+    "formal_family": 0.5429,
+    "formal_ged": -0.1041,
+    "perceptual_dino": 0.2075,
+    "label_prior": 0.0813
    },
    "p_perm": {
-    "formal_family": 0.18498,
-    "formal_ged": 0.58114,
-    "perceptual_dino": 0.18638,
-    "label_prior": 0.21638
+    "formal_family": 0.0091,
+    "formal_ged": 0.54615,
+    "perceptual_dino": 0.23318,
+    "label_prior": 0.67063
    },
-   "n_errors": 47
+   "n_errors": 124
   },
-  "gpt-5.2": {
+  "google/gemini-3.1-pro-preview": {
    "beta": {
-    "formal_family": 0.284,
-    "formal_ged": -0.1004,
-    "perceptual_dino": 0.0985,
-    "label_prior": 0.2671
+    "formal_family": 0.5519,
+    "formal_ged": -0.3741,
+    "perceptual_dino": 0.4265,
+    "label_prior": 0.2488
    },
    "p_perm": {
-    "formal_family": 0.30087,
-    "formal_ged": 0.64154,
-    "perceptual_dino": 0.66593,
-    "label_prior": 0.32477
+    "formal_family": 0.08449,
+    "formal_ged": 0.16818,
+    "perceptual_dino": 0.11749,
+    "label_prior": 0.42076
    },
-   "n_errors": 52
+   "n_errors": 48
   },
-  "gpt-5.5": {
+  "openai/gpt-5.2": {
    "beta": {
-    "formal_family": 0.383,
-    "formal_ged": 0.0962,
-    "perceptual_dino": 0.1549,
-    "label_prior": 0.1642
+    "formal_family": 0.4645,
+    "formal_ged": -0.0405,
+    "perceptual_dino": 0.135,
+    "label_prior": 0.1795
    },
    "p_perm": {
-    "formal_family": 0.11449,
-    "formal_ged": 0.62884,
-    "perceptual_dino": 0.44576,
-    "label_prior": 0.48255
+    "formal_family": 0.07599,
+    "formal_ged": 0.85741,
+    "perceptual_dino": 0.54525,
+    "label_prior": 0.48425
    },
-   "n_errors": 49
+   "n_errors": 103
+  },
+  "openai/gpt-5.5": {
+   "beta": {
+    "formal_family": 0.5838,
+    "formal_ged": -0.2709,
+    "perceptual_dino": 0.3144,
+    "label_prior": 0.3874
+   },
+   "p_perm": {
+    "formal_family": 0.0407,
+    "formal_ged": 0.25967,
+    "perceptual_dino": 0.18798,
+    "label_prior": 0.15948
+   },
+   "n_errors": 85
+  },
+  "moonshotai/kimi-k2.5": {
+   "beta": {
+    "formal_family": 0.6029,
+    "formal_ged": -0.2454,
+    "perceptual_dino": 0.2299,
+    "label_prior": 0.3679
+   },
+   "p_perm": {
+    "formal_family": 0.038,
+    "formal_ged": 0.32927,
+    "perceptual_dino": 0.37076,
+    "label_prior": 0.19878
+   },
+   "n_errors": 66
+  },
+  "qwen/qwen2.5-vl-72b-instruct": {
+   "beta": {
+    "formal_family": 0.2978,
+    "formal_ged": 0.1338,
+    "perceptual_dino": 0.136,
+    "label_prior": -0.1498
+   },
+   "p_perm": {
+    "formal_family": 0.12649,
+    "formal_ged": 0.45195,
+    "perceptual_dino": 0.47255,
+    "label_prior": 0.44566
+   },
+   "n_errors": 130
   },
   "qwen2-vl-7b": {
    "beta": {
-    "formal_family": 0.181,
-    "formal_ged": -0.7817,
-    "perceptual_dino": 0.2137,
-    "label_prior": 0.5484
+    "formal_family": 0.4253,
+    "formal_ged": -0.319,
+    "perceptual_dino": 0.0116,
+    "label_prior": 0.0701
    },
    "p_perm": {
-    "formal_family": 0.41056,
-    "formal_ged": 0.0261,
-    "perceptual_dino": 0.36596,
-    "label_prior": 0.0309
+    "formal_family": 0.0211,
+    "formal_ged": 0.14839,
+    "perceptual_dino": 0.9503,
+    "label_prior": 0.72003
    },
-   "n_errors": 53
+   "n_errors": 182
   },
   "qwen2.5-vl-32b": {
    "beta": {
-    "formal_family": 0.2379,
-    "formal_ged": 0.0468,
-    "perceptual_dino": 0.1818,
-    "label_prior": 0.3288
+    "formal_family": 0.3575,
+    "formal_ged": 0.1951,
+    "perceptual_dino": 0.1813,
+    "label_prior": 0.1279
    },
    "p_perm": {
-    "formal_family": 0.18788,
-    "formal_ged": 0.79122,
-    "perceptual_dino": 0.30487,
-    "label_prior": 0.08709
+    "formal_family": 0.03,
+    "formal_ged": 0.25287,
+    "perceptual_dino": 0.25447,
+    "label_prior": 0.45905
    },
-   "n_errors": 90
+   "n_errors": 181
   },
   "POOLED": {
    "beta": {
-    "formal_family": 0.27,
-    "formal_ged": -0.1903,
-    "perceptual_dino": 0.1906,
-    "label_prior": 0.3371
+    "formal_family": 0.4462,
+    "formal_ged": -0.0966,
+    "perceptual_dino": 0.1685,
+    "label_prior": 0.1366
    },
    "p_perm": {
-    "formal_family": 0.08849,
-    "formal_ged": 0.25217,
-    "perceptual_dino": 0.22368,
-    "label_prior": 0.0434
+    "formal_family": 0.0041,
+    "formal_ged": 0.53345,
+    "perceptual_dino": 0.26097,
+    "label_prior": 0.40926
    },
-   "n_errors": 291
+   "n_errors": 919
   }
  },
  "regression_clip_robustness": {
   "beta": {
-   "formal_family": 0.2453,
-   "formal_ged": -0.1841,
-   "perceptual_dino": 0.1394,
-   "label_prior": 0.36
+   "formal_family": 0.4227,
+   "formal_ged": -0.1045,
+   "perceptual_dino": 0.197,
+   "label_prior": 0.1535
   },
   "p_perm": {
-   "formal_family": 0.12199,
-   "formal_ged": 0.26537,
-   "perceptual_dino": 0.40406,
-   "label_prior": 0.0298
+   "formal_family": 0.0068,
+   "formal_ged": 0.51175,
+   "perceptual_dino": 0.20758,
+   "label_prior": 0.35536
   }
  },
  "regression_univariate_pooled": {
   "formal_family": {
-   "beta": 0.4165,
-   "p_perm": 0.0033
+   "beta": 0.4958,
+   "p_perm": 0.0002
   },
   "formal_ged": {
-   "beta": -0.0255,
-   "p_perm": 0.86911
+   "beta": 0.0435,
+   "p_perm": 0.75982
   },
   "perceptual_dino": {
-   "beta": 0.2335,
-   "p_perm": 0.12019
+   "beta": 0.1751,
+   "p_perm": 0.23098
   },
   "label_prior": {
-   "beta": 0.4734,
-   "p_perm": 0.0012
+   "beta": 0.3902,
+   "p_perm": 0.0043
   }
  },
  "same_family_enrichment": {
-  "errors_same_family": 125,
-  "errors_total": 291,
+  "errors_same_family": 446,
+  "errors_total": 919,
   "same_family_dyad_share": 0.2133,
   "per_model": {
-   "claude-opus-4-8": {
-    "same_family": 21,
-    "total": 47
+   "anthropic/claude-opus-4.8": {
+    "same_family": 65,
+    "total": 124
    },
-   "gpt-5.2": {
-    "same_family": 22,
-    "total": 52
+   "google/gemini-3.1-pro-preview": {
+    "same_family": 26,
+    "total": 48
    },
-   "gpt-5.5": {
-    "same_family": 23,
-    "total": 49
+   "openai/gpt-5.2": {
+    "same_family": 53,
+    "total": 103
+   },
+   "openai/gpt-5.5": {
+    "same_family": 53,
+    "total": 85
+   },
+   "moonshotai/kimi-k2.5": {
+    "same_family": 42,
+    "total": 66
+   },
+   "qwen/qwen2.5-vl-72b-instruct": {
+    "same_family": 45,
+    "total": 130
    },
    "qwen2-vl-7b": {
-    "same_family": 20,
-    "total": 53
+    "same_family": 79,
+    "total": 182
    },
    "qwen2.5-vl-32b": {
-    "same_family": 39,
-    "total": 90
+    "same_family": 83,
+    "total": 181
    }
   }
  },
  "kill_shot": {
-  "claude-opus-4-8": {
-   "r": 0.1718,
-   "p": 0.0898,
+  "anthropic/claude-opus-4.8": {
+   "r": 0.0476,
+   "p": 0.5101,
    "n": 125
   },
-  "gpt-5.2": {
-   "r": 0.1137,
-   "p": 0.1357,
+  "google/gemini-3.1-pro-preview": {
+   "r": 0.1811,
+   "p": 0.3235,
+   "n": 45
+  },
+  "openai/gpt-5.2": {
+   "r": 0.0889,
+   "p": 0.2932,
    "n": 125
   },
-  "gpt-5.5": {
-   "r": -0.077,
-   "p": 0.3457,
+  "openai/gpt-5.5": {
+   "r": -0.176,
+   "p": 0.0568,
    "n": 125
+  },
+  "moonshotai/kimi-k2.5": {
+   "r": -0.0325,
+   "p": 0.7513,
+   "n": 45
+  },
+  "qwen/qwen2.5-vl-72b-instruct": {
+   "r": 0.3086,
+   "p": 0.1687,
+   "n": 45
   },
   "qwen2-vl-7b": {
-   "r": -0.0235,
+   "r": -0.057,
    "p": 1.0,
    "n": 45
   },
   "qwen2.5-vl-32b": {
-   "r": 0.0648,
-   "p": 0.502,
+   "r": 0.0315,
+   "p": 0.7165,
    "n": 125
   }
  },
- "verdict": "FORMAL DOES NOT WIN: beta_formal_family=+0.270 (p=0.0885) vs beta_perceptual=+0.191 (p=0.2237)"
+ "verdict": "FORMAL WINS: pooled beta_formal_family=+0.446 (p=0.0041) vs beta_perceptual=+0.169 (p=0.2610)"
 }

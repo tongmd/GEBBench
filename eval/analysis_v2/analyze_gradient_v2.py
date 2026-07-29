@@ -34,17 +34,23 @@ os.makedirs(OUT, exist_ok=True)
 RNG = np.random.default_rng(20260721)
 N_BOOT = 10000
 
-VISION = ["api_gpt-5.5", "api_gpt-5.2", "api_claude-opus-4-8",
+VISION = ["or_gpt-5.5", "or_gpt-5.2", "or_claude-opus-4.8",
+          "or_gemini-3.1-pro", "or_kimi-k2.5", "or_qwen2.5-vl-72b",
           "qwen2.5-vl-32b", "qwen2-vl-7b"]
-TEXT_ONLY = ["qwen2.5-14b", "qwen2.5-7b", "deepseek-coder-v2-lite"]
+TEXT_ONLY = ["qwen2.5-14b", "qwen2.5-7b", "deepseek-coder-v2-lite",
+             "or_deepseek-v3.2"]
 MODELS = VISION + TEXT_ONLY
-FRONTIER = ["api_gpt-5.5", "api_gpt-5.2", "api_claude-opus-4-8"]
+FRONTIER = ["or_gpt-5.5", "or_gpt-5.2", "or_claude-opus-4.8",
+            "or_gemini-3.1-pro"]
 LABELS = {
-    "api_gpt-5.5": "GPT-5.5", "api_gpt-5.2": "GPT-5.2",
-    "api_claude-opus-4-8": "Claude Opus 4.8",
+    "or_gpt-5.5": "GPT-5.5", "or_gpt-5.2": "GPT-5.2",
+    "or_claude-opus-4.8": "Claude Opus 4.8",
+    "or_gemini-3.1-pro": "Gemini 3.1 Pro", "or_kimi-k2.5": "Kimi K2.5",
+    "or_qwen2.5-vl-72b": "Qwen2.5-VL-72B",
     "qwen2.5-vl-32b": "Qwen2.5-VL-32B", "qwen2-vl-7b": "Qwen2-VL-7B",
     "qwen2.5-14b": "Qwen2.5-14B", "qwen2.5-7b": "Qwen2.5-7B",
     "deepseek-coder-v2-lite": "DeepSeek-Coder-V2-Lite",
+    "or_deepseek-v3.2": "DeepSeek-V3.2",
 }
 
 # v2 reference gradient ordering (frontier): theorem > story > skeleton >
@@ -304,51 +310,33 @@ def glm_task_effects(data, models):
 def make_figure(stats):
     import matplotlib
     matplotlib.use("Agg")
+    import sys
+    sys.path.insert(0, ROOT)
+    import figstyle
+    figstyle.use()
     import matplotlib.pyplot as plt
 
-    BG = "#F7F4EF"
-    SURFACE = "#FBF9F5"
-    MUTED = "#5C635D"
-    INK = "#1F2421"
-    plt.rcParams.update({
-        "font.family": "sans-serif",
-        "font.sans-serif": ["Inter", "DejaVu Sans"],
-        "font.size": 10,
-        "figure.facecolor": BG,
-        "axes.facecolor": SURFACE,
-        "axes.edgecolor": "#E7E1D7",
-        "axes.labelcolor": INK,
-        "text.color": INK,
-        "xtick.color": MUTED,
-        "ytick.color": MUTED,
-        "axes.spines.top": False,
-        "axes.spines.right": False,
-    })
-    styles = {"api_gpt-5.5": ("GPT-5.5", "#B3402A", "o"),
-              "api_gpt-5.2": ("GPT-5.2", "#E8A03E", "s"),
-              "api_claude-opus-4-8": ("Claude Opus 4.8", "#7A4B94", "D"),
-              "qwen2.5-vl-32b": ("Qwen2.5-VL-32B", "#4C8C5C", "v"),
-              "qwen2-vl-7b": ("Qwen2-VL-7B", "#3B4A8C", "^")}
-    fig, ax = plt.subplots(figsize=(6.4, 3.3))
+    fig, ax = plt.subplots(figsize=(figstyle.FULL, 2.7))
     xs = np.arange(len(GRADIENT))
     n_m = len(VISION)
     for i, m in enumerate(VISION):
-        name, color, marker = styles[m]
-        off = (i - (n_m - 1) / 2) * 0.07
+        name = LABELS[m]
+        color = figstyle.MODEL_COLORS[name]
+        marker = figstyle.MODEL_MARKERS[name]
+        off = (i - (n_m - 1) / 2) * 0.055
         ks = [stats[m]["tasks"][t]["kappa"] for t in GRADIENT]
         los = [stats[m]["tasks"][t]["kappa_ci95"][0] for t in GRADIENT]
         his = [stats[m]["tasks"][t]["kappa_ci95"][1] for t in GRADIENT]
         yerr = [np.array(ks) - np.array(los), np.array(his) - np.array(ks)]
         ax.errorbar(xs + off, ks, yerr=yerr, marker=marker, color=color,
-                    label=name, lw=1.8, ms=5.5, capsize=2.5,
-                    elinewidth=1.0, alpha=0.95)
-    ax.axhline(0.0, color="#999999", lw=1, ls=":")
-    ax.text(4.45, 0.025, "chance ($\\kappa=0$)", color="#777777",
-            fontsize=8.5, ha="right")
+                    label=name, capsize=2.0, elinewidth=0.8, alpha=0.95)
+    ax.axhline(0.0, color=figstyle.NEUTRAL, lw=0.6, ls=":")
+    ax.text(4.45, 0.025, "chance ($\\kappa=0$)", color=figstyle.NEUTRAL,
+            fontsize=7, ha="right")
     ax.set_xticks(xs, [TASK_LABELS[t] for t in GRADIENT])
     ax.set_ylabel("chance-corrected accuracy $\\kappa$")
     ax.set_ylim(-0.15, 1.02)
-    ax.legend(frameon=False, loc="lower left", fontsize=9)
+    ax.legend(loc="lower left")
     fig.tight_layout()
     for ext in ("pdf", "png"):
         p = os.path.join(OUT, f"gradient_kappa_v2.{ext}")

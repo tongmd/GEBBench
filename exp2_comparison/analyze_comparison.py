@@ -33,8 +33,26 @@ ROOT = Path(__file__).parent.parent
 RESULTS = ROOT / "exp2_comparison" / "results"
 CONDS = ["single", "near", "far", "foil", "instructed"]
 
-COLORS = {"near": "#2A7F62", "far": "#C4612F",
-          "foil": "#9E2B25", "instructed": "#3B4A8C"}
+# Condition colors (this figure encodes conditions, not models): shades
+# consistent with the figstyle palette; "far" uses the paper accent.
+COLORS = {"near": "#2A7F62", "far": "#C4612F",   # far == figstyle.ACCENT
+          "foil": "#9E2B25", "instructed": "#46608C"}
+
+# internal result tags -> paper display names (figstyle palette keys)
+DISPLAY = {
+    "openai/gpt-5.5": "GPT-5.5", "gpt-5.5": "GPT-5.5",
+    "openai/gpt-5.2": "GPT-5.2", "gpt-5.2": "GPT-5.2",
+    "anthropic/claude-opus-4.8": "Claude Opus 4.8",
+    "claude-opus-4-8": "Claude Opus 4.8",
+    "google/gemini-3.1-pro": "Gemini 3.1 Pro",
+    "moonshotai/kimi-k2.5": "Kimi K2.5",
+    "deepseek/deepseek-v3.2": "DeepSeek-V3.2",
+    "qwen2.5-vl-72b": "Qwen2.5-VL-72B",
+    "qwen2.5-vl-32b": "Qwen2.5-VL-32B",
+    "qwen2-vl-7b": "Qwen2-VL-7B",
+    "qwen2.5-14b": "Qwen2.5-14B", "qwen2.5-7b": "Qwen2.5-7B",
+    "deepseek-coder-v2-lite": "DeepSeek-Coder-V2-Lite",
+}
 
 
 def load(path: Path) -> tuple[str, dict[str, dict[str, bool]]]:
@@ -109,56 +127,49 @@ def analyze(path: Path) -> dict:
 def figure(all_stats: list[dict]) -> None:
     import matplotlib
     matplotlib.use("Agg")
+    sys.path.insert(0, "/Users/stone/GEB-benchmark")
+    import figstyle
+    figstyle.use()
     import matplotlib.pyplot as plt
-
-    BG, SURFACE, MUTED, INK = "#F7F4EF", "#FBF9F5", "#5C635D", "#1F2421"
-    plt.rcParams.update({
-        "font.family": "sans-serif",
-        "font.sans-serif": ["Inter", "DejaVu Sans"],
-        "font.size": 9, "axes.labelsize": 9, "axes.titlesize": 10,
-        "xtick.labelsize": 8, "ytick.labelsize": 8, "legend.fontsize": 8,
-        "figure.facecolor": BG, "axes.facecolor": SURFACE,
-        "axes.edgecolor": "#E7E1D7", "axes.labelcolor": INK,
-        "text.color": INK, "xtick.color": MUTED, "ytick.color": MUTED,
-        "grid.color": "#E7E1D7", "grid.alpha": 0.4,
-    })
+    from matplotlib.ticker import MaxNLocator
 
     conds = CONDS[1:]
     labels = {"near": "near pair", "far": "far pair",
               "foil": "foil pair", "instructed": "instructed (far)"}
     n = len(all_stats)
-    fig, axes = plt.subplots(1, n, figsize=(2.6 * n + 0.8, 2.9),
+    fig, axes = plt.subplots(1, n, figsize=(figstyle.FULL, 2.0),
                              sharey=True, squeeze=False)
     span = max((abs(x) for st in all_stats for d in st["delta"].values()
                 for x in d["ci95"]), default=0.3) + 0.14
     for ax, st in zip(axes[0], all_stats):
-        ax.axvline(0, color=MUTED, lw=0.8, ls="--", zorder=1)
+        ax.axvline(0, color=figstyle.NEUTRAL, lw=0.7, ls="--", zorder=1)
         for i, c in enumerate(conds):
             if c not in st["delta"]:
                 continue
             d = st["delta"][c]
             y = len(conds) - 1 - i
-            ax.plot(d["ci95"], [y, y], color=COLORS[c], lw=2.2,
+            ax.plot(d["ci95"], [y, y], color=COLORS[c], lw=1.8,
                     solid_capstyle="round", zorder=2)
-            ax.scatter([d["mean"]], [y], s=46, color=COLORS[c],
-                       edgecolor="white", lw=0.8, zorder=3)
+            ax.scatter([d["mean"]], [y], s=30, color=COLORS[c],
+                       edgecolor="white", lw=0.6, zorder=3)
             p = st["mcnemar_vs_single"].get(c, {}).get("p")
             if p is not None:
                 ax.annotate(f"p={p:.3f}" if p >= 0.001 else "p<.001",
-                            (d["ci95"][1], y), xytext=(4, -3),
-                            textcoords="offset points", fontsize=6.5,
-                            color=MUTED)
+                            (d["ci95"][1], y), xytext=(2, -2),
+                            textcoords="offset points", fontsize=6,
+                            color=figstyle.NEUTRAL)
         ax.set_yticks(range(len(conds)))
         ax.set_yticklabels([labels[c] for c in reversed(conds)])
         base = st["accuracy"].get("single", float("nan"))
-        ax.set_title(f"{st['model']}  (single = {base:.0%})")
-        ax.set_xlabel("Δ accuracy vs single scene")
-        ax.grid(axis="x", zorder=0)
+        ax.set_title(f"{DISPLAY.get(st['model'], st['model'])}\n"
+                     f"(single = {base:.0%})", fontsize=8)
+        ax.grid(False, axis="y")
+        ax.grid(True, axis="x")
+        ax.xaxis.set_major_locator(MaxNLocator(nbins=3, steps=[1, 2, 5, 10]))
         ax.set_xlim(-span, span)
-    fig.suptitle("Does side-by-side comparison unlock abstraction?  "
-                 "(25 motifs, within-item, paired bootstrap 95% CI)",
-                 fontsize=9.5, y=1.02)
     fig.tight_layout()
+    fig.supxlabel("Δ accuracy vs single scene", fontsize=8.5,
+                  y=min(a.get_position().y0 for a in axes[0]) - 0.16)
     out = ROOT / "paper" / "figs" / "comparison_effect.pdf"
     out.parent.mkdir(parents=True, exist_ok=True)
     fig.savefig(out, bbox_inches="tight")

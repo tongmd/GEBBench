@@ -1,0 +1,1046 @@
+[
+ {
+  "edge": "sym_to_symbreak",
+  "seed": 0,
+  "src_motif": "symmetry",
+  "dst_motif": "symmetry_breaking",
+  "change": "exactly one of the mirrored correspondences is destroyed",
+  "base_png": "catlab/pairs/sym_to_symbreak_s0_base.png",
+  "img_png": "catlab/pairs/sym_to_symbreak_s0_img.png",
+  "ref_png": "catlab/pairs/sym_to_symbreak_s0_ref.png",
+  "nuis_png": "catlab/pairs/sym_to_symbreak_s0_nuis.png",
+  "facts_base": {
+   "n_nodes_per_side": 6,
+   "n_asymmetric_nodes": 0
+  },
+  "facts_img": {
+   "n_nodes_per_side": 6,
+   "n_asymmetric_nodes": 1
+  },
+  "facts_twin": {
+   "n_nodes_per_side": 6,
+   "n_asymmetric_nodes": 0
+  }
+ },
+ {
+  "edge": "sym_to_symbreak",
+  "seed": 1,
+  "src_motif": "symmetry",
+  "dst_motif": "symmetry_breaking",
+  "change": "exactly one of the mirrored correspondences is destroyed",
+  "base_png": "catlab/pairs/sym_to_symbreak_s1_base.png",
+  "img_png": "catlab/pairs/sym_to_symbreak_s1_img.png",
+  "ref_png": "catlab/pairs/sym_to_symbreak_s1_ref.png",
+  "nuis_png": "catlab/pairs/sym_to_symbreak_s1_nuis.png",
+  "facts_base": {
+   "n_nodes_per_side": 7,
+   "n_asymmetric_nodes": 0
+  },
+  "facts_img": {
+   "n_nodes_per_side": 7,
+   "n_asymmetric_nodes": 1
+  },
+  "facts_twin": {
+   "n_nodes_per_side": 7,
+   "n_asymmetric_nodes": 0
+  }
+ },
+ {
+  "edge": "sym_to_symbreak",
+  "seed": 2,
+  "src_motif": "symmetry",
+  "dst_motif": "symmetry_breaking",
+  "change": "exactly one of the mirrored correspondences is destroyed",
+  "base_png": "catlab/pairs/sym_to_symbreak_s2_base.png",
+  "img_png": "catlab/pairs/sym_to_symbreak_s2_img.png",
+  "ref_png": "catlab/pairs/sym_to_symbreak_s2_ref.png",
+  "nuis_png": "catlab/pairs/sym_to_symbreak_s2_nuis.png",
+  "facts_base": {
+   "n_nodes_per_side": 8,
+   "n_asymmetric_nodes": 0
+  },
+  "facts_img": {
+   "n_nodes_per_side": 8,
+   "n_asymmetric_nodes": 1
+  },
+  "facts_twin": {
+   "n_nodes_per_side": 8,
+   "n_asymmetric_nodes": 0
+  }
+ },
+ {
+  "edge": "sym_to_symbreak",
+  "seed": 3,
+  "src_motif": "symmetry",
+  "dst_motif": "symmetry_breaking",
+  "change": "exactly one of the mirrored correspondences is destroyed",
+  "base_png": "catlab/pairs/sym_to_symbreak_s3_base.png",
+  "img_png": "catlab/pairs/sym_to_symbreak_s3_img.png",
+  "ref_png": "catlab/pairs/sym_to_symbreak_s3_ref.png",
+  "nuis_png": "catlab/pairs/sym_to_symbreak_s3_nuis.png",
+  "facts_base": {
+   "n_nodes_per_side": 6,
+   "n_asymmetric_nodes": 0
+  },
+  "facts_img": {
+   "n_nodes_per_side": 6,
+   "n_asymmetric_nodes": 1
+  },
+  "facts_twin": {
+   "n_nodes_per_side": 6,
+   "n_asymmetric_nodes": 0
+  }
+ },
+ {
+  "edge": "sym_to_symbreak",
+  "seed": 4,
+  "src_motif": "symmetry",
+  "dst_motif": "symmetry_breaking",
+  "change": "exactly one of the mirrored correspondences is destroyed",
+  "base_png": "catlab/pairs/sym_to_symbreak_s4_base.png",
+  "img_png": "catlab/pairs/sym_to_symbreak_s4_img.png",
+  "ref_png": "catlab/pairs/sym_to_symbreak_s4_ref.png",
+  "nuis_png": "catlab/pairs/sym_to_symbreak_s4_nuis.png",
+  "facts_base": {
+   "n_nodes_per_side": 7,
+   "n_asymmetric_nodes": 0
+  },
+  "facts_img": {
+   "n_nodes_per_side": 7,
+   "n_asymmetric_nodes": 1
+  },
+  "facts_twin": {
+   "n_nodes_per_side": 7,
+   "n_asymmetric_nodes": 0
+  }
+ },
+ {
+  "edge": "sym_to_symbreak",
+  "seed": 5,
+  "src_motif": "symmetry",
+  "dst_motif": "symmetry_breaking",
+  "change": "exactly one of the mirrored correspondences is destroyed",
+  "base_png": "catlab/pairs/sym_to_symbreak_s5_base.png",
+  "img_png": "catlab/pairs/sym_to_symbreak_s5_img.png",
+  "ref_png": "catlab/pairs/sym_to_symbreak_s5_ref.png",
+  "nuis_png": "catlab/pairs/sym_to_symbreak_s5_nuis.png",
+  "facts_base": {
+   "n_nodes_per_side": 8,
+   "n_asymmetric_nodes": 0
+  },
+  "facts_img": {
+   "n_nodes_per_side": 8,
+   "n_asymmetric_nodes": 1
+  },
+  "facts_twin": {
+   "n_nodes_per_side": 8,
+   "n_asymmetric_nodes": 0
+  }
+ },
+ {
+  "edge": "cycle_to_strangeloop",
+  "seed": 0,
+  "src_motif": "cycle",
+  "dst_motif": "strange_loop",
+  "change": "the flat ring is re-laid across levels, so following the arrows climbs a hierarchy and still returns to the start",
+  "base_png": "catlab/pairs/cycle_to_strangeloop_s0_base.png",
+  "img_png": "catlab/pairs/cycle_to_strangeloop_s0_img.png",
+  "ref_png": "catlab/pairs/cycle_to_strangeloop_s0_ref.png",
+  "nuis_png": "catlab/pairs/cycle_to_strangeloop_s0_nuis.png",
+  "facts_base": {
+   "n_nodes": 6,
+   "n_edges": 6,
+   "n_levels": 1,
+   "consistent_level_assignment": true
+  },
+  "facts_img": {
+   "n_nodes": 6,
+   "n_edges": 6,
+   "n_levels": 6,
+   "consistent_level_assignment": false
+  },
+  "facts_twin": {
+   "n_nodes": 6,
+   "n_edges": 6,
+   "n_levels": 1,
+   "consistent_level_assignment": true
+  }
+ },
+ {
+  "edge": "cycle_to_strangeloop",
+  "seed": 1,
+  "src_motif": "cycle",
+  "dst_motif": "strange_loop",
+  "change": "the flat ring is re-laid across levels, so following the arrows climbs a hierarchy and still returns to the start",
+  "base_png": "catlab/pairs/cycle_to_strangeloop_s1_base.png",
+  "img_png": "catlab/pairs/cycle_to_strangeloop_s1_img.png",
+  "ref_png": "catlab/pairs/cycle_to_strangeloop_s1_ref.png",
+  "nuis_png": "catlab/pairs/cycle_to_strangeloop_s1_nuis.png",
+  "facts_base": {
+   "n_nodes": 7,
+   "n_edges": 7,
+   "n_levels": 1,
+   "consistent_level_assignment": true
+  },
+  "facts_img": {
+   "n_nodes": 7,
+   "n_edges": 7,
+   "n_levels": 7,
+   "consistent_level_assignment": false
+  },
+  "facts_twin": {
+   "n_nodes": 7,
+   "n_edges": 7,
+   "n_levels": 1,
+   "consistent_level_assignment": true
+  }
+ },
+ {
+  "edge": "cycle_to_strangeloop",
+  "seed": 2,
+  "src_motif": "cycle",
+  "dst_motif": "strange_loop",
+  "change": "the flat ring is re-laid across levels, so following the arrows climbs a hierarchy and still returns to the start",
+  "base_png": "catlab/pairs/cycle_to_strangeloop_s2_base.png",
+  "img_png": "catlab/pairs/cycle_to_strangeloop_s2_img.png",
+  "ref_png": "catlab/pairs/cycle_to_strangeloop_s2_ref.png",
+  "nuis_png": "catlab/pairs/cycle_to_strangeloop_s2_nuis.png",
+  "facts_base": {
+   "n_nodes": 8,
+   "n_edges": 8,
+   "n_levels": 1,
+   "consistent_level_assignment": true
+  },
+  "facts_img": {
+   "n_nodes": 8,
+   "n_edges": 8,
+   "n_levels": 8,
+   "consistent_level_assignment": false
+  },
+  "facts_twin": {
+   "n_nodes": 8,
+   "n_edges": 8,
+   "n_levels": 1,
+   "consistent_level_assignment": true
+  }
+ },
+ {
+  "edge": "cycle_to_strangeloop",
+  "seed": 3,
+  "src_motif": "cycle",
+  "dst_motif": "strange_loop",
+  "change": "the flat ring is re-laid across levels, so following the arrows climbs a hierarchy and still returns to the start",
+  "base_png": "catlab/pairs/cycle_to_strangeloop_s3_base.png",
+  "img_png": "catlab/pairs/cycle_to_strangeloop_s3_img.png",
+  "ref_png": "catlab/pairs/cycle_to_strangeloop_s3_ref.png",
+  "nuis_png": "catlab/pairs/cycle_to_strangeloop_s3_nuis.png",
+  "facts_base": {
+   "n_nodes": 9,
+   "n_edges": 9,
+   "n_levels": 1,
+   "consistent_level_assignment": true
+  },
+  "facts_img": {
+   "n_nodes": 9,
+   "n_edges": 9,
+   "n_levels": 9,
+   "consistent_level_assignment": false
+  },
+  "facts_twin": {
+   "n_nodes": 9,
+   "n_edges": 9,
+   "n_levels": 1,
+   "consistent_level_assignment": true
+  }
+ },
+ {
+  "edge": "cycle_to_strangeloop",
+  "seed": 4,
+  "src_motif": "cycle",
+  "dst_motif": "strange_loop",
+  "change": "the flat ring is re-laid across levels, so following the arrows climbs a hierarchy and still returns to the start",
+  "base_png": "catlab/pairs/cycle_to_strangeloop_s4_base.png",
+  "img_png": "catlab/pairs/cycle_to_strangeloop_s4_img.png",
+  "ref_png": "catlab/pairs/cycle_to_strangeloop_s4_ref.png",
+  "nuis_png": "catlab/pairs/cycle_to_strangeloop_s4_nuis.png",
+  "facts_base": {
+   "n_nodes": 7,
+   "n_edges": 7,
+   "n_levels": 1,
+   "consistent_level_assignment": true
+  },
+  "facts_img": {
+   "n_nodes": 7,
+   "n_edges": 7,
+   "n_levels": 7,
+   "consistent_level_assignment": false
+  },
+  "facts_twin": {
+   "n_nodes": 7,
+   "n_edges": 7,
+   "n_levels": 1,
+   "consistent_level_assignment": true
+  }
+ },
+ {
+  "edge": "cycle_to_strangeloop",
+  "seed": 5,
+  "src_motif": "cycle",
+  "dst_motif": "strange_loop",
+  "change": "the flat ring is re-laid across levels, so following the arrows climbs a hierarchy and still returns to the start",
+  "base_png": "catlab/pairs/cycle_to_strangeloop_s5_base.png",
+  "img_png": "catlab/pairs/cycle_to_strangeloop_s5_img.png",
+  "ref_png": "catlab/pairs/cycle_to_strangeloop_s5_ref.png",
+  "nuis_png": "catlab/pairs/cycle_to_strangeloop_s5_nuis.png",
+  "facts_base": {
+   "n_nodes": 8,
+   "n_edges": 8,
+   "n_levels": 1,
+   "consistent_level_assignment": true
+  },
+  "facts_img": {
+   "n_nodes": 8,
+   "n_edges": 8,
+   "n_levels": 8,
+   "consistent_level_assignment": false
+  },
+  "facts_twin": {
+   "n_nodes": 8,
+   "n_edges": 8,
+   "n_levels": 1,
+   "consistent_level_assignment": true
+  }
+ },
+ {
+  "edge": "nesting_to_recursion",
+  "seed": 0,
+  "src_motif": "nesting",
+  "dst_motif": "recursion",
+  "change": "containment becomes generation: each part is replaced by smaller copies of the whole under one rule",
+  "base_png": "catlab/pairs/nesting_to_recursion_s0_base.png",
+  "img_png": "catlab/pairs/nesting_to_recursion_s0_img.png",
+  "ref_png": "catlab/pairs/nesting_to_recursion_s0_ref.png",
+  "nuis_png": "catlab/pairs/nesting_to_recursion_s0_nuis.png",
+  "facts_base": {
+   "depth": 3,
+   "branching_factor": 1,
+   "self_similar_rule": false
+  },
+  "facts_img": {
+   "depth": 3,
+   "branching_factor": 2,
+   "self_similar_rule": true
+  },
+  "facts_twin": {
+   "depth": 3,
+   "branching_factor": 1,
+   "self_similar_rule": false
+  }
+ },
+ {
+  "edge": "nesting_to_recursion",
+  "seed": 1,
+  "src_motif": "nesting",
+  "dst_motif": "recursion",
+  "change": "containment becomes generation: each part is replaced by smaller copies of the whole under one rule",
+  "base_png": "catlab/pairs/nesting_to_recursion_s1_base.png",
+  "img_png": "catlab/pairs/nesting_to_recursion_s1_img.png",
+  "ref_png": "catlab/pairs/nesting_to_recursion_s1_ref.png",
+  "nuis_png": "catlab/pairs/nesting_to_recursion_s1_nuis.png",
+  "facts_base": {
+   "depth": 4,
+   "branching_factor": 1,
+   "self_similar_rule": false
+  },
+  "facts_img": {
+   "depth": 4,
+   "branching_factor": 2,
+   "self_similar_rule": true
+  },
+  "facts_twin": {
+   "depth": 4,
+   "branching_factor": 1,
+   "self_similar_rule": false
+  }
+ },
+ {
+  "edge": "nesting_to_recursion",
+  "seed": 2,
+  "src_motif": "nesting",
+  "dst_motif": "recursion",
+  "change": "containment becomes generation: each part is replaced by smaller copies of the whole under one rule",
+  "base_png": "catlab/pairs/nesting_to_recursion_s2_base.png",
+  "img_png": "catlab/pairs/nesting_to_recursion_s2_img.png",
+  "ref_png": "catlab/pairs/nesting_to_recursion_s2_ref.png",
+  "nuis_png": "catlab/pairs/nesting_to_recursion_s2_nuis.png",
+  "facts_base": {
+   "depth": 3,
+   "branching_factor": 1,
+   "self_similar_rule": false
+  },
+  "facts_img": {
+   "depth": 3,
+   "branching_factor": 2,
+   "self_similar_rule": true
+  },
+  "facts_twin": {
+   "depth": 3,
+   "branching_factor": 1,
+   "self_similar_rule": false
+  }
+ },
+ {
+  "edge": "nesting_to_recursion",
+  "seed": 3,
+  "src_motif": "nesting",
+  "dst_motif": "recursion",
+  "change": "containment becomes generation: each part is replaced by smaller copies of the whole under one rule",
+  "base_png": "catlab/pairs/nesting_to_recursion_s3_base.png",
+  "img_png": "catlab/pairs/nesting_to_recursion_s3_img.png",
+  "ref_png": "catlab/pairs/nesting_to_recursion_s3_ref.png",
+  "nuis_png": "catlab/pairs/nesting_to_recursion_s3_nuis.png",
+  "facts_base": {
+   "depth": 4,
+   "branching_factor": 1,
+   "self_similar_rule": false
+  },
+  "facts_img": {
+   "depth": 4,
+   "branching_factor": 2,
+   "self_similar_rule": true
+  },
+  "facts_twin": {
+   "depth": 4,
+   "branching_factor": 1,
+   "self_similar_rule": false
+  }
+ },
+ {
+  "edge": "nesting_to_recursion",
+  "seed": 4,
+  "src_motif": "nesting",
+  "dst_motif": "recursion",
+  "change": "containment becomes generation: each part is replaced by smaller copies of the whole under one rule",
+  "base_png": "catlab/pairs/nesting_to_recursion_s4_base.png",
+  "img_png": "catlab/pairs/nesting_to_recursion_s4_img.png",
+  "ref_png": "catlab/pairs/nesting_to_recursion_s4_ref.png",
+  "nuis_png": "catlab/pairs/nesting_to_recursion_s4_nuis.png",
+  "facts_base": {
+   "depth": 3,
+   "branching_factor": 1,
+   "self_similar_rule": false
+  },
+  "facts_img": {
+   "depth": 3,
+   "branching_factor": 2,
+   "self_similar_rule": true
+  },
+  "facts_twin": {
+   "depth": 3,
+   "branching_factor": 1,
+   "self_similar_rule": false
+  }
+ },
+ {
+  "edge": "nesting_to_recursion",
+  "seed": 5,
+  "src_motif": "nesting",
+  "dst_motif": "recursion",
+  "change": "containment becomes generation: each part is replaced by smaller copies of the whole under one rule",
+  "base_png": "catlab/pairs/nesting_to_recursion_s5_base.png",
+  "img_png": "catlab/pairs/nesting_to_recursion_s5_img.png",
+  "ref_png": "catlab/pairs/nesting_to_recursion_s5_ref.png",
+  "nuis_png": "catlab/pairs/nesting_to_recursion_s5_nuis.png",
+  "facts_base": {
+   "depth": 4,
+   "branching_factor": 1,
+   "self_similar_rule": false
+  },
+  "facts_img": {
+   "depth": 4,
+   "branching_factor": 2,
+   "self_similar_rule": true
+  },
+  "facts_twin": {
+   "depth": 4,
+   "branching_factor": 1,
+   "self_similar_rule": false
+  }
+ },
+ {
+  "edge": "tiling_to_aperiodic",
+  "seed": 0,
+  "src_motif": "tiling",
+  "dst_motif": "aperiodic_tiling",
+  "change": "the same two tiles obey the same local rule but the translation period is destroyed",
+  "base_png": "catlab/pairs/tiling_to_aperiodic_s0_base.png",
+  "img_png": "catlab/pairs/tiling_to_aperiodic_s0_img.png",
+  "ref_png": "catlab/pairs/tiling_to_aperiodic_s0_ref.png",
+  "nuis_png": "catlab/pairs/tiling_to_aperiodic_s0_nuis.png",
+  "facts_base": {
+   "sequence": "SLSLSLSLSLSL",
+   "n_tiles": 12,
+   "translation_period": 2,
+   "tile_alphabet": [
+    "L",
+    "S"
+   ]
+  },
+  "facts_img": {
+   "sequence": "LSLLSLSLLSLL",
+   "n_tiles": 12,
+   "translation_period": null,
+   "tile_alphabet": [
+    "L",
+    "S"
+   ]
+  },
+  "facts_twin": {
+   "sequence": "SLSLSLSLSLSL",
+   "n_tiles": 12,
+   "translation_period": 2,
+   "tile_alphabet": [
+    "L",
+    "S"
+   ]
+  }
+ },
+ {
+  "edge": "tiling_to_aperiodic",
+  "seed": 1,
+  "src_motif": "tiling",
+  "dst_motif": "aperiodic_tiling",
+  "change": "the same two tiles obey the same local rule but the translation period is destroyed",
+  "base_png": "catlab/pairs/tiling_to_aperiodic_s1_base.png",
+  "img_png": "catlab/pairs/tiling_to_aperiodic_s1_img.png",
+  "ref_png": "catlab/pairs/tiling_to_aperiodic_s1_ref.png",
+  "nuis_png": "catlab/pairs/tiling_to_aperiodic_s1_nuis.png",
+  "facts_base": {
+   "sequence": "LSLSLSLSLSLSL",
+   "n_tiles": 13,
+   "translation_period": 2,
+   "tile_alphabet": [
+    "L",
+    "S"
+   ]
+  },
+  "facts_img": {
+   "sequence": "LSLLSLSLLSLLS",
+   "n_tiles": 13,
+   "translation_period": null,
+   "tile_alphabet": [
+    "L",
+    "S"
+   ]
+  },
+  "facts_twin": {
+   "sequence": "LSLSLSLSLSLSL",
+   "n_tiles": 13,
+   "translation_period": 2,
+   "tile_alphabet": [
+    "L",
+    "S"
+   ]
+  }
+ },
+ {
+  "edge": "tiling_to_aperiodic",
+  "seed": 2,
+  "src_motif": "tiling",
+  "dst_motif": "aperiodic_tiling",
+  "change": "the same two tiles obey the same local rule but the translation period is destroyed",
+  "base_png": "catlab/pairs/tiling_to_aperiodic_s2_base.png",
+  "img_png": "catlab/pairs/tiling_to_aperiodic_s2_img.png",
+  "ref_png": "catlab/pairs/tiling_to_aperiodic_s2_ref.png",
+  "nuis_png": "catlab/pairs/tiling_to_aperiodic_s2_nuis.png",
+  "facts_base": {
+   "sequence": "LSLSLSLSLSLSLS",
+   "n_tiles": 14,
+   "translation_period": 2,
+   "tile_alphabet": [
+    "L",
+    "S"
+   ]
+  },
+  "facts_img": {
+   "sequence": "LSLLSLSLLSLLSL",
+   "n_tiles": 14,
+   "translation_period": null,
+   "tile_alphabet": [
+    "L",
+    "S"
+   ]
+  },
+  "facts_twin": {
+   "sequence": "LSLSLSLSLSLSLS",
+   "n_tiles": 14,
+   "translation_period": 2,
+   "tile_alphabet": [
+    "L",
+    "S"
+   ]
+  }
+ },
+ {
+  "edge": "tiling_to_aperiodic",
+  "seed": 3,
+  "src_motif": "tiling",
+  "dst_motif": "aperiodic_tiling",
+  "change": "the same two tiles obey the same local rule but the translation period is destroyed",
+  "base_png": "catlab/pairs/tiling_to_aperiodic_s3_base.png",
+  "img_png": "catlab/pairs/tiling_to_aperiodic_s3_img.png",
+  "ref_png": "catlab/pairs/tiling_to_aperiodic_s3_ref.png",
+  "nuis_png": "catlab/pairs/tiling_to_aperiodic_s3_nuis.png",
+  "facts_base": {
+   "sequence": "LSLSLSLSLSLSLSL",
+   "n_tiles": 15,
+   "translation_period": 2,
+   "tile_alphabet": [
+    "L",
+    "S"
+   ]
+  },
+  "facts_img": {
+   "sequence": "LSLLSLSLLSLLSLS",
+   "n_tiles": 15,
+   "translation_period": null,
+   "tile_alphabet": [
+    "L",
+    "S"
+   ]
+  },
+  "facts_twin": {
+   "sequence": "SLSLSLSLSLSLSLS",
+   "n_tiles": 15,
+   "translation_period": 2,
+   "tile_alphabet": [
+    "L",
+    "S"
+   ]
+  }
+ },
+ {
+  "edge": "tiling_to_aperiodic",
+  "seed": 4,
+  "src_motif": "tiling",
+  "dst_motif": "aperiodic_tiling",
+  "change": "the same two tiles obey the same local rule but the translation period is destroyed",
+  "base_png": "catlab/pairs/tiling_to_aperiodic_s4_base.png",
+  "img_png": "catlab/pairs/tiling_to_aperiodic_s4_img.png",
+  "ref_png": "catlab/pairs/tiling_to_aperiodic_s4_ref.png",
+  "nuis_png": "catlab/pairs/tiling_to_aperiodic_s4_nuis.png",
+  "facts_base": {
+   "sequence": "LSLSLSLSLSLSLSLSLSLS",
+   "n_tiles": 20,
+   "translation_period": 2,
+   "tile_alphabet": [
+    "L",
+    "S"
+   ]
+  },
+  "facts_img": {
+   "sequence": "LSLLSLSLLSLLSLSLLSLS",
+   "n_tiles": 20,
+   "translation_period": null,
+   "tile_alphabet": [
+    "L",
+    "S"
+   ]
+  },
+  "facts_twin": {
+   "sequence": "LSLSLSLSLSLSLSLSLSLS",
+   "n_tiles": 20,
+   "translation_period": 2,
+   "tile_alphabet": [
+    "L",
+    "S"
+   ]
+  }
+ },
+ {
+  "edge": "tiling_to_aperiodic",
+  "seed": 5,
+  "src_motif": "tiling",
+  "dst_motif": "aperiodic_tiling",
+  "change": "the same two tiles obey the same local rule but the translation period is destroyed",
+  "base_png": "catlab/pairs/tiling_to_aperiodic_s5_base.png",
+  "img_png": "catlab/pairs/tiling_to_aperiodic_s5_img.png",
+  "ref_png": "catlab/pairs/tiling_to_aperiodic_s5_ref.png",
+  "nuis_png": "catlab/pairs/tiling_to_aperiodic_s5_nuis.png",
+  "facts_base": {
+   "sequence": "LSLSLSLSLSLSLSLSLSLSL",
+   "n_tiles": 21,
+   "translation_period": 2,
+   "tile_alphabet": [
+    "L",
+    "S"
+   ]
+  },
+  "facts_img": {
+   "sequence": "LSLLSLSLLSLLSLSLLSLSL",
+   "n_tiles": 21,
+   "translation_period": null,
+   "tile_alphabet": [
+    "L",
+    "S"
+   ]
+  },
+  "facts_twin": {
+   "sequence": "LSLSLSLSLSLSLSLSLSLSL",
+   "n_tiles": 21,
+   "translation_period": 2,
+   "tile_alphabet": [
+    "L",
+    "S"
+   ]
+  }
+ },
+ {
+  "edge": "iso_to_duality",
+  "seed": 0,
+  "src_motif": "isomorphism",
+  "dst_motif": "projective_duality",
+  "change": "a dictionary between two separate systems becomes an involutive role swap inside one system",
+  "base_png": "catlab/pairs/iso_to_duality_s0_base.png",
+  "img_png": "catlab/pairs/iso_to_duality_s0_img.png",
+  "ref_png": "catlab/pairs/iso_to_duality_s0_ref.png",
+  "nuis_png": "catlab/pairs/iso_to_duality_s0_nuis.png",
+  "facts_base": {
+   "n_elements_per_class": 4,
+   "n_systems": 2,
+   "swap_is_involution": false
+  },
+  "facts_img": {
+   "n_elements_per_class": 4,
+   "n_systems": 1,
+   "swap_is_involution": true
+  },
+  "facts_twin": {
+   "n_elements_per_class": 4,
+   "n_systems": 2,
+   "swap_is_involution": false
+  }
+ },
+ {
+  "edge": "iso_to_duality",
+  "seed": 1,
+  "src_motif": "isomorphism",
+  "dst_motif": "projective_duality",
+  "change": "a dictionary between two separate systems becomes an involutive role swap inside one system",
+  "base_png": "catlab/pairs/iso_to_duality_s1_base.png",
+  "img_png": "catlab/pairs/iso_to_duality_s1_img.png",
+  "ref_png": "catlab/pairs/iso_to_duality_s1_ref.png",
+  "nuis_png": "catlab/pairs/iso_to_duality_s1_nuis.png",
+  "facts_base": {
+   "n_elements_per_class": 5,
+   "n_systems": 2,
+   "swap_is_involution": false
+  },
+  "facts_img": {
+   "n_elements_per_class": 5,
+   "n_systems": 1,
+   "swap_is_involution": true
+  },
+  "facts_twin": {
+   "n_elements_per_class": 5,
+   "n_systems": 2,
+   "swap_is_involution": false
+  }
+ },
+ {
+  "edge": "iso_to_duality",
+  "seed": 2,
+  "src_motif": "isomorphism",
+  "dst_motif": "projective_duality",
+  "change": "a dictionary between two separate systems becomes an involutive role swap inside one system",
+  "base_png": "catlab/pairs/iso_to_duality_s2_base.png",
+  "img_png": "catlab/pairs/iso_to_duality_s2_img.png",
+  "ref_png": "catlab/pairs/iso_to_duality_s2_ref.png",
+  "nuis_png": "catlab/pairs/iso_to_duality_s2_nuis.png",
+  "facts_base": {
+   "n_elements_per_class": 6,
+   "n_systems": 2,
+   "swap_is_involution": false
+  },
+  "facts_img": {
+   "n_elements_per_class": 6,
+   "n_systems": 1,
+   "swap_is_involution": true
+  },
+  "facts_twin": {
+   "n_elements_per_class": 6,
+   "n_systems": 2,
+   "swap_is_involution": false
+  }
+ },
+ {
+  "edge": "iso_to_duality",
+  "seed": 3,
+  "src_motif": "isomorphism",
+  "dst_motif": "projective_duality",
+  "change": "a dictionary between two separate systems becomes an involutive role swap inside one system",
+  "base_png": "catlab/pairs/iso_to_duality_s3_base.png",
+  "img_png": "catlab/pairs/iso_to_duality_s3_img.png",
+  "ref_png": "catlab/pairs/iso_to_duality_s3_ref.png",
+  "nuis_png": "catlab/pairs/iso_to_duality_s3_nuis.png",
+  "facts_base": {
+   "n_elements_per_class": 4,
+   "n_systems": 2,
+   "swap_is_involution": false
+  },
+  "facts_img": {
+   "n_elements_per_class": 4,
+   "n_systems": 1,
+   "swap_is_involution": true
+  },
+  "facts_twin": {
+   "n_elements_per_class": 4,
+   "n_systems": 2,
+   "swap_is_involution": false
+  }
+ },
+ {
+  "edge": "iso_to_duality",
+  "seed": 4,
+  "src_motif": "isomorphism",
+  "dst_motif": "projective_duality",
+  "change": "a dictionary between two separate systems becomes an involutive role swap inside one system",
+  "base_png": "catlab/pairs/iso_to_duality_s4_base.png",
+  "img_png": "catlab/pairs/iso_to_duality_s4_img.png",
+  "ref_png": "catlab/pairs/iso_to_duality_s4_ref.png",
+  "nuis_png": "catlab/pairs/iso_to_duality_s4_nuis.png",
+  "facts_base": {
+   "n_elements_per_class": 5,
+   "n_systems": 2,
+   "swap_is_involution": false
+  },
+  "facts_img": {
+   "n_elements_per_class": 5,
+   "n_systems": 1,
+   "swap_is_involution": true
+  },
+  "facts_twin": {
+   "n_elements_per_class": 5,
+   "n_systems": 2,
+   "swap_is_involution": false
+  }
+ },
+ {
+  "edge": "iso_to_duality",
+  "seed": 5,
+  "src_motif": "isomorphism",
+  "dst_motif": "projective_duality",
+  "change": "a dictionary between two separate systems becomes an involutive role swap inside one system",
+  "base_png": "catlab/pairs/iso_to_duality_s5_base.png",
+  "img_png": "catlab/pairs/iso_to_duality_s5_img.png",
+  "ref_png": "catlab/pairs/iso_to_duality_s5_ref.png",
+  "nuis_png": "catlab/pairs/iso_to_duality_s5_nuis.png",
+  "facts_base": {
+   "n_elements_per_class": 6,
+   "n_systems": 2,
+   "swap_is_involution": false
+  },
+  "facts_img": {
+   "n_elements_per_class": 6,
+   "n_systems": 1,
+   "swap_is_involution": true
+  },
+  "facts_twin": {
+   "n_elements_per_class": 6,
+   "n_systems": 2,
+   "swap_is_involution": false
+  }
+ },
+ {
+  "edge": "recursion_to_contraction",
+  "seed": 0,
+  "src_motif": "recursion",
+  "dst_motif": "contraction_fixed_point",
+  "change": "branching stops: one rule is applied to its own output and the orbit selects a unique fixed point",
+  "base_png": "catlab/pairs/recursion_to_contraction_s0_base.png",
+  "img_png": "catlab/pairs/recursion_to_contraction_s0_img.png",
+  "ref_png": "catlab/pairs/recursion_to_contraction_s0_ref.png",
+  "nuis_png": "catlab/pairs/recursion_to_contraction_s0_nuis.png",
+  "facts_base": {
+   "depth": 5,
+   "branching_factor": 2,
+   "shrink_ratio": 0.66,
+   "n_endpoints": 32,
+   "has_marked_fixed_point": false
+  },
+  "facts_img": {
+   "depth": 5,
+   "branching_factor": 1,
+   "shrink_ratio": 0.66,
+   "n_endpoints": 1,
+   "has_marked_fixed_point": true
+  },
+  "facts_twin": {
+   "depth": 5,
+   "branching_factor": 2,
+   "shrink_ratio": 0.658,
+   "n_endpoints": 32,
+   "has_marked_fixed_point": false
+  }
+ },
+ {
+  "edge": "recursion_to_contraction",
+  "seed": 1,
+  "src_motif": "recursion",
+  "dst_motif": "contraction_fixed_point",
+  "change": "branching stops: one rule is applied to its own output and the orbit selects a unique fixed point",
+  "base_png": "catlab/pairs/recursion_to_contraction_s1_base.png",
+  "img_png": "catlab/pairs/recursion_to_contraction_s1_img.png",
+  "ref_png": "catlab/pairs/recursion_to_contraction_s1_ref.png",
+  "nuis_png": "catlab/pairs/recursion_to_contraction_s1_nuis.png",
+  "facts_base": {
+   "depth": 6,
+   "branching_factor": 2,
+   "shrink_ratio": 0.634,
+   "n_endpoints": 64,
+   "has_marked_fixed_point": false
+  },
+  "facts_img": {
+   "depth": 6,
+   "branching_factor": 1,
+   "shrink_ratio": 0.634,
+   "n_endpoints": 1,
+   "has_marked_fixed_point": true
+  },
+  "facts_twin": {
+   "depth": 6,
+   "branching_factor": 2,
+   "shrink_ratio": 0.638,
+   "n_endpoints": 64,
+   "has_marked_fixed_point": false
+  }
+ },
+ {
+  "edge": "recursion_to_contraction",
+  "seed": 2,
+  "src_motif": "recursion",
+  "dst_motif": "contraction_fixed_point",
+  "change": "branching stops: one rule is applied to its own output and the orbit selects a unique fixed point",
+  "base_png": "catlab/pairs/recursion_to_contraction_s2_base.png",
+  "img_png": "catlab/pairs/recursion_to_contraction_s2_img.png",
+  "ref_png": "catlab/pairs/recursion_to_contraction_s2_ref.png",
+  "nuis_png": "catlab/pairs/recursion_to_contraction_s2_nuis.png",
+  "facts_base": {
+   "depth": 5,
+   "branching_factor": 2,
+   "shrink_ratio": 0.664,
+   "n_endpoints": 32,
+   "has_marked_fixed_point": false
+  },
+  "facts_img": {
+   "depth": 5,
+   "branching_factor": 1,
+   "shrink_ratio": 0.664,
+   "n_endpoints": 1,
+   "has_marked_fixed_point": true
+  },
+  "facts_twin": {
+   "depth": 5,
+   "branching_factor": 2,
+   "shrink_ratio": 0.677,
+   "n_endpoints": 32,
+   "has_marked_fixed_point": false
+  }
+ },
+ {
+  "edge": "recursion_to_contraction",
+  "seed": 3,
+  "src_motif": "recursion",
+  "dst_motif": "contraction_fixed_point",
+  "change": "branching stops: one rule is applied to its own output and the orbit selects a unique fixed point",
+  "base_png": "catlab/pairs/recursion_to_contraction_s3_base.png",
+  "img_png": "catlab/pairs/recursion_to_contraction_s3_img.png",
+  "ref_png": "catlab/pairs/recursion_to_contraction_s3_ref.png",
+  "nuis_png": "catlab/pairs/recursion_to_contraction_s3_nuis.png",
+  "facts_base": {
+   "depth": 6,
+   "branching_factor": 2,
+   "shrink_ratio": 0.638,
+   "n_endpoints": 64,
+   "has_marked_fixed_point": false
+  },
+  "facts_img": {
+   "depth": 6,
+   "branching_factor": 1,
+   "shrink_ratio": 0.638,
+   "n_endpoints": 1,
+   "has_marked_fixed_point": true
+  },
+  "facts_twin": {
+   "depth": 6,
+   "branching_factor": 2,
+   "shrink_ratio": 0.651,
+   "n_endpoints": 64,
+   "has_marked_fixed_point": false
+  }
+ },
+ {
+  "edge": "recursion_to_contraction",
+  "seed": 4,
+  "src_motif": "recursion",
+  "dst_motif": "contraction_fixed_point",
+  "change": "branching stops: one rule is applied to its own output and the orbit selects a unique fixed point",
+  "base_png": "catlab/pairs/recursion_to_contraction_s4_base.png",
+  "img_png": "catlab/pairs/recursion_to_contraction_s4_img.png",
+  "ref_png": "catlab/pairs/recursion_to_contraction_s4_ref.png",
+  "nuis_png": "catlab/pairs/recursion_to_contraction_s4_nuis.png",
+  "facts_base": {
+   "depth": 5,
+   "branching_factor": 2,
+   "shrink_ratio": 0.655,
+   "n_endpoints": 32,
+   "has_marked_fixed_point": false
+  },
+  "facts_img": {
+   "depth": 5,
+   "branching_factor": 1,
+   "shrink_ratio": 0.655,
+   "n_endpoints": 1,
+   "has_marked_fixed_point": true
+  },
+  "facts_twin": {
+   "depth": 5,
+   "branching_factor": 2,
+   "shrink_ratio": 0.662,
+   "n_endpoints": 32,
+   "has_marked_fixed_point": false
+  }
+ },
+ {
+  "edge": "recursion_to_contraction",
+  "seed": 5,
+  "src_motif": "recursion",
+  "dst_motif": "contraction_fixed_point",
+  "change": "branching stops: one rule is applied to its own output and the orbit selects a unique fixed point",
+  "base_png": "catlab/pairs/recursion_to_contraction_s5_base.png",
+  "img_png": "catlab/pairs/recursion_to_contraction_s5_img.png",
+  "ref_png": "catlab/pairs/recursion_to_contraction_s5_ref.png",
+  "nuis_png": "catlab/pairs/recursion_to_contraction_s5_nuis.png",
+  "facts_base": {
+   "depth": 6,
+   "branching_factor": 2,
+   "shrink_ratio": 0.61,
+   "n_endpoints": 64,
+   "has_marked_fixed_point": false
+  },
+  "facts_img": {
+   "depth": 6,
+   "branching_factor": 1,
+   "shrink_ratio": 0.61,
+   "n_endpoints": 1,
+   "has_marked_fixed_point": true
+  },
+  "facts_twin": {
+   "depth": 6,
+   "branching_factor": 2,
+   "shrink_ratio": 0.635,
+   "n_endpoints": 64,
+   "has_marked_fixed_point": false
+  }
+ }
+]

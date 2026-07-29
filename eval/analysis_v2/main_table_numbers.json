@@ -1,45 +1,96 @@
 {
-  "api_gpt-5.5": {
+  "or_gpt-5.5": {
     "accs": {
-      "scene2motif": 75.71428571428571,
-      "skeleton2motif": 83.6734693877551,
-      "story2motif": 89.25619834710744,
+      "scene2motif": 77.14285714285714,
+      "skeleton2motif": 79.59183673469387,
+      "story2motif": 90.08264462809917,
       "theorem2motif": 92.0,
-      "crossvoice": 64.28571428571429,
-      "xv_scene_thm": 80.95238095238095,
-      "xv_story_thm": 80.16528925619835,
-      "scene2motif_family4": 85.71428571428571
+      "crossvoice": 69.04761904761905,
+      "xv_scene_thm": 82.38095238095238,
+      "xv_story_thm": 82.64462809917356,
+      "scene2motif_family4": 86.19047619047619
     },
-    "avg": 81.47020295721595,
+    "avg": 82.38512677798391,
     "n_tasks": 8
   },
-  "api_gpt-5.2": {
+  "or_gpt-5.2": {
     "accs": {
-      "scene2motif": 71.42857142857143,
+      "scene2motif": 70.95238095238095,
       "skeleton2motif": 79.59183673469387,
+      "story2motif": 83.47107438016529,
+      "theorem2motif": 84.0,
+      "crossvoice": 58.57142857142857,
+      "xv_scene_thm": 80.95238095238095,
+      "xv_story_thm": 73.55371900826447,
+      "scene2motif_family4": 83.80952380952381
+    },
+    "avg": 76.86279305110475,
+    "n_tasks": 8
+  },
+  "or_claude-opus-4.8": {
+    "accs": {
+      "scene2motif": 63.80952380952381,
+      "skeleton2motif": 75.51020408163265,
+      "story2motif": 75.20661157024793,
+      "theorem2motif": 80.0,
+      "crossvoice": 42.38095238095238,
+      "xv_scene_thm": 66.66666666666667,
+      "xv_story_thm": 73.55371900826447,
+      "scene2motif_family4": 81.42857142857143
+    },
+    "avg": 69.81953111823242,
+    "n_tasks": 8
+  },
+  "or_gemini-3.1-pro": {
+    "accs": {
+      "scene2motif": 80.47619047619048,
+      "skeleton2motif": 85.71428571428571,
+      "story2motif": 92.56198347107438,
+      "theorem2motif": 92.0,
+      "crossvoice": 61.42857142857143,
+      "xv_scene_thm": 84.28571428571429,
+      "xv_story_thm": 74.3801652892562,
+      "scene2motif_family4": 86.19047619047619
+    },
+    "avg": 82.12967335694609,
+    "n_tasks": 8
+  },
+  "or_kimi-k2.5": {
+    "accs": {
+      "scene2motif": 74.76190476190476,
+      "skeleton2motif": 73.46938775510205,
       "story2motif": 84.29752066115702,
       "theorem2motif": 88.0,
-      "crossvoice": 35.714285714285715,
-      "xv_scene_thm": 67.14285714285714,
-      "xv_story_thm": 61.15702479338843,
-      "scene2motif_family4": 80.0
+      "crossvoice": 61.904761904761905,
+      "xv_scene_thm": 76.19047619047619,
+      "xv_story_thm": 74.3801652892562,
+      "scene2motif_family4": 81.9047619047619
     },
-    "avg": 70.9165120593692,
+    "avg": 76.86362230842751,
     "n_tasks": 8
   },
-  "api_claude-opus-4-8": {
+  "or_qwen2.5-vl-72b": {
     "accs": {
-      "scene2motif": 60.95238095238095,
-      "skeleton2motif": 69.38775510204081,
-      "story2motif": 71.07438016528926,
-      "theorem2motif": 76.0,
-      "crossvoice": 43.80952380952381,
-      "xv_scene_thm": 68.57142857142857,
-      "xv_story_thm": 66.94214876033058,
-      "scene2motif_family4": 78.57142857142857
+      "scene2motif": 47.142857142857146,
+      "skeleton2motif": 61.224489795918366,
+      "story2motif": 47.107438016528924,
+      "theorem2motif": 84.0,
+      "crossvoice": 32.857142857142854,
+      "xv_scene_thm": 54.285714285714285,
+      "xv_story_thm": 52.06611570247934,
+      "scene2motif_family4": 75.23809523809524
     },
-    "avg": 66.91363074155282,
+    "avg": 56.74023162984202,
     "n_tasks": 8
+  },
+  "or_deepseek-v3.2": {
+    "accs": {
+      "story2motif": 60.33057851239669,
+      "theorem2motif": 84.0,
+      "xv_story_thm": 47.107438016528924
+    },
+    "avg": 63.812672176308546,
+    "n_tasks": 3
   },
   "qwen2.5-vl-32b": {
     "accs": {

@@ -57,7 +57,8 @@ def main():
     per_model, errors = load_errors(motifs)
     vis = [e for e in errors if e[1] in ("scene2motif", "skeleton2motif")]
     txt = [e for e in errors if e[1] in ("story2motif", "theorem2motif")]
-    fr = [e for e in errors if e[0].startswith("api_")]
+    FRONTIER_TAGS = ("or_gpt-5.5", "or_gpt-5.2", "or_claude-opus-4.8")
+    fr = [e for e in errors if e[0] in FRONTIER_TAGS]
 
     # family-metric percentile ranks on identical splits (heavy ties -> midrank)
     res["error_concentration_family_metric"] = {

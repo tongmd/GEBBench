@@ -1,0 +1,3633 @@
+{
+ "model": "moonshotai/kimi-k2.5",
+ "base": "https://openrouter.ai/api/v1",
+ "summary": {
+  "endpoint_id": {
+   "n": 72,
+   "acc": 0.7083,
+   "unparsed": 0
+  },
+  "square_thm": {
+   "n": 36,
+   "acc": 0.5556,
+   "unparsed": 0
+  },
+  "square_story": {
+   "n": 36,
+   "acc": 0.3889,
+   "unparsed": 2
+  },
+  "id_vs_change": {
+   "n": 72,
+   "acc": 0.6528,
+   "unparsed": 1
+  },
+  "composition": {
+   "n": 6,
+   "acc": 1.0,
+   "unparsed": 0
+  }
+ },
+ "records": [
+  {
+   "id": "eid:sym_to_symbreak:s0:base",
+   "task": "endpoint_id",
+   "answer": "symmetry",
+   "pred": "symmetry",
+   "correct": true,
+   "meta": {
+    "edge": "sym_to_symbreak",
+    "seed": 0,
+    "side": "base"
+   },
+   "option_motifs": null,
+   "raw": "{\"motif_id\": \"symmetry\"}"
+  },
+  {
+   "id": "eid:sym_to_symbreak:s0:img",
+   "task": "endpoint_id",
+   "answer": "symmetry_breaking",
+   "pred": "symmetry_breaking",
+   "correct": true,
+   "meta": {
+    "edge": "sym_to_symbreak",
+    "seed": 0,
+    "side": "img"
+   },
+   "option_motifs": null,
+   "raw": "Looking at the diagram, I see two chain structures separated by a vertical dashed line (mirror axis). The left structure consists entirely of black dots connected in a specific pattern. The right stru"
+  },
+  {
+   "id": "eid:sym_to_symbreak:s1:base",
+   "task": "endpoint_id",
+   "answer": "symmetry",
+   "pred": "symmetry",
+   "correct": true,
+   "meta": {
+    "edge": "sym_to_symbreak",
+    "seed": 1,
+    "side": "base"
+   },
+   "option_motifs": null,
+   "raw": "{\"motif_id\": \"symmetry\"}"
+  },
+  {
+   "id": "eid:sym_to_symbreak:s1:img",
+   "task": "endpoint_id",
+   "answer": "symmetry_breaking",
+   "pred": "symmetry_breaking",
+   "correct": true,
+   "meta": {
+    "edge": "sym_to_symbreak",
+    "seed": 1,
+    "side": "img"
+   },
+   "option_motifs": null,
+   "raw": "{\"motif_id\": \"symmetry_breaking\"}"
+  },
+  {
+   "id": "eid:sym_to_symbreak:s2:base",
+   "task": "endpoint_id",
+   "answer": "symmetry",
+   "pred": "symmetry",
+   "correct": true,
+   "meta": {
+    "edge": "sym_to_symbreak",
+    "seed": 2,
+    "side": "base"
+   },
+   "option_motifs": null,
+   "raw": "Looking at the diagram, I see two zigzag patterns of connected dots on either side of a vertical dashed line. The left side appears to be a perfect mirror reflection of the right side across the centr"
+  },
+  {
+   "id": "eid:sym_to_symbreak:s2:img",
+   "task": "endpoint_id",
+   "answer": "symmetry_breaking",
+   "pred": "symmetry_breaking",
+   "correct": true,
+   "meta": {
+    "edge": "sym_to_symbreak",
+    "seed": 2,
+    "side": "img"
+   },
+   "option_motifs": null,
+   "raw": "{\"motif_id\": \"symmetry_breaking\"}"
+  },
+  {
+   "id": "eid:sym_to_symbreak:s3:base",
+   "task": "endpoint_id",
+   "answer": "symmetry",
+   "pred": "symmetry",
+   "correct": true,
+   "meta": {
+    "edge": "sym_to_symbreak",
+    "seed": 3,
+    "side": "base"
+   },
+   "option_motifs": null,
+   "raw": "{\"motif_id\": \"symmetry\"}"
+  },
+  {
+   "id": "eid:sym_to_symbreak:s3:img",
+   "task": "endpoint_id",
+   "answer": "symmetry_breaking",
+   "pred": "symmetry_breaking",
+   "correct": true,
+   "meta": {
+    "edge": "sym_to_symbreak",
+    "seed": 3,
+    "side": "img"
+   },
+   "option_motifs": null,
+   "raw": "Looking at the diagram, I see two linear chain structures separated by a vertical dashed line. The left chain consists entirely of black nodes. The right chain is a mirror image of the left, but conta"
+  },
+  {
+   "id": "eid:sym_to_symbreak:s4:base",
+   "task": "endpoint_id",
+   "answer": "symmetry",
+   "pred": "symmetry",
+   "correct": true,
+   "meta": {
+    "edge": "sym_to_symbreak",
+    "seed": 4,
+    "side": "base"
+   },
+   "option_motifs": null,
+   "raw": "{\"motif_id\": \"symmetry\"}"
+  },
+  {
+   "id": "eid:sym_to_symbreak:s4:img",
+   "task": "endpoint_id",
+   "answer": "symmetry_breaking",
+   "pred": "symmetry_breaking",
+   "correct": true,
+   "meta": {
+    "edge": "sym_to_symbreak",
+    "seed": 4,
+    "side": "img"
+   },
+   "option_motifs": null,
+   "raw": "Looking at the diagram, I see two chain structures separated by a dashed line. The left chain consists entirely of black dots connected by thick lines. The right chain has the same structure and conne"
+  },
+  {
+   "id": "eid:sym_to_symbreak:s5:base",
+   "task": "endpoint_id",
+   "answer": "symmetry",
+   "pred": "symmetry",
+   "correct": true,
+   "meta": {
+    "edge": "sym_to_symbreak",
+    "seed": 5,
+    "side": "base"
+   },
+   "option_motifs": null,
+   "raw": "{\"motif_id\": \"symmetry\"}"
+  },
+  {
+   "id": "eid:sym_to_symbreak:s5:img",
+   "task": "endpoint_id",
+   "answer": "symmetry_breaking",
+   "pred": "symmetry_breaking",
+   "correct": true,
+   "meta": {
+    "edge": "sym_to_symbreak",
+    "seed": 5,
+    "side": "img"
+   },
+   "option_motifs": null,
+   "raw": "{\"motif_id\": \"symmetry_breaking\"}"
+  },
+  {
+   "id": "eid:cycle_to_strangeloop:s0:base",
+   "task": "endpoint_id",
+   "answer": "cycle",
+   "pred": "cycle",
+   "correct": true,
+   "meta": {
+    "edge": "cycle_to_strangeloop",
+    "seed": 0,
+    "side": "base"
+   },
+   "option_motifs": null,
+   "raw": "{\"motif_id\": \"cycle\"}"
+  },
+  {
+   "id": "eid:cycle_to_strangeloop:s0:img",
+   "task": "endpoint_id",
+   "answer": "strange_loop",
+   "pred": "strange_loop",
+   "correct": true,
+   "meta": {
+    "edge": "cycle_to_strangeloop",
+    "seed": 0,
+    "side": "img"
+   },
+   "option_motifs": null,
+   "raw": "{\"motif_id\": \"strange_loop\"}"
+  },
+  {
+   "id": "eid:cycle_to_strangeloop:s1:base",
+   "task": "endpoint_id",
+   "answer": "cycle",
+   "pred": "cycle",
+   "correct": true,
+   "meta": {
+    "edge": "cycle_to_strangeloop",
+    "seed": 1,
+    "side": "base"
+   },
+   "option_motifs": null,
+   "raw": "{\"motif_id\": \"cycle\"}"
+  },
+  {
+   "id": "eid:cycle_to_strangeloop:s1:img",
+   "task": "endpoint_id",
+   "answer": "strange_loop",
+   "pred": "recursion",
+   "correct": false,
+   "meta": {
+    "edge": "cycle_to_strangeloop",
+    "seed": 1,
+    "side": "img"
+   },
+   "option_motifs": null,
+   "raw": "Looking at this diagram, I see a hierarchical structure with discrete levels (indicated by the horizontal dashed lines). There are two distinct paths from the bottom to the top:\n\n1. A **step-by-step p"
+  },
+  {
+   "id": "eid:cycle_to_strangeloop:s2:base",
+   "task": "endpoint_id",
+   "answer": "cycle",
+   "pred": "cycle",
+   "correct": true,
+   "meta": {
+    "edge": "cycle_to_strangeloop",
+    "seed": 2,
+    "side": "base"
+   },
+   "option_motifs": null,
+   "raw": "{\"motif_id\": \"cycle\"}"
+  },
+  {
+   "id": "eid:cycle_to_strangeloop:s2:img",
+   "task": "endpoint_id",
+   "answer": "strange_loop",
+   "pred": "strange_loop",
+   "correct": true,
+   "meta": {
+    "edge": "cycle_to_strangeloop",
+    "seed": 2,
+    "side": "img"
+   },
+   "option_motifs": null,
+   "raw": "{\"motif_id\": \"strange_loop\"}"
+  },
+  {
+   "id": "eid:cycle_to_strangeloop:s3:base",
+   "task": "endpoint_id",
+   "answer": "cycle",
+   "pred": "cycle",
+   "correct": true,
+   "meta": {
+    "edge": "cycle_to_strangeloop",
+    "seed": 3,
+    "side": "base"
+   },
+   "option_motifs": null,
+   "raw": "{\"motif_id\": \"cycle\"}"
+  },
+  {
+   "id": "eid:cycle_to_strangeloop:s3:img",
+   "task": "endpoint_id",
+   "answer": "strange_loop",
+   "pred": "nesting",
+   "correct": false,
+   "meta": {
+    "edge": "cycle_to_strangeloop",
+    "seed": 3,
+    "side": "img"
+   },
+   "option_motifs": null,
+   "raw": "{\"motif_id\": \"nesting\"}"
+  },
+  {
+   "id": "eid:cycle_to_strangeloop:s4:base",
+   "task": "endpoint_id",
+   "answer": "cycle",
+   "pred": "cycle",
+   "correct": true,
+   "meta": {
+    "edge": "cycle_to_strangeloop",
+    "seed": 4,
+    "side": "base"
+   },
+   "option_motifs": null,
+   "raw": "{\"motif_id\": \"cycle\"}"
+  },
+  {
+   "id": "eid:cycle_to_strangeloop:s4:img",
+   "task": "endpoint_id",
+   "answer": "strange_loop",
+   "pred": "strange_loop",
+   "correct": true,
+   "meta": {
+    "edge": "cycle_to_strangeloop",
+    "seed": 4,
+    "side": "img"
+   },
+   "option_motifs": null,
+   "raw": "{\"motif_id\": \"strange_loop\"}"
+  },
+  {
+   "id": "eid:cycle_to_strangeloop:s5:base",
+   "task": "endpoint_id",
+   "answer": "cycle",
+   "pred": "cycle",
+   "correct": true,
+   "meta": {
+    "edge": "cycle_to_strangeloop",
+    "seed": 5,
+    "side": "base"
+   },
+   "option_motifs": null,
+   "raw": "{\"motif_id\": \"cycle\"}"
+  },
+  {
+   "id": "eid:cycle_to_strangeloop:s5:img",
+   "task": "endpoint_id",
+   "answer": "strange_loop",
+   "pred": "strange_loop",
+   "correct": true,
+   "meta": {
+    "edge": "cycle_to_strangeloop",
+    "seed": 5,
+    "side": "img"
+   },
+   "option_motifs": null,
+   "raw": "{\"motif_id\": \"strange_loop\"}"
+  },
+  {
+   "id": "eid:nesting_to_recursion:s0:base",
+   "task": "endpoint_id",
+   "answer": "nesting",
+   "pred": "nesting",
+   "correct": true,
+   "meta": {
+    "edge": "nesting_to_recursion",
+    "seed": 0,
+    "side": "base"
+   },
+   "option_motifs": null,
+   "raw": "{\"motif_id\": \"nesting\"}"
+  },
+  {
+   "id": "eid:nesting_to_recursion:s0:img",
+   "task": "endpoint_id",
+   "answer": "recursion",
+   "pred": "recursion",
+   "correct": true,
+   "meta": {
+    "edge": "nesting_to_recursion",
+    "seed": 0,
+    "side": "img"
+   },
+   "option_motifs": null,
+   "raw": "Looking at the diagram, I see a hierarchical structure where:\n1. The outermost square contains two large squares\n2. Each large square contains two medium squares  \n3. Each medium square contains two s"
+  },
+  {
+   "id": "eid:nesting_to_recursion:s1:base",
+   "task": "endpoint_id",
+   "answer": "nesting",
+   "pred": "nesting",
+   "correct": true,
+   "meta": {
+    "edge": "nesting_to_recursion",
+    "seed": 1,
+    "side": "base"
+   },
+   "option_motifs": null,
+   "raw": "Looking at this image, I see a series of concentric squares, each one contained entirely within the previous one, creating a structure of increasing depth toward the center.\n\nLet me analyze the key op"
+  },
+  {
+   "id": "eid:nesting_to_recursion:s1:img",
+   "task": "endpoint_id",
+   "answer": "recursion",
+   "pred": "recursion",
+   "correct": true,
+   "meta": {
+    "edge": "nesting_to_recursion",
+    "seed": 1,
+    "side": "img"
+   },
+   "option_motifs": null,
+   "raw": "Looking at this diagram, I see a hierarchical structure where squares contain smaller squares that contain even smaller squares, continuing down to tiny 2\u00d72 grids of minimal squares.\n\nLet me trace the"
+  },
+  {
+   "id": "eid:nesting_to_recursion:s2:base",
+   "task": "endpoint_id",
+   "answer": "nesting",
+   "pred": "nesting",
+   "correct": true,
+   "meta": {
+    "edge": "nesting_to_recursion",
+    "seed": 2,
+    "side": "base"
+   },
+   "option_motifs": null,
+   "raw": "Looking at the diagram, I see concentric squares \u2014 each square is contained within a larger one, creating a hierarchical structure of containment.\n\nLet me analyze the key candidates:\n\n**Recursion** is"
+  },
+  {
+   "id": "eid:nesting_to_recursion:s2:img",
+   "task": "endpoint_id",
+   "answer": "recursion",
+   "pred": "recursion",
+   "correct": true,
+   "meta": {
+    "edge": "nesting_to_recursion",
+    "seed": 2,
+    "side": "img"
+   },
+   "option_motifs": null,
+   "raw": "Looking at the diagram, I see a large square containing two smaller squares. Each of those smaller squares contains two even smaller squares, and those contain the smallest squares. This is a self-sim"
+  },
+  {
+   "id": "eid:nesting_to_recursion:s3:base",
+   "task": "endpoint_id",
+   "answer": "nesting",
+   "pred": "nesting",
+   "correct": true,
+   "meta": {
+    "edge": "nesting_to_recursion",
+    "seed": 3,
+    "side": "base"
+   },
+   "option_motifs": null,
+   "raw": "{\"motif_id\": \"nesting\"}"
+  },
+  {
+   "id": "eid:nesting_to_recursion:s3:img",
+   "task": "endpoint_id",
+   "answer": "recursion",
+   "pred": "recursion",
+   "correct": true,
+   "meta": {
+    "edge": "nesting_to_recursion",
+    "seed": 3,
+    "side": "img"
+   },
+   "option_motifs": null,
+   "raw": "{\"motif_id\": \"recursion\"}"
+  },
+  {
+   "id": "eid:nesting_to_recursion:s4:base",
+   "task": "endpoint_id",
+   "answer": "nesting",
+   "pred": "nesting",
+   "correct": true,
+   "meta": {
+    "edge": "nesting_to_recursion",
+    "seed": 4,
+    "side": "base"
+   },
+   "option_motifs": null,
+   "raw": "{\"motif_id\": \"nesting\"}"
+  },
+  {
+   "id": "eid:nesting_to_recursion:s4:img",
+   "task": "endpoint_id",
+   "answer": "recursion",
+   "pred": "recursion",
+   "correct": true,
+   "meta": {
+    "edge": "nesting_to_recursion",
+    "seed": 4,
+    "side": "img"
+   },
+   "option_motifs": null,
+   "raw": "Looking at this diagram, I see a hierarchical structure where:\n\n1. A large square contains two smaller squares positioned at opposite corners (top-right and bottom-left)\n2. Each of those medium square"
+  },
+  {
+   "id": "eid:nesting_to_recursion:s5:base",
+   "task": "endpoint_id",
+   "answer": "nesting",
+   "pred": "nesting",
+   "correct": true,
+   "meta": {
+    "edge": "nesting_to_recursion",
+    "seed": 5,
+    "side": "base"
+   },
+   "option_motifs": null,
+   "raw": "{\"motif_id\": \"nesting\"}"
+  },
+  {
+   "id": "eid:nesting_to_recursion:s5:img",
+   "task": "endpoint_id",
+   "answer": "recursion",
+   "pred": "recursion",
+   "correct": true,
+   "meta": {
+    "edge": "nesting_to_recursion",
+    "seed": 5,
+    "side": "img"
+   },
+   "option_motifs": null,
+   "raw": "Looking at this diagram, I see a **self-similar hierarchical structure** with multiple levels:\n\n- The outermost box contains two large boxes (top-left and bottom-right)\n- Each large box contains two m"
+  },
+  {
+   "id": "eid:tiling_to_aperiodic:s0:base",
+   "task": "endpoint_id",
+   "answer": "tiling",
+   "pred": "alternation",
+   "correct": false,
+   "meta": {
+    "edge": "tiling_to_aperiodic",
+    "seed": 0,
+    "side": "base"
+   },
+   "option_motifs": null,
+   "raw": "Looking at the image, I see three horizontal rows of cells with two colors (beige and white) strictly alternating. Each cell has a central dot.\n\nKey observations:\n- Only **two states** exist (beige/wh"
+  },
+  {
+   "id": "eid:tiling_to_aperiodic:s0:img",
+   "task": "endpoint_id",
+   "answer": "aperiodic_tiling",
+   "pred": "tiling",
+   "correct": false,
+   "meta": {
+    "edge": "tiling_to_aperiodic",
+    "seed": 0,
+    "side": "img"
+   },
+   "option_motifs": null,
+   "raw": "{\"motif_id\": \"tiling\"}"
+  },
+  {
+   "id": "eid:tiling_to_aperiodic:s1:base",
+   "task": "endpoint_id",
+   "answer": "tiling",
+   "pred": "alternation",
+   "correct": false,
+   "meta": {
+    "edge": "tiling_to_aperiodic",
+    "seed": 1,
+    "side": "base"
+   },
+   "option_motifs": null,
+   "raw": "Looking at the diagram, I see three horizontal rows of rectangles arranged in a strict alternating pattern of white and shaded cells. Each row demonstrates perfect alternation between two states:\n\n- *"
+  },
+  {
+   "id": "eid:tiling_to_aperiodic:s1:img",
+   "task": "endpoint_id",
+   "answer": "aperiodic_tiling",
+   "pred": "interference",
+   "correct": false,
+   "meta": {
+    "edge": "tiling_to_aperiodic",
+    "seed": 1,
+    "side": "img"
+   },
+   "option_motifs": null,
+   "raw": "Looking at the diagram, I see three rows of cells with shaded (beige) and white cells. Analyzing the positions of shaded cells:\n\n**Row 2** (12 cells): shaded at positions 2, 5, 7, 10\n**Rows 1 & 3** (1"
+  },
+  {
+   "id": "eid:tiling_to_aperiodic:s2:base",
+   "task": "endpoint_id",
+   "answer": "tiling",
+   "pred": "alternation",
+   "correct": false,
+   "meta": {
+    "edge": "tiling_to_aperiodic",
+    "seed": 2,
+    "side": "base"
+   },
+   "option_motifs": null,
+   "raw": "Looking at this diagram, I see three horizontal rows of cells arranged in a grid. Each row consists of rectangular cells that alternate between two states: white and shaded (beige). The vertical grid "
+  },
+  {
+   "id": "eid:tiling_to_aperiodic:s2:img",
+   "task": "endpoint_id",
+   "answer": "aperiodic_tiling",
+   "pred": "symmetry_breaking",
+   "correct": false,
+   "meta": {
+    "edge": "tiling_to_aperiodic",
+    "seed": 2,
+    "side": "img"
+   },
+   "option_motifs": null,
+   "raw": "Looking at the diagram, I see three identical rows of cells with vertical shaded stripes at specific positions: columns 2, 5, 7, 10, and 13.\n\nAnalyzing the spacing pattern (gaps between shaded columns"
+  },
+  {
+   "id": "eid:tiling_to_aperiodic:s3:base",
+   "task": "endpoint_id",
+   "answer": "tiling",
+   "pred": "alternation",
+   "correct": false,
+   "meta": {
+    "edge": "tiling_to_aperiodic",
+    "seed": 3,
+    "side": "base"
+   },
+   "option_motifs": null,
+   "raw": "{\"motif_id\": \"alternation\"}"
+  },
+  {
+   "id": "eid:tiling_to_aperiodic:s3:img",
+   "task": "endpoint_id",
+   "answer": "aperiodic_tiling",
+   "pred": "aperiodic_tiling",
+   "correct": true,
+   "meta": {
+    "edge": "tiling_to_aperiodic",
+    "seed": 3,
+    "side": "img"
+   },
+   "option_motifs": null,
+   "raw": "{\"motif_id\": \"aperiodic_tiling\"}"
+  },
+  {
+   "id": "eid:tiling_to_aperiodic:s4:base",
+   "task": "endpoint_id",
+   "answer": "tiling",
+   "pred": "alternation",
+   "correct": false,
+   "meta": {
+    "edge": "tiling_to_aperiodic",
+    "seed": 4,
+    "side": "base"
+   },
+   "option_motifs": null,
+   "raw": "Looking at the diagram, I see four horizontal rows of vertical rectangles that alternate strictly between two colors (white and light tan/beige). \n\nThe key structural feature is:\n- Exactly two states "
+  },
+  {
+   "id": "eid:tiling_to_aperiodic:s4:img",
+   "task": "endpoint_id",
+   "answer": "aperiodic_tiling",
+   "pred": "interference",
+   "correct": false,
+   "meta": {
+    "edge": "tiling_to_aperiodic",
+    "seed": 4,
+    "side": "img"
+   },
+   "option_motifs": null,
+   "raw": "Looking at this diagram, I see three horizontal rows of cells containing black dots, with certain vertical positions marked by shaded (beige) rectangles.\n\nThe key structural feature is the **spacing p"
+  },
+  {
+   "id": "eid:tiling_to_aperiodic:s5:base",
+   "task": "endpoint_id",
+   "answer": "tiling",
+   "pred": "alternation",
+   "correct": false,
+   "meta": {
+    "edge": "tiling_to_aperiodic",
+    "seed": 5,
+    "side": "base"
+   },
+   "option_motifs": null,
+   "raw": "{\"motif_id\": \"alternation\"}"
+  },
+  {
+   "id": "eid:tiling_to_aperiodic:s5:img",
+   "task": "endpoint_id",
+   "answer": "aperiodic_tiling",
+   "pred": "braiding",
+   "correct": false,
+   "meta": {
+    "edge": "tiling_to_aperiodic",
+    "seed": 5,
+    "side": "img"
+   },
+   "option_motifs": null,
+   "raw": "Looking at the diagram, I see three horizontal rows (strands) with vertical strips. Analyzing the shaded cells:\n\n**Row 1 (top)** has shaded cells at positions: 2, 5, 7, 10, 12, 15, 17, 20\n**Rows 2-3 ("
+  },
+  {
+   "id": "eid:iso_to_duality:s0:base",
+   "task": "endpoint_id",
+   "answer": "isomorphism",
+   "pred": "isomorphism",
+   "correct": true,
+   "meta": {
+    "edge": "iso_to_duality",
+    "seed": 0,
+    "side": "base"
+   },
+   "option_motifs": null,
+   "raw": "Looking at the diagram, I see two distinct clusters:\n- **Left side**: 4 circular nodes forming a complete graph K\u2084 (every node connected to every other)\n- **Right side**: 4 square nodes forming a comp"
+  },
+  {
+   "id": "eid:iso_to_duality:s0:img",
+   "task": "endpoint_id",
+   "answer": "projective_duality",
+   "pred": "coprime_orbit",
+   "correct": false,
+   "meta": {
+    "edge": "iso_to_duality",
+    "seed": 0,
+    "side": "img"
+   },
+   "option_motifs": null,
+   "raw": "Looking at the diagram, I see a ring of alternating circles and diamonds (8 nodes total) with two types of connections: solid lines forming the perimeter polygon, and dashed curved lines forming chord"
+  },
+  {
+   "id": "eid:iso_to_duality:s1:base",
+   "task": "endpoint_id",
+   "answer": "isomorphism",
+   "pred": "isomorphism",
+   "correct": true,
+   "meta": {
+    "edge": "iso_to_duality",
+    "seed": 1,
+    "side": "base"
+   },
+   "option_motifs": null,
+   "raw": "{\"motif_id\": \"isomorphism\"}"
+  },
+  {
+   "id": "eid:iso_to_duality:s1:img",
+   "task": "endpoint_id",
+   "answer": "projective_duality",
+   "pred": "cycle",
+   "correct": false,
+   "meta": {
+    "edge": "iso_to_duality",
+    "seed": 1,
+    "side": "img"
+   },
+   "option_motifs": null,
+   "raw": "{\"motif_id\": \"cycle\"}"
+  },
+  {
+   "id": "eid:iso_to_duality:s2:base",
+   "task": "endpoint_id",
+   "answer": "isomorphism",
+   "pred": "isomorphism",
+   "correct": true,
+   "meta": {
+    "edge": "iso_to_duality",
+    "seed": 2,
+    "side": "base"
+   },
+   "option_motifs": null,
+   "raw": "Looking at this diagram, I see two distinct clusters: the left side contains circular nodes, and the right side contains square nodes. Both clusters have the same number of nodes (6 each) and both app"
+  },
+  {
+   "id": "eid:iso_to_duality:s2:img",
+   "task": "endpoint_id",
+   "answer": "projective_duality",
+   "pred": "alternation",
+   "correct": false,
+   "meta": {
+    "edge": "iso_to_duality",
+    "seed": 2,
+    "side": "img"
+   },
+   "option_motifs": null,
+   "raw": "Looking at the diagram, I see a circular ring structure with two distinct types of nodes (circles and diamonds) arranged in a strict alternating pattern: circle-diamond-circle-diamond...\n\nLet me verif"
+  },
+  {
+   "id": "eid:iso_to_duality:s3:base",
+   "task": "endpoint_id",
+   "answer": "isomorphism",
+   "pred": "isomorphism",
+   "correct": true,
+   "meta": {
+    "edge": "iso_to_duality",
+    "seed": 3,
+    "side": "base"
+   },
+   "option_motifs": null,
+   "raw": "{\"motif_id\": \"isomorphism\"}"
+  },
+  {
+   "id": "eid:iso_to_duality:s3:img",
+   "task": "endpoint_id",
+   "answer": "projective_duality",
+   "pred": "alternation",
+   "correct": false,
+   "meta": {
+    "edge": "iso_to_duality",
+    "seed": 3,
+    "side": "img"
+   },
+   "option_motifs": null,
+   "raw": "Looking at the diagram, I see 8 nodes arranged in a closed loop: 4 circles and 4 diamonds. Traversing the loop, the node types strictly alternate: circle \u2192 diamond \u2192 circle \u2192 diamond \u2192 circle \u2192 diamon"
+  },
+  {
+   "id": "eid:iso_to_duality:s4:base",
+   "task": "endpoint_id",
+   "answer": "isomorphism",
+   "pred": "isomorphism",
+   "correct": true,
+   "meta": {
+    "edge": "iso_to_duality",
+    "seed": 4,
+    "side": "base"
+   },
+   "option_motifs": null,
+   "raw": "{\"motif_id\": \"isomorphism\"}"
+  },
+  {
+   "id": "eid:iso_to_duality:s4:img",
+   "task": "endpoint_id",
+   "answer": "projective_duality",
+   "pred": "cycle",
+   "correct": false,
+   "meta": {
+    "edge": "iso_to_duality",
+    "seed": 4,
+    "side": "img"
+   },
+   "option_motifs": null,
+   "raw": "{\"motif_id\": \"cycle\"}"
+  },
+  {
+   "id": "eid:iso_to_duality:s5:base",
+   "task": "endpoint_id",
+   "answer": "isomorphism",
+   "pred": "isomorphism",
+   "correct": true,
+   "meta": {
+    "edge": "iso_to_duality",
+    "seed": 5,
+    "side": "base"
+   },
+   "option_motifs": null,
+   "raw": "{\"motif_id\": \"isomorphism\"}"
+  },
+  {
+   "id": "eid:iso_to_duality:s5:img",
+   "task": "endpoint_id",
+   "answer": "projective_duality",
+   "pred": "alternation",
+   "correct": false,
+   "meta": {
+    "edge": "iso_to_duality",
+    "seed": 5,
+    "side": "img"
+   },
+   "option_motifs": null,
+   "raw": "{\"motif_id\": \"alternation\"}"
+  },
+  {
+   "id": "eid:recursion_to_contraction:s0:base",
+   "task": "endpoint_id",
+   "answer": "recursion",
+   "pred": "recursion",
+   "correct": true,
+   "meta": {
+    "edge": "recursion_to_contraction",
+    "seed": 0,
+    "side": "base"
+   },
+   "option_motifs": null,
+   "raw": "{\"motif_id\": \"recursion\"}"
+  },
+  {
+   "id": "eid:recursion_to_contraction:s0:img",
+   "task": "endpoint_id",
+   "answer": "contraction_fixed_point",
+   "pred": "recursion",
+   "correct": false,
+   "meta": {
+    "edge": "recursion_to_contraction",
+    "seed": 0,
+    "side": "img"
+   },
+   "option_motifs": null,
+   "raw": "Looking at this diagram, I see a path composed of connected line segments that climbs upward through several levels and terminates at a distinct endpoint marked by a red dot surrounded by a dashed cir"
+  },
+  {
+   "id": "eid:recursion_to_contraction:s1:base",
+   "task": "endpoint_id",
+   "answer": "recursion",
+   "pred": "recursion",
+   "correct": true,
+   "meta": {
+    "edge": "recursion_to_contraction",
+    "seed": 1,
+    "side": "base"
+   },
+   "option_motifs": null,
+   "raw": "{\"motif_id\": \"recursion\"}"
+  },
+  {
+   "id": "eid:recursion_to_contraction:s1:img",
+   "task": "endpoint_id",
+   "answer": "contraction_fixed_point",
+   "pred": "contraction_fixed_point",
+   "correct": true,
+   "meta": {
+    "edge": "recursion_to_contraction",
+    "seed": 1,
+    "side": "img"
+   },
+   "option_motifs": null,
+   "raw": "Looking at the diagram, I see a polygonal path with connected line segments that progressively decrease in length as they approach the red dot (highlighted with a dashed circle). \n\nThe visual pattern "
+  },
+  {
+   "id": "eid:recursion_to_contraction:s2:base",
+   "task": "endpoint_id",
+   "answer": "recursion",
+   "pred": "recursion",
+   "correct": true,
+   "meta": {
+    "edge": "recursion_to_contraction",
+    "seed": 2,
+    "side": "base"
+   },
+   "option_motifs": null,
+   "raw": "{\"motif_id\": \"recursion\"}"
+  },
+  {
+   "id": "eid:recursion_to_contraction:s2:img",
+   "task": "endpoint_id",
+   "answer": "contraction_fixed_point",
+   "pred": "contraction_fixed_point",
+   "correct": true,
+   "meta": {
+    "edge": "recursion_to_contraction",
+    "seed": 2,
+    "side": "img"
+   },
+   "option_motifs": null,
+   "raw": "Looking at this diagram, I see a path composed of connected line segments that progressively decrease in size as they approach a distinctive endpoint marked by a red dot with a dashed circular highlig"
+  },
+  {
+   "id": "eid:recursion_to_contraction:s3:base",
+   "task": "endpoint_id",
+   "answer": "recursion",
+   "pred": "recursion",
+   "correct": true,
+   "meta": {
+    "edge": "recursion_to_contraction",
+    "seed": 3,
+    "side": "base"
+   },
+   "option_motifs": null,
+   "raw": "Looking at the image, I see a fractal tree structure where a trunk splits into branches, which in turn split into smaller branches, continuing this pattern down to tiny twigs.\n\nThe defining characteri"
+  },
+  {
+   "id": "eid:recursion_to_contraction:s3:img",
+   "task": "endpoint_id",
+   "answer": "contraction_fixed_point",
+   "pred": "spiral",
+   "correct": false,
+   "meta": {
+    "edge": "recursion_to_contraction",
+    "seed": 3,
+    "side": "img"
+   },
+   "option_motifs": null,
+   "raw": "{\"motif_id\": \"spiral\"}"
+  },
+  {
+   "id": "eid:recursion_to_contraction:s4:base",
+   "task": "endpoint_id",
+   "answer": "recursion",
+   "pred": "recursion",
+   "correct": true,
+   "meta": {
+    "edge": "recursion_to_contraction",
+    "seed": 4,
+    "side": "base"
+   },
+   "option_motifs": null,
+   "raw": "{\"motif_id\": \"recursion\"}"
+  },
+  {
+   "id": "eid:recursion_to_contraction:s4:img",
+   "task": "endpoint_id",
+   "answer": "contraction_fixed_point",
+   "pred": "contraction_fixed_point",
+   "correct": true,
+   "meta": {
+    "edge": "recursion_to_contraction",
+    "seed": 4,
+    "side": "img"
+   },
+   "option_motifs": null,
+   "raw": "Looking at this diagram, I see a black polyline with multiple segments approaching a red dot (highlighted with a dashed circle). \n\nThe key visual elements are:\n- A sequence of discrete steps (line seg"
+  },
+  {
+   "id": "eid:recursion_to_contraction:s5:base",
+   "task": "endpoint_id",
+   "answer": "recursion",
+   "pred": "recursion",
+   "correct": true,
+   "meta": {
+    "edge": "recursion_to_contraction",
+    "seed": 5,
+    "side": "base"
+   },
+   "option_motifs": null,
+   "raw": "{\"motif_id\": \"recursion\"}"
+  },
+  {
+   "id": "eid:recursion_to_contraction:s5:img",
+   "task": "endpoint_id",
+   "answer": "contraction_fixed_point",
+   "pred": "contraction_fixed_point",
+   "correct": true,
+   "meta": {
+    "edge": "recursion_to_contraction",
+    "seed": 5,
+    "side": "img"
+   },
+   "option_motifs": null,
+   "raw": "{\"motif_id\": \"contraction_fixed_point\"}"
+  },
+  {
+   "id": "sq_thm:sym_to_symbreak:s0",
+   "task": "square_thm",
+   "answer": "D",
+   "pred": "D",
+   "correct": true,
+   "meta": {
+    "edge": "sym_to_symbreak",
+    "seed": 0,
+    "src": "symmetry",
+    "dst": "symmetry_breaking"
+   },
+   "option_motifs": {
+    "A": "mobius",
+    "B": "interference",
+    "C": "figure_ground",
+    "D": "symmetry_breaking"
+   },
+   "raw": "Looking at the image, the **BEFORE** panel shows two separate tree-like paths. The change **g** modifies the right path: the second-to-last vertex is moved outward, causing the final edge to slope lef"
+  },
+  {
+   "id": "sq_story:sym_to_symbreak:s0",
+   "task": "square_story",
+   "answer": "B",
+   "pred": "B",
+   "correct": true,
+   "meta": {
+    "edge": "sym_to_symbreak",
+    "seed": 0,
+    "src": "symmetry",
+    "dst": "symmetry_breaking",
+    "identity_option": "A"
+   },
+   "option_motifs": {
+    "A": "symmetry",
+    "B": "symmetry_breaking",
+    "C": "interference",
+    "D": "figure_ground"
+   },
+   "raw": "{\"choice\": \"B\"}"
+  },
+  {
+   "id": "sq_thm:sym_to_symbreak:s1",
+   "task": "square_thm",
+   "answer": "C",
+   "pred": "A",
+   "correct": false,
+   "meta": {
+    "edge": "sym_to_symbreak",
+    "seed": 1,
+    "src": "symmetry",
+    "dst": "symmetry_breaking"
+   },
+   "option_motifs": {
+    "A": "mobius",
+    "B": "figure_ground",
+    "C": "symmetry_breaking",
+    "D": "interference"
+   },
+   "raw": "{\"choice\": \"A\"}"
+  },
+  {
+   "id": "sq_story:sym_to_symbreak:s1",
+   "task": "square_story",
+   "answer": "C",
+   "pred": "D",
+   "correct": false,
+   "meta": {
+    "edge": "sym_to_symbreak",
+    "seed": 1,
+    "src": "symmetry",
+    "dst": "symmetry_breaking",
+    "identity_option": "B"
+   },
+   "option_motifs": {
+    "A": "figure_ground",
+    "B": "symmetry",
+    "C": "symmetry_breaking",
+    "D": "interference"
+   },
+   "raw": "Looking at this puzzle, I need to identify the structural change $g$ shown in the diagram and then find which story realizes that same change applied to the original palindromic story.\n\n**Analyzing th"
+  },
+  {
+   "id": "sq_thm:sym_to_symbreak:s2",
+   "task": "square_thm",
+   "answer": "B",
+   "pred": "D",
+   "correct": false,
+   "meta": {
+    "edge": "sym_to_symbreak",
+    "seed": 2,
+    "src": "symmetry",
+    "dst": "symmetry_breaking"
+   },
+   "option_motifs": {
+    "A": "figure_ground",
+    "B": "symmetry_breaking",
+    "C": "interference",
+    "D": "mobius"
+   },
+   "raw": "Looking at the image, the **BEFORE** panel shows two zigzag patterns. The **AFTER** panel shows the left pattern unchanged, while the right pattern has been modified at the bottom\u2014the endpoint has bee"
+  },
+  {
+   "id": "sq_story:sym_to_symbreak:s2",
+   "task": "square_story",
+   "answer": "D",
+   "pred": "D",
+   "correct": true,
+   "meta": {
+    "edge": "sym_to_symbreak",
+    "seed": 2,
+    "src": "symmetry",
+    "dst": "symmetry_breaking",
+    "identity_option": "C"
+   },
+   "option_motifs": {
+    "A": "figure_ground",
+    "B": "interference",
+    "C": "symmetry",
+    "D": "symmetry_breaking"
+   },
+   "raw": "Looking at the diagram change **g**: the left side remains unchanged, while the right side is altered at its very end\u2014the final point is displaced outward (to the right) and marked (red). This represe"
+  },
+  {
+   "id": "sq_thm:sym_to_symbreak:s3",
+   "task": "square_thm",
+   "answer": "D",
+   "pred": "C",
+   "correct": false,
+   "meta": {
+    "edge": "sym_to_symbreak",
+    "seed": 3,
+    "src": "symmetry",
+    "dst": "symmetry_breaking"
+   },
+   "option_motifs": {
+    "A": "figure_ground",
+    "B": "interference",
+    "C": "mobius",
+    "D": "symmetry_breaking"
+   },
+   "raw": "{\"choice\": \"C\"}"
+  },
+  {
+   "id": "sq_story:sym_to_symbreak:s3",
+   "task": "square_story",
+   "answer": "B",
+   "pred": "A",
+   "correct": false,
+   "meta": {
+    "edge": "sym_to_symbreak",
+    "seed": 3,
+    "src": "symmetry",
+    "dst": "symmetry_breaking",
+    "identity_option": "A"
+   },
+   "option_motifs": {
+    "A": "symmetry",
+    "B": "symmetry_breaking",
+    "C": "interference",
+    "D": "figure_ground"
+   },
+   "raw": "{\"choice\": \"A\"}"
+  },
+  {
+   "id": "sq_thm:sym_to_symbreak:s4",
+   "task": "square_thm",
+   "answer": "B",
+   "pred": "D",
+   "correct": false,
+   "meta": {
+    "edge": "sym_to_symbreak",
+    "seed": 4,
+    "src": "symmetry",
+    "dst": "symmetry_breaking"
+   },
+   "option_motifs": {
+    "A": "figure_ground",
+    "B": "symmetry_breaking",
+    "C": "interference",
+    "D": "mobius"
+   },
+   "raw": "{\"choice\": \"D\"}"
+  },
+  {
+   "id": "sq_story:sym_to_symbreak:s4",
+   "task": "square_story",
+   "answer": "B",
+   "pred": "A",
+   "correct": false,
+   "meta": {
+    "edge": "sym_to_symbreak",
+    "seed": 4,
+    "src": "symmetry",
+    "dst": "symmetry_breaking",
+    "identity_option": "C"
+   },
+   "option_motifs": {
+    "A": "interference",
+    "B": "symmetry_breaking",
+    "C": "symmetry",
+    "D": "figure_ground"
+   },
+   "raw": "Looking at the problem, I need to identify which story has the structure of the BEFORE panel (a perfect mirror-symmetric palindrome) with the specific change **g** applied: one vertex on the right sid"
+  },
+  {
+   "id": "sq_thm:sym_to_symbreak:s5",
+   "task": "square_thm",
+   "answer": "B",
+   "pred": "B",
+   "correct": true,
+   "meta": {
+    "edge": "sym_to_symbreak",
+    "seed": 5,
+    "src": "symmetry",
+    "dst": "symmetry_breaking"
+   },
+   "option_motifs": {
+    "A": "interference",
+    "B": "symmetry_breaking",
+    "C": "mobius",
+    "D": "figure_ground"
+   },
+   "raw": "{\"choice\": \"B\"}"
+  },
+  {
+   "id": "sq_story:sym_to_symbreak:s5",
+   "task": "square_story",
+   "answer": "D",
+   "pred": "D",
+   "correct": true,
+   "meta": {
+    "edge": "sym_to_symbreak",
+    "seed": 5,
+    "src": "symmetry",
+    "dst": "symmetry_breaking",
+    "identity_option": "A"
+   },
+   "option_motifs": {
+    "A": "symmetry",
+    "B": "figure_ground",
+    "C": "interference",
+    "D": "symmetry_breaking"
+   },
+   "raw": "{\"choice\": \"D\"}"
+  },
+  {
+   "id": "sq_thm:cycle_to_strangeloop:s0",
+   "task": "square_thm",
+   "answer": "B",
+   "pred": "B",
+   "correct": true,
+   "meta": {
+    "edge": "cycle_to_strangeloop",
+    "seed": 0,
+    "src": "cycle",
+    "dst": "strange_loop"
+   },
+   "option_motifs": {
+    "A": "spiral",
+    "B": "strange_loop",
+    "C": "mobius",
+    "D": "alternation"
+   },
+   "raw": "Looking at the image:\n\n**BEFORE** shows a directed cycle (6-cycle) - a functional graph of a cyclic permutation.\n\n**AFTER** shows the same cycle \"unrolled\" into a linear vertical layering (dashed line"
+  },
+  {
+   "id": "sq_story:cycle_to_strangeloop:s0",
+   "task": "square_story",
+   "answer": "D",
+   "pred": "D",
+   "correct": true,
+   "meta": {
+    "edge": "cycle_to_strangeloop",
+    "seed": 0,
+    "src": "cycle",
+    "dst": "strange_loop",
+    "identity_option": "A"
+   },
+   "option_motifs": {
+    "A": "cycle",
+    "B": "spiral",
+    "C": "mobius",
+    "D": "strange_loop"
+   },
+   "raw": "Looking at the diagram, **change g** transforms a circular cycle into a **linear vertical chain with a distinct, explicit return arrow** (the red curved arrow from the end back to the start).\n\nThe **B"
+  },
+  {
+   "id": "sq_thm:cycle_to_strangeloop:s1",
+   "task": "square_thm",
+   "answer": "C",
+   "pred": "C",
+   "correct": true,
+   "meta": {
+    "edge": "cycle_to_strangeloop",
+    "seed": 1,
+    "src": "cycle",
+    "dst": "strange_loop"
+   },
+   "option_motifs": {
+    "A": "mobius",
+    "B": "alternation",
+    "C": "strange_loop",
+    "D": "spiral"
+   },
+   "raw": "Looking at the image and the problem statement:\n\n**Analysis of the BEFORE panel:** The left side shows a directed cycle with 8 vertices. The Orbit Lemma theorem characterizes this as a functional grap"
+  },
+  {
+   "id": "sq_story:cycle_to_strangeloop:s1",
+   "task": "square_story",
+   "answer": "C",
+   "pred": "C",
+   "correct": true,
+   "meta": {
+    "edge": "cycle_to_strangeloop",
+    "seed": 1,
+    "src": "cycle",
+    "dst": "strange_loop",
+    "identity_option": "D"
+   },
+   "option_motifs": {
+    "A": "mobius",
+    "B": "spiral",
+    "C": "strange_loop",
+    "D": "cycle"
+   },
+   "raw": "{\"choice\": \"C\"}"
+  },
+  {
+   "id": "sq_thm:cycle_to_strangeloop:s2",
+   "task": "square_thm",
+   "answer": "D",
+   "pred": "D",
+   "correct": true,
+   "meta": {
+    "edge": "cycle_to_strangeloop",
+    "seed": 2,
+    "src": "cycle",
+    "dst": "strange_loop"
+   },
+   "option_motifs": {
+    "A": "spiral",
+    "B": "mobius",
+    "C": "alternation",
+    "D": "strange_loop"
+   },
+   "raw": "{\"choice\": \"D\"}"
+  },
+  {
+   "id": "sq_story:cycle_to_strangeloop:s2",
+   "task": "square_story",
+   "answer": "A",
+   "pred": "A",
+   "correct": true,
+   "meta": {
+    "edge": "cycle_to_strangeloop",
+    "seed": 2,
+    "src": "cycle",
+    "dst": "strange_loop",
+    "identity_option": "D"
+   },
+   "option_motifs": {
+    "A": "strange_loop",
+    "B": "spiral",
+    "C": "mobius",
+    "D": "cycle"
+   },
+   "raw": "Looking at the transformation $g$ from the diagram:\n\n**BEFORE**: A directed cycle with $n$ nodes arranged in a circle - all edges are equivalent.\n\n**AFTER**: The same $n$ nodes arranged in a path (lin"
+  },
+  {
+   "id": "sq_thm:cycle_to_strangeloop:s3",
+   "task": "square_thm",
+   "answer": "A",
+   "pred": "A",
+   "correct": true,
+   "meta": {
+    "edge": "cycle_to_strangeloop",
+    "seed": 3,
+    "src": "cycle",
+    "dst": "strange_loop"
+   },
+   "option_motifs": {
+    "A": "strange_loop",
+    "B": "mobius",
+    "C": "alternation",
+    "D": "spiral"
+   },
+   "raw": "Looking at the image:\n- **BEFORE**: A directed cycle (closed loop with 10 nodes).\n- **AFTER**: The same cycle drawn with vertices ordered in a line (diagonal), where 9 edges point forward (black) and "
+  },
+  {
+   "id": "sq_story:cycle_to_strangeloop:s3",
+   "task": "square_story",
+   "answer": "B",
+   "pred": "D",
+   "correct": false,
+   "meta": {
+    "edge": "cycle_to_strangeloop",
+    "seed": 3,
+    "src": "cycle",
+    "dst": "strange_loop",
+    "identity_option": "C"
+   },
+   "option_motifs": {
+    "A": "spiral",
+    "B": "strange_loop",
+    "C": "cycle",
+    "D": "mobius"
+   },
+   "raw": "{\"choice\": \"D\"}"
+  },
+  {
+   "id": "sq_thm:cycle_to_strangeloop:s4",
+   "task": "square_thm",
+   "answer": "D",
+   "pred": "D",
+   "correct": true,
+   "meta": {
+    "edge": "cycle_to_strangeloop",
+    "seed": 4,
+    "src": "cycle",
+    "dst": "strange_loop"
+   },
+   "option_motifs": {
+    "A": "alternation",
+    "B": "mobius",
+    "C": "spiral",
+    "D": "strange_loop"
+   },
+   "raw": "Looking at the problem, I need to identify what structural change $g$ does and then determine which theorem characterizes the resulting structure.\n\n**Analyzing the change $g$:**\n- **BEFORE**: A direct"
+  },
+  {
+   "id": "sq_story:cycle_to_strangeloop:s4",
+   "task": "square_story",
+   "answer": "D",
+   "pred": "D",
+   "correct": true,
+   "meta": {
+    "edge": "cycle_to_strangeloop",
+    "seed": 4,
+    "src": "cycle",
+    "dst": "strange_loop",
+    "identity_option": "C"
+   },
+   "option_motifs": {
+    "A": "spiral",
+    "B": "mobius",
+    "C": "cycle",
+    "D": "strange_loop"
+   },
+   "raw": "Looking at the structural transformation **g** shown in the image:\n\n**BEFORE**: A cycle (circular arrangement where each node points to the next, and the last points back to the first)  \n**AFTER**: A "
+  },
+  {
+   "id": "sq_thm:cycle_to_strangeloop:s5",
+   "task": "square_thm",
+   "answer": "B",
+   "pred": "B",
+   "correct": true,
+   "meta": {
+    "edge": "cycle_to_strangeloop",
+    "seed": 5,
+    "src": "cycle",
+    "dst": "strange_loop"
+   },
+   "option_motifs": {
+    "A": "alternation",
+    "B": "strange_loop",
+    "C": "mobius",
+    "D": "spiral"
+   },
+   "raw": "Looking at the transformation:\n\n**The change g**: The BEFORE panel shows a directed cycle (8 nodes, 8 edges). The AFTER panel shows the same nodes laid out in a linear order (diagonal) with horizontal"
+  },
+  {
+   "id": "sq_story:cycle_to_strangeloop:s5",
+   "task": "square_story",
+   "answer": "A",
+   "pred": "D",
+   "correct": false,
+   "meta": {
+    "edge": "cycle_to_strangeloop",
+    "seed": 5,
+    "src": "cycle",
+    "dst": "strange_loop",
+    "identity_option": "B"
+   },
+   "option_motifs": {
+    "A": "strange_loop",
+    "B": "cycle",
+    "C": "mobius",
+    "D": "spiral"
+   },
+   "raw": "{\"choice\": \"D\"}"
+  },
+  {
+   "id": "sq_thm:nesting_to_recursion:s0",
+   "task": "square_thm",
+   "answer": "B",
+   "pred": "B",
+   "correct": true,
+   "meta": {
+    "edge": "nesting_to_recursion",
+    "seed": 0,
+    "src": "nesting",
+    "dst": "recursion"
+   },
+   "option_motifs": {
+    "A": "infinite_descent",
+    "B": "recursion",
+    "C": "strange_loop",
+    "D": "self_reference"
+   },
+   "raw": "Looking at the structural change **g**:\n\n- **BEFORE**: A single linear chain of 4 nested squares (concentric containment: one inside another inside another...). This is a totally ordered chain of dept"
+  },
+  {
+   "id": "sq_story:nesting_to_recursion:s0",
+   "task": "square_story",
+   "answer": "B",
+   "pred": "B",
+   "correct": true,
+   "meta": {
+    "edge": "nesting_to_recursion",
+    "seed": 0,
+    "src": "nesting",
+    "dst": "recursion",
+    "identity_option": "D"
+   },
+   "option_motifs": {
+    "A": "self_reference",
+    "B": "recursion",
+    "C": "infinite_descent",
+    "D": "nesting"
+   },
+   "raw": "Looking at this puzzle, I need to identify the structural transformation **g** shown in the diagram and then find which story realizes that same transformed structure.\n\n**Analyzing the Diagram Transfo"
+  },
+  {
+   "id": "sq_thm:nesting_to_recursion:s1",
+   "task": "square_thm",
+   "answer": "B",
+   "pred": "B",
+   "correct": true,
+   "meta": {
+    "edge": "nesting_to_recursion",
+    "seed": 1,
+    "src": "nesting",
+    "dst": "recursion"
+   },
+   "option_motifs": {
+    "A": "self_reference",
+    "B": "recursion",
+    "C": "strange_loop",
+    "D": "infinite_descent"
+   },
+   "raw": "{\"choice\": \"B\"}"
+  },
+  {
+   "id": "sq_story:nesting_to_recursion:s1",
+   "task": "square_story",
+   "answer": "B",
+   "pred": "B",
+   "correct": true,
+   "meta": {
+    "edge": "nesting_to_recursion",
+    "seed": 1,
+    "src": "nesting",
+    "dst": "recursion",
+    "identity_option": "C"
+   },
+   "option_motifs": {
+    "A": "self_reference",
+    "B": "recursion",
+    "C": "nesting",
+    "D": "infinite_descent"
+   },
+   "raw": "{\"choice\": \"B\"}"
+  },
+  {
+   "id": "sq_thm:nesting_to_recursion:s2",
+   "task": "square_thm",
+   "answer": "C",
+   "pred": "C",
+   "correct": true,
+   "meta": {
+    "edge": "nesting_to_recursion",
+    "seed": 2,
+    "src": "nesting",
+    "dst": "recursion"
+   },
+   "option_motifs": {
+    "A": "self_reference",
+    "B": "infinite_descent",
+    "C": "recursion",
+    "D": "strange_loop"
+   },
+   "raw": "{\"choice\": \"C\"}"
+  },
+  {
+   "id": "sq_story:nesting_to_recursion:s2",
+   "task": "square_story",
+   "answer": "D",
+   "pred": "D",
+   "correct": true,
+   "meta": {
+    "edge": "nesting_to_recursion",
+    "seed": 2,
+    "src": "nesting",
+    "dst": "recursion",
+    "identity_option": "A"
+   },
+   "option_motifs": {
+    "A": "nesting",
+    "B": "self_reference",
+    "C": "infinite_descent",
+    "D": "recursion"
+   },
+   "raw": "Looking at the visual transformation **g**:\n\n**BEFORE**: 4 concentric squares forming a **linear chain** (1\u21921\u21921\u21921, one path from outside to inside).\n\n**AFTER**: The structure becomes a **complete bina"
+  },
+  {
+   "id": "sq_thm:nesting_to_recursion:s3",
+   "task": "square_thm",
+   "answer": "B",
+   "pred": "B",
+   "correct": true,
+   "meta": {
+    "edge": "nesting_to_recursion",
+    "seed": 3,
+    "src": "nesting",
+    "dst": "recursion"
+   },
+   "option_motifs": {
+    "A": "infinite_descent",
+    "B": "recursion",
+    "C": "self_reference",
+    "D": "strange_loop"
+   },
+   "raw": "Looking at the image, the **BEFORE** panel shows a linear chain of nested squares representing Cantor's Nested Interval Theorem (a decreasing sequence of sets). The transformation **g** converts this "
+  },
+  {
+   "id": "sq_story:nesting_to_recursion:s3",
+   "task": "square_story",
+   "answer": "B",
+   "pred": "B",
+   "correct": true,
+   "meta": {
+    "edge": "nesting_to_recursion",
+    "seed": 3,
+    "src": "nesting",
+    "dst": "recursion",
+    "identity_option": "D"
+   },
+   "option_motifs": {
+    "A": "infinite_descent",
+    "B": "recursion",
+    "C": "self_reference",
+    "D": "nesting"
+   },
+   "raw": "{\"choice\": \"B\"}"
+  },
+  {
+   "id": "sq_thm:nesting_to_recursion:s4",
+   "task": "square_thm",
+   "answer": "B",
+   "pred": "B",
+   "correct": true,
+   "meta": {
+    "edge": "nesting_to_recursion",
+    "seed": 4,
+    "src": "nesting",
+    "dst": "recursion"
+   },
+   "option_motifs": {
+    "A": "self_reference",
+    "B": "recursion",
+    "C": "strange_loop",
+    "D": "infinite_descent"
+   },
+   "raw": "Looking at the image, the **BEFORE** panel shows a linear chain of 4 concentric nested squares (representing a nested sequence of intervals/sets). The **AFTER** panel shows the same depth (4 levels) b"
+  },
+  {
+   "id": "sq_story:nesting_to_recursion:s4",
+   "task": "square_story",
+   "answer": "C",
+   "pred": "C",
+   "correct": true,
+   "meta": {
+    "edge": "nesting_to_recursion",
+    "seed": 4,
+    "src": "nesting",
+    "dst": "recursion",
+    "identity_option": "A"
+   },
+   "option_motifs": {
+    "A": "nesting",
+    "B": "self_reference",
+    "C": "recursion",
+    "D": "infinite_descent"
+   },
+   "raw": "{\"choice\": \"C\"}"
+  },
+  {
+   "id": "sq_thm:nesting_to_recursion:s5",
+   "task": "square_thm",
+   "answer": "D",
+   "pred": "D",
+   "correct": true,
+   "meta": {
+    "edge": "nesting_to_recursion",
+    "seed": 5,
+    "src": "nesting",
+    "dst": "recursion"
+   },
+   "option_motifs": {
+    "A": "infinite_descent",
+    "B": "strange_loop",
+    "C": "self_reference",
+    "D": "recursion"
+   },
+   "raw": "{\"choice\": \"D\"}"
+  },
+  {
+   "id": "sq_story:nesting_to_recursion:s5",
+   "task": "square_story",
+   "answer": "B",
+   "pred": "B",
+   "correct": true,
+   "meta": {
+    "edge": "nesting_to_recursion",
+    "seed": 5,
+    "src": "nesting",
+    "dst": "recursion",
+    "identity_option": "D"
+   },
+   "option_motifs": {
+    "A": "self_reference",
+    "B": "recursion",
+    "C": "infinite_descent",
+    "D": "nesting"
+   },
+   "raw": "Looking at the diagram transformation **g**:\n- **BEFORE**: 5 concentric squares representing a linear nesting structure (a single path going inward).\n- **AFTER**: The outer frame remains, but inside i"
+  },
+  {
+   "id": "sq_thm:tiling_to_aperiodic:s0",
+   "task": "square_thm",
+   "answer": "C",
+   "pred": "B",
+   "correct": false,
+   "meta": {
+    "edge": "tiling_to_aperiodic",
+    "seed": 0,
+    "src": "tiling",
+    "dst": "aperiodic_tiling"
+   },
+   "option_motifs": {
+    "A": "braiding",
+    "B": "interference",
+    "C": "aperiodic_tiling",
+    "D": "alternation"
+   },
+   "raw": "Looking at the visual change **g**:\n- **BEFORE**: Three staggered rows with alternating periodic patterns (phase-shifted between rows)\n- **AFTER**: Four aligned rows forming a perfect rectangular grid"
+  },
+  {
+   "id": "sq_story:tiling_to_aperiodic:s0",
+   "task": "square_story",
+   "answer": "C",
+   "pred": "D",
+   "correct": false,
+   "meta": {
+    "edge": "tiling_to_aperiodic",
+    "seed": 0,
+    "src": "tiling",
+    "dst": "aperiodic_tiling",
+    "identity_option": "B"
+   },
+   "option_motifs": {
+    "A": "alternation",
+    "B": "tiling",
+    "C": "aperiodic_tiling",
+    "D": "interference"
+   },
+   "raw": "Looking at the structural transformation in the image:\n\n**BEFORE**: 3 rows with lengths 12, 11, 12 (short row in the middle)\n**AFTER**: 4 rows with lengths 12, 12, 12, 11 (short row moved to the end, "
+  },
+  {
+   "id": "sq_thm:tiling_to_aperiodic:s1",
+   "task": "square_thm",
+   "answer": "C",
+   "pred": "C",
+   "correct": true,
+   "meta": {
+    "edge": "tiling_to_aperiodic",
+    "seed": 1,
+    "src": "tiling",
+    "dst": "aperiodic_tiling"
+   },
+   "option_motifs": {
+    "A": "alternation",
+    "B": "interference",
+    "C": "aperiodic_tiling",
+    "D": "braiding"
+   },
+   "raw": "Looking at this problem, I need to identify the structural change $g$ that transforms the BEFORE diagram to the AFTER diagram, and then determine which theorem characterizes the result of applying tha"
+  },
+  {
+   "id": "sq_story:tiling_to_aperiodic:s1",
+   "task": "square_story",
+   "answer": "B",
+   "pred": "D",
+   "correct": false,
+   "meta": {
+    "edge": "tiling_to_aperiodic",
+    "seed": 1,
+    "src": "tiling",
+    "dst": "aperiodic_tiling",
+    "identity_option": "C"
+   },
+   "option_motifs": {
+    "A": "alternation",
+    "B": "aperiodic_tiling",
+    "C": "tiling",
+    "D": "interference"
+   },
+   "raw": "{\"choice\": \"D\"}"
+  },
+  {
+   "id": "sq_thm:tiling_to_aperiodic:s2",
+   "task": "square_thm",
+   "answer": "C",
+   "pred": "C",
+   "correct": true,
+   "meta": {
+    "edge": "tiling_to_aperiodic",
+    "seed": 2,
+    "src": "tiling",
+    "dst": "aperiodic_tiling"
+   },
+   "option_motifs": {
+    "A": "interference",
+    "B": "alternation",
+    "C": "aperiodic_tiling",
+    "D": "braiding"
+   },
+   "raw": "Looking at the image, the **BEFORE** panel shows a periodic square tiling with a strictly alternating (period-2) shading pattern\u2014one of the three regular edge-to-edge tilings mentioned in Fedorov's th"
+  },
+  {
+   "id": "sq_story:tiling_to_aperiodic:s2",
+   "task": "square_story",
+   "answer": "D",
+   "pred": "B",
+   "correct": false,
+   "meta": {
+    "edge": "tiling_to_aperiodic",
+    "seed": 2,
+    "src": "tiling",
+    "dst": "aperiodic_tiling",
+    "identity_option": "C"
+   },
+   "option_motifs": {
+    "A": "alternation",
+    "B": "interference",
+    "C": "tiling",
+    "D": "aperiodic_tiling"
+   },
+   "raw": "{\"choice\": \"B\"}"
+  },
+  {
+   "id": "sq_thm:tiling_to_aperiodic:s3",
+   "task": "square_thm",
+   "answer": "D",
+   "pred": "B",
+   "correct": false,
+   "meta": {
+    "edge": "tiling_to_aperiodic",
+    "seed": 3,
+    "src": "tiling",
+    "dst": "aperiodic_tiling"
+   },
+   "option_motifs": {
+    "A": "braiding",
+    "B": "interference",
+    "C": "alternation",
+    "D": "aperiodic_tiling"
+   },
+   "raw": "Looking at the image, the transformation $g$ changes the pattern from:\n- **BEFORE**: 4 rows with vertical stripes of period 2 (all rows in phase)\n- **AFTER**: 3 rows with a staggered pattern of period"
+  },
+  {
+   "id": "sq_story:tiling_to_aperiodic:s3",
+   "task": "square_story",
+   "answer": "C",
+   "pred": "A",
+   "correct": false,
+   "meta": {
+    "edge": "tiling_to_aperiodic",
+    "seed": 3,
+    "src": "tiling",
+    "dst": "aperiodic_tiling",
+    "identity_option": "B"
+   },
+   "option_motifs": {
+    "A": "interference",
+    "B": "tiling",
+    "C": "aperiodic_tiling",
+    "D": "alternation"
+   },
+   "raw": "{\"choice\": \"A\"}"
+  },
+  {
+   "id": "sq_thm:tiling_to_aperiodic:s4",
+   "task": "square_thm",
+   "answer": "B",
+   "pred": "A",
+   "correct": false,
+   "meta": {
+    "edge": "tiling_to_aperiodic",
+    "seed": 4,
+    "src": "tiling",
+    "dst": "aperiodic_tiling"
+   },
+   "option_motifs": {
+    "A": "interference",
+    "B": "aperiodic_tiling",
+    "C": "braiding",
+    "D": "alternation"
+   },
+   "raw": "{\"choice\": \"A\"}"
+  },
+  {
+   "id": "sq_story:tiling_to_aperiodic:s4",
+   "task": "square_story",
+   "answer": "B",
+   "pred": "A",
+   "correct": false,
+   "meta": {
+    "edge": "tiling_to_aperiodic",
+    "seed": 4,
+    "src": "tiling",
+    "dst": "aperiodic_tiling",
+    "identity_option": "C"
+   },
+   "option_motifs": {
+    "A": "interference",
+    "B": "aperiodic_tiling",
+    "C": "tiling",
+    "D": "alternation"
+   },
+   "raw": "Looking at the visual transformation **g**:\n- **BEFORE**: 4 rows with a period-2 pattern (alternating shaded/unshaded blocks)\n- **AFTER**: 3 rows with a period-3 pattern (shaded every 3rd block, with "
+  },
+  {
+   "id": "sq_thm:tiling_to_aperiodic:s5",
+   "task": "square_thm",
+   "answer": "D",
+   "pred": "B",
+   "correct": false,
+   "meta": {
+    "edge": "tiling_to_aperiodic",
+    "seed": 5,
+    "src": "tiling",
+    "dst": "aperiodic_tiling"
+   },
+   "option_motifs": {
+    "A": "braiding",
+    "B": "interference",
+    "C": "alternation",
+    "D": "aperiodic_tiling"
+   },
+   "raw": "Looking at the diagram:\n- The **BEFORE** panel shows three horizontal rows, each a periodic pattern with period 3 (shaded vertical strips spaced every 3 units). The three rows have phases covering all"
+  },
+  {
+   "id": "sq_story:tiling_to_aperiodic:s5",
+   "task": "square_story",
+   "answer": "B",
+   "pred": "D",
+   "correct": false,
+   "meta": {
+    "edge": "tiling_to_aperiodic",
+    "seed": 5,
+    "src": "tiling",
+    "dst": "aperiodic_tiling",
+    "identity_option": "C"
+   },
+   "option_motifs": {
+    "A": "alternation",
+    "B": "aperiodic_tiling",
+    "C": "tiling",
+    "D": "interference"
+   },
+   "raw": "Looking at the image, the structural change **g** transforms the pattern from **period 2** to **period 3**:\n\n- **BEFORE**: Three rows where shaded vertical bars appear at every 2nd position (alternati"
+  },
+  {
+   "id": "sq_thm:iso_to_duality:s0",
+   "task": "square_thm",
+   "answer": "D",
+   "pred": "C",
+   "correct": false,
+   "meta": {
+    "edge": "iso_to_duality",
+    "seed": 0,
+    "src": "isomorphism",
+    "dst": "projective_duality"
+   },
+   "option_motifs": {
+    "A": "symmetry",
+    "B": "figure_ground",
+    "C": "mobius",
+    "D": "projective_duality"
+   },
+   "raw": "Looking at the image, I need to identify the structural transformation g from the BEFORE panel to the AFTER panel, then apply that same transformation to the Cayley theorem statement.\n\n**Analyzing the"
+  },
+  {
+   "id": "sq_story:iso_to_duality:s0",
+   "task": "square_story",
+   "answer": "A",
+   "pred": "C",
+   "correct": false,
+   "meta": {
+    "edge": "iso_to_duality",
+    "seed": 0,
+    "src": "isomorphism",
+    "dst": "projective_duality",
+    "identity_option": "B"
+   },
+   "option_motifs": {
+    "A": "projective_duality",
+    "B": "isomorphism",
+    "C": "figure_ground",
+    "D": "symmetry"
+   },
+   "raw": "Looking at this puzzle, I need to understand what structural change **g** represents and then identify which story realizes **g(BEFORE)**.\n\n**Understanding the graph transformation:**\n- **BEFORE**: Tw"
+  },
+  {
+   "id": "sq_thm:iso_to_duality:s1",
+   "task": "square_thm",
+   "answer": "D",
+   "pred": "D",
+   "correct": true,
+   "meta": {
+    "edge": "iso_to_duality",
+    "seed": 1,
+    "src": "isomorphism",
+    "dst": "projective_duality"
+   },
+   "option_motifs": {
+    "A": "figure_ground",
+    "B": "symmetry",
+    "C": "mobius",
+    "D": "projective_duality"
+   },
+   "raw": "Looking at the image, I need to identify the graph transformation and match it to the appropriate theorem.\n\n**Analyzing the graphs:**\n- **BEFORE**: Two copies of the complete graph $K_4$ (one on circl"
+  },
+  {
+   "id": "sq_story:iso_to_duality:s1",
+   "task": "square_story",
+   "answer": "B",
+   "pred": "C",
+   "correct": false,
+   "meta": {
+    "edge": "iso_to_duality",
+    "seed": 1,
+    "src": "isomorphism",
+    "dst": "projective_duality",
+    "identity_option": "D"
+   },
+   "option_motifs": {
+    "A": "symmetry",
+    "B": "projective_duality",
+    "C": "figure_ground",
+    "D": "isomorphism"
+   },
+   "raw": "{\"choice\": \"C\"}"
+  },
+  {
+   "id": "sq_thm:iso_to_duality:s2",
+   "task": "square_thm",
+   "answer": "A",
+   "pred": "B",
+   "correct": false,
+   "meta": {
+    "edge": "iso_to_duality",
+    "seed": 2,
+    "src": "isomorphism",
+    "dst": "projective_duality"
+   },
+   "option_motifs": {
+    "A": "projective_duality",
+    "B": "mobius",
+    "C": "symmetry",
+    "D": "figure_ground"
+   },
+   "raw": "Looking at the visual transformation:\n\n**BEFORE**: Two complete graphs (cliques) of size *n*\u2014circles on the left, squares on the right\u2014with a perfect matching (dashed red edges) connecting correspondi"
+  },
+  {
+   "id": "sq_story:iso_to_duality:s2",
+   "task": "square_story",
+   "answer": "A",
+   "pred": "C",
+   "correct": false,
+   "meta": {
+    "edge": "iso_to_duality",
+    "seed": 2,
+    "src": "isomorphism",
+    "dst": "projective_duality",
+    "identity_option": "D"
+   },
+   "option_motifs": {
+    "A": "projective_duality",
+    "B": "symmetry",
+    "C": "figure_ground",
+    "D": "isomorphism"
+   },
+   "raw": "Looking at the image, the transformation **g** converts two separate cliques (complete subgraphs) with sparse connections between them into a **single cycle where the two node types alternate** (circl"
+  },
+  {
+   "id": "sq_thm:iso_to_duality:s3",
+   "task": "square_thm",
+   "answer": "D",
+   "pred": "A",
+   "correct": false,
+   "meta": {
+    "edge": "iso_to_duality",
+    "seed": 3,
+    "src": "isomorphism",
+    "dst": "projective_duality"
+   },
+   "option_motifs": {
+    "A": "mobius",
+    "B": "figure_ground",
+    "C": "symmetry",
+    "D": "projective_duality"
+   },
+   "raw": "{\"choice\": \"A\"}"
+  },
+  {
+   "id": "sq_story:iso_to_duality:s3",
+   "task": "square_story",
+   "answer": "A",
+   "pred": "D",
+   "correct": false,
+   "meta": {
+    "edge": "iso_to_duality",
+    "seed": 3,
+    "src": "isomorphism",
+    "dst": "projective_duality",
+    "identity_option": "B"
+   },
+   "option_motifs": {
+    "A": "projective_duality",
+    "B": "isomorphism",
+    "C": "figure_ground",
+    "D": "symmetry"
+   },
+   "raw": "{\"choice\": \"D\"}"
+  },
+  {
+   "id": "sq_thm:iso_to_duality:s4",
+   "task": "square_thm",
+   "answer": "C",
+   "pred": "C",
+   "correct": true,
+   "meta": {
+    "edge": "iso_to_duality",
+    "seed": 4,
+    "src": "isomorphism",
+    "dst": "projective_duality"
+   },
+   "option_motifs": {
+    "A": "figure_ground",
+    "B": "mobius",
+    "C": "projective_duality",
+    "D": "symmetry"
+   },
+   "raw": "Looking at this puzzle, I need to identify what structural change $g$ represents and then determine which theorem results from applying that same change to Cayley's theorem.\n\n**Analyzing the visual tr"
+  },
+  {
+   "id": "sq_story:iso_to_duality:s4",
+   "task": "square_story",
+   "answer": "C",
+   "pred": "B",
+   "correct": false,
+   "meta": {
+    "edge": "iso_to_duality",
+    "seed": 4,
+    "src": "isomorphism",
+    "dst": "projective_duality",
+    "identity_option": "A"
+   },
+   "option_motifs": {
+    "A": "isomorphism",
+    "B": "symmetry",
+    "C": "projective_duality",
+    "D": "figure_ground"
+   },
+   "raw": "{\"choice\": \"B\"}"
+  },
+  {
+   "id": "sq_thm:iso_to_duality:s5",
+   "task": "square_thm",
+   "answer": "A",
+   "pred": "C",
+   "correct": false,
+   "meta": {
+    "edge": "iso_to_duality",
+    "seed": 5,
+    "src": "isomorphism",
+    "dst": "projective_duality"
+   },
+   "option_motifs": {
+    "A": "projective_duality",
+    "B": "figure_ground",
+    "C": "mobius",
+    "D": "symmetry"
+   },
+   "raw": "Looking at the transformation g from the diagrams:\n\n**BEFORE**: Two disjoint complete graphs (K\u2085 and K\u2085) - representing two separate, highly connected components.\n\n**AFTER**: A single cycle of length "
+  },
+  {
+   "id": "sq_story:iso_to_duality:s5",
+   "task": "square_story",
+   "answer": "D",
+   "pred": "C",
+   "correct": false,
+   "meta": {
+    "edge": "iso_to_duality",
+    "seed": 5,
+    "src": "isomorphism",
+    "dst": "projective_duality",
+    "identity_option": "A"
+   },
+   "option_motifs": {
+    "A": "isomorphism",
+    "B": "figure_ground",
+    "C": "symmetry",
+    "D": "projective_duality"
+   },
+   "raw": "Looking at the image, the transformation **g** changes the structure from:\n- **BEFORE**: Two separate dense clusters (cliques) with some connections between them\n- **AFTER**: A single cycle that alter"
+  },
+  {
+   "id": "sq_thm:recursion_to_contraction:s0",
+   "task": "square_thm",
+   "answer": "B",
+   "pred": "A",
+   "correct": false,
+   "meta": {
+    "edge": "recursion_to_contraction",
+    "seed": 0,
+    "src": "recursion",
+    "dst": "contraction_fixed_point"
+   },
+   "option_motifs": {
+    "A": "convergence",
+    "B": "contraction_fixed_point",
+    "C": "spiral",
+    "D": "infinite_descent"
+   },
+   "raw": "Looking at the transformation **g** in the images:\n- **BEFORE**: A full binary tree with extensive branching (representing multiple paths/possibilities)\n- **AFTER**: A single non-branching path conver"
+  },
+  {
+   "id": "sq_story:recursion_to_contraction:s0",
+   "task": "square_story",
+   "answer": "B",
+   "pred": "B",
+   "correct": true,
+   "meta": {
+    "edge": "recursion_to_contraction",
+    "seed": 0,
+    "src": "recursion",
+    "dst": "contraction_fixed_point",
+    "identity_option": "C"
+   },
+   "option_motifs": {
+    "A": "convergence",
+    "B": "contraction_fixed_point",
+    "C": "recursion",
+    "D": "infinite_descent"
+   },
+   "raw": "{\"choice\": \"B\"}"
+  },
+  {
+   "id": "sq_thm:recursion_to_contraction:s1",
+   "task": "square_thm",
+   "answer": "A",
+   "pred": "A",
+   "correct": true,
+   "meta": {
+    "edge": "recursion_to_contraction",
+    "seed": 1,
+    "src": "recursion",
+    "dst": "contraction_fixed_point"
+   },
+   "option_motifs": {
+    "A": "contraction_fixed_point",
+    "B": "convergence",
+    "C": "spiral",
+    "D": "infinite_descent"
+   },
+   "raw": "{\"choice\": \"A\"}"
+  },
+  {
+   "id": "sq_story:recursion_to_contraction:s1",
+   "task": "square_story",
+   "answer": "D",
+   "pred": "C",
+   "correct": false,
+   "meta": {
+    "edge": "recursion_to_contraction",
+    "seed": 1,
+    "src": "recursion",
+    "dst": "contraction_fixed_point",
+    "identity_option": "B"
+   },
+   "option_motifs": {
+    "A": "convergence",
+    "B": "recursion",
+    "C": "infinite_descent",
+    "D": "contraction_fixed_point"
+   },
+   "raw": "{\"choice\": \"C\"}"
+  },
+  {
+   "id": "sq_thm:recursion_to_contraction:s2",
+   "task": "square_thm",
+   "answer": "C",
+   "pred": "B",
+   "correct": false,
+   "meta": {
+    "edge": "recursion_to_contraction",
+    "seed": 2,
+    "src": "recursion",
+    "dst": "contraction_fixed_point"
+   },
+   "option_motifs": {
+    "A": "infinite_descent",
+    "B": "convergence",
+    "C": "contraction_fixed_point",
+    "D": "spiral"
+   },
+   "raw": "Looking at the transformation **g**: The BEFORE panel shows a full binary tree (branching structure), while the AFTER panel shows a single path (linear chain) ending at a distinguished point (the red "
+  },
+  {
+   "id": "sq_story:recursion_to_contraction:s2",
+   "task": "square_story",
+   "answer": "D",
+   "pred": "C",
+   "correct": false,
+   "meta": {
+    "edge": "recursion_to_contraction",
+    "seed": 2,
+    "src": "recursion",
+    "dst": "contraction_fixed_point",
+    "identity_option": "A"
+   },
+   "option_motifs": {
+    "A": "recursion",
+    "B": "convergence",
+    "C": "infinite_descent",
+    "D": "contraction_fixed_point"
+   },
+   "raw": "{\"choice\": \"C\"}"
+  },
+  {
+   "id": "sq_thm:recursion_to_contraction:s3",
+   "task": "square_thm",
+   "answer": "C",
+   "pred": "C",
+   "correct": true,
+   "meta": {
+    "edge": "recursion_to_contraction",
+    "seed": 3,
+    "src": "recursion",
+    "dst": "contraction_fixed_point"
+   },
+   "option_motifs": {
+    "A": "convergence",
+    "B": "spiral",
+    "C": "contraction_fixed_point",
+    "D": "infinite_descent"
+   },
+   "raw": "{\"choice\": \"C\"}"
+  },
+  {
+   "id": "sq_story:recursion_to_contraction:s3",
+   "task": "square_story",
+   "answer": "A",
+   "pred": "C",
+   "correct": false,
+   "meta": {
+    "edge": "recursion_to_contraction",
+    "seed": 3,
+    "src": "recursion",
+    "dst": "contraction_fixed_point",
+    "identity_option": "D"
+   },
+   "option_motifs": {
+    "A": "contraction_fixed_point",
+    "B": "convergence",
+    "C": "infinite_descent",
+    "D": "recursion"
+   },
+   "raw": "{\"choice\": \"C\"}"
+  },
+  {
+   "id": "sq_thm:recursion_to_contraction:s4",
+   "task": "square_thm",
+   "answer": "B",
+   "pred": "A",
+   "correct": false,
+   "meta": {
+    "edge": "recursion_to_contraction",
+    "seed": 4,
+    "src": "recursion",
+    "dst": "contraction_fixed_point"
+   },
+   "option_motifs": {
+    "A": "convergence",
+    "B": "contraction_fixed_point",
+    "C": "infinite_descent",
+    "D": "spiral"
+   },
+   "raw": "{\"choice\": \"A\"}"
+  },
+  {
+   "id": "sq_story:recursion_to_contraction:s4",
+   "task": "square_story",
+   "answer": "C",
+   "pred": "C",
+   "correct": true,
+   "meta": {
+    "edge": "recursion_to_contraction",
+    "seed": 4,
+    "src": "recursion",
+    "dst": "contraction_fixed_point",
+    "identity_option": "B"
+   },
+   "option_motifs": {
+    "A": "infinite_descent",
+    "B": "recursion",
+    "C": "contraction_fixed_point",
+    "D": "convergence"
+   },
+   "raw": "{\"choice\": \"C\"}"
+  },
+  {
+   "id": "sq_thm:recursion_to_contraction:s5",
+   "task": "square_thm",
+   "answer": "D",
+   "pred": "C",
+   "correct": false,
+   "meta": {
+    "edge": "recursion_to_contraction",
+    "seed": 5,
+    "src": "recursion",
+    "dst": "contraction_fixed_point"
+   },
+   "option_motifs": {
+    "A": "spiral",
+    "B": "infinite_descent",
+    "C": "convergence",
+    "D": "contraction_fixed_point"
+   },
+   "raw": "{\"choice\": \"C\"}"
+  },
+  {
+   "id": "sq_story:recursion_to_contraction:s5",
+   "task": "square_story",
+   "answer": "B",
+   "pred": "B",
+   "correct": true,
+   "meta": {
+    "edge": "recursion_to_contraction",
+    "seed": 5,
+    "src": "recursion",
+    "dst": "contraction_fixed_point",
+    "identity_option": "D"
+   },
+   "option_motifs": {
+    "A": "infinite_descent",
+    "B": "contraction_fixed_point",
+    "C": "convergence",
+    "D": "recursion"
+   },
+   "raw": "{\"choice\": \"B\"}"
+  },
+  {
+   "id": "ivc:sym_to_symbreak:s0:structural",
+   "task": "id_vs_change",
+   "answer": "C",
+   "pred": "C",
+   "correct": true,
+   "meta": {
+    "edge": "sym_to_symbreak",
+    "seed": 0,
+    "kind": "structural"
+   },
+   "option_motifs": null,
+   "raw": "Looking at the image:\n\n**BEFORE:** The left and right structures are perfect mirror images of each other across the dashed center line. Each node on the left corresponds to exactly one node on the rig"
+  },
+  {
+   "id": "ivc:sym_to_symbreak:s0:nuisance",
+   "task": "id_vs_change",
+   "answer": "B",
+   "pred": "B",
+   "correct": true,
+   "meta": {
+    "edge": "sym_to_symbreak",
+    "seed": 0,
+    "kind": "nuisance"
+   },
+   "option_motifs": null,
+   "raw": "{\"choice\": \"B\"}"
+  },
+  {
+   "id": "ivc:sym_to_symbreak:s1:structural",
+   "task": "id_vs_change",
+   "answer": "D",
+   "pred": "D",
+   "correct": true,
+   "meta": {
+    "edge": "sym_to_symbreak",
+    "seed": 1,
+    "kind": "structural"
+   },
+   "option_motifs": null,
+   "raw": "Looking at the diagrams:\n\n**BEFORE**: Two chains of 7 dots each are perfect mirror images across the dashed vertical line.\n\n**AFTER**: The left chain is unchanged. The right chain has **exactly one ve"
+  },
+  {
+   "id": "ivc:sym_to_symbreak:s1:nuisance",
+   "task": "id_vs_change",
+   "answer": "A",
+   "pred": "C",
+   "correct": false,
+   "meta": {
+    "edge": "sym_to_symbreak",
+    "seed": 1,
+    "kind": "nuisance"
+   },
+   "option_motifs": null,
+   "raw": "Looking at the diagrams, I need to identify what changed between BEFORE and AFTER:\n\n**Counting vertices:**\n- BEFORE: Left chain has 8 vertices, right chain has 8 vertices\n- AFTER: Left chain has 7 ver"
+  },
+  {
+   "id": "ivc:sym_to_symbreak:s2:structural",
+   "task": "id_vs_change",
+   "answer": "C",
+   "pred": "C",
+   "correct": true,
+   "meta": {
+    "edge": "sym_to_symbreak",
+    "seed": 2,
+    "kind": "structural"
+   },
+   "option_motifs": null,
+   "raw": "Looking at the diagrams:\n\n**BEFORE**: The left and right polylines are perfect mirror images of each other across the dashed center line. Both have identical zigzag structures ending with short vertic"
+  },
+  {
+   "id": "ivc:sym_to_symbreak:s2:nuisance",
+   "task": "id_vs_change",
+   "answer": "B",
+   "pred": "C",
+   "correct": false,
+   "meta": {
+    "edge": "sym_to_symbreak",
+    "seed": 2,
+    "kind": "nuisance"
+   },
+   "option_motifs": null,
+   "raw": "Looking at the transformation from BEFORE to AFTER:\n\n**BEFORE analysis:**\nBoth sides show zigzag patterns with vertices alternating between \"toward\" (close to the dashed mirror line) and \"away\" (far f"
+  },
+  {
+   "id": "ivc:sym_to_symbreak:s3:structural",
+   "task": "id_vs_change",
+   "answer": "D",
+   "pred": "D",
+   "correct": true,
+   "meta": {
+    "edge": "sym_to_symbreak",
+    "seed": 3,
+    "kind": "structural"
+   },
+   "option_motifs": null,
+   "raw": "Looking at the diagrams:\n\n**BEFORE**: The left and right figures are perfect mirror images of each other across the dashed vertical line. Each vertex on the right corresponds exactly to a mirrored ver"
+  },
+  {
+   "id": "ivc:sym_to_symbreak:s3:nuisance",
+   "task": "id_vs_change",
+   "answer": "C",
+   "pred": "C",
+   "correct": true,
+   "meta": {
+    "edge": "sym_to_symbreak",
+    "seed": 3,
+    "kind": "nuisance"
+   },
+   "option_motifs": null,
+   "raw": "Looking at the diagrams:\n\nBoth the **BEFORE** and **AFTER** images show two separate polylines (path graphs), each consisting of 6 vertices connected by 5 edges.\n\n**Key analysis of the options:**\n- **"
+  },
+  {
+   "id": "ivc:sym_to_symbreak:s4:structural",
+   "task": "id_vs_change",
+   "answer": "D",
+   "pred": "D",
+   "correct": true,
+   "meta": {
+    "edge": "sym_to_symbreak",
+    "seed": 4,
+    "kind": "structural"
+   },
+   "option_motifs": null,
+   "raw": "Looking at the diagrams:\n\n**BEFORE**: The left and right structures are perfect mirror images of each other across the dashed line. There is a one-to-one correspondence between vertices on the left an"
+  },
+  {
+   "id": "ivc:sym_to_symbreak:s4:nuisance",
+   "task": "id_vs_change",
+   "answer": "C",
+   "pred": "A",
+   "correct": false,
+   "meta": {
+    "edge": "sym_to_symbreak",
+    "seed": 4,
+    "kind": "nuisance"
+   },
+   "option_motifs": null,
+   "raw": "Looking at the diagrams:\n\n**BEFORE**: Each side has 8 vertices (7 edges) with a strictly alternating zigzag pattern (right-left-right-left... for the left side, and left-right-left-right... for the ri"
+  },
+  {
+   "id": "ivc:sym_to_symbreak:s5:structural",
+   "task": "id_vs_change",
+   "answer": "C",
+   "pred": "C",
+   "correct": true,
+   "meta": {
+    "edge": "sym_to_symbreak",
+    "seed": 5,
+    "kind": "structural"
+   },
+   "option_motifs": null,
+   "raw": "Looking at the two diagrams:\n\n**BEFORE**: The left and right figures are perfect mirror images of each other across the dashed center line. Each vertex on the right corresponds exactly to the mirror p"
+  },
+  {
+   "id": "ivc:sym_to_symbreak:s5:nuisance",
+   "task": "id_vs_change",
+   "answer": "D",
+   "pred": "A",
+   "correct": false,
+   "meta": {
+    "edge": "sym_to_symbreak",
+    "seed": 5,
+    "kind": "nuisance"
+   },
+   "option_motifs": null,
+   "raw": "Looking at this problem, I need to identify what mathematical concept describes the transformation from the \"BEFORE\" state to the \"AFTER\" state.\n\n**Visual Analysis:**\n- **BEFORE**: Two mirrored zig-za"
+  },
+  {
+   "id": "ivc:cycle_to_strangeloop:s0:structural",
+   "task": "id_vs_change",
+   "answer": "D",
+   "pred": "D",
+   "correct": true,
+   "meta": {
+    "edge": "cycle_to_strangeloop",
+    "seed": 0,
+    "kind": "structural"
+   },
+   "option_motifs": null,
+   "raw": "Looking at the diagrams:\n\n**BEFORE**: A directed cycle with 6 nodes arranged in a circle, where each node points to the next forming a closed loop.\n\n**AFTER**: The same 6 nodes rearranged vertically a"
+  },
+  {
+   "id": "ivc:cycle_to_strangeloop:s0:nuisance",
+   "task": "id_vs_change",
+   "answer": "B",
+   "pred": "B",
+   "correct": true,
+   "meta": {
+    "edge": "cycle_to_strangeloop",
+    "seed": 0,
+    "kind": "nuisance"
+   },
+   "option_motifs": null,
+   "raw": "Looking at the two diagrams:\n\n**Structure analysis:**\n- **BEFORE**: A directed cycle with 6 nodes arranged roughly in a circle (positions: left, bottom-left, bottom-right, right, top-right, top-left)."
+  },
+  {
+   "id": "ivc:cycle_to_strangeloop:s1:structural",
+   "task": "id_vs_change",
+   "answer": "A",
+   "pred": "A",
+   "correct": true,
+   "meta": {
+    "edge": "cycle_to_strangeloop",
+    "seed": 1,
+    "kind": "structural"
+   },
+   "option_motifs": null,
+   "raw": "Looking at the diagrams:\n\n**BEFORE**: A directed cycle of 8 nodes arranged in a circle - a \"flat ring\" with no distinguished start or hierarchy.\n\n**AFTER**: The same 8 nodes rearranged linearly across"
+  },
+  {
+   "id": "ivc:cycle_to_strangeloop:s1:nuisance",
+   "task": "id_vs_change",
+   "answer": "A",
+   "pred": "B",
+   "correct": false,
+   "meta": {
+    "edge": "cycle_to_strangeloop",
+    "seed": 1,
+    "kind": "nuisance"
+   },
+   "option_motifs": null,
+   "raw": "Looking at the diagrams:\n\n**BEFORE**: A directed 7-cycle with nodes equally spaced around a circle, possessing discrete rotational symmetry (translation period).\n\n**AFTER**: A directed 7-cycle with th"
+  },
+  {
+   "id": "ivc:cycle_to_strangeloop:s2:structural",
+   "task": "id_vs_change",
+   "answer": "A",
+   "pred": "A",
+   "correct": true,
+   "meta": {
+    "edge": "cycle_to_strangeloop",
+    "seed": 2,
+    "kind": "structural"
+   },
+   "option_motifs": null,
+   "raw": "Looking at the diagrams:\n\n**BEFORE**: A directed cycle of nodes arranged in a circle - following the arrows brings you back to the start.\n\n**AFTER**: The same nodes are rearranged in a linear diagonal"
+  },
+  {
+   "id": "ivc:cycle_to_strangeloop:s2:nuisance",
+   "task": "id_vs_change",
+   "answer": "C",
+   "pred": "C",
+   "correct": true,
+   "meta": {
+    "edge": "cycle_to_strangeloop",
+    "seed": 2,
+    "kind": "nuisance"
+   },
+   "option_motifs": null,
+   "raw": "Looking at the two diagrams:\n\n**Counting nodes:** Both diagrams have **8 nodes** arranged in a directed cycle (8-cycles with consistent clockwise orientation).\n\n**Structural analysis:** In graph-theor"
+  },
+  {
+   "id": "ivc:cycle_to_strangeloop:s3:structural",
+   "task": "id_vs_change",
+   "answer": "C",
+   "pred": "C",
+   "correct": true,
+   "meta": {
+    "edge": "cycle_to_strangeloop",
+    "seed": 3,
+    "kind": "structural"
+   },
+   "option_motifs": null,
+   "raw": "Looking at the diagrams:\n\n**BEFORE**: A flat, circular directed cycle with 10 nodes.\n\n**AFTER**: The same 10 nodes arranged diagonally across horizontal dashed lines (representing levels/hierarchy). T"
+  },
+  {
+   "id": "ivc:cycle_to_strangeloop:s3:nuisance",
+   "task": "id_vs_change",
+   "answer": "D",
+   "pred": "D",
+   "correct": true,
+   "meta": {
+    "edge": "cycle_to_strangeloop",
+    "seed": 3,
+    "kind": "nuisance"
+   },
+   "option_motifs": null,
+   "raw": "Looking at the two diagrams:\n\n**BEFORE** shows a directed cycle graph with 10 nodes arranged in a circle, arrows pointing clockwise.  \n**AFTER** shows a directed cycle graph with 10 nodes arranged in "
+  },
+  {
+   "id": "ivc:cycle_to_strangeloop:s4:structural",
+   "task": "id_vs_change",
+   "answer": "B",
+   "pred": "B",
+   "correct": true,
+   "meta": {
+    "edge": "cycle_to_strangeloop",
+    "seed": 4,
+    "kind": "structural"
+   },
+   "option_motifs": null,
+   "raw": "Looking at the diagrams:\n\n**BEFORE**: Shows a directed cycle of 8 nodes arranged in a circle - a flat ring where each node points to the next.\n\n**AFTER**: Shows the same 8 nodes \"unrolled\" into a diag"
+  },
+  {
+   "id": "ivc:cycle_to_strangeloop:s4:nuisance",
+   "task": "id_vs_change",
+   "answer": "A",
+   "pred": "D",
+   "correct": false,
+   "meta": {
+    "edge": "cycle_to_strangeloop",
+    "seed": 4,
+    "kind": "nuisance"
+   },
+   "option_motifs": null,
+   "raw": "Looking at the diagrams carefully:\n\n**Node counting:**\n- **BEFORE**: 8 nodes in a directed cycle (Top \u2192 Upper-Right \u2192 Right \u2192 Lower-Right \u2192 Bottom \u2192 Lower-Left \u2192 Left \u2192 Upper-Left \u2192 Top).\n- **AFTER**:"
+  },
+  {
+   "id": "ivc:cycle_to_strangeloop:s5:structural",
+   "task": "id_vs_change",
+   "answer": "D",
+   "pred": "D",
+   "correct": true,
+   "meta": {
+    "edge": "cycle_to_strangeloop",
+    "seed": 5,
+    "kind": "structural"
+   },
+   "option_motifs": null,
+   "raw": "Looking at the diagrams:\n\n**BEFORE** shows a directed cycle of 8 nodes arranged in a flat circle - a \"ring\" structure where all nodes are at the same organizational level.\n\n**AFTER** shows the same 8 "
+  },
+  {
+   "id": "ivc:cycle_to_strangeloop:s5:nuisance",
+   "task": "id_vs_change",
+   "answer": "C",
+   "pred": "C",
+   "correct": true,
+   "meta": {
+    "edge": "cycle_to_strangeloop",
+    "seed": 5,
+    "kind": "nuisance"
+   },
+   "option_motifs": null,
+   "raw": "Looking at the two diagrams:\n\n**BEFORE** shows 8 nodes arranged in a circle with directed arrows forming a clockwise cycle.\n**AFTER** shows 8 nodes arranged in an oval/ellipse with directed arrows als"
+  },
+  {
+   "id": "ivc:nesting_to_recursion:s0:structural",
+   "task": "id_vs_change",
+   "answer": "B",
+   "pred": "B",
+   "correct": true,
+   "meta": {
+    "edge": "nesting_to_recursion",
+    "seed": 0,
+    "kind": "structural"
+   },
+   "option_motifs": null,
+   "raw": "Looking at the diagrams:\n\n**BEFORE** shows a linear chain of 4 nested squares (unary tree): each container has exactly one child, creating a straight-line hierarchy of depth 4.\n\n**AFTER** shows a bina"
+  },
+  {
+   "id": "ivc:nesting_to_recursion:s0:nuisance",
+   "task": "id_vs_change",
+   "answer": "A",
+   "pred": "A",
+   "correct": true,
+   "meta": {
+    "edge": "nesting_to_recursion",
+    "seed": 0,
+    "kind": "nuisance"
+   },
+   "option_motifs": null,
+   "raw": "Looking at the two diagrams:\n\n**BEFORE** shows 5 concentric squares with **varying line thickness** (outermost is thick, getting progressively thinner toward the center).\n**AFTER** shows 4 concentric "
+  },
+  {
+   "id": "ivc:nesting_to_recursion:s1:structural",
+   "task": "id_vs_change",
+   "answer": "A",
+   "pred": "A",
+   "correct": true,
+   "meta": {
+    "edge": "nesting_to_recursion",
+    "seed": 1,
+    "kind": "structural"
+   },
+   "option_motifs": null,
+   "raw": "Looking at the two diagrams:\n\n**BEFORE** shows a linear chain of containment: one square contains one square contains one square (6 levels deep). This is a simple nested hierarchy\u2014a \"path\" structure w"
+  },
+  {
+   "id": "ivc:nesting_to_recursion:s1:nuisance",
+   "task": "id_vs_change",
+   "answer": "A",
+   "pred": "C",
+   "correct": false,
+   "meta": {
+    "edge": "nesting_to_recursion",
+    "seed": 1,
+    "kind": "nuisance"
+   },
+   "option_motifs": null,
+   "raw": "Looking at the two diagrams, I need to identify the structural relationship between the nested squares in \"BEFORE\" and \"AFTER.\"\n\n**Analysis of the images:**\n- **BEFORE**: Shows 5 concentric squares wi"
+  },
+  {
+   "id": "ivc:nesting_to_recursion:s2:structural",
+   "task": "id_vs_change",
+   "answer": "A",
+   "pred": "A",
+   "correct": true,
+   "meta": {
+    "edge": "nesting_to_recursion",
+    "seed": 2,
+    "kind": "structural"
+   },
+   "option_motifs": null,
+   "raw": "{\"choice\": \"A\"}"
+  },
+  {
+   "id": "ivc:nesting_to_recursion:s2:nuisance",
+   "task": "id_vs_change",
+   "answer": "B",
+   "pred": "A",
+   "correct": false,
+   "meta": {
+    "edge": "nesting_to_recursion",
+    "seed": 2,
+    "kind": "nuisance"
+   },
+   "option_motifs": null,
+   "raw": "Looking at the two diagrams:\n\n**BEFORE**: 5 concentric squares (labeled from outermost to innermost: S\u2081, S\u2082, S\u2083, S\u2084, S\u2085)\n**AFTER**: 4 concentric squares (T\u2081, T\u2082, T\u2083, T\u2084)\n\nThe transformation: The three"
+  },
+  {
+   "id": "ivc:nesting_to_recursion:s3:structural",
+   "task": "id_vs_change",
+   "answer": "A",
+   "pred": "A",
+   "correct": true,
+   "meta": {
+    "edge": "nesting_to_recursion",
+    "seed": 3,
+    "kind": "structural"
+   },
+   "option_motifs": null,
+   "raw": "Looking at the two images:\n\n**BEFORE** shows a linear chain: 5 concentric squares where each contains exactly one smaller square (unary branching, depth 5). The inner parts are just simple squares, no"
+  },
+  {
+   "id": "ivc:nesting_to_recursion:s3:nuisance",
+   "task": "id_vs_change",
+   "answer": "A",
+   "pred": "A",
+   "correct": true,
+   "meta": {
+    "edge": "nesting_to_recursion",
+    "seed": 3,
+    "kind": "nuisance"
+   },
+   "option_motifs": null,
+   "raw": "Looking at the two images, both depict **concentric nested squares** - a hierarchical containment structure where each square encloses a smaller one. \n\n**Visual analysis:**\n- **BEFORE**: 6 nested squa"
+  },
+  {
+   "id": "ivc:nesting_to_recursion:s4:structural",
+   "task": "id_vs_change",
+   "answer": "A",
+   "pred": "A",
+   "correct": true,
+   "meta": {
+    "edge": "nesting_to_recursion",
+    "seed": 4,
+    "kind": "structural"
+   },
+   "option_motifs": null,
+   "raw": "Looking at the transformation:\n\n**BEFORE** shows a linear chain of containment: 4 nested squares (depth 4, branching factor 1). This is a simple hierarchical stack where each container holds exactly o"
+  },
+  {
+   "id": "ivc:nesting_to_recursion:s4:nuisance",
+   "task": "id_vs_change",
+   "answer": "D",
+   "pred": "D",
+   "correct": true,
+   "meta": {
+    "edge": "nesting_to_recursion",
+    "seed": 4,
+    "kind": "nuisance"
+   },
+   "option_motifs": null,
+   "raw": "{\"choice\": \"D\"}"
+  },
+  {
+   "id": "ivc:nesting_to_recursion:s5:structural",
+   "task": "id_vs_change",
+   "answer": "A",
+   "pred": "A",
+   "correct": true,
+   "meta": {
+    "edge": "nesting_to_recursion",
+    "seed": 5,
+    "kind": "structural"
+   },
+   "option_motifs": null,
+   "raw": "Looking at these diagrams:\n\n**BEFORE** shows a **linear chain of containment**: one square nested directly inside another, forming a simple path A\u2283B\u2283C\u2283D\u2283E.\n\n**AFTER** shows a **tree structure** with s"
+  },
+  {
+   "id": "ivc:nesting_to_recursion:s5:nuisance",
+   "task": "id_vs_change",
+   "answer": "A",
+   "pred": "A",
+   "correct": true,
+   "meta": {
+    "edge": "nesting_to_recursion",
+    "seed": 5,
+    "kind": "nuisance"
+   },
+   "option_motifs": null,
+   "raw": "Looking at the two diagrams, both depict concentric nested squares forming a linear containment hierarchy (a chain structure where each square contains the next). \n\n**Key observations:**\n- **Structure"
+  },
+  {
+   "id": "ivc:tiling_to_aperiodic:s0:structural",
+   "task": "id_vs_change",
+   "answer": "C",
+   "pred": "C",
+   "correct": true,
+   "meta": {
+    "edge": "tiling_to_aperiodic",
+    "seed": 0,
+    "kind": "structural"
+   },
+   "option_motifs": null,
+   "raw": "{\"choice\": \"C\"}"
+  },
+  {
+   "id": "ivc:tiling_to_aperiodic:s0:nuisance",
+   "task": "id_vs_change",
+   "answer": "C",
+   "pred": "B",
+   "correct": false,
+   "meta": {
+    "edge": "tiling_to_aperiodic",
+    "seed": 0,
+    "kind": "nuisance"
+   },
+   "option_motifs": null,
+   "raw": "Looking at the diagrams, the key difference is in the middle row:\n- **BEFORE**: Middle row has 11 tiles (pattern: S-W-S-W-S-W-S-W-S-W-S)\n- **AFTER**: Middle row has 12 tiles (pattern: S-W-S-W-S-W-S-W-"
+  },
+  {
+   "id": "ivc:tiling_to_aperiodic:s1:structural",
+   "task": "id_vs_change",
+   "answer": "C",
+   "pred": "C",
+   "correct": true,
+   "meta": {
+    "edge": "tiling_to_aperiodic",
+    "seed": 1,
+    "kind": "structural"
+   },
+   "option_motifs": null,
+   "raw": "Looking at the diagrams, I need to identify the structural relationship between BEFORE and AFTER.\n\n**Analysis of the structures:**\n\n**BEFORE:**\n- Three rows with an alternating pattern of White (W) an"
+  },
+  {
+   "id": "ivc:tiling_to_aperiodic:s1:nuisance",
+   "task": "id_vs_change",
+   "answer": "D",
+   "pred": "C",
+   "correct": false,
+   "meta": {
+    "edge": "tiling_to_aperiodic",
+    "seed": 1,
+    "kind": "nuisance"
+   },
+   "option_motifs": null,
+   "raw": "Looking at the diagrams:\n\n- Both use two tile types: white and shaded.\n- Both obey the same local rule: tiles alternate between white and shaded within each row.\n- In **BEFORE**: The top and bottom ro"
+  },
+  {
+   "id": "ivc:tiling_to_aperiodic:s2:structural",
+   "task": "id_vs_change",
+   "answer": "B",
+   "pred": "B",
+   "correct": true,
+   "meta": {
+    "edge": "tiling_to_aperiodic",
+    "seed": 2,
+    "kind": "structural"
+   },
+   "option_motifs": null,
+   "raw": "Looking at the diagrams:\n\n**BEFORE**: Each row shows a strictly periodic pattern with period 2 (alternating white and shaded tiles). Rows 1&3 are identical; Row 2 is shifted by one position. This crea"
+  },
+  {
+   "id": "ivc:tiling_to_aperiodic:s2:nuisance",
+   "task": "id_vs_change",
+   "answer": "B",
+   "pred": "B",
+   "correct": true,
+   "meta": {
+    "edge": "tiling_to_aperiodic",
+    "seed": 2,
+    "kind": "nuisance"
+   },
+   "option_motifs": null,
+   "raw": "Looking at the diagrams:\n\n**Both figures show the same underlying structure**: a rectangular grid using two tile types (white and shaded) that alternate according to the same local rule (adjacent tile"
+  },
+  {
+   "id": "ivc:tiling_to_aperiodic:s3:structural",
+   "task": "id_vs_change",
+   "answer": "D",
+   "pred": "D",
+   "correct": true,
+   "meta": {
+    "edge": "tiling_to_aperiodic",
+    "seed": 3,
+    "kind": "structural"
+   },
+   "option_motifs": null,
+   "raw": "Looking at the diagrams:\n\n**BEFORE**: Four rows of strictly alternating white and shaded tiles (period-2 translation symmetry: WSWSWS...).\n\n**AFTER**: Three rows where the shading follows a different "
+  },
+  {
+   "id": "ivc:tiling_to_aperiodic:s3:nuisance",
+   "task": "id_vs_change",
+   "answer": "B",
+   "pred": "C",
+   "correct": false,
+   "meta": {
+    "edge": "tiling_to_aperiodic",
+    "seed": 3,
+    "kind": "nuisance"
+   },
+   "option_motifs": null,
+   "raw": "Looking at the two diagrams:\n\n**BEFORE**: Four rows each contain 14 cells with an alternating shaded/unshaded pattern. Rows 1, 2, and 4 start with white (unshaded) and have shading at even positions. "
+  },
+  {
+   "id": "ivc:tiling_to_aperiodic:s4:structural",
+   "task": "id_vs_change",
+   "answer": "C",
+   "pred": "C",
+   "correct": true,
+   "meta": {
+    "edge": "tiling_to_aperiodic",
+    "seed": 4,
+    "kind": "structural"
+   },
+   "option_motifs": null,
+   "raw": "Looking at this image, I need to identify the mathematical relationship between the BEFORE and AFTER diagrams.\n\n**Analysis of the patterns:**\n- **BEFORE**: Shows 4 rows of tiles with a strictly period"
+  },
+  {
+   "id": "ivc:tiling_to_aperiodic:s4:nuisance",
+   "task": "id_vs_change",
+   "answer": "B",
+   "pred": "C",
+   "correct": false,
+   "meta": {
+    "edge": "tiling_to_aperiodic",
+    "seed": 4,
+    "kind": "nuisance"
+   },
+   "option_motifs": null,
+   "raw": "Looking at the image, we see a transformation from a **BEFORE** state with staggered, diagonally-shifted shaded columns (suggesting a periodic pattern with horizontal period 3 and vertical screw perio"
+  },
+  {
+   "id": "ivc:tiling_to_aperiodic:s5:structural",
+   "task": "id_vs_change",
+   "answer": "A",
+   "pred": "A",
+   "correct": true,
+   "meta": {
+    "edge": "tiling_to_aperiodic",
+    "seed": 5,
+    "kind": "structural"
+   },
+   "option_motifs": null,
+   "raw": "Looking at the two diagrams, both use the same two types of elements (shaded/unshaded vertical strips). \n\nIn the **BEFORE** image, each row shows a **periodic** pattern:\n- Top row: period-3 regular sp"
+  },
+  {
+   "id": "ivc:tiling_to_aperiodic:s5:nuisance",
+   "task": "id_vs_change",
+   "answer": "C",
+   "pred": "A",
+   "correct": false,
+   "meta": {
+    "edge": "tiling_to_aperiodic",
+    "seed": 5,
+    "kind": "nuisance"
+   },
+   "option_motifs": null,
+   "raw": "Looking at the image, I see a transformation from a **BEFORE** state with 3 rows to an **AFTER** state with 4 rows. Each row consists of two tile types: white (unshaded) and gray (shaded) vertical bar"
+  },
+  {
+   "id": "ivc:iso_to_duality:s0:structural",
+   "task": "id_vs_change",
+   "answer": "A",
+   "pred": "A",
+   "correct": true,
+   "meta": {
+    "edge": "iso_to_duality",
+    "seed": 0,
+    "kind": "structural"
+   },
+   "option_motifs": null,
+   "raw": "Looking at the diagrams:\n\n**BEFORE** depicts two separate complete graphs $K_4$ (clusters of circles and squares) connected by a perfect matching (the dashed \"dictionary\" mapping each circle to a corr"
+  },
+  {
+   "id": "ivc:iso_to_duality:s0:nuisance",
+   "task": "id_vs_change",
+   "answer": "A",
+   "pred": "C",
+   "correct": false,
+   "meta": {
+    "edge": "iso_to_duality",
+    "seed": 0,
+    "kind": "nuisance"
+   },
+   "option_motifs": null,
+   "raw": "{\"choice\": \"C\"}"
+  },
+  {
+   "id": "ivc:iso_to_duality:s1:structural",
+   "task": "id_vs_change",
+   "answer": "B",
+   "pred": "B",
+   "correct": true,
+   "meta": {
+    "edge": "iso_to_duality",
+    "seed": 1,
+    "kind": "structural"
+   },
+   "option_motifs": null,
+   "raw": "Looking at the diagrams:\n\n**BEFORE**: Two separate dense clusters (complete graphs K\u2084) \u2014 one with 4 circles, one with 4 squares. Dashed lines represent a **dictionary** (bijection/mapping) between the"
+  },
+  {
+   "id": "ivc:iso_to_duality:s1:nuisance",
+   "task": "id_vs_change",
+   "answer": "B",
+   "pred": "A",
+   "correct": false,
+   "meta": {
+    "edge": "iso_to_duality",
+    "seed": 1,
+    "kind": "nuisance"
+   },
+   "option_motifs": null,
+   "raw": "Looking at the diagrams, I need to identify the structural transformation occurring from BEFORE to AFTER.\n\n**Analysis of the diagrams:**\n- **BEFORE**: Two separate clusters connected by dashed lines. "
+  },
+  {
+   "id": "ivc:iso_to_duality:s2:structural",
+   "task": "id_vs_change",
+   "answer": "D",
+   "pred": "D",
+   "correct": true,
+   "meta": {
+    "edge": "iso_to_duality",
+    "seed": 2,
+    "kind": "structural"
+   },
+   "option_motifs": null,
+   "raw": "Looking at this diagram transformation:\n\n**BEFORE**: Two separate complete graphs ($K_5$) - one with circles, one with squares - connected by a set of dashed lines representing a dictionary/correspond"
+  },
+  {
+   "id": "ivc:iso_to_duality:s2:nuisance",
+   "task": "id_vs_change",
+   "answer": "D",
+   "pred": "A",
+   "correct": false,
+   "meta": {
+    "edge": "iso_to_duality",
+    "seed": 2,
+    "kind": "nuisance"
+   },
+   "option_motifs": null,
+   "raw": "{\"choice\": \"A\"}"
+  },
+  {
+   "id": "ivc:iso_to_duality:s3:structural",
+   "task": "id_vs_change",
+   "answer": "A",
+   "pred": "A",
+   "correct": true,
+   "meta": {
+    "edge": "iso_to_duality",
+    "seed": 3,
+    "kind": "structural"
+   },
+   "option_motifs": null,
+   "raw": "Looking at the diagrams:\n\n**BEFORE**: Two separate complete graphs (K\u2084) - one of circles, one of squares - with dashed lines showing a bijection/dictionary between corresponding elements.\n\n**AFTER**: "
+  },
+  {
+   "id": "ivc:iso_to_duality:s3:nuisance",
+   "task": "id_vs_change",
+   "answer": "B",
+   "pred": "C",
+   "correct": false,
+   "meta": {
+    "edge": "iso_to_duality",
+    "seed": 3,
+    "kind": "nuisance"
+   },
+   "option_motifs": null,
+   "raw": "{\"choice\": \"C\"}"
+  },
+  {
+   "id": "ivc:iso_to_duality:s4:structural",
+   "task": "id_vs_change",
+   "answer": "B",
+   "pred": "B",
+   "correct": true,
+   "meta": {
+    "edge": "iso_to_duality",
+    "seed": 4,
+    "kind": "structural"
+   },
+   "option_motifs": null,
+   "raw": "Looking at the transformation:\n\n**BEFORE:** Two separate complete graphs (cliques) \u2014 one of circles, one of squares \u2014 connected only by a perfect matching (the dashed lines). This is a \"dictionary\" es"
+  },
+  {
+   "id": "ivc:iso_to_duality:s4:nuisance",
+   "task": "id_vs_change",
+   "answer": "B",
+   "pred": "A",
+   "correct": false,
+   "meta": {
+    "edge": "iso_to_duality",
+    "seed": 4,
+    "kind": "nuisance"
+   },
+   "option_motifs": null,
+   "raw": "{\"choice\": \"A\"}"
+  },
+  {
+   "id": "ivc:iso_to_duality:s5:structural",
+   "task": "id_vs_change",
+   "answer": "C",
+   "pred": "C",
+   "correct": true,
+   "meta": {
+    "edge": "iso_to_duality",
+    "seed": 5,
+    "kind": "structural"
+   },
+   "option_motifs": null,
+   "raw": "Looking at the diagrams:\n\n**BEFORE:** Two separate complete graphs (K\u2085), one of circles and one of squares, with 5 dashed lines forming a perfect matching (bijection/dictionary) between them.\n\n**AFTER"
+  },
+  {
+   "id": "ivc:iso_to_duality:s5:nuisance",
+   "task": "id_vs_change",
+   "answer": "B",
+   "pred": "C",
+   "correct": false,
+   "meta": {
+    "edge": "iso_to_duality",
+    "seed": 5,
+    "kind": "nuisance"
+   },
+   "option_motifs": null,
+   "raw": "Looking at the diagrams:\n\n**BEFORE**: Left cluster has 6 circular nodes, Right cluster has 5 square nodes.\n**AFTER**: Left cluster has 5 circular nodes, Right cluster has 6 square nodes.\n\nThe two comm"
+  },
+  {
+   "id": "ivc:recursion_to_contraction:s0:structural",
+   "task": "id_vs_change",
+   "answer": "A",
+   "pred": "A",
+   "correct": true,
+   "meta": {
+    "edge": "recursion_to_contraction",
+    "seed": 0,
+    "kind": "structural"
+   },
+   "option_motifs": null,
+   "raw": "Looking at this problem, I need to identify the mathematical relationship between the binary tree (BEFORE) and the polygonal path ending in a red dot (AFTER).\n\n**Analysis of the images:**\n- **BEFORE**"
+  },
+  {
+   "id": "ivc:recursion_to_contraction:s0:nuisance",
+   "task": "id_vs_change",
+   "answer": "B",
+   "pred": "A",
+   "correct": false,
+   "meta": {
+    "edge": "recursion_to_contraction",
+    "seed": 0,
+    "kind": "nuisance"
+   },
+   "option_motifs": null,
+   "raw": "Looking at the two images, the \"BEFORE\" tree has deeper recursion with more small branches at the tips, while the \"AFTER\" tree has shallower recursion where the outermost branching has stopped or been"
+  },
+  {
+   "id": "ivc:recursion_to_contraction:s1:structural",
+   "task": "id_vs_change",
+   "answer": "C",
+   "pred": "C",
+   "correct": true,
+   "meta": {
+    "edge": "recursion_to_contraction",
+    "seed": 1,
+    "kind": "structural"
+   },
+   "option_motifs": null,
+   "raw": "Looking at the transformation from BEFORE to AFTER:\n\n**BEFORE** shows a recursive binary tree - a structure generated by repeatedly applying a branching rule (splitting one segment into two).\n\n**AFTER"
+  },
+  {
+   "id": "ivc:recursion_to_contraction:s1:nuisance",
+   "task": "id_vs_change",
+   "answer": "A",
+   "pred": "B",
+   "correct": false,
+   "meta": {
+    "edge": "recursion_to_contraction",
+    "seed": 1,
+    "kind": "nuisance"
+   },
+   "option_motifs": null,
+   "raw": "Looking at the two images, the key difference is that the **AFTER** image has the outermost terminal branches (the smallest twigs at the ends) removed compared to **BEFORE**. This is a **pruning** or "
+  },
+  {
+   "id": "ivc:recursion_to_contraction:s2:structural",
+   "task": "id_vs_change",
+   "answer": "D",
+   "pred": "D",
+   "correct": true,
+   "meta": {
+    "edge": "recursion_to_contraction",
+    "seed": 2,
+    "kind": "structural"
+   },
+   "option_motifs": null,
+   "raw": "Looking at this image, we have:\n\n**BEFORE**: A full binary tree (fractal tree) - the attractor of an Iterated Function System with branching. This shows the union of all possible paths generated by re"
+  },
+  {
+   "id": "ivc:recursion_to_contraction:s2:nuisance",
+   "task": "id_vs_change",
+   "answer": "C",
+   "pred": "C",
+   "correct": true,
+   "meta": {
+    "edge": "recursion_to_contraction",
+    "seed": 2,
+    "kind": "nuisance"
+   },
+   "option_motifs": null,
+   "raw": "Looking at the two fractal tree images, I need to determine their structural relationship:\n\n**Analysis:**\n- Both trees have identical branching topology (same number of levels, same connectivity patte"
+  },
+  {
+   "id": "ivc:recursion_to_contraction:s3:structural",
+   "task": "id_vs_change",
+   "answer": "B",
+   "pred": "A",
+   "correct": false,
+   "meta": {
+    "edge": "recursion_to_contraction",
+    "seed": 3,
+    "kind": "structural"
+   },
+   "option_motifs": null,
+   "raw": "Looking at these images, I need to identify the mathematical relationship between the full fractal tree (BEFORE) and the single path ending in a red dot (AFTER).\n\n**Analysis of the images:**\n- **BEFOR"
+  },
+  {
+   "id": "ivc:recursion_to_contraction:s3:nuisance",
+   "task": "id_vs_change",
+   "answer": "A",
+   "pred": "C",
+   "correct": false,
+   "meta": {
+    "edge": "recursion_to_contraction",
+    "seed": 3,
+    "kind": "nuisance"
+   },
+   "option_motifs": null,
+   "raw": "{\"choice\": \"C\"}"
+  },
+  {
+   "id": "ivc:recursion_to_contraction:s4:structural",
+   "task": "id_vs_change",
+   "answer": "C",
+   "pred": "C",
+   "correct": true,
+   "meta": {
+    "edge": "recursion_to_contraction",
+    "seed": 4,
+    "kind": "structural"
+   },
+   "option_motifs": null,
+   "raw": "Looking at the image, we have:\n- **BEFORE**: A symmetric branching tree structure (hierarchical, recursive, multiple endpoints).\n- **AFTER**: A single non-branching polyline path terminating at a dist"
+  },
+  {
+   "id": "ivc:recursion_to_contraction:s4:nuisance",
+   "task": "id_vs_change",
+   "answer": "D",
+   "pred": "A",
+   "correct": false,
+   "meta": {
+    "edge": "recursion_to_contraction",
+    "seed": 4,
+    "kind": "nuisance"
+   },
+   "option_motifs": null,
+   "raw": "{\"choice\": \"A\"}"
+  },
+  {
+   "id": "ivc:recursion_to_contraction:s5:structural",
+   "task": "id_vs_change",
+   "answer": "D",
+   "pred": "D",
+   "correct": true,
+   "meta": {
+    "edge": "recursion_to_contraction",
+    "seed": 5,
+    "kind": "structural"
+   },
+   "option_motifs": null,
+   "raw": "Looking at this problem, I need to identify the relationship between the two images using concepts from formal languages, fractal geometry, or rewriting systems.\n\n**Analysis of the images:**\n- **BEFOR"
+  },
+  {
+   "id": "ivc:recursion_to_contraction:s5:nuisance",
+   "task": "id_vs_change",
+   "answer": "D",
+   "pred": "D",
+   "correct": true,
+   "meta": {
+    "edge": "recursion_to_contraction",
+    "seed": 5,
+    "kind": "nuisance"
+   },
+   "option_motifs": null,
+   "raw": "Looking at the two images, I need to determine what changed between BEFORE and AFTER.\n\n**Analyzing the images:**\nBoth show fractal-like binary trees with the same overall topology - a trunk splitting "
+  },
+  {
+   "id": "comp:s0",
+   "task": "composition",
+   "answer": "D",
+   "pred": "D",
+   "correct": true,
+   "meta": {
+    "seed": 0,
+    "stop_after_g1_option": "C"
+   },
+   "option_motifs": {
+    "A": "infinite_descent",
+    "B": "convergence",
+    "C": "recursion",
+    "D": "contraction_fixed_point"
+   },
+   "raw": "Looking at the transformations:\n\n**STEP 1** converts concentric nested sets into a hierarchical tree structure (distributed self-similar components). This represents moving from the static \"nested clo"
+  },
+  {
+   "id": "comp:s1",
+   "task": "composition",
+   "answer": "D",
+   "pred": "D",
+   "correct": true,
+   "meta": {
+    "seed": 1,
+    "stop_after_g1_option": "B"
+   },
+   "option_motifs": {
+    "A": "convergence",
+    "B": "recursion",
+    "C": "infinite_descent",
+    "D": "contraction_fixed_point"
+   },
+   "raw": "{\"choice\": \"D\"}"
+  },
+  {
+   "id": "comp:s2",
+   "task": "composition",
+   "answer": "C",
+   "pred": "C",
+   "correct": true,
+   "meta": {
+    "seed": 2,
+    "stop_after_g1_option": "B"
+   },
+   "option_motifs": {
+    "A": "infinite_descent",
+    "B": "recursion",
+    "C": "contraction_fixed_point",
+    "D": "convergence"
+   },
+   "raw": "Looking at this problem, I need to interpret what the visual transformations represent mathematically:\n\n**STEP 1** transforms a nested sequence of sets (concentric squares) into a tree-like structure "
+  },
+  {
+   "id": "comp:s3",
+   "task": "composition",
+   "answer": "B",
+   "pred": "B",
+   "correct": true,
+   "meta": {
+    "seed": 3,
+    "stop_after_g1_option": "C"
+   },
+   "option_motifs": {
+    "A": "infinite_descent",
+    "B": "contraction_fixed_point",
+    "C": "recursion",
+    "D": "convergence"
+   },
+   "raw": "{\"choice\": \"B\"}"
+  },
+  {
+   "id": "comp:s4",
+   "task": "composition",
+   "answer": "C",
+   "pred": "C",
+   "correct": true,
+   "meta": {
+    "seed": 4,
+    "stop_after_g1_option": "A"
+   },
+   "option_motifs": {
+    "A": "recursion",
+    "B": "convergence",
+    "C": "contraction_fixed_point",
+    "D": "infinite_descent"
+   },
+   "raw": "Looking at the visual transformations:\n\n**STEP 1** transforms a **linear chain of nested sets** (concentric squares) into a **tree-like structure** with branching (two main clusters containing sub-str"
+  },
+  {
+   "id": "comp:s5",
+   "task": "composition",
+   "answer": "D",
+   "pred": "D",
+   "correct": true,
+   "meta": {
+    "seed": 5,
+    "stop_after_g1_option": "A"
+   },
+   "option_motifs": {
+    "A": "recursion",
+    "B": "convergence",
+    "C": "infinite_descent",
+    "D": "contraction_fixed_point"
+   },
+   "raw": "{\"choice\": \"D\"}"
+  }
+ ]
+}
