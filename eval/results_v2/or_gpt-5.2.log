@@ -1,0 +1,36 @@
+openai/gpt-5.2 @ https://openrouter.ai/api/v1: 1156 items, tasks=['crossvoice', 'scene2motif', 'scene2motif_family4', 'skeleton2motif', 'story2motif', 'theorem2motif', 'xv_scene_thm', 'xv_story_thm']
+{
+ "scene2motif": {
+  "n": 210,
+  "acc": 0.7095
+ },
+ "skeleton2motif": {
+  "n": 49,
+  "acc": 0.7959
+ },
+ "story2motif": {
+  "n": 121,
+  "acc": 0.8347
+ },
+ "theorem2motif": {
+  "n": 25,
+  "acc": 0.84
+ },
+ "crossvoice": {
+  "n": 210,
+  "acc": 0.581
+ },
+ "xv_scene_thm": {
+  "n": 210,
+  "acc": 0.8095
+ },
+ "xv_story_thm": {
+  "n": 121,
+  "acc": 0.7355
+ },
+ "scene2motif_family4": {
+  "n": 210,
+  "acc": 0.8381
+ }
+} -> /Users/agent4stone/GEB-eval/eval/results_v2/or_gpt-5.2.json
+EVAL_V2_DONE or_gpt-5.2

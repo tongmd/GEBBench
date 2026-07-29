@@ -1,0 +1,112 @@
+=== gpt-5.5:stable -> api_gpt-5.5 ===
+gpt-5.5:stable @ https://yunwu.ai/v1: 1156 items, tasks=['crossvoice', 'scene2motif', 'scene2motif_family4', 'skeleton2motif', 'story2motif', 'theorem2motif', 'xv_scene_thm', 'xv_story_thm']
+{
+ "scene2motif": {
+  "n": 210,
+  "acc": 0.7571
+ },
+ "skeleton2motif": {
+  "n": 49,
+  "acc": 0.8367
+ },
+ "story2motif": {
+  "n": 121,
+  "acc": 0.8926
+ },
+ "theorem2motif": {
+  "n": 25,
+  "acc": 0.92
+ },
+ "crossvoice": {
+  "n": 210,
+  "acc": 0.6429
+ },
+ "xv_scene_thm": {
+  "n": 210,
+  "acc": 0.8095
+ },
+ "xv_story_thm": {
+  "n": 121,
+  "acc": 0.8017
+ },
+ "scene2motif_family4": {
+  "n": 210,
+  "acc": 0.8571
+ }
+} -> /Users/stone/GEB-benchmark/eval/results_v2/api_gpt-5.5.json
+EVAL_V2_DONE api_gpt-5.5
+=== gpt-5.2:stable -> api_gpt-5.2 ===
+gpt-5.2:stable @ https://yunwu.ai/v1: 1156 items, tasks=['crossvoice', 'scene2motif', 'scene2motif_family4', 'skeleton2motif', 'story2motif', 'theorem2motif', 'xv_scene_thm', 'xv_story_thm']
+{
+ "scene2motif": {
+  "n": 210,
+  "acc": 0.7143
+ },
+ "skeleton2motif": {
+  "n": 49,
+  "acc": 0.7959
+ },
+ "story2motif": {
+  "n": 121,
+  "acc": 0.843
+ },
+ "theorem2motif": {
+  "n": 25,
+  "acc": 0.88
+ },
+ "crossvoice": {
+  "n": 210,
+  "acc": 0.3571
+ },
+ "xv_scene_thm": {
+  "n": 210,
+  "acc": 0.6714
+ },
+ "xv_story_thm": {
+  "n": 121,
+  "acc": 0.6116
+ },
+ "scene2motif_family4": {
+  "n": 210,
+  "acc": 0.8
+ }
+} -> /Users/stone/GEB-benchmark/eval/results_v2/api_gpt-5.2.json
+EVAL_V2_DONE api_gpt-5.2
+=== claude-opus-4-8:stable -> api_claude-opus-4-8 ===
+claude-opus-4-8:stable @ https://yunwu.ai/v1: 1156 items, tasks=['crossvoice', 'scene2motif', 'scene2motif_family4', 'skeleton2motif', 'story2motif', 'theorem2motif', 'xv_scene_thm', 'xv_story_thm']
+{
+ "scene2motif": {
+  "n": 210,
+  "acc": 0.6095
+ },
+ "skeleton2motif": {
+  "n": 49,
+  "acc": 0.6939
+ },
+ "story2motif": {
+  "n": 121,
+  "acc": 0.7107
+ },
+ "theorem2motif": {
+  "n": 25,
+  "acc": 0.76
+ },
+ "crossvoice": {
+  "n": 210,
+  "acc": 0.4381
+ },
+ "xv_scene_thm": {
+  "n": 210,
+  "acc": 0.6857
+ },
+ "xv_story_thm": {
+  "n": 121,
+  "acc": 0.6694
+ },
+ "scene2motif_family4": {
+  "n": 210,
+  "acc": 0.7857
+ }
+} -> /Users/stone/GEB-benchmark/eval/results_v2/api_claude-opus-4-8.json
+EVAL_V2_DONE api_claude-opus-4-8
+FRONTIER_V2_DONE

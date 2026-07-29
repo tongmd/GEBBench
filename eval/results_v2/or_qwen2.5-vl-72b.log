@@ -1,0 +1,36 @@
+qwen/qwen2.5-vl-72b-instruct @ https://openrouter.ai/api/v1: 1156 items, tasks=['crossvoice', 'scene2motif', 'scene2motif_family4', 'skeleton2motif', 'story2motif', 'theorem2motif', 'xv_scene_thm', 'xv_story_thm']
+{
+ "scene2motif": {
+  "n": 210,
+  "acc": 0.4714
+ },
+ "skeleton2motif": {
+  "n": 49,
+  "acc": 0.6122
+ },
+ "story2motif": {
+  "n": 121,
+  "acc": 0.4711
+ },
+ "theorem2motif": {
+  "n": 25,
+  "acc": 0.84
+ },
+ "crossvoice": {
+  "n": 210,
+  "acc": 0.3286
+ },
+ "xv_scene_thm": {
+  "n": 210,
+  "acc": 0.5429
+ },
+ "xv_story_thm": {
+  "n": 121,
+  "acc": 0.5207
+ },
+ "scene2motif_family4": {
+  "n": 210,
+  "acc": 0.7524
+ }
+} -> /Users/agent4stone/GEB-eval/eval/results_v2/or_qwen2.5-vl-72b.json
+EVAL_V2_DONE or_qwen2.5-vl-72b

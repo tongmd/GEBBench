@@ -1,0 +1,36 @@
+qwen2-vl-7b @ http://localhost:18002/v1: 1156 items, tasks=['crossvoice', 'scene2motif', 'scene2motif_family4', 'skeleton2motif', 'story2motif', 'theorem2motif', 'xv_scene_thm', 'xv_story_thm']
+{
+ "scene2motif": {
+  "n": 210,
+  "acc": 0.281
+ },
+ "skeleton2motif": {
+  "n": 49,
+  "acc": 0.3673
+ },
+ "story2motif": {
+  "n": 121,
+  "acc": 0.1901
+ },
+ "theorem2motif": {
+  "n": 25,
+  "acc": 0.68
+ },
+ "crossvoice": {
+  "n": 210,
+  "acc": 0.2286
+ },
+ "xv_scene_thm": {
+  "n": 210,
+  "acc": 0.3381
+ },
+ "xv_story_thm": {
+  "n": 121,
+  "acc": 0.3223
+ },
+ "scene2motif_family4": {
+  "n": 210,
+  "acc": 0.4857
+ }
+} -> /Users/stone/GEB-benchmark/eval/results_v2/qwen2-vl-7b.json
+EVAL_V2_DONE qwen2-vl-7b

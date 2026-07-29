@@ -1,0 +1,132 @@
+** WARNING: connection is not using a post-quantum key exchange algorithm.
+** This session may be vulnerable to "store now, decrypt later" attacks.
+** The server may need to be upgraded. See https://openssh.com/pq.html
+** WARNING: connection is not using a post-quantum key exchange algorithm.
+** This session may be vulnerable to "store now, decrypt later" attacks.
+** The server may need to be upgraded. See https://openssh.com/pq.html
+=== vision: qwen2-vl-7b via localhost:18002 ===
+qwen2-vl-7b @ http://localhost:18002/v1: 1156 items, tasks=['crossvoice', 'scene2motif', 'scene2motif_family4', 'skeleton2motif', 'story2motif', 'theorem2motif', 'xv_scene_thm', 'xv_story_thm']
+{
+ "scene2motif": {
+  "n": 210,
+  "acc": 0.281
+ },
+ "skeleton2motif": {
+  "n": 49,
+  "acc": 0.3673
+ },
+ "story2motif": {
+  "n": 121,
+  "acc": 0.1901
+ },
+ "theorem2motif": {
+  "n": 25,
+  "acc": 0.68
+ },
+ "crossvoice": {
+  "n": 210,
+  "acc": 0.2286
+ },
+ "xv_scene_thm": {
+  "n": 210,
+  "acc": 0.3381
+ },
+ "xv_story_thm": {
+  "n": 121,
+  "acc": 0.3223
+ },
+ "scene2motif_family4": {
+  "n": 210,
+  "acc": 0.4857
+ }
+} -> /Users/stone/GEB-benchmark/eval/results_v2/qwen2-vl-7b.json
+EVAL_V2_DONE qwen2-vl-7b
+=== vision: qwen2.5-vl-32b via localhost:18003 ===
+qwen2.5-vl-32b @ http://localhost:18003/v1: 1156 items, tasks=['crossvoice', 'scene2motif', 'scene2motif_family4', 'skeleton2motif', 'story2motif', 'theorem2motif', 'xv_scene_thm', 'xv_story_thm']
+{
+ "scene2motif": {
+  "n": 210,
+  "acc": 0.4762
+ },
+ "skeleton2motif": {
+  "n": 49,
+  "acc": 0.6327
+ },
+ "story2motif": {
+  "n": 121,
+  "acc": 0.4959
+ },
+ "theorem2motif": {
+  "n": 25,
+  "acc": 0.8
+ },
+ "crossvoice": {
+  "n": 210,
+  "acc": 0.3238
+ },
+ "xv_scene_thm": {
+  "n": 210,
+  "acc": 0.5095
+ },
+ "xv_story_thm": {
+  "n": 121,
+  "acc": 0.4959
+ },
+ "scene2motif_family4": {
+  "n": 210,
+  "acc": 0.719
+ }
+} -> /Users/stone/GEB-benchmark/eval/results_v2/qwen2.5-vl-32b.json
+EVAL_V2_DONE qwen2.5-vl-32b
+=== text: qwen2.5-7b on kiti GPU 0 port 8010 (tp=1) ===
+** WARNING: connection is not using a post-quantum key exchange algorithm.
+** This session may be vulnerable to "store now, decrypt later" attacks.
+** The server may need to be upgraded. See https://openssh.com/pq.html
+bad session name: eval_qwen2.5-7b
+SERVER_FAIL qwen2.5-7b
+** WARNING: connection is not using a post-quantum key exchange algorithm.
+** This session may be vulnerable to "store now, decrypt later" attacks.
+** The server may need to be upgraded. See https://openssh.com/pq.html
+tail: cannot open '/home/zhangtong/serve_eval_qwen2.5-7b.log' for reading: No such file or directory
+=== text: qwen2.5-14b on kiti GPU 0,1 port 8011 (tp=2) ===
+** WARNING: connection is not using a post-quantum key exchange algorithm.
+** This session may be vulnerable to "store now, decrypt later" attacks.
+** The server may need to be upgraded. See https://openssh.com/pq.html
+bad session name: eval_qwen2.5-14b
+SERVER_FAIL qwen2.5-14b
+** WARNING: connection is not using a post-quantum key exchange algorithm.
+** This session may be vulnerable to "store now, decrypt later" attacks.
+** The server may need to be upgraded. See https://openssh.com/pq.html
+tail: cannot open '/home/zhangtong/serve_eval_qwen2.5-14b.log' for reading: No such file or directory
+=== text: deepseek-coder-v2-lite on kiti GPU 0,1 port 8012 (tp=2) ===
+** WARNING: connection is not using a post-quantum key exchange algorithm.
+** This session may be vulnerable to "store now, decrypt later" attacks.
+** The server may need to be upgraded. See https://openssh.com/pq.html
+SERVER_FAIL deepseek-coder-v2-lite
+** WARNING: connection is not using a post-quantum key exchange algorithm.
+** This session may be vulnerable to "store now, decrypt later" attacks.
+** The server may need to be upgraded. See https://openssh.com/pq.html
+    return fn(*args, **kwargs)
+  File "/home/zhangtong/micromamba/envs/vllm/lib/python3.10/site-packages/huggingface_hub/hf_api.py", line 3018, in file_exists
+    get_hf_file_metadata(url, token=token)
+  File "/home/zhangtong/micromamba/envs/vllm/lib/python3.10/site-packages/huggingface_hub/utils/_validators.py", line 114, in _inner_fn
+    return fn(*args, **kwargs)
+  File "/home/zhangtong/micromamba/envs/vllm/lib/python3.10/site-packages/huggingface_hub/file_download.py", line 1467, in get_hf_file_metadata
+    r = _request_wrapper(
+  File "/home/zhangtong/micromamba/envs/vllm/lib/python3.10/site-packages/huggingface_hub/file_download.py", line 283, in _request_wrapper
+    response = _request_wrapper(
+  File "/home/zhangtong/micromamba/envs/vllm/lib/python3.10/site-packages/huggingface_hub/file_download.py", line 306, in _request_wrapper
+    response = http_backoff(method=method, url=url, **params)
+  File "/home/zhangtong/micromamba/envs/vllm/lib/python3.10/site-packages/huggingface_hub/utils/_http.py", line 307, in http_backoff
+    response = session.request(method=method, url=url, **kwargs)
+  File "/home/zhangtong/micromamba/envs/vllm/lib/python3.10/site-packages/requests/sessions.py", line 592, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/zhangtong/micromamba/envs/vllm/lib/python3.10/site-packages/requests/sessions.py", line 706, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/zhangtong/micromamba/envs/vllm/lib/python3.10/site-packages/huggingface_hub/utils/_http.py", line 107, in send
+    raise OfflineModeIsEnabled(
+huggingface_hub.errors.OfflineModeIsEnabled: Cannot reach https://huggingface.co/deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct/resolve/main/config.json: offline mode is enabled. To disable it, please unset the `HF_HUB_OFFLINE` environment variable.
+=== text: codegeex4-9b on kiti GPU 3 port 8013 (tp=1) ===
+** WARNING: connection is not using a post-quantum key exchange algorithm.
+** This session may be vulnerable to "store now, decrypt later" attacks.
+** The server may need to be upgraded. See https://openssh.com/pq.html

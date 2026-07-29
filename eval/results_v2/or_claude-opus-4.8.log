@@ -1,0 +1,36 @@
+anthropic/claude-opus-4.8 @ https://openrouter.ai/api/v1: 1156 items, tasks=['crossvoice', 'scene2motif', 'scene2motif_family4', 'skeleton2motif', 'story2motif', 'theorem2motif', 'xv_scene_thm', 'xv_story_thm']
+{
+ "scene2motif": {
+  "n": 210,
+  "acc": 0.6381
+ },
+ "skeleton2motif": {
+  "n": 49,
+  "acc": 0.7551
+ },
+ "story2motif": {
+  "n": 121,
+  "acc": 0.7521
+ },
+ "theorem2motif": {
+  "n": 25,
+  "acc": 0.8
+ },
+ "crossvoice": {
+  "n": 210,
+  "acc": 0.4238
+ },
+ "xv_scene_thm": {
+  "n": 210,
+  "acc": 0.6667
+ },
+ "xv_story_thm": {
+  "n": 121,
+  "acc": 0.7355
+ },
+ "scene2motif_family4": {
+  "n": 210,
+  "acc": 0.8143
+ }
+} -> /Users/agent4stone/GEB-eval/eval/results_v2/or_claude-opus-4.8.json
+EVAL_V2_DONE or_claude-opus-4.8

@@ -1,0 +1,16 @@
+deepseek-coder-v2-lite @ http://localhost:18012/v1: 267 items, tasks=['story2motif', 'theorem2motif', 'xv_story_thm']
+{
+ "story2motif": {
+  "n": 121,
+  "acc": 0.2066
+ },
+ "theorem2motif": {
+  "n": 25,
+  "acc": 0.36
+ },
+ "xv_story_thm": {
+  "n": 121,
+  "acc": 0.3223
+ }
+} -> /Users/stone/GEB-benchmark/eval/results_v2/deepseek-coder-v2-lite.json
+EVAL_V2_DONE deepseek-coder-v2-lite

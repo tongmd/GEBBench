@@ -1,0 +1,16 @@
+deepseek/deepseek-v3.2 @ https://openrouter.ai/api/v1: 267 items, tasks=['story2motif', 'theorem2motif', 'xv_story_thm']
+{
+ "story2motif": {
+  "n": 121,
+  "acc": 0.6033
+ },
+ "theorem2motif": {
+  "n": 25,
+  "acc": 0.84
+ },
+ "xv_story_thm": {
+  "n": 121,
+  "acc": 0.4711
+ }
+} -> /Users/agent4stone/GEB-eval/eval/results_v2/or_deepseek-v3.2.json
+EVAL_V2_DONE or_deepseek-v3.2

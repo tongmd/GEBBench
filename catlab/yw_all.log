@@ -1,0 +1,91 @@
+=== catlab gpt-5.5:stable -> yw_gpt-5.5 ===
+gpt-5.5:stable: 222 items
+{
+ "endpoint_id": {
+  "n": 72,
+  "acc": 0.6806,
+  "unparsed": 0
+ },
+ "square_thm": {
+  "n": 36,
+  "acc": 0.5833,
+  "unparsed": 0
+ },
+ "square_story": {
+  "n": 36,
+  "acc": 0.3056,
+  "unparsed": 0
+ },
+ "id_vs_change": {
+  "n": 72,
+  "acc": 0.8611,
+  "unparsed": 0
+ },
+ "composition": {
+  "n": 6,
+  "acc": 0.3333,
+  "unparsed": 0
+ }
+}
+CATLAB_DONE yw_gpt-5.5
+=== catlab gpt-5.2:stable -> yw_gpt-5.2 ===
+gpt-5.2:stable: 222 items
+{
+ "endpoint_id": {
+  "n": 72,
+  "acc": 0.6667,
+  "unparsed": 0
+ },
+ "square_thm": {
+  "n": 36,
+  "acc": 0.5278,
+  "unparsed": 0
+ },
+ "square_story": {
+  "n": 36,
+  "acc": 0.1944,
+  "unparsed": 0
+ },
+ "id_vs_change": {
+  "n": 72,
+  "acc": 0.8472,
+  "unparsed": 0
+ },
+ "composition": {
+  "n": 6,
+  "acc": 0.8333,
+  "unparsed": 0
+ }
+}
+CATLAB_DONE yw_gpt-5.2
+=== catlab claude-opus-4-8:stable -> yw_claude-opus-4-8 ===
+claude-opus-4-8:stable: 222 items
+{
+ "endpoint_id": {
+  "n": 72,
+  "acc": 0.5694,
+  "unparsed": 0
+ },
+ "square_thm": {
+  "n": 36,
+  "acc": 0.5833,
+  "unparsed": 0
+ },
+ "square_story": {
+  "n": 36,
+  "acc": 0.3611,
+  "unparsed": 0
+ },
+ "id_vs_change": {
+  "n": 72,
+  "acc": 0.9167,
+  "unparsed": 0
+ },
+ "composition": {
+  "n": 6,
+  "acc": 0.1667,
+  "unparsed": 0
+ }
+}
+CATLAB_DONE yw_claude-opus-4-8
+CATLAB_YW_ALL_DONE

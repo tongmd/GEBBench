@@ -1,0 +1,450 @@
+=== qwen2.5-7b: ensure weights (4 shards) ===
+** WARNING: connection is not using a post-quantum key exchange algorithm.
+** This session may be vulnerable to "store now, decrypt later" attacks.
+** The server may need to be upgraded. See https://openssh.com/pq.html
+have 4/4
+** WARNING: connection is not using a post-quantum key exchange algorithm.
+** This session may be vulnerable to "store now, decrypt later" attacks.
+** The server may need to be upgraded. See https://openssh.com/pq.html
+=== qwen2.5-7b: serve on GPU 0 port 8010 (tp=1) ===
+** WARNING: connection is not using a post-quantum key exchange algorithm.
+** This session may be vulnerable to "store now, decrypt later" attacks.
+** The server may need to be upgraded. See https://openssh.com/pq.html
+bad session name: eval_qwen2.5-7b
+SERVER_FAIL qwen2.5-7b
+** WARNING: connection is not using a post-quantum key exchange algorithm.
+** This session may be vulnerable to "store now, decrypt later" attacks.
+** The server may need to be upgraded. See https://openssh.com/pq.html
+=== qwen2.5-14b: ensure weights (8 shards) ===
+** WARNING: connection is not using a post-quantum key exchange algorithm.
+** This session may be vulnerable to "store now, decrypt later" attacks.
+** The server may need to be upgraded. See https://openssh.com/pq.html
+have 5/8
+** WARNING: connection is not using a post-quantum key exchange algorithm.
+** This session may be vulnerable to "store now, decrypt later" attacks.
+** The server may need to be upgraded. See https://openssh.com/pq.html
+  downloading Qwen/Qwen2.5-14B-Instruct ...
+** WARNING: connection is not using a post-quantum key exchange algorithm.
+** This session may be vulnerable to "store now, decrypt later" attacks.
+** The server may need to be upgraded. See https://openssh.com/pq.html
+zsh:1: no matches found: /home/zhangtong/.cache/huggingface/hub/models--Qwen--Qwen2.5-14B-Instruct/blobs/*.incomplete
+DL_OK
+=== qwen2.5-14b: serve on GPU 0,1 port 8011 (tp=2) ===
+** WARNING: connection is not using a post-quantum key exchange algorithm.
+** This session may be vulnerable to "store now, decrypt later" attacks.
+** The server may need to be upgraded. See https://openssh.com/pq.html
+bad session name: eval_qwen2.5-14b
+SERVER_FAIL qwen2.5-14b
+** WARNING: connection is not using a post-quantum key exchange algorithm.
+** This session may be vulnerable to "store now, decrypt later" attacks.
+** The server may need to be upgraded. See https://openssh.com/pq.html
+=== deepseek-coder-v2-lite: ensure weights (4 shards) ===
+** WARNING: connection is not using a post-quantum key exchange algorithm.
+** This session may be vulnerable to "store now, decrypt later" attacks.
+** The server may need to be upgraded. See https://openssh.com/pq.html
+zsh:1: no matches found: /home/zhangtong/.cache/huggingface/hub/models--deepseek-ai--DeepSeek-Coder-V2-Lite-Instruct/snapshots/*/*.safetensors
+have 0/4
+** WARNING: connection is not using a post-quantum key exchange algorithm.
+** This session may be vulnerable to "store now, decrypt later" attacks.
+** The server may need to be upgraded. See https://openssh.com/pq.html
+zsh:1: no matches found: /home/zhangtong/.cache/huggingface/hub/models--deepseek-ai--DeepSeek-Coder-V2-Lite-Instruct/snapshots/*/*.safetensors
+  downloading deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct ...
+** WARNING: connection is not using a post-quantum key exchange algorithm.
+** This session may be vulnerable to "store now, decrypt later" attacks.
+** The server may need to be upgraded. See https://openssh.com/pq.html
+zsh:1: no matches found: /home/zhangtong/.cache/huggingface/hub/models--deepseek-ai--DeepSeek-Coder-V2-Lite-Instruct/blobs/*.incomplete
+DL_OK
+=== deepseek-coder-v2-lite: serve on GPU 0,1 port 8012 (tp=2) ===
+** WARNING: connection is not using a post-quantum key exchange algorithm.
+** This session may be vulnerable to "store now, decrypt later" attacks.
+** The server may need to be upgraded. See https://openssh.com/pq.html
+deepseek-coder-v2-lite @ http://localhost:18012/v1: 267 items, tasks=['story2motif', 'theorem2motif', 'xv_story_thm']
+{
+ "story2motif": {
+  "n": 121,
+  "acc": 0.2066
+ },
+ "theorem2motif": {
+  "n": 25,
+  "acc": 0.36
+ },
+ "xv_story_thm": {
+  "n": 121,
+  "acc": 0.3223
+ }
+} -> /Users/stone/GEB-benchmark/eval/results_v2/deepseek-coder-v2-lite.json
+EVAL_V2_DONE deepseek-coder-v2-lite
+** WARNING: connection is not using a post-quantum key exchange algorithm.
+** This session may be vulnerable to "store now, decrypt later" attacks.
+** The server may need to be upgraded. See https://openssh.com/pq.html
+=== deepseek-coder-v2-lite: evicting weights ===
+** WARNING: connection is not using a post-quantum key exchange algorithm.
+** This session may be vulnerable to "store now, decrypt later" attacks.
+** The server may need to be upgraded. See https://openssh.com/pq.html
+=== codegeex4-9b: ensure weights (4 shards) ===
+** WARNING: connection is not using a post-quantum key exchange algorithm.
+** This session may be vulnerable to "store now, decrypt later" attacks.
+** The server may need to be upgraded. See https://openssh.com/pq.html
+zsh:1: no matches found: /home/zhangtong/.cache/huggingface/hub/models--THUDM--codegeex4-all-9b/snapshots/*/*.safetensors
+have 0/4
+** WARNING: connection is not using a post-quantum key exchange algorithm.
+** This session may be vulnerable to "store now, decrypt later" attacks.
+** The server may need to be upgraded. See https://openssh.com/pq.html
+zsh:1: no matches found: /home/zhangtong/.cache/huggingface/hub/models--THUDM--codegeex4-all-9b/snapshots/*/*.safetensors
+  downloading THUDM/codegeex4-all-9b ...
+** WARNING: connection is not using a post-quantum key exchange algorithm.
+** This session may be vulnerable to "store now, decrypt later" attacks.
+** The server may need to be upgraded. See https://openssh.com/pq.html
+zsh:1: no matches found: /home/zhangtong/.cache/huggingface/hub/models--THUDM--codegeex4-all-9b/blobs/*.incomplete
+DL_OK
+=== codegeex4-9b: serve on GPU 3 port 8013 (tp=1) ===
+** WARNING: connection is not using a post-quantum key exchange algorithm.
+** This session may be vulnerable to "store now, decrypt later" attacks.
+** The server may need to be upgraded. See https://openssh.com/pq.html
+codegeex4-9b @ http://localhost:18013/v1: 267 items, tasks=['story2motif', 'theorem2motif', 'xv_story_thm']
+  ERR HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+  ERR   ERR HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request  ERR HTTP Error 400: Bad Request
+  ERR 
+HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+  ERR   ERR HTTP Error 400: Bad Request
+HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+  ERR   ERR HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+  ERR  ERR HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+ HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+  ERR  ERR HTTP Error 400: Bad Request
+ HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+  ERR  ERR HTTP Error 400: Bad Request
+ HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+  ERR  ERR HTTP Error 400: Bad Request
+ HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+  ERR  ERR HTTP Error 400: Bad Request
+ HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+  ERR  ERR HTTP Error 400: Bad Request
+ HTTP Error 400: Bad Request
+  ERR HTTP Error 400: Bad Request
+{
+ "story2motif": {
+  "n": 121,
+  "acc": 0.0
+ },
+ "theorem2motif": {
+  "n": 25,
+  "acc": 0.0
+ },
+ "xv_story_thm": {
+  "n": 121,
+  "acc": 0.0
+ }
+} -> /Users/stone/GEB-benchmark/eval/results_v2/codegeex4-9b.json
+EVAL_V2_DONE codegeex4-9b
+** WARNING: connection is not using a post-quantum key exchange algorithm.
+** This session may be vulnerable to "store now, decrypt later" attacks.
+** The server may need to be upgraded. See https://openssh.com/pq.html
+=== codegeex4-9b: evicting weights ===
+** WARNING: connection is not using a post-quantum key exchange algorithm.
+** This session may be vulnerable to "store now, decrypt later" attacks.
+** The server may need to be upgraded. See https://openssh.com/pq.html
+=== yi-coder-9b: ensure weights (4 shards) ===
+** WARNING: connection is not using a post-quantum key exchange algorithm.
+** This session may be vulnerable to "store now, decrypt later" attacks.
+** The server may need to be upgraded. See https://openssh.com/pq.html
+zsh:1: no matches found: /home/zhangtong/.cache/huggingface/hub/models--01-ai--Yi-Coder-9B-Chat/snapshots/*/*.safetensors
+have 0/4
+** WARNING: connection is not using a post-quantum key exchange algorithm.
+** This session may be vulnerable to "store now, decrypt later" attacks.
+** The server may need to be upgraded. See https://openssh.com/pq.html
+zsh:1: no matches found: /home/zhangtong/.cache/huggingface/hub/models--01-ai--Yi-Coder-9B-Chat/snapshots/*/*.safetensors
+  downloading 01-ai/Yi-Coder-9B-Chat ...
+** WARNING: connection is not using a post-quantum key exchange algorithm.
+** This session may be vulnerable to "store now, decrypt later" attacks.
+** The server may need to be upgraded. See https://openssh.com/pq.html
+DL_OK
+zsh:1: no matches found: /home/zhangtong/.cache/huggingface/hub/models--01-ai--Yi-Coder-9B-Chat/blobs/*.incomplete
+=== yi-coder-9b: serve on GPU 3 port 8014 (tp=1) ===
+** WARNING: connection is not using a post-quantum key exchange algorithm.
+** This session may be vulnerable to "store now, decrypt later" attacks.
+** The server may need to be upgraded. See https://openssh.com/pq.html
+yi-coder-9b @ http://localhost:18014/v1: 267 items, tasks=['story2motif', 'theorem2motif', 'xv_story_thm']
+{
+ "story2motif": {
+  "n": 121,
+  "acc": 0.0
+ },
+ "theorem2motif": {
+  "n": 25,
+  "acc": 0.08
+ },
+ "xv_story_thm": {
+  "n": 121,
+  "acc": 0.2727
+ }
+} -> /Users/stone/GEB-benchmark/eval/results_v2/yi-coder-9b.json
+EVAL_V2_DONE yi-coder-9b
+** WARNING: connection is not using a post-quantum key exchange algorithm.
+** This session may be vulnerable to "store now, decrypt later" attacks.
+** The server may need to be upgraded. See https://openssh.com/pq.html
+=== yi-coder-9b: evicting weights ===
+** WARNING: connection is not using a post-quantum key exchange algorithm.
+** This session may be vulnerable to "store now, decrypt later" attacks.
+** The server may need to be upgraded. See https://openssh.com/pq.html
+=== qwen2.5-coder-32b: ensure weights (14 shards) ===
+** WARNING: connection is not using a post-quantum key exchange algorithm.
+** This session may be vulnerable to "store now, decrypt later" attacks.
+** The server may need to be upgraded. See https://openssh.com/pq.html
+have 0/14
+zsh:1: no matches found: /home/zhangtong/.cache/huggingface/hub/models--Qwen--Qwen2.5-Coder-32B-Instruct/snapshots/*/*.safetensors
+** WARNING: connection is not using a post-quantum key exchange algorithm.
+** This session may be vulnerable to "store now, decrypt later" attacks.
+** The server may need to be upgraded. See https://openssh.com/pq.html
+zsh:1: no matches found: /home/zhangtong/.cache/huggingface/hub/models--Qwen--Qwen2.5-Coder-32B-Instruct/snapshots/*/*.safetensors
+  downloading Qwen/Qwen2.5-Coder-32B-Instruct ...
+** WARNING: connection is not using a post-quantum key exchange algorithm.
+** This session may be vulnerable to "store now, decrypt later" attacks.
+** The server may need to be upgraded. See https://openssh.com/pq.html

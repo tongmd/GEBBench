@@ -3,6 +3,11 @@ __pycache__/
 *.pyc
 node_modules/
 *.log
+# ...except evaluation run logs, which are the provenance for every number
+# in the paper (per-task n and accuracy per model).
+!eval/results_v2/*.log
+!eval/results_openrouter/*.log
+!catlab/*.log
 paper/geb.pdf
 paper/slides.pdf
 paper/arxiv_submit/

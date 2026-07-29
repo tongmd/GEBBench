@@ -1,0 +1,16 @@
+qwen2.5-7b @ http://localhost:18010/v1: 267 items, tasks=['story2motif', 'theorem2motif', 'xv_story_thm']
+{
+ "story2motif": {
+  "n": 121,
+  "acc": 0.1653
+ },
+ "theorem2motif": {
+  "n": 25,
+  "acc": 0.68
+ },
+ "xv_story_thm": {
+  "n": 121,
+  "acc": 0.3471
+ }
+} -> /Users/stone/GEB-benchmark/eval/results_v2/qwen2.5-7b.json
+EVAL_V2_DONE qwen2.5-7b
