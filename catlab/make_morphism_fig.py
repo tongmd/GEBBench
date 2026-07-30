@@ -42,6 +42,19 @@ SHORT = {"GPT-5.5": "GPT-5.5", "GPT-5.2": "GPT-5.2",
          "Kimi K2.5": "Kimi K2.5", "Qwen2.5-VL-72B": "Qwen-VL-72B"}
 
 
+def expected_counts():
+    """Per-task item counts read off the items manifest, so the guard below
+    tracks the released split instead of a hard-coded seed count."""
+    items = json.load(open(os.path.join(ROOT, "catlab", "items.json")))["items"]
+    tot = {}
+    for it in items:
+        tot[it["task"]] = tot.get(it["task"], 0) + 1
+    return tot
+
+
+EXPECTED = expected_counts()
+
+
 def accs(stem):
     """{task: accuracy in %} from one model's run log."""
     d = json.load(open(os.path.join(RES, stem + ".json")))
@@ -50,8 +63,7 @@ def accs(stem):
         t = r["task"]
         hits[t] = hits.get(t, 0) + (1 if r["correct"] else 0)
         tot[t] = tot.get(t, 0) + 1
-    assert tot["square_thm"] == 36 and tot["square_story"] == 36, (stem, tot)
-    assert tot["id_vs_change"] == 72, (stem, tot)
+    assert tot == EXPECTED, (stem, tot, EXPECTED)
     return {t: 100.0 * hits[t] / tot[t] for t in tot}
 
 
