@@ -1,0 +1,825 @@
+{
+ "model": "qwen/qwen2.5-vl-72b-instruct",
+ "base": "https://openrouter.ai/api/v1",
+ "lang": "zh",
+ "corpus": "data/stories_v3.json",
+ "summary": {
+  "story2motif": {
+   "n": 90,
+   "acc": 0.5333
+  }
+ },
+ "parse_failures": 0,
+ "records": [
+  {
+   "id": "alternation_s0",
+   "task": "story2motif",
+   "lang": "zh",
+   "answer": "alternation",
+   "pred": "projective_duality",
+   "correct": false,
+   "raw": "{\"motif_id\": \"projective_duality\"}"
+  },
+  {
+   "id": "alternation_s1",
+   "task": "story2motif",
+   "lang": "zh",
+   "answer": "alternation",
+   "pred": "alternation",
+   "correct": true,
+   "raw": "{\"motif_id\": \"alternation\"}"
+  },
+  {
+   "id": "alternation_s2",
+   "task": "story2motif",
+   "lang": "zh",
+   "answer": "alternation",
+   "pred": "cycle",
+   "correct": false,
+   "raw": "{\"motif_id\": \"cycle\"}"
+  },
+  {
+   "id": "alternation_s3",
+   "task": "story2motif",
+   "lang": "zh",
+   "answer": "alternation",
+   "pred": "alternation",
+   "correct": true,
+   "raw": "{\"motif_id\": \"alternation\"}"
+  },
+  {
+   "id": "aperiodic_tiling_s0",
+   "task": "story2motif",
+   "lang": "zh",
+   "answer": "aperiodic_tiling",
+   "pred": "aperiodic_tiling",
+   "correct": true,
+   "raw": "{\"motif_id\": \"aperiodic_tiling\"}"
+  },
+  {
+   "id": "aperiodic_tiling_s1",
+   "task": "story2motif",
+   "lang": "zh",
+   "answer": "aperiodic_tiling",
+   "pred": "aperiodic_tiling",
+   "correct": true,
+   "raw": "{\"motif_id\": \"aperiodic_tiling\"}"
+  },
+  {
+   "id": "aperiodic_tiling_s2",
+   "task": "story2motif",
+   "lang": "zh",
+   "answer": "aperiodic_tiling",
+   "pred": "tiling",
+   "correct": false,
+   "raw": "{\n  \"motif_id\": \"tiling\"\n}"
+  },
+  {
+   "id": "aperiodic_tiling_s3",
+   "task": "story2motif",
+   "lang": "zh",
+   "answer": "aperiodic_tiling",
+   "pred": "recursion",
+   "correct": false,
+   "raw": "{\n  \"motif_id\": \"recursion\"\n}"
+  },
+  {
+   "id": "bottleneck_s0",
+   "task": "story2motif",
+   "lang": "zh",
+   "answer": "bottleneck",
+   "pred": "bottleneck",
+   "correct": true,
+   "raw": "{\n  \"motif_id\": \"bottleneck\"\n}"
+  },
+  {
+   "id": "bottleneck_s1",
+   "task": "story2motif",
+   "lang": "zh",
+   "answer": "bottleneck",
+   "pred": "bottleneck",
+   "correct": true,
+   "raw": "{\"motif_id\": \"bottleneck\"}"
+  },
+  {
+   "id": "bottleneck_s2",
+   "task": "story2motif",
+   "lang": "zh",
+   "answer": "bottleneck",
+   "pred": "bottleneck",
+   "correct": true,
+   "raw": "{\"motif_id\": \"bottleneck\"}"
+  },
+  {
+   "id": "bottleneck_s3",
+   "task": "story2motif",
+   "lang": "zh",
+   "answer": "bottleneck",
+   "pred": "bottleneck",
+   "correct": true,
+   "raw": "{\"motif_id\": \"bottleneck\"}"
+  },
+  {
+   "id": "braiding_s0",
+   "task": "story2motif",
+   "lang": "zh",
+   "answer": "braiding",
+   "pred": "cycle",
+   "correct": false,
+   "raw": "{\"motif_id\": \"cycle\"}"
+  },
+  {
+   "id": "braiding_s1",
+   "task": "story2motif",
+   "lang": "zh",
+   "answer": "braiding",
+   "pred": "cycle",
+   "correct": false,
+   "raw": "{\"motif_id\": \"cycle\"}"
+  },
+  {
+   "id": "braiding_s2",
+   "task": "story2motif",
+   "lang": "zh",
+   "answer": "braiding",
+   "pred": "cycle",
+   "correct": false,
+   "raw": "{\"motif_id\": \"cycle\"}"
+  },
+  {
+   "id": "braiding_s3",
+   "task": "story2motif",
+   "lang": "zh",
+   "answer": "braiding",
+   "pred": "braiding",
+   "correct": true,
+   "raw": "{\"motif_id\": \"braiding\"}"
+  },
+  {
+   "id": "contraction_fixed_point_s0",
+   "task": "story2motif",
+   "lang": "zh",
+   "answer": "contraction_fixed_point",
+   "pred": "recursion",
+   "correct": false,
+   "raw": "{\n  \"motif_id\": \"recursion\"\n}"
+  },
+  {
+   "id": "contraction_fixed_point_s1",
+   "task": "story2motif",
+   "lang": "zh",
+   "answer": "contraction_fixed_point",
+   "pred": "recursion",
+   "correct": false,
+   "raw": "{\"motif_id\": \"recursion\"}"
+  },
+  {
+   "id": "contraction_fixed_point_s2",
+   "task": "story2motif",
+   "lang": "zh",
+   "answer": "contraction_fixed_point",
+   "pred": "recursion",
+   "correct": false,
+   "raw": "{\"motif_id\": \"recursion\"}"
+  },
+  {
+   "id": "contraction_fixed_point_s3",
+   "task": "story2motif",
+   "lang": "zh",
+   "answer": "contraction_fixed_point",
+   "pred": "recursion",
+   "correct": false,
+   "raw": "{\"motif_id\": \"recursion\"}"
+  },
+  {
+   "id": "convergence_s0",
+   "task": "story2motif",
+   "lang": "zh",
+   "answer": "convergence",
+   "pred": "convergence",
+   "correct": true,
+   "raw": "{\"motif_id\": \"convergence\"}"
+  },
+  {
+   "id": "convergence_s1",
+   "task": "story2motif",
+   "lang": "zh",
+   "answer": "convergence",
+   "pred": "convergence",
+   "correct": true,
+   "raw": "{\"motif_id\": \"convergence\"}"
+  },
+  {
+   "id": "convergence_s2",
+   "task": "story2motif",
+   "lang": "zh",
+   "answer": "convergence",
+   "pred": "convergence",
+   "correct": true,
+   "raw": "{\"motif_id\": \"convergence\"}"
+  },
+  {
+   "id": "convergence_s3",
+   "task": "story2motif",
+   "lang": "zh",
+   "answer": "convergence",
+   "pred": "convergence",
+   "correct": true,
+   "raw": "{\"motif_id\": \"convergence\"}"
+  },
+  {
+   "id": "coprime_orbit_s0",
+   "task": "story2motif",
+   "lang": "zh",
+   "answer": "coprime_orbit",
+   "pred": "coprime_orbit",
+   "correct": true,
+   "raw": "{\"motif_id\": \"coprime_orbit\"}"
+  },
+  {
+   "id": "coprime_orbit_s1",
+   "task": "story2motif",
+   "lang": "zh",
+   "answer": "coprime_orbit",
+   "pred": "coprime_orbit",
+   "correct": true,
+   "raw": "{\"motif_id\": \"coprime_orbit\"}"
+  },
+  {
+   "id": "coprime_orbit_s2",
+   "task": "story2motif",
+   "lang": "zh",
+   "answer": "coprime_orbit",
+   "pred": "coprime_orbit",
+   "correct": true,
+   "raw": "{\"motif_id\": \"coprime_orbit\"}"
+  },
+  {
+   "id": "coprime_orbit_s3",
+   "task": "story2motif",
+   "lang": "zh",
+   "answer": "coprime_orbit",
+   "pred": "coprime_orbit",
+   "correct": true,
+   "raw": "{\"motif_id\": \"coprime_orbit\"}"
+  },
+  {
+   "id": "cycle_s0",
+   "task": "story2motif",
+   "lang": "zh",
+   "answer": "cycle",
+   "pred": "cycle",
+   "correct": true,
+   "raw": "{\"motif_id\": \"cycle\"}"
+  },
+  {
+   "id": "cycle_s1",
+   "task": "story2motif",
+   "lang": "zh",
+   "answer": "cycle",
+   "pred": "cycle",
+   "correct": true,
+   "raw": "{\"motif_id\": \"cycle\"}"
+  },
+  {
+   "id": "cycle_s2",
+   "task": "story2motif",
+   "lang": "zh",
+   "answer": "cycle",
+   "pred": "cycle",
+   "correct": true,
+   "raw": "{\"motif_id\": \"cycle\"}"
+  },
+  {
+   "id": "cycle_s3",
+   "task": "story2motif",
+   "lang": "zh",
+   "answer": "cycle",
+   "pred": "cycle",
+   "correct": true,
+   "raw": "{\"motif_id\": \"cycle\"}"
+  },
+  {
+   "id": "diagonalization_s0",
+   "task": "story2motif",
+   "lang": "zh",
+   "answer": "diagonalization",
+   "pred": "diagonalization",
+   "correct": true,
+   "raw": "{\"motif_id\": \"diagonalization\"}"
+  },
+  {
+   "id": "diagonalization_s1",
+   "task": "story2motif",
+   "lang": "zh",
+   "answer": "diagonalization",
+   "pred": "projective_duality",
+   "correct": false,
+   "raw": "{\"motif_id\": \"projective_duality\"}"
+  },
+  {
+   "id": "diagonalization_s2",
+   "task": "story2motif",
+   "lang": "zh",
+   "answer": "diagonalization",
+   "pred": "cycle",
+   "correct": false,
+   "raw": "{\"motif_id\": \"cycle\"}"
+  },
+  {
+   "id": "diagonalization_s3",
+   "task": "story2motif",
+   "lang": "zh",
+   "answer": "diagonalization",
+   "pred": "diagonalization",
+   "correct": true,
+   "raw": "{\"motif_id\": \"diagonalization\"}"
+  },
+  {
+   "id": "figure_ground_s0",
+   "task": "story2motif",
+   "lang": "zh",
+   "answer": "figure_ground",
+   "pred": "projective_duality",
+   "correct": false,
+   "raw": "{\"motif_id\": \"projective_duality\"}"
+  },
+  {
+   "id": "figure_ground_s1",
+   "task": "story2motif",
+   "lang": "zh",
+   "answer": "figure_ground",
+   "pred": "projective_duality",
+   "correct": false,
+   "raw": "{\"motif_id\": \"projective_duality\"}"
+  },
+  {
+   "id": "figure_ground_s2",
+   "task": "story2motif",
+   "lang": "zh",
+   "answer": "figure_ground",
+   "pred": "projective_duality",
+   "correct": false,
+   "raw": "{\"motif_id\": \"projective_duality\"}"
+  },
+  {
+   "id": "figure_ground_s3",
+   "task": "story2motif",
+   "lang": "zh",
+   "answer": "figure_ground",
+   "pred": "symmetry",
+   "correct": false,
+   "raw": "{\"motif_id\": \"symmetry\"}"
+  },
+  {
+   "id": "hub_s0",
+   "task": "story2motif",
+   "lang": "zh",
+   "answer": "hub",
+   "pred": "bottleneck",
+   "correct": false,
+   "raw": "{\"motif_id\": \"bottleneck\"}"
+  },
+  {
+   "id": "hub_s1",
+   "task": "story2motif",
+   "lang": "zh",
+   "answer": "hub",
+   "pred": "cycle",
+   "correct": false,
+   "raw": "{\n  \"motif_id\": \"cycle\"\n}"
+  },
+  {
+   "id": "hub_s2",
+   "task": "story2motif",
+   "lang": "zh",
+   "answer": "hub",
+   "pred": "cycle",
+   "correct": false,
+   "raw": "{\"motif_id\": \"cycle\"}"
+  },
+  {
+   "id": "hub_s3",
+   "task": "story2motif",
+   "lang": "zh",
+   "answer": "hub",
+   "pred": "cycle",
+   "correct": false,
+   "raw": "{\"motif_id\": \"cycle\"}"
+  },
+  {
+   "id": "infinite_descent_s0",
+   "task": "story2motif",
+   "lang": "zh",
+   "answer": "infinite_descent",
+   "pred": "infinite_descent",
+   "correct": true,
+   "raw": "{\"motif_id\": \"infinite_descent\"}"
+  },
+  {
+   "id": "infinite_descent_s1",
+   "task": "story2motif",
+   "lang": "zh",
+   "answer": "infinite_descent",
+   "pred": "infinite_descent",
+   "correct": true,
+   "raw": "{\"motif_id\": \"infinite_descent\"}"
+  },
+  {
+   "id": "infinite_descent_s2",
+   "task": "story2motif",
+   "lang": "zh",
+   "answer": "infinite_descent",
+   "pred": "infinite_descent",
+   "correct": true,
+   "raw": "{\"motif_id\": \"infinite_descent\"}"
+  },
+  {
+   "id": "infinite_descent_s3",
+   "task": "story2motif",
+   "lang": "zh",
+   "answer": "infinite_descent",
+   "pred": "infinite_descent",
+   "correct": true,
+   "raw": "{\"motif_id\": \"infinite_descent\"}"
+  },
+  {
+   "id": "interference_s0",
+   "task": "story2motif",
+   "lang": "zh",
+   "answer": "interference",
+   "pred": "cycle",
+   "correct": false,
+   "raw": "{\"motif_id\": \"cycle\"}"
+  },
+  {
+   "id": "interference_s1",
+   "task": "story2motif",
+   "lang": "zh",
+   "answer": "interference",
+   "pred": "cycle",
+   "correct": false,
+   "raw": "{\n  \"motif_id\": \"cycle\"\n}"
+  },
+  {
+   "id": "interference_s2",
+   "task": "story2motif",
+   "lang": "zh",
+   "answer": "interference",
+   "pred": "cycle",
+   "correct": false,
+   "raw": "{\"motif_id\": \"cycle\"}"
+  },
+  {
+   "id": "isomorphism_s0",
+   "task": "story2motif",
+   "lang": "zh",
+   "answer": "isomorphism",
+   "pred": "isomorphism",
+   "correct": true,
+   "raw": "{\"motif_id\": \"isomorphism\"}"
+  },
+  {
+   "id": "isomorphism_s1",
+   "task": "story2motif",
+   "lang": "zh",
+   "answer": "isomorphism",
+   "pred": "isomorphism",
+   "correct": true,
+   "raw": "{\"motif_id\": \"isomorphism\"}"
+  },
+  {
+   "id": "isomorphism_s2",
+   "task": "story2motif",
+   "lang": "zh",
+   "answer": "isomorphism",
+   "pred": "isomorphism",
+   "correct": true,
+   "raw": "{\"motif_id\": \"isomorphism\"}"
+  },
+  {
+   "id": "isomorphism_s3",
+   "task": "story2motif",
+   "lang": "zh",
+   "answer": "isomorphism",
+   "pred": "isomorphism",
+   "correct": true,
+   "raw": "{\"motif_id\": \"isomorphism\"}"
+  },
+  {
+   "id": "mobius_s0",
+   "task": "story2motif",
+   "lang": "zh",
+   "answer": "mobius",
+   "pred": "mobius",
+   "correct": true,
+   "raw": "{\n  \"motif_id\": \"mobius\"\n}"
+  },
+  {
+   "id": "mobius_s1",
+   "task": "story2motif",
+   "lang": "zh",
+   "answer": "mobius",
+   "pred": "symmetry",
+   "correct": false,
+   "raw": "{\"motif_id\": \"symmetry\"}"
+  },
+  {
+   "id": "mobius_s2",
+   "task": "story2motif",
+   "lang": "zh",
+   "answer": "mobius",
+   "pred": "cycle",
+   "correct": false,
+   "raw": "{\"motif_id\": \"cycle\"}"
+  },
+  {
+   "id": "mobius_s3",
+   "task": "story2motif",
+   "lang": "zh",
+   "answer": "mobius",
+   "pred": "cycle",
+   "correct": false,
+   "raw": "{\"motif_id\": \"cycle\"}"
+  },
+  {
+   "id": "nesting_s0",
+   "task": "story2motif",
+   "lang": "zh",
+   "answer": "nesting",
+   "pred": "recursion",
+   "correct": false,
+   "raw": "{\"motif_id\": \"recursion\"}"
+  },
+  {
+   "id": "nesting_s1",
+   "task": "story2motif",
+   "lang": "zh",
+   "answer": "nesting",
+   "pred": "recursion",
+   "correct": false,
+   "raw": "{\"motif_id\": \"recursion\"}"
+  },
+  {
+   "id": "nesting_s2",
+   "task": "story2motif",
+   "lang": "zh",
+   "answer": "nesting",
+   "pred": "recursion",
+   "correct": false,
+   "raw": "{\"motif_id\": \"recursion\"}"
+  },
+  {
+   "id": "nesting_s3",
+   "task": "story2motif",
+   "lang": "zh",
+   "answer": "nesting",
+   "pred": "nesting",
+   "correct": true,
+   "raw": "{\n  \"motif_id\": \"nesting\"\n}"
+  },
+  {
+   "id": "pigeonhole_s0",
+   "task": "story2motif",
+   "lang": "zh",
+   "answer": "pigeonhole",
+   "pred": "pigeonhole",
+   "correct": true,
+   "raw": "{\"motif_id\": \"pigeonhole\"}"
+  },
+  {
+   "id": "pigeonhole_s1",
+   "task": "story2motif",
+   "lang": "zh",
+   "answer": "pigeonhole",
+   "pred": "pigeonhole",
+   "correct": true,
+   "raw": "{\"motif_id\": \"pigeonhole\"}"
+  },
+  {
+   "id": "pigeonhole_s2",
+   "task": "story2motif",
+   "lang": "zh",
+   "answer": "pigeonhole",
+   "pred": "pigeonhole",
+   "correct": true,
+   "raw": "{\"motif_id\": \"pigeonhole\"}"
+  },
+  {
+   "id": "pigeonhole_s3",
+   "task": "story2motif",
+   "lang": "zh",
+   "answer": "pigeonhole",
+   "pred": "pigeonhole",
+   "correct": true,
+   "raw": "{\"motif_id\": \"pigeonhole\"}"
+  },
+  {
+   "id": "projective_duality_s0",
+   "task": "story2motif",
+   "lang": "zh",
+   "answer": "projective_duality",
+   "pred": "projective_duality",
+   "correct": true,
+   "raw": "{\"motif_id\": \"projective_duality\"}"
+  },
+  {
+   "id": "projective_duality_s1",
+   "task": "story2motif",
+   "lang": "zh",
+   "answer": "projective_duality",
+   "pred": "projective_duality",
+   "correct": true,
+   "raw": "{\n  \"motif_id\": \"projective_duality\"\n}"
+  },
+  {
+   "id": "projective_duality_s2",
+   "task": "story2motif",
+   "lang": "zh",
+   "answer": "projective_duality",
+   "pred": "projective_duality",
+   "correct": true,
+   "raw": "{\"motif_id\": \"projective_duality\"}"
+  },
+  {
+   "id": "recursion_s0",
+   "task": "story2motif",
+   "lang": "zh",
+   "answer": "recursion",
+   "pred": "recursion",
+   "correct": true,
+   "raw": "{\"motif_id\": \"recursion\"}"
+  },
+  {
+   "id": "recursion_s1",
+   "task": "story2motif",
+   "lang": "zh",
+   "answer": "recursion",
+   "pred": "recursion",
+   "correct": true,
+   "raw": "{\"motif_id\": \"recursion\"}"
+  },
+  {
+   "id": "recursion_s2",
+   "task": "story2motif",
+   "lang": "zh",
+   "answer": "recursion",
+   "pred": "recursion",
+   "correct": true,
+   "raw": "{\"motif_id\": \"recursion\"}"
+  },
+  {
+   "id": "self_reference_s0",
+   "task": "story2motif",
+   "lang": "zh",
+   "answer": "self_reference",
+   "pred": "convergence",
+   "correct": false,
+   "raw": "{\"motif_id\": \"convergence\"}"
+  },
+  {
+   "id": "self_reference_s1",
+   "task": "story2motif",
+   "lang": "zh",
+   "answer": "self_reference",
+   "pred": "cycle",
+   "correct": false,
+   "raw": "{\"motif_id\": \"cycle\"}"
+  },
+  {
+   "id": "self_reference_s2",
+   "task": "story2motif",
+   "lang": "zh",
+   "answer": "self_reference",
+   "pred": "cycle",
+   "correct": false,
+   "raw": "{\"motif_id\": \"cycle\"}"
+  },
+  {
+   "id": "spiral_s0",
+   "task": "story2motif",
+   "lang": "zh",
+   "answer": "spiral",
+   "pred": "cycle",
+   "correct": false,
+   "raw": "{\"motif_id\": \"cycle\"}"
+  },
+  {
+   "id": "spiral_s1",
+   "task": "story2motif",
+   "lang": "zh",
+   "answer": "spiral",
+   "pred": "spiral",
+   "correct": true,
+   "raw": "{\"motif_id\": \"spiral\"}"
+  },
+  {
+   "id": "spiral_s2",
+   "task": "story2motif",
+   "lang": "zh",
+   "answer": "spiral",
+   "pred": "convergence",
+   "correct": false,
+   "raw": "{\"motif_id\": \"convergence\"}"
+  },
+  {
+   "id": "strange_loop_s0",
+   "task": "story2motif",
+   "lang": "zh",
+   "answer": "strange_loop",
+   "pred": "strange_loop",
+   "correct": true,
+   "raw": "{\"motif_id\": \"strange_loop\"}"
+  },
+  {
+   "id": "strange_loop_s1",
+   "task": "story2motif",
+   "lang": "zh",
+   "answer": "strange_loop",
+   "pred": "strange_loop",
+   "correct": true,
+   "raw": "{\"motif_id\": \"strange_loop\"}"
+  },
+  {
+   "id": "strange_loop_s2",
+   "task": "story2motif",
+   "lang": "zh",
+   "answer": "strange_loop",
+   "pred": "strange_loop",
+   "correct": true,
+   "raw": "{\n  \"motif_id\": \"strange_loop\"\n}"
+  },
+  {
+   "id": "symmetry_breaking_s0",
+   "task": "story2motif",
+   "lang": "zh",
+   "answer": "symmetry_breaking",
+   "pred": "symmetry_breaking",
+   "correct": true,
+   "raw": "{\"motif_id\": \"symmetry_breaking\"}"
+  },
+  {
+   "id": "symmetry_breaking_s1",
+   "task": "story2motif",
+   "lang": "zh",
+   "answer": "symmetry_breaking",
+   "pred": "cycle",
+   "correct": false,
+   "raw": "{\"motif_id\": \"cycle\"}"
+  },
+  {
+   "id": "symmetry_breaking_s2",
+   "task": "story2motif",
+   "lang": "zh",
+   "answer": "symmetry_breaking",
+   "pred": "cycle",
+   "correct": false,
+   "raw": "{\n  \"motif_id\": \"cycle\"\n}"
+  },
+  {
+   "id": "symmetry_s0",
+   "task": "story2motif",
+   "lang": "zh",
+   "answer": "symmetry",
+   "pred": "cycle",
+   "correct": false,
+   "raw": "{\"motif_id\": \"cycle\"}"
+  },
+  {
+   "id": "symmetry_s2",
+   "task": "story2motif",
+   "lang": "zh",
+   "answer": "symmetry",
+   "pred": "cycle",
+   "correct": false,
+   "raw": "{\"motif_id\": \"cycle\"}"
+  },
+  {
+   "id": "tiling_s0",
+   "task": "story2motif",
+   "lang": "zh",
+   "answer": "tiling",
+   "pred": "cycle",
+   "correct": false,
+   "raw": "{\"motif_id\": \"cycle\"}"
+  },
+  {
+   "id": "tiling_s1",
+   "task": "story2motif",
+   "lang": "zh",
+   "answer": "tiling",
+   "pred": "cycle",
+   "correct": false,
+   "raw": "{\"motif_id\": \"cycle\"}"
+  },
+  {
+   "id": "tiling_s2",
+   "task": "story2motif",
+   "lang": "zh",
+   "answer": "tiling",
+   "pred": "cycle",
+   "correct": false,
+   "raw": "{\"motif_id\": \"cycle\"}"
+  }
+ ]
+}
