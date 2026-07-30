@@ -25,9 +25,13 @@ import time
 from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
 
-import urllib.request
+import httpx
 
 ROOT = Path(__file__).parent.parent
+
+# Optional SOCKS/HTTP proxy so calls can egress through a region where the
+# frontier models are not geoblocked (set GEB_PROXY=socks5://127.0.0.1:1080).
+_client = httpx.Client(proxy=os.environ.get("GEB_PROXY") or None, timeout=300.0)
 DATA = json.loads((ROOT / "exp2_comparison" / "items.json").read_text())
 MENU = DATA["menu"]
 
@@ -56,19 +60,19 @@ def img_b64(path: Path) -> str:
 
 
 def call(base: str, key: str, model: str, content, max_retries=3) -> str | None:
-    body = json.dumps({"model": model, "temperature": 0.0, "max_tokens": 4096,
-                       "messages": [{"role": "user", "content": content}]}).encode()
-    req = urllib.request.Request(
-        f"{base}/chat/completions", data=body,
-        headers={"Authorization": f"Bearer {key}",
-                 "Content-Type": "application/json"})
+    payload = {"model": model, "temperature": 0.0, "max_tokens": 4096,
+               "messages": [{"role": "user", "content": content}]}
+    headers = {"Authorization": f"Bearer {key}",
+               "Content-Type": "application/json"}
     for attempt in range(max_retries):
         try:
-            with urllib.request.urlopen(req, timeout=300) as r:
-                return json.loads(r.read())["choices"][0]["message"]["content"]
-        except Exception as e:
+            r = _client.post(f"{base}/chat/completions",
+                             json=payload, headers=headers)
+            r.raise_for_status()
+            return r.json()["choices"][0]["message"]["content"]
+        except Exception as e:  # noqa: BLE001 - transient API failures
             if attempt == max_retries - 1:
-                print("  ERR", e)
+                print("  ERR", type(e).__name__, str(e)[:120])
                 return None
             time.sleep(3 * (attempt + 1))
     return None

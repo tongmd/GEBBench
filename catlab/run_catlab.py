@@ -81,17 +81,32 @@ def img_payload(path: Path, max_side: int = 1100, quality: int = 90) -> str:
     return "data:image/jpeg;base64," + base64.b64encode(buf.getvalue()).decode()
 
 
+# GEB_PROXY is the repo-wide name (run_comparison.py, run_bilingual_v3.py);
+# GEB_SOCKS stays accepted so older launch scripts keep working.
+_SOCKS = os.environ.get("GEB_PROXY") or os.environ.get("GEB_SOCKS", "")
+_CLIENT = None
+if _SOCKS:  # route egress through a proxy for region-restricted endpoints
+    import httpx
+    _CLIENT = httpx.Client(proxy=_SOCKS, timeout=300)
+
+
 def call(base, key, model, content, max_retries=6):
-    body = json.dumps({"model": model, "temperature": 0.0, "max_tokens": 4096,
-                       "messages": [{"role": "user", "content": content}]}).encode()
+    payload = {"model": model, "temperature": 0.0, "max_tokens": 4096,
+               "messages": [{"role": "user", "content": content}]}
+    body = json.dumps(payload).encode()
+    hdrs = {"Authorization": f"Bearer {key}", "Content-Type": "application/json"}
     for attempt in range(max_retries):
         try:
-            req = urllib.request.Request(
-                f"{base}/chat/completions", data=body,
-                headers={"Authorization": f"Bearer {key}",
-                         "Content-Type": "application/json"})
-            with urllib.request.urlopen(req, timeout=300) as r:
-                txt = json.loads(r.read())["choices"][0]["message"]["content"]
+            if _CLIENT is not None:
+                r = _CLIENT.post(f"{base}/chat/completions",
+                                 content=body, headers=hdrs)
+                r.raise_for_status()
+                txt = r.json()["choices"][0]["message"]["content"]
+            else:
+                req = urllib.request.Request(
+                    f"{base}/chat/completions", data=body, headers=hdrs)
+                with urllib.request.urlopen(req, timeout=300) as resp:
+                    txt = json.loads(resp.read())["choices"][0]["message"]["content"]
             if txt and txt.strip():
                 return txt
         except Exception as e:
@@ -145,6 +160,36 @@ def run_item(args, menu, item):
             "raw": (reply or "")[:200]}
 
 
+def remap_cached(rec, item, legacy):
+    """Re-letter a cached record onto the current item's option ordering.
+
+    Returns the rescored record, or None if the cached choice cannot be
+    identified under the current options (then the item is re-queried).
+    Motif-name tasks need no remapping; letter tasks are remapped through the
+    option text the model actually saw, so `correct` reflects what it chose.
+    """
+    if rec["task"] not in CHOICE_TASKS:            # answer is a motif name
+        return {**rec, "answer": item["answer"],
+                "correct": rec["pred"] == item["answer"]}
+
+    # What the cached letter pointed at, under the key it was administered with.
+    old_opts = rec.get("option_motifs") or legacy.get(rec["id"], {}).get("options")
+    if not old_opts:
+        return None
+    chosen = old_opts.get(rec["pred"])
+    if chosen is None:
+        return None
+
+    new_opts = item.get("option_motifs") or item.get("options") or {}
+    letter = next((k for k, v in new_opts.items() if v == chosen), None)
+    if letter is None:                 # that option is not offered any more
+        return None
+    return {**rec, "pred": letter, "answer": item["answer"],
+            "correct": letter == item["answer"],
+            "option_motifs": item.get("option_motifs"),
+            "meta": item.get("meta", rec.get("meta", {}))}
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--base", required=True)
@@ -163,10 +208,44 @@ def main():
         items = [i for i in items if i["task"] in keep]
     if args.limit:
         items = items[:args.limit]
-    print(f"{args.model}: {len(items)} items", flush=True)
+
+    # Reuse any answer already on disk. The item set grew (more seeds), and
+    # build_items.py now seeds its RNG per item, so a cached record's option
+    # LETTERS may not match the current item's. What the model chose is a
+    # motif/statement, not a letter, so remap: recover the cached choice via the
+    # key it was administered under, then re-letter it under the current item.
+    # A cached record whose choice cannot be located in the current options is
+    # dropped and re-queried rather than scored against a mismatched key.
+    tag = args.tag or re.sub(r"[^\w.-]", "_", args.model)
+    outf = ROOT / "results" / f"{tag}.json"
+    legacy = {}
+    legacy_f = ROOT / "results" / "_legacy_ivc_key.json"
+    if legacy_f.exists():
+        legacy = json.loads(legacy_f.read_text())["items"]
+    cur = {i["id"]: i for i in items}
+    done, dropped = {}, 0
+    if outf.exists():
+        for r in json.loads(outf.read_text())["records"]:
+            if r.get("pred") is None or r["id"] not in cur:
+                continue
+            r2 = remap_cached(r, cur[r["id"]], legacy)
+            if r2 is None:
+                dropped += 1
+            else:
+                done[r["id"]] = r2
+    todo = [i for i in items if i["id"] not in done]
+    print(f"{args.model}: {len(items)} items, {len(done)} cached, "
+          f"{len(todo)} to run"
+          + (f", {dropped} cached dropped (option text no longer present)"
+             if dropped else ""), flush=True)
+    if not todo:
+        print("CATLAB_DONE", tag, "(nothing to do)", flush=True)
+        return
 
     with ThreadPoolExecutor(max_workers=args.workers) as ex:
-        recs = list(ex.map(lambda it: run_item(args, menu, it), items))
+        fresh = list(ex.map(lambda it: run_item(args, menu, it), todo))
+    by_id = {**done, **{r["id"]: r for r in fresh}}
+    recs = [by_id[i["id"]] for i in items if i["id"] in by_id]
 
     # one retry pass for anything that came back empty/unparsed
     for i, r in enumerate(recs):
@@ -181,8 +260,6 @@ def main():
                    "acc": round(sum(x["correct"] for x in rs) / len(rs), 4),
                    "unparsed": sum(1 for x in rs if x["pred"] is None)}
                for t, rs in by.items()}
-    tag = args.tag or re.sub(r"[^\w.-]", "_", args.model)
-    outf = ROOT / "results" / f"{tag}.json"
     outf.parent.mkdir(exist_ok=True)
     outf.write_text(json.dumps(
         {"model": args.model, "base": args.base, "summary": summary,

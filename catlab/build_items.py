@@ -89,7 +89,22 @@ def opt_block(options: dict[str, str]) -> str:
 def build():
     man = json.loads((PAIRS / "manifest.json").read_text())
     items = []
-    rng = random.Random(20260726)
+
+    # Per-item RNG, keyed by the item's own identity. A single sequential
+    # stream would make every item's option order depend on how many items
+    # precede it, so growing the manifest (6 -> 12 seeds) would silently
+    # reshuffle the answer key of items that were already administered.
+    def rng_for(*parts) -> random.Random:
+        return random.Random("20260726|" + "|".join(str(p) for p in parts))
+
+    # Items already administered in the shipped pilot are replayed verbatim:
+    # their options and answer key are what the models actually saw, so the
+    # published scores stay bit-exact regardless of how the generator changed.
+    # Per-item seeding above governs only items generated fresh.
+    frozen = {}
+    frozen_f = ROOT / "items_frozen.json"
+    if frozen_f.exists():
+        frozen = json.loads(frozen_f.read_text())["items"]
 
     # ---------------------------------------------------------- T0 endpoint id
     for m in man:
@@ -112,7 +127,7 @@ def build():
         cand = [dst, d1, d2, THM_THIRD[e]]
         assert len(set(cand)) == 4 and src not in cand
         order = cand[:]
-        rng.shuffle(order)
+        rng_for("square_thm", e, s).shuffle(order)
         opts = {LETTERS[i]: thm(mid) for i, mid in enumerate(order)}
         items.append({
             "task": "square_thm",
@@ -136,7 +151,7 @@ def build():
                     d2: STORIES[d2][s % len(STORIES[d2])],
                     src: trap}
             order = list(pool)
-            rng.shuffle(order)
+            rng_for("square_story", e, s).shuffle(order)
             opts = {LETTERS[i]: pool[mid] for i, mid in enumerate(order)}
             items.append({
                 "task": "square_story",
@@ -165,7 +180,8 @@ def build():
         for kind in ("structural", "nuisance"):
             if kind == "nuisance" and sib is None:
                 continue
-            pick = rng.sample(others, 2)
+            r = rng_for("id_vs_change", e, s, kind)
+            pick = r.sample(others, 2)
             if kind == "structural":
                 pair_png = m["ref_png"]
                 correct = all_changes[e]
@@ -175,7 +191,7 @@ def build():
             pool = [correct] + [all_changes[k] for k in pick]
             pool.append(CHANGE_NONE if kind == "structural" else all_changes[e])
             order = pool[:]
-            rng.shuffle(order)
+            r.shuffle(order)
             opts = {LETTERS[i]: t for i, t in enumerate(order)}
             items.append({
                 "task": "id_vs_change",
@@ -197,7 +213,7 @@ def build():
                 "convergence": thm("convergence"),      # near-miss of the target
                 "infinite_descent": thm("infinite_descent")}  # near-miss
         order = list(pool)
-        rng.shuffle(order)
+        rng_for("composition", a["seed"]).shuffle(order)
         opts = {LETTERS[i]: pool[mid] for i, mid in enumerate(order)}
         items.append({
             "task": "composition",
@@ -211,7 +227,9 @@ def build():
                      "stop_after_g1_option": LETTERS[order.index("recursion")]},
         })
 
-    return items
+    # Replay administered items verbatim (see `frozen` above); newly added
+    # seeds pass through as generated.
+    return [frozen.get(i["id"], i) for i in items]
 
 
 if __name__ == "__main__":

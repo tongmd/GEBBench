@@ -34,7 +34,7 @@ INK = "#1a1a1a"
 ACC = "#b3402a"
 
 W, H = 1024, 1024
-N_SEEDS = 6
+N_SEEDS = 12
 
 
 def R(edge: str, seed: int, variant: int) -> random.Random:
@@ -56,7 +56,7 @@ def arrow_defs(color: str = INK, name: str = "a") -> str:
 # --------------------------------------------------------------------------
 # edge 1: symmetry -> symmetry_breaking
 # --------------------------------------------------------------------------
-SYM_N = [6, 7, 8, 6, 7, 8]           # structural: nodes per side
+SYM_N = [6, 7, 8, 6, 7, 8, 9, 10, 9, 10, 11, 11]   # structural: nodes per side
 
 
 def e_symmetry(seed: int, broken: bool, variant: int = 0):
@@ -100,7 +100,7 @@ def e_symmetry(seed: int, broken: bool, variant: int = 0):
 # --------------------------------------------------------------------------
 # edge 2: cycle -> strange_loop
 # --------------------------------------------------------------------------
-CYC_N = [6, 7, 8, 9, 7, 8]           # structural: nodes
+CYC_N = [6, 7, 8, 9, 7, 8, 10, 11, 9, 10, 11, 12]  # structural: nodes
 
 
 def e_cycle(seed: int, looped: bool, variant: int = 0):
@@ -163,7 +163,7 @@ def e_cycle(seed: int, looped: bool, variant: int = 0):
 # --------------------------------------------------------------------------
 # edge 3: nesting -> recursion
 # --------------------------------------------------------------------------
-NEST_D = [3, 4, 3, 4, 3, 4]          # structural: depth
+NEST_D = [3, 4, 3, 4, 3, 4, 5, 5, 4, 5, 3, 5]      # structural: depth
 
 
 def e_nesting(seed: int, recursive: bool, variant: int = 0):
@@ -210,9 +210,11 @@ def e_nesting(seed: int, recursive: bool, variant: int = 0):
 # --------------------------------------------------------------------------
 # edge 4: tiling -> aperiodic_tiling
 # --------------------------------------------------------------------------
-TILE_N = [12, 13, 14, 15, 20, 21]   # structural: tiles per row
-# (Fibonacci-word prefixes of length 16-19 have period 8; these six lengths
-#  are verified period-free by the assertion below.)
+TILE_N = [12, 13, 14, 15, 20, 21,
+          22, 23, 24, 25, 33, 34]   # structural: tiles per row
+# Not every length works: a Fibonacci-word prefix can itself be periodic
+# (16-19 and 26-32 all are), which would make the "aperiodic" panel periodic.
+# These twelve lengths are period-free, enforced by the assertion in e_tiling.
 
 
 def fib_word(n: int) -> str:
@@ -271,7 +273,7 @@ def e_tiling(seed: int, aperiodic: bool, variant: int = 0):
 # --------------------------------------------------------------------------
 # edge 5: isomorphism -> projective_duality
 # --------------------------------------------------------------------------
-ISO_K = [4, 5, 6, 4, 5, 6]           # structural: elements per class
+ISO_K = [4, 5, 6, 4, 5, 6, 7, 8, 7, 8, 9, 9]       # structural: elements per class
 
 
 def e_isomorphism(seed: int, dual: bool, variant: int = 0):
@@ -359,7 +361,7 @@ def e_isomorphism(seed: int, dual: bool, variant: int = 0):
 # --------------------------------------------------------------------------
 # edge 6: recursion -> contraction_fixed_point
 # --------------------------------------------------------------------------
-REC_D = [5, 6, 5, 6, 5, 6]           # structural: depth
+REC_D = [5, 6, 5, 6, 5, 6, 7, 7, 4, 4, 7, 6]       # structural: depth
 
 
 def e_recursion(seed: int, contract: bool, variant: int = 0):

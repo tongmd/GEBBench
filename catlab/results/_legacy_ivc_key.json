@@ -1,0 +1,1014 @@
+{
+ "note": "Option text per letter for the 72 id_vs_change items as administered in the shipped 6-seed run. Lets those letter-only records be rescored semantically after build_items.py switched to per-item RNG seeding.",
+ "source": "git HEAD:catlab/items.json (pre-expansion)",
+ "items": {
+  "ivc:sym_to_symbreak:s0:structural": {
+   "answer": "C",
+   "options": {
+    "A": "No structural change: the two figures realize the same structure and differ only in rendering parameters (counts, sizes, angles, placement).",
+    "B": "The flat ring is re-laid across levels, so following the arrows climbs a hierarchy and still returns to the start.",
+    "C": "Exactly one of the mirrored correspondences is destroyed.",
+    "D": "The same two tiles obey the same local rule but the translation period is destroyed."
+   },
+   "meta": {
+    "edge": "sym_to_symbreak",
+    "seed": 0,
+    "kind": "structural"
+   }
+  },
+  "ivc:sym_to_symbreak:s0:nuisance": {
+   "answer": "B",
+   "options": {
+    "A": "Exactly one of the mirrored correspondences is destroyed.",
+    "B": "No structural change: the two figures realize the same structure and differ only in rendering parameters (counts, sizes, angles, placement).",
+    "C": "The same two tiles obey the same local rule but the translation period is destroyed.",
+    "D": "Containment becomes generation: each part is replaced by smaller copies of the whole under one rule."
+   },
+   "meta": {
+    "edge": "sym_to_symbreak",
+    "seed": 0,
+    "kind": "nuisance"
+   }
+  },
+  "ivc:sym_to_symbreak:s1:structural": {
+   "answer": "D",
+   "options": {
+    "A": "The flat ring is re-laid across levels, so following the arrows climbs a hierarchy and still returns to the start.",
+    "B": "The same two tiles obey the same local rule but the translation period is destroyed.",
+    "C": "No structural change: the two figures realize the same structure and differ only in rendering parameters (counts, sizes, angles, placement).",
+    "D": "Exactly one of the mirrored correspondences is destroyed."
+   },
+   "meta": {
+    "edge": "sym_to_symbreak",
+    "seed": 1,
+    "kind": "structural"
+   }
+  },
+  "ivc:sym_to_symbreak:s1:nuisance": {
+   "answer": "A",
+   "options": {
+    "A": "No structural change: the two figures realize the same structure and differ only in rendering parameters (counts, sizes, angles, placement).",
+    "B": "Containment becomes generation: each part is replaced by smaller copies of the whole under one rule.",
+    "C": "Exactly one of the mirrored correspondences is destroyed.",
+    "D": "Branching stops: one rule is applied to its own output and the orbit selects a unique fixed point."
+   },
+   "meta": {
+    "edge": "sym_to_symbreak",
+    "seed": 1,
+    "kind": "nuisance"
+   }
+  },
+  "ivc:sym_to_symbreak:s2:structural": {
+   "answer": "C",
+   "options": {
+    "A": "The flat ring is re-laid across levels, so following the arrows climbs a hierarchy and still returns to the start.",
+    "B": "No structural change: the two figures realize the same structure and differ only in rendering parameters (counts, sizes, angles, placement).",
+    "C": "Exactly one of the mirrored correspondences is destroyed.",
+    "D": "Branching stops: one rule is applied to its own output and the orbit selects a unique fixed point."
+   },
+   "meta": {
+    "edge": "sym_to_symbreak",
+    "seed": 2,
+    "kind": "structural"
+   }
+  },
+  "ivc:sym_to_symbreak:s2:nuisance": {
+   "answer": "B",
+   "options": {
+    "A": "Branching stops: one rule is applied to its own output and the orbit selects a unique fixed point.",
+    "B": "No structural change: the two figures realize the same structure and differ only in rendering parameters (counts, sizes, angles, placement).",
+    "C": "Exactly one of the mirrored correspondences is destroyed.",
+    "D": "The flat ring is re-laid across levels, so following the arrows climbs a hierarchy and still returns to the start."
+   },
+   "meta": {
+    "edge": "sym_to_symbreak",
+    "seed": 2,
+    "kind": "nuisance"
+   }
+  },
+  "ivc:sym_to_symbreak:s3:structural": {
+   "answer": "D",
+   "options": {
+    "A": "The flat ring is re-laid across levels, so following the arrows climbs a hierarchy and still returns to the start.",
+    "B": "No structural change: the two figures realize the same structure and differ only in rendering parameters (counts, sizes, angles, placement).",
+    "C": "A dictionary between two separate systems becomes an involutive role swap inside one system.",
+    "D": "Exactly one of the mirrored correspondences is destroyed."
+   },
+   "meta": {
+    "edge": "sym_to_symbreak",
+    "seed": 3,
+    "kind": "structural"
+   }
+  },
+  "ivc:sym_to_symbreak:s3:nuisance": {
+   "answer": "C",
+   "options": {
+    "A": "The flat ring is re-laid across levels, so following the arrows climbs a hierarchy and still returns to the start.",
+    "B": "Exactly one of the mirrored correspondences is destroyed.",
+    "C": "No structural change: the two figures realize the same structure and differ only in rendering parameters (counts, sizes, angles, placement).",
+    "D": "The same two tiles obey the same local rule but the translation period is destroyed."
+   },
+   "meta": {
+    "edge": "sym_to_symbreak",
+    "seed": 3,
+    "kind": "nuisance"
+   }
+  },
+  "ivc:sym_to_symbreak:s4:structural": {
+   "answer": "D",
+   "options": {
+    "A": "A dictionary between two separate systems becomes an involutive role swap inside one system.",
+    "B": "The flat ring is re-laid across levels, so following the arrows climbs a hierarchy and still returns to the start.",
+    "C": "No structural change: the two figures realize the same structure and differ only in rendering parameters (counts, sizes, angles, placement).",
+    "D": "Exactly one of the mirrored correspondences is destroyed."
+   },
+   "meta": {
+    "edge": "sym_to_symbreak",
+    "seed": 4,
+    "kind": "structural"
+   }
+  },
+  "ivc:sym_to_symbreak:s4:nuisance": {
+   "answer": "C",
+   "options": {
+    "A": "Exactly one of the mirrored correspondences is destroyed.",
+    "B": "Branching stops: one rule is applied to its own output and the orbit selects a unique fixed point.",
+    "C": "No structural change: the two figures realize the same structure and differ only in rendering parameters (counts, sizes, angles, placement).",
+    "D": "Containment becomes generation: each part is replaced by smaller copies of the whole under one rule."
+   },
+   "meta": {
+    "edge": "sym_to_symbreak",
+    "seed": 4,
+    "kind": "nuisance"
+   }
+  },
+  "ivc:sym_to_symbreak:s5:structural": {
+   "answer": "C",
+   "options": {
+    "A": "The flat ring is re-laid across levels, so following the arrows climbs a hierarchy and still returns to the start.",
+    "B": "No structural change: the two figures realize the same structure and differ only in rendering parameters (counts, sizes, angles, placement).",
+    "C": "Exactly one of the mirrored correspondences is destroyed.",
+    "D": "Containment becomes generation: each part is replaced by smaller copies of the whole under one rule."
+   },
+   "meta": {
+    "edge": "sym_to_symbreak",
+    "seed": 5,
+    "kind": "structural"
+   }
+  },
+  "ivc:sym_to_symbreak:s5:nuisance": {
+   "answer": "D",
+   "options": {
+    "A": "Branching stops: one rule is applied to its own output and the orbit selects a unique fixed point.",
+    "B": "A dictionary between two separate systems becomes an involutive role swap inside one system.",
+    "C": "Exactly one of the mirrored correspondences is destroyed.",
+    "D": "No structural change: the two figures realize the same structure and differ only in rendering parameters (counts, sizes, angles, placement)."
+   },
+   "meta": {
+    "edge": "sym_to_symbreak",
+    "seed": 5,
+    "kind": "nuisance"
+   }
+  },
+  "ivc:cycle_to_strangeloop:s0:structural": {
+   "answer": "D",
+   "options": {
+    "A": "A dictionary between two separate systems becomes an involutive role swap inside one system.",
+    "B": "Exactly one of the mirrored correspondences is destroyed.",
+    "C": "No structural change: the two figures realize the same structure and differ only in rendering parameters (counts, sizes, angles, placement).",
+    "D": "The flat ring is re-laid across levels, so following the arrows climbs a hierarchy and still returns to the start."
+   },
+   "meta": {
+    "edge": "cycle_to_strangeloop",
+    "seed": 0,
+    "kind": "structural"
+   }
+  },
+  "ivc:cycle_to_strangeloop:s0:nuisance": {
+   "answer": "B",
+   "options": {
+    "A": "A dictionary between two separate systems becomes an involutive role swap inside one system.",
+    "B": "No structural change: the two figures realize the same structure and differ only in rendering parameters (counts, sizes, angles, placement).",
+    "C": "The flat ring is re-laid across levels, so following the arrows climbs a hierarchy and still returns to the start.",
+    "D": "Branching stops: one rule is applied to its own output and the orbit selects a unique fixed point."
+   },
+   "meta": {
+    "edge": "cycle_to_strangeloop",
+    "seed": 0,
+    "kind": "nuisance"
+   }
+  },
+  "ivc:cycle_to_strangeloop:s1:structural": {
+   "answer": "A",
+   "options": {
+    "A": "The flat ring is re-laid across levels, so following the arrows climbs a hierarchy and still returns to the start.",
+    "B": "No structural change: the two figures realize the same structure and differ only in rendering parameters (counts, sizes, angles, placement).",
+    "C": "The same two tiles obey the same local rule but the translation period is destroyed.",
+    "D": "Containment becomes generation: each part is replaced by smaller copies of the whole under one rule."
+   },
+   "meta": {
+    "edge": "cycle_to_strangeloop",
+    "seed": 1,
+    "kind": "structural"
+   }
+  },
+  "ivc:cycle_to_strangeloop:s1:nuisance": {
+   "answer": "A",
+   "options": {
+    "A": "No structural change: the two figures realize the same structure and differ only in rendering parameters (counts, sizes, angles, placement).",
+    "B": "The same two tiles obey the same local rule but the translation period is destroyed.",
+    "C": "Containment becomes generation: each part is replaced by smaller copies of the whole under one rule.",
+    "D": "The flat ring is re-laid across levels, so following the arrows climbs a hierarchy and still returns to the start."
+   },
+   "meta": {
+    "edge": "cycle_to_strangeloop",
+    "seed": 1,
+    "kind": "nuisance"
+   }
+  },
+  "ivc:cycle_to_strangeloop:s2:structural": {
+   "answer": "A",
+   "options": {
+    "A": "The flat ring is re-laid across levels, so following the arrows climbs a hierarchy and still returns to the start.",
+    "B": "No structural change: the two figures realize the same structure and differ only in rendering parameters (counts, sizes, angles, placement).",
+    "C": "Containment becomes generation: each part is replaced by smaller copies of the whole under one rule.",
+    "D": "The same two tiles obey the same local rule but the translation period is destroyed."
+   },
+   "meta": {
+    "edge": "cycle_to_strangeloop",
+    "seed": 2,
+    "kind": "structural"
+   }
+  },
+  "ivc:cycle_to_strangeloop:s2:nuisance": {
+   "answer": "C",
+   "options": {
+    "A": "Exactly one of the mirrored correspondences is destroyed.",
+    "B": "The same two tiles obey the same local rule but the translation period is destroyed.",
+    "C": "No structural change: the two figures realize the same structure and differ only in rendering parameters (counts, sizes, angles, placement).",
+    "D": "The flat ring is re-laid across levels, so following the arrows climbs a hierarchy and still returns to the start."
+   },
+   "meta": {
+    "edge": "cycle_to_strangeloop",
+    "seed": 2,
+    "kind": "nuisance"
+   }
+  },
+  "ivc:cycle_to_strangeloop:s3:structural": {
+   "answer": "C",
+   "options": {
+    "A": "Containment becomes generation: each part is replaced by smaller copies of the whole under one rule.",
+    "B": "No structural change: the two figures realize the same structure and differ only in rendering parameters (counts, sizes, angles, placement).",
+    "C": "The flat ring is re-laid across levels, so following the arrows climbs a hierarchy and still returns to the start.",
+    "D": "The same two tiles obey the same local rule but the translation period is destroyed."
+   },
+   "meta": {
+    "edge": "cycle_to_strangeloop",
+    "seed": 3,
+    "kind": "structural"
+   }
+  },
+  "ivc:cycle_to_strangeloop:s3:nuisance": {
+   "answer": "D",
+   "options": {
+    "A": "The same two tiles obey the same local rule but the translation period is destroyed.",
+    "B": "Branching stops: one rule is applied to its own output and the orbit selects a unique fixed point.",
+    "C": "The flat ring is re-laid across levels, so following the arrows climbs a hierarchy and still returns to the start.",
+    "D": "No structural change: the two figures realize the same structure and differ only in rendering parameters (counts, sizes, angles, placement)."
+   },
+   "meta": {
+    "edge": "cycle_to_strangeloop",
+    "seed": 3,
+    "kind": "nuisance"
+   }
+  },
+  "ivc:cycle_to_strangeloop:s4:structural": {
+   "answer": "B",
+   "options": {
+    "A": "The same two tiles obey the same local rule but the translation period is destroyed.",
+    "B": "The flat ring is re-laid across levels, so following the arrows climbs a hierarchy and still returns to the start.",
+    "C": "A dictionary between two separate systems becomes an involutive role swap inside one system.",
+    "D": "No structural change: the two figures realize the same structure and differ only in rendering parameters (counts, sizes, angles, placement)."
+   },
+   "meta": {
+    "edge": "cycle_to_strangeloop",
+    "seed": 4,
+    "kind": "structural"
+   }
+  },
+  "ivc:cycle_to_strangeloop:s4:nuisance": {
+   "answer": "A",
+   "options": {
+    "A": "No structural change: the two figures realize the same structure and differ only in rendering parameters (counts, sizes, angles, placement).",
+    "B": "A dictionary between two separate systems becomes an involutive role swap inside one system.",
+    "C": "The flat ring is re-laid across levels, so following the arrows climbs a hierarchy and still returns to the start.",
+    "D": "Exactly one of the mirrored correspondences is destroyed."
+   },
+   "meta": {
+    "edge": "cycle_to_strangeloop",
+    "seed": 4,
+    "kind": "nuisance"
+   }
+  },
+  "ivc:cycle_to_strangeloop:s5:structural": {
+   "answer": "D",
+   "options": {
+    "A": "A dictionary between two separate systems becomes an involutive role swap inside one system.",
+    "B": "The same two tiles obey the same local rule but the translation period is destroyed.",
+    "C": "No structural change: the two figures realize the same structure and differ only in rendering parameters (counts, sizes, angles, placement).",
+    "D": "The flat ring is re-laid across levels, so following the arrows climbs a hierarchy and still returns to the start."
+   },
+   "meta": {
+    "edge": "cycle_to_strangeloop",
+    "seed": 5,
+    "kind": "structural"
+   }
+  },
+  "ivc:cycle_to_strangeloop:s5:nuisance": {
+   "answer": "C",
+   "options": {
+    "A": "Containment becomes generation: each part is replaced by smaller copies of the whole under one rule.",
+    "B": "A dictionary between two separate systems becomes an involutive role swap inside one system.",
+    "C": "No structural change: the two figures realize the same structure and differ only in rendering parameters (counts, sizes, angles, placement).",
+    "D": "The flat ring is re-laid across levels, so following the arrows climbs a hierarchy and still returns to the start."
+   },
+   "meta": {
+    "edge": "cycle_to_strangeloop",
+    "seed": 5,
+    "kind": "nuisance"
+   }
+  },
+  "ivc:nesting_to_recursion:s0:structural": {
+   "answer": "B",
+   "options": {
+    "A": "The flat ring is re-laid across levels, so following the arrows climbs a hierarchy and still returns to the start.",
+    "B": "Containment becomes generation: each part is replaced by smaller copies of the whole under one rule.",
+    "C": "A dictionary between two separate systems becomes an involutive role swap inside one system.",
+    "D": "No structural change: the two figures realize the same structure and differ only in rendering parameters (counts, sizes, angles, placement)."
+   },
+   "meta": {
+    "edge": "nesting_to_recursion",
+    "seed": 0,
+    "kind": "structural"
+   }
+  },
+  "ivc:nesting_to_recursion:s0:nuisance": {
+   "answer": "A",
+   "options": {
+    "A": "No structural change: the two figures realize the same structure and differ only in rendering parameters (counts, sizes, angles, placement).",
+    "B": "Branching stops: one rule is applied to its own output and the orbit selects a unique fixed point.",
+    "C": "The flat ring is re-laid across levels, so following the arrows climbs a hierarchy and still returns to the start.",
+    "D": "Containment becomes generation: each part is replaced by smaller copies of the whole under one rule."
+   },
+   "meta": {
+    "edge": "nesting_to_recursion",
+    "seed": 0,
+    "kind": "nuisance"
+   }
+  },
+  "ivc:nesting_to_recursion:s1:structural": {
+   "answer": "A",
+   "options": {
+    "A": "Containment becomes generation: each part is replaced by smaller copies of the whole under one rule.",
+    "B": "A dictionary between two separate systems becomes an involutive role swap inside one system.",
+    "C": "No structural change: the two figures realize the same structure and differ only in rendering parameters (counts, sizes, angles, placement).",
+    "D": "Exactly one of the mirrored correspondences is destroyed."
+   },
+   "meta": {
+    "edge": "nesting_to_recursion",
+    "seed": 1,
+    "kind": "structural"
+   }
+  },
+  "ivc:nesting_to_recursion:s1:nuisance": {
+   "answer": "A",
+   "options": {
+    "A": "No structural change: the two figures realize the same structure and differ only in rendering parameters (counts, sizes, angles, placement).",
+    "B": "The same two tiles obey the same local rule but the translation period is destroyed.",
+    "C": "Containment becomes generation: each part is replaced by smaller copies of the whole under one rule.",
+    "D": "The flat ring is re-laid across levels, so following the arrows climbs a hierarchy and still returns to the start."
+   },
+   "meta": {
+    "edge": "nesting_to_recursion",
+    "seed": 1,
+    "kind": "nuisance"
+   }
+  },
+  "ivc:nesting_to_recursion:s2:structural": {
+   "answer": "A",
+   "options": {
+    "A": "Containment becomes generation: each part is replaced by smaller copies of the whole under one rule.",
+    "B": "The same two tiles obey the same local rule but the translation period is destroyed.",
+    "C": "No structural change: the two figures realize the same structure and differ only in rendering parameters (counts, sizes, angles, placement).",
+    "D": "The flat ring is re-laid across levels, so following the arrows climbs a hierarchy and still returns to the start."
+   },
+   "meta": {
+    "edge": "nesting_to_recursion",
+    "seed": 2,
+    "kind": "structural"
+   }
+  },
+  "ivc:nesting_to_recursion:s2:nuisance": {
+   "answer": "B",
+   "options": {
+    "A": "Exactly one of the mirrored correspondences is destroyed.",
+    "B": "No structural change: the two figures realize the same structure and differ only in rendering parameters (counts, sizes, angles, placement).",
+    "C": "A dictionary between two separate systems becomes an involutive role swap inside one system.",
+    "D": "Containment becomes generation: each part is replaced by smaller copies of the whole under one rule."
+   },
+   "meta": {
+    "edge": "nesting_to_recursion",
+    "seed": 2,
+    "kind": "nuisance"
+   }
+  },
+  "ivc:nesting_to_recursion:s3:structural": {
+   "answer": "A",
+   "options": {
+    "A": "Containment becomes generation: each part is replaced by smaller copies of the whole under one rule.",
+    "B": "The same two tiles obey the same local rule but the translation period is destroyed.",
+    "C": "Branching stops: one rule is applied to its own output and the orbit selects a unique fixed point.",
+    "D": "No structural change: the two figures realize the same structure and differ only in rendering parameters (counts, sizes, angles, placement)."
+   },
+   "meta": {
+    "edge": "nesting_to_recursion",
+    "seed": 3,
+    "kind": "structural"
+   }
+  },
+  "ivc:nesting_to_recursion:s3:nuisance": {
+   "answer": "A",
+   "options": {
+    "A": "No structural change: the two figures realize the same structure and differ only in rendering parameters (counts, sizes, angles, placement).",
+    "B": "Containment becomes generation: each part is replaced by smaller copies of the whole under one rule.",
+    "C": "The same two tiles obey the same local rule but the translation period is destroyed.",
+    "D": "A dictionary between two separate systems becomes an involutive role swap inside one system."
+   },
+   "meta": {
+    "edge": "nesting_to_recursion",
+    "seed": 3,
+    "kind": "nuisance"
+   }
+  },
+  "ivc:nesting_to_recursion:s4:structural": {
+   "answer": "A",
+   "options": {
+    "A": "Containment becomes generation: each part is replaced by smaller copies of the whole under one rule.",
+    "B": "The flat ring is re-laid across levels, so following the arrows climbs a hierarchy and still returns to the start.",
+    "C": "No structural change: the two figures realize the same structure and differ only in rendering parameters (counts, sizes, angles, placement).",
+    "D": "Branching stops: one rule is applied to its own output and the orbit selects a unique fixed point."
+   },
+   "meta": {
+    "edge": "nesting_to_recursion",
+    "seed": 4,
+    "kind": "structural"
+   }
+  },
+  "ivc:nesting_to_recursion:s4:nuisance": {
+   "answer": "D",
+   "options": {
+    "A": "The flat ring is re-laid across levels, so following the arrows climbs a hierarchy and still returns to the start.",
+    "B": "Containment becomes generation: each part is replaced by smaller copies of the whole under one rule.",
+    "C": "The same two tiles obey the same local rule but the translation period is destroyed.",
+    "D": "No structural change: the two figures realize the same structure and differ only in rendering parameters (counts, sizes, angles, placement)."
+   },
+   "meta": {
+    "edge": "nesting_to_recursion",
+    "seed": 4,
+    "kind": "nuisance"
+   }
+  },
+  "ivc:nesting_to_recursion:s5:structural": {
+   "answer": "A",
+   "options": {
+    "A": "Containment becomes generation: each part is replaced by smaller copies of the whole under one rule.",
+    "B": "No structural change: the two figures realize the same structure and differ only in rendering parameters (counts, sizes, angles, placement).",
+    "C": "The flat ring is re-laid across levels, so following the arrows climbs a hierarchy and still returns to the start.",
+    "D": "Branching stops: one rule is applied to its own output and the orbit selects a unique fixed point."
+   },
+   "meta": {
+    "edge": "nesting_to_recursion",
+    "seed": 5,
+    "kind": "structural"
+   }
+  },
+  "ivc:nesting_to_recursion:s5:nuisance": {
+   "answer": "A",
+   "options": {
+    "A": "No structural change: the two figures realize the same structure and differ only in rendering parameters (counts, sizes, angles, placement).",
+    "B": "Containment becomes generation: each part is replaced by smaller copies of the whole under one rule.",
+    "C": "The flat ring is re-laid across levels, so following the arrows climbs a hierarchy and still returns to the start.",
+    "D": "The same two tiles obey the same local rule but the translation period is destroyed."
+   },
+   "meta": {
+    "edge": "nesting_to_recursion",
+    "seed": 5,
+    "kind": "nuisance"
+   }
+  },
+  "ivc:tiling_to_aperiodic:s0:structural": {
+   "answer": "C",
+   "options": {
+    "A": "Containment becomes generation: each part is replaced by smaller copies of the whole under one rule.",
+    "B": "Branching stops: one rule is applied to its own output and the orbit selects a unique fixed point.",
+    "C": "The same two tiles obey the same local rule but the translation period is destroyed.",
+    "D": "No structural change: the two figures realize the same structure and differ only in rendering parameters (counts, sizes, angles, placement)."
+   },
+   "meta": {
+    "edge": "tiling_to_aperiodic",
+    "seed": 0,
+    "kind": "structural"
+   }
+  },
+  "ivc:tiling_to_aperiodic:s0:nuisance": {
+   "answer": "C",
+   "options": {
+    "A": "Containment becomes generation: each part is replaced by smaller copies of the whole under one rule.",
+    "B": "Exactly one of the mirrored correspondences is destroyed.",
+    "C": "No structural change: the two figures realize the same structure and differ only in rendering parameters (counts, sizes, angles, placement).",
+    "D": "The same two tiles obey the same local rule but the translation period is destroyed."
+   },
+   "meta": {
+    "edge": "tiling_to_aperiodic",
+    "seed": 0,
+    "kind": "nuisance"
+   }
+  },
+  "ivc:tiling_to_aperiodic:s1:structural": {
+   "answer": "C",
+   "options": {
+    "A": "No structural change: the two figures realize the same structure and differ only in rendering parameters (counts, sizes, angles, placement).",
+    "B": "Exactly one of the mirrored correspondences is destroyed.",
+    "C": "The same two tiles obey the same local rule but the translation period is destroyed.",
+    "D": "A dictionary between two separate systems becomes an involutive role swap inside one system."
+   },
+   "meta": {
+    "edge": "tiling_to_aperiodic",
+    "seed": 1,
+    "kind": "structural"
+   }
+  },
+  "ivc:tiling_to_aperiodic:s1:nuisance": {
+   "answer": "D",
+   "options": {
+    "A": "Exactly one of the mirrored correspondences is destroyed.",
+    "B": "Containment becomes generation: each part is replaced by smaller copies of the whole under one rule.",
+    "C": "The same two tiles obey the same local rule but the translation period is destroyed.",
+    "D": "No structural change: the two figures realize the same structure and differ only in rendering parameters (counts, sizes, angles, placement)."
+   },
+   "meta": {
+    "edge": "tiling_to_aperiodic",
+    "seed": 1,
+    "kind": "nuisance"
+   }
+  },
+  "ivc:tiling_to_aperiodic:s2:structural": {
+   "answer": "B",
+   "options": {
+    "A": "Exactly one of the mirrored correspondences is destroyed.",
+    "B": "The same two tiles obey the same local rule but the translation period is destroyed.",
+    "C": "The flat ring is re-laid across levels, so following the arrows climbs a hierarchy and still returns to the start.",
+    "D": "No structural change: the two figures realize the same structure and differ only in rendering parameters (counts, sizes, angles, placement)."
+   },
+   "meta": {
+    "edge": "tiling_to_aperiodic",
+    "seed": 2,
+    "kind": "structural"
+   }
+  },
+  "ivc:tiling_to_aperiodic:s2:nuisance": {
+   "answer": "B",
+   "options": {
+    "A": "The flat ring is re-laid across levels, so following the arrows climbs a hierarchy and still returns to the start.",
+    "B": "No structural change: the two figures realize the same structure and differ only in rendering parameters (counts, sizes, angles, placement).",
+    "C": "A dictionary between two separate systems becomes an involutive role swap inside one system.",
+    "D": "The same two tiles obey the same local rule but the translation period is destroyed."
+   },
+   "meta": {
+    "edge": "tiling_to_aperiodic",
+    "seed": 2,
+    "kind": "nuisance"
+   }
+  },
+  "ivc:tiling_to_aperiodic:s3:structural": {
+   "answer": "D",
+   "options": {
+    "A": "Branching stops: one rule is applied to its own output and the orbit selects a unique fixed point.",
+    "B": "A dictionary between two separate systems becomes an involutive role swap inside one system.",
+    "C": "No structural change: the two figures realize the same structure and differ only in rendering parameters (counts, sizes, angles, placement).",
+    "D": "The same two tiles obey the same local rule but the translation period is destroyed."
+   },
+   "meta": {
+    "edge": "tiling_to_aperiodic",
+    "seed": 3,
+    "kind": "structural"
+   }
+  },
+  "ivc:tiling_to_aperiodic:s3:nuisance": {
+   "answer": "B",
+   "options": {
+    "A": "A dictionary between two separate systems becomes an involutive role swap inside one system.",
+    "B": "No structural change: the two figures realize the same structure and differ only in rendering parameters (counts, sizes, angles, placement).",
+    "C": "The same two tiles obey the same local rule but the translation period is destroyed.",
+    "D": "Branching stops: one rule is applied to its own output and the orbit selects a unique fixed point."
+   },
+   "meta": {
+    "edge": "tiling_to_aperiodic",
+    "seed": 3,
+    "kind": "nuisance"
+   }
+  },
+  "ivc:tiling_to_aperiodic:s4:structural": {
+   "answer": "C",
+   "options": {
+    "A": "Containment becomes generation: each part is replaced by smaller copies of the whole under one rule.",
+    "B": "Exactly one of the mirrored correspondences is destroyed.",
+    "C": "The same two tiles obey the same local rule but the translation period is destroyed.",
+    "D": "No structural change: the two figures realize the same structure and differ only in rendering parameters (counts, sizes, angles, placement)."
+   },
+   "meta": {
+    "edge": "tiling_to_aperiodic",
+    "seed": 4,
+    "kind": "structural"
+   }
+  },
+  "ivc:tiling_to_aperiodic:s4:nuisance": {
+   "answer": "B",
+   "options": {
+    "A": "Containment becomes generation: each part is replaced by smaller copies of the whole under one rule.",
+    "B": "No structural change: the two figures realize the same structure and differ only in rendering parameters (counts, sizes, angles, placement).",
+    "C": "The same two tiles obey the same local rule but the translation period is destroyed.",
+    "D": "The flat ring is re-laid across levels, so following the arrows climbs a hierarchy and still returns to the start."
+   },
+   "meta": {
+    "edge": "tiling_to_aperiodic",
+    "seed": 4,
+    "kind": "nuisance"
+   }
+  },
+  "ivc:tiling_to_aperiodic:s5:structural": {
+   "answer": "A",
+   "options": {
+    "A": "The same two tiles obey the same local rule but the translation period is destroyed.",
+    "B": "No structural change: the two figures realize the same structure and differ only in rendering parameters (counts, sizes, angles, placement).",
+    "C": "Branching stops: one rule is applied to its own output and the orbit selects a unique fixed point.",
+    "D": "A dictionary between two separate systems becomes an involutive role swap inside one system."
+   },
+   "meta": {
+    "edge": "tiling_to_aperiodic",
+    "seed": 5,
+    "kind": "structural"
+   }
+  },
+  "ivc:tiling_to_aperiodic:s5:nuisance": {
+   "answer": "C",
+   "options": {
+    "A": "The same two tiles obey the same local rule but the translation period is destroyed.",
+    "B": "A dictionary between two separate systems becomes an involutive role swap inside one system.",
+    "C": "No structural change: the two figures realize the same structure and differ only in rendering parameters (counts, sizes, angles, placement).",
+    "D": "Containment becomes generation: each part is replaced by smaller copies of the whole under one rule."
+   },
+   "meta": {
+    "edge": "tiling_to_aperiodic",
+    "seed": 5,
+    "kind": "nuisance"
+   }
+  },
+  "ivc:iso_to_duality:s0:structural": {
+   "answer": "A",
+   "options": {
+    "A": "A dictionary between two separate systems becomes an involutive role swap inside one system.",
+    "B": "Exactly one of the mirrored correspondences is destroyed.",
+    "C": "The same two tiles obey the same local rule but the translation period is destroyed.",
+    "D": "No structural change: the two figures realize the same structure and differ only in rendering parameters (counts, sizes, angles, placement)."
+   },
+   "meta": {
+    "edge": "iso_to_duality",
+    "seed": 0,
+    "kind": "structural"
+   }
+  },
+  "ivc:iso_to_duality:s0:nuisance": {
+   "answer": "A",
+   "options": {
+    "A": "No structural change: the two figures realize the same structure and differ only in rendering parameters (counts, sizes, angles, placement).",
+    "B": "The same two tiles obey the same local rule but the translation period is destroyed.",
+    "C": "A dictionary between two separate systems becomes an involutive role swap inside one system.",
+    "D": "Branching stops: one rule is applied to its own output and the orbit selects a unique fixed point."
+   },
+   "meta": {
+    "edge": "iso_to_duality",
+    "seed": 0,
+    "kind": "nuisance"
+   }
+  },
+  "ivc:iso_to_duality:s1:structural": {
+   "answer": "B",
+   "options": {
+    "A": "No structural change: the two figures realize the same structure and differ only in rendering parameters (counts, sizes, angles, placement).",
+    "B": "A dictionary between two separate systems becomes an involutive role swap inside one system.",
+    "C": "The same two tiles obey the same local rule but the translation period is destroyed.",
+    "D": "Containment becomes generation: each part is replaced by smaller copies of the whole under one rule."
+   },
+   "meta": {
+    "edge": "iso_to_duality",
+    "seed": 1,
+    "kind": "structural"
+   }
+  },
+  "ivc:iso_to_duality:s1:nuisance": {
+   "answer": "B",
+   "options": {
+    "A": "A dictionary between two separate systems becomes an involutive role swap inside one system.",
+    "B": "No structural change: the two figures realize the same structure and differ only in rendering parameters (counts, sizes, angles, placement).",
+    "C": "The flat ring is re-laid across levels, so following the arrows climbs a hierarchy and still returns to the start.",
+    "D": "Containment becomes generation: each part is replaced by smaller copies of the whole under one rule."
+   },
+   "meta": {
+    "edge": "iso_to_duality",
+    "seed": 1,
+    "kind": "nuisance"
+   }
+  },
+  "ivc:iso_to_duality:s2:structural": {
+   "answer": "D",
+   "options": {
+    "A": "The same two tiles obey the same local rule but the translation period is destroyed.",
+    "B": "Exactly one of the mirrored correspondences is destroyed.",
+    "C": "No structural change: the two figures realize the same structure and differ only in rendering parameters (counts, sizes, angles, placement).",
+    "D": "A dictionary between two separate systems becomes an involutive role swap inside one system."
+   },
+   "meta": {
+    "edge": "iso_to_duality",
+    "seed": 2,
+    "kind": "structural"
+   }
+  },
+  "ivc:iso_to_duality:s2:nuisance": {
+   "answer": "D",
+   "options": {
+    "A": "A dictionary between two separate systems becomes an involutive role swap inside one system.",
+    "B": "Containment becomes generation: each part is replaced by smaller copies of the whole under one rule.",
+    "C": "Branching stops: one rule is applied to its own output and the orbit selects a unique fixed point.",
+    "D": "No structural change: the two figures realize the same structure and differ only in rendering parameters (counts, sizes, angles, placement)."
+   },
+   "meta": {
+    "edge": "iso_to_duality",
+    "seed": 2,
+    "kind": "nuisance"
+   }
+  },
+  "ivc:iso_to_duality:s3:structural": {
+   "answer": "A",
+   "options": {
+    "A": "A dictionary between two separate systems becomes an involutive role swap inside one system.",
+    "B": "Containment becomes generation: each part is replaced by smaller copies of the whole under one rule.",
+    "C": "No structural change: the two figures realize the same structure and differ only in rendering parameters (counts, sizes, angles, placement).",
+    "D": "The flat ring is re-laid across levels, so following the arrows climbs a hierarchy and still returns to the start."
+   },
+   "meta": {
+    "edge": "iso_to_duality",
+    "seed": 3,
+    "kind": "structural"
+   }
+  },
+  "ivc:iso_to_duality:s3:nuisance": {
+   "answer": "B",
+   "options": {
+    "A": "Exactly one of the mirrored correspondences is destroyed.",
+    "B": "No structural change: the two figures realize the same structure and differ only in rendering parameters (counts, sizes, angles, placement).",
+    "C": "A dictionary between two separate systems becomes an involutive role swap inside one system.",
+    "D": "Branching stops: one rule is applied to its own output and the orbit selects a unique fixed point."
+   },
+   "meta": {
+    "edge": "iso_to_duality",
+    "seed": 3,
+    "kind": "nuisance"
+   }
+  },
+  "ivc:iso_to_duality:s4:structural": {
+   "answer": "B",
+   "options": {
+    "A": "Containment becomes generation: each part is replaced by smaller copies of the whole under one rule.",
+    "B": "A dictionary between two separate systems becomes an involutive role swap inside one system.",
+    "C": "The same two tiles obey the same local rule but the translation period is destroyed.",
+    "D": "No structural change: the two figures realize the same structure and differ only in rendering parameters (counts, sizes, angles, placement)."
+   },
+   "meta": {
+    "edge": "iso_to_duality",
+    "seed": 4,
+    "kind": "structural"
+   }
+  },
+  "ivc:iso_to_duality:s4:nuisance": {
+   "answer": "B",
+   "options": {
+    "A": "A dictionary between two separate systems becomes an involutive role swap inside one system.",
+    "B": "No structural change: the two figures realize the same structure and differ only in rendering parameters (counts, sizes, angles, placement).",
+    "C": "Branching stops: one rule is applied to its own output and the orbit selects a unique fixed point.",
+    "D": "The same two tiles obey the same local rule but the translation period is destroyed."
+   },
+   "meta": {
+    "edge": "iso_to_duality",
+    "seed": 4,
+    "kind": "nuisance"
+   }
+  },
+  "ivc:iso_to_duality:s5:structural": {
+   "answer": "C",
+   "options": {
+    "A": "Exactly one of the mirrored correspondences is destroyed.",
+    "B": "The same two tiles obey the same local rule but the translation period is destroyed.",
+    "C": "A dictionary between two separate systems becomes an involutive role swap inside one system.",
+    "D": "No structural change: the two figures realize the same structure and differ only in rendering parameters (counts, sizes, angles, placement)."
+   },
+   "meta": {
+    "edge": "iso_to_duality",
+    "seed": 5,
+    "kind": "structural"
+   }
+  },
+  "ivc:iso_to_duality:s5:nuisance": {
+   "answer": "B",
+   "options": {
+    "A": "The same two tiles obey the same local rule but the translation period is destroyed.",
+    "B": "No structural change: the two figures realize the same structure and differ only in rendering parameters (counts, sizes, angles, placement).",
+    "C": "A dictionary between two separate systems becomes an involutive role swap inside one system.",
+    "D": "Containment becomes generation: each part is replaced by smaller copies of the whole under one rule."
+   },
+   "meta": {
+    "edge": "iso_to_duality",
+    "seed": 5,
+    "kind": "nuisance"
+   }
+  },
+  "ivc:recursion_to_contraction:s0:structural": {
+   "answer": "A",
+   "options": {
+    "A": "Branching stops: one rule is applied to its own output and the orbit selects a unique fixed point.",
+    "B": "Containment becomes generation: each part is replaced by smaller copies of the whole under one rule.",
+    "C": "The flat ring is re-laid across levels, so following the arrows climbs a hierarchy and still returns to the start.",
+    "D": "No structural change: the two figures realize the same structure and differ only in rendering parameters (counts, sizes, angles, placement)."
+   },
+   "meta": {
+    "edge": "recursion_to_contraction",
+    "seed": 0,
+    "kind": "structural"
+   }
+  },
+  "ivc:recursion_to_contraction:s0:nuisance": {
+   "answer": "B",
+   "options": {
+    "A": "Branching stops: one rule is applied to its own output and the orbit selects a unique fixed point.",
+    "B": "No structural change: the two figures realize the same structure and differ only in rendering parameters (counts, sizes, angles, placement).",
+    "C": "The flat ring is re-laid across levels, so following the arrows climbs a hierarchy and still returns to the start.",
+    "D": "Containment becomes generation: each part is replaced by smaller copies of the whole under one rule."
+   },
+   "meta": {
+    "edge": "recursion_to_contraction",
+    "seed": 0,
+    "kind": "nuisance"
+   }
+  },
+  "ivc:recursion_to_contraction:s1:structural": {
+   "answer": "C",
+   "options": {
+    "A": "A dictionary between two separate systems becomes an involutive role swap inside one system.",
+    "B": "No structural change: the two figures realize the same structure and differ only in rendering parameters (counts, sizes, angles, placement).",
+    "C": "Branching stops: one rule is applied to its own output and the orbit selects a unique fixed point.",
+    "D": "The flat ring is re-laid across levels, so following the arrows climbs a hierarchy and still returns to the start."
+   },
+   "meta": {
+    "edge": "recursion_to_contraction",
+    "seed": 1,
+    "kind": "structural"
+   }
+  },
+  "ivc:recursion_to_contraction:s1:nuisance": {
+   "answer": "A",
+   "options": {
+    "A": "No structural change: the two figures realize the same structure and differ only in rendering parameters (counts, sizes, angles, placement).",
+    "B": "Branching stops: one rule is applied to its own output and the orbit selects a unique fixed point.",
+    "C": "The flat ring is re-laid across levels, so following the arrows climbs a hierarchy and still returns to the start.",
+    "D": "Containment becomes generation: each part is replaced by smaller copies of the whole under one rule."
+   },
+   "meta": {
+    "edge": "recursion_to_contraction",
+    "seed": 1,
+    "kind": "nuisance"
+   }
+  },
+  "ivc:recursion_to_contraction:s2:structural": {
+   "answer": "D",
+   "options": {
+    "A": "Exactly one of the mirrored correspondences is destroyed.",
+    "B": "The same two tiles obey the same local rule but the translation period is destroyed.",
+    "C": "No structural change: the two figures realize the same structure and differ only in rendering parameters (counts, sizes, angles, placement).",
+    "D": "Branching stops: one rule is applied to its own output and the orbit selects a unique fixed point."
+   },
+   "meta": {
+    "edge": "recursion_to_contraction",
+    "seed": 2,
+    "kind": "structural"
+   }
+  },
+  "ivc:recursion_to_contraction:s2:nuisance": {
+   "answer": "C",
+   "options": {
+    "A": "Branching stops: one rule is applied to its own output and the orbit selects a unique fixed point.",
+    "B": "A dictionary between two separate systems becomes an involutive role swap inside one system.",
+    "C": "No structural change: the two figures realize the same structure and differ only in rendering parameters (counts, sizes, angles, placement).",
+    "D": "Containment becomes generation: each part is replaced by smaller copies of the whole under one rule."
+   },
+   "meta": {
+    "edge": "recursion_to_contraction",
+    "seed": 2,
+    "kind": "nuisance"
+   }
+  },
+  "ivc:recursion_to_contraction:s3:structural": {
+   "answer": "B",
+   "options": {
+    "A": "No structural change: the two figures realize the same structure and differ only in rendering parameters (counts, sizes, angles, placement).",
+    "B": "Branching stops: one rule is applied to its own output and the orbit selects a unique fixed point.",
+    "C": "The same two tiles obey the same local rule but the translation period is destroyed.",
+    "D": "A dictionary between two separate systems becomes an involutive role swap inside one system."
+   },
+   "meta": {
+    "edge": "recursion_to_contraction",
+    "seed": 3,
+    "kind": "structural"
+   }
+  },
+  "ivc:recursion_to_contraction:s3:nuisance": {
+   "answer": "A",
+   "options": {
+    "A": "No structural change: the two figures realize the same structure and differ only in rendering parameters (counts, sizes, angles, placement).",
+    "B": "Branching stops: one rule is applied to its own output and the orbit selects a unique fixed point.",
+    "C": "Exactly one of the mirrored correspondences is destroyed.",
+    "D": "The flat ring is re-laid across levels, so following the arrows climbs a hierarchy and still returns to the start."
+   },
+   "meta": {
+    "edge": "recursion_to_contraction",
+    "seed": 3,
+    "kind": "nuisance"
+   }
+  },
+  "ivc:recursion_to_contraction:s4:structural": {
+   "answer": "C",
+   "options": {
+    "A": "The flat ring is re-laid across levels, so following the arrows climbs a hierarchy and still returns to the start.",
+    "B": "The same two tiles obey the same local rule but the translation period is destroyed.",
+    "C": "Branching stops: one rule is applied to its own output and the orbit selects a unique fixed point.",
+    "D": "No structural change: the two figures realize the same structure and differ only in rendering parameters (counts, sizes, angles, placement)."
+   },
+   "meta": {
+    "edge": "recursion_to_contraction",
+    "seed": 4,
+    "kind": "structural"
+   }
+  },
+  "ivc:recursion_to_contraction:s4:nuisance": {
+   "answer": "D",
+   "options": {
+    "A": "Branching stops: one rule is applied to its own output and the orbit selects a unique fixed point.",
+    "B": "The same two tiles obey the same local rule but the translation period is destroyed.",
+    "C": "A dictionary between two separate systems becomes an involutive role swap inside one system.",
+    "D": "No structural change: the two figures realize the same structure and differ only in rendering parameters (counts, sizes, angles, placement)."
+   },
+   "meta": {
+    "edge": "recursion_to_contraction",
+    "seed": 4,
+    "kind": "nuisance"
+   }
+  },
+  "ivc:recursion_to_contraction:s5:structural": {
+   "answer": "D",
+   "options": {
+    "A": "The same two tiles obey the same local rule but the translation period is destroyed.",
+    "B": "Exactly one of the mirrored correspondences is destroyed.",
+    "C": "No structural change: the two figures realize the same structure and differ only in rendering parameters (counts, sizes, angles, placement).",
+    "D": "Branching stops: one rule is applied to its own output and the orbit selects a unique fixed point."
+   },
+   "meta": {
+    "edge": "recursion_to_contraction",
+    "seed": 5,
+    "kind": "structural"
+   }
+  },
+  "ivc:recursion_to_contraction:s5:nuisance": {
+   "answer": "D",
+   "options": {
+    "A": "Branching stops: one rule is applied to its own output and the orbit selects a unique fixed point.",
+    "B": "A dictionary between two separate systems becomes an involutive role swap inside one system.",
+    "C": "The flat ring is re-laid across levels, so following the arrows climbs a hierarchy and still returns to the start.",
+    "D": "No structural change: the two figures realize the same structure and differ only in rendering parameters (counts, sizes, angles, placement)."
+   },
+   "meta": {
+    "edge": "recursion_to_contraction",
+    "seed": 5,
+    "kind": "nuisance"
+   }
+  }
+ }
+}
