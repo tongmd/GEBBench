@@ -87,7 +87,15 @@ _SOCKS = os.environ.get("GEB_PROXY") or os.environ.get("GEB_SOCKS", "")
 _CLIENT = None
 if _SOCKS:  # route egress through a proxy for region-restricted endpoints
     import httpx
-    _CLIENT = httpx.Client(proxy=_SOCKS, timeout=300)
+    # Granular timeouts, not a single scalar: a SOCKS tunnel can drop a
+    # connection's upstream while the local socket stays half-open, and a
+    # lone read that never returns will hang the worker indefinitely (one
+    # such stall wedged a run for ~2h with the CPU idle). A bounded read
+    # timeout lets the retry loop below fire instead. 180s comfortably
+    # exceeds the ~90s a slow reasoning-model vision call needs.
+    _CLIENT = httpx.Client(
+        proxy=_SOCKS,
+        timeout=httpx.Timeout(connect=30.0, read=180.0, write=60.0, pool=30.0))
 
 
 def call(base, key, model, content, max_retries=6):
