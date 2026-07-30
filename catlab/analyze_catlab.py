@@ -41,6 +41,18 @@ def wilson(k, n, z=1.96):
 def analyze(path: Path):
     d = json.loads(path.read_text())
     recs = d["records"]
+    # An empty reply is a dropped connection, not a wrong answer. Every frontier
+    # endpoint here is reached through one SOCKS tunnel, and a saturated tunnel
+    # drops requests mid-flight; the runner then scores the unparsable reply as
+    # wrong. So a pure transport failure can masquerade as a real accuracy --
+    # two bilingual runs were lost to exactly that (90/90 empty, acc=0.0000).
+    # See eval/analysis_out/quarantine/README.md.
+    empty = sum(1 for r in recs if not str(r.get("raw") or "").strip())
+    if empty:
+        raise SystemExit(
+            f"{path.name}: {empty}/{len(recs)} records have an empty reply. "
+            "These are failed calls, not wrong answers -- re-run this model "
+            "before analyzing.")
     by = {}
     for r in recs:
         by.setdefault(r["task"], []).append(r)

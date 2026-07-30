@@ -48,12 +48,25 @@ def load_accs(stem):
     path = os.path.join(RES, stem + ".json")
     d = json.load(open(path))
     hits, tot = {}, {}
+    empty = 0
     for r in d["records"]:
         t = r["task"]
         hits[t] = hits.get(t, 0) + (1 if r["correct"] else 0)
         tot[t] = tot.get(t, 0) + 1
+        if not str(r.get("raw") or "").strip():
+            empty += 1
     for t, n in tot.items():
         assert n == EXPECTED_N[t], (stem, t, n)
+    # An empty reply is a dropped connection, not a wrong answer: every frontier
+    # endpoint here is reached through one SOCKS tunnel, and a saturated tunnel
+    # drops requests. Scoring cannot tell the two apart -- it counts an
+    # unparsable reply as wrong -- so a transport failure would otherwise land
+    # in the table as a real accuracy. Two runs were lost to exactly this
+    # (90/90 empty, acc=0.0000); see eval/analysis_out/quarantine/README.md.
+    assert empty == 0, (
+        f"{stem}: {empty}/{sum(tot.values())} records have an empty reply. "
+        "These are failed calls, not wrong answers -- re-run the model before "
+        "regenerating the table.")
     return {t: 100.0 * hits[t] / tot[t] for t in tot}
 
 
