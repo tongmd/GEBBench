@@ -23,3 +23,5 @@ paper/*.toc
 # Experiment stimuli/renders are tracked: they are the exact pixels the
 # models were shown, so regenerating them is not guaranteed to reproduce
 # the reported runs. Private repo, ~1.6 GB total.
+paper/*.fls
+paper/*.fdb_latexmk
