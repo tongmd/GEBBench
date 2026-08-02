@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Experiment ② — run the comparison conditions against an OpenAI-compatible
-endpoint (yunwu proxy for API models; a kiti vLLM tunnel for open VLMs).
+endpoint.  Reported results come from the unified inference API for the
+API-served models and a local vLLM server for the smaller open VLMs.
 
 Prompt protocol matches eval/run_eval.py (Chinese, 25-way menu, JSON answer).
 Wording is IDENTICAL across C1 (single) and across C2-C4 (pairs); C5 adds
@@ -95,7 +96,11 @@ def run_item(args, item) -> dict:
     pred = parse(reply)
     return {"id": item["id"], "condition": item["condition"],
             "motif": item["motif"], "answer": item["answer"], "pred": pred,
-            "correct": pred == item["answer"], "raw": (reply or "")[:200]}
+            "correct": pred == item["answer"], "raw": (reply or "")[:200],
+            # A call that never returned is a transport failure, not a wrong
+            # answer.  Scoring it as wrong is how a collapsed tunnel once
+            # produced a structurally valid file reading acc=0.0 everywhere.
+            "empty": reply is None}
 
 
 def main():
@@ -120,14 +125,26 @@ def main():
     with ThreadPoolExecutor(max_workers=args.workers) as ex:
         records = list(ex.map(lambda it: run_item(args, it), items))
 
+    n_empty = sum(r["empty"] for r in records)
+    if n_empty:
+        print(f"  !! {n_empty}/{len(records)} calls returned nothing")
+    # Refuse to write a scored file when a meaningful share of the run never
+    # reached the endpoint: the accuracies would be transport loss, not ability.
+    if n_empty > 0.05 * len(records):
+        raise SystemExit(
+            f"ABORT: {n_empty}/{len(records)} empty replies (>5%). "
+            "This is a transport failure, not a result -- fix the connection "
+            "and re-run. No file written.")
+
     by_cond = {}
     for r in records:
         by_cond.setdefault(r["condition"], []).append(r)
     summary = {c: {"n": len(rs),
+                   "n_empty": sum(r["empty"] for r in rs),
                    "acc": round(sum(r["correct"] for r in rs) / len(rs), 4)}
                for c, rs in by_cond.items()}
-    out = {"model": args.model, "base": args.base, "summary": summary,
-           "records": records}
+    out = {"model": args.model, "base": args.base, "n_empty": n_empty,
+           "summary": summary, "records": records}
     tag = args.tag or re.sub(r"[^\w.-]", "_", args.model)
     outf = ROOT / "exp2_comparison" / "results" / f"{tag}.json"
     outf.parent.mkdir(exist_ok=True)

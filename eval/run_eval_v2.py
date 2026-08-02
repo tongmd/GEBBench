@@ -4,13 +4,17 @@
 Extends eval/run_eval.py:
   - reads eval/items_v2.json (+ --adv adds the adversarial split)
   - new tasks: xv_scene_thm (VLM), xv_story_thm (LLM), scene2motif_family4
-  - images downscaled to <=896px JPEG before base64 (yunwu rejects large
-    payloads; learned from the pilot's retry pass)
+  - images downscaled to <=896px JPEG before base64 (some endpoints reject
+    large payloads; learned from the pilot's retry pass)
   - results -> eval/results_v2/<tag>.json
 
+All reported v2 results were produced through one unified inference API; pass
+its base URL explicitly.  --base has no default so a run cannot silently fall
+back to a different serving path.
+
 Usage:
-  python3 eval/run_eval_v2.py --base https://yunwu.ai/v1 \
-      --model gpt-5.5:stable --tag api_gpt-5.5 --vision [--adv]
+  python3 eval/run_eval_v2.py --base "$OPENAI_BASE_URL" \
+      --model gpt-5.5 --tag or_gpt-5.5 --vision [--adv]
 """
 
 from __future__ import annotations
