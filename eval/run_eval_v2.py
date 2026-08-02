@@ -101,8 +101,10 @@ def img_payload(path: Path, max_side: int = 896, quality: int = 88) -> str:
                 base64.b64encode(path.read_bytes()).decode())
 
 
-def call(base: str, key: str, model: str, content, max_retries=5) -> str | None:
-    body = json.dumps({"model": model, "temperature": 0.0, "max_tokens": 4096,
+def call(base: str, key: str, model: str, content,
+         max_tokens: int = 4096, max_retries=5) -> str | None:
+    body = json.dumps({"model": model, "temperature": 0.0,
+                       "max_tokens": max_tokens,
                        "messages": [{"role": "user", "content": content}]}).encode()
     req = urllib.request.Request(
         f"{base}/chat/completions", data=body,
@@ -159,7 +161,8 @@ def run_item(args, menu, item) -> dict:
         ]
     else:
         content = prompt
-    reply = call(args.base, args.key, args.model, content)
+    reply = call(args.base, args.key, args.model, content,
+                 max_tokens=args.max_tokens)
     field = "choice" if task in CHOICE_TASKS else "motif_id"
     pred = parse(reply, field)
     return {"id": item["id"], "task": task, "split": item.get("split", "main"),
@@ -178,6 +181,11 @@ def main():
     ap.add_argument("--tasks", default="")
     ap.add_argument("--limit", type=int, default=0)
     ap.add_argument("--workers", type=int, default=8)
+    ap.add_argument("--max-tokens", type=int, default=4096,
+                    help="generation cap per request; lower it only for "
+                         "models whose context window cannot fit "
+                         "prompt+4096 (answers are ~20 tokens, so any cap "
+                         "well above that leaves greedy output unchanged)")
     ap.add_argument("--tag", default="")
     args = ap.parse_args()
 
