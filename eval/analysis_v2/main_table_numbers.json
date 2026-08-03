@@ -146,5 +146,199 @@
     },
     "avg": 36.1634620790465,
     "n_tasks": 8
+  },
+  "glm-4.1v-9b": {
+    "accs": {
+      "scene2motif": 46.666666666666664,
+      "skeleton2motif": 61.224489795918366,
+      "story2motif": 45.45454545454545,
+      "theorem2motif": 76.0,
+      "crossvoice": 31.904761904761905,
+      "xv_scene_thm": 49.523809523809526,
+      "xv_story_thm": 51.239669421487605,
+      "scene2motif_family4": 78.0952380952381
+    },
+    "avg": 55.01364760780345,
+    "n_tasks": 8
+  },
+  "qwen3-vl-8b": {
+    "accs": {
+      "scene2motif": 47.61904761904762,
+      "skeleton2motif": 61.224489795918366,
+      "story2motif": 39.66942148760331,
+      "theorem2motif": 72.0,
+      "crossvoice": 33.80952380952381,
+      "xv_scene_thm": 48.095238095238095,
+      "xv_story_thm": 37.1900826446281,
+      "scene2motif_family4": 73.33333333333333
+    },
+    "avg": 51.61764209816158,
+    "n_tasks": 8
+  },
+  "gemma-3-27b": {
+    "accs": {
+      "scene2motif": 48.095238095238095,
+      "skeleton2motif": 61.224489795918366,
+      "story2motif": 38.01652892561984,
+      "theorem2motif": 64.0,
+      "crossvoice": 32.38095238095238,
+      "xv_scene_thm": 48.095238095238095,
+      "xv_story_thm": 43.80165289256198,
+      "scene2motif_family4": 72.85714285714286
+    },
+    "avg": 51.058905380333954,
+    "n_tasks": 8
+  },
+  "internvl3.5-8b": {
+    "accs": {
+      "scene2motif": 31.428571428571427,
+      "skeleton2motif": 42.857142857142854,
+      "story2motif": 40.49586776859504,
+      "theorem2motif": 84.0,
+      "crossvoice": 34.285714285714285,
+      "xv_scene_thm": 51.42857142857143,
+      "xv_story_thm": 45.45454545454545,
+      "scene2motif_family4": 65.71428571428571
+    },
+    "avg": 49.45808736717827,
+    "n_tasks": 8
+  },
+  "kimi-vl-a3b": {
+    "accs": {
+      "scene2motif": 42.857142857142854,
+      "skeleton2motif": 44.89795918367347,
+      "story2motif": 22.31404958677686,
+      "theorem2motif": 72.0,
+      "crossvoice": 33.80952380952381,
+      "xv_scene_thm": 35.714285714285715,
+      "xv_story_thm": 33.05785123966942,
+      "scene2motif_family4": 65.71428571428571
+    },
+    "avg": 43.79563726316973,
+    "n_tasks": 8
+  },
+  "pixtral-12b": {
+    "accs": {
+      "scene2motif": 29.523809523809526,
+      "skeleton2motif": 44.89795918367347,
+      "story2motif": 28.925619834710744,
+      "theorem2motif": 40.0,
+      "crossvoice": 26.666666666666668,
+      "xv_scene_thm": 27.142857142857142,
+      "xv_story_thm": 28.09917355371901,
+      "scene2motif_family4": 48.095238095238095
+    },
+    "avg": 34.16891550008433,
+    "n_tasks": 8
+  },
+  "minicpm-v-4": {
+    "accs": {
+      "scene2motif": 26.19047619047619,
+      "skeleton2motif": 36.734693877551024,
+      "story2motif": 14.87603305785124,
+      "theorem2motif": 44.0,
+      "crossvoice": 29.523809523809526,
+      "xv_scene_thm": 28.095238095238095,
+      "xv_story_thm": 28.925619834710744,
+      "scene2motif_family4": 51.904761904761905
+    },
+    "avg": 32.531329060549844,
+    "n_tasks": 8
+  },
+  "nemotron-nano-vl-8b": {
+    "accs": {
+      "scene2motif": 26.666666666666668,
+      "skeleton2motif": 38.775510204081634,
+      "story2motif": 14.049586776859504,
+      "theorem2motif": 40.0,
+      "crossvoice": 26.666666666666668,
+      "xv_scene_thm": 34.285714285714285,
+      "xv_story_thm": 26.446280991735538,
+      "scene2motif_family4": 56.19047619047619
+    },
+    "avg": 32.88511272277506,
+    "n_tasks": 8
+  },
+  "gemma-3-12b": {
+    "accs": {
+      "scene2motif": 34.285714285714285,
+      "skeleton2motif": 44.89795918367347,
+      "story2motif": 33.05785123966942,
+      "theorem2motif": 56.0,
+      "crossvoice": 31.904761904761905,
+      "xv_scene_thm": 44.76190476190476,
+      "xv_story_thm": 34.710743801652896,
+      "scene2motif_family4": 66.19047619047619
+    },
+    "avg": 43.226176420981616,
+    "n_tasks": 8
+  },
+  "internvl3-8b": {
+    "accs": {
+      "scene2motif": 40.95238095238095,
+      "skeleton2motif": 42.857142857142854,
+      "story2motif": 28.09917355371901,
+      "theorem2motif": 80.0,
+      "crossvoice": 30.476190476190474,
+      "xv_scene_thm": 43.333333333333336,
+      "xv_story_thm": 38.01652892561984,
+      "scene2motif_family4": 60.476190476190474
+    },
+    "avg": 45.526367571822114,
+    "n_tasks": 8
+  },
+  "glm-4-9b": {
+    "accs": {
+      "story2motif": 36.36363636363637,
+      "theorem2motif": 68.0,
+      "xv_story_thm": 38.84297520661157
+    },
+    "avg": 47.735537190082646,
+    "n_tasks": 3
+  },
+  "qwen3-4b": {
+    "accs": {
+      "story2motif": 41.32231404958678,
+      "theorem2motif": 72.0,
+      "xv_story_thm": 36.36363636363637
+    },
+    "avg": 49.89531680440771,
+    "n_tasks": 3
+  },
+  "gemma-2-9b": {
+    "accs": {
+      "story2motif": 26.446280991735538,
+      "theorem2motif": 60.0,
+      "xv_story_thm": 41.32231404958678
+    },
+    "avg": 42.58953168044077,
+    "n_tasks": 3
+  },
+  "llama-3.1-8b": {
+    "accs": {
+      "story2motif": 9.917355371900827,
+      "theorem2motif": 52.0,
+      "xv_story_thm": 30.578512396694215
+    },
+    "avg": 30.831955922865017,
+    "n_tasks": 3
+  },
+  "mistral-7b-v0.3": {
+    "accs": {
+      "story2motif": 19.00826446280992,
+      "theorem2motif": 28.0,
+      "xv_story_thm": 32.231404958677686
+    },
+    "avg": 26.41322314049587,
+    "n_tasks": 3
+  },
+  "olmo-2-7b": {
+    "accs": {
+      "story2motif": 9.090909090909092,
+      "theorem2motif": 16.0,
+      "xv_story_thm": 27.272727272727273
+    },
+    "avg": 17.454545454545457,
+    "n_tasks": 3
   }
 }
