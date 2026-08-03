@@ -1,0 +1,1 @@
+deepseek-vl2-small|deepseek-ai/deepseek-vl2-small|vlm|2|1|--hf-overrides {"architectures":["DeepseekVLV2ForCausalLM"]} --chat-template /datadisk4/zt-geb/venv/lib/python3.10/site-packages/vllm/transformers_utils/chat_templates/template_deepseek_vl2.jinja --max-model-len 4096

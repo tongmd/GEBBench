@@ -1,0 +1,1902 @@
+{
+ "model": "kimi-vl-a3b",
+ "base": "http://127.0.0.1:9302/v1",
+ "summary": {
+  "scene2motif_family4": {
+   "n": 210,
+   "acc": 0.6571
+  }
+ },
+ "records": [
+  {
+   "id": "adv4:scene_camera_lcd:self_reference",
+   "task": "scene2motif_family4",
+   "split": "adversarial",
+   "answer": "self_reference",
+   "pred": "self_reference",
+   "correct": true,
+   "raw": "{\"motif_id\": \"self_reference\"}"
+  },
+  {
+   "id": "adv4:scene_chocolate_plaque:self_reference",
+   "task": "scene2motif_family4",
+   "split": "adversarial",
+   "answer": "self_reference",
+   "pred": "recursion",
+   "correct": false,
+   "raw": "{\"motif_id\": \"recursion\"}"
+  },
+  {
+   "id": "adv4:scene_droste_study:self_reference",
+   "task": "scene2motif_family4",
+   "split": "adversarial",
+   "answer": "self_reference",
+   "pred": "recursion",
+   "correct": false,
+   "raw": "{\"motif_id\": \"recursion\"}"
+  },
+  {
+   "id": "adv4:scene_greenhouse_pane:self_reference",
+   "task": "scene2motif_family4",
+   "split": "adversarial",
+   "answer": "self_reference",
+   "pred": "diagonalization",
+   "correct": false,
+   "raw": "{\"motif_id\": \"diagonalization\"}"
+  },
+  {
+   "id": "adv4:scene_market_awning:self_reference",
+   "task": "scene2motif_family4",
+   "split": "adversarial",
+   "answer": "self_reference",
+   "pred": "diagonalization",
+   "correct": false,
+   "raw": "{\"motif_id\": \"diagonalization\"}"
+  },
+  {
+   "id": "adv4:scene_mountain_temple:self_reference",
+   "task": "scene2motif_family4",
+   "split": "adversarial",
+   "answer": "self_reference",
+   "pred": "nesting",
+   "correct": false,
+   "raw": "{\"motif_id\": \"nesting\"}"
+  },
+  {
+   "id": "adv4:scene_puppet_booth:self_reference",
+   "task": "scene2motif_family4",
+   "split": "adversarial",
+   "answer": "self_reference",
+   "pred": "nesting",
+   "correct": false,
+   "raw": "{\"motif_id\": \"nesting\"}"
+  },
+  {
+   "id": "adv4:scene_salt_barge:self_reference",
+   "task": "scene2motif_family4",
+   "split": "adversarial",
+   "answer": "self_reference",
+   "pred": "self_reference",
+   "correct": true,
+   "raw": "{\"motif_id\": \"self_reference\"}"
+  },
+  {
+   "id": "adv4:scene_sushi_tray:self_reference",
+   "task": "scene2motif_family4",
+   "split": "adversarial",
+   "answer": "self_reference",
+   "pred": "nesting",
+   "correct": false,
+   "raw": "{\"motif_id\": \"nesting\"}"
+  },
+  {
+   "id": "adv4:scene_tailor_sampler:self_reference",
+   "task": "scene2motif_family4",
+   "split": "adversarial",
+   "answer": "self_reference",
+   "pred": "symmetry_breaking",
+   "correct": false,
+   "raw": "{\"motif_id\": \"symmetry_breaking\"}"
+  },
+  {
+   "id": "adv4:scene_candle_wax_oil:recursion",
+   "task": "scene2motif_family4",
+   "split": "adversarial",
+   "answer": "recursion",
+   "pred": "contraction_fixed_point",
+   "correct": false,
+   "raw": "{\"motif_id\": \"contraction_fixed_point\"}"
+  },
+  {
+   "id": "adv4:scene_fiber_optic_long_exposure:recursion",
+   "task": "scene2motif_family4",
+   "split": "adversarial",
+   "answer": "recursion",
+   "pred": "contraction_fixed_point",
+   "correct": false,
+   "raw": "{\"motif_id\": \"contraction_fixed_point\"}"
+  },
+  {
+   "id": "adv4:scene_gold_thread_embroidery:recursion",
+   "task": "scene2motif_family4",
+   "split": "adversarial",
+   "answer": "recursion",
+   "pred": "contraction_fixed_point",
+   "correct": false,
+   "raw": "{\"motif_id\": \"contraction_fixed_point\"}"
+  },
+  {
+   "id": "adv4:scene_leaf_veins_macro:recursion",
+   "task": "scene2motif_family4",
+   "split": "adversarial",
+   "answer": "recursion",
+   "pred": "convergence",
+   "correct": false,
+   "raw": "{\"motif_id\": \"convergence\"}"
+  },
+  {
+   "id": "adv4:scene_lightning:recursion",
+   "task": "scene2motif_family4",
+   "split": "adversarial",
+   "answer": "recursion",
+   "pred": "convergence",
+   "correct": false,
+   "raw": "{\"motif_id\": \"convergence\"}"
+  },
+  {
+   "id": "adv4:scene_red_coral_macro:recursion",
+   "task": "scene2motif_family4",
+   "split": "adversarial",
+   "answer": "recursion",
+   "pred": "convergence",
+   "correct": false,
+   "raw": "{\"motif_id\": \"convergence\"}"
+  },
+  {
+   "id": "adv4:scene_river_delta:recursion",
+   "task": "scene2motif_family4",
+   "split": "adversarial",
+   "answer": "recursion",
+   "pred": "recursion",
+   "correct": true,
+   "raw": "{\"motif_id\": \"recursion\"}"
+  },
+  {
+   "id": "adv4:scene_seaweed_ink:recursion",
+   "task": "scene2motif_family4",
+   "split": "adversarial",
+   "answer": "recursion",
+   "pred": "self_reference",
+   "correct": false,
+   "raw": "{\"motif_id\": \"self_reference\"}"
+  },
+  {
+   "id": "adv4:scene_snow_paths_woodblock:recursion",
+   "task": "scene2motif_family4",
+   "split": "adversarial",
+   "answer": "recursion",
+   "pred": "convergence",
+   "correct": false,
+   "raw": "{\"motif_id\": \"convergence\"}"
+  },
+  {
+   "id": "adv4:scene_winter_tree:recursion",
+   "task": "scene2motif_family4",
+   "split": "adversarial",
+   "answer": "recursion",
+   "pred": "recursion",
+   "correct": true,
+   "raw": "{\"motif_id\": \"recursion\"}"
+  },
+  {
+   "id": "adv4:scene_cedar_bento:nesting",
+   "task": "scene2motif_family4",
+   "split": "adversarial",
+   "answer": "nesting",
+   "pred": "recursion",
+   "correct": false,
+   "raw": "{\"motif_id\": \"recursion\"}"
+  },
+  {
+   "id": "adv4:scene_cut_cabbage:nesting",
+   "task": "scene2motif_family4",
+   "split": "adversarial",
+   "answer": "nesting",
+   "pred": "spiral",
+   "correct": false,
+   "raw": "{\"motif_id\": \"spiral\"}"
+  },
+  {
+   "id": "adv4:scene_ice_fishing_holes:nesting",
+   "task": "scene2motif_family4",
+   "split": "adversarial",
+   "answer": "nesting",
+   "pred": "contraction_fixed_point",
+   "correct": false,
+   "raw": "{\"motif_id\": \"contraction_fixed_point\"}"
+  },
+  {
+   "id": "adv4:scene_lantern_tunnels:nesting",
+   "task": "scene2motif_family4",
+   "split": "adversarial",
+   "answer": "nesting",
+   "pred": "contraction_fixed_point",
+   "correct": false,
+   "raw": "{\"motif_id\": \"contraction_fixed_point\"}"
+  },
+  {
+   "id": "adv4:scene_moon_gates:nesting",
+   "task": "scene2motif_family4",
+   "split": "adversarial",
+   "answer": "nesting",
+   "pred": "nesting",
+   "correct": true,
+   "raw": "{\"motif_id\": \"nesting\"}"
+  },
+  {
+   "id": "adv4:scene_open_crates:nesting",
+   "task": "scene2motif_family4",
+   "split": "adversarial",
+   "answer": "nesting",
+   "pred": "nesting",
+   "correct": true,
+   "raw": "{\"motif_id\": \"nesting\"}"
+  },
+  {
+   "id": "adv4:scene_pond_ripples:nesting",
+   "task": "scene2motif_family4",
+   "split": "adversarial",
+   "answer": "nesting",
+   "pred": "convergence",
+   "correct": false,
+   "raw": "{\"motif_id\": \"convergence\"}"
+  },
+  {
+   "id": "adv4:scene_quarry_pits:nesting",
+   "task": "scene2motif_family4",
+   "split": "adversarial",
+   "answer": "nesting",
+   "pred": "strange_loop",
+   "correct": false,
+   "raw": "{\"motif_id\": \"strange_loop\"}"
+  },
+  {
+   "id": "adv4:scene_theater_arches:nesting",
+   "task": "scene2motif_family4",
+   "split": "adversarial",
+   "answer": "nesting",
+   "pred": "nesting",
+   "correct": true,
+   "raw": "{\"motif_id\": \"nesting\"}"
+  },
+  {
+   "id": "adv4:scene_walled_city:nesting",
+   "task": "scene2motif_family4",
+   "split": "adversarial",
+   "answer": "nesting",
+   "pred": "convergence",
+   "correct": false,
+   "raw": "{\"motif_id\": \"convergence\"}"
+  },
+  {
+   "id": "adv4:scene_atoll_lagoon:cycle",
+   "task": "scene2motif_family4",
+   "split": "adversarial",
+   "answer": "cycle",
+   "pred": "cycle",
+   "correct": true,
+   "raw": "{\"motif_id\": \"cycle\"}"
+  },
+  {
+   "id": "adv4:scene_canal_town:cycle",
+   "task": "scene2motif_family4",
+   "split": "adversarial",
+   "answer": "cycle",
+   "pred": "cycle",
+   "correct": true,
+   "raw": "{\"motif_id\": \"cycle\"}"
+  },
+  {
+   "id": "adv4:scene_candle_courtyard:cycle",
+   "task": "scene2motif_family4",
+   "split": "adversarial",
+   "answer": "cycle",
+   "pred": "strange_loop",
+   "correct": false,
+   "raw": "{\"motif_id\": \"strange_loop\"}"
+  },
+  {
+   "id": "adv4:scene_crop_fields:cycle",
+   "task": "scene2motif_family4",
+   "split": "adversarial",
+   "answer": "cycle",
+   "pred": "cycle",
+   "correct": true,
+   "raw": "{\"motif_id\": \"cycle\"}"
+  },
+  {
+   "id": "adv4:scene_mountain_water:cycle",
+   "task": "scene2motif_family4",
+   "split": "adversarial",
+   "answer": "cycle",
+   "pred": "cycle",
+   "correct": true,
+   "raw": "{\"motif_id\": \"cycle\"}"
+  },
+  {
+   "id": "adv4:scene_oak_year:cycle",
+   "task": "scene2motif_family4",
+   "split": "adversarial",
+   "answer": "cycle",
+   "pred": "cycle",
+   "correct": true,
+   "raw": "{\"motif_id\": \"cycle\"}"
+  },
+  {
+   "id": "adv4:scene_ouroboros:cycle",
+   "task": "scene2motif_family4",
+   "split": "adversarial",
+   "answer": "cycle",
+   "pred": "strange_loop",
+   "correct": false,
+   "raw": "{\"motif_id\": \"strange_loop\"}"
+  },
+  {
+   "id": "adv4:scene_pollen_bees:cycle",
+   "task": "scene2motif_family4",
+   "split": "adversarial",
+   "answer": "cycle",
+   "pred": "spiral",
+   "correct": false,
+   "raw": "{\"motif_id\": \"spiral\"}"
+  },
+  {
+   "id": "adv4:scene_tea_rain:cycle",
+   "task": "scene2motif_family4",
+   "split": "adversarial",
+   "answer": "cycle",
+   "pred": "cycle",
+   "correct": true,
+   "raw": "{\"motif_id\": \"cycle\"}"
+  },
+  {
+   "id": "adv4:scene_alpine_lake:symmetry",
+   "task": "scene2motif_family4",
+   "split": "adversarial",
+   "answer": "symmetry",
+   "pred": "projective_duality",
+   "correct": false,
+   "raw": "{\"motif_id\": \"projective_duality\"}"
+  },
+  {
+   "id": "adv4:scene_butterfly:symmetry",
+   "task": "scene2motif_family4",
+   "split": "adversarial",
+   "answer": "symmetry",
+   "pred": "symmetry",
+   "correct": true,
+   "raw": "{\"motif_id\": \"symmetry\"}"
+  },
+  {
+   "id": "adv4:scene_canal_fields:symmetry",
+   "task": "scene2motif_family4",
+   "split": "adversarial",
+   "answer": "symmetry",
+   "pred": "symmetry",
+   "correct": true,
+   "raw": "{\"motif_id\": \"symmetry\"}"
+  },
+  {
+   "id": "adv4:scene_coral_tidepool:symmetry",
+   "task": "scene2motif_family4",
+   "split": "adversarial",
+   "answer": "symmetry",
+   "pred": "projective_duality",
+   "correct": false,
+   "raw": "{\"motif_id\": \"projective_duality\"}"
+  },
+  {
+   "id": "adv4:scene_desert_caravan:symmetry",
+   "task": "scene2motif_family4",
+   "split": "adversarial",
+   "answer": "symmetry",
+   "pred": "symmetry",
+   "correct": true,
+   "raw": "{\"motif_id\": \"symmetry\"}"
+  },
+  {
+   "id": "adv4:scene_hotel_staircase:symmetry",
+   "task": "scene2motif_family4",
+   "split": "adversarial",
+   "answer": "symmetry",
+   "pred": "symmetry",
+   "correct": true,
+   "raw": "{\"motif_id\": \"symmetry\"}"
+  },
+  {
+   "id": "adv4:scene_koi_pond_print:symmetry",
+   "task": "scene2motif_family4",
+   "split": "adversarial",
+   "answer": "symmetry",
+   "pred": "symmetry",
+   "correct": true,
+   "raw": "{\"motif_id\": \"symmetry\"}"
+  },
+  {
+   "id": "adv4:scene_market_still_life:symmetry",
+   "task": "scene2motif_family4",
+   "split": "adversarial",
+   "answer": "symmetry",
+   "pred": "symmetry",
+   "correct": true,
+   "raw": "{\"motif_id\": \"symmetry\"}"
+  },
+  {
+   "id": "adv4:scene_opera_stage:symmetry",
+   "task": "scene2motif_family4",
+   "split": "adversarial",
+   "answer": "symmetry",
+   "pred": "symmetry",
+   "correct": true,
+   "raw": "{\"motif_id\": \"symmetry\"}"
+  },
+  {
+   "id": "adv4:scene_temple_facade:symmetry",
+   "task": "scene2motif_family4",
+   "split": "adversarial",
+   "answer": "symmetry",
+   "pred": "symmetry",
+   "correct": true,
+   "raw": "{\"motif_id\": \"symmetry\"}"
+  },
+  {
+   "id": "adv4:scene_courtly_chess_pawns:alternation",
+   "task": "scene2motif_family4",
+   "split": "adversarial",
+   "answer": "alternation",
+   "pred": "alternation",
+   "correct": true,
+   "raw": "{\"motif_id\": \"alternation\"}"
+  },
+  {
+   "id": "adv4:scene_harbor_buoys:alternation",
+   "task": "scene2motif_family4",
+   "split": "adversarial",
+   "answer": "alternation",
+   "pred": "alternation",
+   "correct": true,
+   "raw": "{\"motif_id\": \"alternation\"}"
+  },
+  {
+   "id": "adv4:scene_lantern_row:alternation",
+   "task": "scene2motif_family4",
+   "split": "adversarial",
+   "answer": "alternation",
+   "pred": "alternation",
+   "correct": true,
+   "raw": "{\"motif_id\": \"alternation\"}"
+  },
+  {
+   "id": "adv4:scene_macaron_counter:alternation",
+   "task": "scene2motif_family4",
+   "split": "adversarial",
+   "answer": "alternation",
+   "pred": "alternation",
+   "correct": true,
+   "raw": "{\"motif_id\": \"alternation\"}"
+  },
+  {
+   "id": "adv4:scene_mountain_stepping_stones:alternation",
+   "task": "scene2motif_family4",
+   "split": "adversarial",
+   "answer": "alternation",
+   "pred": "aperiodic_tiling",
+   "correct": false,
+   "raw": "{\"motif_id\": \"aperiodic_tiling\"}"
+  },
+  {
+   "id": "adv4:scene_night_market_awning:alternation",
+   "task": "scene2motif_family4",
+   "split": "adversarial",
+   "answer": "alternation",
+   "pred": "alternation",
+   "correct": true,
+   "raw": "{\"motif_id\": \"alternation\"}"
+  },
+  {
+   "id": "adv4:scene_orchard_crates:alternation",
+   "task": "scene2motif_family4",
+   "split": "adversarial",
+   "answer": "alternation",
+   "pred": "alternation",
+   "correct": true,
+   "raw": "{\"motif_id\": \"alternation\"}"
+  },
+  {
+   "id": "adv4:scene_reef_coral_markers:alternation",
+   "task": "scene2motif_family4",
+   "split": "adversarial",
+   "answer": "alternation",
+   "pred": "alternation",
+   "correct": true,
+   "raw": "{\"motif_id\": \"alternation\"}"
+  },
+  {
+   "id": "adv4:scene_tea_cups_woodblock:alternation",
+   "task": "scene2motif_family4",
+   "split": "adversarial",
+   "answer": "alternation",
+   "pred": "aperiodic_tiling",
+   "correct": false,
+   "raw": "{\"motif_id\": \"aperiodic_tiling\"}"
+  },
+  {
+   "id": "adv4:scene_zebra:alternation",
+   "task": "scene2motif_family4",
+   "split": "adversarial",
+   "answer": "alternation",
+   "pred": "aperiodic_tiling",
+   "correct": false,
+   "raw": "{\"motif_id\": \"aperiodic_tiling\"}"
+  },
+  {
+   "id": "adv4:scene_carpet_vine:spiral",
+   "task": "scene2motif_family4",
+   "split": "adversarial",
+   "answer": "spiral",
+   "pred": "spiral",
+   "correct": true,
+   "raw": "{\"motif_id\": \"spiral\"}"
+  },
+  {
+   "id": "adv4:scene_cinnamon_bun:spiral",
+   "task": "scene2motif_family4",
+   "split": "adversarial",
+   "answer": "spiral",
+   "pred": "spiral",
+   "correct": true,
+   "raw": "{\"motif_id\": \"spiral\"}"
+  },
+  {
+   "id": "adv4:scene_ember_dancer:spiral",
+   "task": "scene2motif_family4",
+   "split": "adversarial",
+   "answer": "spiral",
+   "pred": "spiral",
+   "correct": true,
+   "raw": "{\"motif_id\": \"spiral\"}"
+  },
+  {
+   "id": "adv4:scene_nautilus:spiral",
+   "task": "scene2motif_family4",
+   "split": "adversarial",
+   "answer": "spiral",
+   "pred": "spiral",
+   "correct": true,
+   "raw": "{\"motif_id\": \"spiral\"}"
+  },
+  {
+   "id": "adv4:scene_ram_horn:spiral",
+   "task": "scene2motif_family4",
+   "split": "adversarial",
+   "answer": "spiral",
+   "pred": "spiral",
+   "correct": true,
+   "raw": "{\"motif_id\": \"spiral\"}"
+  },
+  {
+   "id": "adv4:scene_sea_eddy:spiral",
+   "task": "scene2motif_family4",
+   "split": "adversarial",
+   "answer": "spiral",
+   "pred": "spiral",
+   "correct": true,
+   "raw": "{\"motif_id\": \"spiral\"}"
+  },
+  {
+   "id": "adv4:scene_succulent_leaf_macro:spiral",
+   "task": "scene2motif_family4",
+   "split": "adversarial",
+   "answer": "spiral",
+   "pred": "spiral",
+   "correct": true,
+   "raw": "{\"motif_id\": \"spiral\"}"
+  },
+  {
+   "id": "adv4:scene_typhoon:spiral",
+   "task": "scene2motif_family4",
+   "split": "adversarial",
+   "answer": "spiral",
+   "pred": "spiral",
+   "correct": true,
+   "raw": "{\"motif_id\": \"spiral\"}"
+  },
+  {
+   "id": "adv4:scene_vineyard_road:spiral",
+   "task": "scene2motif_family4",
+   "split": "adversarial",
+   "answer": "spiral",
+   "pred": "contraction_fixed_point",
+   "correct": false,
+   "raw": "{\"motif_id\": \"contraction_fixed_point\"}"
+  },
+  {
+   "id": "adv4:scene_violin_pegbox:spiral",
+   "task": "scene2motif_family4",
+   "split": "adversarial",
+   "answer": "spiral",
+   "pred": "spiral",
+   "correct": true,
+   "raw": "{\"motif_id\": \"spiral\"}"
+  },
+  {
+   "id": "adv4:scene_ant_nest:convergence",
+   "task": "scene2motif_family4",
+   "split": "adversarial",
+   "answer": "convergence",
+   "pred": "convergence",
+   "correct": true,
+   "raw": "{\"motif_id\": \"convergence\"}"
+  },
+  {
+   "id": "adv4:scene_candle_wax:convergence",
+   "task": "scene2motif_family4",
+   "split": "adversarial",
+   "answer": "convergence",
+   "pred": "infinite_descent",
+   "correct": false,
+   "raw": "{\"motif_id\": \"infinite_descent\"}"
+  },
+  {
+   "id": "adv4:scene_homing_birds:convergence",
+   "task": "scene2motif_family4",
+   "split": "adversarial",
+   "answer": "convergence",
+   "pred": "convergence",
+   "correct": true,
+   "raw": "{\"motif_id\": \"convergence\"}"
+  },
+  {
+   "id": "adv4:scene_lightning_rod:convergence",
+   "task": "scene2motif_family4",
+   "split": "adversarial",
+   "answer": "convergence",
+   "pred": "convergence",
+   "correct": true,
+   "raw": "{\"motif_id\": \"convergence\"}"
+  },
+  {
+   "id": "adv4:scene_mill_belts:convergence",
+   "task": "scene2motif_family4",
+   "split": "adversarial",
+   "answer": "convergence",
+   "pred": "convergence",
+   "correct": true,
+   "raw": "{\"motif_id\": \"convergence\"}"
+  },
+  {
+   "id": "adv4:scene_paint_cup:convergence",
+   "task": "scene2motif_family4",
+   "split": "adversarial",
+   "answer": "convergence",
+   "pred": "convergence",
+   "correct": true,
+   "raw": "{\"motif_id\": \"convergence\"}"
+  },
+  {
+   "id": "adv4:scene_pilgrim_temple:convergence",
+   "task": "scene2motif_family4",
+   "split": "adversarial",
+   "answer": "convergence",
+   "pred": "convergence",
+   "correct": true,
+   "raw": "{\"motif_id\": \"convergence\"}"
+  },
+  {
+   "id": "adv4:scene_rail_terminal:convergence",
+   "task": "scene2motif_family4",
+   "split": "adversarial",
+   "answer": "convergence",
+   "pred": "convergence",
+   "correct": true,
+   "raw": "{\"motif_id\": \"convergence\"}"
+  },
+  {
+   "id": "adv4:scene_ski_lodge:convergence",
+   "task": "scene2motif_family4",
+   "split": "adversarial",
+   "answer": "convergence",
+   "pred": "bottleneck",
+   "correct": false,
+   "raw": "{\"motif_id\": \"bottleneck\"}"
+  },
+  {
+   "id": "adv4:scene_watershed:convergence",
+   "task": "scene2motif_family4",
+   "split": "adversarial",
+   "answer": "convergence",
+   "pred": "bottleneck",
+   "correct": false,
+   "raw": "{\"motif_id\": \"bottleneck\"}"
+  },
+  {
+   "id": "adv4:scene_ant_farm_throat:bottleneck",
+   "task": "scene2motif_family4",
+   "split": "adversarial",
+   "answer": "bottleneck",
+   "pred": "bottleneck",
+   "correct": true,
+   "raw": "{\"motif_id\": \"bottleneck\"}"
+  },
+  {
+   "id": "adv4:scene_cave_lanterns:bottleneck",
+   "task": "scene2motif_family4",
+   "split": "adversarial",
+   "answer": "bottleneck",
+   "pred": "bottleneck",
+   "correct": true,
+   "raw": "{\"motif_id\": \"bottleneck\"}"
+  },
+  {
+   "id": "adv4:scene_courtyard_moon_gate:bottleneck",
+   "task": "scene2motif_family4",
+   "split": "adversarial",
+   "answer": "bottleneck",
+   "pred": "bottleneck",
+   "correct": true,
+   "raw": "{\"motif_id\": \"bottleneck\"}"
+  },
+  {
+   "id": "adv4:scene_gorge_bridge:bottleneck",
+   "task": "scene2motif_family4",
+   "split": "adversarial",
+   "answer": "bottleneck",
+   "pred": "bottleneck",
+   "correct": true,
+   "raw": "{\"motif_id\": \"bottleneck\"}"
+  },
+  {
+   "id": "adv4:scene_hourglass:bottleneck",
+   "task": "scene2motif_family4",
+   "split": "adversarial",
+   "answer": "bottleneck",
+   "pred": "convergence",
+   "correct": false,
+   "raw": "{\"motif_id\": \"convergence\"}"
+  },
+  {
+   "id": "adv4:scene_mangrove_culvert:bottleneck",
+   "task": "scene2motif_family4",
+   "split": "adversarial",
+   "answer": "bottleneck",
+   "pred": "bottleneck",
+   "correct": true,
+   "raw": "{\"motif_id\": \"bottleneck\"}"
+  },
+  {
+   "id": "adv4:scene_market_arcade:bottleneck",
+   "task": "scene2motif_family4",
+   "split": "adversarial",
+   "answer": "bottleneck",
+   "pred": "bottleneck",
+   "correct": true,
+   "raw": "{\"motif_id\": \"bottleneck\"}"
+  },
+  {
+   "id": "adv4:scene_rail_yard_switch:bottleneck",
+   "task": "scene2motif_family4",
+   "split": "adversarial",
+   "answer": "bottleneck",
+   "pred": "bottleneck",
+   "correct": true,
+   "raw": "{\"motif_id\": \"bottleneck\"}"
+  },
+  {
+   "id": "adv4:scene_reef_cut:bottleneck",
+   "task": "scene2motif_family4",
+   "split": "adversarial",
+   "answer": "bottleneck",
+   "pred": "bottleneck",
+   "correct": true,
+   "raw": "{\"motif_id\": \"bottleneck\"}"
+  },
+  {
+   "id": "adv4:scene_snowshoe_pass:bottleneck",
+   "task": "scene2motif_family4",
+   "split": "adversarial",
+   "answer": "bottleneck",
+   "pred": "bottleneck",
+   "correct": true,
+   "raw": "{\"motif_id\": \"bottleneck\"}"
+  },
+  {
+   "id": "adv4:scene_black_teacup:symmetry_breaking",
+   "task": "scene2motif_family4",
+   "split": "adversarial",
+   "answer": "symmetry_breaking",
+   "pred": "tiling",
+   "correct": false,
+   "raw": "{\"motif_id\": \"tiling\"}"
+  },
+  {
+   "id": "adv4:scene_blue_roof_tile:symmetry_breaking",
+   "task": "scene2motif_family4",
+   "split": "adversarial",
+   "answer": "symmetry_breaking",
+   "pred": "tiling",
+   "correct": false,
+   "raw": "{\"motif_id\": \"tiling\"}"
+  },
+  {
+   "id": "adv4:scene_broken_solar_panel:symmetry_breaking",
+   "task": "scene2motif_family4",
+   "split": "adversarial",
+   "answer": "symmetry_breaking",
+   "pred": "symmetry_breaking",
+   "correct": true,
+   "raw": "{\"motif_id\": \"symmetry_breaking\"}"
+  },
+  {
+   "id": "adv4:scene_burnt_bun:symmetry_breaking",
+   "task": "scene2motif_family4",
+   "split": "adversarial",
+   "answer": "symmetry_breaking",
+   "pred": "symmetry_breaking",
+   "correct": true,
+   "raw": "{\"motif_id\": \"symmetry_breaking\"}"
+  },
+  {
+   "id": "adv4:scene_dark_lit_window:symmetry_breaking",
+   "task": "scene2motif_family4",
+   "split": "adversarial",
+   "answer": "symmetry_breaking",
+   "pred": "symmetry_breaking",
+   "correct": true,
+   "raw": "{\"motif_id\": \"symmetry_breaking\"}"
+  },
+  {
+   "id": "adv4:scene_empty_seed_cell:symmetry_breaking",
+   "task": "scene2motif_family4",
+   "split": "adversarial",
+   "answer": "symmetry_breaking",
+   "pred": "symmetry_breaking",
+   "correct": true,
+   "raw": "{\"motif_id\": \"symmetry_breaking\"}"
+  },
+  {
+   "id": "adv4:scene_orchard_anomaly:symmetry_breaking",
+   "task": "scene2motif_family4",
+   "split": "adversarial",
+   "answer": "symmetry_breaking",
+   "pred": "symmetry_breaking",
+   "correct": true,
+   "raw": "{\"motif_id\": \"symmetry_breaking\"}"
+  },
+  {
+   "id": "adv4:scene_red_beach_umbrella:symmetry_breaking",
+   "task": "scene2motif_family4",
+   "split": "adversarial",
+   "answer": "symmetry_breaking",
+   "pred": "symmetry_breaking",
+   "correct": true,
+   "raw": "{\"motif_id\": \"symmetry_breaking\"}"
+  },
+  {
+   "id": "adv4:scene_red_plum:symmetry_breaking",
+   "task": "scene2motif_family4",
+   "split": "adversarial",
+   "answer": "symmetry_breaking",
+   "pred": "symmetry_breaking",
+   "correct": true,
+   "raw": "{\"motif_id\": \"symmetry_breaking\"}"
+  },
+  {
+   "id": "adv4:scene_salt_pan_anomaly:symmetry_breaking",
+   "task": "scene2motif_family4",
+   "split": "adversarial",
+   "answer": "symmetry_breaking",
+   "pred": "symmetry_breaking",
+   "correct": true,
+   "raw": "{\"motif_id\": \"symmetry_breaking\"}"
+  },
+  {
+   "id": "adv4:scene_drawing_hands:strange_loop",
+   "task": "scene2motif_family4",
+   "split": "adversarial",
+   "answer": "strange_loop",
+   "pred": "recursion",
+   "correct": false,
+   "raw": "{\"motif_id\": \"recursion\"}"
+  },
+  {
+   "id": "adv4:scene_glasshouse_bench:strange_loop",
+   "task": "scene2motif_family4",
+   "split": "adversarial",
+   "answer": "strange_loop",
+   "pred": "strange_loop",
+   "correct": true,
+   "raw": "{\"motif_id\": \"strange_loop\"}"
+  },
+  {
+   "id": "adv4:scene_impossible_stairs:strange_loop",
+   "task": "scene2motif_family4",
+   "split": "adversarial",
+   "answer": "strange_loop",
+   "pred": "strange_loop",
+   "correct": true,
+   "raw": "{\"motif_id\": \"strange_loop\"}"
+  },
+  {
+   "id": "adv4:scene_day_night_birds:figure_ground",
+   "task": "scene2motif_family4",
+   "split": "adversarial",
+   "answer": "figure_ground",
+   "pred": "projective_duality",
+   "correct": false,
+   "raw": "{\"motif_id\": \"projective_duality\"}"
+  },
+  {
+   "id": "adv4:scene_fish_racks:figure_ground",
+   "task": "scene2motif_family4",
+   "split": "adversarial",
+   "answer": "figure_ground",
+   "pred": "symmetry",
+   "correct": false,
+   "raw": "{\"motif_id\": \"symmetry\"}"
+  },
+  {
+   "id": "adv4:scene_mushroom_trays:figure_ground",
+   "task": "scene2motif_family4",
+   "split": "adversarial",
+   "answer": "figure_ground",
+   "pred": "symmetry",
+   "correct": false,
+   "raw": "{\"motif_id\": \"symmetry\"}"
+  },
+  {
+   "id": "adv4:scene_papercut:figure_ground",
+   "task": "scene2motif_family4",
+   "split": "adversarial",
+   "answer": "figure_ground",
+   "pred": "symmetry",
+   "correct": false,
+   "raw": "{\"motif_id\": \"symmetry\"}"
+  },
+  {
+   "id": "adv4:scene_salt_basins:figure_ground",
+   "task": "scene2motif_family4",
+   "split": "adversarial",
+   "answer": "figure_ground",
+   "pred": "projective_duality",
+   "correct": false,
+   "raw": "{\"motif_id\": \"projective_duality\"}"
+  },
+  {
+   "id": "adv4:scene_vineyard_hills:figure_ground",
+   "task": "scene2motif_family4",
+   "split": "adversarial",
+   "answer": "figure_ground",
+   "pred": "symmetry",
+   "correct": false,
+   "raw": "{\"motif_id\": \"symmetry\"}"
+  },
+  {
+   "id": "adv4:scene_cave_rail_yard:isomorphism",
+   "task": "scene2motif_family4",
+   "split": "adversarial",
+   "answer": "isomorphism",
+   "pred": "symmetry",
+   "correct": false,
+   "raw": "{\"motif_id\": \"symmetry\"}"
+  },
+  {
+   "id": "adv4:scene_constellations:isomorphism",
+   "task": "scene2motif_family4",
+   "split": "adversarial",
+   "answer": "isomorphism",
+   "pred": "isomorphism",
+   "correct": true,
+   "raw": "{\"motif_id\": \"isomorphism\"}"
+  },
+  {
+   "id": "adv4:scene_filtration_corridor:isomorphism",
+   "task": "scene2motif_family4",
+   "split": "adversarial",
+   "answer": "isomorphism",
+   "pred": "projective_duality",
+   "correct": false,
+   "raw": "{\"motif_id\": \"projective_duality\"}"
+  },
+  {
+   "id": "adv4:scene_harbor_tram_depot:isomorphism",
+   "task": "scene2motif_family4",
+   "split": "adversarial",
+   "answer": "isomorphism",
+   "pred": "symmetry",
+   "correct": false,
+   "raw": "{\"motif_id\": \"symmetry\"}"
+  },
+  {
+   "id": "adv4:scene_promenade_assembly_aisle:isomorphism",
+   "task": "scene2motif_family4",
+   "split": "adversarial",
+   "answer": "isomorphism",
+   "pred": "symmetry",
+   "correct": false,
+   "raw": "{\"motif_id\": \"symmetry\"}"
+  },
+  {
+   "id": "adv4:scene_rice_suburb:isomorphism",
+   "task": "scene2motif_family4",
+   "split": "adversarial",
+   "answer": "isomorphism",
+   "pred": "isomorphism",
+   "correct": true,
+   "raw": "{\"motif_id\": \"isomorphism\"}"
+  },
+  {
+   "id": "adv4:scene_salt_parking_lot:isomorphism",
+   "task": "scene2motif_family4",
+   "split": "adversarial",
+   "answer": "isomorphism",
+   "pred": "projective_duality",
+   "correct": false,
+   "raw": "{\"motif_id\": \"projective_duality\"}"
+  },
+  {
+   "id": "adv4:scene_seaweed_silk_shop:isomorphism",
+   "task": "scene2motif_family4",
+   "split": "adversarial",
+   "answer": "isomorphism",
+   "pred": "projective_duality",
+   "correct": false,
+   "raw": "{\"motif_id\": \"projective_duality\"}"
+  },
+  {
+   "id": "adv4:scene_tree_and_roots:isomorphism",
+   "task": "scene2motif_family4",
+   "split": "adversarial",
+   "answer": "isomorphism",
+   "pred": "projective_duality",
+   "correct": false,
+   "raw": "{\"motif_id\": \"projective_duality\"}"
+  },
+  {
+   "id": "adv4:scene_vineyard_village:isomorphism",
+   "task": "scene2motif_family4",
+   "split": "adversarial",
+   "answer": "isomorphism",
+   "pred": "isomorphism",
+   "correct": true,
+   "raw": "{\"motif_id\": \"isomorphism\"}"
+  },
+  {
+   "id": "adv4:scene_ant_band:mobius",
+   "task": "scene2motif_family4",
+   "split": "adversarial",
+   "answer": "mobius",
+   "pred": "mobius",
+   "correct": true,
+   "raw": "{\"motif_id\": \"mobius\"}"
+  },
+  {
+   "id": "adv4:scene_boardwalk:mobius",
+   "task": "scene2motif_family4",
+   "split": "adversarial",
+   "answer": "mobius",
+   "pred": "mobius",
+   "correct": true,
+   "raw": "{\"motif_id\": \"mobius\"}"
+  },
+  {
+   "id": "adv4:scene_conveyor_belt:mobius",
+   "task": "scene2motif_family4",
+   "split": "adversarial",
+   "answer": "mobius",
+   "pred": "mobius",
+   "correct": true,
+   "raw": "{\"motif_id\": \"mobius\"}"
+  },
+  {
+   "id": "adv4:scene_film_strip:mobius",
+   "task": "scene2motif_family4",
+   "split": "adversarial",
+   "answer": "mobius",
+   "pred": "mobius",
+   "correct": true,
+   "raw": "{\"motif_id\": \"mobius\"}"
+  },
+  {
+   "id": "adv4:scene_glass_hothouse_walkway:mobius",
+   "task": "scene2motif_family4",
+   "split": "adversarial",
+   "answer": "mobius",
+   "pred": "mobius",
+   "correct": true,
+   "raw": "{\"motif_id\": \"mobius\"}"
+  },
+  {
+   "id": "adv4:scene_packing_strap:mobius",
+   "task": "scene2motif_family4",
+   "split": "adversarial",
+   "answer": "mobius",
+   "pred": "mobius",
+   "correct": true,
+   "raw": "{\"motif_id\": \"mobius\"}"
+  },
+  {
+   "id": "adv4:scene_paper_streamer:mobius",
+   "task": "scene2motif_family4",
+   "split": "adversarial",
+   "answer": "mobius",
+   "pred": "mobius",
+   "correct": true,
+   "raw": "{\"motif_id\": \"mobius\"}"
+  },
+  {
+   "id": "adv4:scene_seat_belt:mobius",
+   "task": "scene2motif_family4",
+   "split": "adversarial",
+   "answer": "mobius",
+   "pred": "spiral",
+   "correct": false,
+   "raw": "{\"motif_id\": \"spiral\"}"
+  },
+  {
+   "id": "adv4:scene_silk_band:mobius",
+   "task": "scene2motif_family4",
+   "split": "adversarial",
+   "answer": "mobius",
+   "pred": "mobius",
+   "correct": true,
+   "raw": "{\"motif_id\": \"mobius\"}"
+  },
+  {
+   "id": "adv4:scene_wool_scarf:mobius",
+   "task": "scene2motif_family4",
+   "split": "adversarial",
+   "answer": "mobius",
+   "pred": "mobius",
+   "correct": true,
+   "raw": "{\"motif_id\": \"mobius\"}"
+  },
+  {
+   "id": "adv4:scene_fishing_lines:braiding",
+   "task": "scene2motif_family4",
+   "split": "adversarial",
+   "answer": "braiding",
+   "pred": "braiding",
+   "correct": true,
+   "raw": "{\"motif_id\": \"braiding\"}"
+  },
+  {
+   "id": "adv4:scene_garden_hoses:braiding",
+   "task": "scene2motif_family4",
+   "split": "adversarial",
+   "answer": "braiding",
+   "pred": "braiding",
+   "correct": true,
+   "raw": "{\"motif_id\": \"braiding\"}"
+  },
+  {
+   "id": "adv4:scene_hair_braid:braiding",
+   "task": "scene2motif_family4",
+   "split": "adversarial",
+   "answer": "braiding",
+   "pred": "braiding",
+   "correct": true,
+   "raw": "{\"motif_id\": \"braiding\"}"
+  },
+  {
+   "id": "adv4:scene_interchange:braiding",
+   "task": "scene2motif_family4",
+   "split": "adversarial",
+   "answer": "braiding",
+   "pred": "braiding",
+   "correct": true,
+   "raw": "{\"motif_id\": \"braiding\"}"
+  },
+  {
+   "id": "adv4:scene_prayer_banners:braiding",
+   "task": "scene2motif_family4",
+   "split": "adversarial",
+   "answer": "braiding",
+   "pred": "braiding",
+   "correct": true,
+   "raw": "{\"motif_id\": \"braiding\"}"
+  },
+  {
+   "id": "adv4:scene_seaweed_fronds:braiding",
+   "task": "scene2motif_family4",
+   "split": "adversarial",
+   "answer": "braiding",
+   "pred": "braiding",
+   "correct": true,
+   "raw": "{\"motif_id\": \"braiding\"}"
+  },
+  {
+   "id": "adv4:scene_silk_ribbons:braiding",
+   "task": "scene2motif_family4",
+   "split": "adversarial",
+   "answer": "braiding",
+   "pred": "braiding",
+   "correct": true,
+   "raw": "{\"motif_id\": \"braiding\"}"
+  },
+  {
+   "id": "adv4:scene_workshop_cables:braiding",
+   "task": "scene2motif_family4",
+   "split": "adversarial",
+   "answer": "braiding",
+   "pred": "braiding",
+   "correct": true,
+   "raw": "{\"motif_id\": \"braiding\"}"
+  },
+  {
+   "id": "adv4:scene_bakery_glaze:interference",
+   "task": "scene2motif_family4",
+   "split": "adversarial",
+   "answer": "interference",
+   "pred": "interference",
+   "correct": true,
+   "raw": "{\"motif_id\": \"interference\"}"
+  },
+  {
+   "id": "adv4:scene_courtyard_cistern:interference",
+   "task": "scene2motif_family4",
+   "split": "adversarial",
+   "answer": "interference",
+   "pred": "braiding",
+   "correct": false,
+   "raw": "{\"motif_id\": \"braiding\"}"
+  },
+  {
+   "id": "adv4:scene_fountain_basin:interference",
+   "task": "scene2motif_family4",
+   "split": "adversarial",
+   "answer": "interference",
+   "pred": "interference",
+   "correct": true,
+   "raw": "{\"motif_id\": \"interference\"}"
+  },
+  {
+   "id": "adv4:scene_moire_curtains:interference",
+   "task": "scene2motif_family4",
+   "split": "adversarial",
+   "answer": "interference",
+   "pred": "interference",
+   "correct": true,
+   "raw": "{\"motif_id\": \"interference\"}"
+  },
+  {
+   "id": "adv4:scene_reservoir_inlet:interference",
+   "task": "scene2motif_family4",
+   "split": "adversarial",
+   "answer": "interference",
+   "pred": "interference",
+   "correct": true,
+   "raw": "{\"motif_id\": \"interference\"}"
+  },
+  {
+   "id": "adv4:scene_rice_paddy:interference",
+   "task": "scene2motif_family4",
+   "split": "adversarial",
+   "answer": "interference",
+   "pred": "interference",
+   "correct": true,
+   "raw": "{\"motif_id\": \"interference\"}"
+  },
+  {
+   "id": "adv4:scene_salt_pan:interference",
+   "task": "scene2motif_family4",
+   "split": "adversarial",
+   "answer": "interference",
+   "pred": "aperiodic_tiling",
+   "correct": false,
+   "raw": "{\"motif_id\": \"aperiodic_tiling\"}"
+  },
+  {
+   "id": "adv4:scene_soup_bowl:interference",
+   "task": "scene2motif_family4",
+   "split": "adversarial",
+   "answer": "interference",
+   "pred": "interference",
+   "correct": true,
+   "raw": "{\"motif_id\": \"interference\"}"
+  },
+  {
+   "id": "adv4:scene_station_puddle:interference",
+   "task": "scene2motif_family4",
+   "split": "adversarial",
+   "answer": "interference",
+   "pred": "interference",
+   "correct": true,
+   "raw": "{\"motif_id\": \"interference\"}"
+  },
+  {
+   "id": "adv4:scene_two_ripples:interference",
+   "task": "scene2motif_family4",
+   "split": "adversarial",
+   "answer": "interference",
+   "pred": "aperiodic_tiling",
+   "correct": false,
+   "raw": "{\"motif_id\": \"aperiodic_tiling\"}"
+  },
+  {
+   "id": "adv4:scene_archive_boxes:tiling",
+   "task": "scene2motif_family4",
+   "split": "adversarial",
+   "answer": "tiling",
+   "pred": "aperiodic_tiling",
+   "correct": false,
+   "raw": "{\"motif_id\": \"aperiodic_tiling\"}"
+  },
+  {
+   "id": "adv4:scene_courtyard_pavers:tiling",
+   "task": "scene2motif_family4",
+   "split": "adversarial",
+   "answer": "tiling",
+   "pred": "aperiodic_tiling",
+   "correct": false,
+   "raw": "{\"motif_id\": \"aperiodic_tiling\"}"
+  },
+  {
+   "id": "adv4:scene_fruit_crates:tiling",
+   "task": "scene2motif_family4",
+   "split": "adversarial",
+   "answer": "tiling",
+   "pred": "tiling",
+   "correct": true,
+   "raw": "{\"motif_id\": \"tiling\"}"
+  },
+  {
+   "id": "adv4:scene_greenhouse_plots:tiling",
+   "task": "scene2motif_family4",
+   "split": "adversarial",
+   "answer": "tiling",
+   "pred": "tiling",
+   "correct": true,
+   "raw": "{\"motif_id\": \"tiling\"}"
+  },
+  {
+   "id": "adv4:scene_honeycomb:tiling",
+   "task": "scene2motif_family4",
+   "split": "adversarial",
+   "answer": "tiling",
+   "pred": "aperiodic_tiling",
+   "correct": false,
+   "raw": "{\"motif_id\": \"aperiodic_tiling\"}"
+  },
+  {
+   "id": "adv4:scene_lantern_ceiling:tiling",
+   "task": "scene2motif_family4",
+   "split": "adversarial",
+   "answer": "tiling",
+   "pred": "aperiodic_tiling",
+   "correct": false,
+   "raw": "{\"motif_id\": \"aperiodic_tiling\"}"
+  },
+  {
+   "id": "adv4:scene_laundry_baskets:tiling",
+   "task": "scene2motif_family4",
+   "split": "adversarial",
+   "answer": "tiling",
+   "pred": "aperiodic_tiling",
+   "correct": false,
+   "raw": "{\"motif_id\": \"aperiodic_tiling\"}"
+  },
+  {
+   "id": "adv4:scene_reading_cubbies:tiling",
+   "task": "scene2motif_family4",
+   "split": "adversarial",
+   "answer": "tiling",
+   "pred": "tiling",
+   "correct": true,
+   "raw": "{\"motif_id\": \"tiling\"}"
+  },
+  {
+   "id": "adv4:scene_salt_pans:tiling",
+   "task": "scene2motif_family4",
+   "split": "adversarial",
+   "answer": "tiling",
+   "pred": "aperiodic_tiling",
+   "correct": false,
+   "raw": "{\"motif_id\": \"aperiodic_tiling\"}"
+  },
+  {
+   "id": "adv4:scene_terracotta_roof:tiling",
+   "task": "scene2motif_family4",
+   "split": "adversarial",
+   "answer": "tiling",
+   "pred": "aperiodic_tiling",
+   "correct": false,
+   "raw": "{\"motif_id\": \"aperiodic_tiling\"}"
+  },
+  {
+   "id": "adv4:scene_brass_chandelier:hub",
+   "task": "scene2motif_family4",
+   "split": "adversarial",
+   "answer": "hub",
+   "pred": "hub",
+   "correct": true,
+   "raw": "{\"motif_id\": \"hub\"}"
+  },
+  {
+   "id": "adv4:scene_ceiling_fan:hub",
+   "task": "scene2motif_family4",
+   "split": "adversarial",
+   "answer": "hub",
+   "pred": "hub",
+   "correct": true,
+   "raw": "{\"motif_id\": \"hub\"}"
+  },
+  {
+   "id": "adv4:scene_coat_stand:hub",
+   "task": "scene2motif_family4",
+   "split": "adversarial",
+   "answer": "hub",
+   "pred": "bottleneck",
+   "correct": false,
+   "raw": "{\"motif_id\": \"bottleneck\"}"
+  },
+  {
+   "id": "adv4:scene_desert_well:hub",
+   "task": "scene2motif_family4",
+   "split": "adversarial",
+   "answer": "hub",
+   "pred": "hub",
+   "correct": true,
+   "raw": "{\"motif_id\": \"hub\"}"
+  },
+  {
+   "id": "adv4:scene_firework:hub",
+   "task": "scene2motif_family4",
+   "split": "adversarial",
+   "answer": "hub",
+   "pred": "bottleneck",
+   "correct": false,
+   "raw": "{\"motif_id\": \"bottleneck\"}"
+  },
+  {
+   "id": "adv4:scene_garden_parasol:hub",
+   "task": "scene2motif_family4",
+   "split": "adversarial",
+   "answer": "hub",
+   "pred": "bottleneck",
+   "correct": false,
+   "raw": "{\"motif_id\": \"bottleneck\"}"
+  },
+  {
+   "id": "adv4:scene_laundry_pole:hub",
+   "task": "scene2motif_family4",
+   "split": "adversarial",
+   "answer": "hub",
+   "pred": "hub",
+   "correct": true,
+   "raw": "{\"motif_id\": \"hub\"}"
+  },
+  {
+   "id": "adv4:scene_mooring_bollard:hub",
+   "task": "scene2motif_family4",
+   "split": "adversarial",
+   "answer": "hub",
+   "pred": "hub",
+   "correct": true,
+   "raw": "{\"motif_id\": \"hub\"}"
+  },
+  {
+   "id": "adv4:scene_starfish:hub",
+   "task": "scene2motif_family4",
+   "split": "adversarial",
+   "answer": "hub",
+   "pred": "hub",
+   "correct": true,
+   "raw": "{\"motif_id\": \"hub\"}"
+  },
+  {
+   "id": "adv4:scene_traffic_roundabout:hub",
+   "task": "scene2motif_family4",
+   "split": "adversarial",
+   "answer": "hub",
+   "pred": "hub",
+   "correct": true,
+   "raw": "{\"motif_id\": \"hub\"}"
+  },
+  {
+   "id": "adv4:scene_harbor_slips:diagonalization",
+   "task": "scene2motif_family4",
+   "split": "adversarial",
+   "answer": "diagonalization",
+   "pred": "diagonalization",
+   "correct": true,
+   "raw": "{\"motif_id\": \"diagonalization\"}"
+  },
+  {
+   "id": "adv4:scene_jacquard_loom:diagonalization",
+   "task": "scene2motif_family4",
+   "split": "adversarial",
+   "answer": "diagonalization",
+   "pred": "diagonalization",
+   "correct": true,
+   "raw": "{\"motif_id\": \"diagonalization\"}"
+  },
+  {
+   "id": "adv4:scene_monastery_candles:diagonalization",
+   "task": "scene2motif_family4",
+   "split": "adversarial",
+   "answer": "diagonalization",
+   "pred": "diagonalization",
+   "correct": true,
+   "raw": "{\"motif_id\": \"diagonalization\"}"
+  },
+  {
+   "id": "adv4:scene_parking_bays:diagonalization",
+   "task": "scene2motif_family4",
+   "split": "adversarial",
+   "answer": "diagonalization",
+   "pred": "diagonalization",
+   "correct": true,
+   "raw": "{\"motif_id\": \"diagonalization\"}"
+  },
+  {
+   "id": "adv4:scene_stained_glass_panes:diagonalization",
+   "task": "scene2motif_family4",
+   "split": "adversarial",
+   "answer": "diagonalization",
+   "pred": "diagonalization",
+   "correct": true,
+   "raw": "{\"motif_id\": \"diagonalization\"}"
+  },
+  {
+   "id": "adv4:scene_desert_water_jars:infinite_descent",
+   "task": "scene2motif_family4",
+   "split": "adversarial",
+   "answer": "infinite_descent",
+   "pred": "infinite_descent",
+   "correct": true,
+   "raw": "{\"motif_id\": \"infinite_descent\"}"
+  },
+  {
+   "id": "adv4:scene_harbor_boats:infinite_descent",
+   "task": "scene2motif_family4",
+   "split": "adversarial",
+   "answer": "infinite_descent",
+   "pred": "contraction_fixed_point",
+   "correct": false,
+   "raw": "{\"motif_id\": \"contraction_fixed_point\"}"
+  },
+  {
+   "id": "adv4:scene_market_baskets:infinite_descent",
+   "task": "scene2motif_family4",
+   "split": "adversarial",
+   "answer": "infinite_descent",
+   "pred": "infinite_descent",
+   "correct": true,
+   "raw": "{\"motif_id\": \"infinite_descent\"}"
+  },
+  {
+   "id": "adv4:scene_nesting_dolls:infinite_descent",
+   "task": "scene2motif_family4",
+   "split": "adversarial",
+   "answer": "infinite_descent",
+   "pred": "contraction_fixed_point",
+   "correct": false,
+   "raw": "{\"motif_id\": \"contraction_fixed_point\"}"
+  },
+  {
+   "id": "adv4:scene_porcelain_teacups:infinite_descent",
+   "task": "scene2motif_family4",
+   "split": "adversarial",
+   "answer": "infinite_descent",
+   "pred": "infinite_descent",
+   "correct": true,
+   "raw": "{\"motif_id\": \"infinite_descent\"}"
+  },
+  {
+   "id": "adv4:scene_rice_paddy_pools:infinite_descent",
+   "task": "scene2motif_family4",
+   "split": "adversarial",
+   "answer": "infinite_descent",
+   "pred": "infinite_descent",
+   "correct": true,
+   "raw": "{\"motif_id\": \"infinite_descent\"}"
+  },
+  {
+   "id": "adv4:scene_banquet_red_sash:coprime_orbit",
+   "task": "scene2motif_family4",
+   "split": "adversarial",
+   "answer": "coprime_orbit",
+   "pred": "coprime_orbit",
+   "correct": true,
+   "raw": "{\"motif_id\": \"coprime_orbit\"}"
+  },
+  {
+   "id": "adv4:scene_bath_floor_mosaic:coprime_orbit",
+   "task": "scene2motif_family4",
+   "split": "adversarial",
+   "answer": "coprime_orbit",
+   "pred": "coprime_orbit",
+   "correct": true,
+   "raw": "{\"motif_id\": \"coprime_orbit\"}"
+  },
+  {
+   "id": "adv4:scene_cliff_shrine_bridges:coprime_orbit",
+   "task": "scene2motif_family4",
+   "split": "adversarial",
+   "answer": "coprime_orbit",
+   "pred": "coprime_orbit",
+   "correct": true,
+   "raw": "{\"motif_id\": \"coprime_orbit\"}"
+  },
+  {
+   "id": "adv4:scene_dew_grass_filament:coprime_orbit",
+   "task": "scene2motif_family4",
+   "split": "adversarial",
+   "answer": "coprime_orbit",
+   "pred": "coprime_orbit",
+   "correct": true,
+   "raw": "{\"motif_id\": \"coprime_orbit\"}"
+  },
+  {
+   "id": "adv4:scene_glass_jewel_window:coprime_orbit",
+   "task": "scene2motif_family4",
+   "split": "adversarial",
+   "answer": "coprime_orbit",
+   "pred": "coprime_orbit",
+   "correct": true,
+   "raw": "{\"motif_id\": \"coprime_orbit\"}"
+  },
+  {
+   "id": "adv4:scene_maple_pond_cord:coprime_orbit",
+   "task": "scene2motif_family4",
+   "split": "adversarial",
+   "answer": "coprime_orbit",
+   "pred": "coprime_orbit",
+   "correct": true,
+   "raw": "{\"motif_id\": \"coprime_orbit\"}"
+  },
+  {
+   "id": "adv4:scene_plaza_lantern_pass:coprime_orbit",
+   "task": "scene2motif_family4",
+   "split": "adversarial",
+   "answer": "coprime_orbit",
+   "pred": "coprime_orbit",
+   "correct": true,
+   "raw": "{\"motif_id\": \"coprime_orbit\"}"
+  },
+  {
+   "id": "adv4:scene_salt_pan_channels:coprime_orbit",
+   "task": "scene2motif_family4",
+   "split": "adversarial",
+   "answer": "coprime_orbit",
+   "pred": "coprime_orbit",
+   "correct": true,
+   "raw": "{\"motif_id\": \"coprime_orbit\"}"
+  },
+  {
+   "id": "adv4:scene_string_art_star:coprime_orbit",
+   "task": "scene2motif_family4",
+   "split": "adversarial",
+   "answer": "coprime_orbit",
+   "pred": "coprime_orbit",
+   "correct": true,
+   "raw": "{\"motif_id\": \"coprime_orbit\"}"
+  },
+  {
+   "id": "adv4:scene_woven_basket_lip:coprime_orbit",
+   "task": "scene2motif_family4",
+   "split": "adversarial",
+   "answer": "coprime_orbit",
+   "pred": "coprime_orbit",
+   "correct": true,
+   "raw": "{\"motif_id\": \"coprime_orbit\"}"
+  },
+  {
+   "id": "adv4:scene_mail_sort_wall:pigeonhole",
+   "task": "scene2motif_family4",
+   "split": "adversarial",
+   "answer": "pigeonhole",
+   "pred": "pigeonhole",
+   "correct": true,
+   "raw": "{\"motif_id\": \"pigeonhole\"}"
+  },
+  {
+   "id": "adv4:scene_orchard_crate_harvest:pigeonhole",
+   "task": "scene2motif_family4",
+   "split": "adversarial",
+   "answer": "pigeonhole",
+   "pred": "pigeonhole",
+   "correct": true,
+   "raw": "{\"motif_id\": \"pigeonhole\"}"
+  },
+  {
+   "id": "adv4:scene_pottery_kiln_cubbies:pigeonhole",
+   "task": "scene2motif_family4",
+   "split": "adversarial",
+   "answer": "pigeonhole",
+   "pred": "cycle",
+   "correct": false,
+   "raw": "{\"motif_id\": \"cycle\"}"
+  },
+  {
+   "id": "adv4:scene_swallow_nests:pigeonhole",
+   "task": "scene2motif_family4",
+   "split": "adversarial",
+   "answer": "pigeonhole",
+   "pred": "pigeonhole",
+   "correct": true,
+   "raw": "{\"motif_id\": \"pigeonhole\"}"
+  },
+  {
+   "id": "adv4:scene_tram_depot_bays:pigeonhole",
+   "task": "scene2motif_family4",
+   "split": "adversarial",
+   "answer": "pigeonhole",
+   "pred": "bottleneck",
+   "correct": false,
+   "raw": "{\"motif_id\": \"bottleneck\"}"
+  },
+  {
+   "id": "adv4:scene_candle_wax_pools:projective_duality",
+   "task": "scene2motif_family4",
+   "split": "adversarial",
+   "answer": "projective_duality",
+   "pred": "projective_duality",
+   "correct": true,
+   "raw": "{\"motif_id\": \"projective_duality\"}"
+  },
+  {
+   "id": "adv4:scene_forge_rivets:projective_duality",
+   "task": "scene2motif_family4",
+   "split": "adversarial",
+   "answer": "projective_duality",
+   "pred": "isomorphism",
+   "correct": false,
+   "raw": "{\"motif_id\": \"isomorphism\"}"
+  },
+  {
+   "id": "adv4:scene_joinery_bench:projective_duality",
+   "task": "scene2motif_family4",
+   "split": "adversarial",
+   "answer": "projective_duality",
+   "pred": "projective_duality",
+   "correct": true,
+   "raw": "{\"motif_id\": \"projective_duality\"}"
+  },
+  {
+   "id": "adv4:scene_reef_polyps:projective_duality",
+   "task": "scene2motif_family4",
+   "split": "adversarial",
+   "answer": "projective_duality",
+   "pred": "projective_duality",
+   "correct": true,
+   "raw": "{\"motif_id\": \"projective_duality\"}"
+  },
+  {
+   "id": "adv4:scene_salt_ponds:projective_duality",
+   "task": "scene2motif_family4",
+   "split": "adversarial",
+   "answer": "projective_duality",
+   "pred": "projective_duality",
+   "correct": true,
+   "raw": "{\"motif_id\": \"projective_duality\"}"
+  },
+  {
+   "id": "adv4:scene_spiderweb_dewfall:projective_duality",
+   "task": "scene2motif_family4",
+   "split": "adversarial",
+   "answer": "projective_duality",
+   "pred": "projective_duality",
+   "correct": true,
+   "raw": "{\"motif_id\": \"projective_duality\"}"
+  },
+  {
+   "id": "adv4:scene_stained_glass_lead:projective_duality",
+   "task": "scene2motif_family4",
+   "split": "adversarial",
+   "answer": "projective_duality",
+   "pred": "projective_duality",
+   "correct": true,
+   "raw": "{\"motif_id\": \"projective_duality\"}"
+  },
+  {
+   "id": "adv4:scene_tea_steam_bowls:projective_duality",
+   "task": "scene2motif_family4",
+   "split": "adversarial",
+   "answer": "projective_duality",
+   "pred": "projective_duality",
+   "correct": true,
+   "raw": "{\"motif_id\": \"projective_duality\"}"
+  },
+  {
+   "id": "adv4:scene_acetate_fern:contraction_fixed_point",
+   "task": "scene2motif_family4",
+   "split": "adversarial",
+   "answer": "contraction_fixed_point",
+   "pred": "contraction_fixed_point",
+   "correct": true,
+   "raw": "{\"motif_id\": \"contraction_fixed_point\"}"
+  },
+  {
+   "id": "adv4:scene_bowl_marble_trace:contraction_fixed_point",
+   "task": "scene2motif_family4",
+   "split": "adversarial",
+   "answer": "contraction_fixed_point",
+   "pred": "contraction_fixed_point",
+   "correct": true,
+   "raw": "{\"motif_id\": \"contraction_fixed_point\"}"
+  },
+  {
+   "id": "adv4:scene_chapel_carpets:contraction_fixed_point",
+   "task": "scene2motif_family4",
+   "split": "adversarial",
+   "answer": "contraction_fixed_point",
+   "pred": "contraction_fixed_point",
+   "correct": true,
+   "raw": "{\"motif_id\": \"contraction_fixed_point\"}"
+  },
+  {
+   "id": "adv4:scene_curtain_shadow_steps:contraction_fixed_point",
+   "task": "scene2motif_family4",
+   "split": "adversarial",
+   "answer": "contraction_fixed_point",
+   "pred": "contraction_fixed_point",
+   "correct": true,
+   "raw": "{\"motif_id\": \"contraction_fixed_point\"}"
+  },
+  {
+   "id": "adv4:scene_glass_leadwork:contraction_fixed_point",
+   "task": "scene2motif_family4",
+   "split": "adversarial",
+   "answer": "contraction_fixed_point",
+   "pred": "convergence",
+   "correct": false,
+   "raw": "{\"motif_id\": \"convergence\"}"
+  },
+  {
+   "id": "adv4:scene_raked_sand_pebble:contraction_fixed_point",
+   "task": "scene2motif_family4",
+   "split": "adversarial",
+   "answer": "contraction_fixed_point",
+   "pred": "contraction_fixed_point",
+   "correct": true,
+   "raw": "{\"motif_id\": \"contraction_fixed_point\"}"
+  },
+  {
+   "id": "adv4:scene_salt_pan_channels:contraction_fixed_point",
+   "task": "scene2motif_family4",
+   "split": "adversarial",
+   "answer": "contraction_fixed_point",
+   "pred": "contraction_fixed_point",
+   "correct": true,
+   "raw": "{\"motif_id\": \"contraction_fixed_point\"}"
+  },
+  {
+   "id": "adv4:scene_tile_stairwell:contraction_fixed_point",
+   "task": "scene2motif_family4",
+   "split": "adversarial",
+   "answer": "contraction_fixed_point",
+   "pred": "contraction_fixed_point",
+   "correct": true,
+   "raw": "{\"motif_id\": \"contraction_fixed_point\"}"
+  },
+  {
+   "id": "adv4:scene_you_are_here:contraction_fixed_point",
+   "task": "scene2motif_family4",
+   "split": "adversarial",
+   "answer": "contraction_fixed_point",
+   "pred": "contraction_fixed_point",
+   "correct": true,
+   "raw": "{\"motif_id\": \"contraction_fixed_point\"}"
+  },
+  {
+   "id": "adv4:scene_penrose_floor:aperiodic_tiling",
+   "task": "scene2motif_family4",
+   "split": "adversarial",
+   "answer": "aperiodic_tiling",
+   "pred": "aperiodic_tiling",
+   "correct": true,
+   "raw": "{\"motif_id\": \"aperiodic_tiling\"}"
+  }
+ ]
+}

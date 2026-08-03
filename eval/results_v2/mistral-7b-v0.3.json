@@ -1,0 +1,2423 @@
+{
+ "model": "mistral-7b-v0.3",
+ "base": "http://127.0.0.1:9104/v1",
+ "summary": {
+  "story2motif": {
+   "n": 121,
+   "acc": 0.1901
+  },
+  "theorem2motif": {
+   "n": 25,
+   "acc": 0.28
+  },
+  "xv_story_thm": {
+   "n": 121,
+   "acc": 0.3223
+  }
+ },
+ "records": [
+  {
+   "id": "story:self_reference_en_s0",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "self_reference",
+   "pred": "aperture_and_replication",
+   "correct": false,
+   "raw": " {\"motif_id\": \"aperture_and_replication\"}"
+  },
+  {
+   "id": "story:self_reference_en_s1",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "self_reference",
+   "pred": "apperiodic_tiling",
+   "correct": false,
+   "raw": " {\"motif_id\": \"apperiodic_tiling\"}"
+  },
+  {
+   "id": "story:self_reference_en_s2",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "self_reference",
+   "pred": "apperiodic_tiling",
+   "correct": false,
+   "raw": " {\"motif_id\": \"apperiodic_tiling\"}"
+  },
+  {
+   "id": "story:self_reference_en_s3",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "self_reference",
+   "pred": "aperture_and_closure",
+   "correct": false,
+   "raw": " {\"motif_id\": \"aperture_and_closure\"}"
+  },
+  {
+   "id": "story:self_reference_en_s4",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "self_reference",
+   "pred": "aperture_and_closure",
+   "correct": false,
+   "raw": " {\"motif_id\": \"aperture_and_closure\"}"
+  },
+  {
+   "id": "thm:self_reference",
+   "task": "theorem2motif",
+   "split": "main",
+   "answer": "self_reference",
+   "pred": "diagonalization",
+   "correct": false,
+   "raw": " {\"motif_id\": \"diagonalization\"}"
+  },
+  {
+   "id": "xvs:self_reference_en_s0",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "C",
+   "pred": "one of A-D",
+   "correct": false,
+   "raw": " {\"choice\": \"one of A-D\"}"
+  },
+  {
+   "id": "xvs:self_reference_en_s1",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "D",
+   "pred": "A",
+   "correct": false,
+   "raw": " {\"choice\": \"A\"}"
+  },
+  {
+   "id": "xvs:self_reference_en_s2",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "D",
+   "pred": "A",
+   "correct": false,
+   "raw": " {\"choice\": \"A\"}"
+  },
+  {
+   "id": "xvs:self_reference_en_s3",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "C",
+   "pred": "A",
+   "correct": false,
+   "raw": " {\"choice\": \"A\"}"
+  },
+  {
+   "id": "xvs:self_reference_en_s4",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "A",
+   "pred": "A",
+   "correct": true,
+   "raw": " {\"choice\": \"A\"}"
+  },
+  {
+   "id": "story:recursion_en_s0",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "recursion",
+   "pred": "repetition_with_variation",
+   "correct": false,
+   "raw": " {\"motif_id\": \"repetition_with_variation\"}\n\nThe story exhibits a repetition of certain events or actions with slight variations, creating a pattern that is recognizable but not identical each time. Th"
+  },
+  {
+   "id": "story:recursion_en_s1",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "recursion",
+   "pred": "recursion",
+   "correct": true,
+   "raw": " {\"motif_id\": \"recursion\"}"
+  },
+  {
+   "id": "story:recursion_en_s2",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "recursion",
+   "pred": "repetition_with_variation",
+   "correct": false,
+   "raw": " {\"motif_id\": \"repetition_with_variation\"}"
+  },
+  {
+   "id": "story:recursion_en_s3",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "recursion",
+   "pred": "repetition_with_variation",
+   "correct": false,
+   "raw": " {\"motif_id\": \"repetition_with_variation\"}"
+  },
+  {
+   "id": "story:recursion_en_s4",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "recursion",
+   "pred": "recursion",
+   "correct": true,
+   "raw": " {\"motif_id\": \"recursion\"}"
+  },
+  {
+   "id": "thm:recursion",
+   "task": "theorem2motif",
+   "split": "main",
+   "answer": "recursion",
+   "pred": "apperiodic_tiling",
+   "correct": false,
+   "raw": " {\"motif_id\": \"apperiodic_tiling\"}"
+  },
+  {
+   "id": "xvs:recursion_en_s0",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "B",
+   "pred": "A",
+   "correct": false,
+   "raw": " {\"choice\": \"A\"}"
+  },
+  {
+   "id": "xvs:recursion_en_s1",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "A",
+   "pred": "A",
+   "correct": true,
+   "raw": " {\"choice\": \"A\"}"
+  },
+  {
+   "id": "xvs:recursion_en_s2",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "D",
+   "pred": "A",
+   "correct": false,
+   "raw": " {\"choice\": \"A\"}"
+  },
+  {
+   "id": "xvs:recursion_en_s3",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "D",
+   "pred": "A",
+   "correct": false,
+   "raw": " {\"choice\": \"A\"}"
+  },
+  {
+   "id": "xvs:recursion_en_s4",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "C",
+   "pred": "A",
+   "correct": false,
+   "raw": " {\"choice\": \"A\"}"
+  },
+  {
+   "id": "story:nesting_en_s0",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "nesting",
+   "pred": "projective_duality",
+   "correct": false,
+   "raw": " {\"motif_id\": \"projective_duality\"}"
+  },
+  {
+   "id": "story:nesting_en_s1",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "nesting",
+   "pred": "alternation",
+   "correct": false,
+   "raw": " {\"motif_id\": \"alternation\"}"
+  },
+  {
+   "id": "story:nesting_en_s2",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "nesting",
+   "pred": "apperiodic_tiling",
+   "correct": false,
+   "raw": " {\"motif_id\": \"apperiodic_tiling\"}"
+  },
+  {
+   "id": "story:nesting_en_s3",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "nesting",
+   "pred": "coprime_orbit",
+   "correct": false,
+   "raw": " {\"motif_id\": \"coprime_orbit\"}"
+  },
+  {
+   "id": "story:nesting_en_s4",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "nesting",
+   "pred": "aperture_and_closure",
+   "correct": false,
+   "raw": " {\"motif_id\": \"aperture_and_closure\"}\n\nThe story presents a series of nested narratives, each starting with \"Once upon a time...\" and featuring a discovery of a small object containing a smaller objec"
+  },
+  {
+   "id": "thm:nesting",
+   "task": "theorem2motif",
+   "split": "main",
+   "answer": "nesting",
+   "pred": "convergence",
+   "correct": false,
+   "raw": " {\"motif_id\": \"convergence\"}"
+  },
+  {
+   "id": "xvs:nesting_en_s0",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "B",
+   "pred": "A",
+   "correct": false,
+   "raw": " {\"choice\": \"A\"}"
+  },
+  {
+   "id": "xvs:nesting_en_s1",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "D",
+   "pred": "one of A-D",
+   "correct": false,
+   "raw": " {\"choice\": \"one of A-D\"}"
+  },
+  {
+   "id": "xvs:nesting_en_s2",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "B",
+   "pred": "A",
+   "correct": false,
+   "raw": " {\"choice\": \"A\"}"
+  },
+  {
+   "id": "xvs:nesting_en_s3",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "B",
+   "pred": "A",
+   "correct": false,
+   "raw": " {\"choice\": \"A\"}"
+  },
+  {
+   "id": "xvs:nesting_en_s4",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "D",
+   "pred": "A",
+   "correct": false,
+   "raw": " {\"choice\": \"A\"}"
+  },
+  {
+   "id": "story:cycle_en_s0",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "cycle",
+   "pred": "recursion",
+   "correct": false,
+   "raw": " {\"motif_id\": \"recursion\"}"
+  },
+  {
+   "id": "story:cycle_en_s1",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "cycle",
+   "pred": "alternation",
+   "correct": false,
+   "raw": " {\"motif_id\": \"alternation\"}"
+  },
+  {
+   "id": "story:cycle_en_s2",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "cycle",
+   "pred": "aperture_and_replication",
+   "correct": false,
+   "raw": " {\"motif_id\": \"aperture_and_replication\"}\n\nThe story exhibits an aperture-and-replication motif, where the sequence of events is repeated with a slight variation each time. The blue ribbon tied by Mar"
+  },
+  {
+   "id": "story:cycle_en_s3",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "cycle",
+   "pred": "aperiodic_tiling",
+   "correct": false,
+   "raw": " {\"motif_id\": \"aperiodic_tiling\"}"
+  },
+  {
+   "id": "story:cycle_en_s4",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "cycle",
+   "pred": "repetition",
+   "correct": false,
+   "raw": " {\"motif_id\": \"repetition\"}\n\nThe story exhibits a repetition of events, with the same sequence of actions and characters repeating twice. This can be considered a form of repetition, where the same ev"
+  },
+  {
+   "id": "thm:cycle",
+   "task": "theorem2motif",
+   "split": "main",
+   "answer": "cycle",
+   "pred": "coprime_orbit",
+   "correct": false,
+   "raw": " {\"motif_id\": \"coprime_orbit\"}"
+  },
+  {
+   "id": "xvs:cycle_en_s0",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "B",
+   "pred": "A",
+   "correct": false,
+   "raw": " {\"choice\": \"A\"}"
+  },
+  {
+   "id": "xvs:cycle_en_s1",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "B",
+   "pred": "A",
+   "correct": false,
+   "raw": " {\"choice\": \"A\"}"
+  },
+  {
+   "id": "xvs:cycle_en_s2",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "A",
+   "pred": "A",
+   "correct": true,
+   "raw": " {\"choice\": \"A\"}"
+  },
+  {
+   "id": "xvs:cycle_en_s3",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "C",
+   "pred": "A",
+   "correct": false,
+   "raw": " {\"choice\": \"A\"}"
+  },
+  {
+   "id": "xvs:cycle_en_s4",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "C",
+   "pred": "A",
+   "correct": false,
+   "raw": " {\"choice\": \"A\"}"
+  },
+  {
+   "id": "story:symmetry_en_s0",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "symmetry",
+   "pred": "cycle",
+   "correct": false,
+   "raw": " {\"motif_id\": \"cycle\"}"
+  },
+  {
+   "id": "story:symmetry_en_s1",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "symmetry",
+   "pred": "repetition",
+   "correct": false,
+   "raw": " {\"motif_id\": \"repetition\"}"
+  },
+  {
+   "id": "story:symmetry_en_s2",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "symmetry",
+   "pred": "repetition",
+   "correct": false,
+   "raw": " {\"motif_id\": \"repetition\"}"
+  },
+  {
+   "id": "story:symmetry_en_s3",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "symmetry",
+   "pred": "repetition",
+   "correct": false,
+   "raw": " {\"motif_id\": \"repetition\"}"
+  },
+  {
+   "id": "story:symmetry_en_s4",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "symmetry",
+   "pred": "alternation",
+   "correct": false,
+   "raw": " {\"motif_id\": \"alternation\"}"
+  },
+  {
+   "id": "thm:symmetry",
+   "task": "theorem2motif",
+   "split": "main",
+   "answer": "symmetry",
+   "pred": "ap Eric_H_Stanley_Ulam_Soliton",
+   "correct": false,
+   "raw": " {\"motif_id\": \"ap Eric_H_Stanley_Ulam_Soliton\"}"
+  },
+  {
+   "id": "xvs:symmetry_en_s0",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "A",
+   "pred": "A",
+   "correct": true,
+   "raw": " {\"choice\": \"A\"}"
+  },
+  {
+   "id": "xvs:symmetry_en_s1",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "D",
+   "pred": "A",
+   "correct": false,
+   "raw": " {\"choice\": \"A\"}"
+  },
+  {
+   "id": "xvs:symmetry_en_s2",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "D",
+   "pred": "A",
+   "correct": false,
+   "raw": " {\"choice\": \"A\"}"
+  },
+  {
+   "id": "xvs:symmetry_en_s3",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "C",
+   "pred": "A",
+   "correct": false,
+   "raw": " {\"choice\": \"A\"}"
+  },
+  {
+   "id": "xvs:symmetry_en_s4",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "D",
+   "pred": "A",
+   "correct": false,
+   "raw": " {\"choice\": \"A\"}"
+  },
+  {
+   "id": "story:alternation_en_s0",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "alternation",
+   "pred": "alternation",
+   "correct": true,
+   "raw": " {\"motif_id\": \"alternation\"}"
+  },
+  {
+   "id": "story:alternation_en_s1",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "alternation",
+   "pred": "alternation",
+   "correct": true,
+   "raw": " {\"motif_id\": \"alternation\"}"
+  },
+  {
+   "id": "story:alternation_en_s2",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "alternation",
+   "pred": "alternation",
+   "correct": true,
+   "raw": " {\"motif_id\": \"alternation\"}"
+  },
+  {
+   "id": "story:alternation_en_s3",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "alternation",
+   "pred": "alternation",
+   "correct": true,
+   "raw": " {\"motif_id\": \"alternation\"}"
+  },
+  {
+   "id": "story:alternation_en_s4",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "alternation",
+   "pred": "alternation",
+   "correct": true,
+   "raw": " {\"motif_id\": \"alternation\"}"
+  },
+  {
+   "id": "thm:alternation",
+   "task": "theorem2motif",
+   "split": "main",
+   "answer": "alternation",
+   "pred": "bipartite_graph_coloring",
+   "correct": false,
+   "raw": " {\"motif_id\": \"bipartite_graph_coloring\"}"
+  },
+  {
+   "id": "xvs:alternation_en_s0",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "B",
+   "pred": "A",
+   "correct": false,
+   "raw": " {\"choice\": \"A\"}"
+  },
+  {
+   "id": "xvs:alternation_en_s1",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "A",
+   "pred": "A",
+   "correct": true,
+   "raw": " {\"choice\": \"A\"}"
+  },
+  {
+   "id": "xvs:alternation_en_s2",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "B",
+   "pred": "A",
+   "correct": false,
+   "raw": " {\"choice\": \"A\"}"
+  },
+  {
+   "id": "xvs:alternation_en_s3",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "C",
+   "pred": "A",
+   "correct": false,
+   "raw": " {\"choice\": \"A\"}"
+  },
+  {
+   "id": "xvs:alternation_en_s4",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "D",
+   "pred": "D",
+   "correct": true,
+   "raw": " {\"choice\": \"D\"}"
+  },
+  {
+   "id": "story:spiral_en_s0",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "spiral",
+   "pred": "spiral",
+   "correct": true,
+   "raw": " {\"motif_id\": \"spiral\"}"
+  },
+  {
+   "id": "story:spiral_en_s1",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "spiral",
+   "pred": "cycle",
+   "correct": false,
+   "raw": " {\"motif_id\": \"cycle\"}"
+  },
+  {
+   "id": "story:spiral_en_s2",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "spiral",
+   "pred": "cycle",
+   "correct": false,
+   "raw": " {\"motif_id\": \"cycle\"}"
+  },
+  {
+   "id": "story:spiral_en_s3",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "spiral",
+   "pred": "cycle",
+   "correct": false,
+   "raw": " {\"motif_id\": \"cycle\"}"
+  },
+  {
+   "id": "story:spiral_en_s4",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "spiral",
+   "pred": "spiral",
+   "correct": true,
+   "raw": " {\"motif_id\": \"spiral\"}"
+  },
+  {
+   "id": "thm:spiral",
+   "task": "theorem2motif",
+   "split": "main",
+   "answer": "spiral",
+   "pred": "aperiodic_tiling",
+   "correct": false,
+   "raw": " {\"motif_id\": \"aperiodic_tiling\"}"
+  },
+  {
+   "id": "xvs:spiral_en_s0",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "A",
+   "pred": "A",
+   "correct": true,
+   "raw": " {\"choice\": \"A\"}"
+  },
+  {
+   "id": "xvs:spiral_en_s1",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "D",
+   "pred": "C",
+   "correct": false,
+   "raw": " {\"choice\": \"C\"}"
+  },
+  {
+   "id": "xvs:spiral_en_s2",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "D",
+   "pred": "A",
+   "correct": false,
+   "raw": " {\"choice\": \"A\"}"
+  },
+  {
+   "id": "xvs:spiral_en_s3",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "C",
+   "pred": "A",
+   "correct": false,
+   "raw": " {\"choice\": \"A\"}"
+  },
+  {
+   "id": "xvs:spiral_en_s4",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "B",
+   "pred": "A",
+   "correct": false,
+   "raw": " {\"choice\": \"A\"}"
+  },
+  {
+   "id": "story:convergence_en_s0",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "convergence",
+   "pred": "aperture_and_filling",
+   "correct": false,
+   "raw": " {\"motif_id\": \"aperture_and_filling\"}\n\nThe story presents an aperture-and-filling motif, where each character (aperture) carries out a specific activity (filling) in a different location (Oakmere, Red"
+  },
+  {
+   "id": "story:convergence_en_s1",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "convergence",
+   "pred": "aperture_and_filling",
+   "correct": false,
+   "raw": " {\"motif_id\": \"aperture_and_filling\"}\n\nThe story presents an aperture-and-filling motif, where three characters (Alice, Bruno, and Clara) each perform an action (leaving, carrying, baking, feeding, me"
+  },
+  {
+   "id": "story:convergence_en_s2",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "convergence",
+   "pred": "alternation",
+   "correct": false,
+   "raw": " {\"motif_id\": \"alternation\"}"
+  },
+  {
+   "id": "story:convergence_en_s3",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "convergence",
+   "pred": "aperture_and_filling",
+   "correct": false,
+   "raw": " {\"motif_id\": \"aperture_and_filling\"}\n\nThe story presents an aperture-and-filling motif, where three distinct characters perform separate actions in different locations, and then they all meet at a co"
+  },
+  {
+   "id": "story:convergence_en_s4",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "convergence",
+   "pred": "coprime_orbit",
+   "correct": false,
+   "raw": " {\"motif_id\": \"coprime_orbit\"}"
+  },
+  {
+   "id": "thm:convergence",
+   "task": "theorem2motif",
+   "split": "main",
+   "answer": "convergence",
+   "pred": "convergence",
+   "correct": true,
+   "raw": " {\"motif_id\": \"convergence\"}"
+  },
+  {
+   "id": "xvs:convergence_en_s0",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "B",
+   "pred": "A",
+   "correct": false,
+   "raw": " {\"choice\": \"A\"}"
+  },
+  {
+   "id": "xvs:convergence_en_s1",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "A",
+   "pred": "D",
+   "correct": false,
+   "raw": " {\"choice\": \"D\"}"
+  },
+  {
+   "id": "xvs:convergence_en_s2",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "A",
+   "pred": "A",
+   "correct": true,
+   "raw": " {\"choice\": \"A\"}"
+  },
+  {
+   "id": "xvs:convergence_en_s3",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "C",
+   "pred": "A",
+   "correct": false,
+   "raw": " {\"choice\": \"A\"}"
+  },
+  {
+   "id": "xvs:convergence_en_s4",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "B",
+   "pred": "B",
+   "correct": true,
+   "raw": " {\"choice\": \"B\"}"
+  },
+  {
+   "id": "story:bottleneck_en_s0",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "bottleneck",
+   "pred": "caravan_messenger_fugitive",
+   "correct": false,
+   "raw": " {\"motif_id\": \"caravan_messenger_fugitive\"}\n\nThe given short story can be seen as realizing a motif of \"caravan, messenger, fugitive\" where each character or group (caravan, messenger, fugitive) goes "
+  },
+  {
+   "id": "story:bottleneck_en_s1",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "bottleneck",
+   "pred": "caravan_messenger_fugitive_crossing",
+   "correct": false,
+   "raw": " {\"motif_id\": \"caravan_messenger_fugitive_crossing\"}"
+  },
+  {
+   "id": "story:bottleneck_en_s2",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "bottleneck",
+   "pred": "caravan_messenger_fugitive_crossing",
+   "correct": false,
+   "raw": " {\"motif_id\": \"caravan_messenger_fugitive_crossing\"}"
+  },
+  {
+   "id": "story:bottleneck_en_s3",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "bottleneck",
+   "pred": "caravan_messenger_fugitive_cycle",
+   "correct": false,
+   "raw": " {\"motif_id\": \"caravan_messenger_fugitive_cycle\"}"
+  },
+  {
+   "id": "story:bottleneck_en_s4",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "bottleneck",
+   "pred": "caravan_messenger_fugitive_crossing",
+   "correct": false,
+   "raw": " {\"motif_id\": \"caravan_messenger_fugitive_crossing\"}"
+  },
+  {
+   "id": "thm:bottleneck",
+   "task": "theorem2motif",
+   "split": "main",
+   "answer": "bottleneck",
+   "pred": "bottleneck",
+   "correct": true,
+   "raw": " {\"motif_id\": \"bottleneck\"}"
+  },
+  {
+   "id": "xvs:bottleneck_en_s0",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "C",
+   "pred": "A",
+   "correct": false,
+   "raw": " {\"choice\": \"A\"}"
+  },
+  {
+   "id": "xvs:bottleneck_en_s1",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "C",
+   "pred": "A",
+   "correct": false,
+   "raw": " {\"choice\": \"A\"}"
+  },
+  {
+   "id": "xvs:bottleneck_en_s2",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "A",
+   "pred": "A",
+   "correct": true,
+   "raw": " {\"choice\": \"A\"}"
+  },
+  {
+   "id": "xvs:bottleneck_en_s3",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "A",
+   "pred": "A",
+   "correct": true,
+   "raw": " {\"choice\": \"A\"}"
+  },
+  {
+   "id": "xvs:bottleneck_en_s4",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "A",
+   "pred": "A",
+   "correct": true,
+   "raw": " {\"choice\": \"A\"}"
+  },
+  {
+   "id": "story:symmetry_breaking_en_s0",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "symmetry_breaking",
+   "pred": "apperiodic_tiling",
+   "correct": false,
+   "raw": " {\"motif_id\": \"apperiodic_tiling\"}"
+  },
+  {
+   "id": "story:symmetry_breaking_en_s1",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "symmetry_breaking",
+   "pred": "aperture_and_filling",
+   "correct": false,
+   "raw": " {\"motif_id\": \"aperture_and_filling\"}\n\nThe story presents an aperture-and-filling motif, where the wind is the aperture and the various characters and actions fill the space around it. The wind is pre"
+  },
+  {
+   "id": "story:symmetry_breaking_en_s2",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "symmetry_breaking",
+   "pred": "aperture_and_filling",
+   "correct": false,
+   "raw": " {\"motif_id\": \"aperture_and_filling\"}\n\nThe short story exhibits an \"aperture and filling\" motif, where an empty space (the unsold loaf) is filled by a force (the wind) that enters through an opening ("
+  },
+  {
+   "id": "story:symmetry_breaking_en_s3",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "symmetry_breaking",
+   "pred": "coprime_orbit",
+   "correct": false,
+   "raw": " {\"motif_id\": \"coprime_orbit\"}"
+  },
+  {
+   "id": "story:symmetry_breaking_en_s4",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "symmetry_breaking",
+   "pred": "apetric_tiling",
+   "correct": false,
+   "raw": " {\"motif_id\": \"apetric_tiling\"}"
+  },
+  {
+   "id": "thm:symmetry_breaking",
+   "task": "theorem2motif",
+   "split": "main",
+   "answer": "symmetry_breaking",
+   "pred": "convergence",
+   "correct": false,
+   "raw": " {\"motif_id\": \"convergence\"}"
+  },
+  {
+   "id": "xvs:symmetry_breaking_en_s0",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "B",
+   "pred": "A",
+   "correct": false,
+   "raw": " {\"choice\": \"A\"}"
+  },
+  {
+   "id": "xvs:symmetry_breaking_en_s1",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "C",
+   "pred": "A",
+   "correct": false,
+   "raw": " {\"choice\": \"A\"}"
+  },
+  {
+   "id": "xvs:symmetry_breaking_en_s2",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "A",
+   "pred": "A",
+   "correct": true,
+   "raw": " {\"choice\": \"A\"}"
+  },
+  {
+   "id": "xvs:symmetry_breaking_en_s3",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "C",
+   "pred": "A",
+   "correct": false,
+   "raw": " {\"choice\": \"A\"}"
+  },
+  {
+   "id": "xvs:symmetry_breaking_en_s4",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "C",
+   "pred": "A",
+   "correct": false,
+   "raw": " {\"choice\": \"A\"}"
+  },
+  {
+   "id": "story:strange_loop_en_s0",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "strange_loop",
+   "pred": "strange_loop",
+   "correct": true,
+   "raw": " {\"motif_id\": \"strange_loop\"}"
+  },
+  {
+   "id": "story:strange_loop_en_s1",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "strange_loop",
+   "pred": "strange_loop",
+   "correct": true,
+   "raw": " {\"motif_id\": \"strange_loop\"}"
+  },
+  {
+   "id": "story:strange_loop_en_s2",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "strange_loop",
+   "pred": "strange_loop",
+   "correct": true,
+   "raw": " {\"motif_id\": \"strange_loop\"}"
+  },
+  {
+   "id": "story:strange_loop_en_s3",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "strange_loop",
+   "pred": "strange_loop",
+   "correct": true,
+   "raw": " {\"motif_id\": \"strange_loop\"}"
+  },
+  {
+   "id": "story:strange_loop_en_s4",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "strange_loop",
+   "pred": "strange_loop",
+   "correct": true,
+   "raw": " {\"motif_id\": \"strange_loop\"}"
+  },
+  {
+   "id": "thm:strange_loop",
+   "task": "theorem2motif",
+   "split": "main",
+   "answer": "strange_loop",
+   "pred": "contraction_fixed_point",
+   "correct": false,
+   "raw": " {\"motif_id\": \"contraction_fixed_point\"}"
+  },
+  {
+   "id": "xvs:strange_loop_en_s0",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "C",
+   "pred": "A",
+   "correct": false,
+   "raw": " {\"choice\": \"A\"}"
+  },
+  {
+   "id": "xvs:strange_loop_en_s1",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "C",
+   "pred": "C",
+   "correct": true,
+   "raw": " {\"choice\": \"C\"}"
+  },
+  {
+   "id": "xvs:strange_loop_en_s2",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "A",
+   "pred": "A",
+   "correct": true,
+   "raw": " {\"choice\": \"A\"}"
+  },
+  {
+   "id": "xvs:strange_loop_en_s3",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "A",
+   "pred": "A",
+   "correct": true,
+   "raw": " {\"choice\": \"A\"}"
+  },
+  {
+   "id": "xvs:strange_loop_en_s4",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "B",
+   "pred": "A",
+   "correct": false,
+   "raw": " {\"choice\": \"A\"}"
+  },
+  {
+   "id": "story:figure_ground_en_s1",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "figure_ground",
+   "pred": "alternation",
+   "correct": false,
+   "raw": " {\"motif_id\": \"alternation\"}"
+  },
+  {
+   "id": "story:figure_ground_en_s2",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "figure_ground",
+   "pred": "cycle",
+   "correct": false,
+   "raw": " {\"motif_id\": \"cycle\"}"
+  },
+  {
+   "id": "story:figure_ground_en_s3",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "figure_ground",
+   "pred": "cycle",
+   "correct": false,
+   "raw": " {\"motif_id\": \"cycle\"}"
+  },
+  {
+   "id": "story:figure_ground_en_s4",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "figure_ground",
+   "pred": "figure_ground",
+   "correct": true,
+   "raw": " {\"motif_id\": \"figure_ground\"}"
+  },
+  {
+   "id": "thm:figure_ground",
+   "task": "theorem2motif",
+   "split": "main",
+   "answer": "figure_ground",
+   "pred": "diagonalization",
+   "correct": false,
+   "raw": " {\"motif_id\": \"diagonalization\"}"
+  },
+  {
+   "id": "xvs:figure_ground_en_s1",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "D",
+   "pred": "A",
+   "correct": false,
+   "raw": " {\"choice\": \"A\"}"
+  },
+  {
+   "id": "xvs:figure_ground_en_s2",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "D",
+   "pred": "A",
+   "correct": false,
+   "raw": " {\"choice\": \"A\"}"
+  },
+  {
+   "id": "xvs:figure_ground_en_s3",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "B",
+   "pred": "A",
+   "correct": false,
+   "raw": " {\"choice\": \"A\"}"
+  },
+  {
+   "id": "xvs:figure_ground_en_s4",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "A",
+   "pred": "A",
+   "correct": true,
+   "raw": " {\"choice\": \"A\"}"
+  },
+  {
+   "id": "story:isomorphism_en_s0",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "isomorphism",
+   "pred": "projective_duality",
+   "correct": false,
+   "raw": " {\"motif_id\": \"projective_duality\"}"
+  },
+  {
+   "id": "story:isomorphism_en_s1",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "isomorphism",
+   "pred": "projective_duality",
+   "correct": false,
+   "raw": " {\"motif_id\": \"projective_duality\"}"
+  },
+  {
+   "id": "story:isomorphism_en_s2",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "isomorphism",
+   "pred": "projective_duality",
+   "correct": false,
+   "raw": " {\"motif_id\": \"projective_duality\"}"
+  },
+  {
+   "id": "story:isomorphism_en_s3",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "isomorphism",
+   "pred": "alternation",
+   "correct": false,
+   "raw": " {\"motif_id\": \"alternation\"}"
+  },
+  {
+   "id": "story:isomorphism_en_s4",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "isomorphism",
+   "pred": "projective_duality",
+   "correct": false,
+   "raw": " {\"motif_id\": \"projective_duality\"}"
+  },
+  {
+   "id": "thm:isomorphism",
+   "task": "theorem2motif",
+   "split": "main",
+   "answer": "isomorphism",
+   "pred": "recursion",
+   "correct": false,
+   "raw": " {\"motif_id\": \"recursion\"}"
+  },
+  {
+   "id": "xvs:isomorphism_en_s0",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "C",
+   "pred": "A",
+   "correct": false,
+   "raw": " {\"choice\": \"A\"}"
+  },
+  {
+   "id": "xvs:isomorphism_en_s1",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "A",
+   "pred": "A",
+   "correct": true,
+   "raw": " {\"choice\": \"A\"}"
+  },
+  {
+   "id": "xvs:isomorphism_en_s2",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "B",
+   "pred": "A",
+   "correct": false,
+   "raw": " {\"choice\": \"A\"}"
+  },
+  {
+   "id": "xvs:isomorphism_en_s3",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "C",
+   "pred": "A",
+   "correct": false,
+   "raw": " {\"choice\": \"A\"}"
+  },
+  {
+   "id": "xvs:isomorphism_en_s4",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "C",
+   "pred": "A",
+   "correct": false,
+   "raw": " {\"choice\": \"A\"}"
+  },
+  {
+   "id": "story:mobius_en_s0",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "mobius",
+   "pred": "symmetry",
+   "correct": false,
+   "raw": " {\"motif_id\": \"symmetry\"}"
+  },
+  {
+   "id": "story:mobius_en_s1",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "mobius",
+   "pred": "figure_ground",
+   "correct": false,
+   "raw": " {\"motif_id\": \"figure_ground\"}"
+  },
+  {
+   "id": "story:mobius_en_s2",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "mobius",
+   "pred": "projective_duality",
+   "correct": false,
+   "raw": " {\"motif_id\": \"projective_duality\"}"
+  },
+  {
+   "id": "story:mobius_en_s3",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "mobius",
+   "pred": "symmetry",
+   "correct": false,
+   "raw": " {\"motif_id\": \"symmetry\"}"
+  },
+  {
+   "id": "story:mobius_en_s4",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "mobius",
+   "pred": "symmetry",
+   "correct": false,
+   "raw": " {\"motif_id\": \"symmetry\"}"
+  },
+  {
+   "id": "thm:mobius",
+   "task": "theorem2motif",
+   "split": "main",
+   "answer": "mobius",
+   "pred": "aperiodic_tiling",
+   "correct": false,
+   "raw": " {\"motif_id\": \"aperiodic_tiling\"}"
+  },
+  {
+   "id": "xvs:mobius_en_s0",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "D",
+   "pred": "A",
+   "correct": false,
+   "raw": " {\"choice\": \"A\"}"
+  },
+  {
+   "id": "xvs:mobius_en_s1",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "C",
+   "pred": "A",
+   "correct": false,
+   "raw": " {\"choice\": \"A\"}"
+  },
+  {
+   "id": "xvs:mobius_en_s2",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "C",
+   "pred": "A",
+   "correct": false,
+   "raw": " {\"choice\": \"A\"}"
+  },
+  {
+   "id": "xvs:mobius_en_s3",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "D",
+   "pred": "A",
+   "correct": false,
+   "raw": " {\"choice\": \"A\"}"
+  },
+  {
+   "id": "xvs:mobius_en_s4",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "B",
+   "pred": "A",
+   "correct": false,
+   "raw": " {\"choice\": \"A\"}"
+  },
+  {
+   "id": "story:braiding_en_s0",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "braiding",
+   "pred": "alternation",
+   "correct": false,
+   "raw": " {\"motif_id\": \"alternation\"}"
+  },
+  {
+   "id": "story:braiding_en_s1",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "braiding",
+   "pred": "alternation",
+   "correct": false,
+   "raw": " {\"motif_id\": \"alternation\"}"
+  },
+  {
+   "id": "story:braiding_en_s2",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "braiding",
+   "pred": "alternation",
+   "correct": false,
+   "raw": " {\"motif_id\": \"alternation\"}"
+  },
+  {
+   "id": "story:braiding_en_s3",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "braiding",
+   "pred": "alternation",
+   "correct": false,
+   "raw": " {\"motif_id\": \"alternation\"}"
+  },
+  {
+   "id": "story:braiding_en_s4",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "braiding",
+   "pred": "alternation",
+   "correct": false,
+   "raw": " {\"motif_id\": \"alternation\"}"
+  },
+  {
+   "id": "thm:braiding",
+   "task": "theorem2motif",
+   "split": "main",
+   "answer": "braiding",
+   "pred": "braiding",
+   "correct": true,
+   "raw": " {\"motif_id\": \"braiding\"}"
+  },
+  {
+   "id": "xvs:braiding_en_s0",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "C",
+   "pred": "A",
+   "correct": false,
+   "raw": " {\"choice\": \"A\"}"
+  },
+  {
+   "id": "xvs:braiding_en_s1",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "C",
+   "pred": "A",
+   "correct": false,
+   "raw": " {\"choice\": \"A\"}"
+  },
+  {
+   "id": "xvs:braiding_en_s2",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "A",
+   "pred": "A",
+   "correct": true,
+   "raw": " {\"choice\": \"A\"}"
+  },
+  {
+   "id": "xvs:braiding_en_s3",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "B",
+   "pred": "A",
+   "correct": false,
+   "raw": " {\"choice\": \"A\"}"
+  },
+  {
+   "id": "xvs:braiding_en_s4",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "B",
+   "pred": "A",
+   "correct": false,
+   "raw": " {\"choice\": \"A\"}"
+  },
+  {
+   "id": "story:interference_en_s1",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "interference",
+   "pred": "alternation",
+   "correct": false,
+   "raw": " {\"motif_id\": \"alternation\"}"
+  },
+  {
+   "id": "story:interference_en_s2",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "interference",
+   "pred": "repetition",
+   "correct": false,
+   "raw": " {\"motif_id\": \"repetition\"}"
+  },
+  {
+   "id": "story:interference_en_s3",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "interference",
+   "pred": "alternation",
+   "correct": false,
+   "raw": " {\"motif_id\": \"alternation\"}"
+  },
+  {
+   "id": "story:interference_en_s4",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "interference",
+   "pred": "alternation",
+   "correct": false,
+   "raw": " {\"motif_id\": \"alternation\"}"
+  },
+  {
+   "id": "thm:interference",
+   "task": "theorem2motif",
+   "split": "main",
+   "answer": "interference",
+   "pred": "coprime_orbit",
+   "correct": false,
+   "raw": " {\"motif_id\": \"coprime_orbit\"}"
+  },
+  {
+   "id": "xvs:interference_en_s1",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "A",
+   "pred": "A",
+   "correct": true,
+   "raw": " {\"choice\": \"A\"}"
+  },
+  {
+   "id": "xvs:interference_en_s2",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "D",
+   "pred": "A",
+   "correct": false,
+   "raw": " {\"choice\": \"A\"}"
+  },
+  {
+   "id": "xvs:interference_en_s3",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "D",
+   "pred": "A",
+   "correct": false,
+   "raw": " {\"choice\": \"A\"}"
+  },
+  {
+   "id": "xvs:interference_en_s4",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "D",
+   "pred": "A",
+   "correct": false,
+   "raw": " {\"choice\": \"A\"}"
+  },
+  {
+   "id": "story:tiling_en_s0",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "tiling",
+   "pred": "aperture_tiling",
+   "correct": false,
+   "raw": " {\"motif_id\": \"aperture_tiling\"}\n\nThe story presents an aperture tiling motif, where each character carries an item from a different location to the mill gate. The locations can be seen as the tiles, "
+  },
+  {
+   "id": "story:tiling_en_s2",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "tiling",
+   "pred": "aperture_and_filling",
+   "correct": false,
+   "raw": " {\"motif_id\": \"aperture_and_filling\"}\n\nThe story presents an aperture-and-filling motif, where multiple characters carry items from different locations to a single destination (the mill gate). This mo"
+  },
+  {
+   "id": "story:tiling_en_s3",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "tiling",
+   "pred": "aperture_and_filling",
+   "correct": false,
+   "raw": " {\"motif_id\": \"aperture_and_filling\"}\n\nThe story presents an aperture-and-filling motif, where the aperture is the mill gate and the filling is the sequence of objects carried to the mill gate. This m"
+  },
+  {
+   "id": "thm:tiling",
+   "task": "theorem2motif",
+   "split": "main",
+   "answer": "tiling",
+   "pred": "aperiodic_tiling",
+   "correct": false,
+   "raw": " {\"motif_id\": \"aperiodic_tiling\"}"
+  },
+  {
+   "id": "xvs:tiling_en_s0",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "A",
+   "pred": "A",
+   "correct": true,
+   "raw": " {\"choice\": \"A\"}"
+  },
+  {
+   "id": "xvs:tiling_en_s2",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "A",
+   "pred": "A",
+   "correct": true,
+   "raw": " {\"choice\": \"A\"}"
+  },
+  {
+   "id": "xvs:tiling_en_s3",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "A",
+   "pred": "A",
+   "correct": true,
+   "raw": " {\"choice\": \"A\"}"
+  },
+  {
+   "id": "story:hub_en_s0",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "hub",
+   "pred": "aperture_and_filling",
+   "correct": false,
+   "raw": " {\"motif_id\": \"aperture_and_filling\"}\n\nThe story describes an aperture (the mill) that is filled by the villagers (the neighbors) and then emptied (the wheel is quiet by evening). This motif can be se"
+  },
+  {
+   "id": "story:hub_en_s1",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "hub",
+   "pred": "aperture_and_filling",
+   "correct": false,
+   "raw": " {\"motif_id\": \"aperture_and_filling\"}\n\nThe story exhibits an aperture-and-filling motif, where the miller acts as the aperture and the villagers fill the space around him with their interactions. This"
+  },
+  {
+   "id": "story:hub_en_s2",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "hub",
+   "pred": "coprime_orbit",
+   "correct": false,
+   "raw": " {\"motif_id\": \"coprime_orbit\"}"
+  },
+  {
+   "id": "story:hub_en_s3",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "hub",
+   "pred": "projective_duality",
+   "correct": false,
+   "raw": " {\"motif_id\": \"projective_duality\"}"
+  },
+  {
+   "id": "story:hub_en_s4",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "hub",
+   "pred": "alternation",
+   "correct": false,
+   "raw": " {\"motif_id\": \"alternation\"}"
+  },
+  {
+   "id": "thm:hub",
+   "task": "theorem2motif",
+   "split": "main",
+   "answer": "hub",
+   "pred": "convergence",
+   "correct": false,
+   "raw": " {\"motif_id\": \"convergence\"}"
+  },
+  {
+   "id": "xvs:hub_en_s0",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "A",
+   "pred": "A",
+   "correct": true,
+   "raw": " {\"choice\": \"A\"}"
+  },
+  {
+   "id": "xvs:hub_en_s1",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "A",
+   "pred": "A",
+   "correct": true,
+   "raw": " {\"choice\": \"A\"}"
+  },
+  {
+   "id": "xvs:hub_en_s2",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "D",
+   "pred": "A",
+   "correct": false,
+   "raw": " {\"choice\": \"A\"}"
+  },
+  {
+   "id": "xvs:hub_en_s3",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "A",
+   "pred": "A",
+   "correct": true,
+   "raw": " {\"choice\": \"A\"}"
+  },
+  {
+   "id": "xvs:hub_en_s4",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "C",
+   "pred": "A",
+   "correct": false,
+   "raw": " {\"choice\": \"A\"}"
+  },
+  {
+   "id": "story:diagonalization_en_s0",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "diagonalization",
+   "pred": "alternation",
+   "correct": false,
+   "raw": " {\"motif_id\": \"alternation\"}"
+  },
+  {
+   "id": "story:diagonalization_en_s1",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "diagonalization",
+   "pred": "aperiodic_tiling",
+   "correct": false,
+   "raw": " {\"motif_id\": \"aperiodic_tiling\"}"
+  },
+  {
+   "id": "story:diagonalization_en_s2",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "diagonalization",
+   "pred": "alternation",
+   "correct": false,
+   "raw": " {\"motif_id\": \"alternation\"}"
+  },
+  {
+   "id": "story:diagonalization_en_s3",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "diagonalization",
+   "pred": "apetric_tiling",
+   "correct": false,
+   "raw": " {\"motif_id\": \"apetric_tiling\"}"
+  },
+  {
+   "id": "story:diagonalization_en_s4",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "diagonalization",
+   "pred": "coprime_orbit",
+   "correct": false,
+   "raw": " {\"motif_id\": \"coprime_orbit\"}"
+  },
+  {
+   "id": "thm:diagonalization",
+   "task": "theorem2motif",
+   "split": "main",
+   "answer": "diagonalization",
+   "pred": "diagonalization",
+   "correct": true,
+   "raw": " {\"motif_id\": \"diagonalization\"}"
+  },
+  {
+   "id": "xvs:diagonalization_en_s0",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "A",
+   "pred": "C",
+   "correct": false,
+   "raw": " {\"choice\": \"C\"}"
+  },
+  {
+   "id": "xvs:diagonalization_en_s1",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "D",
+   "pred": "A",
+   "correct": false,
+   "raw": " {\"choice\": \"A\"}"
+  },
+  {
+   "id": "xvs:diagonalization_en_s2",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "C",
+   "pred": "B",
+   "correct": false,
+   "raw": " {\"choice\": \"B\"}"
+  },
+  {
+   "id": "xvs:diagonalization_en_s3",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "D",
+   "pred": "A",
+   "correct": false,
+   "raw": " {\"choice\": \"A\"}"
+  },
+  {
+   "id": "xvs:diagonalization_en_s4",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "C",
+   "pred": "D",
+   "correct": false,
+   "raw": " {\"choice\": \"D\"}"
+  },
+  {
+   "id": "story:infinite_descent_en_s0",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "infinite_descent",
+   "pred": "chain_of_causality_with_denial_of_origin",
+   "correct": false,
+   "raw": " {\"motif_id\": \"chain_of_causality_with_denial_of_origin\"}"
+  },
+  {
+   "id": "story:infinite_descent_en_s1",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "infinite_descent",
+   "pred": "infinite_descent",
+   "correct": true,
+   "raw": " {\"motif_id\": \"infinite_descent\"}"
+  },
+  {
+   "id": "story:infinite_descent_en_s2",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "infinite_descent",
+   "pred": "chain",
+   "correct": false,
+   "raw": " {\"motif_id\": \"chain\"}\n\nThe story presents a chain of events where each event is connected to the next one, forming a linear sequence. This structure can be seen as a simple form of recursion, but it "
+  },
+  {
+   "id": "story:infinite_descent_en_s3",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "infinite_descent",
+   "pred": "chain",
+   "correct": false,
+   "raw": " {\"motif_id\": \"chain\"}\n\nThe story presents a chain of holders passing a blue cup from one to another, with each holder pointing to the next one. This structure can be seen as a chain, where each link "
+  },
+  {
+   "id": "story:infinite_descent_en_s4",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "infinite_descent",
+   "pred": "coprime_orbit",
+   "correct": false,
+   "raw": " {\"motif_id\": \"coprime_orbit\"}"
+  },
+  {
+   "id": "thm:infinite_descent",
+   "task": "theorem2motif",
+   "split": "main",
+   "answer": "infinite_descent",
+   "pred": "infinite_descent",
+   "correct": true,
+   "raw": " {\"motif_id\": \"infinite_descent\"}"
+  },
+  {
+   "id": "xvs:infinite_descent_en_s0",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "A",
+   "pred": "A",
+   "correct": true,
+   "raw": " {\"choice\": \"A\"}"
+  },
+  {
+   "id": "xvs:infinite_descent_en_s1",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "C",
+   "pred": "A",
+   "correct": false,
+   "raw": " {\"choice\": \"A\"}"
+  },
+  {
+   "id": "xvs:infinite_descent_en_s2",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "B",
+   "pred": "A",
+   "correct": false,
+   "raw": " {\"choice\": \"A\"}"
+  },
+  {
+   "id": "xvs:infinite_descent_en_s3",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "D",
+   "pred": "A",
+   "correct": false,
+   "raw": " {\"choice\": \"A\"}"
+  },
+  {
+   "id": "xvs:infinite_descent_en_s4",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "A",
+   "pred": "A",
+   "correct": true,
+   "raw": " {\"choice\": \"A\"}"
+  },
+  {
+   "id": "story:coprime_orbit_en_s0",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "coprime_orbit",
+   "pred": "coprime_orbit",
+   "correct": true,
+   "raw": " {\"motif_id\": \"coprime_orbit\"}"
+  },
+  {
+   "id": "story:coprime_orbit_en_s1",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "coprime_orbit",
+   "pred": "coprime_orbit",
+   "correct": true,
+   "raw": " {\"motif_id\": \"coprime_orbit\"}"
+  },
+  {
+   "id": "story:coprime_orbit_en_s2",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "coprime_orbit",
+   "pred": "coprime_orbit",
+   "correct": true,
+   "raw": " {\"motif_id\": \"coprime_orbit\"}"
+  },
+  {
+   "id": "story:coprime_orbit_en_s3",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "coprime_orbit",
+   "pred": "coprime_orbit",
+   "correct": true,
+   "raw": " {\"motif_id\": \"coprime_orbit\"}"
+  },
+  {
+   "id": "story:coprime_orbit_en_s4",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "coprime_orbit",
+   "pred": "coprime_orbit",
+   "correct": true,
+   "raw": " {\"motif_id\": \"coprime_orbit\"}"
+  },
+  {
+   "id": "thm:coprime_orbit",
+   "task": "theorem2motif",
+   "split": "main",
+   "answer": "coprime_orbit",
+   "pred": "coprime_orbit",
+   "correct": true,
+   "raw": " {\"motif_id\": \"coprime_orbit\"}"
+  },
+  {
+   "id": "xvs:coprime_orbit_en_s0",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "D",
+   "pred": "D",
+   "correct": true,
+   "raw": " {\"choice\": \"D\"}"
+  },
+  {
+   "id": "xvs:coprime_orbit_en_s1",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "D",
+   "pred": "D",
+   "correct": true,
+   "raw": " {\"choice\": \"D\"}"
+  },
+  {
+   "id": "xvs:coprime_orbit_en_s2",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "D",
+   "pred": "D",
+   "correct": true,
+   "raw": " {\"choice\": \"D\"}"
+  },
+  {
+   "id": "xvs:coprime_orbit_en_s3",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "A",
+   "pred": "A",
+   "correct": true,
+   "raw": " {\"choice\": \"A\"}"
+  },
+  {
+   "id": "xvs:coprime_orbit_en_s4",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "A",
+   "pred": "A",
+   "correct": true,
+   "raw": " {\"choice\": \"A\"}"
+  },
+  {
+   "id": "story:pigeonhole_en_s0",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "pigeonhole",
+   "pred": "coprime_orbit",
+   "correct": false,
+   "raw": " {\"motif_id\": \"coprime_orbit\"}"
+  },
+  {
+   "id": "story:pigeonhole_en_s1",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "pigeonhole",
+   "pred": "coprime_orbit",
+   "correct": false,
+   "raw": " {\"motif_id\": \"coprime_orbit\"}"
+  },
+  {
+   "id": "story:pigeonhole_en_s2",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "pigeonhole",
+   "pred": "coprime_orbit",
+   "correct": false,
+   "raw": " {\"motif_id\": \"coprime_orbit\"}"
+  },
+  {
+   "id": "story:pigeonhole_en_s3",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "pigeonhole",
+   "pred": "coprime_orbit",
+   "correct": false,
+   "raw": " {\"motif_id\": \"coprime_orbit\"}"
+  },
+  {
+   "id": "story:pigeonhole_en_s4",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "pigeonhole",
+   "pred": "coprime_orbit",
+   "correct": false,
+   "raw": " {\"motif_id\": \"coprime_orbit\"}"
+  },
+  {
+   "id": "thm:pigeonhole",
+   "task": "theorem2motif",
+   "split": "main",
+   "answer": "pigeonhole",
+   "pred": "convergence",
+   "correct": false,
+   "raw": " {\"motif_id\": \"convergence\"}"
+  },
+  {
+   "id": "xvs:pigeonhole_en_s0",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "D",
+   "pred": "A",
+   "correct": false,
+   "raw": " {\"choice\": \"A\"}"
+  },
+  {
+   "id": "xvs:pigeonhole_en_s1",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "A",
+   "pred": "A",
+   "correct": true,
+   "raw": " {\"choice\": \"A\"}"
+  },
+  {
+   "id": "xvs:pigeonhole_en_s2",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "C",
+   "pred": "D",
+   "correct": false,
+   "raw": " {\"choice\": \"D\"}"
+  },
+  {
+   "id": "xvs:pigeonhole_en_s3",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "C",
+   "pred": "C",
+   "correct": true,
+   "raw": " {\"choice\": \"C\"}"
+  },
+  {
+   "id": "xvs:pigeonhole_en_s4",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "D",
+   "pred": "C",
+   "correct": false,
+   "raw": " {\"choice\": \"C\"}"
+  },
+  {
+   "id": "story:projective_duality_en_s0",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "projective_duality",
+   "pred": "projective_duality",
+   "correct": true,
+   "raw": " {\"motif_id\": \"projective_duality\"}"
+  },
+  {
+   "id": "story:projective_duality_en_s1",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "projective_duality",
+   "pred": "alternation",
+   "correct": false,
+   "raw": " {\"motif_id\": \"alternation\"}"
+  },
+  {
+   "id": "story:projective_duality_en_s2",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "projective_duality",
+   "pred": "alternation",
+   "correct": false,
+   "raw": " {\"motif_id\": \"alternation\"}"
+  },
+  {
+   "id": "story:projective_duality_en_s3",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "projective_duality",
+   "pred": "symmetry",
+   "correct": false,
+   "raw": " {\"motif_id\": \"symmetry\"}"
+  },
+  {
+   "id": "story:projective_duality_en_s4",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "projective_duality",
+   "pred": "projective_duality",
+   "correct": true,
+   "raw": " {\"motif_id\": \"projective_duality\"}"
+  },
+  {
+   "id": "thm:projective_duality",
+   "task": "theorem2motif",
+   "split": "main",
+   "answer": "projective_duality",
+   "pred": "convergence",
+   "correct": false,
+   "raw": " {\"motif_id\": \"convergence\"}"
+  },
+  {
+   "id": "xvs:projective_duality_en_s0",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "D",
+   "pred": "A",
+   "correct": false,
+   "raw": " {\"choice\": \"A\"}"
+  },
+  {
+   "id": "xvs:projective_duality_en_s1",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "C",
+   "pred": "A",
+   "correct": false,
+   "raw": " {\"choice\": \"A\"}"
+  },
+  {
+   "id": "xvs:projective_duality_en_s2",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "A",
+   "pred": "A",
+   "correct": true,
+   "raw": " {\"choice\": \"A\"}"
+  },
+  {
+   "id": "xvs:projective_duality_en_s3",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "D",
+   "pred": "A",
+   "correct": false,
+   "raw": " {\"choice\": \"A\"}"
+  },
+  {
+   "id": "xvs:projective_duality_en_s4",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "C",
+   "pred": "D",
+   "correct": false,
+   "raw": " {\"choice\": \"D\"}"
+  },
+  {
+   "id": "story:contraction_fixed_point_en_s0",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "contraction_fixed_point",
+   "pred": "aperture_and_closure",
+   "correct": false,
+   "raw": " {\"motif_id\": \"aperture_and_closure\"}"
+  },
+  {
+   "id": "story:contraction_fixed_point_en_s1",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "contraction_fixed_point",
+   "pred": "aperture_and_closure",
+   "correct": false,
+   "raw": " {\"motif_id\": \"aperture_and_closure\"}\n\nThe story exhibits an aperture-and-closure motif, where each round represents an aperture (removing words) and the final round represents the closure (no more wo"
+  },
+  {
+   "id": "story:contraction_fixed_point_en_s2",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "contraction_fixed_point",
+   "pred": "aperture_reduction",
+   "correct": false,
+   "raw": " {\"motif_id\": \"aperture_reduction\"}"
+  },
+  {
+   "id": "story:contraction_fixed_point_en_s3",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "contraction_fixed_point",
+   "pred": "aperture_and_closure",
+   "correct": false,
+   "raw": " {\"motif_id\": \"aperture_and_closure\"}\n\nThe story exhibits an aperture-and-closure motif, where each round represents an aperture (removing words) and the final round represents the closure (no more wo"
+  },
+  {
+   "id": "story:contraction_fixed_point_en_s4",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "contraction_fixed_point",
+   "pred": "aperture_reduction",
+   "correct": false,
+   "raw": " {\"motif_id\": \"aperture_reduction\"}"
+  },
+  {
+   "id": "thm:contraction_fixed_point",
+   "task": "theorem2motif",
+   "split": "main",
+   "answer": "contraction_fixed_point",
+   "pred": "convergence",
+   "correct": false,
+   "raw": " {\"motif_id\": \"convergence\"}"
+  },
+  {
+   "id": "xvs:contraction_fixed_point_en_s0",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "A",
+   "pred": "B",
+   "correct": false,
+   "raw": " {\"choice\": \"B\"}"
+  },
+  {
+   "id": "xvs:contraction_fixed_point_en_s1",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "D",
+   "pred": "A",
+   "correct": false,
+   "raw": " {\"choice\": \"A\"}"
+  },
+  {
+   "id": "xvs:contraction_fixed_point_en_s2",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "D",
+   "pred": "A",
+   "correct": false,
+   "raw": " {\"choice\": \"A\"}"
+  },
+  {
+   "id": "xvs:contraction_fixed_point_en_s3",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "D",
+   "pred": "A",
+   "correct": false,
+   "raw": " {\"choice\": \"A\"}"
+  },
+  {
+   "id": "xvs:contraction_fixed_point_en_s4",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "B",
+   "pred": "B",
+   "correct": true,
+   "raw": " {\"choice\": \"B\"}"
+  },
+  {
+   "id": "story:aperiodic_tiling_en_s0",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "aperiodic_tiling",
+   "pred": "apperiodic_tiling",
+   "correct": false,
+   "raw": " {\"motif_id\": \"apperiodic_tiling\"}"
+  },
+  {
+   "id": "story:aperiodic_tiling_en_s1",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "aperiodic_tiling",
+   "pred": "ap Eric's urn problem",
+   "correct": false,
+   "raw": " {\"motif_id\": \"ap Eric's urn problem\"}"
+  },
+  {
+   "id": "story:aperiodic_tiling_en_s2",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "aperiodic_tiling",
+   "pred": "projective_duality",
+   "correct": false,
+   "raw": " {\"motif_id\": \"projective_duality\"}"
+  },
+  {
+   "id": "story:aperiodic_tiling_en_s3",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "aperiodic_tiling",
+   "pred": "apperiodic_tiling",
+   "correct": false,
+   "raw": " {\"motif_id\": \"apperiodic_tiling\"}"
+  },
+  {
+   "id": "story:aperiodic_tiling_en_s4",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "aperiodic_tiling",
+   "pred": "aperture_and_filling",
+   "correct": false,
+   "raw": " {\"motif_id\": \"aperture_and_filling\"}\n\nThe story describes the process of filling a road with stones, where each stone is placed according to a rule that depends on its neighbor. This process continue"
+  },
+  {
+   "id": "thm:aperiodic_tiling",
+   "task": "theorem2motif",
+   "split": "main",
+   "answer": "aperiodic_tiling",
+   "pred": "aperiodic_tiling",
+   "correct": true,
+   "raw": " {\"motif_id\": \"aperiodic_tiling\"}"
+  },
+  {
+   "id": "xvs:aperiodic_tiling_en_s0",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "B",
+   "pred": "A",
+   "correct": false,
+   "raw": " {\"choice\": \"A\"}"
+  },
+  {
+   "id": "xvs:aperiodic_tiling_en_s1",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "C",
+   "pred": "A",
+   "correct": false,
+   "raw": " {\"choice\": \"A\"}"
+  },
+  {
+   "id": "xvs:aperiodic_tiling_en_s2",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "C",
+   "pred": "A",
+   "correct": false,
+   "raw": " {\"choice\": \"A\"}"
+  },
+  {
+   "id": "xvs:aperiodic_tiling_en_s3",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "A",
+   "pred": "A",
+   "correct": true,
+   "raw": " {\"choice\": \"A\"}"
+  },
+  {
+   "id": "xvs:aperiodic_tiling_en_s4",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "A",
+   "pred": "A",
+   "correct": true,
+   "raw": " {\"choice\": \"A\"}"
+  }
+ ]
+}

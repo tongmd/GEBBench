@@ -1,0 +1,2423 @@
+{
+ "model": "olmo-2-7b",
+ "base": "http://127.0.0.1:9111/v1",
+ "summary": {
+  "story2motif": {
+   "n": 121,
+   "acc": 0.0909
+  },
+  "theorem2motif": {
+   "n": 25,
+   "acc": 0.16
+  },
+  "xv_story_thm": {
+   "n": 121,
+   "acc": 0.2727
+  }
+ },
+ "records": [
+  {
+   "id": "story:self_reference_en_s0",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "self_reference",
+   "pred": "contraction_fixed_point",
+   "correct": false,
+   "raw": "{\"motif_id\": \"contraction_fixed_point\"}"
+  },
+  {
+   "id": "story:self_reference_en_s1",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "self_reference",
+   "pred": "contraction_fixed_point",
+   "correct": false,
+   "raw": "{\"motif_id\": \"contraction_fixed_point\"}"
+  },
+  {
+   "id": "story:self_reference_en_s2",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "self_reference",
+   "pred": "contraction_fixed_point",
+   "correct": false,
+   "raw": "{\"motif_id\": \"contraction_fixed_point\"}"
+  },
+  {
+   "id": "story:self_reference_en_s3",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "self_reference",
+   "pred": "contraction_fixed_point",
+   "correct": false,
+   "raw": "{\"motif_id\": \"contraction_fixed_point\"}"
+  },
+  {
+   "id": "story:self_reference_en_s4",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "self_reference",
+   "pred": "contraction_fixed_point",
+   "correct": false,
+   "raw": "{\"motif_id\": \"contraction_fixed_point\"}"
+  },
+  {
+   "id": "thm:self_reference",
+   "task": "theorem2motif",
+   "split": "main",
+   "answer": "self_reference",
+   "pred": "contraction_fixed_point",
+   "correct": false,
+   "raw": "{\"motif_id\": \"contraction_fixed_point\"}"
+  },
+  {
+   "id": "xvs:self_reference_en_s0",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "C",
+   "pred": "D",
+   "correct": false,
+   "raw": "{\"choice\": \"D\"}"
+  },
+  {
+   "id": "xvs:self_reference_en_s1",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "D",
+   "pred": "A",
+   "correct": false,
+   "raw": "{\"choice\": \"A\"}"
+  },
+  {
+   "id": "xvs:self_reference_en_s2",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "D",
+   "pred": "D",
+   "correct": true,
+   "raw": "{\"choice\": \"D\"}"
+  },
+  {
+   "id": "xvs:self_reference_en_s3",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "C",
+   "pred": "D",
+   "correct": false,
+   "raw": "{\"choice\": \"D\"}"
+  },
+  {
+   "id": "xvs:self_reference_en_s4",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "A",
+   "pred": "D",
+   "correct": false,
+   "raw": "{\"choice\": \"D\"}"
+  },
+  {
+   "id": "story:recursion_en_s0",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "recursion",
+   "pred": "contraction_fixed_point",
+   "correct": false,
+   "raw": "{\"motif_id\": \"contraction_fixed_point\"}"
+  },
+  {
+   "id": "story:recursion_en_s1",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "recursion",
+   "pred": "pigeonhole",
+   "correct": false,
+   "raw": "{\"motif_id\": \"pigeonhole\"}"
+  },
+  {
+   "id": "story:recursion_en_s2",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "recursion",
+   "pred": "contraction_fixed_point",
+   "correct": false,
+   "raw": "{\"motif_id\": \"contraction_fixed_point\"}"
+  },
+  {
+   "id": "story:recursion_en_s3",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "recursion",
+   "pred": "contraction_fixed_point",
+   "correct": false,
+   "raw": "{\"motif_id\": \"contraction_fixed_point\"}"
+  },
+  {
+   "id": "story:recursion_en_s4",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "recursion",
+   "pred": "contraction_fixed_point",
+   "correct": false,
+   "raw": "{\"motif_id\": \"contraction_fixed_point\"}"
+  },
+  {
+   "id": "thm:recursion",
+   "task": "theorem2motif",
+   "split": "main",
+   "answer": "recursion",
+   "pred": "pigeonhole",
+   "correct": false,
+   "raw": "{\"motif_id\": \"pigeonhole\"}"
+  },
+  {
+   "id": "xvs:recursion_en_s0",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "B",
+   "pred": "D",
+   "correct": false,
+   "raw": "{\"choice\": \"D\"}"
+  },
+  {
+   "id": "xvs:recursion_en_s1",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "A",
+   "pred": "D",
+   "correct": false,
+   "raw": "{\"choice\": \"D\"}"
+  },
+  {
+   "id": "xvs:recursion_en_s2",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "D",
+   "pred": "A",
+   "correct": false,
+   "raw": "{\"choice\": \"A\"}"
+  },
+  {
+   "id": "xvs:recursion_en_s3",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "D",
+   "pred": "D",
+   "correct": true,
+   "raw": "{\"choice\": \"D\"}"
+  },
+  {
+   "id": "xvs:recursion_en_s4",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "C",
+   "pred": "D",
+   "correct": false,
+   "raw": "{\"choice\": \"D\"}"
+  },
+  {
+   "id": "story:nesting_en_s0",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "nesting",
+   "pred": "contraction_fixed_point",
+   "correct": false,
+   "raw": "{\"motif_id\": \"contraction_fixed_point\"}"
+  },
+  {
+   "id": "story:nesting_en_s1",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "nesting",
+   "pred": "contraction_fixed_point",
+   "correct": false,
+   "raw": "{\"motif_id\": \"contraction_fixed_point\"}"
+  },
+  {
+   "id": "story:nesting_en_s2",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "nesting",
+   "pred": "contraction_fixed_point",
+   "correct": false,
+   "raw": "{\"motif_id\": \"contraction_fixed_point\"}"
+  },
+  {
+   "id": "story:nesting_en_s3",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "nesting",
+   "pred": "contraction_fixed_point",
+   "correct": false,
+   "raw": "{\"motif_id\": \"contraction_fixed_point\"}"
+  },
+  {
+   "id": "story:nesting_en_s4",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "nesting",
+   "pred": "contraction_fixed_point",
+   "correct": false,
+   "raw": "{\"motif_id\": \"contraction_fixed_point\"}"
+  },
+  {
+   "id": "thm:nesting",
+   "task": "theorem2motif",
+   "split": "main",
+   "answer": "nesting",
+   "pred": "pigeonhole",
+   "correct": false,
+   "raw": "{\"motif_id\": \"pigeonhole\"}"
+  },
+  {
+   "id": "xvs:nesting_en_s0",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "B",
+   "pred": "A",
+   "correct": false,
+   "raw": "{\"choice\": \"A\"}"
+  },
+  {
+   "id": "xvs:nesting_en_s1",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "D",
+   "pred": "B",
+   "correct": false,
+   "raw": "{\"choice\": \"B\"}"
+  },
+  {
+   "id": "xvs:nesting_en_s2",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "B",
+   "pred": "D",
+   "correct": false,
+   "raw": "{\"choice\": \"D\"}"
+  },
+  {
+   "id": "xvs:nesting_en_s3",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "B",
+   "pred": "D",
+   "correct": false,
+   "raw": "{\"choice\": \"D\"}"
+  },
+  {
+   "id": "xvs:nesting_en_s4",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "D",
+   "pred": "B",
+   "correct": false,
+   "raw": "{\"choice\": \"B\"}"
+  },
+  {
+   "id": "story:cycle_en_s0",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "cycle",
+   "pred": "contraction_fixed_point",
+   "correct": false,
+   "raw": "{\"motif_id\": \"contraction_fixed_point\"}"
+  },
+  {
+   "id": "story:cycle_en_s1",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "cycle",
+   "pred": "contraction_fixed_point",
+   "correct": false,
+   "raw": "{\"motif_id\": \"contraction_fixed_point\"}"
+  },
+  {
+   "id": "story:cycle_en_s2",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "cycle",
+   "pred": "contraction_fixed_point",
+   "correct": false,
+   "raw": "{\"motif_id\": \"contraction_fixed_point\"}"
+  },
+  {
+   "id": "story:cycle_en_s3",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "cycle",
+   "pred": "contraction_fixed_point",
+   "correct": false,
+   "raw": "{\"motif_id\": \"contraction_fixed_point\"}"
+  },
+  {
+   "id": "story:cycle_en_s4",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "cycle",
+   "pred": "contraction_fixed_point",
+   "correct": false,
+   "raw": "{\"motif_id\": \"contraction_fixed_point\"}"
+  },
+  {
+   "id": "thm:cycle",
+   "task": "theorem2motif",
+   "split": "main",
+   "answer": "cycle",
+   "pred": "pigeonhole",
+   "correct": false,
+   "raw": "{\"motif_id\": \"pigeonhole\"}"
+  },
+  {
+   "id": "xvs:cycle_en_s0",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "B",
+   "pred": "A",
+   "correct": false,
+   "raw": "{\"choice\": \"A\"}"
+  },
+  {
+   "id": "xvs:cycle_en_s1",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "B",
+   "pred": "A",
+   "correct": false,
+   "raw": "{\"choice\": \"A\"}"
+  },
+  {
+   "id": "xvs:cycle_en_s2",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "A",
+   "pred": "D",
+   "correct": false,
+   "raw": "{\"choice\": \"D\"}"
+  },
+  {
+   "id": "xvs:cycle_en_s3",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "C",
+   "pred": "A",
+   "correct": false,
+   "raw": "{\"choice\": \"A\"}"
+  },
+  {
+   "id": "xvs:cycle_en_s4",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "C",
+   "pred": "A",
+   "correct": false,
+   "raw": "{\"choice\": \"A\"}"
+  },
+  {
+   "id": "story:symmetry_en_s0",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "symmetry",
+   "pred": "contraction_fixed_point",
+   "correct": false,
+   "raw": "{\"motif_id\": \"contraction_fixed_point\"}"
+  },
+  {
+   "id": "story:symmetry_en_s1",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "symmetry",
+   "pred": "contraction_fixed_point",
+   "correct": false,
+   "raw": "{\"motif_id\": \"contraction_fixed_point\"}"
+  },
+  {
+   "id": "story:symmetry_en_s2",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "symmetry",
+   "pred": "contraction_fixed_point",
+   "correct": false,
+   "raw": "{\"motif_id\": \"contraction_fixed_point\"}"
+  },
+  {
+   "id": "story:symmetry_en_s3",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "symmetry",
+   "pred": "contraction_fixed_point",
+   "correct": false,
+   "raw": "{\"motif_id\": \"contraction_fixed_point\"}"
+  },
+  {
+   "id": "story:symmetry_en_s4",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "symmetry",
+   "pred": "contraction_fixed_point",
+   "correct": false,
+   "raw": "{\"motif_id\": \"contraction_fixed_point\"}"
+  },
+  {
+   "id": "thm:symmetry",
+   "task": "theorem2motif",
+   "split": "main",
+   "answer": "symmetry",
+   "pred": "contraction_fixed_point",
+   "correct": false,
+   "raw": "{\"motif_id\": \"contraction_fixed_point\"}"
+  },
+  {
+   "id": "xvs:symmetry_en_s0",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "A",
+   "pred": "one of A-D",
+   "correct": false,
+   "raw": "{\"choice\": \"one of A-D\"}"
+  },
+  {
+   "id": "xvs:symmetry_en_s1",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "D",
+   "pred": "A",
+   "correct": false,
+   "raw": "{\"choice\": \"A\"}"
+  },
+  {
+   "id": "xvs:symmetry_en_s2",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "D",
+   "pred": "A",
+   "correct": false,
+   "raw": "{\"choice\": \"A\"}"
+  },
+  {
+   "id": "xvs:symmetry_en_s3",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "C",
+   "pred": "D",
+   "correct": false,
+   "raw": "{\"choice\": \"D\"}"
+  },
+  {
+   "id": "xvs:symmetry_en_s4",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "D",
+   "pred": "D",
+   "correct": true,
+   "raw": "{\"choice\": \"D\"}"
+  },
+  {
+   "id": "story:alternation_en_s0",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "alternation",
+   "pred": "contraction_fixed_point",
+   "correct": false,
+   "raw": "{\"motif_id\": \"contraction_fixed_point\"}"
+  },
+  {
+   "id": "story:alternation_en_s1",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "alternation",
+   "pred": "contraction_fixed_point",
+   "correct": false,
+   "raw": "{\"motif_id\": \"contraction_fixed_point\"}"
+  },
+  {
+   "id": "story:alternation_en_s2",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "alternation",
+   "pred": "contraction_fixed_point",
+   "correct": false,
+   "raw": "{\"motif_id\": \"contraction_fixed_point\"}"
+  },
+  {
+   "id": "story:alternation_en_s3",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "alternation",
+   "pred": "contraction_fixed_point",
+   "correct": false,
+   "raw": "{\"motif_id\": \"contraction_fixed_point\"}"
+  },
+  {
+   "id": "story:alternation_en_s4",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "alternation",
+   "pred": "contraction_fixed_point",
+   "correct": false,
+   "raw": "{\"motif_id\": \"contraction_fixed_point\"}"
+  },
+  {
+   "id": "thm:alternation",
+   "task": "theorem2motif",
+   "split": "main",
+   "answer": "alternation",
+   "pred": "pigeonhole",
+   "correct": false,
+   "raw": "{\"motif_id\": \"pigeonhole\"}"
+  },
+  {
+   "id": "xvs:alternation_en_s0",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "B",
+   "pred": "one of A-D",
+   "correct": false,
+   "raw": "{\"choice\": \"one of A-D\"}"
+  },
+  {
+   "id": "xvs:alternation_en_s1",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "A",
+   "pred": "A",
+   "correct": true,
+   "raw": "{\"choice\": \"A\"}"
+  },
+  {
+   "id": "xvs:alternation_en_s2",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "B",
+   "pred": "D",
+   "correct": false,
+   "raw": "{\"choice\": \"D\"}"
+  },
+  {
+   "id": "xvs:alternation_en_s3",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "C",
+   "pred": "D",
+   "correct": false,
+   "raw": "{\"choice\": \"D\"}"
+  },
+  {
+   "id": "xvs:alternation_en_s4",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "D",
+   "pred": "one of A-D",
+   "correct": false,
+   "raw": "{\"choice\": \"one of A-D\"}"
+  },
+  {
+   "id": "story:spiral_en_s0",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "spiral",
+   "pred": "pigeonhole",
+   "correct": false,
+   "raw": "{\"motif_id\": \"pigeonhole\"}"
+  },
+  {
+   "id": "story:spiral_en_s1",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "spiral",
+   "pred": "contraction_fixed_point",
+   "correct": false,
+   "raw": "{\"motif_id\": \"contraction_fixed_point\"}"
+  },
+  {
+   "id": "story:spiral_en_s2",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "spiral",
+   "pred": "contraction_fixed_point",
+   "correct": false,
+   "raw": "{\"motif_id\": \"contraction_fixed_point\"}"
+  },
+  {
+   "id": "story:spiral_en_s3",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "spiral",
+   "pred": "contraction_fixed_point",
+   "correct": false,
+   "raw": "{\"motif_id\": \"contraction_fixed_point\"}"
+  },
+  {
+   "id": "story:spiral_en_s4",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "spiral",
+   "pred": "pigeonhole",
+   "correct": false,
+   "raw": "{\"motif_id\": \"pigeonhole\"}"
+  },
+  {
+   "id": "thm:spiral",
+   "task": "theorem2motif",
+   "split": "main",
+   "answer": "spiral",
+   "pred": "pigeonhole",
+   "correct": false,
+   "raw": "{\"motif_id\": \"pigeonhole\"}"
+  },
+  {
+   "id": "xvs:spiral_en_s0",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "A",
+   "pred": "D",
+   "correct": false,
+   "raw": "{\"choice\": \"D\"}"
+  },
+  {
+   "id": "xvs:spiral_en_s1",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "D",
+   "pred": "D",
+   "correct": true,
+   "raw": "{\"choice\": \"D\"}"
+  },
+  {
+   "id": "xvs:spiral_en_s2",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "D",
+   "pred": "D",
+   "correct": true,
+   "raw": "{\"choice\": \"D\"}"
+  },
+  {
+   "id": "xvs:spiral_en_s3",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "C",
+   "pred": "A",
+   "correct": false,
+   "raw": "{\"choice\": \"A\"}"
+  },
+  {
+   "id": "xvs:spiral_en_s4",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "B",
+   "pred": "A",
+   "correct": false,
+   "raw": "{\"choice\": \"A\"}"
+  },
+  {
+   "id": "story:convergence_en_s0",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "convergence",
+   "pred": "contraction_fixed_point",
+   "correct": false,
+   "raw": "{\"motif_id\": \"contraction_fixed_point\"}"
+  },
+  {
+   "id": "story:convergence_en_s1",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "convergence",
+   "pred": "contraction_fixed_point",
+   "correct": false,
+   "raw": "{\"motif_id\": \"contraction_fixed_point\"}"
+  },
+  {
+   "id": "story:convergence_en_s2",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "convergence",
+   "pred": "contraction_fixed_point",
+   "correct": false,
+   "raw": "{\"motif_id\": \"contraction_fixed_point\"}"
+  },
+  {
+   "id": "story:convergence_en_s3",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "convergence",
+   "pred": "contraction_fixed_point",
+   "correct": false,
+   "raw": "{\"motif_id\": \"contraction_fixed_point\"}"
+  },
+  {
+   "id": "story:convergence_en_s4",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "convergence",
+   "pred": "contraction_fixed_point",
+   "correct": false,
+   "raw": "{\"motif_id\": \"contraction_fixed_point\"}"
+  },
+  {
+   "id": "thm:convergence",
+   "task": "theorem2motif",
+   "split": "main",
+   "answer": "convergence",
+   "pred": "pigeonhole",
+   "correct": false,
+   "raw": "{\"motif_id\": \"pigeonhole\"}"
+  },
+  {
+   "id": "xvs:convergence_en_s0",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "B",
+   "pred": "D",
+   "correct": false,
+   "raw": "{\"choice\": \"D\"}"
+  },
+  {
+   "id": "xvs:convergence_en_s1",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "A",
+   "pred": "D",
+   "correct": false,
+   "raw": "{\"choice\": \"D\"}"
+  },
+  {
+   "id": "xvs:convergence_en_s2",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "A",
+   "pred": "D",
+   "correct": false,
+   "raw": "{\"choice\": \"D\"}"
+  },
+  {
+   "id": "xvs:convergence_en_s3",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "C",
+   "pred": "D",
+   "correct": false,
+   "raw": "{\"choice\": \"D\"}"
+  },
+  {
+   "id": "xvs:convergence_en_s4",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "B",
+   "pred": "D",
+   "correct": false,
+   "raw": "{\"choice\": \"D\"}"
+  },
+  {
+   "id": "story:bottleneck_en_s0",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "bottleneck",
+   "pred": "contraction_fixed_point",
+   "correct": false,
+   "raw": "{\"motif_id\": \"contraction_fixed_point\"}"
+  },
+  {
+   "id": "story:bottleneck_en_s1",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "bottleneck",
+   "pred": "contraction_fixed_point",
+   "correct": false,
+   "raw": "{\"motif_id\": \"contraction_fixed_point\"}"
+  },
+  {
+   "id": "story:bottleneck_en_s2",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "bottleneck",
+   "pred": "contraction_fixed_point",
+   "correct": false,
+   "raw": "{\"motif_id\": \"contraction_fixed_point\"}"
+  },
+  {
+   "id": "story:bottleneck_en_s3",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "bottleneck",
+   "pred": "contraction_fixed_point",
+   "correct": false,
+   "raw": "{\"motif_id\": \"contraction_fixed_point\"}"
+  },
+  {
+   "id": "story:bottleneck_en_s4",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "bottleneck",
+   "pred": "contraction_fixed_point",
+   "correct": false,
+   "raw": "{\"motif_id\": \"contraction_fixed_point\"}"
+  },
+  {
+   "id": "thm:bottleneck",
+   "task": "theorem2motif",
+   "split": "main",
+   "answer": "bottleneck",
+   "pred": "pigeonhole",
+   "correct": false,
+   "raw": "{\"motif_id\": \"pigeonhole\"}"
+  },
+  {
+   "id": "xvs:bottleneck_en_s0",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "C",
+   "pred": "C",
+   "correct": true,
+   "raw": "{\"choice\": \"C\"}"
+  },
+  {
+   "id": "xvs:bottleneck_en_s1",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "C",
+   "pred": "C",
+   "correct": true,
+   "raw": "{\"choice\": \"C\"}"
+  },
+  {
+   "id": "xvs:bottleneck_en_s2",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "A",
+   "pred": "D",
+   "correct": false,
+   "raw": "{\"choice\": \"D\"}"
+  },
+  {
+   "id": "xvs:bottleneck_en_s3",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "A",
+   "pred": "A",
+   "correct": true,
+   "raw": "{\"choice\": \"A\"}"
+  },
+  {
+   "id": "xvs:bottleneck_en_s4",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "A",
+   "pred": "A",
+   "correct": true,
+   "raw": "{\"choice\": \"A\"}"
+  },
+  {
+   "id": "story:symmetry_breaking_en_s0",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "symmetry_breaking",
+   "pred": "contraction_fixed_point",
+   "correct": false,
+   "raw": "{\"motif_id\": \"contraction_fixed_point\"}"
+  },
+  {
+   "id": "story:symmetry_breaking_en_s1",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "symmetry_breaking",
+   "pred": "contraction_fixed_point",
+   "correct": false,
+   "raw": "{\"motif_id\": \"contraction_fixed_point\"}"
+  },
+  {
+   "id": "story:symmetry_breaking_en_s2",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "symmetry_breaking",
+   "pred": "contraction_fixed_point",
+   "correct": false,
+   "raw": "{\"motif_id\": \"contraction_fixed_point\"}"
+  },
+  {
+   "id": "story:symmetry_breaking_en_s3",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "symmetry_breaking",
+   "pred": "contraction_fixed_point",
+   "correct": false,
+   "raw": "{\"motif_id\": \"contraction_fixed_point\"}"
+  },
+  {
+   "id": "story:symmetry_breaking_en_s4",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "symmetry_breaking",
+   "pred": "contraction_fixed_point",
+   "correct": false,
+   "raw": "{\"motif_id\": \"contraction_fixed_point\"}"
+  },
+  {
+   "id": "thm:symmetry_breaking",
+   "task": "theorem2motif",
+   "split": "main",
+   "answer": "symmetry_breaking",
+   "pred": "pigeonhole",
+   "correct": false,
+   "raw": "{\"motif_id\": \"pigeonhole\"}"
+  },
+  {
+   "id": "xvs:symmetry_breaking_en_s0",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "B",
+   "pred": "D",
+   "correct": false,
+   "raw": "{\"choice\": \"D\"}"
+  },
+  {
+   "id": "xvs:symmetry_breaking_en_s1",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "C",
+   "pred": "A",
+   "correct": false,
+   "raw": "{\"choice\": \"A\"}"
+  },
+  {
+   "id": "xvs:symmetry_breaking_en_s2",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "A",
+   "pred": "D",
+   "correct": false,
+   "raw": "{\"choice\": \"D\"}"
+  },
+  {
+   "id": "xvs:symmetry_breaking_en_s3",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "C",
+   "pred": "D",
+   "correct": false,
+   "raw": "{\"choice\": \"D\"}"
+  },
+  {
+   "id": "xvs:symmetry_breaking_en_s4",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "C",
+   "pred": "A",
+   "correct": false,
+   "raw": "{\"choice\": \"A\"}"
+  },
+  {
+   "id": "story:strange_loop_en_s0",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "strange_loop",
+   "pred": "contraction_fixed_point",
+   "correct": false,
+   "raw": "{\"motif_id\": \"contraction_fixed_point\"}"
+  },
+  {
+   "id": "story:strange_loop_en_s1",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "strange_loop",
+   "pred": "contraction_fixed_point",
+   "correct": false,
+   "raw": "{\"motif_id\": \"contraction_fixed_point\"}"
+  },
+  {
+   "id": "story:strange_loop_en_s2",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "strange_loop",
+   "pred": "contraction_fixed_point",
+   "correct": false,
+   "raw": "{\"motif_id\": \"contraction_fixed_point\"}"
+  },
+  {
+   "id": "story:strange_loop_en_s3",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "strange_loop",
+   "pred": "contraction_fixed_point",
+   "correct": false,
+   "raw": "{\"motif_id\": \"contraction_fixed_point\"}"
+  },
+  {
+   "id": "story:strange_loop_en_s4",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "strange_loop",
+   "pred": "contraction_fixed_point",
+   "correct": false,
+   "raw": "{\"motif_id\": \"contraction_fixed_point\"}"
+  },
+  {
+   "id": "thm:strange_loop",
+   "task": "theorem2motif",
+   "split": "main",
+   "answer": "strange_loop",
+   "pred": "pigeonhole",
+   "correct": false,
+   "raw": "{\"motif_id\": \"pigeonhole\"}"
+  },
+  {
+   "id": "xvs:strange_loop_en_s0",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "C",
+   "pred": "A",
+   "correct": false,
+   "raw": "{\"choice\": \"A\"}"
+  },
+  {
+   "id": "xvs:strange_loop_en_s1",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "C",
+   "pred": "D",
+   "correct": false,
+   "raw": "{\"choice\": \"D\"}"
+  },
+  {
+   "id": "xvs:strange_loop_en_s2",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "A",
+   "pred": "A",
+   "correct": true,
+   "raw": "{\"choice\": \"A\"}"
+  },
+  {
+   "id": "xvs:strange_loop_en_s3",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "A",
+   "pred": "A",
+   "correct": true,
+   "raw": "{\"choice\": \"A\"}"
+  },
+  {
+   "id": "xvs:strange_loop_en_s4",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "B",
+   "pred": "D",
+   "correct": false,
+   "raw": "{\"choice\": \"D\"}"
+  },
+  {
+   "id": "story:figure_ground_en_s1",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "figure_ground",
+   "pred": "contraction_fixed_point",
+   "correct": false,
+   "raw": "{\"motif_id\": \"contraction_fixed_point\"}"
+  },
+  {
+   "id": "story:figure_ground_en_s2",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "figure_ground",
+   "pred": "contraction_fixed_point",
+   "correct": false,
+   "raw": "{\"motif_id\": \"contraction_fixed_point\"}"
+  },
+  {
+   "id": "story:figure_ground_en_s3",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "figure_ground",
+   "pred": "contraction_fixed_point",
+   "correct": false,
+   "raw": "{\"motif_id\": \"contraction_fixed_point\"}"
+  },
+  {
+   "id": "story:figure_ground_en_s4",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "figure_ground",
+   "pred": "pigeonhole",
+   "correct": false,
+   "raw": "{\"motif_id\": \"pigeonhole\"}"
+  },
+  {
+   "id": "thm:figure_ground",
+   "task": "theorem2motif",
+   "split": "main",
+   "answer": "figure_ground",
+   "pred": "contraction_fixed_point",
+   "correct": false,
+   "raw": "{\"motif_id\": \"contraction_fixed_point\"}"
+  },
+  {
+   "id": "xvs:figure_ground_en_s1",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "D",
+   "pred": "D",
+   "correct": true,
+   "raw": "{\"choice\": \"D\"}"
+  },
+  {
+   "id": "xvs:figure_ground_en_s2",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "D",
+   "pred": "D",
+   "correct": true,
+   "raw": "{\"choice\": \"D\"}"
+  },
+  {
+   "id": "xvs:figure_ground_en_s3",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "B",
+   "pred": "D",
+   "correct": false,
+   "raw": "{\"choice\": \"D\"}"
+  },
+  {
+   "id": "xvs:figure_ground_en_s4",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "A",
+   "pred": "A",
+   "correct": true,
+   "raw": "{\"choice\": \"A\"}"
+  },
+  {
+   "id": "story:isomorphism_en_s0",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "isomorphism",
+   "pred": "contraction_fixed_point",
+   "correct": false,
+   "raw": "{\"motif_id\": \"contraction_fixed_point\"}"
+  },
+  {
+   "id": "story:isomorphism_en_s1",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "isomorphism",
+   "pred": "contraction_fixed_point",
+   "correct": false,
+   "raw": "{\"motif_id\": \"contraction_fixed_point\"}"
+  },
+  {
+   "id": "story:isomorphism_en_s2",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "isomorphism",
+   "pred": "contraction_fixed_point",
+   "correct": false,
+   "raw": "{\"motif_id\": \"contraction_fixed_point\"}"
+  },
+  {
+   "id": "story:isomorphism_en_s3",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "isomorphism",
+   "pred": "contraction_fixed_point",
+   "correct": false,
+   "raw": "{\"motif_id\": \"contraction_fixed_point\"}"
+  },
+  {
+   "id": "story:isomorphism_en_s4",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "isomorphism",
+   "pred": "pigeonhole",
+   "correct": false,
+   "raw": "{\"motif_id\": \"pigeonhole\"}"
+  },
+  {
+   "id": "thm:isomorphism",
+   "task": "theorem2motif",
+   "split": "main",
+   "answer": "isomorphism",
+   "pred": "pigeonhole",
+   "correct": false,
+   "raw": "{\"motif_id\": \"pigeonhole\"}"
+  },
+  {
+   "id": "xvs:isomorphism_en_s0",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "C",
+   "pred": "one of A-D",
+   "correct": false,
+   "raw": "{\"choice\": \"one of A-D\"}"
+  },
+  {
+   "id": "xvs:isomorphism_en_s1",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "A",
+   "pred": "D",
+   "correct": false,
+   "raw": "{\"choice\": \"D\"}"
+  },
+  {
+   "id": "xvs:isomorphism_en_s2",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "B",
+   "pred": "one of A-D",
+   "correct": false,
+   "raw": "{\"choice\": \"one of A-D\"}"
+  },
+  {
+   "id": "xvs:isomorphism_en_s3",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "C",
+   "pred": "one of A-D",
+   "correct": false,
+   "raw": "{\"choice\": \"one of A-D\"}"
+  },
+  {
+   "id": "xvs:isomorphism_en_s4",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "C",
+   "pred": "A",
+   "correct": false,
+   "raw": "{\"choice\": \"A\"}"
+  },
+  {
+   "id": "story:mobius_en_s0",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "mobius",
+   "pred": "contraction_fixed_point",
+   "correct": false,
+   "raw": "{\"motif_id\": \"contraction_fixed_point\"}"
+  },
+  {
+   "id": "story:mobius_en_s1",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "mobius",
+   "pred": "contraction_fixed_point",
+   "correct": false,
+   "raw": "{\"motif_id\": \"contraction_fixed_point\"}"
+  },
+  {
+   "id": "story:mobius_en_s2",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "mobius",
+   "pred": "contraction_fixed_point",
+   "correct": false,
+   "raw": "{\"motif_id\": \"contraction_fixed_point\"}"
+  },
+  {
+   "id": "story:mobius_en_s3",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "mobius",
+   "pred": "contraction_fixed_point",
+   "correct": false,
+   "raw": "{\"motif_id\": \"contraction_fixed_point\"}"
+  },
+  {
+   "id": "story:mobius_en_s4",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "mobius",
+   "pred": "contraction_fixed_point",
+   "correct": false,
+   "raw": "{\"motif_id\": \"contraction_fixed_point\"}"
+  },
+  {
+   "id": "thm:mobius",
+   "task": "theorem2motif",
+   "split": "main",
+   "answer": "mobius",
+   "pred": "mobius",
+   "correct": true,
+   "raw": "{\"motif_id\": \"mobius\"}"
+  },
+  {
+   "id": "xvs:mobius_en_s0",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "D",
+   "pred": "A",
+   "correct": false,
+   "raw": "{\"choice\": \"A\"}"
+  },
+  {
+   "id": "xvs:mobius_en_s1",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "C",
+   "pred": "A",
+   "correct": false,
+   "raw": "{\"choice\": \"A\"}"
+  },
+  {
+   "id": "xvs:mobius_en_s2",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "C",
+   "pred": "B",
+   "correct": false,
+   "raw": "{\"choice\": \"B\"}"
+  },
+  {
+   "id": "xvs:mobius_en_s3",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "D",
+   "pred": "A",
+   "correct": false,
+   "raw": "{\"choice\": \"A\"}"
+  },
+  {
+   "id": "xvs:mobius_en_s4",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "B",
+   "pred": "A",
+   "correct": false,
+   "raw": "{\"choice\": \"A\"}"
+  },
+  {
+   "id": "story:braiding_en_s0",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "braiding",
+   "pred": "contraction_fixed_point",
+   "correct": false,
+   "raw": "{\"motif_id\": \"contraction_fixed_point\"}"
+  },
+  {
+   "id": "story:braiding_en_s1",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "braiding",
+   "pred": "contraction_fixed_point",
+   "correct": false,
+   "raw": "{\"motif_id\": \"contraction_fixed_point\"}"
+  },
+  {
+   "id": "story:braiding_en_s2",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "braiding",
+   "pred": "contraction_fixed_point",
+   "correct": false,
+   "raw": "{\"motif_id\": \"contraction_fixed_point\"}"
+  },
+  {
+   "id": "story:braiding_en_s3",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "braiding",
+   "pred": "contraction_fixed_point",
+   "correct": false,
+   "raw": "{\"motif_id\": \"contraction_fixed_point\"}"
+  },
+  {
+   "id": "story:braiding_en_s4",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "braiding",
+   "pred": "contraction_fixed_point",
+   "correct": false,
+   "raw": "{\"motif_id\": \"contraction_fixed_point\"}"
+  },
+  {
+   "id": "thm:braiding",
+   "task": "theorem2motif",
+   "split": "main",
+   "answer": "braiding",
+   "pred": "pigeonhole",
+   "correct": false,
+   "raw": "{\"motif_id\": \"pigeonhole\"}"
+  },
+  {
+   "id": "xvs:braiding_en_s0",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "C",
+   "pred": "D",
+   "correct": false,
+   "raw": "{\"choice\": \"D\"}"
+  },
+  {
+   "id": "xvs:braiding_en_s1",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "C",
+   "pred": "A",
+   "correct": false,
+   "raw": "{\"choice\": \"A\"}"
+  },
+  {
+   "id": "xvs:braiding_en_s2",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "A",
+   "pred": "D",
+   "correct": false,
+   "raw": "{\"choice\": \"D\"}"
+  },
+  {
+   "id": "xvs:braiding_en_s3",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "B",
+   "pred": "A",
+   "correct": false,
+   "raw": "{\"choice\": \"A\"}"
+  },
+  {
+   "id": "xvs:braiding_en_s4",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "B",
+   "pred": "A",
+   "correct": false,
+   "raw": "{\"choice\": \"A\"}"
+  },
+  {
+   "id": "story:interference_en_s1",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "interference",
+   "pred": "contraction_fixed_point",
+   "correct": false,
+   "raw": "{\"motif_id\": \"contraction_fixed_point\"}"
+  },
+  {
+   "id": "story:interference_en_s2",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "interference",
+   "pred": "pigeonhole",
+   "correct": false,
+   "raw": "{\"motif_id\": \"pigeonhole\"}"
+  },
+  {
+   "id": "story:interference_en_s3",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "interference",
+   "pred": "contraction_fixed_point",
+   "correct": false,
+   "raw": "{\"motif_id\": \"contraction_fixed_point\"}"
+  },
+  {
+   "id": "story:interference_en_s4",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "interference",
+   "pred": "contraction_fixed_point",
+   "correct": false,
+   "raw": "{\"motif_id\": \"contraction_fixed_point\"}"
+  },
+  {
+   "id": "thm:interference",
+   "task": "theorem2motif",
+   "split": "main",
+   "answer": "interference",
+   "pred": "coprime_orbit",
+   "correct": false,
+   "raw": "{\"motif_id\": \"coprime_orbit\"}"
+  },
+  {
+   "id": "xvs:interference_en_s1",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "A",
+   "pred": "A",
+   "correct": true,
+   "raw": "{\"choice\": \"A\"}"
+  },
+  {
+   "id": "xvs:interference_en_s2",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "D",
+   "pred": "D",
+   "correct": true,
+   "raw": "{\"choice\": \"D\"}"
+  },
+  {
+   "id": "xvs:interference_en_s3",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "D",
+   "pred": "D",
+   "correct": true,
+   "raw": "{\"choice\": \"D\"}"
+  },
+  {
+   "id": "xvs:interference_en_s4",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "D",
+   "pred": "A",
+   "correct": false,
+   "raw": "{\"choice\": \"A\"}"
+  },
+  {
+   "id": "story:tiling_en_s0",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "tiling",
+   "pred": "contraction_fixed_point",
+   "correct": false,
+   "raw": "{\"motif_id\": \"contraction_fixed_point\"}"
+  },
+  {
+   "id": "story:tiling_en_s2",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "tiling",
+   "pred": "contraction_fixed_point",
+   "correct": false,
+   "raw": "{\"motif_id\": \"contraction_fixed_point\"}"
+  },
+  {
+   "id": "story:tiling_en_s3",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "tiling",
+   "pred": "contraction_fixed_point",
+   "correct": false,
+   "raw": "{\"motif_id\": \"contraction_fixed_point\"}"
+  },
+  {
+   "id": "thm:tiling",
+   "task": "theorem2motif",
+   "split": "main",
+   "answer": "tiling",
+   "pred": "pigeonhole",
+   "correct": false,
+   "raw": "{\"motif_id\": \"pigeonhole\"}"
+  },
+  {
+   "id": "xvs:tiling_en_s0",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "A",
+   "pred": "D",
+   "correct": false,
+   "raw": "{\"choice\": \"D\"}"
+  },
+  {
+   "id": "xvs:tiling_en_s2",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "A",
+   "pred": "D",
+   "correct": false,
+   "raw": "{\"choice\": \"D\"}"
+  },
+  {
+   "id": "xvs:tiling_en_s3",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "A",
+   "pred": "A",
+   "correct": true,
+   "raw": "{\"choice\": \"A\"}"
+  },
+  {
+   "id": "story:hub_en_s0",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "hub",
+   "pred": "contraction_fixed_point",
+   "correct": false,
+   "raw": "{\"motif_id\": \"contraction_fixed_point\"}"
+  },
+  {
+   "id": "story:hub_en_s1",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "hub",
+   "pred": "contraction_fixed_point",
+   "correct": false,
+   "raw": "{\"motif_id\": \"contraction_fixed_point\"}"
+  },
+  {
+   "id": "story:hub_en_s2",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "hub",
+   "pred": "pigeonhole",
+   "correct": false,
+   "raw": "{\"motif_id\": \"pigeonhole\"}"
+  },
+  {
+   "id": "story:hub_en_s3",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "hub",
+   "pred": "contraction_fixed_point",
+   "correct": false,
+   "raw": "{\"motif_id\": \"contraction_fixed_point\"}"
+  },
+  {
+   "id": "story:hub_en_s4",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "hub",
+   "pred": "pigeonhole",
+   "correct": false,
+   "raw": "{\"motif_id\": \"pigeonhole\"}"
+  },
+  {
+   "id": "thm:hub",
+   "task": "theorem2motif",
+   "split": "main",
+   "answer": "hub",
+   "pred": "contraction_fixed_point",
+   "correct": false,
+   "raw": "{\"motif_id\": \"contraction_fixed_point\"}"
+  },
+  {
+   "id": "xvs:hub_en_s0",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "A",
+   "pred": "D",
+   "correct": false,
+   "raw": "{\"choice\": \"D\"}"
+  },
+  {
+   "id": "xvs:hub_en_s1",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "A",
+   "pred": "C",
+   "correct": false,
+   "raw": "{\"choice\": \"C\"}"
+  },
+  {
+   "id": "xvs:hub_en_s2",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "D",
+   "pred": "A",
+   "correct": false,
+   "raw": "{\"choice\": \"A\"}"
+  },
+  {
+   "id": "xvs:hub_en_s3",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "A",
+   "pred": "D",
+   "correct": false,
+   "raw": "{\"choice\": \"D\"}"
+  },
+  {
+   "id": "xvs:hub_en_s4",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "C",
+   "pred": "D",
+   "correct": false,
+   "raw": "{\"choice\": \"D\"}"
+  },
+  {
+   "id": "story:diagonalization_en_s0",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "diagonalization",
+   "pred": "contraction_fixed_point",
+   "correct": false,
+   "raw": "{\"motif_id\": \"contraction_fixed_point\"}"
+  },
+  {
+   "id": "story:diagonalization_en_s1",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "diagonalization",
+   "pred": "contraction_fixed_point",
+   "correct": false,
+   "raw": "{\"motif_id\": \"contraction_fixed_point\"}"
+  },
+  {
+   "id": "story:diagonalization_en_s2",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "diagonalization",
+   "pred": "contraction_fixed_point",
+   "correct": false,
+   "raw": "{\"motif_id\": \"contraction_fixed_point\"}"
+  },
+  {
+   "id": "story:diagonalization_en_s3",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "diagonalization",
+   "pred": "contraction_fixed_point",
+   "correct": false,
+   "raw": "{\"motif_id\": \"contraction_fixed_point\"}"
+  },
+  {
+   "id": "story:diagonalization_en_s4",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "diagonalization",
+   "pred": "contraction_fixed_point",
+   "correct": false,
+   "raw": "{\"motif_id\": \"contraction_fixed_point\"}"
+  },
+  {
+   "id": "thm:diagonalization",
+   "task": "theorem2motif",
+   "split": "main",
+   "answer": "diagonalization",
+   "pred": "contraction_fixed_point",
+   "correct": false,
+   "raw": "{\"motif_id\": \"contraction_fixed_point\"}"
+  },
+  {
+   "id": "xvs:diagonalization_en_s0",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "A",
+   "pred": "D",
+   "correct": false,
+   "raw": "{\"choice\": \"D\"}"
+  },
+  {
+   "id": "xvs:diagonalization_en_s1",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "D",
+   "pred": "one of A-D",
+   "correct": false,
+   "raw": "{\"choice\": \"one of A-D\"}"
+  },
+  {
+   "id": "xvs:diagonalization_en_s2",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "C",
+   "pred": "D",
+   "correct": false,
+   "raw": "{\"choice\": \"D\"}"
+  },
+  {
+   "id": "xvs:diagonalization_en_s3",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "D",
+   "pred": "A",
+   "correct": false,
+   "raw": "{\"choice\": \"A\"}"
+  },
+  {
+   "id": "xvs:diagonalization_en_s4",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "C",
+   "pred": "D",
+   "correct": false,
+   "raw": "{\"choice\": \"D\"}"
+  },
+  {
+   "id": "story:infinite_descent_en_s0",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "infinite_descent",
+   "pred": "contraction_fixed_point",
+   "correct": false,
+   "raw": "{\"motif_id\": \"contraction_fixed_point\"}"
+  },
+  {
+   "id": "story:infinite_descent_en_s1",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "infinite_descent",
+   "pred": "contraction_fixed_point",
+   "correct": false,
+   "raw": "{\"motif_id\": \"contraction_fixed_point\"}"
+  },
+  {
+   "id": "story:infinite_descent_en_s2",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "infinite_descent",
+   "pred": "contraction_fixed_point",
+   "correct": false,
+   "raw": "{\"motif_id\": \"contraction_fixed_point\"}"
+  },
+  {
+   "id": "story:infinite_descent_en_s3",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "infinite_descent",
+   "pred": "pigeonhole",
+   "correct": false,
+   "raw": "{\"motif_id\": \"pigeonhole\"}"
+  },
+  {
+   "id": "story:infinite_descent_en_s4",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "infinite_descent",
+   "pred": "contraction_fixed_point",
+   "correct": false,
+   "raw": "{\"motif_id\": \"contraction_fixed_point\"}"
+  },
+  {
+   "id": "thm:infinite_descent",
+   "task": "theorem2motif",
+   "split": "main",
+   "answer": "infinite_descent",
+   "pred": "pigeonhole",
+   "correct": false,
+   "raw": "{\"motif_id\": \"pigeonhole\"}"
+  },
+  {
+   "id": "xvs:infinite_descent_en_s0",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "A",
+   "pred": "D",
+   "correct": false,
+   "raw": "{\"choice\": \"D\"}"
+  },
+  {
+   "id": "xvs:infinite_descent_en_s1",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "C",
+   "pred": "B",
+   "correct": false,
+   "raw": "{\"choice\": \"B\"}"
+  },
+  {
+   "id": "xvs:infinite_descent_en_s2",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "B",
+   "pred": "D",
+   "correct": false,
+   "raw": "{\"choice\": \"D\"}"
+  },
+  {
+   "id": "xvs:infinite_descent_en_s3",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "D",
+   "pred": "A",
+   "correct": false,
+   "raw": "{\"choice\": \"A\"}"
+  },
+  {
+   "id": "xvs:infinite_descent_en_s4",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "A",
+   "pred": "D",
+   "correct": false,
+   "raw": "{\"choice\": \"D\"}"
+  },
+  {
+   "id": "story:coprime_orbit_en_s0",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "coprime_orbit",
+   "pred": "coprime_orbit",
+   "correct": true,
+   "raw": "{\"motif_id\": \"coprime_orbit\"}"
+  },
+  {
+   "id": "story:coprime_orbit_en_s1",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "coprime_orbit",
+   "pred": "coprime_orbit",
+   "correct": true,
+   "raw": "{\"motif_id\": \"coprime_orbit\"}"
+  },
+  {
+   "id": "story:coprime_orbit_en_s2",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "coprime_orbit",
+   "pred": "coprime_orbit",
+   "correct": true,
+   "raw": "{\"motif_id\": \"coprime_orbit\"}"
+  },
+  {
+   "id": "story:coprime_orbit_en_s3",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "coprime_orbit",
+   "pred": "coprime_orbit",
+   "correct": true,
+   "raw": "{\"motif_id\": \"coprime_orbit\"}"
+  },
+  {
+   "id": "story:coprime_orbit_en_s4",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "coprime_orbit",
+   "pred": "coprime_orbit",
+   "correct": true,
+   "raw": "{\"motif_id\": \"coprime_orbit\"}"
+  },
+  {
+   "id": "thm:coprime_orbit",
+   "task": "theorem2motif",
+   "split": "main",
+   "answer": "coprime_orbit",
+   "pred": "coprime_orbit",
+   "correct": true,
+   "raw": "{\"motif_id\": \"coprime_orbit\"}"
+  },
+  {
+   "id": "xvs:coprime_orbit_en_s0",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "D",
+   "pred": "D",
+   "correct": true,
+   "raw": "{\"choice\": \"D\"}"
+  },
+  {
+   "id": "xvs:coprime_orbit_en_s1",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "D",
+   "pred": "D",
+   "correct": true,
+   "raw": "{\"choice\": \"D\"}"
+  },
+  {
+   "id": "xvs:coprime_orbit_en_s2",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "D",
+   "pred": "D",
+   "correct": true,
+   "raw": "{\"choice\": \"D\"}"
+  },
+  {
+   "id": "xvs:coprime_orbit_en_s3",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "A",
+   "pred": "A",
+   "correct": true,
+   "raw": "{\"choice\": \"A\"}"
+  },
+  {
+   "id": "xvs:coprime_orbit_en_s4",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "A",
+   "pred": "A",
+   "correct": true,
+   "raw": "{\"choice\": \"A\"}"
+  },
+  {
+   "id": "story:pigeonhole_en_s0",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "pigeonhole",
+   "pred": "contraction_fixed_point",
+   "correct": false,
+   "raw": "{\"motif_id\": \"contraction_fixed_point\"}"
+  },
+  {
+   "id": "story:pigeonhole_en_s1",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "pigeonhole",
+   "pred": "contraction_fixed_point",
+   "correct": false,
+   "raw": "{\"motif_id\": \"contraction_fixed_point\"}"
+  },
+  {
+   "id": "story:pigeonhole_en_s2",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "pigeonhole",
+   "pred": "contraction_fixed_point",
+   "correct": false,
+   "raw": "{\"motif_id\": \"contraction_fixed_point\"}"
+  },
+  {
+   "id": "story:pigeonhole_en_s3",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "pigeonhole",
+   "pred": "contraction_fixed_point",
+   "correct": false,
+   "raw": "{\"motif_id\": \"contraction_fixed_point\"}"
+  },
+  {
+   "id": "story:pigeonhole_en_s4",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "pigeonhole",
+   "pred": "pigeonhole",
+   "correct": true,
+   "raw": "{\"motif_id\": \"pigeonhole\"}"
+  },
+  {
+   "id": "thm:pigeonhole",
+   "task": "theorem2motif",
+   "split": "main",
+   "answer": "pigeonhole",
+   "pred": "pigeonhole",
+   "correct": true,
+   "raw": "{\"motif_id\": \"pigeonhole\"}"
+  },
+  {
+   "id": "xvs:pigeonhole_en_s0",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "D",
+   "pred": "A",
+   "correct": false,
+   "raw": "{\"choice\": \"A\"}"
+  },
+  {
+   "id": "xvs:pigeonhole_en_s1",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "A",
+   "pred": "D",
+   "correct": false,
+   "raw": "{\"choice\": \"D\"}"
+  },
+  {
+   "id": "xvs:pigeonhole_en_s2",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "C",
+   "pred": "D",
+   "correct": false,
+   "raw": "{\"choice\": \"D\"}"
+  },
+  {
+   "id": "xvs:pigeonhole_en_s3",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "C",
+   "pred": "A",
+   "correct": false,
+   "raw": "{\"choice\": \"A\"}"
+  },
+  {
+   "id": "xvs:pigeonhole_en_s4",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "D",
+   "pred": "D",
+   "correct": true,
+   "raw": "{\"choice\": \"D\"}"
+  },
+  {
+   "id": "story:projective_duality_en_s0",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "projective_duality",
+   "pred": "pigeonhole",
+   "correct": false,
+   "raw": "{\"motif_id\": \"pigeonhole\"}"
+  },
+  {
+   "id": "story:projective_duality_en_s1",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "projective_duality",
+   "pred": "pigeonhole",
+   "correct": false,
+   "raw": "{\"motif_id\": \"pigeonhole\"}"
+  },
+  {
+   "id": "story:projective_duality_en_s2",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "projective_duality",
+   "pred": "pigeonhole",
+   "correct": false,
+   "raw": "{\"motif_id\": \"pigeonhole\"}"
+  },
+  {
+   "id": "story:projective_duality_en_s3",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "projective_duality",
+   "pred": "pigeonhole",
+   "correct": false,
+   "raw": "{\"motif_id\": \"pigeonhole\"}"
+  },
+  {
+   "id": "story:projective_duality_en_s4",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "projective_duality",
+   "pred": "pigeonhole",
+   "correct": false,
+   "raw": "{\"motif_id\": \"pigeonhole\"}"
+  },
+  {
+   "id": "thm:projective_duality",
+   "task": "theorem2motif",
+   "split": "main",
+   "answer": "projective_duality",
+   "pred": "pigeonhole",
+   "correct": false,
+   "raw": "{\"motif_id\": \"pigeonhole\"}"
+  },
+  {
+   "id": "xvs:projective_duality_en_s0",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "D",
+   "pred": "D",
+   "correct": true,
+   "raw": "{\"choice\": \"D\"}"
+  },
+  {
+   "id": "xvs:projective_duality_en_s1",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "C",
+   "pred": "D",
+   "correct": false,
+   "raw": "{\"choice\": \"D\"}"
+  },
+  {
+   "id": "xvs:projective_duality_en_s2",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "A",
+   "pred": "A",
+   "correct": true,
+   "raw": "{\"choice\": \"A\"}"
+  },
+  {
+   "id": "xvs:projective_duality_en_s3",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "D",
+   "pred": "D",
+   "correct": true,
+   "raw": "{\"choice\": \"D\"}"
+  },
+  {
+   "id": "xvs:projective_duality_en_s4",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "C",
+   "pred": "D",
+   "correct": false,
+   "raw": "{\"choice\": \"D\"}"
+  },
+  {
+   "id": "story:contraction_fixed_point_en_s0",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "contraction_fixed_point",
+   "pred": "contraction_fixed_point",
+   "correct": true,
+   "raw": "{\"motif_id\": \"contraction_fixed_point\"}"
+  },
+  {
+   "id": "story:contraction_fixed_point_en_s1",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "contraction_fixed_point",
+   "pred": "contraction_fixed_point",
+   "correct": true,
+   "raw": "{\"motif_id\": \"contraction_fixed_point\"}"
+  },
+  {
+   "id": "story:contraction_fixed_point_en_s2",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "contraction_fixed_point",
+   "pred": "contraction_fixed_point",
+   "correct": true,
+   "raw": "{\"motif_id\": \"contraction_fixed_point\"}"
+  },
+  {
+   "id": "story:contraction_fixed_point_en_s3",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "contraction_fixed_point",
+   "pred": "contraction_fixed_point",
+   "correct": true,
+   "raw": "{\"motif_id\": \"contraction_fixed_point\"}"
+  },
+  {
+   "id": "story:contraction_fixed_point_en_s4",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "contraction_fixed_point",
+   "pred": "contraction_fixed_point",
+   "correct": true,
+   "raw": "{\"motif_id\": \"contraction_fixed_point\"}"
+  },
+  {
+   "id": "thm:contraction_fixed_point",
+   "task": "theorem2motif",
+   "split": "main",
+   "answer": "contraction_fixed_point",
+   "pred": "pigeonhole",
+   "correct": false,
+   "raw": "{\"motif_id\": \"pigeonhole\"}"
+  },
+  {
+   "id": "xvs:contraction_fixed_point_en_s0",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "A",
+   "pred": "B",
+   "correct": false,
+   "raw": "{\"choice\": \"B\"}"
+  },
+  {
+   "id": "xvs:contraction_fixed_point_en_s1",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "D",
+   "pred": "D",
+   "correct": true,
+   "raw": "{\"choice\": \"D\"}"
+  },
+  {
+   "id": "xvs:contraction_fixed_point_en_s2",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "D",
+   "pred": "D",
+   "correct": true,
+   "raw": "{\"choice\": \"D\"}"
+  },
+  {
+   "id": "xvs:contraction_fixed_point_en_s3",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "D",
+   "pred": "D",
+   "correct": true,
+   "raw": "{\"choice\": \"D\"}"
+  },
+  {
+   "id": "xvs:contraction_fixed_point_en_s4",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "B",
+   "pred": "D",
+   "correct": false,
+   "raw": "{\"choice\": \"D\"}"
+  },
+  {
+   "id": "story:aperiodic_tiling_en_s0",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "aperiodic_tiling",
+   "pred": "contraction_fixed_point",
+   "correct": false,
+   "raw": "{\"motif_id\": \"contraction_fixed_point\"}"
+  },
+  {
+   "id": "story:aperiodic_tiling_en_s1",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "aperiodic_tiling",
+   "pred": "contraction_fixed_point",
+   "correct": false,
+   "raw": "{\"motif_id\": \"contraction_fixed_point\"}"
+  },
+  {
+   "id": "story:aperiodic_tiling_en_s2",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "aperiodic_tiling",
+   "pred": "contraction_fixed_point",
+   "correct": false,
+   "raw": "{\"motif_id\": \"contraction_fixed_point\"}"
+  },
+  {
+   "id": "story:aperiodic_tiling_en_s3",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "aperiodic_tiling",
+   "pred": "contraction_fixed_point",
+   "correct": false,
+   "raw": "{\"motif_id\": \"contraction_fixed_point\"}"
+  },
+  {
+   "id": "story:aperiodic_tiling_en_s4",
+   "task": "story2motif",
+   "split": "main",
+   "answer": "aperiodic_tiling",
+   "pred": "contraction_fixed_point",
+   "correct": false,
+   "raw": "{\"motif_id\": \"contraction_fixed_point\"}"
+  },
+  {
+   "id": "thm:aperiodic_tiling",
+   "task": "theorem2motif",
+   "split": "main",
+   "answer": "aperiodic_tiling",
+   "pred": "aperiodic_tiling",
+   "correct": true,
+   "raw": "{\"motif_id\": \"aperiodic_tiling\"}"
+  },
+  {
+   "id": "xvs:aperiodic_tiling_en_s0",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "B",
+   "pred": "A",
+   "correct": false,
+   "raw": "{\"choice\": \"A\"}"
+  },
+  {
+   "id": "xvs:aperiodic_tiling_en_s1",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "C",
+   "pred": "A",
+   "correct": false,
+   "raw": "{\"choice\": \"A\"}"
+  },
+  {
+   "id": "xvs:aperiodic_tiling_en_s2",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "C",
+   "pred": "A",
+   "correct": false,
+   "raw": "{\"choice\": \"A\"}"
+  },
+  {
+   "id": "xvs:aperiodic_tiling_en_s3",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "A",
+   "pred": "A",
+   "correct": true,
+   "raw": "{\"choice\": \"A\"}"
+  },
+  {
+   "id": "xvs:aperiodic_tiling_en_s4",
+   "task": "xv_story_thm",
+   "split": "main",
+   "answer": "A",
+   "pred": "A",
+   "correct": true,
+   "raw": "{\"choice\": \"A\"}"
+  }
+ ]
+}
