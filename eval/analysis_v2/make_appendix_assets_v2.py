@@ -228,7 +228,8 @@ def task_breakdown_fig():
     ax.set_ylabel("Accuracy (%)")
     ax.set_title("Per-Task Accuracy Breakdown", pad=10)
     ax.set_xticks(x)
-    ax.set_xticklabels(LABELS, rotation=20, ha="right")
+    ax.set_xticklabels(LABELS, rotation=45, ha="right", rotation_mode="anchor",
+                       fontsize=6)
     ax.set_ylim(0, 100)
     ax.legend(loc="upper right", ncol=2)
     ax.grid(True, axis="y")
