@@ -1,0 +1,36 @@
+meta-llama/llama-4-scout @ https://openrouter.ai/api/v1: 1156 items, tasks=['crossvoice', 'scene2motif', 'scene2motif_family4', 'skeleton2motif', 'story2motif', 'theorem2motif', 'xv_scene_thm', 'xv_story_thm']
+{
+ "scene2motif": {
+  "n": 210,
+  "acc": 0.4762
+ },
+ "skeleton2motif": {
+  "n": 49,
+  "acc": 0.6735
+ },
+ "story2motif": {
+  "n": 121,
+  "acc": 0.3388
+ },
+ "theorem2motif": {
+  "n": 25,
+  "acc": 0.76
+ },
+ "crossvoice": {
+  "n": 210,
+  "acc": 0.319
+ },
+ "xv_scene_thm": {
+  "n": 210,
+  "acc": 0.5571
+ },
+ "xv_story_thm": {
+  "n": 121,
+  "acc": 0.4545
+ },
+ "scene2motif_family4": {
+  "n": 210,
+  "acc": 0.7143
+ }
+} -> /Users/agent4stone/GEB-eval/eval/results_v2/or_llama-4-scout.json
+EVAL_V2_DONE or_llama-4-scout

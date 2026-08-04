@@ -1,0 +1,36 @@
+google/gemma-4-31b-it @ https://openrouter.ai/api/v1: 1156 items, tasks=['crossvoice', 'scene2motif', 'scene2motif_family4', 'skeleton2motif', 'story2motif', 'theorem2motif', 'xv_scene_thm', 'xv_story_thm']
+{
+ "scene2motif": {
+  "n": 210,
+  "acc": 0.7238
+ },
+ "skeleton2motif": {
+  "n": 49,
+  "acc": 0.8163
+ },
+ "story2motif": {
+  "n": 121,
+  "acc": 0.8264
+ },
+ "theorem2motif": {
+  "n": 25,
+  "acc": 0.88
+ },
+ "crossvoice": {
+  "n": 210,
+  "acc": 0.3381
+ },
+ "xv_scene_thm": {
+  "n": 210,
+  "acc": 0.6476
+ },
+ "xv_story_thm": {
+  "n": 121,
+  "acc": 0.686
+ },
+ "scene2motif_family4": {
+  "n": 210,
+  "acc": 0.8476
+ }
+} -> /Users/agent4stone/GEB-eval/eval/results_v2/or_gemma-4-31b.json
+EVAL_V2_DONE or_gemma-4-31b
