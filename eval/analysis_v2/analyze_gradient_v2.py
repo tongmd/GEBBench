@@ -37,9 +37,22 @@ N_BOOT = 10000
 VISION = ["or_gpt-5.5", "or_gpt-5.2", "or_claude-opus-4.8",
           "or_gemini-3.1-pro", "or_kimi-k2.5", "or_qwen2.5-vl-72b",
           "qwen2.5-vl-32b", "qwen2-vl-7b"]
+# All vision-capable arms of the 37-model roster (every model that ran all
+# 8 tasks, i.e. has crossvoice data), ordered by mean accuracy as in the
+# paper's main table. Used for the gradient figure; the core statistical
+# analyses below keep the original 8-model VISION set.
+VISION_FIG = [
+    "or_gpt-5.5", "or_gemini-3.1-pro", "or_kimi-k2.5", "or_gpt-5.2",
+    "or_gemma-4-31b", "or_claude-opus-4.8", "qwen3-vl-32b", "or_glm-4.6v",
+    "or_qwen2.5-vl-72b", "qwen2.5-vl-32b", "glm-4.1v-9b", "or_llama-4-scout",
+    "glm-4.6v-flash", "qwen3-vl-8b", "gemma-3-27b", "minicpm-v-4.5",
+    "internvl3.5-8b", "qwen3-vl-4b", "internvl3-8b", "kimi-vl-a3b",
+    "gemma-3-12b", "qwen3-vl-2b", "qwen2-vl-7b", "ernie-4.5-vl-28b-a3b",
+    "pixtral-12b", "nemotron-nano-vl-8b", "minicpm-v-4",
+]
 TEXT_ONLY = ["qwen2.5-14b", "qwen2.5-7b", "deepseek-coder-v2-lite",
              "or_deepseek-v3.2"]
-MODELS = VISION + TEXT_ONLY
+MODELS = list(dict.fromkeys(VISION + VISION_FIG + TEXT_ONLY))
 FRONTIER = ["or_gpt-5.5", "or_gpt-5.2", "or_claude-opus-4.8",
             "or_gemini-3.1-pro"]
 LABELS = {
@@ -51,6 +64,26 @@ LABELS = {
     "qwen2.5-14b": "Qwen2.5-14B", "qwen2.5-7b": "Qwen2.5-7B",
     "deepseek-coder-v2-lite": "DeepSeek-Coder-V2-Lite",
     "or_deepseek-v3.2": "DeepSeek-V3.2",
+    # 2026 open-weights extension (vision-capable)
+    "or_gemma-4-31b": "Gemma 4 31B",
+    "qwen3-vl-32b": "Qwen3-VL-32B",
+    "or_glm-4.6v": "GLM-4.6V",
+    "or_llama-4-scout": "Llama 4 Scout",
+    "glm-4.1v-9b": "GLM-4.1V-9B",
+    "glm-4.6v-flash": "GLM-4.6V-Flash",
+    "qwen3-vl-8b": "Qwen3-VL-8B",
+    "gemma-3-27b": "Gemma 3 27B",
+    "minicpm-v-4.5": "MiniCPM-V 4.5",
+    "internvl3.5-8b": "InternVL3.5-8B",
+    "qwen3-vl-4b": "Qwen3-VL-4B",
+    "internvl3-8b": "InternVL3-8B",
+    "kimi-vl-a3b": "Kimi-VL-A3B",
+    "gemma-3-12b": "Gemma 3 12B",
+    "qwen3-vl-2b": "Qwen3-VL-2B",
+    "ernie-4.5-vl-28b-a3b": "ERNIE-4.5-VL-28B-A3B",
+    "pixtral-12b": "Pixtral-12B",
+    "nemotron-nano-vl-8b": "Nemotron-Nano-VL-8B",
+    "minicpm-v-4": "MiniCPM-V 4",
 }
 
 # v2 reference gradient ordering (frontier): theorem > story > skeleton >
@@ -316,27 +349,38 @@ def make_figure(stats):
     figstyle.use()
     import matplotlib.pyplot as plt
 
-    fig, ax = plt.subplots(figsize=(figstyle.FULL, 2.7))
+    from matplotlib import cm
+
+    fig, ax = plt.subplots(figsize=(15.0, 4.5))
     xs = np.arange(len(GRADIENT))
-    n_m = len(VISION)
-    for i, m in enumerate(VISION):
+    n_m = len(VISION_FIG)
+    # colors/markers: keep figstyle's fixed per-model assignments where they
+    # exist; deterministic fallback palette for the extension models.
+    fallback = [cm.tab20(i / 19) for i in range(20)] + \
+               [cm.tab20b(i / 19) for i in range(20)]
+    marker_cycle = ["o", "s", "D", "^", "v", "P", "X", "<", ">", "h", "d",
+                    "*", "p", "8", "H"]
+    for i, m in enumerate(VISION_FIG):
         name = LABELS[m]
-        color = figstyle.MODEL_COLORS[name]
-        marker = figstyle.MODEL_MARKERS[name]
-        off = (i - (n_m - 1) / 2) * 0.055
+        color = figstyle.MODEL_COLORS.get(name, fallback[i % len(fallback)])
+        marker = figstyle.MODEL_MARKERS.get(
+            name, marker_cycle[i % len(marker_cycle)])
+        off = (i - (n_m - 1) / 2) * (0.84 / max(n_m - 1, 1))
         ks = [stats[m]["tasks"][t]["kappa"] for t in GRADIENT]
         los = [stats[m]["tasks"][t]["kappa_ci95"][0] for t in GRADIENT]
         his = [stats[m]["tasks"][t]["kappa_ci95"][1] for t in GRADIENT]
         yerr = [np.array(ks) - np.array(los), np.array(his) - np.array(ks)]
         ax.errorbar(xs + off, ks, yerr=yerr, marker=marker, color=color,
-                    label=name, capsize=2.0, elinewidth=0.8, alpha=0.95)
+                    label=name, capsize=1.2, elinewidth=0.6, lw=0.9,
+                    markersize=3.6, alpha=0.9)
     ax.axhline(0.0, color=figstyle.NEUTRAL, lw=0.6, ls=":")
-    ax.text(4.45, 0.025, "chance ($\\kappa=0$)", color=figstyle.NEUTRAL,
-            fontsize=7, ha="right")
+    ax.text(-0.42, 0.025, "chance ($\\kappa=0$)", color=figstyle.NEUTRAL,
+            fontsize=7, ha="left")
     ax.set_xticks(xs, [TASK_LABELS[t] for t in GRADIENT])
     ax.set_ylabel("chance-corrected accuracy $\\kappa$")
-    ax.set_ylim(-0.15, 1.02)
-    ax.legend(loc="lower left")
+    ax.set_ylim(-0.30, 1.02)
+    ax.legend(loc="upper center", bbox_to_anchor=(0.5, -0.08),
+              ncol=7, fontsize=6.5)
     fig.tight_layout()
     for ext in ("pdf", "png"):
         p = os.path.join(OUT, f"gradient_kappa_v2.{ext}")
@@ -364,6 +408,7 @@ def main():
     out = {
         "meta": {
             "models": MODELS, "vision_models": VISION,
+            "vision_fig_models": VISION_FIG,
             "gradient_tasks": GRADIENT, "chance": CHANCE,
             "n_boot": N_BOOT, "seed": 20260721,
             "kappa_def": "(acc - chance) / (1 - chance)",

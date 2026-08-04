@@ -44,6 +44,26 @@ TAG2NAME = {
     "qwen/qwen2.5-vl-72b-instruct": "Qwen2.5-VL-72B",
     "qwen2.5-vl-32b": "Qwen2.5-VL-32B",
     "qwen2-vl-7b": "Qwen2-VL-7B",
+    # 37-arm open-weights extension roster (v2)
+    "or_gemma-4-31b": "Gemma-4-31B",
+    "qwen3-vl-32b": "Qwen3-VL-32B",
+    "or_glm-4.6v": "GLM-4.6V",
+    "or_llama-4-scout": "Llama-4-Scout",
+    "minicpm-v-4.5": "MiniCPM-V-4.5",
+    "ernie-4.5-vl-28b-a3b": "ERNIE-4.5-VL",
+    "internvl3.5-8b": "InternVL3.5-8B",
+    "kimi-vl-a3b": "Kimi-VL-A3B",
+    "pixtral-12b": "Pixtral-12B",
+    "nemotron-nano-vl-8b": "Nemotron-VL",
+    "qwen3-vl-4b": "Qwen3-VL-4B",
+    "qwen3-vl-2b": "Qwen3-VL-2B",
+    "glm-4.6v-flash": "GLM-4.6V-Flash",
+    "glm-4.1v-9b": "GLM-4.1V-9B",
+    "qwen3-vl-8b": "Qwen3-VL-8B",
+    "gemma-3-27b": "Gemma-3-27B",
+    "gemma-3-12b": "Gemma-3-12B",
+    "internvl3-8b": "InternVL3-8B",
+    "minicpm-v-4": "MiniCPM-V-4",
 }
 
 VISION_TASKS = ("scene2motif", "skeleton2motif")
