@@ -162,11 +162,11 @@ def heatmap_fig(mat):
                 ax.text(j, i, f"{v:.0%}", ha="center", va="center",
                         fontsize=4.2, color=c)
     ax.set_xticks(range(len(MOTIFS)))
-    ax.set_xticklabels([motif_name(m) for m in MOTIFS], rotation=90,
-                       ha="right", fontsize=6)
+    ax.set_xticklabels([motif_name(m) for m in MOTIFS], rotation=45,
+                       ha="right", rotation_mode="anchor", fontsize=7)
     ax.set_yticks(range(len(MODELS)))
     ax.set_yticklabels(LABELS, fontsize=6.5)
-    ax.set_xlabel("Motif (25 total)")
+    ax.set_xlabel("Motif (25 total)", labelpad=4)
     ax.set_ylabel("Model")
     ax.set_title("Per-Motif Recall Across Models "
                  "(pooled over the four identification tasks)",
