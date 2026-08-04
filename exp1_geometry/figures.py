@@ -174,11 +174,13 @@ def fig_betas():
                         ha="center", fontsize=8, color=INK)
     ax.axhline(0, color=INK, lw=0.8)
     ax.set_xticks(x)
-    ax.set_xticklabels(models)
+    tick_labels = [TAG2NAME.get(m, m) for m in models]
+    ax.set_xticklabels(tick_labels, rotation=45, ha="right",
+                       rotation_mode="anchor")
     ax.set_ylabel(r"dyadic Poisson $\beta$ (std. similarity)")
     ax.legend(ncol=2)
-    fig.tight_layout()
-    fig.savefig(FIGS / "exp1_betas.pdf", bbox_inches="tight")
+    fig.subplots_adjust(bottom=0.28)
+    fig.savefig(FIGS / "exp1_betas.pdf")
     print("wrote", FIGS / "exp1_betas.pdf")
 
 
