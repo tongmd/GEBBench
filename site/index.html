@@ -4,8 +4,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>GEB Benchmark — See a scene, grasp a structure</title>
-<link rel="icon" type="image/svg+xml" href="images/favicon.svg">
 <link rel="icon" type="image/png" sizes="96x96" href="images/favicon-96x96.png">
+<link rel="shortcut icon" href="images/favicon.ico">
+<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
@@ -67,6 +68,33 @@
   a { color:var(--accent); }
   code { font-family:Menlo,monospace; font-size:.9em; background:var(--code-bg);
          padding:1px 5px; border-radius:4px; }
+  .def { border:1px solid var(--line); border-left:3px solid var(--ink);
+         background:var(--card); padding:16px 22px; margin:22px 0;
+         border-radius:0 8px 8px 0; }
+  .def .dhead { font-weight:bold; font-style:normal; }
+  .def p { margin:8px 0; }
+  .story-card { border:1px solid var(--line); background:var(--card);
+                border-radius:8px; padding:16px 20px; margin:18px 0; }
+  .story-card .shead { display:flex; justify-content:space-between; align-items:baseline;
+                       gap:12px; flex-wrap:wrap; margin-bottom:8px; }
+  .story-card .stitle { font-weight:bold; font-size:17px; }
+  .story-card .smotif { font:12px/1 Menlo,monospace; color:var(--accent);
+                        text-transform:uppercase; letter-spacing:1px; }
+  .story-card .stext { font-style:italic; margin:8px 0; white-space:pre-line; }
+  .story-card .sdevice { font-size:14px; color:var(--dim); margin:8px 0 0;
+                         border-top:1px dashed var(--line); padding-top:8px; }
+  .story-card .sdevice b { color:var(--ink); }
+  .masked { background:var(--code-bg); border-radius:4px; padding:0 4px; }
+  .groups { display:grid; grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
+            gap:10px; margin:18px 0; }
+  .group { border:1px solid var(--line); border-radius:8px; background:var(--card);
+           padding:11px 15px; font-size:14px; }
+  .group .gname { font:12px/1 Menlo,monospace; color:var(--accent);
+                  text-transform:uppercase; letter-spacing:1.2px; }
+  .group .gm { color:var(--ink); margin-top:5px; line-height:1.5; }
+  pre.bibtex { font:12.5px/1.5 Menlo,monospace; background:var(--code-bg);
+               border:1px solid var(--line); border-radius:8px; padding:14px 18px;
+               overflow-x:auto; }
 </style>
 </head>
 <body>
@@ -107,7 +135,148 @@
       <div class="l">languages (EN primary, ZH mirror)</div></div>
   </div>
 </header>
-<h2><span class="k">what we found</span>Reading structure, and failing to carry it</h2>
+
+<h2><span class="k">framework</span>The cross-modal category</h2>
+<p class="lead">The benchmark is organized by a cross-modal category whose objects
+are abstract structural motifs and whose morphisms are structure-preserving edits.
+The tasks are the natural questions about that category.</p>
+
+<div class="def">
+  <p class="dhead">Definition 1 (the cross-modal category).</p>
+  <p>The <em>motif category</em> $\mathcal{M}$ has the 25 motifs
+  $m_1,\ldots,m_{25}$ as objects and structural transformations
+  $f : m \to m'$ (nesting deepened into recursion, a symmetry broken, a loop
+  closed into a cycle) as morphisms. Each voice
+  $v \in \{S,T,H,K\}$ (Scene, Story, Theorem, Skeleton) is a
+  <em>realization functor</em> into its category of artifacts &mdash; photographs
+  whose composition enacts the motif, narratives under a checkable form device,
+  name-masked mathematical statements, labelled graphs:</p>
+  <p>$$F_v : \mathcal{M} \to \mathcal{A}_v, \qquad
+  F_v(\mathrm{id}_m)=\mathrm{id}_{F_v(m)}, \qquad
+  F_v(g \circ f)=F_v(g)\circ F_v(f). \tag{1}$$</p>
+  <p>$F_K$, which hands the model the structure literally as a graph, is the most
+  faithful of the four.</p>
+</div>
+
+<div class="def">
+  <p class="dhead">Definition 2 (tasks).</p>
+  <p><em>Identification</em> for voice $v$ presents $F_v(m)$ and asks for $m$:
+  an approximate right inverse</p>
+  <p>$$R_v \circ F_v \;\approx\; \mathrm{id}_{\mathcal{M}}. \tag{2}$$</p>
+  <p><em>Cross-voice matching</em> presents $F_u(m)$ and asks for $F_v(m)$ among
+  four candidates: the composite $F_v \circ R_u$. The <em>mapping tax</em> is the
+  empirical gap between the two. At the morphism layer, the model is given
+  $F_u(f)$ and $F_v(m)$ and must produce $F_v(m')$; the functors are
+  <em>natural</em> iff, for every $f : m \to m'$,</p>
+  <p>$$\eta_{m'} \circ F_u(f) \;=\; F_v(f) \circ \eta_m, \tag{3}$$</p>
+  <p>and the task tests whether a model witnesses this square. $F_K$ being most
+  faithful makes $R_K$ the easiest right inverse, so skeleton identification is
+  the recognition ceiling.</p>
+</div>
+
+<p>Every item is a multiple-choice question with a single ground-truth answer, so
+scoring is judge-free exact match and fully reproducible. Chance is
+$1/25 = 4\%$ on the 25-way identification tasks and $1/4 = 25\%$ on the four-way
+matching and adversarial tasks. Node counts, depths and angles are nuisance
+variables &mdash; recorded, never scored.</p>
+
+<h2><span class="k">library</span>25 motifs in seven groups</h2>
+<p>The motifs were chosen not to tile a taxonomy but to be exquisite &mdash; each a
+recognizable shape of thought in the spirit of <em>G&ouml;del, Escher, Bach</em>,
+from the self-referential fixed point to the tangled hierarchy of a strange loop.
+Each motif is fixed by a single crisp invariant &mdash; the property a system must
+recognize &mdash; and realized in the four voices. The grouping below is a reading
+aid; the scored unit is always the single motif and its invariant.</p>
+<div class="groups">
+  <div class="group"><span class="gname">Self</span>
+    <div class="gm">self-reference · strange loop · recursion · infinite descent</div></div>
+  <div class="group"><span class="gname">Fixed</span>
+    <div class="gm">contraction · convergence · cycle · coprime orbit</div></div>
+  <div class="group"><span class="gname">Space</span>
+    <div class="gm">M&ouml;bius · spiral · nesting · figure&ndash;ground</div></div>
+  <div class="group"><span class="gname">Mirror</span>
+    <div class="gm">symmetry · symmetry breaking · alternation · projective duality</div></div>
+  <div class="group"><span class="gname">Tiling</span>
+    <div class="gm">tiling · aperiodic tiling · braiding · interference</div></div>
+  <div class="group"><span class="gname">Graph</span>
+    <div class="gm">bottleneck · hub · isomorphism</div></div>
+  <div class="group"><span class="gname">Count</span>
+    <div class="gm">pigeonhole · diagonalization</div></div>
+</div>
+
+<h2><span class="k">examples</span>The story voice: form devices you can check</h2>
+<p class="lead">The story voice is the library's most GEB-like component: the
+motif lives not in what the tale says but in <em>how it is told</em>, through a
+form device that a program can verify without judgment calls. Three items from
+the released dataset, verbatim:</p>
+
+<div class="story-card">
+  <div class="shead"><span class="stitle">Lanterns</span>
+    <span class="smotif">strange loop</span></div>
+  <div class="stext">A says:
+A is telling B's story.
+B says:
+B is telling C's story.
+C says:
+The protagonist is A. A is telling B's story.</div>
+  <p class="sdevice"><b>Device.</b> Three narration blocks climb a hierarchy of
+  tellers &mdash; A narrates B, B narrates C &mdash; and the third block hands the
+  protagonist role back to A, returning to the opening statement while keeping
+  the level-by-level nesting: a tangled hierarchy in six lines.</p>
+</div>
+
+<div class="story-card">
+  <div class="shead"><span class="stitle">Lantern at the Green</span>
+    <span class="smotif">cycle</span></div>
+  <div class="stext">And so Mara carried a tin lantern to the village green. And so Nell set warm buns on a checked cloth.
+
+And so Nell set warm buns on a checked cloth. And so Ben tied a blue ribbon round the lantern handle.
+
+And so Ben tied a blue ribbon round the lantern handle. And so Mara carried a tin lantern to the village green.</div>
+  <p class="sdevice"><b>Device.</b> The paragraphs form a closed ring: each
+  paragraph's last sentence is, word for word, the next paragraph's first, and the
+  last paragraph closes back onto the first. The checker verifies
+  $R_1{=}E_2$, $R_2{=}E_3$, $R_3{=}E_1$ mechanically.</p>
+</div>
+
+<div class="story-card">
+  <div class="shead"><span class="stitle">The Red Kite</span>
+    <span class="smotif">m&ouml;bius</span></div>
+  <div class="stext">At dawn, Lina carried the red kite left of the shed and smiled. Her brother Tom waved from above the narrow steps and called her down. Inside the tea room, the baker set a warm bun beside the window. The old dog slept below the bench while the cat waited right by the door. At dawn, Lina carried the red kite right of the shed and smiled. Her brother Tom waved from below the narrow steps and called her down. Outside the tea room, the baker set a warm bun beside the window. The old dog slept above the bench while the cat waited left by the door. At dawn, Lina carried the red kite left of the shed and smiled.</div>
+  <p class="sdevice"><b>Device.</b> One lap of four sentences, then the same lap
+  with every orientation word swapped &mdash; left/right, above/below,
+  inside/outside &mdash; and only the ninth sentence restores the first exactly:
+  one traversal flips orientation, two restore it, which is precisely the
+  M&ouml;bius invariant.</p>
+</div>
+
+<p>For self-reference the device is an acrostic fixed point: the title asserts
+&ldquo;the first characters of this piece's sentences, read in order, spell exactly
+this title,&rdquo; and the checker confirms that the title's claim is precisely the
+fact just verified &mdash; a single-layer constructible fixed point, with no climb
+through narrative levels (which would be a strange loop) and no second system
+being described (which would be an isomorphism).</p>
+
+<h3>The theorem voice: real theorems, name-masked</h3>
+<p>Each motif also carries one true, attributed theorem, presented with its
+identifying names masked so the structure must be read, not recalled. The
+self-reference entry, verbatim:</p>
+<div class="story-card">
+  <div class="shead"><span class="stitle">Kleene's Second &#9633; Theorem (1938)</span>
+    <span class="smotif">self-reference</span></div>
+  <div class="stext">For every total computable function f, there exists an index
+  e such that &phi;<sub>e</sub> = &phi;<sub>f(e)</sub>; corollary: in any
+  Turing-complete programming language with an acceptable numbering, there exists
+  a program that <span class="masked">&#9633;</span>
+  (a <span class="masked">&#9633;</span>).</div>
+  <p class="sdevice"><b>Masked.</b> <span class="masked">Recursion</span> ·
+  <span class="masked">outputs its own source code</span> ·
+  <span class="masked">quine</span>. The invariant: the object contains a sentence
+  describing itself, and the description checks out verbatim &mdash; it points back
+  to itself in one step, with no climb through levels and no second system.</p>
+</div>
+
+<h2><span class="k">results</span>Reading structure, and failing to carry it</h2>
 <p class="lead">Frontier models can <em>recognize</em> an abstract structure in any single voice, yet fail &mdash; systematically &mdash; to <em>carry</em> it from one voice to another. The failure is lawful, not random.</p>
 <h3>1 &nbsp;Recognition is not mapping</h3>
 <div class="finding">
@@ -187,24 +356,32 @@
   words that carry it. This is why the dataset is English-primary with a Chinese
   mirror rather than tied to either language.</p>
 </div>
-<h2><span class="k">the hard edge</span>Where every model struggles</h2>
+<h2><span class="k">error analysis</span>The hardest motifs</h2>
 <p>Pooled recall is lowest on the motifs at the conceptual core of GEB &mdash;
 <span class="num">figure ground</span> (23%), <span class="num">contraction fixed point</span> (32%), <span class="num">self reference</span> (34%), <span class="num">projective duality</span> (35%), <span class="num">nesting</span> (41%). Strikingly, these are also the structures the image generator
 itself could least often render faithfully (rank correlation
 &rho;&nbsp;=&nbsp;&minus;0.45): the strange loops and figure&ndash;grounds that
 are hard to <em>draw</em> are hard to <em>read</em>.</p>
-<h2><span class="k">get it</span>Dataset &amp; code</h2>
+<h2><span class="k">resources</span>Dataset &amp; code</h2>
 <p>All 1,156 items, the 25-motif library (real theorems + form devices), the
 generation and evaluation harness, and the analysis scripts are open. Code is
 MIT; the dataset is CC-BY-4.0.</p>
 <p><a href="https://github.com/tongmd/GEB-benchmark">github.com/tongmd/GEB-benchmark</a></p>
-<h2><span class="k">pilot</span>Functorial abstraction</h2>
+<h2><span class="k">morphism layer</span>Functorial abstraction</h2>
 <p>A categorical pilot, now a section of the paper: can a model apply a
 <em>structural change</em> (BEFORE&rarr;AFTER) to the same structure told in
 another voice? Models that reliably detect the change transport it far better in the
 theorem voice than in the story voice, where four of six models fall to
 chance &mdash; the mapping tax, lifted from objects to morphisms. All arms run on OpenRouter.
 <a href="catlab-demo.html">See the five task types &amp; live examples &rarr;</a></p>
+<h2><span class="k">citation</span>BibTeX</h2>
+<pre class="bibtex">@article{zhang2026geb,
+  title   = {GEB: A Benchmark of Abstract Structural Motifs Across Four Voices},
+  author  = {Zhang, Tong},
+  year    = {2026},
+  note    = {Under review},
+  url     = {https://geb.stonezhang.com/}
+}</pre>
 <footer>GEB&nbsp;Benchmark · see a scene, grasp a structure ·
   25 motifs &times; 4 voices, 1,156 items · scenes: gpt-image with programmatic
   skeleton references · stories: form-device constrained, dual-screened ·
