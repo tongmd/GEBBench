@@ -13,6 +13,7 @@ from __future__ import annotations
 import html
 import json
 import shutil
+import sys
 from pathlib import Path
 
 ROOT = Path(__file__).parent
@@ -46,8 +47,9 @@ PAGE = """<!DOCTYPE html>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>GEB Benchmark — See a scene, grasp a structure</title>
-<link rel="icon" type="image/svg+xml" href="images/favicon.svg">
 <link rel="icon" type="image/png" sizes="96x96" href="images/favicon-96x96.png">
+<link rel="shortcut icon" href="images/favicon.ico">
+<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
@@ -339,6 +341,14 @@ MIT; the dataset is CC-BY-4.0.</p>
 
 
 def main():
+    # site/index.html has been hand-authored since the 2026-08-18 academic rewrite
+    # (categorical definitions, motif taxonomy, verbatim story examples, BibTeX).
+    # This generator predates it and would silently clobber that content, so it
+    # refuses to run unless explicitly forced.
+    if (SITE / "index.html").exists() and "--force" not in sys.argv:
+        sys.exit("build_site.py is superseded: site/index.html is hand-maintained.\n"
+                 "Edit site/index.html directly, or pass --force to regenerate "
+                 "from this (older) template.")
     if (SITE / "assets").exists():
         shutil.rmtree(SITE / "assets")
     SITE.mkdir(exist_ok=True)
