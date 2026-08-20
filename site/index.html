@@ -29,8 +29,6 @@
               border-radius:6px; padding:8px 13px; transition:border-color .15s,color .15s; }
   .badges a:hover { border-color:var(--accent); color:var(--accent); }
   .badges a .bk { font-weight:600; color:var(--accent); }
-  .badges a.soon { color:var(--dim); cursor:default; }
-  .badges a.soon .bk { color:var(--dim); }
   .intro { max-width:780px; }
   .chain { font-family:"SF Mono",Menlo,monospace; font-size:13.5px;
            background:var(--code-bg); border:1px solid var(--line);
@@ -112,7 +110,7 @@
   <h1><span class="geb">GEB</span> Benchmark</h1>
   <p class="tagline">See a scene, grasp a structure.</p>
   <div class="badges">
-    <a class="soon" title="arXiv identifier assigned on posting"><span class="bk">arXiv</span> preprint &mdash; coming soon</a>
+    <a href="https://arxiv.org/abs/2608.04111"><span class="bk">arXiv</span> 2608.04111</a>
     <a href="https://github.com/tongmd/GEB-benchmark"><span class="bk">Code</span> GitHub</a>
     <a href="#citation"><span class="bk">Cite</span> BibTeX</a>
   </div>
@@ -389,14 +387,14 @@ theorem voice than in the story voice, where four of six models fall to
 chance &mdash; the mapping tax, lifted from objects to morphisms. All arms run on OpenRouter.
 <a href="catlab-demo.html">See the five task types &amp; live examples &rarr;</a></p>
 <h2 id="citation"><span class="k">citation</span>BibTeX</h2>
-<!-- arXiv ID pending. On posting: (1) add eprint/archivePrefix fields below,
-     (2) point the hero badge at the abs page and drop its "soon" class. -->
 <pre class="bibtex">@misc{zhang2026gebbench,
   title         = {GEB-Bench: Abstract Structures Told in Many Voices},
   author        = {Zhang, Tong and Shi, Zhiyuan and Peng, Yun and Xie, Tao},
   year          = {2026},
-  note          = {Preprint; arXiv identifier to be assigned},
-  url           = {https://geb.stonezhang.com/}
+  eprint        = {2608.04111},
+  archivePrefix = {arXiv},
+  primaryClass  = {cs.CV},
+  url           = {https://arxiv.org/abs/2608.04111}
 }</pre>
 <footer>GEB&nbsp;Benchmark · see a scene, grasp a structure ·
   25 motifs &times; 4 voices, 1,156 items · scenes: gpt-image with programmatic
