@@ -21,7 +21,14 @@
   header { padding:72px 0 20px; border-bottom:1px solid var(--line); }
   h1 { font-size:44px; margin:0 0 8px; letter-spacing:-0.5px; }
   h1 .geb { color:var(--accent); }
-  .tagline { font-size:20px; font-style:italic; color:var(--dim); margin:0 0 18px; }
+  .tagline { font-size:20px; font-style:italic; color:var(--dim); margin:0 0 16px; }
+  .authors { font-size:15.5px; margin:0 0 4px; }
+  .authors a { color:var(--ink); text-decoration:none;
+               border-bottom:1px solid var(--line); }
+  .authors a:hover { color:var(--accent); border-bottom-color:var(--accent); }
+  .authors sup { color:var(--accent); font-size:11px; }
+  .affil { font-size:13.5px; color:var(--dim); margin:0 0 18px; }
+  .affil sup { color:var(--accent); font-size:11px; }
   .badges { display:flex; flex-wrap:wrap; gap:9px; margin:0 0 22px; }
   .badges a { display:inline-flex; align-items:center; gap:6px; text-decoration:none;
               font:13px/1 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
@@ -109,6 +116,11 @@
 <header>
   <h1><span class="geb">GEB</span> Benchmark</h1>
   <p class="tagline">See a scene, grasp a structure.</p>
+  <p class="authors"><a href="https://stonezhang.com">Tong Zhang</a><sup>1</sup>,
+    Zhiyuan Shi, Yun Peng<sup>1</sup>, Tao Xie<sup>2,&#8727;</sup></p>
+  <p class="affil"><sup>1</sup>Fudan University &nbsp;&nbsp;
+    <sup>2</sup>Peking University &nbsp;&nbsp;
+    <sup>&#8727;</sup>Corresponding author</p>
   <div class="badges">
     <a href="https://arxiv.org/abs/2608.04111"><span class="bk">arXiv</span> 2608.04111</a>
     <a href="https://github.com/tongmd/GEB-benchmark"><span class="bk">Code</span> GitHub</a>
@@ -384,7 +396,8 @@ MIT; the dataset is CC-BY-4.0.</p>
 <em>structural change</em> (BEFORE&rarr;AFTER) to the same structure told in
 another voice? Models that reliably detect the change transport it far better in the
 theorem voice than in the story voice, where four of six models fall to
-chance &mdash; the mapping tax, lifted from objects to morphisms. All arms run on OpenRouter.
+chance &mdash; the mapping tax, lifted from objects to morphisms. All arms run
+through a single unified inference API at a pinned model version.
 <a href="catlab-demo.html">See the five task types &amp; live examples &rarr;</a></p>
 <h2 id="citation"><span class="k">citation</span>BibTeX</h2>
 <pre class="bibtex">@misc{zhang2026gebbench,
