@@ -12,6 +12,9 @@ paper/geb.pdf
 paper/slides.pdf
 paper/arxiv_submit/
 paper/arxiv_submit.tar.gz
+paper/arxiv_stage_20260928/
+paper/arxiv_submit_20260928/
+paper/arxiv_submit_20260928.tar.gz
 paper/*.aux
 paper/*.out
 paper/*.bbl
@@ -25,3 +28,4 @@ paper/*.toc
 # the reported runs. Private repo, ~1.6 GB total.
 paper/*.fls
 paper/*.fdb_latexmk
+tmp/

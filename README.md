@@ -81,3 +81,17 @@ diagram-family draft, kept for history) ·
 ## Homepage
 
 `site/` → <https://geb.stonezhang.com> (Cloudflare Pages).
+
+## arXiv release
+
+The current de-anonymized September 2026 manuscript is under `paper/geb.tex`.
+It uses the validated 35-model snapshot and can be packaged with:
+
+```bash
+cd paper
+bash make_arxiv.sh
+```
+
+The generated archive is `paper/arxiv_submit_20260928.tar.gz`. See
+`paper/ARXIV_UPDATE_20260928.md` and `paper/arxiv_metadata_20260928.txt` for
+the source snapshot, metadata and validation record.
