@@ -1,8 +1,8 @@
 cff-version: 1.2.0
-message: "If you use GEB-Bench, please cite the arXiv paper below."
+message: "If you use GEBBench, please cite the arXiv paper below."
 type: software
-title: "GEB-Bench"
-url: "https://github.com/tongmd/gebbench"
+title: "GEBBench"
+url: "https://github.com/tongmd/GEBBench"
 authors:
   - family-names: Zhang
     given-names: Tong

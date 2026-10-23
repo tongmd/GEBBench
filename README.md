@@ -1,4 +1,4 @@
-# GEB-Bench
+# GEBBench
 
 [arXiv paper](https://arxiv.org/abs/2608.04111) · [Project page](https://geb.stonezhang.com/) · [BibTeX](citation.bib)
 
@@ -99,7 +99,7 @@ document the September source package; consult arXiv for the latest published ve
 
 ## Citation
 
-If you use GEB-Bench, please cite:
+If you use GEBBench, please cite:
 
 ```bibtex
 @misc{zhang2026gebbench,
