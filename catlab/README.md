@@ -1,7 +1,7 @@
 # catlab — functorial-abstraction pilot (naturality squares)
 
-This pilot tests whether a model
-that *recognizes* two structures also *transport the change* between them?
+This pilot tests whether a model that *recognizes* two structures can also
+*transport a change* between them.
 
 > Object recognition does not imply morphism preservation — testable claim.
 
