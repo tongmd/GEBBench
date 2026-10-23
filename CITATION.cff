@@ -1,0 +1,31 @@
+cff-version: 1.2.0
+message: "If you use GEB-Bench, please cite the arXiv paper below."
+type: software
+title: "GEB-Bench"
+url: "https://github.com/tongmd/gebbench"
+authors:
+  - family-names: Zhang
+    given-names: Tong
+  - family-names: Shi
+    given-names: Zhiyuan
+  - family-names: Peng
+    given-names: Yun
+  - family-names: Xie
+    given-names: Tao
+preferred-citation:
+  type: article
+  title: "GEB-Bench: Abstract Structures Told in Many Voices"
+  authors:
+    - family-names: Zhang
+      given-names: Tong
+    - family-names: Shi
+      given-names: Zhiyuan
+    - family-names: Peng
+      given-names: Yun
+    - family-names: Xie
+      given-names: Tao
+  year: 2026
+  date-published: "2026-08-04"
+  journal: arXiv
+  doi: "10.48550/arXiv.2608.04111"
+  url: "https://arxiv.org/abs/2608.04111"
