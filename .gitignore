@@ -29,3 +29,12 @@ paper/*.toc
 paper/*.fls
 paper/*.fdb_latexmk
 tmp/
+
+# Manuscripts and arXiv submission bundles stay outside the public repository.
+/paper/
+/papers/
+/manuscript/
+/arxiv/
+/arxiv_submit*/
+/arxiv*.tar.gz
+/arxiv*.zip

@@ -80,22 +80,13 @@ python3 build_site.py     # site/: static preview page
 
 `site/` → <https://geb.stonezhang.com> (Cloudflare Pages).
 
-## Paper and source
+## Paper
 
 [GEB-Bench: Abstract Structures Told in Many Voices](https://arxiv.org/abs/2608.04111)
 
 Tong Zhang, Zhiyuan Shi, Yun Peng, and Tao Xie. arXiv:2608.04111, 2026.
 
-The arXiv page links to the published PDF and version history. Manuscript source
-is under `paper/geb.tex`. To package the local source snapshot:
-
-```bash
-cd paper
-bash make_arxiv.sh
-```
-
-`paper/ARXIV_UPDATE_20260928.md` and `paper/arxiv_metadata_20260928.txt`
-document the September source package; consult arXiv for the latest published version.
+Read the paper on [arXiv](https://arxiv.org/abs/2608.04111).
 
 ## Citation
 
