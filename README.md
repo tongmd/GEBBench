@@ -76,10 +76,6 @@ python3 build_site.py     # site/: static preview page
 `motifs/<motif_id>/`: `schema.json`, `math.md` (definition · home · theorem),
 `skeleton_*.svg/png`, `scene_*.png`.
 
-Design docs: [`proposal/design-v1.md`](proposal/design-v1.md) (superseded
-diagram-family draft, kept for history) ·
-[`proposal/scaling.md`](proposal/scaling.md) (how to scale motif items).
-
 ## Homepage
 
 `site/` → <https://geb.stonezhang.com> (Cloudflare Pages).
