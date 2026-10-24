@@ -1,6 +1,6 @@
 # GEBBench
 
-[arXiv paper](https://arxiv.org/abs/2608.04111) · [Project page](https://geb.stonezhang.com/) · [BibTeX](citation.bib)
+[arXiv paper](https://arxiv.org/abs/2608.04111) · [Project page](https://gebbench.stonezhang.com/) · [BibTeX](citation.bib)
 
 **See a scene, grasp a structure.** A benchmark of *abstract structures* in the
 spirit of *Gödel, Escher, Bach*. The unit of a sample is a structural **motif**
