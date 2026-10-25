@@ -21,7 +21,6 @@ motif z → skeleton (programmatic vis-graph rendering, several embeddings)
 Same skeleton, different worlds: one recursive-branching skeleton becomes a
 river delta and a lightning bolt — no pixel in common, one structure.
 
-Corresponding author: Tao Xie.
 
 ## Motif library (v2 — 25 motifs)
 
